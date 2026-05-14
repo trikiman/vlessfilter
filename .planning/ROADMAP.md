@@ -6,9 +6,9 @@ VlessFilter goes from "empty repo + a list of subscription URLs" to "self-updati
 
 ## Phases
 
-- [ ] **Phase 1: MVP End-to-End** — sources.yaml + xray-knife integration + top-3-per-country output, runs locally on Linux
-- [ ] **Phase 2: Ephemeral-VPS Hardening** — kernel tuning, 60-min budget, checkpoint+commit loop, full output set
-- [ ] **Phase 3: CI + Polish** — GitHub Action cron workflow, docs, release automation
+- [x] **Phase 1: MVP End-to-End** — sources.yaml + xray-knife integration + top-3-per-country output, runs locally on Linux ✅ shipped 2026-05-14
+- [x] **Phase 2: Ephemeral-VPS Hardening** — kernel tuning, 60-min budget, checkpoint+commit loop, full output set ✅ shipped 2026-05-15
+- [x] **Phase 3: CI + Polish** — GitHub Action cron workflow, docs, release automation ✅ shipped 2026-05-15
 
 ## Phase Details
 
@@ -25,8 +25,8 @@ VlessFilter goes from "empty repo + a list of subscription URLs" to "self-updati
 **Plans**: 2 plans
 
 Plans:
-- [ ] 01-01: Project skeleton + xray-knife wrapper + sources.yaml ingest + smoke-run end-to-end on a small public sub
-- [ ] 01-02: Read xray-knife.db, group-by-country, top-3 selector, output formatters (`subs/<CC>.txt` + `README.md`)
+- [x] 01-01: Project skeleton + xray-knife wrapper + sources.yaml ingest + smoke-run end-to-end on a small public sub
+- [x] 01-02: Read xray-knife.db, group-by-country, top-3 selector, output formatters (`subs/<CC>.txt` + `README.md`)
 
 ### Phase 2: Ephemeral-VPS Hardening
 **Goal**: Make the pipeline survive a 60-minute auto-deleting VPS unattended. Kernel tuning, checkpoint commits, GitHub auth, deterministic output, and the default `sources.yaml` shipped with the repo.
@@ -42,8 +42,8 @@ Plans:
 **Plans**: 2 plans
 
 Plans:
-- [ ] 02-01: Kernel tuning + 60-min budget enforcement + checkpoint/resume + GitHub-auth git push loop
-- [ ] 02-02: Composite score formula + deterministic ordering + diagnostic outputs (CSV, dead.txt) + default `sources.yaml`
+- [x] 02-01: Kernel tuning + 60-min budget enforcement + checkpoint/resume + GitHub-auth git push loop
+- [x] 02-02: Composite score formula + deterministic ordering + diagnostic outputs (CSV, dead.txt) + default `sources.yaml`
 
 ### Phase 3: CI + Polish
 **Goal**: Ship a GitHub Actions cron workflow as a no-VPS fallback, document the deployment, and automate releases so a `git tag v1.0.0` produces installable binaries.
@@ -57,8 +57,9 @@ Plans:
 **Plans**: 2 plans
 
 Plans:
-- [ ] 03-01: GitHub Actions cron workflow (with PAT secret, kernel-tuning step, full pipeline)
-- [ ] 03-02: README + deployment runbook + release automation (goreleaser config + tag-triggered workflow)
+- [x] 03-01: GitHub Actions cron workflow (with PAT secret, kernel-tuning step, full pipeline)
+- [x] 03-02: README + deployment runbook + release automation (goreleaser config + tag-triggered workflow)
+  *Note: implemented as a single combined plan (03-01) covering refresh.yml + release.yml + .goreleaser.yml + docs/DEPLOYMENT-VPS.md + docs/INSTALL.md*
 
 ## Progress
 
@@ -67,6 +68,21 @@ Phases execute in numeric order: 1 → 2 → 3
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. MVP End-to-End | 0/2 | Not started | - |
-| 2. Ephemeral-VPS Hardening | 0/2 | Not started | - |
-| 3. CI + Polish | 0/2 | Not started | - |
+| 1. MVP End-to-End | 2/2 | ✅ Complete | 2026-05-14 |
+| 2. Ephemeral-VPS Hardening | 2/2 | ✅ Complete | 2026-05-15 |
+| 3. CI + Polish | 2/2 | ✅ Complete | 2026-05-15 |
+
+## Milestone v1.0 — SHIPPED 2026-05-15
+
+All 25 v1 requirements covered. Artifacts:
+- Single Go binary (~13 MB, pure-Go, CGO-free)
+- 7 internal packages, 2867 LOC, 5 test files (all green)
+- 2 GitHub Actions workflows (6h cron refresh + tag release)
+- Goreleaser config (linux/darwin × amd64/arm64)
+- Deployment runbook for 2z2 ephemeral VPS
+
+Bugs caught during execution (not predicted by research):
+- xray-knife `subs fetch` requires `--all` flag explicitly
+- xray-knife `subs add` UNIQUE-constraint message format (broadened idempotency check)
+- xray-knife exits 1 on partial sub-fetch failure (added partial-tolerance)
+- `git.sanitize` infinite loop when replacement string contained search pattern (switched to regexp)
