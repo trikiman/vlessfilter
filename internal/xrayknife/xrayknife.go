@@ -140,9 +140,13 @@ func (r *RealRunner) SubsFetch(ctx context.Context) error {
 	return fmt.Errorf("xray-knife subs fetch: %w", err)
 }
 
-// HTTPTest runs `xray-knife http --from-db --protocol <p> [--speedtest] [-t N] [--limit N]`.
+// HTTPTest runs `xray-knife http --from-db --protocol <p> --save-db [--speedtest] [-t N] [--limit N]`.
+//
+// IMPORTANT: --save-db is mandatory. Without it xray-knife writes results
+// only to valid.txt; our selector reads from xray-knife.db, so we'd see an
+// empty result set. This was caught during end-to-end smoke testing.
 func (r *RealRunner) HTTPTest(ctx context.Context, opts HTTPOpts) error {
-	args := []string{"http", "--from-db"}
+	args := []string{"http", "--from-db", "--save-db"}
 	proto := opts.Protocol
 	if proto == "" {
 		proto = "vless"

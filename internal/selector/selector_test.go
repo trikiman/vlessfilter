@@ -177,6 +177,10 @@ func TestLoadResults_NoDB(t *testing.T) {
 
 // TestLoadResults_FromFixtureDB writes a hand-crafted SQLite file matching the
 // expected xray-knife schema and verifies LoadResults parses it correctly.
+//
+// Semantics: latest result per config_link across all runs is returned, dead
+// rows (latency<=0 or >10000) are dropped. A link only present in run 1 is
+// still our latest knowledge of it and is NOT filtered out by run-id.
 func TestLoadResults_FromFixtureDB(t *testing.T) {
 	dbPath := filepath.Join(t.TempDir(), "fixture.db")
 	db, err := sql.Open("sqlite", dbPath)
@@ -199,7 +203,8 @@ INSERT INTO test_results (link, delay, download_speed, location, run_id) VALUES
   ('vless://us-1@e.com:443', 50, 100.0, 'US', 2),
   ('vless://us-2@e.com:443', 80,  90.0, 'US', 2),
   ('vless://de-1@e.com:443', 30,  85.0, 'DE', 2),
-  ('vless://old@e.com:443',  20, 999.0, 'US', 1), -- old run, should be filtered
+  ('vless://us-1@e.com:443', 999, 50.0, 'US', 1), -- older run for us-1, should be overridden by run 2
+  ('vless://only-old@e.com:443', 20, 999.0, 'US', 1), -- only present in old run, kept
   ('vless://dead@e.com:443',  0,   0.0, 'US', 2); -- dead, latency=0, dropped
 `); err != nil {
 		t.Fatalf("seed: %v", err)
@@ -210,8 +215,9 @@ INSERT INTO test_results (link, delay, download_speed, location, run_id) VALUES
 	if err != nil {
 		t.Fatalf("LoadResults: %v", err)
 	}
-	if len(results) != 3 {
-		t.Errorf("got %d results, want 3 (old run + dead row should be filtered)", len(results))
+	// Want 4: us-1 (run 2 wins over run 1), us-2, de-1, only-old (no newer run)
+	if len(results) != 4 {
+		t.Errorf("got %d results, want 4 (dead dropped, older us-1 superseded by newer)", len(results))
 	}
 	for _, r := range results {
 		if r.LatencyMs == 0 {
@@ -219,6 +225,10 @@ INSERT INTO test_results (link, delay, download_speed, location, run_id) VALUES
 		}
 		if r.Country != "US" && r.Country != "DE" {
 			t.Errorf("unexpected country: %v", r)
+		}
+		// Verify us-1 has the run-2 latency (50), not run-1 (999).
+		if r.Link == "vless://us-1@e.com:443" && r.LatencyMs != 50 {
+			t.Errorf("us-1 should have latest result (50ms), got %dms", r.LatencyMs)
 		}
 	}
 }

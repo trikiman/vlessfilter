@@ -158,8 +158,17 @@ func LoadAllResults(ctx context.Context, dbPath string) (alive, dead []Result, e
 	return alive, dead, nil
 }
 
-// queryAllResults returns every row from the most-recent run regardless of
-// alive/dead status.
+// queryAllResults returns the latest row PER config_link across all runs.
+//
+// Why per-link instead of "MAX(run_id) only"? Stages can run on different
+// subsets of configs (xray-knife's --limit doesn't filter by previous-run
+// status), so a config that passed in run 1 might never appear in run 2.
+// We want to keep its alive result, not discard it because run 2 is newer.
+// Conversely, if a link IS retested and now fails, the newer (failed)
+// result correctly overrides.
+//
+// Implementation: GROUP BY config_link with MAX(run_id) per link. Works
+// even when the run-id column is missing (we fall back to a plain SELECT).
 func queryAllResults(ctx context.Context, db *sql.DB, table string, m columnMapping) ([]Result, error) {
 	cols := []string{quote(m.Link), quote(m.Latency), quote(m.Speed)}
 	if m.Country != "" {
@@ -167,9 +176,36 @@ func queryAllResults(ctx context.Context, db *sql.DB, table string, m columnMapp
 	} else {
 		cols = append(cols, "''")
 	}
-	q := fmt.Sprintf("SELECT %s FROM %s", strings.Join(cols, ", "), quote(table))
+
+	var q string
 	if m.RunID != "" {
-		q += fmt.Sprintf(" WHERE %s = (SELECT MAX(%s) FROM %s)", quote(m.RunID), quote(m.RunID), quote(table))
+		// SQLite respects "max trick": GROUP BY x with bare aggregates over
+		// other cols returns the row corresponding to MAX(run_id) per link.
+		// Reference: https://sqlite.org/lang_select.html#bareagg
+		inner := fmt.Sprintf(
+			"SELECT %s, MAX(%s) AS _rid, %s, %s, %s FROM %s GROUP BY %s",
+			quote(m.Link), quote(m.RunID), quote(m.Latency), quote(m.Speed),
+			func() string {
+				if m.Country != "" {
+					return quote(m.Country)
+				}
+				return "''"
+			}(),
+			quote(table), quote(m.Link),
+		)
+		q = fmt.Sprintf(
+			"SELECT %s, %s, %s, %s FROM (%s)",
+			quote(m.Link), quote(m.Latency), quote(m.Speed),
+			func() string {
+				if m.Country != "" {
+					return quote(m.Country)
+				}
+				return "''"
+			}(),
+			inner,
+		)
+	} else {
+		q = fmt.Sprintf("SELECT %s FROM %s", strings.Join(cols, ", "), quote(table))
 	}
 
 	r, err := db.QueryContext(ctx, q)
@@ -219,9 +255,12 @@ func listTables(ctx context.Context, db *sql.DB) ([]string, error) {
 
 // pickResultsTable picks the most likely results table from the candidates.
 // Heuristic: prefer exact match on common names, else any table whose name
-// contains "result" or "test".
+// contains "result" but not "run" (xray-knife has both http_test_results
+// and http_test_runs; we only want the former).
 func pickResultsTable(tables []string) (string, error) {
-	preferred := []string{"test_results", "results", "http_results", "http_tests"}
+	// Order matters: most-specific first. Real xray-knife (≥9.x) uses
+	// http_test_results; older variants used the simpler names.
+	preferred := []string{"http_test_results", "test_results", "results", "http_results", "http_tests"}
 	for _, p := range preferred {
 		for _, t := range tables {
 			if strings.EqualFold(t, p) {
@@ -231,7 +270,11 @@ func pickResultsTable(tables []string) (string, error) {
 	}
 	for _, t := range tables {
 		lt := strings.ToLower(t)
-		if strings.Contains(lt, "result") || strings.Contains(lt, "test") {
+		// Skip the runs table — it has metadata, not per-config rows.
+		if strings.Contains(lt, "run") && !strings.Contains(lt, "result") {
+			continue
+		}
+		if strings.Contains(lt, "result") {
 			return t, nil
 		}
 	}
@@ -289,10 +332,10 @@ func mapColumns(cols []string) (columnMapping, error) {
 	}
 
 	m := columnMapping{
-		Link:    pick("link", "config_link", "config", "uri", "url"),
-		Latency: pick("delay", "latency", "latency_ms", "ping", "ping_ms"),
-		Speed:   pick("downloadspeed", "download_speed", "speed_mbps", "speed", "download"),
-		Country: pick("location", "country", "country_code", "ipaddress", "ip_country"),
+		Link:    pick("config_link", "link", "config", "uri", "url"),
+		Latency: pick("delay_ms", "delay", "latency_ms", "latency", "ping_ms", "ping"),
+		Speed:   pick("download_mbps", "downloadspeed", "download_speed", "speed_mbps", "speed", "download"),
+		Country: pick("ip_location", "location", "country", "country_code", "ipaddress", "ip_country"),
 		RunID:   pick("run_id", "test_run_id", "created_at", "tested_at", "timestamp"),
 	}
 
