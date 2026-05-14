@@ -12,6 +12,7 @@ import (
 	"context"
 	"errors"
 	"fmt"
+	"io"
 	"log/slog"
 	"os"
 	"os/exec"
@@ -158,12 +159,88 @@ func (r *RealRunner) HTTPTest(ctx context.Context, opts HTTPOpts) error {
 	}
 	slog.Info("xray-knife http", "args", args, "speedtest", opts.Speedtest)
 	cmd := exec.CommandContext(ctx, "xray-knife", args...)
-	cmd.Stdout = os.Stderr
-	cmd.Stderr = os.Stderr
+	w := chooseOutputWriter(os.Stderr)
+	cmd.Stdout = w
+	cmd.Stderr = w
 	if err := cmd.Run(); err != nil {
 		return fmt.Errorf("xray-knife http %v: %w", args, err)
 	}
 	return nil
+}
+
+// chooseOutputWriter returns either tty (raw passthrough — devs see the
+// progress bar) or a CR-stripping wrapper for non-TTY runs (CI, ephemeral
+// VPSes) so the progress bar's carriage-return updates don't pollute logs.
+func chooseOutputWriter(tty io.Writer) io.Writer {
+	if os.Getenv("VLESSFILTER_QUIET") == "1" || os.Getenv("CI") == "true" || !isTerminal(os.Stderr.Fd()) {
+		return &quietWriter{w: tty}
+	}
+	return tty
+}
+
+// isTerminal returns true when fd is a terminal. Implemented without an
+// external dep: try to fstat and check for a character device.
+//
+// Note: this is approximate (a pipe to less is also a char device on some
+// platforms). Good enough for our heuristic.
+func isTerminal(fd uintptr) bool {
+	fi, err := os.NewFile(fd, "").Stat()
+	if err != nil {
+		return false
+	}
+	return fi.Mode()&os.ModeCharDevice != 0
+}
+
+// quietWriter implements io.Writer by buffering until newline and emitting
+// only the substring after the LAST carriage-return on each line. Effect:
+// xray-knife's "redraw progress on \r" updates collapse to nothing visible,
+// while \n-terminated final-output lines still print.
+type quietWriter struct {
+	w   io.Writer
+	buf []byte
+}
+
+func (q *quietWriter) Write(p []byte) (int, error) {
+	n := len(p)
+	q.buf = append(q.buf, p...)
+	for {
+		nl := bytesIndex(q.buf, '\n')
+		if nl < 0 {
+			break
+		}
+		line := q.buf[:nl]
+		q.buf = q.buf[nl+1:]
+		// Keep only what's after the last \r — that's the final state of
+		// any progress-bar-style redraw.
+		if cr := lastIndex(line, '\r'); cr >= 0 {
+			line = line[cr+1:]
+		}
+		if len(line) == 0 {
+			continue
+		}
+		if _, err := q.w.Write(append(line, '\n')); err != nil {
+			return n, err
+		}
+	}
+	return n, nil
+}
+
+func bytesIndex(b []byte, c byte) int {
+	for i, x := range b {
+		if x == c {
+			return i
+		}
+	}
+	return -1
+}
+
+func lastIndex(b []byte, c byte) int {
+	for i := len(b) - 1; i >= 0; i-- {
+		if b[i] == c {
+			return i
+		}
+	}
+	return -1
 }
 
 // SubCount queries `xray-knife subs show` and counts subscription rows.

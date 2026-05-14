@@ -53,6 +53,29 @@ type Subscription struct {
 	Body       []byte // always plain text after auto-decode
 }
 
+// DefaultCountries returns the curated list of ISO 3166-1 alpha-2 codes that
+// v2go publishes country files for. Used when sources.yaml has an empty or
+// missing `countries:` list AND any source uses kind: country-template.
+//
+// List intentionally hand-curated rather than scraping v2go's directory at
+// runtime — keeps the tool reproducible and offline-capable. ~100 entries
+// covering all major regions.
+func DefaultCountries() []string {
+	return []string{
+		"AE", "AF", "AL", "AM", "AR", "AT", "AU", "AZ", "BA", "BD",
+		"BE", "BG", "BH", "BR", "BY", "CA", "CH", "CL", "CN", "CO",
+		"CR", "CY", "CZ", "DE", "DK", "DO", "DZ", "EC", "EE", "EG",
+		"ES", "ET", "FI", "FR", "GB", "GE", "GH", "GR", "GT", "HK",
+		"HN", "HR", "HU", "ID", "IE", "IL", "IN", "IQ", "IR", "IS",
+		"IT", "JM", "JO", "JP", "KE", "KG", "KH", "KR", "KW", "KZ",
+		"LB", "LK", "LT", "LU", "LV", "MA", "MD", "MK", "MN", "MX",
+		"MY", "NG", "NL", "NO", "NP", "NZ", "OM", "PA", "PE", "PH",
+		"PK", "PL", "PR", "PT", "QA", "RO", "RS", "RU", "SA", "SE",
+		"SG", "SI", "SK", "SY", "TH", "TJ", "TM", "TN", "TR", "TW",
+		"UA", "US", "UY", "UZ", "VE", "VN", "ZA",
+	}
+}
+
 // Load reads sources.yaml from disk, validates structure, applies defaults,
 // and returns enabled sources only.
 //
@@ -66,8 +89,19 @@ func Load(path string) (*Config, error) {
 	if err := yaml.Unmarshal(raw, &cfg); err != nil {
 		return nil, fmt.Errorf("parse %s: %w", path, err)
 	}
+	// Apply default country list when countries is empty AND any source uses
+	// a country-template (avoids producing 100x duplicate plain entries).
 	if len(cfg.Countries) == 0 {
-		cfg.Countries = []string{"US", "DE"}
+		needsCountries := false
+		for _, s := range cfg.Sources {
+			if s.Kind == KindCountryTemplate && s.Enabled {
+				needsCountries = true
+				break
+			}
+		}
+		if needsCountries {
+			cfg.Countries = DefaultCountries()
+		}
 	}
 	enabled := make([]Source, 0, len(cfg.Sources))
 	for i, s := range cfg.Sources {

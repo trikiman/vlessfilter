@@ -1,5 +1,5 @@
-// Command vlessfilter discovers, tests, and publishes the top 3 fastest VLESS proxy
-// keys per country. See README.md and .planning/PROJECT.md for the full design.
+// Command vlessfilter discovers, tests, and publishes the top 3 fastest VLESS
+// proxy keys per country. See README.md and .planning/PROJECT.md for design.
 package main
 
 import (
@@ -30,26 +30,30 @@ Global flags:
   --verbose  Enable debug logging
 
 Run flags:
-  --sources <path>   Path to sources.yaml (default: ./sources.yaml)
-  --out <dir>        Output directory for subs/ and README.md (default: .)
-  --stage <name>     Run only one stage: fetch | test | select (default: all stages)
-  --threads1 <n>     Stage 1 (handshake) concurrency (default: 200; Phase 2 will raise to 1000)
-  --threads2 <n>     Stage 2 (speedtest) concurrency (default: 20; cap per D-06)
-  --limit <n>        Cap number of keys tested in stage 2 (default: 0 = no cap)
+  --sources <path>      Path to sources.yaml (default: ./sources.yaml)
+  --out <dir>           Output directory for subs/, README.md, all-results.csv (default: .)
+  --stage <name>        Run only one stage: fetch | test | select (default: all stages)
+  --threads1 <n>        Stage 1 (handshake) concurrency (default: 200)
+  --threads2 <n>        Stage 2 (speedtest) concurrency (default: 20; cap per D-06)
+  --limit <n>           Cap number of keys tested in stage 2 (default: 0 = no cap)
+  --budget-min <n>      Hard wall-clock budget for the run, minutes (default: 55; <=0 disables)
+  --checkpoint-min <n>  Checkpoint cadence: write outputs every N minutes (default: 2; <=0 disables)
+  --git-push            Commit + push results after each checkpoint and at end (default: false)
+  --git-repo <dir>      Git repo dir to commit in (default: .)
+  --git-branch <name>   Branch to push to (default: main)
+
+Environment:
+  GH_TOKEN              GitHub PAT used for --git-push (no leak: never written to ~/.gitconfig)
 
 Examples:
-  vlessfilter run                                # full pipeline against ./sources.yaml
-  vlessfilter run --stage fetch                  # only ingest sources into xray-knife db
+  vlessfilter run                                # full pipeline locally
+  vlessfilter run --stage fetch                  # only ingest sources
   vlessfilter run --stage select --out results   # regenerate output files only
+  GH_TOKEN=ghp_xxx vlessfilter run --git-push    # ephemeral-VPS-style: commit results
 
 Project: https://github.com/trikiman/vlessfilter
 `
 
-// Exit codes:
-//
-//	0 — success
-//	1 — user/config error (bad flag, missing file, malformed yaml)
-//	2 — runtime error (xray-knife failed, network down, db corrupt)
 const (
 	exitOK      = 0
 	exitUserErr = 1
@@ -61,12 +65,10 @@ func main() {
 }
 
 func run() int {
-	// Top-level flag set: only --verbose lives here; subcommand flags are parsed below.
 	root := flag.NewFlagSet("vlessfilter", flag.ContinueOnError)
 	verbose := root.Bool("verbose", false, "Enable debug logging")
 	root.Usage = func() { fmt.Fprint(os.Stderr, usage) }
 
-	// Stop the root flag set at the first non-flag arg so the subcommand sees its own flags.
 	if err := root.Parse(splitGlobal(os.Args[1:])); err != nil {
 		if errors.Is(err, flag.ErrHelp) {
 			return exitOK
@@ -94,15 +96,19 @@ func run() int {
 	}
 }
 
-// runCmd parses run-specific flags and invokes the pipeline.
 func runCmd(args []string) int {
 	fs := flag.NewFlagSet("run", flag.ContinueOnError)
 	sources := fs.String("sources", "./sources.yaml", "Path to sources.yaml")
-	outDir := fs.String("out", ".", "Output directory for subs/ and README.md")
+	outDir := fs.String("out", ".", "Output directory")
 	stage := fs.String("stage", "", "Run only one stage: fetch | test | select")
-	threads1 := fs.Int("threads1", 200, "Stage 1 (handshake) concurrency")
-	threads2 := fs.Int("threads2", 20, "Stage 2 (speedtest) concurrency (cap recommended at 20)")
-	limit := fs.Int("limit", 0, "Cap number of keys tested in stage 2 (0 = no cap)")
+	threads1 := fs.Int("threads1", 200, "Stage 1 concurrency")
+	threads2 := fs.Int("threads2", 20, "Stage 2 concurrency")
+	limit := fs.Int("limit", 0, "Cap stage-2 key count (0 = no cap)")
+	budgetMin := fs.Int("budget-min", 55, "Wall-clock budget in minutes (<=0 disables)")
+	checkpointMin := fs.Int("checkpoint-min", 2, "Checkpoint cadence in minutes (<=0 disables)")
+	gitPush := fs.Bool("git-push", false, "Commit + push results to git")
+	gitRepo := fs.String("git-repo", ".", "Git repo dir for --git-push")
+	gitBranch := fs.String("git-branch", "main", "Branch to push to")
 
 	if err := fs.Parse(args); err != nil {
 		if errors.Is(err, flag.ErrHelp) {
@@ -127,15 +133,26 @@ func runCmd(args []string) int {
 		return exitRuntime
 	}
 
+	token := os.Getenv("GH_TOKEN")
+	if *gitPush && token == "" {
+		slog.Warn("--git-push set but GH_TOKEN env is empty; push will likely fail unless repo permits anonymous push")
+	}
+
 	opts := pipeline.Opts{
-		SourcesPath: *sources,
-		OutDir:      *outDir,
-		Stage:       *stage,
-		Threads1:    *threads1,
-		Threads2:    *threads2,
-		Limit:       *limit,
-		Runner:      runner,
-		Now:         time.Now().UTC,
+		SourcesPath:   *sources,
+		OutDir:        *outDir,
+		Stage:         *stage,
+		Threads1:      *threads1,
+		Threads2:      *threads2,
+		Limit:         *limit,
+		BudgetMin:     *budgetMin,
+		CheckpointMin: *checkpointMin,
+		GitPush:       *gitPush,
+		GitRepoDir:    *gitRepo,
+		GitBranch:     *gitBranch,
+		GitToken:      token,
+		Runner:        runner,
+		Now:           func() time.Time { return time.Now().UTC() },
 	}
 	if err := pipeline.Run(ctx, opts); err != nil {
 		slog.Error("pipeline failed", "error", err)
@@ -144,7 +161,6 @@ func runCmd(args []string) int {
 	return exitOK
 }
 
-// setupLogging configures slog with a text handler at the chosen level.
 func setupLogging(verbose bool) {
 	level := slog.LevelInfo
 	if verbose {
@@ -154,9 +170,6 @@ func setupLogging(verbose bool) {
 	slog.SetDefault(slog.New(h))
 }
 
-// splitGlobal returns args before the first non-flag positional argument.
-// It lets the root flag set parse only --verbose-style global flags and stop
-// at the subcommand name, which then parses its own flags.
 func splitGlobal(args []string) []string {
 	for i, a := range args {
 		if !strings.HasPrefix(a, "-") {
@@ -166,7 +179,6 @@ func splitGlobal(args []string) []string {
 	return args
 }
 
-// afterGlobal returns args from the first non-flag positional argument onward.
 func afterGlobal(args []string) []string {
 	for i, a := range args {
 		if !strings.HasPrefix(a, "-") {

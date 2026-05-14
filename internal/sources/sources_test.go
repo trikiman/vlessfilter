@@ -46,7 +46,8 @@ sources:
 	}
 }
 
-// TestLoad_DefaultsCountries verifies the [US,DE] default per D-04.
+// TestLoad_DefaultsCountries: when countries is omitted AND a country-template
+// source is enabled, fall back to DefaultCountries (~100 entries).
 func TestLoad_DefaultsCountries(t *testing.T) {
 	dir := t.TempDir()
 	p := filepath.Join(dir, "sources.yaml")
@@ -62,14 +63,41 @@ sources:
 	if err != nil {
 		t.Fatalf("Load: %v", err)
 	}
-	want := []string{"US", "DE"}
-	if len(cfg.Countries) != len(want) {
-		t.Fatalf("countries = %v, want %v", cfg.Countries, want)
+	if len(cfg.Countries) < 50 {
+		t.Errorf("expected DefaultCountries() (>=50 entries), got %d", len(cfg.Countries))
 	}
-	for i, cc := range want {
-		if cfg.Countries[i] != cc {
-			t.Errorf("countries[%d] = %q, want %q", i, cfg.Countries[i], cc)
+	hasUS, hasDE := false, false
+	for _, c := range cfg.Countries {
+		if c == "US" {
+			hasUS = true
 		}
+		if c == "DE" {
+			hasDE = true
+		}
+	}
+	if !hasUS || !hasDE {
+		t.Errorf("DefaultCountries should contain at least US and DE")
+	}
+}
+
+// TestLoad_NoCountriesNoTemplate: empty countries + no template source = stays empty.
+func TestLoad_NoCountriesNoTemplate(t *testing.T) {
+	dir := t.TempDir()
+	p := filepath.Join(dir, "sources.yaml")
+	_ = os.WriteFile(p, []byte(`
+sources:
+  - name: x
+    url: https://example.com/x.txt
+    kind: plain
+    enabled: true
+`), 0o644)
+
+	cfg, err := Load(p)
+	if err != nil {
+		t.Fatalf("Load: %v", err)
+	}
+	if len(cfg.Countries) != 0 {
+		t.Errorf("expected empty countries when no template source; got %d", len(cfg.Countries))
 	}
 }
 

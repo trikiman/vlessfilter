@@ -98,40 +98,105 @@ func Top3PerCountry(results []Result) []CountrySelection {
 // Filters out rows with LatencyMs == 0 || LatencyMs > 10000 (treated as
 // failed/unmeasurable).
 func LoadResults(ctx context.Context, dbPath string) ([]Result, error) {
+	alive, _, err := LoadAllResults(ctx, dbPath)
+	if err != nil {
+		return nil, err
+	}
+	if len(alive) == 0 {
+		return nil, errors.New("no usable results in xray-knife db; did stage 2 speedtest run?")
+	}
+	return alive, nil
+}
+
+// LoadAllResults returns both alive (latency in (0, 10000]) and dead
+// (latency=0 or >10000) rows from the most-recent test run.
+//
+// Unlike LoadResults, returns no error when the DB is empty — pipeline
+// checkpoint loops call this before stage 2 has any data.
+func LoadAllResults(ctx context.Context, dbPath string) (alive, dead []Result, err error) {
 	db, err := sql.Open("sqlite", dbPath+"?mode=ro&_busy_timeout=5000")
 	if err != nil {
-		return nil, fmt.Errorf("open %s: %w", dbPath, err)
+		return nil, nil, fmt.Errorf("open %s: %w", dbPath, err)
 	}
 	defer db.Close()
 
 	if err := db.PingContext(ctx); err != nil {
-		return nil, fmt.Errorf("ping %s: %w", dbPath, err)
+		return nil, nil, fmt.Errorf("ping %s: %w", dbPath, err)
 	}
 
 	tables, err := listTables(ctx, db)
 	if err != nil {
-		return nil, err
+		return nil, nil, err
 	}
-	slog.Debug("xray-knife db tables", "tables", tables)
-
-	resultsTable, err := pickResultsTable(tables)
-	if err != nil {
-		return nil, err
+	resultsTable, terr := pickResultsTable(tables)
+	if terr != nil {
+		// No results table yet → empty, not an error.
+		slog.Debug("LoadAllResults: no results table yet", "tables", tables)
+		return nil, nil, nil
 	}
-	slog.Debug("results table", "name", resultsTable)
 
 	cols, err := tableColumns(ctx, db, resultsTable)
 	if err != nil {
-		return nil, err
+		return nil, nil, err
 	}
-	slog.Debug("results columns", "table", resultsTable, "columns", cols)
+	mapping, merr := mapColumns(cols)
+	if merr != nil {
+		return nil, nil, merr
+	}
 
-	mapping, err := mapColumns(cols)
+	rows, err := queryAllResults(ctx, db, resultsTable, mapping)
 	if err != nil {
-		return nil, err
+		return nil, nil, err
+	}
+	for _, r := range rows {
+		if r.LatencyMs > 0 && r.LatencyMs <= 10000 {
+			alive = append(alive, r)
+		} else {
+			dead = append(dead, r)
+		}
+	}
+	return alive, dead, nil
+}
+
+// queryAllResults returns every row from the most-recent run regardless of
+// alive/dead status.
+func queryAllResults(ctx context.Context, db *sql.DB, table string, m columnMapping) ([]Result, error) {
+	cols := []string{quote(m.Link), quote(m.Latency), quote(m.Speed)}
+	if m.Country != "" {
+		cols = append(cols, quote(m.Country))
+	} else {
+		cols = append(cols, "''")
+	}
+	q := fmt.Sprintf("SELECT %s FROM %s", strings.Join(cols, ", "), quote(table))
+	if m.RunID != "" {
+		q += fmt.Sprintf(" WHERE %s = (SELECT MAX(%s) FROM %s)", quote(m.RunID), quote(m.RunID), quote(table))
 	}
 
-	return queryResults(ctx, db, resultsTable, mapping)
+	r, err := db.QueryContext(ctx, q)
+	if err != nil {
+		return nil, fmt.Errorf("query %s: %w", table, err)
+	}
+	defer r.Close()
+
+	var out []Result
+	for r.Next() {
+		var (
+			link    sql.NullString
+			latency sql.NullInt64
+			speed   sql.NullFloat64
+			country sql.NullString
+		)
+		if err := r.Scan(&link, &latency, &speed, &country); err != nil {
+			return nil, err
+		}
+		out = append(out, Result{
+			Link:      link.String,
+			LatencyMs: int(latency.Int64),
+			SpeedMbps: speed.Float64,
+			Country:   strings.ToUpper(strings.TrimSpace(country.String)),
+		})
+	}
+	return out, r.Err()
 }
 
 // listTables returns the names of all user tables in the DB.
