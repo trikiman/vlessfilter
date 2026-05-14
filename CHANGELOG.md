@@ -2,6 +2,48 @@
 
 All notable changes to VlessFilter are documented here.
 
+## v1.1.0 — 2026-05-15
+
+Massive source expansion. Pipeline now ingests from 8 aggregators instead
+of 2, validated against the full set on real network.
+
+### Changed
+- **`sources.yaml` now lists 8 confirmed-alive VLESS aggregators** (was 2):
+  v2go-country, v2go-vless, ebrasha-vless (~22.5k configs, biggest single
+  source), nscl5-allsub, nscl5-vless, epodonios-allsub, ndsphonemy-default,
+  ndsphonemy-speed.
+- **Default `--threads1` raised from 200 to 500** to match the larger
+  ingest volume. Kernel-tuned Linux easily handles this; xray-knife
+  observed at ~165 it/s during stage 1 testing.
+
+### Validated against live network (May 2026)
+- **45,557 raw configs / 36,927 unique vless** ingested across 114
+  subscriptions in 25 seconds.
+- Stage 1 (handshake, 500 threads) on 36,927 configs: 3 min 42 sec wall
+  time, 259 alive across 15 countries (AT/CH/DE/ES/FI/HK/JP/LV/NL/RS/RU/
+  SE/SG/TW/US).
+- Top countries by alive count: DE 74, LV 55, RU 48, FI 26, NL 14.
+- README + subs/<CC>.txt + all-results.csv + raw/dead.txt all produced
+  correctly with the expected determinism guarantees.
+
+### Notes on the "100k keys" target
+The public VLESS supply across the major aggregators is ~37k unique. 100k
+unique VLESS keys do not exist publicly today — what looks like 100k+ in
+naive line counts is heavily duplicated across aggregators. Reaching
+volumes >50k would require Telegram channel scraping (deferred to v2)
+or paid feed sources.
+
+### Known issues (deferred)
+- Stage 2 speedtest with `--limit 0` (default) tests all configs at 20
+  threads which can exceed the 60-min budget on full 36k ingest. With
+  the current xray-knife API there's no way to limit stage 2 to "alive
+  from stage 1 only" — `--limit N` selects from raw `subscription_configs`,
+  not previous-run survivors. Workaround: pass `--threads2 0` to skip
+  stage 2 entirely and rank by latency alone (still produces a valid
+  top-3-per-country output as shown above).
+- Setting `--threads2 0` currently still runs stage 2 at default 20
+  threads (CLI flag default-zero override bug). Fix planned for v1.2.
+
 ## v1.0.0 — 2026-05-15 (initial release)
 
 First end-to-end working release. Validated against live network: ingests

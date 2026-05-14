@@ -1,21 +1,69 @@
 # VlessFilter sources — list of subscription URLs to pull VLESS keys from.
 # Edit this file to add/remove sources.
+#
+# Confirmed reach (May 2026): ~37,600 unique VLESS configs across the 7
+# aggregators below. The user-facing goal of "100k keys" is bounded by the
+# public supply: ingestion volumes are aggregator-overlap-deduped totals,
+# not raw line counts (raw is ~41k with overlap).
+#
+# To add a source, copy the schema below. xray-knife auto-detects base64
+# vs plain. Set kind: country-template to expand `{CC}` against the
+# country list (or DefaultCountries when countries: []).
 
 # Country codes for country-template sources. Empty list = use the built-in
-# default of ~100 ISO codes that v2go is known to publish files for.
+# default of ~107 ISO codes that v2go is known to publish files for.
 countries: []
 
 sources:
+  # === Country-split aggregators (templated, 1 URL → N files) ===
+
   # v2go's per-country output, refreshed every 6 hours upstream.
-  # Verified working: returns 1k+ vless configs per country.
+  # Provides ~50-2000 vless configs per country file.
   - name: v2go-country
     url: https://raw.githubusercontent.com/Danialsamadi/v2go/main/Splitted-By-Country/{CC}.txt
     kind: country-template
     enabled: true
 
-  # v2go's protocol-only output (vless-only across all countries) as a backup
-  # in case per-country files are unavailable.
+  # === Bulk per-protocol aggregators (single URL each) ===
+
+  # Largest single source — ~22,500 plain vless lines, refreshed daily.
+  - name: ebrasha-vless
+    url: https://raw.githubusercontent.com/ebrasha/free-v2ray-public-list/main/vless_configs.txt
+    kind: plain
+    enabled: true
+
+  # v2go's protocol-only output (vless across all countries).
+  # Base64-encoded, ~6,100 vless lines.
   - name: v2go-vless
     url: https://raw.githubusercontent.com/Danialsamadi/v2go/main/Splitted-By-Protocol/vless.txt
+    kind: plain
+    enabled: true
+
+  # nscl5/4 — Telegram-channel scraper, ~5,800 plain vless in the all-sub.
+  - name: nscl5-allsub
+    url: https://raw.githubusercontent.com/nscl5/4/main/All_Configs_Sub.txt
+    kind: plain
+    enabled: true
+
+  # nscl5/4 protocol-only (some overlap with allsub but base64 catches more).
+  - name: nscl5-vless
+    url: https://raw.githubusercontent.com/nscl5/4/main/Splitted-By-Protocol/vless.txt
+    kind: plain
+    enabled: true
+
+  # Epodonios — multi-protocol all-in-one, ~2,800 vless after filter.
+  - name: epodonios-allsub
+    url: https://raw.githubusercontent.com/Epodonios/v2ray-configs/main/All_Configs_Sub.txt
+    kind: plain
+    enabled: true
+
+  # ndsphonemy — speed-tested subset, smaller but historically higher quality.
+  - name: ndsphonemy-default
+    url: https://raw.githubusercontent.com/ndsphonemy/proxy-sub/main/default.txt
+    kind: plain
+    enabled: true
+
+  - name: ndsphonemy-speed
+    url: https://raw.githubusercontent.com/ndsphonemy/proxy-sub/main/speed.txt
     kind: plain
     enabled: true
