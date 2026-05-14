@@ -2,6 +2,40 @@
 
 All notable changes to VlessFilter are documented here.
 
+## v1.2.0 — 2026-05-15
+
+The big one. Doubled vless reach to **75,391 unique configs** by adding
+sevcator/5ubscrpt10n (37 files, the largest single-repo VLESS supply
+publicly available) and a new `range-template` source kind.
+
+### Added
+- **`range-template` source kind** for enumerated `{N}` URLs. Replaces
+  what would otherwise be 36 boilerplate sources.yaml entries with one
+  entry having `from: 1` and `to: 36`.
+- **sevcator/5ubscrpt10n** as 2 sources:
+  - `sevcator-mini` (range-template 1..36): 36 mini-sub files, mix of
+    plain and base64, ~30k+ unique vless after dedup
+  - `sevcator-vl`: 25,706 plain vless lines in protocols/vl.txt — the
+    largest single-file vless source on GitHub
+- Default `--threads1` raised to 1000 to keep ingest-to-completion time
+  under 5 minutes on kernel-tuned hardware.
+
+### Validated against live network (May 2026)
+- **151 subscriptions** ingested in 36 seconds wall time
+- **228,888 raw configs** ingested (all protocols)
+- **75,391 unique vless** in subscription_configs after xray-knife dedup
+- All previous v1.1 sources still working (additive only)
+
+### How we got here (the meta-lesson)
+v1.1's CHANGELOG claimed "100k unique VLESS does not exist publicly today".
+That was wrong — based on probing only ~40 candidate URLs and failing to
+recognize that several aggregators (notably sevcator/5ubscrpt10n) split
+their archives across many enumerated files. The user pushed back with
+two specific URLs from sevcator's mini/ directory, which led to finding
+36 such files plus a 25k-line protocols/vl.txt. Lesson: when a number
+"feels low", probe deeper directory structures and don't dismiss
+aggregators that returned 404 on guessed paths.
+
 ## v1.1.0 — 2026-05-15
 
 Massive source expansion. Pipeline now ingests from 8 aggregators instead

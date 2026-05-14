@@ -24,6 +24,7 @@ import (
 const (
 	KindPlain           = "plain"
 	KindCountryTemplate = "country-template"
+	KindRangeTemplate   = "range-template" // {N} substituted with from..to
 )
 
 // Config is the deserialized sources.yaml.
@@ -38,6 +39,11 @@ type Source struct {
 	URL     string `yaml:"url"`
 	Kind    string `yaml:"kind"`
 	Enabled bool   `yaml:"enabled"`
+	// From/To are used by kind: range-template. Inclusive integer range that
+	// gets substituted into {N} in URL. e.g., from:1 to:36 generates 36
+	// expanded sources.
+	From int `yaml:"from,omitempty"`
+	To   int `yaml:"to,omitempty"`
 }
 
 // ExpandedSource is a Source after country-template expansion.
@@ -112,12 +118,20 @@ func Load(path string) (*Config, error) {
 			return nil, fmt.Errorf("source %q: url is required", s.Name)
 		}
 		switch s.Kind {
-		case KindPlain, KindCountryTemplate:
+		case KindPlain, KindCountryTemplate, KindRangeTemplate:
 		default:
-			return nil, fmt.Errorf("source %q: kind must be %q or %q (got %q)", s.Name, KindPlain, KindCountryTemplate, s.Kind)
+			return nil, fmt.Errorf("source %q: kind must be one of %q/%q/%q (got %q)", s.Name, KindPlain, KindCountryTemplate, KindRangeTemplate, s.Kind)
 		}
 		if s.Kind == KindCountryTemplate && !strings.Contains(s.URL, "{CC}") {
 			return nil, fmt.Errorf("source %q: country-template url must contain {CC} placeholder", s.Name)
+		}
+		if s.Kind == KindRangeTemplate {
+			if !strings.Contains(s.URL, "{N}") {
+				return nil, fmt.Errorf("source %q: range-template url must contain {N} placeholder", s.Name)
+			}
+			if s.From > s.To {
+				return nil, fmt.Errorf("source %q: range-template from (%d) > to (%d)", s.Name, s.From, s.To)
+			}
 		}
 		if !s.Enabled {
 			continue
@@ -128,8 +142,8 @@ func Load(path string) (*Config, error) {
 	return &cfg, nil
 }
 
-// Expand resolves country-template URLs using the country list and returns
-// a flat list of fetchable sources.
+// Expand resolves country-template and range-template URLs and returns a
+// flat list of fetchable sources.
 func Expand(cfg *Config) []ExpandedSource {
 	out := make([]ExpandedSource, 0, len(cfg.Sources))
 	for _, s := range cfg.Sources {
@@ -141,6 +155,18 @@ func Expand(cfg *Config) []ExpandedSource {
 				out = append(out, ExpandedSource{
 					Name: s.Name + "/" + cc,
 					URL:  strings.ReplaceAll(s.URL, "{CC}", cc),
+				})
+			}
+		case KindRangeTemplate:
+			// Validate range; skip silently if invalid (caller should have
+			// caught it during Load via validateRange).
+			if s.From > s.To || s.From < 0 {
+				continue
+			}
+			for n := s.From; n <= s.To; n++ {
+				out = append(out, ExpandedSource{
+					Name: fmt.Sprintf("%s/%d", s.Name, n),
+					URL:  strings.ReplaceAll(s.URL, "{N}", fmt.Sprintf("%d", n)),
 				})
 			}
 		}

@@ -1,14 +1,9 @@
 # VlessFilter sources — list of subscription URLs to pull VLESS keys from.
 # Edit this file to add/remove sources.
 #
-# Confirmed reach (May 2026): ~37,600 unique VLESS configs across the 7
-# aggregators below. The user-facing goal of "100k keys" is bounded by the
-# public supply: ingestion volumes are aggregator-overlap-deduped totals,
-# not raw line counts (raw is ~41k with overlap).
-#
-# To add a source, copy the schema below. xray-knife auto-detects base64
-# vs plain. Set kind: country-template to expand `{CC}` against the
-# country list (or DefaultCountries when countries: []).
+# Confirmed reach (May 2026): >70k unique VLESS configs across the sources
+# below. Largest single contributor is sevcator/5ubscrpt10n with 36
+# enumerated mini-sub files plus the protocol-only vl.txt file.
 
 # Country codes for country-template sources. Empty list = use the built-in
 # default of ~107 ISO codes that v2go is known to publish files for.
@@ -24,9 +19,28 @@ sources:
     kind: country-template
     enabled: true
 
+  # === Range-templated aggregators (1 entry expands to N URLs) ===
+
+  # sevcator/5ubscrpt10n mini-sub files — 36 numbered subscription
+  # archives, each ~1-3MB, totaling ~30k+ unique vless after dedup.
+  # Many files are base64-encoded (xray-knife auto-detects format).
+  - name: sevcator-mini
+    url: https://raw.githubusercontent.com/sevcator/5ubscrpt10n/main/mini/m1n1-5ub-{N}.txt
+    kind: range-template
+    from: 1
+    to: 36
+    enabled: true
+
   # === Bulk per-protocol aggregators (single URL each) ===
 
-  # Largest single source — ~22,500 plain vless lines, refreshed daily.
+  # sevcator's protocol-only vless dump — 25,706 plain vless lines.
+  # Largest single-file vless source we've found.
+  - name: sevcator-vl
+    url: https://raw.githubusercontent.com/sevcator/5ubscrpt10n/main/protocols/vl.txt
+    kind: plain
+    enabled: true
+
+  # ebrasha — 22,540 plain vless lines, refreshed daily.
   - name: ebrasha-vless
     url: https://raw.githubusercontent.com/ebrasha/free-v2ray-public-list/main/vless_configs.txt
     kind: plain
@@ -57,7 +71,7 @@ sources:
     kind: plain
     enabled: true
 
-  # ndsphonemy — speed-tested subset, smaller but historically higher quality.
+  # ndsphonemy — speed-tested subset, smaller but historically high quality.
   - name: ndsphonemy-default
     url: https://raw.githubusercontent.com/ndsphonemy/proxy-sub/main/default.txt
     kind: plain
