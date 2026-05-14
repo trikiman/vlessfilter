@@ -1,0 +1,23 @@
+# VlessFilter sources — list of subscription URLs to pull VLESS keys from.
+# Edit this file to add/remove sources. Phase 1 ships with 2 sources for fast smoke test.
+# Phase 2 expands the default country list and adds 2-3 more aggregator sources.
+
+# Country codes to expand for country-template sources. Use 2-letter ISO codes.
+countries:
+  - US
+  - DE
+
+sources:
+  # v2go's per-country output, refreshed every 6 hours upstream
+  - name: v2go-country
+    url: https://raw.githubusercontent.com/Danialsamadi/v2go/main/Splitted-By-Country/{CC}.txt
+    kind: country-template
+    enabled: true
+
+  # mahdibland's protocol-split feed (vless only) — alternative to barry-far
+  # whose Splitted-By-Protocol path moved upstream. If this 404s, set enabled: false
+  # or replace with another aggregator from .planning/phases/01-mvp-end-to-end/01-RESEARCH.md.
+  - name: mahdibland-vless
+    url: https://raw.githubusercontent.com/mahdibland/V2RayAggregator/master/sub/sub_merge_vless.txt
+    kind: plain
+    enabled: true
