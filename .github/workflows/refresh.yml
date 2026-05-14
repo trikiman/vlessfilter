@@ -1,0 +1,64 @@
+name: Refresh VLESS keys
+
+# Scheduled regeneration of subs/<CC>.txt + README.md.
+# Runs every 6 hours; can also be triggered manually from the Actions tab.
+
+on:
+  schedule:
+    # 00:00, 06:00, 12:00, 18:00 UTC
+    - cron: "0 */6 * * *"
+  workflow_dispatch: {}
+
+# Required so the GITHUB_TOKEN can push results back to the repo.
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60   # match the project's wall-clock budget
+    env:
+      VLESSFILTER_QUIET: "1"
+      # Use a dedicated PAT (VLESSFILTER_TOKEN) if set, else fall back to the
+      # default GITHUB_TOKEN. PATs allow cross-repo pushes; GITHUB_TOKEN is
+      # scoped to this repo only.
+      GH_TOKEN: ${{ secrets.VLESSFILTER_TOKEN || secrets.GITHUB_TOKEN }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          # Persist credentials so the binary can git push using GH_TOKEN.
+          persist-credentials: true
+          fetch-depth: 0
+
+      - name: Setup Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: "1.22"
+          cache: true
+
+      - name: Build vlessfilter
+        run: go build -o bin/vlessfilter ./cmd/vlessfilter
+
+      - name: Run pipeline (full, with git push)
+        run: |
+          ./bin/vlessfilter run \
+            --sources sources.yaml \
+            --out . \
+            --threads1 200 \
+            --threads2 20 \
+            --budget-min 50 \
+            --checkpoint-min 5 \
+            --git-push \
+            --git-branch ${{ github.ref_name }}
+
+      - name: Upload diagnostics as artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: vlessfilter-diagnostics
+          path: |
+            all-results.csv
+            raw/dead.txt
+          if-no-files-found: ignore
+          retention-days: 7
