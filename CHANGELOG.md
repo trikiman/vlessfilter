@@ -2,6 +2,46 @@
 
 All notable changes to VlessFilter are documented here.
 
+## v1.3.0 — 2026-05-15
+
+**100k target crossed: 113,031 unique VLESS configs ingested.**
+
+After v1.2 doubled the reach to 75k, drilling deeper into the
+aggregator dirs found 4 more high-volume sources, pushing the total
+past the user's 100k target.
+
+### Added sources
+- **kort0881/vpn-aggregator/out/by_type/vless.txt** — 26,576 plain
+  vless. Largest single-file vless source in the project (bigger than
+  sevcator's protocols/vl.txt).
+- **cybersecplayground/V2Hive/by-protocol/all_vless.txt** — 11,994 plain
+  vless. Multi-protocol aggregator with structured by-protocol layout.
+- **ninjastrikers/nexus-nodes/configs/all.txt** — 1,385 base64 vless.
+  Active aggregator updated within hours of probe.
+- **YawStar/Proxy-Hunter/configs/proxy_configs.txt** — 419 plain vless.
+  Telegram + base64 + SSCONF aggregator.
+
+### Validated against live network
+- **159 subscriptions** ingested (~36s wall time)
+- **113,031 unique vless configs** in DB after dedup ✅ exceeds 100k
+- Stage 1 at 1000 threads on the full 113k pool: pipeline runs to
+  completion within budget
+- **1,164 alive keys across 32 countries**:
+  - Sub-200ms latency to RU (58), FI (91), DE (123), EE (139), CH (154),
+    GB (159), PL (171), ES (174), NL (182), LV (183)
+  - Mid-range: AT (218), HU (267), IE (311), KZ (341), CZ (369), BG (368)
+  - Asia/Oceania: HK (747), JP (623), SG, KR (2820), TW, ID (894), AU (1359)
+- Subscription files written for all 32 countries (`subs/<CC>.txt`),
+  README.md generated with country flags
+
+### Method that finally got us past 100k
+Drilling structured directories instead of guessing single-file paths:
+- API list `/contents/<dir>` → see actual filenames
+- Each aggregator has its own naming scheme (e.g., `all_vless.txt`,
+  `out/by_type/vless.txt`, `configs/all.txt`)
+- The 30+ "DEAD" candidates from earlier rounds were all path-guess
+  failures, not actually missing data
+
 ## v1.2.0 — 2026-05-15
 
 The big one. Doubled vless reach to **75,391 unique configs** by adding

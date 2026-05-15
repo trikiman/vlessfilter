@@ -81,3 +81,28 @@ sources:
     url: https://raw.githubusercontent.com/ndsphonemy/proxy-sub/main/speed.txt
     kind: plain
     enabled: true
+
+  # kort0881/vpn-aggregator — EU-focused aggregator, 26,576 plain vless.
+  # Largest "single file" vless source after sevcator/protocols/vl.txt.
+  - name: kort-vless
+    url: https://raw.githubusercontent.com/kort0881/vpn-aggregator/main/out/by_type/vless.txt
+    kind: plain
+    enabled: true
+
+  # cybersecplayground/V2Hive — multi-protocol aggregator, ~12k vless.
+  - name: v2hive-vless
+    url: https://raw.githubusercontent.com/cybersecplayground/V2Hive/main/by-protocol/all_vless.txt
+    kind: plain
+    enabled: true
+
+  # ninjastrikers/nexus-nodes — recently updated multi-protocol aggregator.
+  - name: ninjastrikers-all
+    url: https://raw.githubusercontent.com/ninjastrikers/nexus-nodes/main/configs/all.txt
+    kind: plain
+    enabled: true
+
+  # YawStar/Proxy-Hunter — Telegram + base64 + SSCONF aggregator (small).
+  - name: yawstar-all
+    url: https://raw.githubusercontent.com/YawStar/Proxy-Hunter/main/configs/proxy_configs.txt
+    kind: plain
+    enabled: true
