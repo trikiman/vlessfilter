@@ -37,9 +37,22 @@ func setIfMissing(ctx context.Context, repoDir, key, value string) error {
 
 // CommitAll stages all changes and commits with msg.
 // Returns committed=false (without error) when there's nothing to commit.
+//
+// Output files (subs/, all-results.csv, raw/, README.md) are force-added
+// even if .gitignore lists them — that's the whole point of --git-push,
+// and the .gitignore entries exist to keep dev working trees clean during
+// local runs without --git-push.
 func CommitAll(ctx context.Context, repoDir, msg string) (committed bool, err error) {
+	// Stage all non-ignored changes first (sources.yaml, code edits, etc.)
 	if _, err := runIn(ctx, repoDir, "add", "-A"); err != nil {
-		return false, fmt.Errorf("git add: %w", err)
+		return false, fmt.Errorf("git add -A: %w", err)
+	}
+	// Then force-add the output files even if .gitignore would skip them.
+	// Use -f and ignore errors: if a path doesn't exist for this run (e.g.,
+	// stage select didn't produce a country file because no alives), git add
+	// errors out. We tolerate that.
+	for _, path := range []string{"subs", "README.md", "all-results.csv", "raw"} {
+		_, _ = runIn(ctx, repoDir, "add", "-f", "--", path)
 	}
 	// `git diff --cached --quiet` exits 0 when there are no staged changes.
 	if _, qerr := runIn(ctx, repoDir, "diff", "--cached", "--quiet"); qerr == nil {
