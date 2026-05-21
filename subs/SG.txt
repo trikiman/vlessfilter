@@ -1,3 +1,3 @@
-vless://e4e7866d-920b-4a53-a8e2-6ae9b2a42fc2@8.219.213.195:10032?type=tcp&source_name=etoneya_1&provider_id=etoneya_1
-vless://a7444b2b-20fb-461f-9840-63e5c8c7d883@104.16.158.162:80?ed=2048&eh=Sec-WebSocket-Protocol&encryption=none&host=mute-violet-c674.poviy66273.workers.dev&path=/&security=none&type=ws#⛰️16@oneclickvpnkeys
-vless://1de37726-744b-46e1-9101-c926b3402e82@104.17.72.206:80?encryption=none&host=v2.v2configlab.workers.dev&security=none&type=ws#v2go%20%7C%20VLESS%20%7C%20438
+vless://e4e7866d-920b-4a53-a8e2-6ae9b2a42fc2@8.219.213.195:10032?type=tcp&source_name=etoneya_1&provider_id=etoneya_1#%F0%9F%87%B8%F0%9F%87%AC%20SG
+vless://a7444b2b-20fb-461f-9840-63e5c8c7d883@104.16.158.162:80?ed=2048&eh=Sec-WebSocket-Protocol&encryption=none&host=mute-violet-c674.poviy66273.workers.dev&path=/&security=none&type=ws#%F0%9F%87%B8%F0%9F%87%AC%20SG
+vless://1de37726-744b-46e1-9101-c926b3402e82@104.17.72.206:80?encryption=none&host=v2.v2configlab.workers.dev&security=none&type=ws#%F0%9F%87%B8%F0%9F%87%AC%20SG

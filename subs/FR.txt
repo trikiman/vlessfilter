@@ -1,3 +1,3 @@
-vless://a3b07a39-dbbc-Fade-b5de-a5797996c246@195.209.88.180:443?type=ws&security=tls&fp=qq&sni=s28233.cdn.ngenix.net&host=s28233.cdn.ngenix.net&alpn=h2,http/1.1&source_name=etoneya_1&provider_id=etoneya_1
-vless://a3b07a39-dbbc-Fade-b5de-a5797996c246@195.209.88.216:443?type=ws&security=tls&fp=qq&sni=s28233.cdn.ngenix.net&host=s28233.cdn.ngenix.net&alpn=h2,http/1.1&source_name=etoneya_1&provider_id=etoneya_1
-vless://cdec8542-a21f-4377-9da3-ea60bb6d3a30@104.18.12.229:2052?encryption=none&host=chosenflyesqt-q3y28ipf-v2.chosen-fly-esqt.workers.dev&security=none&type=ws#🚀 @LetsGetVPN @CyberSecPlayground | 🌍 🇺🇸 US
+vless://a3b07a39-dbbc-Fade-b5de-a5797996c246@195.209.88.180:443?type=ws&security=tls&fp=qq&sni=s28233.cdn.ngenix.net&host=s28233.cdn.ngenix.net&alpn=h2,http/1.1&source_name=etoneya_1&provider_id=etoneya_1#%F0%9F%87%AB%F0%9F%87%B7%20FR
+vless://a3b07a39-dbbc-Fade-b5de-a5797996c246@195.209.88.216:443?type=ws&security=tls&fp=qq&sni=s28233.cdn.ngenix.net&host=s28233.cdn.ngenix.net&alpn=h2,http/1.1&source_name=etoneya_1&provider_id=etoneya_1#%F0%9F%87%AB%F0%9F%87%B7%20FR
+vless://cdec8542-a21f-4377-9da3-ea60bb6d3a30@104.18.12.229:2052?encryption=none&host=chosenflyesqt-q3y28ipf-v2.chosen-fly-esqt.workers.dev&security=none&type=ws#%F0%9F%87%AB%F0%9F%87%B7%20FR
