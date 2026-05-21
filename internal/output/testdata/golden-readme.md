@@ -4,13 +4,19 @@ Auto-curated top 3 fastest VLESS keys per country, refreshed automatically.
 
 ## How to use
 
-Pick a country below and paste the subscription URL into your VLESS client (Hiddify Next, v2rayN, Streisand, NekoBox, etc.):
+**Single subscription URL covering every country** — paste this into your VLESS client (Hiddify Next, v2rayN, Streisand, NekoBox, etc.):
+
+```
+https://raw.githubusercontent.com/trikiman/vlessfilter/main/subs/all.txt
+```
+
+Or pick a specific country:
 
 ```
 https://raw.githubusercontent.com/trikiman/vlessfilter/main/subs/<CC>.txt
 ```
 
-Replace `<CC>` with the 2-letter country code from the table.
+Replace `<CC>` with the 2-letter country code from the table. Each entry's name shows a flag emoji and country code so you can see at a glance which key you're connecting through.
 
 ## Top 3 per country
 

@@ -13,6 +13,44 @@ import (
 
 var update = flag.Bool("update", false, "update golden files")
 
+func TestRewriteRemark(t *testing.T) {
+	cases := []struct {
+		name, link, cc, want string
+	}{
+		{
+			name: "no fragment, basic vless",
+			link: "vless://abc@example.com:443",
+			cc:   "DE",
+			want: "vless://abc@example.com:443#%F0%9F%87%A9%F0%9F%87%AA%20DE",
+		},
+		{
+			name: "existing fragment replaced",
+			link: "vless://abc@example.com:443?security=tls#OldName",
+			cc:   "FR",
+			want: "vless://abc@example.com:443?security=tls#%F0%9F%87%AB%F0%9F%87%B7%20FR",
+		},
+		{
+			name: "lowercase CC normalized to upper",
+			link: "vless://x@y.com:443",
+			cc:   "jp",
+			want: "vless://x@y.com:443#%F0%9F%87%AF%F0%9F%87%B5%20JP",
+		},
+		{
+			name: "unparseable input returned as-is",
+			link: "not a url at all !!! ::: ???",
+			cc:   "US",
+			want: "not a url at all !!! ::: ???",
+		},
+	}
+	for _, c := range cases {
+		t.Run(c.name, func(t *testing.T) {
+			if got := rewriteRemark(c.link, c.cc); got != c.want {
+				t.Errorf("rewriteRemark(%q, %q)\ngot:  %q\nwant: %q", c.link, c.cc, got, c.want)
+			}
+		})
+	}
+}
+
 func TestFlagEmoji(t *testing.T) {
 	cases := []struct{ in, want string }{
 		{"US", "🇺🇸"},
@@ -61,9 +99,36 @@ func TestWrite_GoldenReadme(t *testing.T) {
 	if err != nil {
 		t.Fatalf("read US.txt: %v", err)
 	}
-	wantUS := "vless://us-1@example.com:443\nvless://us-2@example.com:443\nvless://us-3@example.com:443\n"
+	// Expect the rewritten fragment "<flag> US" — URL-encoded by url.URL.String().
+	// 🇺🇸 is U+1F1FA U+1F1F8, encoded as %F0%9F%87%BA%F0%9F%87%B8.
+	wantUS := "vless://us-1@example.com:443#%F0%9F%87%BA%F0%9F%87%B8%20US\n" +
+		"vless://us-2@example.com:443#%F0%9F%87%BA%F0%9F%87%B8%20US\n" +
+		"vless://us-3@example.com:443#%F0%9F%87%BA%F0%9F%87%B8%20US\n"
 	if string(usTxt) != wantUS {
-		t.Errorf("US.txt mismatch:\n%s", usTxt)
+		t.Errorf("US.txt mismatch:\ngot:\n%s\nwant:\n%s", usTxt, wantUS)
+	}
+
+	// subs/all.txt must contain DE entries first (alphabetical), then US.
+	allTxt, err := os.ReadFile(filepath.Join(tmp, "subs", "all.txt"))
+	if err != nil {
+		t.Fatalf("read all.txt: %v", err)
+	}
+	allStr := string(allTxt)
+	if !strings.Contains(allStr, "vless://de-1@example.com:443#%F0%9F%87%A9%F0%9F%87%AA%20DE") {
+		t.Errorf("all.txt missing DE-flagged entry; got:\n%s", allStr)
+	}
+	if !strings.Contains(allStr, "vless://us-1@example.com:443#%F0%9F%87%BA%F0%9F%87%B8%20US") {
+		t.Errorf("all.txt missing US-flagged entry; got:\n%s", allStr)
+	}
+	// 6 lines (3 DE + 3 US) + trailing newline.
+	if lines := strings.Count(allStr, "\n"); lines != 6 {
+		t.Errorf("all.txt expected 6 lines, got %d:\n%s", lines, allStr)
+	}
+	// DE rows must come before US rows (alphabetical).
+	dePos := strings.Index(allStr, "de-1")
+	usPos := strings.Index(allStr, "us-1")
+	if dePos < 0 || usPos < 0 || dePos > usPos {
+		t.Errorf("all.txt order wrong: DE at %d, US at %d", dePos, usPos)
 	}
 
 	gotReadme, err := os.ReadFile(filepath.Join(tmp, "README.md"))

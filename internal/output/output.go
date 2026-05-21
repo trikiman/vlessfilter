@@ -9,6 +9,7 @@ package output
 import (
 	"encoding/csv"
 	"fmt"
+	"net/url"
 	"os"
 	"path/filepath"
 	"sort"
@@ -32,28 +33,69 @@ func WriteAll(outDir string, selections []selector.CountrySelection, allTested, 
 	return WriteDiagnostics(outDir, allTested, dead)
 }
 
-// Write produces subs/<CC>.txt files and README.md inside outDir.
+// Write produces subs/<CC>.txt files, subs/all.txt, and README.md inside outDir.
+//
+// Each VLESS URI's `#fragment` (the human-readable remark shown by client UIs)
+// is rewritten to `<flag-emoji> <CC>` so users see country flags next to each
+// entry in their VLESS client. The original remark from the upstream
+// subscription is replaced — clients display whatever's in the fragment.
+//
+// subs/all.txt aggregates the curated top-N from every country in alphabetical
+// order. One subscription URL serves every country at once.
 func Write(outDir string, selections []selector.CountrySelection, generatedAt time.Time) error {
 	subsDir := filepath.Join(outDir, "subs")
 	if err := os.MkdirAll(subsDir, 0o755); err != nil {
 		return fmt.Errorf("mkdir %s: %w", subsDir, err)
 	}
 
-	for _, cs := range selections {
+	// Sort once so per-country files AND all.txt are deterministic.
+	sortedSel := make([]selector.CountrySelection, len(selections))
+	copy(sortedSel, selections)
+	sort.SliceStable(sortedSel, func(i, j int) bool {
+		return sortedSel[i].Country < sortedSel[j].Country
+	})
+
+	var allBuf strings.Builder
+	for _, cs := range sortedSel {
 		path := filepath.Join(subsDir, cs.Country+".txt")
 		var b strings.Builder
 		for _, r := range cs.Top {
-			b.WriteString(r.Link)
+			rewritten := rewriteRemark(r.Link, cs.Country)
+			b.WriteString(rewritten)
 			b.WriteByte('\n')
+			allBuf.WriteString(rewritten)
+			allBuf.WriteByte('\n')
 		}
 		if err := os.WriteFile(path, []byte(b.String()), 0o644); err != nil {
 			return fmt.Errorf("write %s: %w", path, err)
 		}
 	}
 
-	readme := buildReadme(selections, generatedAt)
+	// Combined "all countries" subscription file. One URL → every country.
+	allPath := filepath.Join(subsDir, "all.txt")
+	if err := os.WriteFile(allPath, []byte(allBuf.String()), 0o644); err != nil {
+		return fmt.Errorf("write %s: %w", allPath, err)
+	}
+
+	readme := buildReadme(sortedSel, generatedAt)
 	path := filepath.Join(outDir, "README.md")
 	return os.WriteFile(path, []byte(readme), 0o644)
+}
+
+// rewriteRemark replaces (or sets) the URI fragment of a vless:// link with
+// "<flag-emoji> <CC>". The rest of the URI is preserved verbatim.
+//
+// On unparseable input, returns the original link unchanged — better to ship
+// a working key with a bad-looking name than drop it from the output.
+func rewriteRemark(link, cc string) string {
+	u, err := url.Parse(link)
+	if err != nil {
+		return link
+	}
+	flag := flagEmoji(strings.ToUpper(cc))
+	// url.URL.String() URL-encodes the Fragment automatically.
+	u.Fragment = fmt.Sprintf("%s %s", flag, strings.ToUpper(cc))
+	return u.String()
 }
 
 // WriteDiagnostics writes all-results.csv and raw/dead.txt.
@@ -153,9 +195,11 @@ func buildReadme(selections []selector.CountrySelection, generatedAt time.Time) 
 	b.WriteString("# VlessFilter Results\n\n")
 	b.WriteString("Auto-curated top 3 fastest VLESS keys per country, refreshed automatically.\n\n")
 	b.WriteString("## How to use\n\n")
-	b.WriteString("Pick a country below and paste the subscription URL into your VLESS client (Hiddify Next, v2rayN, Streisand, NekoBox, etc.):\n\n")
+	b.WriteString("**Single subscription URL covering every country** — paste this into your VLESS client (Hiddify Next, v2rayN, Streisand, NekoBox, etc.):\n\n")
+	b.WriteString("```\nhttps://raw.githubusercontent.com/trikiman/vlessfilter/main/subs/all.txt\n```\n\n")
+	b.WriteString("Or pick a specific country:\n\n")
 	b.WriteString("```\nhttps://raw.githubusercontent.com/trikiman/vlessfilter/main/subs/<CC>.txt\n```\n\n")
-	b.WriteString("Replace `<CC>` with the 2-letter country code from the table.\n\n")
+	b.WriteString("Replace `<CC>` with the 2-letter country code from the table. Each entry's name shows a flag emoji and country code so you can see at a glance which key you're connecting through.\n\n")
 	b.WriteString("## Top 3 per country\n\n")
 	b.WriteString("| Country | Top latency (ms) | Median speed (Mbps) | Keys |\n")
 	b.WriteString("|---------|------------------|---------------------|------|\n")
