@@ -1,1 +1,2 @@
-vless://623d675e-8748-4881-ac0f-dc1a10b595b1@104.18.5.46:8880?encryption=none&host=vahidasd1988-se08ot-3.vahidasd1988.workers.dev&security=none&type=ws#%F0%9F%87%A7%F0%9F%87%AC%20BG
+vless://2001daf3-5c56-4bef-8ea6-8dd0493c5a4c@89.125.107.54:2053?encryption=none&fp=&pbk=ZHEMPjSWslk6_qD2JNQzd5enUPz8nY9mYRRuM6NkZmU&security=reality&serviceName=grpc&sni=deepl.com&type=grpc#%F0%9F%87%A7%F0%9F%87%AC%20BG
+vless://2001daf3-5c56-4bef-8ea6-8dd0493c5a4c@89.125.107.54:2053?encryption=none&fp=&pbk=ZHEMPjSWslk6_qD2JNQzd5enUPz8nY9mYRRuM6NkZmU&security=reality&serviceName=grpc&sni=deepl.com&type=grpc#%F0%9F%87%A7%F0%9F%87%AC%20BG
