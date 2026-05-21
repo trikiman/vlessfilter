@@ -1,0 +1,1 @@
+vless://ddd7b044-6a87-Fade-8911-e0be8fdbf4a2@212.193.147.245:443?encryption=none&type=ws&security=tls&host=s28233.cdn.ngenix.net&fp=qq&sni=s28233.cdn.ngenix.net&alpn=h2,http/1.1&source_name=sakha_all_valid_proxies&provider_id=sakha_all_valid_proxies#[OpenRay] 🇷🇺 RU-23301
