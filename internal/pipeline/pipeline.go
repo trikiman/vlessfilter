@@ -14,6 +14,7 @@ import (
 	"errors"
 	"fmt"
 	"log/slog"
+	"os"
 	"sync"
 	"time"
 
@@ -186,13 +187,65 @@ func runTest(ctx context.Context, opts Opts) error {
 		t2 = 20
 	}
 
+	// Stage 1: TLS handshake against every config in the DB. Cheap, fast,
+	// filters out the ~99% dead pool.
 	slog.Info("test stage 1: handshake/ping", "threads", t1)
-	if err := opts.Runner.HTTPTest(ctx, xrayknife.HTTPOpts{Speedtest: false, Threads: t1, Protocol: "vless"}); err != nil {
+	if err := opts.Runner.HTTPTest(ctx, xrayknife.HTTPOpts{
+		Speedtest: false,
+		Threads:   t1,
+		Protocol:  "vless",
+		DelayMs:   1000,
+	}); err != nil {
 		return fmt.Errorf("stage 1 (ping): %w", err)
 	}
 
-	slog.Info("test stage 2: speedtest", "threads", t2, "limit", opts.Limit)
-	if err := opts.Runner.HTTPTest(ctx, xrayknife.HTTPOpts{Speedtest: true, Threads: t2, Limit: opts.Limit, Protocol: "vless"}); err != nil {
+	// Skip stage 2 if user explicitly disabled it.
+	if t2 == 0 {
+		slog.Info("stage 2 skipped (Threads2=0)")
+		return nil
+	}
+
+	// Stage 2: speedtest the stage-1 survivors only. We need real HTTP
+	// traffic flowing through each proxy, not just a TLS handshake — many
+	// VLESS endpoints accept handshakes but refuse to forward traffic.
+	//
+	// xray-knife's --from-db doesn't filter to "previous run passed", so we
+	// extract the alive set from the DB ourselves and feed it back via -f.
+	dbPath, err := opts.Runner.DBPath()
+	if err != nil {
+		return fmt.Errorf("stage 2: %w", err)
+	}
+	aliveLinks, err := selector.LoadAliveLinks(ctx, dbPath)
+	if err != nil {
+		return fmt.Errorf("stage 2: load alive: %w", err)
+	}
+	if len(aliveLinks) == 0 {
+		slog.Warn("stage 2 skipped: stage 1 produced 0 alive configs")
+		return nil
+	}
+	tmp, err := os.CreateTemp("", "vlessfilter-alive-*.txt")
+	if err != nil {
+		return fmt.Errorf("stage 2: temp file: %w", err)
+	}
+	defer os.Remove(tmp.Name())
+	for _, link := range aliveLinks {
+		if _, err := fmt.Fprintln(tmp, link); err != nil {
+			tmp.Close()
+			return fmt.Errorf("stage 2: write temp: %w", err)
+		}
+	}
+	if err := tmp.Close(); err != nil {
+		return fmt.Errorf("stage 2: close temp: %w", err)
+	}
+
+	slog.Info("test stage 2: speedtest on stage-1 survivors", "alive", len(aliveLinks), "threads", t2)
+	if err := opts.Runner.HTTPTest(ctx, xrayknife.HTTPOpts{
+		Speedtest: true,
+		Threads:   t2,
+		Protocol:  "vless",
+		File:      tmp.Name(),
+		DelayMs:   5000,
+	}); err != nil {
 		return fmt.Errorf("stage 2 (speedtest): %w", err)
 	}
 	return nil

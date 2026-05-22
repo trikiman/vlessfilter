@@ -95,6 +95,26 @@ func Top3PerCountry(results []Result) []CountrySelection {
 // LoadResults opens the xray-knife SQLite DB, discovers the results table and
 // columns, and returns Result rows from the most recent test run only.
 //
+// LoadAliveLinks returns just the config_link strings for currently-alive
+// configs (latest result per link with status=passed). Used by the pipeline
+// to feed stage 2 (speedtest) only the stage-1 survivors instead of
+// re-testing the whole pool.
+//
+// Returns empty slice (not error) when no alive configs exist.
+func LoadAliveLinks(ctx context.Context, dbPath string) ([]string, error) {
+	alive, _, err := LoadAllResults(ctx, dbPath)
+	if err != nil {
+		return nil, err
+	}
+	out := make([]string, 0, len(alive))
+	for _, r := range alive {
+		if r.Link != "" {
+			out = append(out, r.Link)
+		}
+	}
+	return out, nil
+}
+
 // Filters out rows with LatencyMs == 0 || LatencyMs > 10000 (treated as
 // failed/unmeasurable).
 func LoadResults(ctx context.Context, dbPath string) ([]Result, error) {

@@ -33,6 +33,13 @@ type HTTPOpts struct {
 	Threads   int    // -t flag (0 = let xray-knife pick its default)
 	Limit     int    // --limit flag (0 = no limit)
 	Protocol  string // --protocol flag (default "vless")
+	// File, when non-empty, switches xray-knife from --from-db to -f <File>.
+	// Used for stage 2: read only stage-1 survivors from a temp file so
+	// speedtest validates the alive set instead of re-testing dead configs.
+	File string
+	// DelayMs caps the per-config handshake/HTTP timeout (-d flag, ms).
+	// 0 = let xray-knife use its default (5000 ms).
+	DelayMs int
 }
 
 // Runner abstracts xray-knife so tests can substitute a fake.
@@ -140,13 +147,21 @@ func (r *RealRunner) SubsFetch(ctx context.Context) error {
 	return fmt.Errorf("xray-knife subs fetch: %w", err)
 }
 
-// HTTPTest runs `xray-knife http --from-db --protocol <p> --save-db [--speedtest] [-t N] [--limit N]`.
+// HTTPTest runs `xray-knife http {--from-db|-f file} --protocol <p> --save-db [--speedtest] [-t N] [--limit N] [-d MS]`.
 //
 // IMPORTANT: --save-db is mandatory. Without it xray-knife writes results
 // only to valid.txt; our selector reads from xray-knife.db, so we'd see an
 // empty result set. This was caught during end-to-end smoke testing.
+//
+// When opts.File is set, switches from --from-db to -f <file> mode. Used
+// for stage 2 to validate only stage-1 survivors instead of re-testing dead.
 func (r *RealRunner) HTTPTest(ctx context.Context, opts HTTPOpts) error {
-	args := []string{"http", "--from-db", "--save-db"}
+	args := []string{"http", "--save-db"}
+	if opts.File != "" {
+		args = append(args, "-f", opts.File)
+	} else {
+		args = append(args, "--from-db")
+	}
 	proto := opts.Protocol
 	if proto == "" {
 		proto = "vless"
@@ -161,7 +176,10 @@ func (r *RealRunner) HTTPTest(ctx context.Context, opts HTTPOpts) error {
 	if opts.Limit > 0 {
 		args = append(args, "--limit", fmt.Sprintf("%d", opts.Limit))
 	}
-	slog.Info("xray-knife http", "args", args, "speedtest", opts.Speedtest)
+	if opts.DelayMs > 0 {
+		args = append(args, "-d", fmt.Sprintf("%d", opts.DelayMs))
+	}
+	slog.Info("xray-knife http", "args", args, "speedtest", opts.Speedtest, "from_file", opts.File != "")
 	cmd := exec.CommandContext(ctx, "xray-knife", args...)
 	w := chooseOutputWriter(os.Stderr)
 	cmd.Stdout = w
