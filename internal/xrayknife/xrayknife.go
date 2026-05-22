@@ -40,6 +40,9 @@ type HTTPOpts struct {
 	// DelayMs caps the per-config handshake/HTTP timeout (-d flag, ms).
 	// 0 = let xray-knife use its default (5000 ms).
 	DelayMs int
+	// Retries gives flaky proxies a 2nd/3rd chance (--retries flag).
+	// 0 = single attempt. >0 = N retries on failure.
+	Retries int
 }
 
 // Runner abstracts xray-knife so tests can substitute a fake.
@@ -178,6 +181,9 @@ func (r *RealRunner) HTTPTest(ctx context.Context, opts HTTPOpts) error {
 	}
 	if opts.DelayMs > 0 {
 		args = append(args, "-d", fmt.Sprintf("%d", opts.DelayMs))
+	}
+	if opts.Retries > 0 {
+		args = append(args, "--retries", fmt.Sprintf("%d", opts.Retries))
 	}
 	slog.Info("xray-knife http", "args", args, "speedtest", opts.Speedtest, "from_file", opts.File != "")
 	cmd := exec.CommandContext(ctx, "xray-knife", args...)

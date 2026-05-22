@@ -245,6 +245,7 @@ func runTest(ctx context.Context, opts Opts) error {
 		Protocol:  "vless",
 		File:      tmp.Name(),
 		DelayMs:   5000,
+		Retries:   2,
 	}); err != nil {
 		return fmt.Errorf("stage 2 (speedtest): %w", err)
 	}
