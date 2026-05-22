@@ -18,22 +18,31 @@ func TestRewriteRemark(t *testing.T) {
 		name, link, cc, want string
 	}{
 		{
-			name: "no fragment, basic vless",
+			name: "flag + CC + Russian name",
 			link: "vless://abc@example.com:443",
 			cc:   "DE",
-			want: "vless://abc@example.com:443#%F0%9F%87%A9%F0%9F%87%AA%20DE",
+			// 🇩🇪 = U+1F1E9 U+1F1EA = %F0%9F%87%A9%F0%9F%87%AA, "Германия" = %D0%93%D0%B5%D1%80%D0%BC%D0%B0%D0%BD%D0%B8%D1%8F
+			want: "vless://abc@example.com:443#%F0%9F%87%A9%F0%9F%87%AA%20DE%20%D0%93%D0%B5%D1%80%D0%BC%D0%B0%D0%BD%D0%B8%D1%8F",
 		},
 		{
 			name: "existing fragment replaced",
 			link: "vless://abc@example.com:443?security=tls#OldName",
-			cc:   "FR",
-			want: "vless://abc@example.com:443?security=tls#%F0%9F%87%AB%F0%9F%87%B7%20FR",
+			cc:   "PL",
+			// 🇵🇱 = %F0%9F%87%B5%F0%9F%87%B1, "Польша" = %D0%9F%D0%BE%D0%BB%D1%8C%D1%88%D0%B0
+			want: "vless://abc@example.com:443?security=tls#%F0%9F%87%B5%F0%9F%87%B1%20PL%20%D0%9F%D0%BE%D0%BB%D1%8C%D1%88%D0%B0",
 		},
 		{
 			name: "lowercase CC normalized to upper",
 			link: "vless://x@y.com:443",
 			cc:   "jp",
-			want: "vless://x@y.com:443#%F0%9F%87%AF%F0%9F%87%B5%20JP",
+			// 🇯🇵, "Япония" = %D0%AF%D0%BF%D0%BE%D0%BD%D0%B8%D1%8F
+			want: "vless://x@y.com:443#%F0%9F%87%AF%F0%9F%87%B5%20JP%20%D0%AF%D0%BF%D0%BE%D0%BD%D0%B8%D1%8F",
+		},
+		{
+			name: "unknown CC: no name duplication",
+			link: "vless://q@z.com:443",
+			cc:   "ZZ",
+			want: "vless://q@z.com:443#%F0%9F%87%BF%F0%9F%87%BF%20ZZ",
 		},
 		{
 			name: "unparseable input returned as-is",
@@ -99,11 +108,11 @@ func TestWrite_GoldenReadme(t *testing.T) {
 	if err != nil {
 		t.Fatalf("read US.txt: %v", err)
 	}
-	// Expect the rewritten fragment "<flag> US" — URL-encoded by url.URL.String().
-	// 🇺🇸 is U+1F1FA U+1F1F8, encoded as %F0%9F%87%BA%F0%9F%87%B8.
-	wantUS := "vless://us-1@example.com:443#%F0%9F%87%BA%F0%9F%87%B8%20US\n" +
-		"vless://us-2@example.com:443#%F0%9F%87%BA%F0%9F%87%B8%20US\n" +
-		"vless://us-3@example.com:443#%F0%9F%87%BA%F0%9F%87%B8%20US\n"
+	// Expect "<flag> United States" (full country name from map).
+	// 🇺🇸 is U+1F1FA U+1F1F8 = %F0%9F%87%BA%F0%9F%87%B8.
+	wantUS := "vless://us-1@example.com:443#%F0%9F%87%BA%F0%9F%87%B8%20US%20%D0%A1%D0%A8%D0%90\n" +
+		"vless://us-2@example.com:443#%F0%9F%87%BA%F0%9F%87%B8%20US%20%D0%A1%D0%A8%D0%90\n" +
+		"vless://us-3@example.com:443#%F0%9F%87%BA%F0%9F%87%B8%20US%20%D0%A1%D0%A8%D0%90\n"
 	if string(usTxt) != wantUS {
 		t.Errorf("US.txt mismatch:\ngot:\n%s\nwant:\n%s", usTxt, wantUS)
 	}
@@ -114,10 +123,10 @@ func TestWrite_GoldenReadme(t *testing.T) {
 		t.Fatalf("read all.txt: %v", err)
 	}
 	allStr := string(allTxt)
-	if !strings.Contains(allStr, "vless://de-1@example.com:443#%F0%9F%87%A9%F0%9F%87%AA%20DE") {
+	if !strings.Contains(allStr, "vless://de-1@example.com:443#%F0%9F%87%A9%F0%9F%87%AA%20DE%20%D0%93%D0%B5%D1%80%D0%BC%D0%B0%D0%BD%D0%B8%D1%8F") {
 		t.Errorf("all.txt missing DE-flagged entry; got:\n%s", allStr)
 	}
-	if !strings.Contains(allStr, "vless://us-1@example.com:443#%F0%9F%87%BA%F0%9F%87%B8%20US") {
+	if !strings.Contains(allStr, "vless://us-1@example.com:443#%F0%9F%87%BA%F0%9F%87%B8%20US%20%D0%A1%D0%A8%D0%90") {
 		t.Errorf("all.txt missing US-flagged entry; got:\n%s", allStr)
 	}
 	// 6 lines (3 DE + 3 US) + trailing newline.

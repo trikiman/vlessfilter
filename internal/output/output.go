@@ -83,7 +83,13 @@ func Write(outDir string, selections []selector.CountrySelection, generatedAt ti
 }
 
 // rewriteRemark replaces (or sets) the URI fragment of a vless:// link with
-// "<flag-emoji> <CC>". The rest of the URI is preserved verbatim.
+// "<flag-emoji> <CC> <Country Name in Russian>" (e.g., "🇵🇱 PL Польша").
+// The rest of the URI is preserved verbatim.
+//
+// Format chosen so that:
+//   - Flag emoji renders as a country flag in modern clients.
+//   - 2-letter CC is a stable fallback when client font has no emoji support.
+//   - Russian name makes entries scannable for the project's primary audience.
 //
 // On unparseable input, returns the original link unchanged — better to ship
 // a working key with a bad-looking name than drop it from the output.
@@ -92,10 +98,60 @@ func rewriteRemark(link, cc string) string {
 	if err != nil {
 		return link
 	}
-	flag := flagEmoji(strings.ToUpper(cc))
+	cc = strings.ToUpper(cc)
+	flag := flagEmoji(cc)
+	name := countryName(cc)
 	// url.URL.String() URL-encodes the Fragment automatically.
-	u.Fragment = fmt.Sprintf("%s %s", flag, strings.ToUpper(cc))
+	if name == cc {
+		// Unknown country — don't duplicate the code (e.g., "🇿🇿 ZZ" not "🇿🇿 ZZ ZZ").
+		u.Fragment = fmt.Sprintf("%s %s", flag, cc)
+	} else {
+		u.Fragment = fmt.Sprintf("%s %s %s", flag, cc, name)
+	}
 	return u.String()
+}
+
+// countryName returns the Russian name for an ISO 3166-1 alpha-2 code.
+// Falls back to the code itself for unknown values.
+//
+// Coverage matches DefaultCountries() in internal/sources plus a few extras
+// observed in xray-knife's ip_location output (e.g., LT, BR, RO).
+func countryName(cc string) string {
+	if name, ok := countryNames[cc]; ok {
+		return name
+	}
+	return cc
+}
+
+var countryNames = map[string]string{
+	"AE": "ОАЭ", "AF": "Афганистан", "AL": "Албания", "AM": "Армения",
+	"AR": "Аргентина", "AT": "Австрия", "AU": "Австралия", "AZ": "Азербайджан",
+	"BA": "Босния", "BD": "Бангладеш", "BE": "Бельгия", "BG": "Болгария",
+	"BH": "Бахрейн", "BO": "Боливия", "BR": "Бразилия", "BY": "Беларусь",
+	"BZ": "Белиз", "CA": "Канада", "CH": "Швейцария", "CL": "Чили",
+	"CN": "Китай", "CO": "Колумбия", "CR": "Коста-Рика", "CY": "Кипр",
+	"CZ": "Чехия", "DE": "Германия", "DK": "Дания", "DO": "Доминикана",
+	"DZ": "Алжир", "EC": "Эквадор", "EE": "Эстония", "EG": "Египет",
+	"ES": "Испания", "ET": "Эфиопия", "FI": "Финляндия", "FR": "Франция",
+	"GB": "Великобритания", "GE": "Грузия", "GH": "Гана", "GR": "Греция",
+	"GT": "Гватемала", "HK": "Гонконг", "HN": "Гондурас", "HR": "Хорватия",
+	"HU": "Венгрия", "ID": "Индонезия", "IE": "Ирландия", "IL": "Израиль",
+	"IM": "Остров Мэн", "IN": "Индия", "IQ": "Ирак", "IR": "Иран",
+	"IS": "Исландия", "IT": "Италия", "JM": "Ямайка", "JO": "Иордания",
+	"JP": "Япония", "KE": "Кения", "KG": "Кыргызстан", "KH": "Камбоджа",
+	"KR": "Южная Корея", "KW": "Кувейт", "KZ": "Казахстан", "LB": "Ливан",
+	"LK": "Шри-Ланка", "LT": "Литва", "LU": "Люксембург", "LV": "Латвия",
+	"MA": "Марокко", "MD": "Молдова", "MK": "Северная Македония", "MN": "Монголия",
+	"MU": "Маврикий", "MX": "Мексика", "MY": "Малайзия", "NG": "Нигерия",
+	"NL": "Нидерланды", "NO": "Норвегия", "NP": "Непал", "NZ": "Новая Зеландия",
+	"OM": "Оман", "PA": "Панама", "PE": "Перу", "PH": "Филиппины",
+	"PK": "Пакистан", "PL": "Польша", "PR": "Пуэрто-Рико", "PT": "Португалия",
+	"QA": "Катар", "RO": "Румыния", "RS": "Сербия", "RU": "Россия",
+	"SA": "Саудовская Аравия", "SE": "Швеция", "SG": "Сингапур", "SI": "Словения",
+	"SK": "Словакия", "SY": "Сирия", "TH": "Таиланд", "TJ": "Таджикистан",
+	"TM": "Туркменистан", "TN": "Тунис", "TR": "Турция", "TW": "Тайвань",
+	"UA": "Украина", "US": "США", "UY": "Уругвай", "UZ": "Узбекистан",
+	"VE": "Венесуэла", "VN": "Вьетнам", "ZA": "ЮАР",
 }
 
 // WriteDiagnostics writes all-results.csv and raw/dead.txt.
