@@ -187,21 +187,82 @@ func runTest(ctx context.Context, opts Opts) error {
 		t2 = 20
 	}
 
-	// Stage 1: TLS handshake against every config in the DB. Cheap, fast,
-	// filters out the ~99% dead pool.
+	// Stage 1: TLS handshake against a manageable batch of NEW (untested)
+	// configs PLUS retests of the existing alive set, instead of trying to
+	// test the entire 700k+ pool and getting killed by the budget.
 	//
-	// Timeout 5000ms: 1s was too aggressive — many real working proxies
-	// take 1-3s to complete handshake from this network. 5s gives reasonable
-	// recall without much speed penalty (most dead configs fail at TCP
-	// connect in <100ms regardless of timeout).
-	slog.Info("test stage 1: handshake/ping", "threads", t1)
-	if err := opts.Runner.HTTPTest(ctx, xrayknife.HTTPOpts{
-		Speedtest: false,
-		Threads:   t1,
-		Protocol:  "vless",
-		DelayMs:   5000,
-	}); err != nil {
-		return fmt.Errorf("stage 1 (ping): %w", err)
+	// Why this matters: previously stage 1 used --from-db which iterates
+	// the full pool. With 700k+ configs at ~30/s sustained, a 60-min run
+	// only covered ~108k = 14% before getting killed. Worse, xray-knife
+	// didn't flush partial results when killed, so several full-pool
+	// scheduled runs produced 0 saved alive entries.
+	//
+	// New design: each run tests up to UntestedBatch new configs +
+	// re-validates currently-alive ones. Over ~5-7 runs the pool gets
+	// fully covered, and once-alive configs that died get marked as such.
+	const untestedBatch = 80000
+	dbPath, err := opts.Runner.DBPath()
+	if err != nil {
+		return fmt.Errorf("stage 1: db path: %w", err)
+	}
+	untested, err := selector.LoadUntestedLinks(ctx, dbPath, untestedBatch)
+	if err != nil {
+		return fmt.Errorf("stage 1: load untested: %w", err)
+	}
+	priorAlive, err := selector.LoadAliveLinks(ctx, dbPath)
+	if err != nil {
+		return fmt.Errorf("stage 1: load alive: %w", err)
+	}
+
+	// Combine the two sets for stage 1. Dedup in case a once-alive config
+	// somehow shows up in untested too (shouldn't, but defensive).
+	seen := make(map[string]bool, len(untested)+len(priorAlive))
+	stage1Links := make([]string, 0, len(untested)+len(priorAlive))
+	for _, l := range append(untested, priorAlive...) {
+		if !seen[l] {
+			seen[l] = true
+			stage1Links = append(stage1Links, l)
+		}
+	}
+
+	if len(stage1Links) == 0 {
+		slog.Warn("stage 1: nothing to test (no untested configs and no prior alive)")
+		// Fall back to full-pool test
+		slog.Info("stage 1: full-pool fallback (--from-db)")
+		if err := opts.Runner.HTTPTest(ctx, xrayknife.HTTPOpts{
+			Speedtest: false,
+			Threads:   t1,
+			Protocol:  "vless",
+			DelayMs:   5000,
+		}); err != nil {
+			return fmt.Errorf("stage 1 (ping, full-pool): %w", err)
+		}
+	} else {
+		stage1Tmp, err := os.CreateTemp("", "vlessfilter-stage1-*.txt")
+		if err != nil {
+			return fmt.Errorf("stage 1: temp file: %w", err)
+		}
+		defer os.Remove(stage1Tmp.Name())
+		for _, link := range stage1Links {
+			if _, err := fmt.Fprintln(stage1Tmp, link); err != nil {
+				stage1Tmp.Close()
+				return fmt.Errorf("stage 1: write temp: %w", err)
+			}
+		}
+		stage1Tmp.Close()
+
+		slog.Info("test stage 1: handshake/ping",
+			"threads", t1, "untested", len(untested), "retest_alive", len(priorAlive),
+			"total", len(stage1Links))
+		if err := opts.Runner.HTTPTest(ctx, xrayknife.HTTPOpts{
+			Speedtest: false,
+			Threads:   t1,
+			Protocol:  "vless",
+			File:      stage1Tmp.Name(),
+			DelayMs:   5000,
+		}); err != nil {
+			return fmt.Errorf("stage 1 (ping): %w", err)
+		}
 	}
 
 	// Skip stage 2 if user explicitly disabled it.
@@ -216,10 +277,7 @@ func runTest(ctx context.Context, opts Opts) error {
 	//
 	// xray-knife's --from-db doesn't filter to "previous run passed", so we
 	// extract the alive set from the DB ourselves and feed it back via -f.
-	dbPath, err := opts.Runner.DBPath()
-	if err != nil {
-		return fmt.Errorf("stage 2: %w", err)
-	}
+	// (dbPath already obtained above for stage 1.)
 	aliveLinks, err := selector.LoadAliveLinks(ctx, dbPath)
 	if err != nil {
 		return fmt.Errorf("stage 2: load alive: %w", err)

@@ -95,6 +95,52 @@ func Top3PerCountry(results []Result) []CountrySelection {
 // LoadResults opens the xray-knife SQLite DB, discovers the results table and
 // columns, and returns Result rows from the most recent test run only.
 //
+// LoadUntestedLinks returns config_links from subscription_configs that have
+// no row in http_test_results yet, capped to `limit` rows.
+//
+// Used by the pipeline to incrementally cover the pool: each scheduled run
+// tests the next batch of NEW configs instead of trying to retest the entire
+// (now 775k+) pool and getting killed by the budget.
+//
+// Returns nil when limit <= 0 (caller should fall back to whole-pool test).
+func LoadUntestedLinks(ctx context.Context, dbPath string, limit int) ([]string, error) {
+	if limit <= 0 {
+		return nil, nil
+	}
+	db, err := sql.Open("sqlite", dbPath+"?mode=ro&_busy_timeout=5000")
+	if err != nil {
+		return nil, fmt.Errorf("open %s: %w", dbPath, err)
+	}
+	defer db.Close()
+	if err := db.PingContext(ctx); err != nil {
+		return nil, fmt.Errorf("ping %s: %w", dbPath, err)
+	}
+
+	q := `
+		SELECT sc.config_link FROM subscription_configs sc
+		LEFT JOIN http_test_results r ON r.config_link = sc.config_link
+		WHERE sc.protocol = 'vless' AND r.config_link IS NULL
+		LIMIT ?
+	`
+	rows, err := db.QueryContext(ctx, q, limit)
+	if err != nil {
+		return nil, fmt.Errorf("query untested: %w", err)
+	}
+	defer rows.Close()
+
+	out := make([]string, 0, limit)
+	for rows.Next() {
+		var link string
+		if err := rows.Scan(&link); err != nil {
+			return nil, err
+		}
+		if link != "" {
+			out = append(out, link)
+		}
+	}
+	return out, rows.Err()
+}
+
 // LoadAliveLinks returns just the config_link strings for currently-alive
 // configs (latest result per link with status=passed). Used by the pipeline
 // to feed stage 2 (speedtest) only the stage-1 survivors instead of
