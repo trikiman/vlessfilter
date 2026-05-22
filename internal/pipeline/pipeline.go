@@ -189,12 +189,17 @@ func runTest(ctx context.Context, opts Opts) error {
 
 	// Stage 1: TLS handshake against every config in the DB. Cheap, fast,
 	// filters out the ~99% dead pool.
+	//
+	// Timeout 5000ms: 1s was too aggressive — many real working proxies
+	// take 1-3s to complete handshake from this network. 5s gives reasonable
+	// recall without much speed penalty (most dead configs fail at TCP
+	// connect in <100ms regardless of timeout).
 	slog.Info("test stage 1: handshake/ping", "threads", t1)
 	if err := opts.Runner.HTTPTest(ctx, xrayknife.HTTPOpts{
 		Speedtest: false,
 		Threads:   t1,
 		Protocol:  "vless",
-		DelayMs:   1000,
+		DelayMs:   5000,
 	}); err != nil {
 		return fmt.Errorf("stage 1 (ping): %w", err)
 	}

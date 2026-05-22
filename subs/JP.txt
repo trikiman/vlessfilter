@@ -1,2 +1,0 @@
-vless://00000000-0000-4000-8000-000000000000@138.2.95.208:59103?sni=57vanjkxjo3kejbf4o2iul6z4o.gike.dpdns.org&type=ws&host=57vanjkxjo3kejbf4o2iul6z4o.gike.dpdns.org&path=/@Marisa_kristifp=chrome&security=tls#%F0%9F%87%AF%F0%9F%87%B5%20JP%20Japan
-vless://00000000-0000-4000-8000-000000000000@146.235.219.13:2093?allowInsecure=0&sni=ooa858iqkhza12.mesa.ip-ddns.com&type=ws&host=ooa858iqkhza12.mesa.ip-ddns.com&path=/@Marisa_kristifp=chrome&security=tls#%F0%9F%87%AF%F0%9F%87%B5%20JP%20Japan
