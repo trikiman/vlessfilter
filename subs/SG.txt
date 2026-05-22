@@ -1,3 +1,0 @@
-vless://7f50ec42-4673-41e2-94be-ae6253909def@104.26.5.134:2053?encryption=none&type=ws&host=workjoey.freen3.cc.cd&path=%2F%3Fed%3D2048fp%3Dchrome&security=tls&fp=chrome&sni=workjoey.freen3.cc.cd#%F0%9F%87%B8%F0%9F%87%AC%20SG%20%D0%A1%D0%B8%D0%BD%D0%B3%D0%B0%D0%BF%D1%83%D1%80
-vless://7f50ec42-4673-41e2-94be-ae6253909def@104.26.5.134:2053?encryption=none&type=ws&host=workjoey.freen3.cc.cd&path=%2F%3Fed%3D2048fp%3Dchrome&security=tls&fp=chrome&sni=workjoey.freen3.cc.cd#%F0%9F%87%B8%F0%9F%87%AC%20SG%20%D0%A1%D0%B8%D0%BD%D0%B3%D0%B0%D0%BF%D1%83%D1%80
-vless://6202b230-417c-4d8e-b624-0f71afa9c75d@108.162.196.30:8880?type=ws&host=vms.lifetime59.workers.dev#%F0%9F%87%B8%F0%9F%87%AC%20SG%20%D0%A1%D0%B8%D0%BD%D0%B3%D0%B0%D0%BF%D1%83%D1%80

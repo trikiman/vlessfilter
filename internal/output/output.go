@@ -48,6 +48,23 @@ func Write(outDir string, selections []selector.CountrySelection, generatedAt ti
 		return fmt.Errorf("mkdir %s: %w", subsDir, err)
 	}
 
+	// Delete stale subs/<CC>.txt files. Reason: when a country has 0 alive
+	// keys in this run but had keys in a previous run, its old file would
+	// otherwise stay around forever with stale/broken keys. Glob and remove
+	// every <CC>.txt before writing fresh content. all.txt is also rewritten
+	// below so it gets overwritten regardless.
+	stale, _ := filepath.Glob(filepath.Join(subsDir, "*.txt"))
+	for _, p := range stale {
+		// Keep all.txt — it gets rewritten below; deleting first is fine
+		// but unnecessary. Same for any other non-CC file we add later.
+		base := filepath.Base(p)
+		// Heuristic: 2-letter uppercase CC.txt = our country file
+		if len(base) == 6 && strings.HasSuffix(base, ".txt") &&
+			base[0] >= 'A' && base[0] <= 'Z' && base[1] >= 'A' && base[1] <= 'Z' {
+			_ = os.Remove(p)
+		}
+	}
+
 	// Sort once so per-country files AND all.txt are deterministic.
 	sortedSel := make([]selector.CountrySelection, len(selections))
 	copy(sortedSel, selections)

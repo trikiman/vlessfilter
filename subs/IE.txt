@@ -1,2 +1,0 @@
-vless://6202b230-417c-4d8e-b624-0f71afa9c75d@5.10.215.30:8880?type=ws&security=none&encryption=none&host=vms.lifetime02.workers.dev#%F0%9F%87%AE%F0%9F%87%AA%20IE
-vless://a2af6e7c-a792-4e51-9460-fff4bd74fbfc@104.18.15.19:80?ed=2560&eh=Sec-WebSocket-Protocol&encryption=none&host=vahidqaz-ft33vt-1.vahidqaz.workers.dev&path=/&security=none&type=ws#%F0%9F%87%AE%F0%9F%87%AA%20IE
