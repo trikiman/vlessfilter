@@ -10,7 +10,7 @@
 # Usage (scheduled): see scripts/install-task.ps1
 
 param(
-    [int]$BudgetMin = 30,
+    [int]$BudgetMin = 60,
     [int]$Threads1 = 1000,
     [string]$RepoDir = "E:\Projects\VlessFilter"
 )
@@ -44,8 +44,18 @@ cd /mnt/e/Projects/VlessFilter
 ./bin/vlessfilter run --threads1 $Threads1 --budget-min $BudgetMin 2>&1 | tail -40
 "@
 $bashFile = "$env:TEMP\vf-refresh-$timestamp.sh"
-$bash -replace "`r`n", "`n" | Out-File -Encoding ascii -FilePath $bashFile
-$wslOut = wsl -- bash $bashFile 2>&1
+$bash -replace "`r`n", "`n" | Out-File -Encoding ascii -FilePath $bashFile -NoNewline
+
+# Translate Windows temp path to WSL-mounted form.
+# C:\Users\me\AppData\Local\Temp\foo.sh -> /mnt/c/Users/me/AppData/Local/Temp/foo.sh
+$wslPath = $bashFile -replace '\\', '/'
+if ($wslPath -match '^([A-Za-z]):(.*)$') {
+    $drive = $matches[1].ToLower()
+    $rest = $matches[2]
+    $wslPath = "/mnt/$drive$rest"
+}
+
+$wslOut = wsl -- bash $wslPath 2>&1
 $wslOut | ForEach-Object { Add-Content -Path $logFile -Value $_ }
 Remove-Item $bashFile -ErrorAction SilentlyContinue
 
@@ -73,7 +83,7 @@ $pushOut = git push origin main 2>&1
 $pushOut | ForEach-Object { Add-Content -Path $logFile -Value $_ }
 $exit = $LASTEXITCODE
 if ($exit -ne 0) {
-    Log "Push failed (exit $exit) — keeping commit local. Will retry on next run."
+    Log "Push failed (exit $exit) -- keeping commit local. Will retry on next run."
 } else {
     Log "Pushed successfully."
 }
