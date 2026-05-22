@@ -248,6 +248,15 @@ func writeDeadList(outDir string, dead []selector.Result) error {
 	}
 	sort.Strings(links)
 
+	// Cap at 5000 to keep the file small and well under GitHub's 100 MB
+	// hard limit. Full 300k+ dead set would blow past 80 MB and hit the
+	// recommended-max warning. The first 5000 alphabetically is enough as
+	// a diagnostic sample; full data lives in xray-knife.db locally.
+	const maxDead = 5000
+	if len(links) > maxDead {
+		links = links[:maxDead]
+	}
+
 	var b strings.Builder
 	for _, l := range links {
 		b.WriteString(l)
