@@ -284,3 +284,210 @@ sources:
     url: https://raw.githubusercontent.com/barry-far/V2ray-Config/main/Splitted-By-Protocol/vless.txt
     kind: plain
     enabled: true
+
+  # === V2Hive per-country files (NEW v1.1) ===
+  # cybersecplayground/V2Hive publishes 53 country-tagged vless files at
+  # by-country/<CC>.txt with total ~21,361 vless across all files.
+  # Top contributors: DE 6146, US 3727, BR 2164, RU 1389, IR 1240, NL 1037
+  - name: v2hive-cc-DE
+    url: https://raw.githubusercontent.com/cybersecplayground/V2Hive/main/by-country/DE.txt
+    kind: plain
+    enabled: true
+  - name: v2hive-cc-US
+    url: https://raw.githubusercontent.com/cybersecplayground/V2Hive/main/by-country/US.txt
+    kind: plain
+    enabled: true
+  - name: v2hive-cc-BR
+    url: https://raw.githubusercontent.com/cybersecplayground/V2Hive/main/by-country/BR.txt
+    kind: plain
+    enabled: true
+  - name: v2hive-cc-RU
+    url: https://raw.githubusercontent.com/cybersecplayground/V2Hive/main/by-country/RU.txt
+    kind: plain
+    enabled: true
+  - name: v2hive-cc-IR
+    url: https://raw.githubusercontent.com/cybersecplayground/V2Hive/main/by-country/IR.txt
+    kind: plain
+    enabled: true
+  - name: v2hive-cc-NL
+    url: https://raw.githubusercontent.com/cybersecplayground/V2Hive/main/by-country/NL.txt
+    kind: plain
+    enabled: true
+  - name: v2hive-cc-FR
+    url: https://raw.githubusercontent.com/cybersecplayground/V2Hive/main/by-country/FR.txt
+    kind: plain
+    enabled: true
+  - name: v2hive-cc-GB
+    url: https://raw.githubusercontent.com/cybersecplayground/V2Hive/main/by-country/GB.txt
+    kind: plain
+    enabled: true
+  - name: v2hive-cc-CA
+    url: https://raw.githubusercontent.com/cybersecplayground/V2Hive/main/by-country/CA.txt
+    kind: plain
+    enabled: true
+  - name: v2hive-cc-SG
+    url: https://raw.githubusercontent.com/cybersecplayground/V2Hive/main/by-country/SG.txt
+    kind: plain
+    enabled: true
+  - name: v2hive-cc-JP
+    url: https://raw.githubusercontent.com/cybersecplayground/V2Hive/main/by-country/JP.txt
+    kind: plain
+    enabled: true
+  - name: v2hive-cc-FI
+    url: https://raw.githubusercontent.com/cybersecplayground/V2Hive/main/by-country/FI.txt
+    kind: plain
+    enabled: true
+  - name: v2hive-cc-KR
+    url: https://raw.githubusercontent.com/cybersecplayground/V2Hive/main/by-country/KR.txt
+    kind: plain
+    enabled: true
+  - name: v2hive-cc-HK
+    url: https://raw.githubusercontent.com/cybersecplayground/V2Hive/main/by-country/HK.txt
+    kind: plain
+    enabled: true
+  - name: v2hive-cc-SE
+    url: https://raw.githubusercontent.com/cybersecplayground/V2Hive/main/by-country/SE.txt
+    kind: plain
+    enabled: true
+  - name: v2hive-cc-IN
+    url: https://raw.githubusercontent.com/cybersecplayground/V2Hive/main/by-country/IN.txt
+    kind: plain
+    enabled: true
+  - name: v2hive-cc-AE
+    url: https://raw.githubusercontent.com/cybersecplayground/V2Hive/main/by-country/AE.txt
+    kind: plain
+    enabled: true
+  - name: v2hive-cc-TR
+    url: https://raw.githubusercontent.com/cybersecplayground/V2Hive/main/by-country/TR.txt
+    kind: plain
+    enabled: true
+  - name: v2hive-cc-PL
+    url: https://raw.githubusercontent.com/cybersecplayground/V2Hive/main/by-country/PL.txt
+    kind: plain
+    enabled: true
+  - name: v2hive-cc-LT
+    url: https://raw.githubusercontent.com/cybersecplayground/V2Hive/main/by-country/LT.txt
+    kind: plain
+    enabled: true
+  - name: v2hive-cc-LV
+    url: https://raw.githubusercontent.com/cybersecplayground/V2Hive/main/by-country/LV.txt
+    kind: plain
+    enabled: true
+  - name: v2hive-cc-AT
+    url: https://raw.githubusercontent.com/cybersecplayground/V2Hive/main/by-country/AT.txt
+    kind: plain
+    enabled: true
+  - name: v2hive-cc-RO
+    url: https://raw.githubusercontent.com/cybersecplayground/V2Hive/main/by-country/RO.txt
+    kind: plain
+    enabled: true
+  - name: v2hive-cc-AU
+    url: https://raw.githubusercontent.com/cybersecplayground/V2Hive/main/by-country/AU.txt
+    kind: plain
+    enabled: true
+  - name: v2hive-cc-CH
+    url: https://raw.githubusercontent.com/cybersecplayground/V2Hive/main/by-country/CH.txt
+    kind: plain
+    enabled: true
+  - name: v2hive-cc-BG
+    url: https://raw.githubusercontent.com/cybersecplayground/V2Hive/main/by-country/BG.txt
+    kind: plain
+    enabled: true
+  - name: v2hive-cc-CZ
+    url: https://raw.githubusercontent.com/cybersecplayground/V2Hive/main/by-country/CZ.txt
+    kind: plain
+    enabled: true
+  - name: v2hive-cc-EE
+    url: https://raw.githubusercontent.com/cybersecplayground/V2Hive/main/by-country/EE.txt
+    kind: plain
+    enabled: true
+  - name: v2hive-cc-LU
+    url: https://raw.githubusercontent.com/cybersecplayground/V2Hive/main/by-country/LU.txt
+    kind: plain
+    enabled: true
+  - name: v2hive-cc-ES
+    url: https://raw.githubusercontent.com/cybersecplayground/V2Hive/main/by-country/ES.txt
+    kind: plain
+    enabled: true
+  - name: v2hive-cc-SI
+    url: https://raw.githubusercontent.com/cybersecplayground/V2Hive/main/by-country/SI.txt
+    kind: plain
+    enabled: true
+  - name: v2hive-cc-IT
+    url: https://raw.githubusercontent.com/cybersecplayground/V2Hive/main/by-country/IT.txt
+    kind: plain
+    enabled: true
+  - name: v2hive-cc-UA
+    url: https://raw.githubusercontent.com/cybersecplayground/V2Hive/main/by-country/UA.txt
+    kind: plain
+    enabled: true
+  - name: v2hive-cc-IE
+    url: https://raw.githubusercontent.com/cybersecplayground/V2Hive/main/by-country/IE.txt
+    kind: plain
+    enabled: true
+  - name: v2hive-cc-TW
+    url: https://raw.githubusercontent.com/cybersecplayground/V2Hive/main/by-country/TW.txt
+    kind: plain
+    enabled: true
+  - name: v2hive-cc-BE
+    url: https://raw.githubusercontent.com/cybersecplayground/V2Hive/main/by-country/BE.txt
+    kind: plain
+    enabled: true
+  - name: v2hive-cc-HU
+    url: https://raw.githubusercontent.com/cybersecplayground/V2Hive/main/by-country/HU.txt
+    kind: plain
+    enabled: true
+  - name: v2hive-cc-GR
+    url: https://raw.githubusercontent.com/cybersecplayground/V2Hive/main/by-country/GR.txt
+    kind: plain
+    enabled: true
+  - name: v2hive-cc-VN
+    url: https://raw.githubusercontent.com/cybersecplayground/V2Hive/main/by-country/VN.txt
+    kind: plain
+    enabled: true
+  - name: v2hive-cc-CN
+    url: https://raw.githubusercontent.com/cybersecplayground/V2Hive/main/by-country/CN.txt
+    kind: plain
+    enabled: true
+  - name: v2hive-cc-TH
+    url: https://raw.githubusercontent.com/cybersecplayground/V2Hive/main/by-country/TH.txt
+    kind: plain
+    enabled: true
+  - name: v2hive-cc-NO
+    url: https://raw.githubusercontent.com/cybersecplayground/V2Hive/main/by-country/NO.txt
+    kind: plain
+    enabled: true
+  - name: v2hive-cc-SA
+    url: https://raw.githubusercontent.com/cybersecplayground/V2Hive/main/by-country/SA.txt
+    kind: plain
+    enabled: true
+  - name: v2hive-cc-ID
+    url: https://raw.githubusercontent.com/cybersecplayground/V2Hive/main/by-country/ID.txt
+    kind: plain
+    enabled: true
+  - name: v2hive-cc-PT
+    url: https://raw.githubusercontent.com/cybersecplayground/V2Hive/main/by-country/PT.txt
+    kind: plain
+    enabled: true
+  - name: v2hive-cc-IS
+    url: https://raw.githubusercontent.com/cybersecplayground/V2Hive/main/by-country/IS.txt
+    kind: plain
+    enabled: true
+  - name: v2hive-cc-MY
+    url: https://raw.githubusercontent.com/cybersecplayground/V2Hive/main/by-country/MY.txt
+    kind: plain
+    enabled: true
+  - name: v2hive-cc-HR
+    url: https://raw.githubusercontent.com/cybersecplayground/V2Hive/main/by-country/HR.txt
+    kind: plain
+    enabled: true
+  - name: v2hive-cc-SK
+    url: https://raw.githubusercontent.com/cybersecplayground/V2Hive/main/by-country/SK.txt
+    kind: plain
+    enabled: true
+
+  # Surfboardv2ray Iran-specific output (841 plain vless validated)
+  - name: surfboardv2ray-IR
+    url: https://raw.githubusercontent.com/Surfboardv2ray/Proxy-sorter/main/output/IR.txt
+    kind: plain
+    enabled: true
