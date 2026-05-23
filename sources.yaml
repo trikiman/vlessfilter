@@ -106,3 +106,181 @@ sources:
     url: https://raw.githubusercontent.com/YawStar/Proxy-Hunter/main/configs/proxy_configs.txt
     kind: plain
     enabled: true
+
+  # === Per-country pre-classified sources (NEW v1.1) ===
+  # SoliSpirit/v2ray-configs publishes 89 country-tagged files. We ingest
+  # them as "plain" since the country tag in the supplier's filename gives
+  # us geographic distribution before any testing — directly addresses
+  # the "low country count" problem when our test point can't reach
+  # endpoints that exist in the wild.
+  #
+  # Listed are the 30+ countries where the file actually contains vless
+  # configs (verified May 2026). Each is small (10-500 configs), all
+  # together <2k extra in the pool but with built-in country diversity.
+  - name: solispirit-protocol-vless
+    url: https://raw.githubusercontent.com/SoliSpirit/v2ray-configs/main/Protocols/vless.txt
+    kind: plain
+    enabled: true
+  - name: solispirit-cc-US
+    url: https://raw.githubusercontent.com/SoliSpirit/v2ray-configs/main/Countries/United_States.txt
+    kind: plain
+    enabled: true
+  - name: solispirit-cc-IR
+    url: https://raw.githubusercontent.com/SoliSpirit/v2ray-configs/main/Countries/Iran.txt
+    kind: plain
+    enabled: true
+  - name: solispirit-cc-NL
+    url: https://raw.githubusercontent.com/SoliSpirit/v2ray-configs/main/Countries/The_Netherlands.txt
+    kind: plain
+    enabled: true
+  - name: solispirit-cc-DE
+    url: https://raw.githubusercontent.com/SoliSpirit/v2ray-configs/main/Countries/Germany.txt
+    kind: plain
+    enabled: true
+  - name: solispirit-cc-FR
+    url: https://raw.githubusercontent.com/SoliSpirit/v2ray-configs/main/Countries/France.txt
+    kind: plain
+    enabled: true
+  - name: solispirit-cc-CA
+    url: https://raw.githubusercontent.com/SoliSpirit/v2ray-configs/main/Countries/Canada.txt
+    kind: plain
+    enabled: true
+  - name: solispirit-cc-GB
+    url: https://raw.githubusercontent.com/SoliSpirit/v2ray-configs/main/Countries/United_Kingdom.txt
+    kind: plain
+    enabled: true
+  - name: solispirit-cc-RU
+    url: https://raw.githubusercontent.com/SoliSpirit/v2ray-configs/main/Countries/Russia.txt
+    kind: plain
+    enabled: true
+  - name: solispirit-cc-FI
+    url: https://raw.githubusercontent.com/SoliSpirit/v2ray-configs/main/Countries/Finland.txt
+    kind: plain
+    enabled: true
+  - name: solispirit-cc-SE
+    url: https://raw.githubusercontent.com/SoliSpirit/v2ray-configs/main/Countries/Sweden.txt
+    kind: plain
+    enabled: true
+  - name: solispirit-cc-RO
+    url: https://raw.githubusercontent.com/SoliSpirit/v2ray-configs/main/Countries/Romania.txt
+    kind: plain
+    enabled: true
+  - name: solispirit-cc-SG
+    url: https://raw.githubusercontent.com/SoliSpirit/v2ray-configs/main/Countries/Singapore.txt
+    kind: plain
+    enabled: true
+  - name: solispirit-cc-AE
+    url: https://raw.githubusercontent.com/SoliSpirit/v2ray-configs/main/Countries/United_Arab_Emirates.txt
+    kind: plain
+    enabled: true
+  - name: solispirit-cc-LV
+    url: https://raw.githubusercontent.com/SoliSpirit/v2ray-configs/main/Countries/Latvia.txt
+    kind: plain
+    enabled: true
+  - name: solispirit-cc-HK
+    url: https://raw.githubusercontent.com/SoliSpirit/v2ray-configs/main/Countries/Hong_Kong.txt
+    kind: plain
+    enabled: true
+  - name: solispirit-cc-KZ
+    url: https://raw.githubusercontent.com/SoliSpirit/v2ray-configs/main/Countries/Kazakhstan.txt
+    kind: plain
+    enabled: true
+  - name: solispirit-cc-AT
+    url: https://raw.githubusercontent.com/SoliSpirit/v2ray-configs/main/Countries/Austria.txt
+    kind: plain
+    enabled: true
+  - name: solispirit-cc-TR
+    url: https://raw.githubusercontent.com/SoliSpirit/v2ray-configs/main/Countries/Türkiye.txt
+    kind: plain
+    enabled: true
+  - name: solispirit-cc-AM
+    url: https://raw.githubusercontent.com/SoliSpirit/v2ray-configs/main/Countries/Armenia.txt
+    kind: plain
+    enabled: true
+  - name: solispirit-cc-SC
+    url: https://raw.githubusercontent.com/SoliSpirit/v2ray-configs/main/Countries/Seychelles.txt
+    kind: plain
+    enabled: true
+  - name: solispirit-cc-IN
+    url: https://raw.githubusercontent.com/SoliSpirit/v2ray-configs/main/Countries/India.txt
+    kind: plain
+    enabled: true
+  - name: solispirit-cc-ES
+    url: https://raw.githubusercontent.com/SoliSpirit/v2ray-configs/main/Countries/Spain.txt
+    kind: plain
+    enabled: true
+  - name: solispirit-cc-BG
+    url: https://raw.githubusercontent.com/SoliSpirit/v2ray-configs/main/Countries/Bulgaria.txt
+    kind: plain
+    enabled: true
+  - name: solispirit-cc-LT
+    url: https://raw.githubusercontent.com/SoliSpirit/v2ray-configs/main/Countries/Lithuania.txt
+    kind: plain
+    enabled: true
+  - name: solispirit-cc-CY
+    url: https://raw.githubusercontent.com/SoliSpirit/v2ray-configs/main/Countries/Cyprus.txt
+    kind: plain
+    enabled: true
+  - name: solispirit-cc-CR
+    url: https://raw.githubusercontent.com/SoliSpirit/v2ray-configs/main/Countries/Costa_Rica.txt
+    kind: plain
+    enabled: true
+  - name: solispirit-cc-EE
+    url: https://raw.githubusercontent.com/SoliSpirit/v2ray-configs/main/Countries/Estonia.txt
+    kind: plain
+    enabled: true
+  - name: solispirit-cc-LI
+    url: https://raw.githubusercontent.com/SoliSpirit/v2ray-configs/main/Countries/Liechtenstein.txt
+    kind: plain
+    enabled: true
+  - name: solispirit-cc-CH
+    url: https://raw.githubusercontent.com/SoliSpirit/v2ray-configs/main/Countries/Switzerland.txt
+    kind: plain
+    enabled: true
+  - name: solispirit-cc-IE
+    url: https://raw.githubusercontent.com/SoliSpirit/v2ray-configs/main/Countries/Ireland.txt
+    kind: plain
+    enabled: true
+  - name: solispirit-cc-LU
+    url: https://raw.githubusercontent.com/SoliSpirit/v2ray-configs/main/Countries/Luxembourg.txt
+    kind: plain
+    enabled: true
+  - name: solispirit-cc-AU
+    url: https://raw.githubusercontent.com/SoliSpirit/v2ray-configs/main/Countries/Australia.txt
+    kind: plain
+    enabled: true
+  - name: solispirit-cc-IT
+    url: https://raw.githubusercontent.com/SoliSpirit/v2ray-configs/main/Countries/Italy.txt
+    kind: plain
+    enabled: true
+  - name: solispirit-cc-PL
+    url: https://raw.githubusercontent.com/SoliSpirit/v2ray-configs/main/Countries/Poland.txt
+    kind: plain
+    enabled: true
+  - name: solispirit-cc-CZ
+    url: https://raw.githubusercontent.com/SoliSpirit/v2ray-configs/main/Countries/Czechia.txt
+    kind: plain
+    enabled: true
+  - name: solispirit-cc-RS
+    url: https://raw.githubusercontent.com/SoliSpirit/v2ray-configs/main/Countries/Serbia.txt
+    kind: plain
+    enabled: true
+  - name: solispirit-cc-SI
+    url: https://raw.githubusercontent.com/SoliSpirit/v2ray-configs/main/Countries/Slovenia.txt
+    kind: plain
+    enabled: true
+  - name: solispirit-cc-HR
+    url: https://raw.githubusercontent.com/SoliSpirit/v2ray-configs/main/Countries/Croatia.txt
+    kind: plain
+    enabled: true
+  - name: solispirit-cc-BE
+    url: https://raw.githubusercontent.com/SoliSpirit/v2ray-configs/main/Countries/Belgium.txt
+    kind: plain
+    enabled: true
+
+  # barry-far/V2ray-Config — vless protocol-only (alive again, was 404 earlier
+  # because singular "V2ray-Config" not plural). 2.5k plain vless.
+  - name: barry-far-vless
+    url: https://raw.githubusercontent.com/barry-far/V2ray-Config/main/Splitted-By-Protocol/vless.txt
+    kind: plain
+    enabled: true
