@@ -1,3 +1,0 @@
-vless://363a6072-05d7-48d5-8f19-312b05fdd9cd@104.18.12.229:2052?encryption=none&host=chosenflyesqt-q3y28ipf-v3.chosen-fly-esqt.workers.dev&path=%2F&security=none&type=ws#%F0%9F%87%AA%F0%9F%87%AA%20EE%20Estonia
-vless://6d916d55-fead-4ff3-a3a9-83e175ea8ad7@94.156.236.18:443?security=tls&flow=xtls-rprx-vision-udp443&sni=ee18.mechvpn.online&fp=chrome&allowInsecure=0#%F0%9F%87%AA%F0%9F%87%AA%20EE%20Estonia
-vless://6d916d55-fead-4ff3-a3a9-83e175ea8ad7@94.156.236.18:443?security=tls&flow=xtls-rprx-vision-udp443&sni=ee18.mechvpn.online&fp=chrome&allowInsecure=0#%F0%9F%87%AA%F0%9F%87%AA%20EE%20Estonia

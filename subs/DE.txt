@@ -1,3 +1,3 @@
-vless://478cc26d-16b3-4fdd-be64-60d5a58c1622@162.159.36.20:80?type=ws&encryption=none&flow=&host=tt.andishehparenting.com&path=%2F#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
-vless://478cc26d-16b3-4fdd-be64-60d5a58c1622@162.159.36.5:80?encryption=none&host=tt.andishehparenting.com&path=%2F&security=none&type=ws#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
-vless://478cc26d-16b3-4fdd-be64-60d5a58c1622@104.21.227.134:80?encryption=none&host=tt.andishehparenting.com&path=%2F&security=none&type=ws#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
+vless://cbc27e56-38a1-4b0d-bce3-f9e7dcb807a4@193.233.88.229:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=firefox&sni=lk.x5.ru&pbk=gs8bT5NMOtrvvHxmCi_siXbVY6WhQcBV4tEgFk4ohgA&sid=46ceaa0ac75f90dc#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
+vless://cbc27e56-38a1-4b0d-bce3-f9e7dcb807a4@193.233.88.229:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=firefox&sni=lk.x5.ru&pbk=gs8bT5NMOtrvvHxmCi_siXbVY6WhQcBV4tEgFk4ohgA&sid=46ceaa0ac75f90dc#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
+vless://cbc27e56-38a1-4b0d-bce3-f9e7dcb807a4@193.233.88.229:443?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=firefox&sni=lk.x5.ru&pbk=gs8bT5NMOtrvvHxmCi_siXbVY6WhQcBV4tEgFk4ohgA&sid=46ceaa0ac75f90dc#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
