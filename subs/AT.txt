@@ -1,2 +1,1 @@
 vless://6d1b6391-c4ba-431e-9c3a-148a8f392c8b@104.143.0.216:443?type=tcp&headerType=none&security=tls&encryption=none&sni=at216.mechvpn.online&fp=chrome&alpn=h3%2Ch2%2Chttp%2F1.1&flow=xtls-rprx-vision&insecure=0#%F0%9F%87%A6%F0%9F%87%B9%20AT%20Austria
-vless://6d1b6391-c4ba-431e-9c3a-148a8f392c8b@104.143.0.216:443?type=tcp&headerType=none&security=tls&encryption=none&sni=at216.mechvpn.online&fp=chrome&alpn=h3%2Ch2%2Chttp%2F1.1&flow=xtls-rprx-vision&insecure=0#%F0%9F%87%A6%F0%9F%87%B9%20AT%20Austria
