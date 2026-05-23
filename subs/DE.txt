@@ -1,3 +1,3 @@
-vless://57565f1e-d42a-49a0-a909-5fff0f07b146@91.107.188.182:443?encryption=none&type=raw&headerType=none&security=none#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
-vless://c9424b66-67dd-4dbf-ddbc-752514cc04a5@93.123.84.128:777?security=none&encryption=none&headerType=none&type=tcp#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
-vless://57565f1e-d42a-49a0-a909-5fff0f07b146@91.107.188.182:443?encryption=none&security=none&type=tcp&headerType=none#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
+vless://478cc26d-16b3-4fdd-be64-60d5a58c1622@162.159.36.20:80?type=ws&encryption=none&flow=&host=tt.andishehparenting.com&path=%2F#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
+vless://478cc26d-16b3-4fdd-be64-60d5a58c1622@162.159.36.5:80?encryption=none&host=tt.andishehparenting.com&path=%2F&security=none&type=ws#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
+vless://478cc26d-16b3-4fdd-be64-60d5a58c1622@104.21.227.134:80?encryption=none&host=tt.andishehparenting.com&path=%2F&security=none&type=ws#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany

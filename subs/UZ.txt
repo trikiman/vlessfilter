@@ -1,1 +1,3 @@
-vless://363a6072-05d7-48d5-8f19-312b05fdd9cd@www.visa.com.sg:2052?encryption=none&host=chosenflyesqt-q3y28ipf-v3.chosen-fly-esqt.workers.dev&path=%2F&security=none&type=ws#%F0%9F%87%BA%F0%9F%87%BF%20UZ%20Uzbekistan
+vless://7e346122-2ee0-406e-b964-a8ee665f1814@digitalocean.com:443?encryption=none&security=tls&sni=paRMis-1Tk63J.PArMiS.WoRkeRs.DeV&fp=chrome&type=ws&host=paRMis-1Tk63J.PArMiS.WoRkeRs.DeV&path=/?ed=2560#%F0%9F%87%BA%F0%9F%87%BF%20UZ%20Uzbekistan
+vless://7e346122-2ee0-406e-b964-a8ee665f1814@digitalocean.com:443/?type=ws&encryption=none&flow=&host=paRMis-1Tk63J.PArMiS.WoRkeRs.DeV&path=%2F%3Fed%3D2560&security=tls&sni=paRMis-1Tk63J.PArMiS.WoRkeRs.DeV&allowInsecure=1&fp=chrome#%F0%9F%87%BA%F0%9F%87%BF%20UZ%20Uzbekistan
+vless://623d675e-8748-4881-ac0f-dc1a10b595b1@africa.visa.com:8880?path=%2F%3Fed%3D2560&security=none&encryption=none&host=vahidasd1988-se08ot-3.vahidasd1988.workers.dev&fp=randomized&type=ws#%F0%9F%87%BA%F0%9F%87%BF%20UZ%20Uzbekistan

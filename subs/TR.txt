@@ -1,3 +1,3 @@
-vless://53353c51-ab85-4f1d-b81c-d855a0cdeeba@213.142.132.75:443?encryption=none&type=ws&path=%2F&security=none#%F0%9F%87%B9%F0%9F%87%B7%20TR%20Turkey
-vless://43488128-319e-f480-64ea-0acdc712e2a8@2.56.127.207:443?encryption=none&flow=xtls-rprx-vision&fp=&pbk=XkRQUOLTBAiIXB1MK9oJwlfn-9XnH53ykk5UE6rDyFc&security=reality&sid=d4356669ea880400&sni=store.steampowered.com&type=tcp#%F0%9F%87%B9%F0%9F%87%B7%20TR%20Turkey
-vless://53353c51-ab85-4f1d-b81c-d855a0cdeeba@213.142.132.75:443?encryption=none&type=ws&path=%2F&security=none#%F0%9F%87%B9%F0%9F%87%B7%20TR%20Turkey
+vless://c8d1c6d3-388f-48fc-a8f0-ed90d955d096@194.87.39.215:443?encryption=none&flow=xtls-rprx-vision&fp=&pbk=nPcUKydxoRI66O3tT9O4QCZpLjOBvkGsiXG7pDX1BBw&security=reality&sid=6ba85179e30d4fc2&sni=www.google.com&type=tcp#%F0%9F%87%B9%F0%9F%87%B7%20TR%20Turkey
+vless://c8d1c6d3-388f-48fc-a8f0-ed90d955d096@194.87.39.215:443?encryption=none&flow=xtls-rprx-vision&fp=&pbk=nPcUKydxoRI66O3tT9O4QCZpLjOBvkGsiXG7pDX1BBw&security=reality&sid=6ba85179e30d4fc2&sni=www.google.com&type=tcp#%F0%9F%87%B9%F0%9F%87%B7%20TR%20Turkey
+vless://edc33a23-0574-480a-9b72-ab5b97497200@93.115.10.160:443/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=www.microsoft.com&fp=firefox&security=reality&pbk=UNmXDP41M-gwlnBgRgtt6Pw3LwI1-wFmbIDa-CNRejA&sid=8755d3406d69#%F0%9F%87%B9%F0%9F%87%B7%20TR%20Turkey

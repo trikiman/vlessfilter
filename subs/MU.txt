@@ -1,2 +1,0 @@
-vless://6202b230-417c-4d8e-b624-0f71afa9c75d@5.10.215.30:8880?type=ws&security=none&encryption=none&host=vms.lifetime02.workers.dev#%F0%9F%87%B2%F0%9F%87%BA%20MU%20Mauritius
-vless://6202b230-417c-4d8e-b624-0f71afa9c75d@50.62.194.40:8880?host=vms.lifetime37.workers.dev&path=%2F%3Fed%3D2560%26https%3A%2F%2Ft.me%2Fyoutube%40ZYFXS%F0%9F%87%A8%F0%9F%87%B3&type=ws#%F0%9F%87%B2%F0%9F%87%BA%20MU%20Mauritius
