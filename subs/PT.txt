@@ -1,0 +1,1 @@
+vless://cb213db5-803d-49dd-a7e2-46d938af0751@104.18.2.11:2082/?type=ws&encryption=none&flow=&host=amiroo-l43dac88-v2.amiroo-d8b.workers.dev&path=%2F%3Fed%3D2560#%F0%9F%87%B5%F0%9F%87%B9%20PT%20Portugal
