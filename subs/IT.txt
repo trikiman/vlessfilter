@@ -1,1 +1,0 @@
-vless://6202b230-417c-4d8e-b624-0f71afa9c75d@45.192.224.30:8880?type=ws&security=none&encryption=none&host=vms.lifetime17.workers.dev#%F0%9F%87%AE%F0%9F%87%B9%20IT%20Italy
