@@ -99,7 +99,7 @@ func TestWrite_GoldenReadme(t *testing.T) {
 	generatedAt := time.Date(2026, 5, 14, 22, 0, 0, 0, time.UTC)
 	selections := goldenSelections()
 
-	if err := Write(tmp, selections, generatedAt); err != nil {
+	if err := Write(tmp, selections, nil, generatedAt); err != nil {
 		t.Fatalf("Write: %v", err)
 	}
 
@@ -167,12 +167,12 @@ func TestWrite_TimestampInComment(t *testing.T) {
 	tmp := t.TempDir()
 	selections := goldenSelections()
 
-	if err := Write(tmp, selections, time.Date(2026, 5, 14, 22, 0, 0, 0, time.UTC)); err != nil {
+	if err := Write(tmp, selections, nil, time.Date(2026, 5, 14, 22, 0, 0, 0, time.UTC)); err != nil {
 		t.Fatalf("Write 1: %v", err)
 	}
 	first, _ := os.ReadFile(filepath.Join(tmp, "README.md"))
 
-	if err := Write(tmp, selections, time.Date(2027, 1, 1, 0, 0, 0, 0, time.UTC)); err != nil {
+	if err := Write(tmp, selections, nil, time.Date(2027, 1, 1, 0, 0, 0, 0, time.UTC)); err != nil {
 		t.Fatalf("Write 2: %v", err)
 	}
 	second, _ := os.ReadFile(filepath.Join(tmp, "README.md"))

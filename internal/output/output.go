@@ -19,30 +19,27 @@ import (
 	"github.com/trikiman/vlessfilter/internal/selector"
 )
 
-// WriteAll writes everything: subs/<CC>.txt + README.md + (when diagnostics
-// is non-nil) all-results.csv + raw/dead.txt. This is the function the
-// pipeline calls.
+// WriteAll writes everything: subs/<CC>.txt + subs/rotating.txt +
+// README.md + (when diagnostics is non-nil) all-results.csv + raw/dead.txt.
+// This is the function the pipeline calls.
 //
-// `selections` is the curated top-3-per-country output.
-// `allTested` and `dead` are the full and failed result sets for diagnostics.
-// Pass nil/empty for either to skip that file.
-func WriteAll(outDir string, selections []selector.CountrySelection, allTested, dead []selector.Result, generatedAt time.Time) error {
-	if err := Write(outDir, selections, generatedAt); err != nil {
+// `selections`  — curated top-3-per-country (only stable-country configs).
+// `allTested`   — full set for all-results.csv.
+// `dead`        — failed set for raw/dead.txt.
+// `rotating`    — multi-exit configs (CF Workers + load balancers etc.).
+//
+//	These can't be honestly tagged with one country; they go
+//	to subs/rotating.txt with a "🌐 ROTATING" remark.
+func WriteAll(outDir string, selections []selector.CountrySelection, allTested, dead, rotating []selector.Result, generatedAt time.Time) error {
+	if err := Write(outDir, selections, rotating, generatedAt); err != nil {
 		return err
 	}
 	return WriteDiagnostics(outDir, allTested, dead)
 }
 
-// Write produces subs/<CC>.txt files, subs/all.txt, and README.md inside outDir.
-//
-// Each VLESS URI's `#fragment` (the human-readable remark shown by client UIs)
-// is rewritten to `<flag-emoji> <CC>` so users see country flags next to each
-// entry in their VLESS client. The original remark from the upstream
-// subscription is replaced — clients display whatever's in the fragment.
-//
-// subs/all.txt aggregates the curated top-N from every country in alphabetical
-// order. One subscription URL serves every country at once.
-func Write(outDir string, selections []selector.CountrySelection, generatedAt time.Time) error {
+// Write produces subs/<CC>.txt files, subs/all.txt, subs/rotating.txt
+// and README.md inside outDir.
+func Write(outDir string, selections []selector.CountrySelection, rotating []selector.Result, generatedAt time.Time) error {
 	subsDir := filepath.Join(outDir, "subs")
 	if err := os.MkdirAll(subsDir, 0o755); err != nil {
 		return fmt.Errorf("mkdir %s: %w", subsDir, err)
@@ -88,15 +85,52 @@ func Write(outDir string, selections []selector.CountrySelection, generatedAt ti
 		}
 	}
 
-	// Combined "all countries" subscription file. One URL → every country.
+	// Combined "all countries" subscription file. One URL → every country
+	// (stable only — rotating goes to its own file).
 	allPath := filepath.Join(subsDir, "all.txt")
 	if err := os.WriteFile(allPath, []byte(allBuf.String()), 0o644); err != nil {
 		return fmt.Errorf("write %s: %w", allPath, err)
 	}
 
-	readme := buildReadme(sortedSel, generatedAt)
+	// Rotating bucket: configs whose exit country varies across tests
+	// (CF Workers, load balancers, multi-exit chains). Honest disclosure
+	// that these aren't country-stable.
+	if err := writeRotating(subsDir, rotating); err != nil {
+		return err
+	}
+
+	readme := buildReadme(sortedSel, len(rotating), generatedAt)
 	path := filepath.Join(outDir, "README.md")
 	return os.WriteFile(path, []byte(readme), 0o644)
+}
+
+// writeRotating creates subs/rotating.txt — multi-exit configs labeled with
+// "🌐 ROTATING" so the user knows the country varies per connection.
+//
+// Sorts deterministically by link for diff stability.
+func writeRotating(subsDir string, rotating []selector.Result) error {
+	if len(rotating) == 0 {
+		// Still write empty file so the URL doesn't 404.
+		return os.WriteFile(filepath.Join(subsDir, "rotating.txt"), nil, 0o644)
+	}
+	rows := make([]selector.Result, len(rotating))
+	copy(rows, rotating)
+	sort.SliceStable(rows, func(i, j int) bool { return rows[i].Link < rows[j].Link })
+
+	var b strings.Builder
+	for _, r := range rows {
+		// Rewrite remark to "🌐 ROTATING" — make it unmistakable in clients.
+		u, err := url.Parse(r.Link)
+		if err != nil {
+			b.WriteString(r.Link)
+			b.WriteByte('\n')
+			continue
+		}
+		u.Fragment = "🌐 ROTATING"
+		b.WriteString(u.String())
+		b.WriteByte('\n')
+	}
+	return os.WriteFile(filepath.Join(subsDir, "rotating.txt"), []byte(b.String()), 0o644)
 }
 
 // rewriteRemark replaces (or sets) the URI fragment of a vless:// link with
@@ -270,19 +304,27 @@ func writeDeadList(outDir string, dead []selector.Result) error {
 // D-17 determinism: the only non-input-derived content is a single HTML
 // comment at the bottom carrying the timestamp. Two runs with identical
 // `selections` produce README files that diff only on that one line.
-func buildReadme(selections []selector.CountrySelection, generatedAt time.Time) string {
+func buildReadme(selections []selector.CountrySelection, rotatingCount int, generatedAt time.Time) string {
 	var b strings.Builder
 	stamp := generatedAt.UTC().Format(time.RFC3339)
 
 	b.WriteString("# VlessFilter Results\n\n")
 	b.WriteString("Auto-curated top 3 fastest VLESS keys per country, refreshed automatically.\n\n")
 	b.WriteString("## How to use\n\n")
-	b.WriteString("**Single subscription URL covering every country** — paste this into your VLESS client (Hiddify Next, v2rayN, Streisand, NekoBox, etc.):\n\n")
+	b.WriteString("**Single subscription URL covering every stable country** — paste this into your VLESS client (Hiddify Next, v2rayN, Streisand, NekoBox, etc.):\n\n")
 	b.WriteString("```\nhttps://raw.githubusercontent.com/trikiman/vlessfilter/main/subs/all.txt\n```\n\n")
 	b.WriteString("Or pick a specific country:\n\n")
 	b.WriteString("```\nhttps://raw.githubusercontent.com/trikiman/vlessfilter/main/subs/<CC>.txt\n```\n\n")
-	b.WriteString("Replace `<CC>` with the 2-letter country code from the table. Each entry's name shows a flag emoji and country code so you can see at a glance which key you're connecting through.\n\n")
-	b.WriteString("## Top 3 per country\n\n")
+	b.WriteString("**Rotating-exit configs** (Cloudflare Workers + multi-exit load balancers — country varies per connection):\n\n")
+	b.WriteString("```\nhttps://raw.githubusercontent.com/trikiman/vlessfilter/main/subs/rotating.txt\n```\n\n")
+	b.WriteString("Replace `<CC>` with the 2-letter country code from the table. Entries in country files have been verified to consistently exit through that country across multiple tests.\n\n")
+	b.WriteString("## Stability filter\n\n")
+	b.WriteString("Many public VLESS configs route through proxy chains, load balancers, or Cloudflare Workers — these have **rotating exit countries** (e.g., one connection lands in Sweden, the next in India). Tagging them with a single country would be misleading.\n\n")
+	b.WriteString("Each config's full test history is checked:\n")
+	b.WriteString("- **Stable** (always exits same country) → published in `subs/<CC>.txt` with that country code\n")
+	b.WriteString("- **Rotating** (varies across tests, OR is a `*.workers.dev` / `*.pages.dev` host) → published in `subs/rotating.txt` with `🌐 ROTATING` label\n")
+	b.WriteString("- **Dead** → not published\n\n")
+	b.WriteString("## Top 3 per country (stable only)\n\n")
 	b.WriteString("| Country | Top latency (ms) | Median speed (Mbps) | Keys |\n")
 	b.WriteString("|---------|------------------|---------------------|------|\n")
 
@@ -303,7 +345,8 @@ func buildReadme(selections []selector.CountrySelection, generatedAt time.Time) 
 			flagEmoji(cs.Country), cs.Country, topLat, median(speeds), len(cs.Top))
 	}
 
-	b.WriteString("\n_Generated by [vlessfilter](https://github.com/trikiman/vlessfilter). Source list: `sources.yaml`._\n\n")
+	fmt.Fprintf(&b, "\n**Rotating-exit pool:** %d additional configs in `subs/rotating.txt` (no country guarantee).\n\n", rotatingCount)
+	b.WriteString("_Generated by [vlessfilter](https://github.com/trikiman/vlessfilter). Source list: `sources.yaml`._\n\n")
 	fmt.Fprintf(&b, "<!-- last-tested: %s -->\n", stamp)
 	return b.String()
 }

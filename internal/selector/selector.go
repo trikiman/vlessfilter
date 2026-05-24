@@ -14,6 +14,7 @@ import (
 	"fmt"
 	"log/slog"
 	"math"
+	"net/url"
 	"sort"
 	"strings"
 
@@ -124,6 +125,12 @@ func LoadUntestedLinks(ctx context.Context, dbPath string, limit int) ([]string,
 	`
 	rows, err := db.QueryContext(ctx, q, limit)
 	if err != nil {
+		// Tolerate missing subscription_configs table (e.g., test DBs that
+		// only seed http_test_results). Caller falls back to retesting
+		// the existing alive set without an "untested" batch.
+		if strings.Contains(err.Error(), "no such table") {
+			return nil, nil
+		}
 		return nil, fmt.Errorf("query untested: %w", err)
 	}
 	defer rows.Close()
@@ -159,6 +166,210 @@ func LoadAliveLinks(ctx context.Context, dbPath string) ([]string, error) {
 		}
 	}
 	return out, nil
+}
+
+// LoadStableAndRotating returns alive configs split into two buckets:
+//
+//   - stable:   configs where every passing test across history reported
+//     the same country. Safe to publish under that country.
+//   - rotating: configs that exited via 2+ different countries across
+//     history (proxy chains, load balancers, CF Workers).
+//     Useful but cannot be honestly tagged with one country.
+//
+// Cloudflare Worker / Pages configs are forced into rotating regardless
+// of test history because their exit is determined by upstream selection
+// per-connection (i.e., even if past tests happened to all hit one country,
+// a future connection might exit elsewhere).
+//
+// Each Result returned uses the latest passing test as the snapshot
+// (latency, speed, country at that test), but the Country field reflects
+// the consensus determined here.
+func LoadStableAndRotating(ctx context.Context, dbPath string) (stable, rotating []Result, err error) {
+	db, err := sql.Open("sqlite", dbPath+"?mode=ro&_busy_timeout=5000")
+	if err != nil {
+		return nil, nil, fmt.Errorf("open %s: %w", dbPath, err)
+	}
+	defer db.Close()
+	if err := db.PingContext(ctx); err != nil {
+		return nil, nil, fmt.Errorf("ping %s: %w", dbPath, err)
+	}
+
+	tables, err := listTables(ctx, db)
+	if err != nil {
+		return nil, nil, err
+	}
+	resultsTable, terr := pickResultsTable(tables)
+	if terr != nil {
+		return nil, nil, nil
+	}
+	cols, err := tableColumns(ctx, db, resultsTable)
+	if err != nil {
+		return nil, nil, err
+	}
+	mapping, merr := mapColumns(cols)
+	if merr != nil {
+		return nil, nil, merr
+	}
+
+	// Pull every passing test result (not just latest-per-link) so we can
+	// see the full country history per config.
+	//
+	// "Passing" is determined by status='passed' if the column exists,
+	// else by latency_ms > 0 && <= 10000 (legacy/fixture-test compatibility).
+	statusCol := statusColumn(cols)
+	hasStatus := false
+	for _, c := range cols {
+		if strings.EqualFold(c, statusCol) {
+			hasStatus = true
+			break
+		}
+	}
+	whereClause := fmt.Sprintf("%s > 0 AND %s <= 10000",
+		quote(mapping.Latency), quote(mapping.Latency))
+	if hasStatus {
+		whereClause = fmt.Sprintf("%s = 'passed' AND %s",
+			quote(statusCol), whereClause)
+	}
+	q := fmt.Sprintf(`
+		SELECT %s, %s, %s, %s, %s
+		FROM %s
+		WHERE %s
+	`,
+		quote(mapping.Link),
+		quote(mapping.Latency),
+		quote(mapping.Speed),
+		func() string {
+			if mapping.Country != "" {
+				return quote(mapping.Country)
+			}
+			return "''"
+		}(),
+		func() string {
+			if mapping.RunID != "" {
+				return quote(mapping.RunID)
+			}
+			return "0"
+		}(),
+		quote(resultsTable),
+		whereClause,
+	)
+
+	rows, err := db.QueryContext(ctx, q)
+	if err != nil {
+		return nil, nil, fmt.Errorf("query passing rows: %w", err)
+	}
+	defer rows.Close()
+
+	type pass struct {
+		latency int
+		speed   float64
+		country string
+		runID   int
+	}
+	history := make(map[string][]pass) // config_link -> all passing tests
+	for rows.Next() {
+		var (
+			link    sql.NullString
+			latency sql.NullInt64
+			speed   sql.NullFloat64
+			country sql.NullString
+			runID   sql.NullInt64
+		)
+		if err := rows.Scan(&link, &latency, &speed, &country, &runID); err != nil {
+			return nil, nil, err
+		}
+		if link.String == "" {
+			continue
+		}
+		history[link.String] = append(history[link.String], pass{
+			latency: int(latency.Int64),
+			speed:   speed.Float64,
+			country: strings.ToUpper(strings.TrimSpace(country.String)),
+			runID:   int(runID.Int64),
+		})
+	}
+	if err := rows.Err(); err != nil {
+		return nil, nil, err
+	}
+
+	for link, passes := range history {
+		// Latest pass = highest run_id (snapshot for latency/speed values).
+		latest := passes[0]
+		for _, p := range passes[1:] {
+			if p.runID > latest.runID {
+				latest = p
+			}
+		}
+
+		// Determine consensus country: count distinct non-empty countries.
+		countries := make(map[string]bool)
+		for _, p := range passes {
+			if p.country != "" {
+				countries[p.country] = true
+			}
+		}
+
+		r := Result{
+			Link:      link,
+			LatencyMs: latest.latency,
+			SpeedMbps: latest.speed,
+			Country:   latest.country,
+		}
+
+		// CF Worker / Pages = always rotating regardless of history
+		// (next connection might exit somewhere else).
+		if isCFWorker(link) {
+			rotating = append(rotating, r)
+			continue
+		}
+
+		switch len(countries) {
+		case 0:
+			// No country info ever → can't honestly classify. Skip.
+			continue
+		case 1:
+			// Same country every pass → stable. Use that country.
+			for c := range countries {
+				r.Country = c
+			}
+			stable = append(stable, r)
+		default:
+			// Rotated across 2+ countries → not stable for any single one.
+			// Keep latest country in the field for diagnostics but caller
+			// should treat as rotating.
+			rotating = append(rotating, r)
+		}
+	}
+	return stable, rotating, nil
+}
+
+// isCFWorker reports whether a vless:// link points at a Cloudflare Workers
+// or Pages domain. Detection is by host header (the WebSocket Host=) since
+// that's how the worker routes — the IP address is just any CF edge.
+func isCFWorker(link string) bool {
+	u, err := url.Parse(link)
+	if err != nil {
+		return false
+	}
+	q := u.Query()
+	host := strings.ToLower(q.Get("host"))
+	if host == "" {
+		host = strings.ToLower(u.Host)
+	}
+	return strings.Contains(host, ".workers.dev") ||
+		strings.Contains(host, ".pages.dev")
+}
+
+// statusColumn returns the actual column name for "status" in the results
+// table. xray-knife uses 'status'; some forks use 'state'. Falls back to
+// 'status' which is always-present in xray-knife 9.x.
+func statusColumn(cols []string) string {
+	for _, c := range cols {
+		if strings.EqualFold(c, "status") {
+			return c
+		}
+	}
+	return "status"
 }
 
 // Filters out rows with LatencyMs == 0 || LatencyMs > 10000 (treated as

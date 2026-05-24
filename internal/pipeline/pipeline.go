@@ -320,22 +320,38 @@ func runTest(ctx context.Context, opts Opts) error {
 //
 // Tolerates an empty DB (logs warn, skips writing) so checkpoint loops can
 // be called before stage 2 has any data.
+//
+// Country resolution: instead of trusting the latest test's reported country
+// (which can rotate per-connection on proxy chains, load balancers, and
+// Cloudflare Workers), we look at the FULL history of passes per config:
+//   - Same country across all passes → "stable" → goes into subs/<CC>.txt
+//   - Different countries across passes → "rotating" → goes into
+//     subs/rotating.txt (still useful, just no country guarantee)
+//   - Cloudflare Worker / Pages → always rotating regardless of history
 func runSelect(ctx context.Context, opts Opts) error {
 	dbPath, err := opts.Runner.DBPath()
 	if err != nil {
 		return err
 	}
-	alive, dead, err := selector.LoadAllResults(ctx, dbPath)
+	stable, rotating, err := selector.LoadStableAndRotating(ctx, dbPath)
 	if err != nil {
 		return err
 	}
-	if len(alive) == 0 {
+	// We still need dead set for diagnostics; fetch them via the legacy
+	// LoadAllResults (it returns alive+dead but we only use dead here).
+	_, dead, _ := selector.LoadAllResults(ctx, dbPath)
+
+	if len(stable) == 0 && len(rotating) == 0 {
 		slog.Debug("select: no alive results yet (skipping output)", "db", dbPath)
 		return nil
 	}
-	selections := selector.Top3PerCountry(alive)
-	slog.Info("select complete", "countries", len(selections), "alive", len(alive), "dead", len(dead))
-	return output.WriteAll(opts.OutDir, selections, alive, dead, opts.Now())
+	selections := selector.Top3PerCountry(stable)
+	slog.Info("select complete",
+		"countries", len(selections),
+		"stable_alive", len(stable),
+		"rotating_alive", len(rotating),
+		"dead", len(dead))
+	return output.WriteAll(opts.OutDir, selections, append(stable, rotating...), dead, rotating, opts.Now())
 }
 
 // startCheckpointLoop launches a goroutine that, every CheckpointMin

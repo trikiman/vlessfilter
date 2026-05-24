@@ -1,1 +1,1 @@
-vless://6202b230-417c-4d8e-b624-0f71afa9c75d@160.153.138.30:8880?type=ws&security=none&host=vms.lifetime04.workers.dev&path=/&source_name=argh_v2rayauto_vless&provider_id=argh_v2rayauto_vless#%F0%9F%87%AE%F0%9F%87%B3%20IN%20India
+vless://ddd7b044-6a87-Fade-8911-e0be8fdbf4a2@212.193.147.245:443?encryption=none&type=ws&security=tls&host=s28233.cdn.ngenix.net&fp=qq&sni=s28233.cdn.ngenix.net&alpn=h2,http/1.1&source_name=sakha_all_valid_proxies&provider_id=sakha_all_valid_proxies#%F0%9F%87%AE%F0%9F%87%B3%20IN%20India
