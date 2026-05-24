@@ -1,5 +1,45 @@
 # VlessFilter
 
+## Current Milestone: v1.2 + v1.3 — Honest Validation
+
+**Goal:** Make every published key honest. Two sequential milestones, each
+answering one question correctly:
+
+- **v1.2 (Liveness)** — is this VLESS key actually working *right now* from
+  the user's network? Not just "TLS handshake completed", but "real HTTP
+  traffic flowed through it on multiple attempts".
+- **v1.3 (Country)** — given an alive key, where does it *actually* exit?
+  Not just xray-knife's first-hop IP geolocation; the real exit confirmed
+  by routing a request through the proxy to a known geolocation service.
+
+**Why now:** v1.0 + v1.1 produced wrong country labels (the IN config
+that actually exits Sweden bug). Users were importing keys that either
+didn't work or exited the wrong country. The output looked impressive
+but lied.
+
+**Target features (v1.2):**
+- Multi-attempt liveness check (3x retest before marking alive)
+- Confidence levels: alive / flaky / dead
+- Fast iteration mode (`--profile dev`) so changes verify in <2 min instead
+  of 6h scheduled-run wait
+- Sticky alive: once-alive configs survive transient retest failures
+
+**Target features (v1.3):**
+- Cross-validate exit country by routing HTTP request through the proxy
+  to ipinfo.io — actual exit, not first-hop IP geolocation
+- Multi-test consensus: 2+ matching country probes required for stable label
+- Cloudflare Workers + multi-exit configs → `subs/rotating.txt` (already shipped)
+- Auto-accuracy probe: after publishing, sample 5 keys per country, verify
+  actual exit matches label, alert if accuracy < 80%
+
+## Past Milestones
+
+- **v1.0 (3 phases) — MVP End-to-End** — xray-knife integration, top-3 selection,
+  ephemeral-VPS hardening, GitHub Actions cron. Shipped 2026-05-15.
+- **v1.1 (informal) — Source expansion + stability filter** — grew pool from
+  2k → 1M unique vless. Added 88+ pre-classified country sources from
+  SoliSpirit + V2Hive. First version of stable-vs-rotating split.
+
 ## What This Is
 
 VlessFilter discovers and publishes the top 3 fastest VLESS proxy keys per country, refreshed automatically. It pulls VLESS configs from public subscription aggregators, runs real-proxy latency and speed tests, groups results by exit-IP country, and commits the top 3 per country to a git repo as ready-to-import subscription files. Built to run on ephemeral 60-minute cloud VPS instances and scheduled GitHub Actions.

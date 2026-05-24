@@ -1,80 +1,64 @@
 ---
 gsd_state_version: 1.0
-milestone: v1.0.0
-milestone_name: milestone
+milestone: v1.2.0
+milestone_name: liveness-validation
 status: executing
-stopped_at: "Milestone v1.0 complete: all 3 phases shipped"
-last_updated: "2026-05-14T21:42:16.052Z"
-last_activity: 2026-05-14 -- Phase 1 planning complete
+last_updated: "2026-05-24T05:48:00Z"
+last_activity: 2026-05-24 -- Milestone v1.2/v1.3 started, autonomous execution
 progress:
-  total_phases: 3
-  completed_phases: 2
-  total_plans: 5
-  completed_plans: 4
-  percent: 80
+  total_phases: 4
+  completed_phases: 0
+  total_plans: 4
+  completed_plans: 0
+  percent: 0
 ---
 
 # Project State
 
 ## Project Reference
 
-See: .planning/PROJECT.md (updated 2026-05-14)
-
-**Core value:** Always-fresh, auto-curated, geo-tagged top 3 VLESS keys per country, accessible as a static URL.
-**Current focus:** Phase 1 — MVP End-to-End
+See: .planning/PROJECT.md
+**Core value:** Always-fresh, auto-curated, geo-tagged top 3 VLESS keys per country, accessible as a static URL, with **honest validation**.
+**Current focus:** Phase 4 — Multi-Attempt Liveness Validation
 
 ## Current Position
 
-Phase: 1 of 3 (MVP End-to-End)
-Plan: 0 of 2 in current phase
-Status: Ready to execute
-Last activity: 2026-05-14 -- Phase 1 planning complete
+Phase: 4 of 7 (Multi-Attempt Liveness Validation)
+Plan: 0 of 1 in current phase
+Status: Executing autonomously
+Last activity: 2026-05-24 -- Milestone v1.2/v1.3 kicked off
 
-Progress: [░░░░░░░░░░] 0%
-
-## Performance Metrics
-
-**Velocity:**
-
-- Total plans completed: 0
-- Average duration: —
-- Total execution time: —
-
-**By Phase:**
-
-| Phase | Plans | Total | Avg/Plan |
-|-------|-------|-------|----------|
-| - | - | - | - |
-
-**Recent Trend:**
-
-- Last 5 plans: —
-- Trend: —
-
-*Updated after each plan completion*
+Progress: [▓▓▓░░░░░░░] 43% overall (3 of 7 phases done from prior milestones)
 
 ## Accumulated Context
 
-### Decisions
+### Decisions (carried forward + new)
+- v1.0: xray-knife as test engine, top-3-per-country composite score
+- v1.1: Pre-classified country sources (SoliSpirit + V2Hive) added — 88+ files
+- v1.1: Stability filter — separate stable from rotating exits
+- v1.2 NEW: 3x retest before marking alive (LIVE-01)
+- v1.2 NEW: Sticky-alive — once-passed configs survive single retest fail (LIVE-03)
+- v1.3 NEW: ipinfo.io as test URL for actual exit IP, not first-hop (GEO-01)
+- v1.3 NEW: 2+ matching country tests required for stable label (GEO-02)
+- v1.3 NEW: Post-publish accuracy probe with 80% threshold (GEO-04)
 
-Decisions are logged in PROJECT.md Key Decisions table.
-Recent decisions affecting current work:
-
-- Init: xray-knife as test engine (covers fetch + ping + speedtest + geo + SQLite)
-- Init: v2go's per-country outputs as primary upstream feed
-- Init: Go orchestrator, single-binary deployment
-- Init: Top 3 per country, composite score = f(latency, speed) — exact formula tuned in Phase 2
-
-### Pending Todos
-
-None yet.
+### Open Bugs Being Fixed
+- "IN config exits Sweden" — Will be caught by GEO-01 (ipinfo.io probe sees actual exit, not first-hop)
+- "9 → 12 → 9 oscillation" — Will be fixed by LIVE-03 (sticky alive)
+- "47k configs but only 12 countries" — partially v1.1 (more sources), now LIVE-01 catches handshake-only-not-real-traffic
 
 ### Blockers/Concerns
+- GitHub Actions billing-locked (irrelevant — local-only deployment confirmed)
+- Pool grew to 1M unique vless; ingest takes ~36s, full stage 1 ~50min (acceptable)
+- h2.nexus / Cloudflare Workers explored as multi-perspective validators; deferred to v1.4
 
-- Phase 2 will need real-VPS measurements to set the input-size ceiling that fits in 60 min — empirical, not predictable from docs
+### Pending Todos
+- Tag v1.2.0 after phases 4+5 done
+- Tag v1.3.0 after phases 6+7 done
+- Run accuracy probe end-to-end before declaring milestone complete
 
 ## Session Continuity
 
-Last session: 2026-05-14T21:42:16.049Z
-Stopped at: Milestone v1.0 complete: all 3 phases shipped
-Resume file: .
+Last session: 2026-05-24T05:48:00Z
+Active mode: Autonomous execution per user directive
+Resume file: .planning/ROADMAP.md

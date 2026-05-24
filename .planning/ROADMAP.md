@@ -71,6 +71,74 @@ Phases execute in numeric order: 1 → 2 → 3
 | 1. MVP End-to-End | 2/2 | ✅ Complete | 2026-05-14 |
 | 2. Ephemeral-VPS Hardening | 2/2 | ✅ Complete | 2026-05-15 |
 | 3. CI + Polish | 2/2 | ✅ Complete | 2026-05-15 |
+| 4. Multi-attempt Liveness | 0/1 | 🚧 Active | — |
+| 5. `--profile dev` Fast Iteration | 0/1 | ⏳ Planned | — |
+| 6. Country Cross-Validation | 0/1 | ⏳ Planned | — |
+| 7. Auto-Accuracy Probe | 0/1 | ⏳ Planned | — |
+
+## Milestone v1.2 — Liveness Validation
+
+### Phase 4: Multi-Attempt Liveness Validation
+**Goal:** Eliminate handshake-passes-but-no-traffic false positives by
+requiring 3 successful real-HTTP-traffic tests before marking alive.
+
+**Depends on:** Phase 3
+**Requirements:** LIVE-01, LIVE-02, LIVE-03
+**Success criteria:**
+1. After stage 2 speedtest, each survivor is retested 2 more times via
+   the same speedtest path
+2. `selector.LoadStableAndRotating` only includes configs with passes >= 2
+3. The "9 → 12 → 9" published-count oscillation stops; counts move
+   monotonically
+
+### Phase 5: `--profile dev` Fast Iteration
+**Goal:** Code change to verified-correct in under 2 min wall-clock,
+not 6 hours.
+
+**Depends on:** Phase 4
+**Requirements:** LIVE-04
+**Success criteria:**
+1. `vlessfilter run --profile dev` completes in <120 seconds
+2. Output written to a separate dev/ subdirectory (no pollution of
+   production subs/ files)
+3. Same code paths exercised as production run, just with --limit caps
+   (500 configs total instead of 1M+)
+
+## Milestone v1.3 — Country Identification
+
+### Phase 6: Country Cross-Validation via ipinfo.io
+**Goal:** Replace xray-knife's first-hop IP geolocation with actual
+exit-IP lookup through the proxy.
+
+**Depends on:** Phase 4 (need verified-alive configs)
+**Requirements:** GEO-01, GEO-02, GEO-03 (verify)
+**Success criteria:**
+1. xray-knife configured with `-u https://ipinfo.io/json`
+2. xray-knife's `ip_location` field reflects ipinfo.io's `country` response
+3. Configs with 2+ matching country tests = stable; mismatched = rotating
+4. Sample test: at least 90% of keys in `subs/<CC>.txt` actually exit
+   through CC when manually tested
+
+### Phase 7: Auto-Accuracy Probe
+**Goal:** Continuously verify the published output matches reality;
+refuse to push bad data.
+
+**Depends on:** Phase 6
+**Requirements:** GEO-04
+**Success criteria:**
+1. After select stage produces output, before commit/push, the probe runs
+2. 5 random keys per country are routed to ipinfo.io and country compared
+3. Run logs accuracy% per country and overall
+4. If overall accuracy < 80%: ERROR, do not commit/push, alert in log
+
+## Plans
+
+| Phase | Plan | Status |
+|-------|------|--------|
+| 4 | 04-01-multi-attempt-liveness | ⏳ Planned |
+| 5 | 05-01-dev-profile | ⏳ Planned |
+| 6 | 06-01-ipinfo-country | ⏳ Planned |
+| 7 | 07-01-accuracy-probe | ⏳ Planned |
 
 ## Milestone v1.0 — SHIPPED 2026-05-15
 
