@@ -41,7 +41,7 @@ $bash = @"
 export PATH=`$HOME/.local/go/bin:`$HOME/go/bin:`$PATH
 export VLESSFILTER_QUIET=1
 cd /mnt/e/Projects/VlessFilter
-./bin/vlessfilter run --threads1 $Threads1 --budget-min $BudgetMin 2>&1 | tail -40
+./bin/vlessfilter run --threads1 $Threads1 --budget-min $BudgetMin --accuracy-probe 2>&1 | tail -60
 "@
 $bashFile = "$env:TEMP\vf-refresh-$timestamp.sh"
 $bash -replace "`r`n", "`n" | Out-File -Encoding ascii -FilePath $bashFile -NoNewline
