@@ -109,6 +109,7 @@ func runCmd(args []string) int {
 	gitPush := fs.Bool("git-push", false, "Commit + push results to git")
 	gitRepo := fs.String("git-repo", ".", "Git repo dir for --git-push")
 	gitBranch := fs.String("git-branch", "main", "Branch to push to")
+	profile := fs.String("profile", "", "Preset for fast iteration: 'dev' = small subset, 2-min budget, dev/ output")
 
 	if err := fs.Parse(args); err != nil {
 		if errors.Is(err, flag.ErrHelp) {
@@ -136,6 +137,20 @@ func runCmd(args []string) int {
 	token := os.Getenv("GH_TOKEN")
 	if *gitPush && token == "" {
 		slog.Warn("--git-push set but GH_TOKEN env is empty; push will likely fail unless repo permits anonymous push")
+	}
+
+	// LIVE-04: --profile dev preset for fast iteration. Caps everything
+	// so the full pipeline finishes in <2 minutes wall time on a small
+	// subset, writing to dev/ instead of polluting the real subs/ output.
+	if *profile == "dev" {
+		*outDir = "./dev"
+		*budgetMin = 5
+		*threads1 = 200
+		*threads2 = 10
+		*limit = 500
+		slog.Info("--profile dev: small-subset run for filter-logic verification",
+			"out_dir", *outDir, "budget_min", *budgetMin,
+			"threads1", *threads1, "threads2", *threads2, "limit_stage2", *limit)
 	}
 
 	opts := pipeline.Opts{

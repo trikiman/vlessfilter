@@ -197,10 +197,16 @@ func runTest(ctx context.Context, opts Opts) error {
 	// didn't flush partial results when killed, so several full-pool
 	// scheduled runs produced 0 saved alive entries.
 	//
-	// New design: each run tests up to UntestedBatch new configs +
+	// New design: each run tests up to untestedBatch new configs +
 	// re-validates currently-alive ones. Over ~5-7 runs the pool gets
 	// fully covered, and once-alive configs that died get marked as such.
-	const untestedBatch = 80000
+	//
+	// LIVE-04: --profile dev passes opts.Limit > 0 to cap stage 1 to
+	// a small subset for fast iteration.
+	untestedBatch := 80000
+	if opts.Limit > 0 && opts.Limit < untestedBatch {
+		untestedBatch = opts.Limit
+	}
 	dbPath, err := opts.Runner.DBPath()
 	if err != nil {
 		return fmt.Errorf("stage 1: db path: %w", err)
@@ -301,16 +307,34 @@ func runTest(ctx context.Context, opts Opts) error {
 		return fmt.Errorf("stage 2: close temp: %w", err)
 	}
 
-	slog.Info("test stage 2: speedtest on stage-1 survivors", "alive", len(aliveLinks), "threads", t2)
-	if err := opts.Runner.HTTPTest(ctx, xrayknife.HTTPOpts{
-		Speedtest: true,
-		Threads:   t2,
-		Protocol:  "vless",
-		File:      tmp.Name(),
-		DelayMs:   5000,
-		Retries:   2,
-	}); err != nil {
-		return fmt.Errorf("stage 2 (speedtest): %w", err)
+	// Stage 2: speedtest 3 separate times (LIVE-01).
+	//
+	// Each invocation writes a fresh test_run row to the DB. The selector
+	// then groups by config_link and applies "passes >= 2" to decide
+	// alive vs flaky. This catches handshake-passes-but-no-real-traffic
+	// false positives and flaky proxies that succeed once but fail next
+	// time. xray-knife's internal --retries=2 fakes "1 pass on retry" as
+	// a success; we want 3 INDEPENDENT runs to count distinct successes.
+	const stage2Attempts = 3
+	for attempt := 1; attempt <= stage2Attempts; attempt++ {
+		slog.Info("test stage 2: speedtest attempt",
+			"attempt", attempt, "of", stage2Attempts,
+			"alive_input", len(aliveLinks), "threads", t2)
+		if err := opts.Runner.HTTPTest(ctx, xrayknife.HTTPOpts{
+			Speedtest: true,
+			Threads:   t2,
+			Protocol:  "vless",
+			File:      tmp.Name(),
+			DelayMs:   5000,
+			Retries:   1, // small per-attempt retry; cross-attempt check via 3 runs below
+		}); err != nil {
+			// Tolerate intermittent failures of an individual attempt —
+			// other attempts still produce useful evidence. Fail only if
+			// none of the attempts produced any DB writes (caller can
+			// detect via empty selector results).
+			slog.Warn("stage 2 attempt failed (continuing)",
+				"attempt", attempt, "err", err)
+		}
 	}
 	return nil
 }

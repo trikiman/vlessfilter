@@ -86,10 +86,16 @@ CREATE TABLE test_results (
   download_speed REAL,
   location TEXT
 );
+-- 2+ rows per config to satisfy LIVE-01 minPassesForStable=2 in the
+-- selector. Each config should have at least 2 passing tests with the
+-- same country to qualify for stable publication.
 INSERT INTO test_results (link, delay, download_speed, location) VALUES
   ('vless://us-1@example.com:443', 50, 80.0, 'US'),
+  ('vless://us-1@example.com:443', 51, 81.0, 'US'),
   ('vless://us-2@example.com:443', 70, 60.0, 'US'),
-  ('vless://us-3@example.com:443', 90, 50.0, 'US');
+  ('vless://us-2@example.com:443', 71, 61.0, 'US'),
+  ('vless://us-3@example.com:443', 90, 50.0, 'US'),
+  ('vless://us-3@example.com:443', 91, 51.0, 'US');
 `); err != nil {
 		t.Fatal(err)
 	}

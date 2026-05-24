@@ -323,6 +323,17 @@ func LoadStableAndRotating(ctx context.Context, dbPath string) (stable, rotating
 			continue
 		}
 
+		// LIVE-01 / GEO-02: require 2+ passing tests for a config to be
+		// considered "alive enough" to publish. Single-test passes can
+		// be flukes (handshake-passes-but-no-traffic, or transient
+		// server bursts). Two passes is much harder to fake.
+		const minPassesForStable = 2
+		if len(passes) < minPassesForStable {
+			// Not enough evidence yet — held back from publication.
+			// Will surface in a future run when more tests confirm.
+			continue
+		}
+
 		switch len(countries) {
 		case 0:
 			// No country info ever → can't honestly classify. Skip.
