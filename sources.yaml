@@ -31,6 +31,24 @@ sources:
     to: 36
     enabled: true
 
+  # AvenCores/goida-vpn-configs — meta-mirror that pulls from 26 different
+  # upstream aggregators (sakha1370, sevcator, yitong2333, acymz,
+  # miladtahanian, roosterkid, Epodonios, CidVpn, mheidari98, MahsaNet,
+  # LalatinaHub/Mineral, Pawdroid, MhdiTaheri, free18, Argh94, shabane,
+  # wuqb2i4f, igareck, Mr-Meshky, V2RayRoot, etc.) and republishes them as
+  # githubmirror/<N>.txt every 9 minutes via GitHub Actions.
+  #
+  # Author recommends 1, 6, 22, 23, 24, 25 as highest quality; all 26 added
+  # since xray-knife dedupes overlapping configs at the UNIQUE constraint
+  # level, so coverage of new aggregators we don't have direct entries for
+  # comes for free with no additional cost.
+  - name: goida-vpn-configs
+    url: https://raw.githubusercontent.com/AvenCores/goida-vpn-configs/main/githubmirror/{N}.txt
+    kind: range-template
+    from: 1
+    to: 26
+    enabled: true
+
   # === Bulk per-protocol aggregators (single URL each) ===
 
   # sevcator's protocol-only vless dump — 25,706 plain vless lines.
