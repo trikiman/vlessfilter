@@ -1,0 +1,3 @@
+vless://885206fc-bf57-4c19-9b01-b38fb7568c01@84.201.152.58:25565?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=qq&sni=img.perekrestok.ru&pbk=Pw1EUU1hud5uvtfySGyGy5vV38bYIiQzDx-cDQoAdk0&sid=a5bd715847213387#%F0%9F%87%AC%F0%9F%87%A7%20GB%20United%20Kingdom
+vless://885206fc-bf57-4c19-9b01-b38fb7568c01@37.139.33.8:1255?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=chrome&sni=www.vk.com&pbk=kTDSBp4QGP4ob2GsBXkJAsSggJ6thuIuyfJQajX_RW4#%F0%9F%87%AC%F0%9F%87%A7%20GB%20United%20Kingdom
+vless://885206fc-bf57-4c19-9b01-b38fb7568c01@37.139.33.8:1255?flow=xtls-rprx-vision&encryption=none&type=tcp&security=reality&fp=chrome&sni=www.vk.com&pbk=kTDSBp4QGP4ob2GsBXkJAsSggJ6thuIuyfJQajX_RW4#%F0%9F%87%AC%F0%9F%87%A7%20GB%20United%20Kingdom

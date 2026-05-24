@@ -1,0 +1,3 @@
+vless://ea35c030-5628-11f1-9df5-54db13ea7d40@5.129.211.148:8443?type=tcp&security=reality&encryption=none&flow=xtls-rprx-vision&sni=mail.google.com&fp=randomized&pbk=PBq-zR8c7PG1PAoOG6HNktGOVU3xhs509JwdwlnlVhQ&sid=#%F0%9F%87%B7%F0%9F%87%BA%20RU%20Russia
+vless://ea35c030-5628-11f1-9df5-54db13ea7d40@5.129.211.148:8443?type=tcp&security=reality&encryption=none&flow=xtls-rprx-vision&sni=mail.google.com&fp=randomized&pbk=PBq-zR8c7PG1PAoOG6HNktGOVU3xhs509JwdwlnlVhQ&sid=#%F0%9F%87%B7%F0%9F%87%BA%20RU%20Russia
+vless://ea35c030-5628-11f1-9df5-54db13ea7d40@5.129.211.148:8443?type=tcp&security=reality&encryption=none&flow=xtls-rprx-vision&sni=mail.google.com&fp=randomized&pbk=PBq-zR8c7PG1PAoOG6HNktGOVU3xhs509JwdwlnlVhQ&sid=#%F0%9F%87%B7%F0%9F%87%BA%20RU%20Russia
