@@ -110,6 +110,7 @@ func runCmd(args []string) int {
 	gitRepo := fs.String("git-repo", ".", "Git repo dir for --git-push")
 	gitBranch := fs.String("git-branch", "main", "Branch to push to")
 	profile := fs.String("profile", "", "Preset for fast iteration: 'dev' = small subset, 2-min budget, dev/ output")
+	accuracyProbe := fs.Bool("accuracy-probe", false, "After publish, sample-test keys against ipinfo.io and compare to published country labels (GEO-04)")
 
 	if err := fs.Parse(args); err != nil {
 		if errors.Is(err, flag.ErrHelp) {
@@ -154,20 +155,21 @@ func runCmd(args []string) int {
 	}
 
 	opts := pipeline.Opts{
-		SourcesPath:   *sources,
-		OutDir:        *outDir,
-		Stage:         *stage,
-		Threads1:      *threads1,
-		Threads2:      *threads2,
-		Limit:         *limit,
-		BudgetMin:     *budgetMin,
-		CheckpointMin: *checkpointMin,
-		GitPush:       *gitPush,
-		GitRepoDir:    *gitRepo,
-		GitBranch:     *gitBranch,
-		GitToken:      token,
-		Runner:        runner,
-		Now:           func() time.Time { return time.Now().UTC() },
+		SourcesPath:      *sources,
+		OutDir:           *outDir,
+		Stage:            *stage,
+		Threads1:         *threads1,
+		Threads2:         *threads2,
+		Limit:            *limit,
+		BudgetMin:        *budgetMin,
+		CheckpointMin:    *checkpointMin,
+		GitPush:          *gitPush,
+		GitRepoDir:       *gitRepo,
+		GitBranch:        *gitBranch,
+		GitToken:         token,
+		RunAccuracyProbe: *accuracyProbe,
+		Runner:           runner,
+		Now:              func() time.Time { return time.Now().UTC() },
 	}
 	if err := pipeline.Run(ctx, opts); err != nil {
 		slog.Error("pipeline failed", "error", err)

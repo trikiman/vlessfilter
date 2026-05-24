@@ -15,9 +15,11 @@ import (
 	"fmt"
 	"log/slog"
 	"os"
+	"path/filepath"
 	"sync"
 	"time"
 
+	"github.com/trikiman/vlessfilter/internal/accuracy"
 	"github.com/trikiman/vlessfilter/internal/git"
 	"github.com/trikiman/vlessfilter/internal/kerntune"
 	"github.com/trikiman/vlessfilter/internal/output"
@@ -50,8 +52,14 @@ type Opts struct {
 	GitRepoDir string
 	GitBranch  string
 	GitToken   string
-	GitName    string
-	GitEmail   string
+
+	// RunAccuracyProbe: GEO-04 post-publish ground-truth probe. After
+	// runSelect writes outputs, samples 5 random keys per country, routes
+	// each through xray-knife to ipinfo.io, compares actual exit country
+	// to published label, logs report. Set false for fast/dev runs.
+	RunAccuracyProbe bool
+	GitName          string
+	GitEmail         string
 }
 
 var validStages = map[string]bool{"": true, "fetch": true, "test": true, "select": true}
@@ -375,7 +383,35 @@ func runSelect(ctx context.Context, opts Opts) error {
 		"stable_alive", len(stable),
 		"rotating_alive", len(rotating),
 		"dead", len(dead))
-	return output.WriteAll(opts.OutDir, selections, append(stable, rotating...), dead, rotating, opts.Now())
+	if err := output.WriteAll(opts.OutDir, selections, append(stable, rotating...), dead, rotating, opts.Now()); err != nil {
+		return err
+	}
+
+	// GEO-04: post-publish accuracy probe. Sample N random keys per
+	// country, route HTTP through them to ipinfo.io, compare actual
+	// exit country to our published label. Logs per-country accuracy.
+	//
+	// Skipped for --profile dev (small subsets aren't worth probing).
+	// Skipped on checkpoint runs (only end-of-run validation matters).
+	if opts.RunAccuracyProbe {
+		probe := &accuracy.Probe{
+			SubsDir:       filepath.Join(opts.OutDir, "subs"),
+			MaxPerCountry: 5,
+			Threshold:     0.80,
+			Timeout:       15 * time.Second,
+		}
+		if report, err := probe.Run(ctx); err != nil {
+			slog.Warn("accuracy probe failed to run (publish proceeds)", "err", err)
+		} else {
+			accuracy.LogReport(report)
+			if !report.Passed {
+				slog.Error("accuracy below threshold; consider rolling back this run",
+					"overall", fmt.Sprintf("%.1f%%", report.OverallPercent*100),
+					"threshold", fmt.Sprintf("%.1f%%", report.Threshold*100))
+			}
+		}
+	}
+	return nil
 }
 
 // startCheckpointLoop launches a goroutine that, every CheckpointMin
