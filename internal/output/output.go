@@ -21,7 +21,10 @@ import (
 
 // WriteAll writes everything: subs/<CC>.txt + subs/rotating.txt +
 // README.md + (when diagnostics is non-nil) all-results.csv + raw/dead.txt.
-// This is the function the pipeline calls.
+//
+// DEPRECATED in v2.0 multi-protocol mode. Use WriteProtocol per-protocol +
+// WriteMultiProtocolReadme + WriteDiagnostics. Retained for tests + any
+// single-protocol callers that haven't migrated.
 //
 // `selections`  — curated top-3-per-country (only stable-country configs).
 // `allTested`   — full set for all-results.csv.
@@ -35,6 +38,70 @@ func WriteAll(outDir string, selections []selector.CountrySelection, allTested, 
 		return err
 	}
 	return WriteDiagnostics(outDir, allTested, dead)
+}
+
+// ProtoReadme is the per-protocol summary fed into WriteMultiProtocolReadme.
+type ProtoReadme struct {
+	Protocol   string
+	Selections []selector.CountrySelection
+	Rotating   int // count, not the slice itself
+}
+
+// WriteProtocol writes per-protocol output: subs/<protocol>/<CC>.txt,
+// subs/<protocol>/all.txt, subs/<protocol>/rotating.txt.
+//
+// Mirrors Write() but rooted at subs/<protocol>/ so each protocol gets its
+// own subscription URL space (e.g., subs/vmess/all.txt). Top-level subs/
+// remains for back-compat (vless mirror — handled by callers via Write).
+func WriteProtocol(outDir, protocol string, selections []selector.CountrySelection, rotating []selector.Result, generatedAt time.Time) error {
+	subsDir := filepath.Join(outDir, "subs", protocol)
+	if err := os.MkdirAll(subsDir, 0o755); err != nil {
+		return fmt.Errorf("mkdir %s: %w", subsDir, err)
+	}
+
+	// Clean stale CC.txt files for this protocol so countries that fell
+	// off (e.g., zero stable-alive this run) don't keep showing.
+	stale, _ := filepath.Glob(filepath.Join(subsDir, "*.txt"))
+	for _, p := range stale {
+		base := filepath.Base(p)
+		if len(base) == 6 && strings.HasSuffix(base, ".txt") &&
+			base[0] >= 'A' && base[0] <= 'Z' && base[1] >= 'A' && base[1] <= 'Z' {
+			_ = os.Remove(p)
+		}
+	}
+
+	sortedSel := make([]selector.CountrySelection, len(selections))
+	copy(sortedSel, selections)
+	sort.SliceStable(sortedSel, func(i, j int) bool {
+		return sortedSel[i].Country < sortedSel[j].Country
+	})
+
+	var allBuf strings.Builder
+	for _, cs := range sortedSel {
+		path := filepath.Join(subsDir, cs.Country+".txt")
+		var b strings.Builder
+		for _, r := range cs.Top {
+			rewritten := rewriteRemark(r.Link, cs.Country)
+			b.WriteString(rewritten)
+			b.WriteByte('\n')
+			allBuf.WriteString(rewritten)
+			allBuf.WriteByte('\n')
+		}
+		if err := os.WriteFile(path, []byte(b.String()), 0o644); err != nil {
+			return fmt.Errorf("write %s: %w", path, err)
+		}
+	}
+
+	allPath := filepath.Join(subsDir, "all.txt")
+	if err := os.WriteFile(allPath, []byte(allBuf.String()), 0o644); err != nil {
+		return fmt.Errorf("write %s: %w", allPath, err)
+	}
+
+	if err := writeRotating(subsDir, rotating); err != nil {
+		return err
+	}
+	_ = generatedAt // reserved for future per-protocol README per-dir
+	return nil
 }
 
 // Write produces subs/<CC>.txt files, subs/all.txt, subs/rotating.txt
@@ -297,6 +364,83 @@ func writeDeadList(outDir string, dead []selector.Result) error {
 		b.WriteByte('\n')
 	}
 	return os.WriteFile(filepath.Join(rawDir, "dead.txt"), []byte(b.String()), 0o644)
+}
+
+// WriteMultiProtocolReadme writes the top-level README.md describing all
+// curated protocols. For v2.0 multi-protocol mode. Lists subscription URLs
+// per protocol and shows the per-country top-3 table for each.
+func WriteMultiProtocolReadme(outDir string, protos []ProtoReadme, generatedAt time.Time) error {
+	readme := buildMultiProtocolReadme(protos, generatedAt)
+	return os.WriteFile(filepath.Join(outDir, "README.md"), []byte(readme), 0o644)
+}
+
+func buildMultiProtocolReadme(protos []ProtoReadme, generatedAt time.Time) string {
+	var b strings.Builder
+	stamp := generatedAt.UTC().Format(time.RFC3339)
+
+	b.WriteString("# VlessFilter Results\n\n")
+	b.WriteString("Auto-curated top 3 fastest proxy keys per country, refreshed automatically. ")
+	b.WriteString("Multi-protocol: VLESS / VMess / Trojan / Shadowsocks.\n\n")
+
+	b.WriteString("## How to use\n\n")
+	b.WriteString("Pick the protocol your client supports best. Each has its own subscription URLs:\n\n")
+
+	for _, p := range protos {
+		title := strings.ToUpper(p.Protocol)
+		b.WriteString(fmt.Sprintf("### %s\n\n", title))
+		b.WriteString(fmt.Sprintf("All %s countries (single subscription):\n\n", title))
+		b.WriteString(fmt.Sprintf("```\nhttps://raw.githubusercontent.com/trikiman/vlessfilter/main/subs/%s/all.txt\n```\n\n",
+			p.Protocol))
+		b.WriteString("Specific country:\n\n")
+		b.WriteString(fmt.Sprintf("```\nhttps://raw.githubusercontent.com/trikiman/vlessfilter/main/subs/%s/<CC>.txt\n```\n\n",
+			p.Protocol))
+		b.WriteString(fmt.Sprintf("Rotating exits: `subs/%s/rotating.txt` (%d configs)\n\n",
+			p.Protocol, p.Rotating))
+	}
+
+	// VLESS back-compat note
+	b.WriteString("**Back-compat (v1 URLs):** `subs/all.txt`, `subs/<CC>.txt`, `subs/rotating.txt` continue to work — they mirror the VLESS protocol files.\n\n")
+
+	b.WriteString("## Stability filter\n\n")
+	b.WriteString("Many public configs route through proxy chains, load balancers, or Cloudflare Workers — these have **rotating exit countries** (e.g., one connection lands in Sweden, the next in India). Tagging them with a single country would be misleading.\n\n")
+	b.WriteString("Each config's full test history is checked:\n")
+	b.WriteString("- **Stable** (always exits same country) → published in `subs/<protocol>/<CC>.txt` with that country code\n")
+	b.WriteString("- **Rotating** (varies across tests, OR is a `*.workers.dev` / `*.pages.dev` host) → published in `subs/<protocol>/rotating.txt` with `🌐 ROTATING` label\n")
+	b.WriteString("- **Dead** → not published\n\n")
+
+	for _, p := range protos {
+		title := strings.ToUpper(p.Protocol)
+		fmt.Fprintf(&b, "## %s — top 3 per country (stable only)\n\n", title)
+		if len(p.Selections) == 0 {
+			b.WriteString("_No stable countries this run._\n\n")
+			continue
+		}
+		b.WriteString("| Country | Top latency (ms) | Median speed (Mbps) | Keys |\n")
+		b.WriteString("|---------|------------------|---------------------|------|\n")
+
+		rows := make([]selector.CountrySelection, len(p.Selections))
+		copy(rows, p.Selections)
+		sort.SliceStable(rows, func(i, j int) bool { return rows[i].Country < rows[j].Country })
+
+		for _, cs := range rows {
+			topLat := 0
+			speeds := make([]float64, 0, len(cs.Top))
+			for _, r := range cs.Top {
+				if topLat == 0 || r.LatencyMs < topLat {
+					topLat = r.LatencyMs
+				}
+				speeds = append(speeds, r.SpeedMbps)
+			}
+			fmt.Fprintf(&b, "| %s %s | %d | %.1f | %d |\n",
+				flagEmoji(cs.Country), cs.Country, topLat, median(speeds), len(cs.Top))
+		}
+		fmt.Fprintf(&b, "\n**Rotating-exit pool:** %d configs in `subs/%s/rotating.txt`\n\n",
+			p.Rotating, p.Protocol)
+	}
+
+	b.WriteString("_Generated by [vlessfilter](https://github.com/trikiman/vlessfilter). Source list: `sources.yaml`._\n\n")
+	fmt.Fprintf(&b, "<!-- last-tested: %s -->\n", stamp)
+	return b.String()
 }
 
 // buildReadme renders the summary README.md.

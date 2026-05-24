@@ -29,6 +29,24 @@ const (
 	WLatency     = 0.4
 )
 
+// SupportedProtocols lists the proxy schemes vlessfilter (now multi-protocol)
+// can curate. Order is the canonical iteration order for output dirs and
+// log lines so behavior is deterministic across runs.
+var SupportedProtocols = []string{"vless", "vmess", "trojan", "ss"}
+
+// ProtocolFromLink returns the lowercased scheme of a proxy URI, or empty
+// string if it doesn't match any supported protocol. Prefix-only check is
+// safe because xray-knife always emits canonical "<scheme>://" URIs (no
+// whitespace, no query-string-before-scheme weirdness).
+func ProtocolFromLink(link string) string {
+	for _, p := range SupportedProtocols {
+		if strings.HasPrefix(link, p+"://") {
+			return p
+		}
+	}
+	return ""
+}
+
 // Result is one tested key after we've populated all measured fields.
 type Result struct {
 	Link      string  // full vless:// URI
@@ -97,16 +115,21 @@ func Top3PerCountry(results []Result) []CountrySelection {
 // columns, and returns Result rows from the most recent test run only.
 //
 // LoadUntestedLinks returns config_links from subscription_configs that have
-// no row in http_test_results yet, capped to `limit` rows.
+// no row in http_test_results yet, capped to `limit` rows. Filters by the
+// requested protocol (vless/vmess/trojan/ss) so each protocol gets its own
+// untested batch in multi-protocol mode.
 //
 // Used by the pipeline to incrementally cover the pool: each scheduled run
 // tests the next batch of NEW configs instead of trying to retest the entire
-// (now 775k+) pool and getting killed by the budget.
+// (now 1M+) pool and getting killed by the budget.
 //
 // Returns nil when limit <= 0 (caller should fall back to whole-pool test).
-func LoadUntestedLinks(ctx context.Context, dbPath string, limit int) ([]string, error) {
+func LoadUntestedLinks(ctx context.Context, dbPath string, limit int, protocol string) ([]string, error) {
 	if limit <= 0 {
 		return nil, nil
+	}
+	if protocol == "" {
+		protocol = "vless"
 	}
 	db, err := sql.Open("sqlite", dbPath+"?mode=ro&_busy_timeout=5000")
 	if err != nil {
@@ -120,10 +143,10 @@ func LoadUntestedLinks(ctx context.Context, dbPath string, limit int) ([]string,
 	q := `
 		SELECT sc.config_link FROM subscription_configs sc
 		LEFT JOIN http_test_results r ON r.config_link = sc.config_link
-		WHERE sc.protocol = 'vless' AND r.config_link IS NULL
+		WHERE sc.protocol = ? AND r.config_link IS NULL
 		LIMIT ?
 	`
-	rows, err := db.QueryContext(ctx, q, limit)
+	rows, err := db.QueryContext(ctx, q, protocol, limit)
 	if err != nil {
 		// Tolerate missing subscription_configs table (e.g., test DBs that
 		// only seed http_test_results). Caller falls back to retesting
@@ -153,17 +176,24 @@ func LoadUntestedLinks(ctx context.Context, dbPath string, limit int) ([]string,
 // to feed stage 2 (speedtest) only the stage-1 survivors instead of
 // re-testing the whole pool.
 //
+// Filters by protocol (vless/vmess/trojan/ss) via config_link prefix. Pass
+// "" to disable the protocol filter (returns all alive of any protocol).
+//
 // Returns empty slice (not error) when no alive configs exist.
-func LoadAliveLinks(ctx context.Context, dbPath string) ([]string, error) {
+func LoadAliveLinks(ctx context.Context, dbPath, protocol string) ([]string, error) {
 	alive, _, err := LoadAllResults(ctx, dbPath)
 	if err != nil {
 		return nil, err
 	}
 	out := make([]string, 0, len(alive))
 	for _, r := range alive {
-		if r.Link != "" {
-			out = append(out, r.Link)
+		if r.Link == "" {
+			continue
 		}
+		if protocol != "" && ProtocolFromLink(r.Link) != protocol {
+			continue
+		}
+		out = append(out, r.Link)
 	}
 	return out, nil
 }
@@ -176,6 +206,9 @@ func LoadAliveLinks(ctx context.Context, dbPath string) ([]string, error) {
 //     history (proxy chains, load balancers, CF Workers).
 //     Useful but cannot be honestly tagged with one country.
 //
+// Filters by protocol (vless/vmess/trojan/ss) via config_link prefix. Pass
+// "" to return results for any protocol (legacy behavior).
+//
 // Cloudflare Worker / Pages configs are forced into rotating regardless
 // of test history because their exit is determined by upstream selection
 // per-connection (i.e., even if past tests happened to all hit one country,
@@ -184,7 +217,7 @@ func LoadAliveLinks(ctx context.Context, dbPath string) ([]string, error) {
 // Each Result returned uses the latest passing test as the snapshot
 // (latency, speed, country at that test), but the Country field reflects
 // the consensus determined here.
-func LoadStableAndRotating(ctx context.Context, dbPath string) (stable, rotating []Result, err error) {
+func LoadStableAndRotating(ctx context.Context, dbPath, protocol string) (stable, rotating []Result, err error) {
 	db, err := sql.Open("sqlite", dbPath+"?mode=ro&_busy_timeout=5000")
 	if err != nil {
 		return nil, nil, fmt.Errorf("open %s: %w", dbPath, err)
@@ -229,6 +262,11 @@ func LoadStableAndRotating(ctx context.Context, dbPath string) (stable, rotating
 	if hasStatus {
 		whereClause = fmt.Sprintf("%s = 'passed' AND %s",
 			quote(statusCol), whereClause)
+	}
+	// Protocol filter via config_link prefix. Empty protocol = include all.
+	if protocol != "" {
+		whereClause = fmt.Sprintf("%s LIKE '%s://%%' AND %s",
+			quote(mapping.Link), protocol, whereClause)
 	}
 	q := fmt.Sprintf(`
 		SELECT %s, %s, %s, %s, %s

@@ -60,6 +60,12 @@ type Opts struct {
 	RunAccuracyProbe bool
 	GitName          string
 	GitEmail         string
+
+	// Protocols controls which proxy schemes get tested + published.
+	// Empty defaults to ["vless"] (legacy v1 behavior). Multi-protocol mode
+	// (v2.0+) typically passes ["vless", "vmess", "trojan", "ss"]. Each
+	// protocol gets its own test pass + its own subs/<proto>/ output dir.
+	Protocols []string
 }
 
 var validStages = map[string]bool{"": true, "fetch": true, "test": true, "select": true}
@@ -195,19 +201,43 @@ func runTest(ctx context.Context, opts Opts) error {
 		t2 = 20
 	}
 
+	protocols := opts.Protocols
+	if len(protocols) == 0 {
+		protocols = []string{"vless"}
+	}
+	dbPath, err := opts.Runner.DBPath()
+	if err != nil {
+		return fmt.Errorf("test: db path: %w", err)
+	}
+
+	// Per-protocol test pass. Each protocol runs its own stage 1 (handshake)
+	// and stage 2 (3x speedtest). xray-knife's --protocol flag filters input
+	// configs by scheme, so we can't run all protocols in one invocation.
+	//
+	// Order matches selector.SupportedProtocols so logs and DB writes are
+	// deterministic across runs.
+	for _, proto := range protocols {
+		slog.Info("test: starting protocol pass", "protocol", proto)
+		if err := runTestProtocol(ctx, opts, proto, dbPath, t1, t2); err != nil {
+			// Tolerate per-protocol failures: log + continue. A failure of
+			// vmess shouldn't abort vless. Budget cancellation propagates
+			// via ctx and stops the loop on next iteration.
+			if errors.Is(err, context.DeadlineExceeded) || errors.Is(err, context.Canceled) {
+				return err
+			}
+			slog.Warn("test: protocol pass failed (continuing other protocols)",
+				"protocol", proto, "error", err)
+		}
+	}
+	return nil
+}
+
+// runTestProtocol runs stage 1 + stage 2 for a single protocol. Extracted so
+// runTest can iterate over multiple protocols in v2.0 multi-protocol mode.
+func runTestProtocol(ctx context.Context, opts Opts, protocol, dbPath string, t1, t2 int) error {
 	// Stage 1: TLS handshake against a manageable batch of NEW (untested)
 	// configs PLUS retests of the existing alive set, instead of trying to
-	// test the entire 700k+ pool and getting killed by the budget.
-	//
-	// Why this matters: previously stage 1 used --from-db which iterates
-	// the full pool. With 700k+ configs at ~30/s sustained, a 60-min run
-	// only covered ~108k = 14% before getting killed. Worse, xray-knife
-	// didn't flush partial results when killed, so several full-pool
-	// scheduled runs produced 0 saved alive entries.
-	//
-	// New design: each run tests up to untestedBatch new configs +
-	// re-validates currently-alive ones. Over ~5-7 runs the pool gets
-	// fully covered, and once-alive configs that died get marked as such.
+	// test the entire 1M+ pool and getting killed by the budget.
 	//
 	// LIVE-04: --profile dev passes opts.Limit > 0 to cap stage 1 to
 	// a small subset for fast iteration.
@@ -215,17 +245,13 @@ func runTest(ctx context.Context, opts Opts) error {
 	if opts.Limit > 0 && opts.Limit < untestedBatch {
 		untestedBatch = opts.Limit
 	}
-	dbPath, err := opts.Runner.DBPath()
+	untested, err := selector.LoadUntestedLinks(ctx, dbPath, untestedBatch, protocol)
 	if err != nil {
-		return fmt.Errorf("stage 1: db path: %w", err)
+		return fmt.Errorf("stage 1 [%s]: load untested: %w", protocol, err)
 	}
-	untested, err := selector.LoadUntestedLinks(ctx, dbPath, untestedBatch)
+	priorAlive, err := selector.LoadAliveLinks(ctx, dbPath, protocol)
 	if err != nil {
-		return fmt.Errorf("stage 1: load untested: %w", err)
-	}
-	priorAlive, err := selector.LoadAliveLinks(ctx, dbPath)
-	if err != nil {
-		return fmt.Errorf("stage 1: load alive: %w", err)
+		return fmt.Errorf("stage 1 [%s]: load alive: %w", protocol, err)
 	}
 
 	// Combine the two sets for stage 1. Dedup in case a once-alive config
@@ -240,108 +266,94 @@ func runTest(ctx context.Context, opts Opts) error {
 	}
 
 	if len(stage1Links) == 0 {
-		slog.Warn("stage 1: nothing to test (no untested configs and no prior alive)")
+		slog.Warn("stage 1: nothing to test (no untested configs and no prior alive)",
+			"protocol", protocol)
 		// Fall back to full-pool test
-		slog.Info("stage 1: full-pool fallback (--from-db)")
+		slog.Info("stage 1: full-pool fallback (--from-db)", "protocol", protocol)
 		if err := opts.Runner.HTTPTest(ctx, xrayknife.HTTPOpts{
 			Speedtest: false,
 			Threads:   t1,
-			Protocol:  "vless",
+			Protocol:  protocol,
 			DelayMs:   5000,
 		}); err != nil {
-			return fmt.Errorf("stage 1 (ping, full-pool): %w", err)
+			return fmt.Errorf("stage 1 [%s] (ping, full-pool): %w", protocol, err)
 		}
 	} else {
 		stage1Tmp, err := os.CreateTemp("", "vlessfilter-stage1-*.txt")
 		if err != nil {
-			return fmt.Errorf("stage 1: temp file: %w", err)
+			return fmt.Errorf("stage 1 [%s]: temp file: %w", protocol, err)
 		}
 		defer os.Remove(stage1Tmp.Name())
 		for _, link := range stage1Links {
 			if _, err := fmt.Fprintln(stage1Tmp, link); err != nil {
 				stage1Tmp.Close()
-				return fmt.Errorf("stage 1: write temp: %w", err)
+				return fmt.Errorf("stage 1 [%s]: write temp: %w", protocol, err)
 			}
 		}
 		stage1Tmp.Close()
 
 		slog.Info("test stage 1: handshake/ping",
+			"protocol", protocol,
 			"threads", t1, "untested", len(untested), "retest_alive", len(priorAlive),
 			"total", len(stage1Links))
 		if err := opts.Runner.HTTPTest(ctx, xrayknife.HTTPOpts{
 			Speedtest: false,
 			Threads:   t1,
-			Protocol:  "vless",
+			Protocol:  protocol,
 			File:      stage1Tmp.Name(),
 			DelayMs:   5000,
 		}); err != nil {
-			return fmt.Errorf("stage 1 (ping): %w", err)
+			return fmt.Errorf("stage 1 [%s] (ping): %w", protocol, err)
 		}
 	}
 
 	// Skip stage 2 if user explicitly disabled it.
 	if t2 == 0 {
-		slog.Info("stage 2 skipped (Threads2=0)")
+		slog.Info("stage 2 skipped (Threads2=0)", "protocol", protocol)
 		return nil
 	}
 
-	// Stage 2: speedtest the stage-1 survivors only. We need real HTTP
-	// traffic flowing through each proxy, not just a TLS handshake — many
-	// VLESS endpoints accept handshakes but refuse to forward traffic.
-	//
-	// xray-knife's --from-db doesn't filter to "previous run passed", so we
-	// extract the alive set from the DB ourselves and feed it back via -f.
-	// (dbPath already obtained above for stage 1.)
-	aliveLinks, err := selector.LoadAliveLinks(ctx, dbPath)
+	// Stage 2: speedtest the stage-1 survivors only.
+	aliveLinks, err := selector.LoadAliveLinks(ctx, dbPath, protocol)
 	if err != nil {
-		return fmt.Errorf("stage 2: load alive: %w", err)
+		return fmt.Errorf("stage 2 [%s]: load alive: %w", protocol, err)
 	}
 	if len(aliveLinks) == 0 {
-		slog.Warn("stage 2 skipped: stage 1 produced 0 alive configs")
+		slog.Warn("stage 2 skipped: stage 1 produced 0 alive configs", "protocol", protocol)
 		return nil
 	}
 	tmp, err := os.CreateTemp("", "vlessfilter-alive-*.txt")
 	if err != nil {
-		return fmt.Errorf("stage 2: temp file: %w", err)
+		return fmt.Errorf("stage 2 [%s]: temp file: %w", protocol, err)
 	}
 	defer os.Remove(tmp.Name())
 	for _, link := range aliveLinks {
 		if _, err := fmt.Fprintln(tmp, link); err != nil {
 			tmp.Close()
-			return fmt.Errorf("stage 2: write temp: %w", err)
+			return fmt.Errorf("stage 2 [%s]: write temp: %w", protocol, err)
 		}
 	}
 	if err := tmp.Close(); err != nil {
-		return fmt.Errorf("stage 2: close temp: %w", err)
+		return fmt.Errorf("stage 2 [%s]: close temp: %w", protocol, err)
 	}
 
 	// Stage 2: speedtest 3 separate times (LIVE-01).
-	//
-	// Each invocation writes a fresh test_run row to the DB. The selector
-	// then groups by config_link and applies "passes >= 2" to decide
-	// alive vs flaky. This catches handshake-passes-but-no-real-traffic
-	// false positives and flaky proxies that succeed once but fail next
-	// time. xray-knife's internal --retries=2 fakes "1 pass on retry" as
-	// a success; we want 3 INDEPENDENT runs to count distinct successes.
 	const stage2Attempts = 3
 	for attempt := 1; attempt <= stage2Attempts; attempt++ {
 		slog.Info("test stage 2: speedtest attempt",
+			"protocol", protocol,
 			"attempt", attempt, "of", stage2Attempts,
 			"alive_input", len(aliveLinks), "threads", t2)
 		if err := opts.Runner.HTTPTest(ctx, xrayknife.HTTPOpts{
 			Speedtest: true,
 			Threads:   t2,
-			Protocol:  "vless",
+			Protocol:  protocol,
 			File:      tmp.Name(),
 			DelayMs:   5000,
-			Retries:   1, // small per-attempt retry; cross-attempt check via 3 runs below
+			Retries:   1,
 		}); err != nil {
-			// Tolerate intermittent failures of an individual attempt —
-			// other attempts still produce useful evidence. Fail only if
-			// none of the attempts produced any DB writes (caller can
-			// detect via empty selector results).
 			slog.Warn("stage 2 attempt failed (continuing)",
-				"attempt", attempt, "err", err)
+				"protocol", protocol, "attempt", attempt, "err", err)
 		}
 	}
 	return nil
@@ -365,34 +377,85 @@ func runSelect(ctx context.Context, opts Opts) error {
 	if err != nil {
 		return err
 	}
-	stable, rotating, err := selector.LoadStableAndRotating(ctx, dbPath)
-	if err != nil {
-		return err
-	}
-	// We still need dead set for diagnostics; fetch them via the legacy
-	// LoadAllResults (it returns alive+dead but we only use dead here).
-	_, dead, _ := selector.LoadAllResults(ctx, dbPath)
 
-	if len(stable) == 0 && len(rotating) == 0 {
-		slog.Debug("select: no alive results yet (skipping output)", "db", dbPath)
+	protocols := opts.Protocols
+	if len(protocols) == 0 {
+		protocols = []string{"vless"}
+	}
+
+	// Aggregate everything across protocols for cross-protocol diagnostics
+	// (all-results.csv + raw/dead.txt). Per-protocol output goes to
+	// subs/<proto>/.
+	var aggAllTested, aggDead []selector.Result
+
+	// Per-protocol subscription writes. For VLESS specifically, also
+	// mirror to subs/<CC>.txt (top-level) for back-compat with v1
+	// subscription URLs.
+	var perProto []protoOutput
+
+	for _, proto := range protocols {
+		stable, rotating, err := selector.LoadStableAndRotating(ctx, dbPath, proto)
+		if err != nil {
+			return fmt.Errorf("select [%s]: %w", proto, err)
+		}
+		selections := selector.Top3PerCountry(stable)
+		slog.Info("select complete",
+			"protocol", proto,
+			"countries", len(selections),
+			"stable_alive", len(stable),
+			"rotating_alive", len(rotating))
+
+		perProto = append(perProto, protoOutput{
+			proto:      proto,
+			selections: selections,
+			stable:     stable,
+			rotating:   rotating,
+		})
+
+		aggAllTested = append(aggAllTested, stable...)
+		aggAllTested = append(aggAllTested, rotating...)
+	}
+
+	// Dead set is protocol-agnostic — we want to record all configs that
+	// failed regardless of which protocol they were tested under.
+	_, dead, _ := selector.LoadAllResults(ctx, dbPath)
+	aggDead = dead
+
+	totalCountries := 0
+	for _, p := range perProto {
+		totalCountries += len(p.selections)
+	}
+	if totalCountries == 0 && len(aggAllTested) == 0 {
+		slog.Debug("select: no alive results yet across any protocol (skipping output)", "db", dbPath)
 		return nil
 	}
-	selections := selector.Top3PerCountry(stable)
-	slog.Info("select complete",
-		"countries", len(selections),
-		"stable_alive", len(stable),
-		"rotating_alive", len(rotating),
-		"dead", len(dead))
-	if err := output.WriteAll(opts.OutDir, selections, append(stable, rotating...), dead, rotating, opts.Now()); err != nil {
+
+	// Write per-protocol subs/<proto>/ output. For vless, also mirror to
+	// top-level subs/ for v1 URL back-compat.
+	for _, p := range perProto {
+		if err := output.WriteProtocol(opts.OutDir, p.proto, p.selections, p.rotating, opts.Now()); err != nil {
+			return err
+		}
+		if p.proto == "vless" {
+			// Back-compat: v1 URLs were subs/<CC>.txt, subs/all.txt,
+			// subs/rotating.txt — keep them working by mirroring vless
+			// output to the top-level subs/ dir.
+			if err := output.Write(opts.OutDir, p.selections, p.rotating, opts.Now()); err != nil {
+				return err
+			}
+		}
+	}
+
+	// Cross-protocol diagnostics + README at top level.
+	if err := output.WriteDiagnostics(opts.OutDir, aggAllTested, aggDead); err != nil {
+		return err
+	}
+	if err := output.WriteMultiProtocolReadme(opts.OutDir, perProtoReadmeData(perProto), opts.Now()); err != nil {
 		return err
 	}
 
-	// GEO-04: post-publish accuracy probe. Sample N random keys per
-	// country, route HTTP through them to ipinfo.io, compare actual
-	// exit country to our published label. Logs per-country accuracy.
-	//
-	// Skipped for --profile dev (small subsets aren't worth probing).
-	// Skipped on checkpoint runs (only end-of-run validation matters).
+	// GEO-04: post-publish accuracy probe (VLESS only for now —
+	// per-protocol probing arrives in v2.1).
 	if opts.RunAccuracyProbe {
 		probe := &accuracy.Probe{
 			SubsDir:       filepath.Join(opts.OutDir, "subs"),
@@ -412,6 +475,30 @@ func runSelect(ctx context.Context, opts Opts) error {
 		}
 	}
 	return nil
+}
+
+// perProtoReadmeData converts pipeline's internal protoOutput slice to the
+// shape output.WriteMultiProtocolReadme expects (decoupling the two packages
+// without exporting an internal type).
+func perProtoReadmeData(perProto []protoOutput) []output.ProtoReadme {
+	out := make([]output.ProtoReadme, 0, len(perProto))
+	for _, p := range perProto {
+		out = append(out, output.ProtoReadme{
+			Protocol:   p.proto,
+			Selections: p.selections,
+			Rotating:   len(p.rotating),
+		})
+	}
+	return out
+}
+
+// protoOutput is the per-protocol view collected by runSelect, kept at
+// package scope so perProtoReadmeData can reference the type.
+type protoOutput struct {
+	proto      string
+	selections []selector.CountrySelection
+	stable     []selector.Result
+	rotating   []selector.Result
 }
 
 // startCheckpointLoop launches a goroutine that, every CheckpointMin

@@ -2,6 +2,47 @@
 
 All notable changes to VlessFilter are documented here.
 
+## v2.0.0 — 2026-05-24
+
+**Multi-protocol pivot.** VlessFilter now curates **VLESS, VMess, Trojan,
+and Shadowsocks** keys per country. Previously VLESS-only.
+
+### Added
+- `--protocols vless,vmess,trojan,ss` CLI flag — comma-separated list of
+  proxy schemes to test + publish. Default tests all four.
+- `subs/<protocol>/<CC>.txt` output structure. Each protocol gets its
+  own subscription URL space:
+  - `subs/vless/all.txt`, `subs/vless/<CC>.txt`, `subs/vless/rotating.txt`
+  - `subs/vmess/all.txt`, `subs/vmess/<CC>.txt`, `subs/vmess/rotating.txt`
+  - `subs/trojan/all.txt`, `subs/trojan/<CC>.txt`, `subs/trojan/rotating.txt`
+  - `subs/ss/all.txt`, `subs/ss/<CC>.txt`, `subs/ss/rotating.txt`
+- README.md now lists per-protocol subscription URLs and per-protocol
+  per-country top-3 tables.
+- `selector.SupportedProtocols` + `selector.ProtocolFromLink()` helpers.
+
+### Changed
+- `pipeline.runTest` now loops over `opts.Protocols`, running stage 1
+  (handshake) + stage 2 (3x speedtest) for each protocol independently.
+- `pipeline.runSelect` produces one set of subscription files per protocol.
+- Selector functions now take a `protocol` parameter:
+  - `LoadStableAndRotating(ctx, dbPath, protocol string)`
+  - `LoadAliveLinks(ctx, dbPath, protocol string)`
+  - `LoadUntestedLinks(ctx, dbPath, limit int, protocol string)`
+  - Pass `""` (empty) for legacy any-protocol behavior.
+- Existing v1 URLs (`subs/all.txt`, `subs/<CC>.txt`, `subs/rotating.txt`)
+  still work — they mirror the VLESS protocol output for back-compat.
+
+### Pool growth
+- Single-protocol VLESS pool: ~1,019,913 unique configs
+- Estimated four-protocol pool from same sources: 3M+ configs
+
+### Why the pivot
+Author noticed that aggregator files publish all four protocols mixed
+(e.g., MatinGhanbari super-sub: 15 vless + 73 vmess + 71 ss + 37 trojan),
+and our v1 filter discarded ~75% of available proxy keys. Multi-protocol
+mode preserves that signal — users pick whichever protocol their client
+prefers.
+
 ## v1.3.0 — 2026-05-15
 
 **100k target crossed: 113,031 unique VLESS configs ingested.**

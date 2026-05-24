@@ -111,6 +111,7 @@ func runCmd(args []string) int {
 	gitBranch := fs.String("git-branch", "main", "Branch to push to")
 	profile := fs.String("profile", "", "Preset for fast iteration: 'dev' = small subset, 2-min budget, dev/ output")
 	accuracyProbe := fs.Bool("accuracy-probe", false, "After publish, sample-test keys against ipinfo.io and compare to published country labels (GEO-04)")
+	protocols := fs.String("protocols", "vless,vmess,trojan,ss", "Comma-separated proxy protocols to test+publish (default: all 4 supported)")
 
 	if err := fs.Parse(args); err != nil {
 		if errors.Is(err, flag.ErrHelp) {
@@ -154,6 +155,25 @@ func runCmd(args []string) int {
 			"threads1", *threads1, "threads2", *threads2, "limit_stage2", *limit)
 	}
 
+	// Parse --protocols into a slice. Validate against the supported set.
+	var protoList []string
+	for _, p := range strings.Split(*protocols, ",") {
+		p = strings.TrimSpace(strings.ToLower(p))
+		if p == "" {
+			continue
+		}
+		switch p {
+		case "vless", "vmess", "trojan", "ss":
+			protoList = append(protoList, p)
+		default:
+			fmt.Fprintf(os.Stderr, "invalid --protocols value %q (allowed: vless, vmess, trojan, ss)\n", p)
+			return exitUserErr
+		}
+	}
+	if len(protoList) == 0 {
+		protoList = []string{"vless"}
+	}
+
 	opts := pipeline.Opts{
 		SourcesPath:      *sources,
 		OutDir:           *outDir,
@@ -168,6 +188,7 @@ func runCmd(args []string) int {
 		GitBranch:        *gitBranch,
 		GitToken:         token,
 		RunAccuracyProbe: *accuracyProbe,
+		Protocols:        protoList,
 		Runner:           runner,
 		Now:              func() time.Time { return time.Now().UTC() },
 	}
