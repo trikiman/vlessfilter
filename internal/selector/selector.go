@@ -131,6 +131,13 @@ func LoadUntestedLinks(ctx context.Context, dbPath string, limit int, protocol s
 	if protocol == "" {
 		protocol = "vless"
 	}
+	// xray-knife stores "shadowsocks" in subscription_configs.protocol but
+	// the URI scheme is "ss://" and our pipeline + CLI uses "ss". Map at
+	// the query boundary.
+	dbProtocol := protocol
+	if dbProtocol == "ss" {
+		dbProtocol = "shadowsocks"
+	}
 	db, err := sql.Open("sqlite", dbPath+"?mode=ro&_busy_timeout=5000")
 	if err != nil {
 		return nil, fmt.Errorf("open %s: %w", dbPath, err)
@@ -146,7 +153,7 @@ func LoadUntestedLinks(ctx context.Context, dbPath string, limit int, protocol s
 		WHERE sc.protocol = ? AND r.config_link IS NULL
 		LIMIT ?
 	`
-	rows, err := db.QueryContext(ctx, q, protocol, limit)
+	rows, err := db.QueryContext(ctx, q, dbProtocol, limit)
 	if err != nil {
 		// Tolerate missing subscription_configs table (e.g., test DBs that
 		// only seed http_test_results). Caller falls back to retesting
