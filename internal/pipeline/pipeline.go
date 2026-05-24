@@ -23,6 +23,7 @@ import (
 	"github.com/trikiman/vlessfilter/internal/git"
 	"github.com/trikiman/vlessfilter/internal/kerntune"
 	"github.com/trikiman/vlessfilter/internal/output"
+	"github.com/trikiman/vlessfilter/internal/prepublish"
 	"github.com/trikiman/vlessfilter/internal/selector"
 	"github.com/trikiman/vlessfilter/internal/sources"
 	"github.com/trikiman/vlessfilter/internal/xrayknife"
@@ -66,6 +67,12 @@ type Opts struct {
 	// (v2.0+) typically passes ["vless", "vmess", "trojan", "ss"]. Each
 	// protocol gets its own test pass + its own subs/<proto>/ output dir.
 	Protocols []string
+
+	// SkipPrePublishProbe disables the immediately-before-publish probe
+	// (re-tests each top-3 selection, drops dead, aborts publish if
+	// drop-rate>75%). Default false (probe runs). Set true for checkpoint
+	// runs which fire every 2 min and don't need the full re-validation.
+	SkipPrePublishProbe bool
 }
 
 var validStages = map[string]bool{"": true, "fetch": true, "test": true, "select": true}
@@ -405,6 +412,46 @@ func runSelect(ctx context.Context, opts Opts) error {
 			"stable_alive", len(stable),
 			"rotating_alive", len(rotating))
 
+		// PRE-PUBLISH PROBE — re-validate each top-3 selection RIGHT NOW
+		// (not 50min ago when stage 2 ran). Drops keys that died between
+		// stage 2 and publish. Without this, users see "80-90% timeout"
+		// in their client because configs churn faster than our test cycle.
+		//
+		// Skipped for checkpoint runs (only end-of-run validation matters,
+		// and probing on every checkpoint would 5x the run time).
+		if !opts.SkipPrePublishProbe && len(selections) > 0 {
+			probe := &prepublish.Probe{
+				Timeout:     5 * time.Second,
+				Concurrency: 20,
+			}
+			res := probe.Filter(ctx, selections)
+			prepublish.LogResult(res)
+			slog.Info("pre-publish probe summary",
+				"protocol", proto,
+				"input", res.InputKeys,
+				"alive", res.AlivKeys,
+				"drop_rate", fmt.Sprintf("%.1f%%", res.DropRate*100))
+
+			// Critical drop rate: if more than 75% of our published
+			// keys are dead at publish time, the stage-2 results are
+			// stale enough that publishing would mislead users. Skip
+			// publish — keep previous run live.
+			const maxAllowedDropRate = 0.75
+			if res.InputKeys >= 5 && res.DropRate > maxAllowedDropRate {
+				slog.Error("pre-publish probe: drop rate exceeds threshold; ABORTING publish for this protocol",
+					"protocol", proto,
+					"drop_rate", fmt.Sprintf("%.1f%%", res.DropRate*100),
+					"threshold", fmt.Sprintf("%.1f%%", maxAllowedDropRate*100))
+				// Skip this protocol — leave existing subs/<proto>/ files
+				// untouched on disk so previous (presumably better) run
+				// stays published.
+				continue
+			}
+			// Use filtered selections for output. May be smaller — that's
+			// fine, fewer-but-honest keys is the goal.
+			selections = res.Filtered
+		}
+
 		perProto = append(perProto, protoOutput{
 			proto:      proto,
 			selections: selections,
@@ -525,7 +572,11 @@ func startCheckpointLoop(ctx context.Context, opts Opts) func() {
 				return
 			case <-t.C:
 				slog.Info("checkpoint: writing partial output")
-				if err := runSelect(ctx, opts); err != nil {
+				// Checkpoint runs fire every 2min and shouldn't pay for
+				// the pre-publish probe (which takes ~5s × N keys).
+				cpOpts := opts
+				cpOpts.SkipPrePublishProbe = true
+				if err := runSelect(ctx, cpOpts); err != nil {
 					slog.Warn("checkpoint runSelect failed", "error", err)
 					continue
 				}

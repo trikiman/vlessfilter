@@ -115,6 +115,10 @@ func TestRun_FullPipeline_WithFakeRunner(t *testing.T) {
 		Now:           func() time.Time { return time.Date(2026, 1, 1, 0, 0, 0, 0, time.UTC) },
 		BudgetMin:     0, // no budget
 		CheckpointMin: 0, // no checkpoint loop
+		// Test fixtures use fake vless URIs that can't actually be
+		// probed by real xray-knife. Skip pre-publish probe so the
+		// test verifies the rest of the pipeline contract.
+		SkipPrePublishProbe: true,
 	})
 	if err != nil {
 		t.Fatalf("Run: %v", err)
