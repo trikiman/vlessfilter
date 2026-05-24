@@ -1,0 +1,1 @@
+vless://6219565d-2c9d-41af-8010-08a99dffc68e@au.clickvpn.work:44223?type=tcp&headerType=none&security=reality&encryption=none&sni=aws.amazon.com&fp=chrome&pbk=aD-lWNqnOwP2E4fHZx5Jt-kFoVwr3dvNQS_xVvFGkRw&sid=0e&spx=%2F#%F0%9F%87%A6%F0%9F%87%BA%20AU%20Australia

@@ -1,65 +1,149 @@
 # VlessFilter Results
 
-Auto-curated top 3 fastest VLESS keys per country, refreshed automatically.
+Auto-curated top 3 fastest proxy keys per country, refreshed automatically. Multi-protocol: VLESS / VMess / Trojan / Shadowsocks.
 
 ## How to use
 
-**Single subscription URL covering every stable country** — paste this into your VLESS client (Hiddify Next, v2rayN, Streisand, NekoBox, etc.):
+Pick the protocol your client supports best. Each has its own subscription URLs:
+
+### VLESS
+
+All VLESS countries (single subscription):
 
 ```
-https://raw.githubusercontent.com/trikiman/vlessfilter/main/subs/all.txt
+https://raw.githubusercontent.com/trikiman/vlessfilter/main/subs/vless/all.txt
 ```
 
-Or pick a specific country:
+Specific country:
 
 ```
-https://raw.githubusercontent.com/trikiman/vlessfilter/main/subs/<CC>.txt
+https://raw.githubusercontent.com/trikiman/vlessfilter/main/subs/vless/<CC>.txt
 ```
 
-**Rotating-exit configs** (Cloudflare Workers + multi-exit load balancers — country varies per connection):
+Rotating exits: `subs/vless/rotating.txt` (653 configs)
+
+### VMESS
+
+All VMESS countries (single subscription):
 
 ```
-https://raw.githubusercontent.com/trikiman/vlessfilter/main/subs/rotating.txt
+https://raw.githubusercontent.com/trikiman/vlessfilter/main/subs/vmess/all.txt
 ```
 
-Replace `<CC>` with the 2-letter country code from the table. Entries in country files have been verified to consistently exit through that country across multiple tests.
+Specific country:
+
+```
+https://raw.githubusercontent.com/trikiman/vlessfilter/main/subs/vmess/<CC>.txt
+```
+
+Rotating exits: `subs/vmess/rotating.txt` (0 configs)
+
+### TROJAN
+
+All TROJAN countries (single subscription):
+
+```
+https://raw.githubusercontent.com/trikiman/vlessfilter/main/subs/trojan/all.txt
+```
+
+Specific country:
+
+```
+https://raw.githubusercontent.com/trikiman/vlessfilter/main/subs/trojan/<CC>.txt
+```
+
+Rotating exits: `subs/trojan/rotating.txt` (1 configs)
+
+### SS
+
+All SS countries (single subscription):
+
+```
+https://raw.githubusercontent.com/trikiman/vlessfilter/main/subs/ss/all.txt
+```
+
+Specific country:
+
+```
+https://raw.githubusercontent.com/trikiman/vlessfilter/main/subs/ss/<CC>.txt
+```
+
+Rotating exits: `subs/ss/rotating.txt` (0 configs)
+
+**Back-compat (v1 URLs):** `subs/all.txt`, `subs/<CC>.txt`, `subs/rotating.txt` continue to work — they mirror the VLESS protocol files.
 
 ## Stability filter
 
-Many public VLESS configs route through proxy chains, load balancers, or Cloudflare Workers — these have **rotating exit countries** (e.g., one connection lands in Sweden, the next in India). Tagging them with a single country would be misleading.
+Many public configs route through proxy chains, load balancers, or Cloudflare Workers — these have **rotating exit countries** (e.g., one connection lands in Sweden, the next in India). Tagging them with a single country would be misleading.
 
 Each config's full test history is checked:
-- **Stable** (always exits same country) → published in `subs/<CC>.txt` with that country code
-- **Rotating** (varies across tests, OR is a `*.workers.dev` / `*.pages.dev` host) → published in `subs/rotating.txt` with `🌐 ROTATING` label
+- **Stable** (always exits same country) → published in `subs/<protocol>/<CC>.txt` with that country code
+- **Rotating** (varies across tests, OR is a `*.workers.dev` / `*.pages.dev` host) → published in `subs/<protocol>/rotating.txt` with `🌐 ROTATING` label
 - **Dead** → not published
 
-## Top 3 per country (stable only)
+## VLESS — top 3 per country (stable only)
 
 | Country | Top latency (ms) | Median speed (Mbps) | Keys |
 |---------|------------------|---------------------|------|
+| 🇦🇲 AM | 347 | 27.6 | 1 |
 | 🇦🇹 AT | 188 | 23.3 | 3 |
-| 🇧🇬 BG | 488 | 1.0 | 3 |
-| 🇨🇭 CH | 155 | 0.0 | 3 |
-| 🇩🇪 DE | 186 | 34.1 | 3 |
-| 🇪🇪 EE | 537 | 0.0 | 3 |
-| 🇪🇸 ES | 696 | 12.2 | 1 |
-| 🇫🇮 FI | 121 | 0.0 | 3 |
+| 🇦🇺 AU | 1770 | 0.1 | 1 |
+| 🇧🇬 BG | 488 | 1.5 | 3 |
+| 🇨🇭 CH | 156 | 0.0 | 3 |
+| 🇨🇿 CZ | 4186 | 0.1 | 1 |
+| 🇩🇪 DE | 186 | 38.9 | 3 |
+| 🇩🇰 DK | 4538 | 0.0 | 1 |
+| 🇪🇪 EE | 464 | 0.0 | 3 |
+| 🇪🇸 ES | 309 | 18.2 | 3 |
+| 🇫🇮 FI | 121 | 1.3 | 3 |
 | 🇫🇷 FR | 272 | 4.5 | 3 |
 | 🇬🇧 GB | 234 | 0.0 | 3 |
+| 🇬🇷 GR | 1109 | 2.7 | 1 |
 | 🇭🇰 HK | 711 | 0.0 | 3 |
+| 🇮🇱 IL | 1420 | 2.1 | 1 |
 | 🇯🇵 JP | 2263 | 0.2 | 3 |
-| 🇰🇷 KR | 1556 | 0.0 | 3 |
+| 🇰🇷 KR | 1403 | 0.0 | 3 |
 | 🇰🇿 KZ | 413 | 0.0 | 3 |
+| 🇱🇺 LU | 948 | 1.9 | 1 |
 | 🇳🇱 NL | 218 | 32.0 | 3 |
-| 🇵🇱 PL | 173 | 14.3 | 3 |
-| 🇷🇺 RU | 161 | 24.5 | 3 |
-| 🇸🇪 SE | 204 | 0.0 | 3 |
+| 🇵🇱 PL | 216 | 14.3 | 3 |
+| 🇷🇺 RU | 161 | 71.2 | 3 |
+| 🇸🇪 SE | 204 | 27.4 | 3 |
 | 🇸🇬 SG | 845 | 0.0 | 3 |
+| 🇸🇰 SK | 603 | 0.0 | 3 |
 | 🇹🇷 TR | 325 | 29.2 | 3 |
 | 🇺🇸 US | 366 | 28.6 | 3 |
 
-**Rotating-exit pool:** 629 additional configs in `subs/rotating.txt` (no country guarantee).
+**Rotating-exit pool:** 653 configs in `subs/vless/rotating.txt`
+
+## VMESS — top 3 per country (stable only)
+
+_No stable countries this run._
+
+## TROJAN — top 3 per country (stable only)
+
+| Country | Top latency (ms) | Median speed (Mbps) | Keys |
+|---------|------------------|---------------------|------|
+| 🇭🇰 HK | 2940 | 0.0 | 3 |
+| 🇯🇵 JP | 1194 | 0.0 | 2 |
+
+**Rotating-exit pool:** 1 configs in `subs/trojan/rotating.txt`
+
+## SS — top 3 per country (stable only)
+
+| Country | Top latency (ms) | Median speed (Mbps) | Keys |
+|---------|------------------|---------------------|------|
+| 🇧🇷 BR | 983 | 0.0 | 3 |
+| 🇮🇳 IN | 518 | 0.0 | 3 |
+| 🇯🇵 JP | 1038 | 3.2 | 2 |
+| 🇲🇾 MY | 706 | 0.0 | 3 |
+| 🇳🇱 NL | 166 | 0.0 | 3 |
+| 🇸🇬 SG | 867 | 0.0 | 3 |
+| 🇹🇭 TH | 801 | 0.0 | 3 |
+| 🇿🇦 ZA | 632 | 0.0 | 3 |
+
+**Rotating-exit pool:** 0 configs in `subs/ss/rotating.txt`
 
 _Generated by [vlessfilter](https://github.com/trikiman/vlessfilter). Source list: `sources.yaml`._
 
-<!-- last-tested: 2026-05-24T07:57:41Z -->
+<!-- last-tested: 2026-05-24T13:53:55Z -->
