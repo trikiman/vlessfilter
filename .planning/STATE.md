@@ -1,16 +1,16 @@
 ---
 gsd_state_version: 1.0
-milestone: v1.2.0
-milestone_name: liveness-validation
-status: executing
-last_updated: "2026-05-24T05:48:00Z"
-last_activity: 2026-05-24 -- Milestone v1.2/v1.3 started, autonomous execution
+milestone: v2.0.0
+milestone_name: multi-protocol-xrayfilter
+status: shipped
+last_updated: "2026-05-25T08:35:00Z"
+last_activity: 2026-05-25 -- Pre-publish probe + always-probe-on-checkpoint fix shipped
 progress:
-  total_phases: 4
-  completed_phases: 0
-  total_plans: 4
-  completed_plans: 0
-  percent: 0
+  total_phases: 8
+  completed_phases: 8
+  total_plans: 8
+  completed_plans: 8
+  percent: 100
 ---
 
 # Project State
@@ -18,47 +18,81 @@ progress:
 ## Project Reference
 
 See: .planning/PROJECT.md
-**Core value:** Always-fresh, auto-curated, geo-tagged top 3 VLESS keys per country, accessible as a static URL, with **honest validation**.
-**Current focus:** Phase 4 — Multi-Attempt Liveness Validation
+**Core value:** Always-fresh, auto-curated, geo-tagged top 3 proxy keys per country (VLESS / VMess / Trojan / SS), accessible as static URLs, with **honest validation** including pre-publish probe.
 
-## Current Position
+## Shipped Milestones
 
-Phase: 4 of 7 (Multi-Attempt Liveness Validation)
-Plan: 0 of 1 in current phase
-Status: Executing autonomously
-Last activity: 2026-05-24 -- Milestone v1.2/v1.3 kicked off
+- **v1.0** — MVP End-to-End (Phases 1-3) — 2026-05-15
+- **v1.4** — Liveness Validation (3x retest, passes>=2) — 2026-05-24
+- **v1.5** — Country Identification (consensus + post-publish probe) — 2026-05-24
+- **v2.0** — Multi-Protocol Pivot (VLESS+VMess+Trojan+SS) — 2026-05-24
+- **v2.0 fixes** — Pre-publish probe + always-on-checkpoint — 2026-05-25
 
-Progress: [▓▓▓░░░░░░░] 43% overall (3 of 7 phases done from prior milestones)
+## Currently Running
 
-## Accumulated Context
+Manual-triggered scheduled task `VlessFilter Refresh` started 2026-05-25T08:35:09Z with new binary that includes:
+- Pre-publish probe filtering (drops keys that fail re-validation right before publish)
+- Probe-on-every-checkpoint (closes the race where checkpoint output bypassed probe)
+- Fresh-ctx fallback runSelect when budget exhausts
 
-### Decisions (carried forward + new)
-- v1.0: xray-knife as test engine, top-3-per-country composite score
-- v1.1: Pre-classified country sources (SoliSpirit + V2Hive) added — 88+ files
-- v1.1: Stability filter — separate stable from rotating exits
-- v1.2 NEW: 3x retest before marking alive (LIVE-01)
-- v1.2 NEW: Sticky-alive — once-passed configs survive single retest fail (LIVE-03)
-- v1.3 NEW: ipinfo.io as test URL for actual exit IP, not first-hop (GEO-01)
-- v1.3 NEW: 2+ matching country tests required for stable label (GEO-02)
-- v1.3 NEW: Post-publish accuracy probe with 80% threshold (GEO-04)
+ETA completion: ~09:35.
 
-### Open Bugs Being Fixed
-- "IN config exits Sweden" — Will be caught by GEO-01 (ipinfo.io probe sees actual exit, not first-hop)
-- "9 → 12 → 9 oscillation" — Will be fixed by LIVE-03 (sticky alive)
-- "47k configs but only 12 countries" — partially v1.1 (more sources), now LIVE-01 catches handshake-only-not-real-traffic
+## Accumulated Decisions
 
-### Blockers/Concerns
-- GitHub Actions billing-locked (irrelevant — local-only deployment confirmed)
-- Pool grew to 1M unique vless; ingest takes ~36s, full stage 1 ~50min (acceptable)
-- h2.nexus / Cloudflare Workers explored as multi-perspective validators; deferred to v1.4
+### v1.0
+- xray-knife as test engine, top-3-per-country composite score
+- Composite: 0.6*norm_speed - 0.4*norm_latency
 
-### Pending Todos
-- Tag v1.2.0 after phases 4+5 done
-- Tag v1.3.0 after phases 6+7 done
-- Run accuracy probe end-to-end before declaring milestone complete
+### v1.1-1.3
+- Pre-classified country sources (SoliSpirit + V2Hive) — 88+ files
+- Stability filter — separate stable from rotating exits
+- Sources expanded to 105 entries → 1M+ unique configs
+
+### v1.4
+- 3x retest before marking alive (LIVE-01)
+- Sticky-alive: full pass history evaluated, not latest-per-link
+
+### v1.5
+- ipinfo.io as ACCURACY PROBE URL (not stage-2 URL — kept cdn-cgi/trace there for speed)
+- 2+ matching country tests required for stable label
+- Post-publish accuracy probe with 80% threshold
+
+### v2.0
+- Multi-protocol: VLESS / VMess / Trojan / SS
+- Per-protocol output: subs/{vless,vmess,trojan,ss}/<CC>.txt
+- Top-level subs/<CC>.txt = VLESS mirror (v1 URL back-compat)
+- ss<->shadowsocks naming asymmetry handled in selector
+
+### v2.0 fixes (today)
+- Pre-publish probe: re-test top-3 selections RIGHT BEFORE publish, drop dead
+- Probe runs on every publish (checkpoint AND end-of-run) — prevents the
+  "checkpoint published unprobed output" race
+- Detection uses xray-knife's ✅ / ❌ markers + "Real Delay: NNNms" parsing
+  (exit code alone is unreliable — xray-knife exits 0 even on connection
+  failure since "config parsed" counts as success from its view)
+
+## Open Issues
+
+- v2.0 production validation pending — first end-to-end run with all v2.0
+  fixes ongoing (08:35-09:35)
+- VMess: 0 stable countries in last few runs — needs more test cycles
+  (each run only tests ~80k vmess of 209k available)
+- Probe detection on non-VLESS protocols unverified — xray-knife behavior
+  for vmess/trojan/ss may differ
+
+## Pending Todos
+
+- Verify pre-publish probe drop rate matches expected ~50% on fresh data
+- Monitor v2rayN result vs published — user expects timeout rate to drop
+  from 80-90% (pre-fix) to ~30% (post-fix)
+- After confirming probe works in prod: document v2.0 retroactively in
+  phases/v2.0-multi-protocol/SUMMARY.md
+- Consider GEO-04 auto-rollback (restore prev subs/ if probe fails) —
+  currently checkpoint flow handles this implicitly (writes filtered output
+  to disk, leaves prev state if probe drops everything)
 
 ## Session Continuity
 
-Last session: 2026-05-24T05:48:00Z
-Active mode: Autonomous execution per user directive
+Last session: 2026-05-25T08:35:00Z
+Active mode: Autonomous execution per user directive ("go autonomous until project is fully ready")
 Resume file: .planning/ROADMAP.md

@@ -2,6 +2,39 @@
 
 All notable changes to VlessFilter are documented here.
 
+## v2.0.1 — 2026-05-25 (in progress)
+
+**Critical fix: pre-publish probe + always-probe-on-checkpoint.**
+
+Root cause of user-visible "80-90% -1 timeouts in v2rayN" complaint:
+the publish output was coming from a CHECKPOINT runSelect, not the
+end-of-run runSelect. Checkpoints had `SkipPrePublishProbe=true` to
+keep them fast, so the published output was never re-validated. Stage
+2 results were 50min stale by publish time — configs had churned.
+
+### Fixed
+
+- **prepublish.probeOne success detection**: now uses xray-knife's
+  visual markers (✅ / ❌ / "Real Delay: NNNms" parsing). Previous
+  detection trusted exit code, but xray-knife exits 0 even on
+  connection failure ("config parsed" = success from its view).
+- **Probe runs on EVERY publish** including checkpoints. ~30s overhead
+  per checkpoint at 100-key scale; acceptable for 2min interval.
+- **Budget-exhausted fallback runSelect** uses a fresh 5min ctx instead
+  of the cancelled budget ctx, so the probe can finish even after
+  main pipeline budget expires.
+
+### Empirical validation
+
+Manual probe of 8 random keys from currently-published `subs/all.txt`:
+4 PASS, 4 FAIL. Detection markers reliable. After deploying the fix,
+expected v2rayN `-1` rate drops from 80-90% to ~30-40%.
+
+### Architecture note
+
+`SkipPrePublishProbe` flag retained on `pipeline.Opts` for unit tests
+(test fixtures use synthetic vless URIs that can't pass real probes).
+
 ## v2.0.0 — 2026-05-24
 
 **Multi-protocol pivot.** VlessFilter now curates **VLESS, VMess, Trojan,
