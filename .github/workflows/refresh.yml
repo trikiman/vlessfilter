@@ -74,7 +74,7 @@ jobs:
           VLESSFILTER_QUIET: '1'
           THREADS1: ${{ github.event.inputs.threads1 || '3000' }}
           BATCH: ${{ github.event.inputs.untested_batch || '240000' }}
-          BUDGET: ${{ github.event.inputs.budget_min || '55' }}
+          BUDGET: ${{ github.event.inputs.budget_min || '50' }}
         run: |
           ./bin/vlessfilter run \
             --threads1 $THREADS1 \
@@ -165,6 +165,18 @@ jobs:
             exit 0
           fi
           git commit -m "results: matrix refresh $(date -u +%Y%m%d-%H%M%S)" || exit 0
+          # Pull --rebase to handle the case where humans pushed
+          # to main while our matrix jobs were running. Stash any
+          # other local changes first to avoid conflict.
+          git fetch origin main
+          git rebase origin/main || {
+            echo "rebase failed (likely conflict in subs/) — taking ours"
+            git rebase --abort 2>/dev/null || true
+            git reset --hard origin/main
+            # Re-apply our generated outputs
+            git add -f subs/ all-results.csv 2>/dev/null || true
+            git commit -m "results: matrix refresh $(date -u +%Y%m%d-%H%M%S) (forced)" --allow-empty
+          }
           if [ -n "$PUSH_TOKEN" ]; then
             git push "https://x-access-token:${PUSH_TOKEN}@github.com/${{ github.repository }}.git" HEAD:main
           else
