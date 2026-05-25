@@ -1,3 +1,2 @@
 trojan://GKHWMe2R4qwNcNxu6l3KMkdd@112.172.55.228:25010?security=tls&sni=vpn1.rnmcnm.com&type=ws&path=%2Ftrj-ws&Host=vpn1.rnmcnm.com#%F0%9F%87%AD%F0%9F%87%B0%20HK%20Hong%20Kong
-trojan://GKHWMe2R4qwNcNxu6l3KMkdd@112.172.55.228:25010?security=tls&sni=vpn1.rnmcnm.com&type=ws&path=%2Ftrj-ws&Host=vpn1.rnmcnm.com#%F0%9F%87%AD%F0%9F%87%B0%20HK%20Hong%20Kong
 trojan://GKHWMe2R4qwNcNxu6l3KMkdd@222.98.185.243:37215?security=tls&sni=vpn1.rnmcnm.com&type=ws&path=%2Ftrj-ws&Host=vpn1.rnmcnm.com#%F0%9F%87%AD%F0%9F%87%B0%20HK%20Hong%20Kong

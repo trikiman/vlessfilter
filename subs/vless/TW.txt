@@ -1,3 +1,2 @@
-vless://06ef598c-1555-4887-b3f9-08214a2f6792@60.248.139.106:18081?security=tls&sni=2026.hhhhh.eu.org&type=ws&host=2026.hhhhh.eu.org&path=%2F60.248.139.106%3A18081#%F0%9F%87%B9%F0%9F%87%BC%20TW%20Taiwan
 vless://0599bfbb-64c9-47dd-abf2-9cca1e87109c@taipei1.ap221.com:443?flow=xtls-rprx-vision&headertype=none&host=taipei1.ap221.com&path=%2F&security=tls&sni=taipei.ap221.com&type=tcp#%F0%9F%87%B9%F0%9F%87%BC%20TW%20Taiwan
-vless://06ef598c-1555-4887-b3f9-08214a2f6792@60.248.139.106:18081?security=tls&sni=2026.hhhhh.eu.org&type=ws&host=2026.hhhhh.eu.org&path=%2F60.248.139.106%3A18081#%F0%9F%87%B9%F0%9F%87%BC%20TW%20Taiwan
+vless://0599bfbb-64c9-47dd-abf2-9cca1e87109c@taipei1.ap221.com:443?flow=xtls-rprx-vision&headertype=none&host=taipei1.ap221.com&path=%2F&security=tls&sni=taipei.ap221.com&type=tcp#%F0%9F%87%B9%F0%9F%87%BC%20TW%20Taiwan

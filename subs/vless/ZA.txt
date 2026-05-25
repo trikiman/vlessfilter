@@ -1,2 +1,0 @@
-vless://fc6b0be8-1206-515c-b1b9-a80483f599cf@dustyvless-jnb-e94358.fly.dev:443?encryption=none&type=ws&security=tls&path=%2FOCGuQomhXVC8&host=dustyvless-jnb-e94358.fly.dev&sni=dustyvless-jnb-e94358.fly.dev&fp=chrome#%F0%9F%87%BF%F0%9F%87%A6%20ZA%20South%20Africa
-vless://fc6b0be8-1206-515c-b1b9-a80483f599cf@dustyvless-jnb-e94358.fly.dev:443?encryption=none&type=ws&security=tls&path=%2FOCGuQomhXVC8&host=dustyvless-jnb-e94358.fly.dev&sni=dustyvless-jnb-e94358.fly.dev&fp=chrome#%F0%9F%87%BF%F0%9F%87%A6%20ZA%20South%20Africa

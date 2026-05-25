@@ -1,3 +1,2 @@
 vless://385f8774-a40e-4ceb-b31e-9f752d03a4a0@hu02.kubservice.icu:443/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=hu02.kubservice.icu&fp=chrome&security=reality&pbk=z-TKWOWgZLfzQ-wNdwXQqVwaUgCmbchM2Xtrk1NGynU&sid=#%F0%9F%87%AD%F0%9F%87%BA%20HU%20Hungary
-vless://5f1811a9-292a-4d7e-b59f-1a5ff9390647@pq-hungary1.09vpn.com:80?encryption=none&security=none&type=ws&path=%2Fvless%2F#%F0%9F%87%AD%F0%9F%87%BA%20HU%20Hungary
-vless://5f1811a9-292a-4d7e-b59f-1a5ff9390647@45.12.132.183:80?security=none&type=ws&path=%2Fvless%2F#%F0%9F%87%AD%F0%9F%87%BA%20HU%20Hungary
+vless://385f8774-a40e-4ceb-b31e-9f752d03a4a0@hu02.kubservice.icu:443/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=hu02.kubservice.icu&fp=chrome&security=reality&pbk=z-TKWOWgZLfzQ-wNdwXQqVwaUgCmbchM2Xtrk1NGynU&sid=#%F0%9F%87%AD%F0%9F%87%BA%20HU%20Hungary

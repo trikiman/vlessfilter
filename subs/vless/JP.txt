@@ -1,3 +1,2 @@
 vless://a6b071ef-0d82-4f46-b04b-3310b8d6ca82@3.112.126.206:54055?type=tcp&encryption=none&security=reality&pbk=OzoYp8homkMDMozggbwqswuBiWRykfmmszFpu2_YM1g&fp=firefox&sni=www.icloud.com&sid=f0b670194e8d2401&spx=/&flow=xtls-rprx-vision#%F0%9F%87%AF%F0%9F%87%B5%20JP%20Japan
-vless://a6b071ef-0d82-4f46-b04b-3310b8d6ca82@3.112.126.206:54055?type=tcp&encryption=none&security=reality&pbk=OzoYp8homkMDMozggbwqswuBiWRykfmmszFpu2_YM1g&fp=firefox&sni=www.icloud.com&sid=f0b670194e8d2401&spx=/&flow=xtls-rprx-vision#%F0%9F%87%AF%F0%9F%87%B5%20JP%20Japan
-vless://a92eb27d-d7b4-5945-a8a2-36910acfa28a@dustyvless-nrt-934ad9.fly.dev:443?encryption=none&type=ws&security=tls&path=%2F4pt-gO4kNuNG&host=dustyvless-nrt-934ad9.fly.dev&sni=dustyvless-nrt-934ad9.fly.dev&fp=chrome#%F0%9F%87%AF%F0%9F%87%B5%20JP%20Japan
+vless://394f6981-a782-4779-9a85-e6cf22935d93@178.249.213.177:8443?type=tcp&security=tls&sni=jp1.fromblancwithlove.com#%F0%9F%87%AF%F0%9F%87%B5%20JP%20Japan
