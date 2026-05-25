@@ -186,14 +186,17 @@ jobs:
           set -e
           mkdir -p subs
           for proto in vless vmess trojan ss; do
-            src="artifacts/subs-$proto/${proto}"
+            # actions/upload-artifact preserves the source directory
+            # structure inside the artifact. We uploaded `subs/<proto>/`
+            # so the download dir is `artifacts/subs-<proto>/subs/<proto>/`.
+            src="artifacts/subs-$proto/subs/${proto}"
             if [ -d "$src" ]; then
-              echo "merging $proto"
+              echo "merging $proto from $src"
               mkdir -p "subs/$proto"
-              # Country files
               cp -rf "$src"/* "subs/$proto/" 2>/dev/null || true
             else
-              echo "no artifact for $proto (job may have failed)"
+              echo "no artifact for $proto (job may have failed) — looked for $src"
+              ls -la artifacts/subs-$proto/ 2>/dev/null | head -10 || true
             fi
           done
           # Back-compat: top-level subs/<CC>.txt mirrors vless
