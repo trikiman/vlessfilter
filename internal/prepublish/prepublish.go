@@ -144,10 +144,23 @@ func (p *Probe) Filter(ctx context.Context, selections []selector.CountrySelecti
 }
 
 // probeOne attempts a single HTTP request through the proxy. Returns true
-// on success (2xx response received), false on any failure (timeout,
-// connection reset, non-2xx, exec error).
+// on success (xray-knife exits 0 AND output contains "Real Delay: NNNms"
+// — the success marker xray-knife emits after a successful HTTP fetch).
 //
-// Uses xray-knife http -c <link> -u <url> -d <ms> for a one-shot test.
+// Empirical xray-knife v9.12 output format:
+//
+//	Success:
+//	  ...config dump...
+//	  ✅ HH:MM:SS Real Delay: 1234ms
+//
+//	Failure (timeout, connection error, non-2xx upstream):
+//	  ...config dump...
+//	  ❌ HH:MM:SS Real Delay: -1ms / Failed: <reason>
+//
+// xray-knife exits 0 in BOTH cases (config parsed = success from xray-knife's
+// view), so exit code alone is unreliable. The "Real Delay: NNNms" with a
+// positive number, plus the green checkmark emoji, is the only reliable
+// indicator that real traffic flowed.
 func probeOne(ctx context.Context, bin, link, url string, timeout time.Duration) bool {
 	timeoutMs := int(timeout / time.Millisecond)
 	if timeoutMs < 1000 {
@@ -159,24 +172,46 @@ func probeOne(ctx context.Context, bin, link, url string, timeout time.Duration)
 		"-c", link,
 		"-u", url,
 		"-d", fmt.Sprintf("%d", timeoutMs),
+		"-b", // print response body so we can verify upstream returned data
 	)
 	var out bytes.Buffer
 	cmd.Stdout = &out
 	cmd.Stderr = &out
 	err := cmd.Run()
 	if err != nil {
+		// Process killed (ctx cancel, signal, etc.) — definitively dead.
 		return false
 	}
-	body := strings.ToLower(out.String())
-	// xray-knife exits 0 even when HTTP fails. Look for success markers
-	// in stderr/stdout: "delay:" with a positive ms reading.
-	if strings.Contains(body, "failed") || strings.Contains(body, "error") {
+	body := out.String()
+	// Hard fail markers — xray-knife explicitly reported failure.
+	if strings.Contains(body, "❌") ||
+		strings.Contains(body, "Real Delay: -1ms") ||
+		strings.Contains(body, "Failed:") {
 		return false
 	}
-	// Positive signal: "delay: 123ms" or "ok" or response body present.
-	if strings.Contains(body, "delay:") || strings.Contains(body, "200 ok") {
+	// Hard success markers — xray-knife confirmed real traffic flowed.
+	if strings.Contains(body, "✅") {
 		return true
 	}
+	// Soft success: "Real Delay: NNNms" with a positive ms reading.
+	if i := strings.Index(body, "Real Delay: "); i >= 0 {
+		rest := body[i+len("Real Delay: "):]
+		// First few chars should be digits if positive ms.
+		for k := 0; k < len(rest) && k < 6; k++ {
+			if rest[k] < '0' || rest[k] > '9' {
+				if rest[k] == 'm' || rest[k] == 's' {
+					// "Real Delay: 1234ms" — k pointing at 'm', positive
+					return true
+				}
+				if rest[k] == '-' {
+					// "Real Delay: -1ms" — negative
+					return false
+				}
+				break
+			}
+		}
+	}
+	// No clear marker either way — treat as fail (better safe than sorry).
 	return false
 }
 

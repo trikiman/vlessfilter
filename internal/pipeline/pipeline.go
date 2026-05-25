@@ -153,7 +153,17 @@ func Run(ctx context.Context, opts Opts) error {
 		// Likely budget cancellation. Try to ship partial outputs.
 		if errors.Is(err, context.DeadlineExceeded) || errors.Is(err, context.Canceled) {
 			slog.Warn("budget reached during test stage; shipping partial outputs", "error", err)
-			_ = runSelect(ctx, opts)
+			// CRITICAL: use a FRESH ctx with its own timeout for the
+			// fallback runSelect. The original ctx is already cancelled,
+			// so calling runSelect with it would cancel before the
+			// pre-publish probe could finish — leaving CHECKPOINT (and
+			// thus unprobed) output as the final state.
+			//
+			// 5min budget for runSelect: typical probe of 108 keys at
+			// 20 concurrency × 5s = ~30s; rest for I/O + diagnostics.
+			cleanupCtx, cleanupCancel := context.WithTimeout(context.Background(), 5*time.Minute)
+			_ = runSelect(cleanupCtx, opts)
+			cleanupCancel()
 			finalCommitPush(opts)
 			return nil
 		}
@@ -571,12 +581,16 @@ func startCheckpointLoop(ctx context.Context, opts Opts) func() {
 			case <-stopCh:
 				return
 			case <-t.C:
-				slog.Info("checkpoint: writing partial output")
-				// Checkpoint runs fire every 2min and shouldn't pay for
-				// the pre-publish probe (which takes ~5s × N keys).
-				cpOpts := opts
-				cpOpts.SkipPrePublishProbe = true
-				if err := runSelect(ctx, cpOpts); err != nil {
+				slog.Info("checkpoint: writing partial output (with pre-publish probe)")
+				// CRITICAL: previous behavior was SkipPrePublishProbe=true
+				// for checkpoints. That caused a race where, on budget
+				// exhaustion, the LATEST CHECKPOINT (unprobed) was the
+				// final published output. Users saw dead keys.
+				//
+				// Now: probe runs on every checkpoint. Probe time is
+				// ~30s (108 keys × 5s with 20 concurrency); checkpoint
+				// interval is 2min — overhead is acceptable.
+				if err := runSelect(ctx, opts); err != nil {
 					slog.Warn("checkpoint runSelect failed", "error", err)
 					continue
 				}
