@@ -49,6 +49,70 @@ sources:
     to: 26
     enabled: true
 
+  # === Telegram-channel scrapers (bulk vless, lots of fresh keys) ===
+
+  # yaney01/telegram-collector — Python script that scrapes vless/vmess/
+  # trojan/ss/reality/hysteria/tuic/juicity from many Telegram channels.
+  # splitted/mixed is the biggest aggregate (3500+ vless, base64-encoded).
+  # subscribe/protocols/vless adds ~2500 unique. networks/ws hits ws-only.
+  - name: yaney01-mixed
+    url: https://raw.githubusercontent.com/yaney01/telegram-collector/main/splitted/mixed
+    kind: plain
+    enabled: true
+
+  - name: yaney01-protocols-vless
+    url: https://raw.githubusercontent.com/yaney01/telegram-collector/main/subscribe/protocols/vless
+    kind: plain
+    enabled: true
+
+  - name: yaney01-networks-ws
+    url: https://raw.githubusercontent.com/yaney01/telegram-collector/main/networks/ws
+    kind: plain
+    enabled: true
+
+  # R3ZARAHIMI/tg-v2ray-configs-every2h — bulk-collected from telegram,
+  # split per country in conf-XX.txt files. High-volume DE (660+),
+  # NL (240+), US (270+), FR (180+), UK (90+). Refreshed every 2h.
+  - name: rezarahimi-de
+    url: https://raw.githubusercontent.com/R3ZARAHIMI/tg-v2ray-configs-every2h/main/conf-DE.txt
+    kind: plain
+    enabled: true
+
+  - name: rezarahimi-nl
+    url: https://raw.githubusercontent.com/R3ZARAHIMI/tg-v2ray-configs-every2h/main/conf-NL.txt
+    kind: plain
+    enabled: true
+
+  - name: rezarahimi-fr
+    url: https://raw.githubusercontent.com/R3ZARAHIMI/tg-v2ray-configs-every2h/main/conf-FR.txt
+    kind: plain
+    enabled: true
+
+  - name: rezarahimi-uk
+    url: https://raw.githubusercontent.com/R3ZARAHIMI/tg-v2ray-configs-every2h/main/conf-UK.txt
+    kind: plain
+    enabled: true
+
+  - name: rezarahimi-us
+    url: https://raw.githubusercontent.com/R3ZARAHIMI/tg-v2ray-configs-every2h/main/conf-US.txt
+    kind: plain
+    enabled: true
+
+  - name: rezarahimi-week
+    url: https://raw.githubusercontent.com/R3ZARAHIMI/tg-v2ray-configs-every2h/main/conf-week.txt
+    kind: plain
+    enabled: true
+
+  - name: rezarahimi-original
+    url: https://raw.githubusercontent.com/R3ZARAHIMI/tg-v2ray-configs-every2h/main/Original-Configs.txt
+    kind: plain
+    enabled: true
+
+  - name: rezarahimi-no-cf
+    url: https://raw.githubusercontent.com/R3ZARAHIMI/tg-v2ray-configs-every2h/main/Config_no_cf.txt
+    kind: plain
+    enabled: true
+
   # === Bulk per-protocol aggregators (single URL each) ===
 
   # sevcator's protocol-only vless dump — 25,706 plain vless lines.
