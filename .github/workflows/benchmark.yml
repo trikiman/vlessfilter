@@ -31,6 +31,9 @@ on:
           - '2000'
           - '2500'
           - '3000'
+          - '4000'
+          - '5000'
+          - '6000'
       untested_batch:
         description: 'Untested keys per protocol per stage 1'
         required: true
@@ -41,6 +44,7 @@ on:
           - '40000'
           - '80000'
           - '160000'
+          - '240000'
       protocols:
         description: 'Protocols to test (comma-separated)'
         required: true
@@ -81,7 +85,7 @@ jobs:
           sudo sysctl -w "net.ipv4.ip_local_port_range=1024 65535" || true
           ulimit -n 100000 || true
           # Record what the kernel is willing to give us.
-          mkdir -p .bench
+          mkdir -p bench
           {
             echo "=== sysctl ==="
             sysctl net.ipv4.tcp_tw_reuse net.ipv4.ip_local_port_range fs.file-max
@@ -95,16 +99,16 @@ jobs:
             uname -a
             echo "=== /proc/cpuinfo (first cpu) ==="
             head -25 /proc/cpuinfo
-          } > .bench/preflight.txt
+          } > bench/preflight.txt
 
       - name: Start resource monitor
         run: |
           # Capture peak RAM, CPU%, FD count every 2s until vlessfilter exits.
-          # Output: .bench/monitor.csv with columns:
+          # Output: bench/monitor.csv with columns:
           #   ts,mem_used_mb,mem_avail_mb,cpu_user_pct,cpu_idle_pct,fd_total,proc_count
-          mkdir -p .bench
+          mkdir -p bench
           (
-            echo "ts,mem_used_mb,mem_avail_mb,cpu_user_pct,cpu_idle_pct,fd_total,proc_count" > .bench/monitor.csv
+            echo "ts,mem_used_mb,mem_avail_mb,cpu_user_pct,cpu_idle_pct,fd_total,proc_count" > bench/monitor.csv
             while true; do
               ts=$(date -u +%s)
               # mem
@@ -118,18 +122,18 @@ jobs:
               # fd count (sum across all PIDs we can read)
               fd_total=$(ls /proc/*/fd 2>/dev/null | wc -l)
               proc_count=$(ps -e --no-headers | wc -l)
-              echo "$ts,$mem_used,$mem_avail,$cpu_user,$cpu_idle,$fd_total,$proc_count" >> .bench/monitor.csv
+              echo "$ts,$mem_used,$mem_avail,$cpu_user,$cpu_idle,$fd_total,$proc_count" >> bench/monitor.csv
               sleep 2
             done
           ) &
-          echo $! > .bench/monitor.pid
+          echo $! > bench/monitor.pid
 
       - name: Run pipeline (benchmark mode)
         env:
           VLESSFILTER_QUIET: '1'
         timeout-minutes: 60
         run: |
-          mkdir -p .bench
+          mkdir -p bench
           # /usr/bin/time gives us peak RSS, total CPU seconds, wall time.
           # We tee the log so any errors are still visible in the run UI.
           /usr/bin/time -v ./bin/vlessfilter run \
@@ -139,14 +143,14 @@ jobs:
             --budget-min ${{ github.event.inputs.budget_min }} \
             --checkpoint-min 0 \
             --protocols ${{ github.event.inputs.protocols }} \
-            --out .bench/out \
-            2> .bench/time.txt | tee .bench/pipeline.log
-          echo "exit=$?" >> .bench/time.txt
+            --out bench/out \
+            2> bench/time.txt | tee bench/pipeline.log
+          echo "exit=$?" >> bench/time.txt
 
       - name: Stop monitor and summarise
         if: always()
         run: |
-          if [ -f .bench/monitor.pid ]; then kill $(cat .bench/monitor.pid) 2>/dev/null || true; fi
+          if [ -f bench/monitor.pid ]; then kill $(cat bench/monitor.pid) 2>/dev/null || true; fi
           {
             echo "=== run inputs ==="
             echo "threads1=${{ github.event.inputs.threads1 }}"
@@ -155,7 +159,7 @@ jobs:
             echo "budget_min=${{ github.event.inputs.budget_min }}"
             echo
             echo "=== peak resource usage ==="
-            if [ -f .bench/monitor.csv ]; then
+            if [ -f bench/monitor.csv ]; then
               awk -F, 'NR>1 {
                 if ($2+0 > peak_used) peak_used = $2+0;
                 if ($3+0 > peak_avail || NR==2) peak_avail_min = ($3+0 < peak_avail_min || NR==2) ? $3+0 : peak_avail_min;
@@ -168,21 +172,21 @@ jobs:
                 printf "min_mem_avail   : %d MB\n", peak_avail_min
                 printf "peak_fd_count   : %d\n", peak_fd
                 printf "peak_proc_count : %d\n", peak_proc
-              }' .bench/monitor.csv
+              }' bench/monitor.csv
             fi
             echo
             echo "=== /usr/bin/time -v summary ==="
-            grep -E "Maximum resident|User time|System time|Elapsed|Percent of CPU|Voluntary|Involuntary" .bench/time.txt || true
+            grep -E "Maximum resident|User time|System time|Elapsed|Percent of CPU|Voluntary|Involuntary" bench/time.txt || true
             echo
             echo "=== last 50 log lines ==="
-            tail -50 .bench/pipeline.log 2>/dev/null || true
-          } > .bench/summary.txt
-          cat .bench/summary.txt
+            tail -50 bench/pipeline.log 2>/dev/null || true
+          } > bench/summary.txt
+          cat bench/summary.txt
 
       - name: Upload artifacts
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: bench-t${{ github.event.inputs.threads1 }}-b${{ github.event.inputs.untested_batch }}
-          path: .bench/
+          path: bench/
           retention-days: 14
