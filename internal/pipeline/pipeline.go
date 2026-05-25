@@ -467,6 +467,18 @@ func runSelect(ctx context.Context, opts Opts) error {
 				"alive", res.AlivKeys,
 				"drop_rate", fmt.Sprintf("%.1f%%", res.DropRate*100))
 
+			// Defensive: if the probe was interrupted by ctx-cancel
+			// (budget expiry while the goroutines were in-flight), it
+			// returns a Result with InputKeys>0 and AlivKeys==0 that is
+			// NOT a real "everything died" signal — it's just "we ran
+			// out of time to test". Publishing that empty filtered set
+			// would wipe out the previous-run's good output. Skip publish.
+			if ctx.Err() != nil {
+				slog.Warn("pre-publish probe ctx-cancelled; skipping publish to protect previous output",
+					"protocol", proto, "ctx_err", ctx.Err())
+				continue
+			}
+
 			// Critical drop rate: if more than 75% of our published
 			// keys are dead at publish time, the stage-2 results are
 			// stale enough that publishing would mislead users. Skip
@@ -485,6 +497,14 @@ func runSelect(ctx context.Context, opts Opts) error {
 			// Use filtered selections for output. May be smaller — that's
 			// fine, fewer-but-honest keys is the goal.
 			selections = res.Filtered
+
+			// Final defense: if filtered set is empty, don't overwrite
+			// previous good output with nothing.
+			if len(selections) == 0 {
+				slog.Warn("pre-publish probe filtered all keys; skipping publish",
+					"protocol", proto, "original_input", res.InputKeys)
+				continue
+			}
 		}
 
 		perProto = append(perProto, protoOutput{
