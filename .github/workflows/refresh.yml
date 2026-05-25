@@ -1,36 +1,49 @@
-# VlessFilter scheduled refresh workflow
+# VlessFilter scheduled refresh workflow.
 #
-# This workflow runs the full pipeline on GitHub-hosted runners every 6 hours
-# and pushes results back to the upstream repo via a personal access token.
+# v2.1: matrix parallelism. Each protocol runs on its own ubuntu-latest runner
+# in parallel, then a final merge job pushes the union of results to the repo.
 #
-# DEPLOYMENT (when PC scheduling isn't available):
-# 1. Create a new GitHub account (or use any account that has Actions enabled)
-# 2. Fork github.com/trikiman/vlessfilter
-# 3. In the FORKED repo: Settings → Secrets and variables → Actions
-#    Add secret: PUSH_TOKEN = personal access token with "Contents: write"
-#    on the upstream trikiman/vlessfilter repo (Fine-grained PAT preferred)
-# 4. (Optional) Settings → Variables: UPSTREAM_REPO = trikiman/vlessfilter
-# 5. Enable Actions in the fork (Settings → Actions → Allow all)
-# 6. The schedule below runs the pipeline every 6h on the new account's
-#    Actions minutes (free tier: unlimited for public repos)
+# Schedule: every 2h (00:00, 02:00, 04:00, ... UTC). On public repos this
+# is unlimited / free.
 #
-# COSTS: $0 — public repos get unlimited Actions minutes on free tier.
-# No card, no billing setup needed on the fork's account.
-
+# Costs: $0. ubuntu-latest standard runners are free for public repos.
+#
+# Re-enable after auto-disable: GitHub disables scheduled workflows after
+# repeated failures. To re-enable, run a manual `workflow_dispatch` (Actions
+# tab > Run workflow), or push any commit to main.
 name: refresh
 
 on:
   schedule:
-    # Every 6h: 00:00, 06:00, 12:00, 18:00 UTC
-    - cron: '0 0,6,12,18 * * *'
+    # Every 2 hours.
+    - cron: '0 */2 * * *'
   workflow_dispatch:
+    inputs:
+      threads1:
+        description: 'Stage 1 concurrency override'
+        required: false
+        default: '2000'
+      untested_batch:
+        description: 'Untested keys per protocol per stage 1'
+        required: false
+        default: '120000'
+      budget_min:
+        description: 'Wall-clock budget per protocol (minutes)'
+        required: false
+        default: '55'
 
 jobs:
-  refresh:
+  test:
+    name: test (${{ matrix.proto }})
     runs-on: ubuntu-latest
     timeout-minutes: 75
     permissions:
       contents: write
+    strategy:
+      # Don't abort the whole sweep if one protocol crashes.
+      fail-fast: false
+      matrix:
+        proto: [vless, vmess, trojan, ss]
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -42,9 +55,8 @@ jobs:
         with:
           go-version: '1.22'
 
-      - name: Tune kernel for stage 1 concurrency
+      - name: Tune kernel
         run: |
-          # Mirror what kerntune.Apply does on supported VPSes
           sudo sysctl -w net.ipv4.tcp_tw_reuse=1 || true
           sudo sysctl -w "net.ipv4.ip_local_port_range=1024 65535" || true
           ulimit -n 100000 || true
@@ -57,32 +69,104 @@ jobs:
       - name: Build vlessfilter
         run: go build -o bin/vlessfilter ./cmd/vlessfilter
 
-      - name: Run pipeline (60-min budget, accuracy probe enabled)
+      - name: Run pipeline (single protocol)
         env:
           VLESSFILTER_QUIET: '1'
+          THREADS1: ${{ github.event.inputs.threads1 || '2000' }}
+          BATCH: ${{ github.event.inputs.untested_batch || '120000' }}
+          BUDGET: ${{ github.event.inputs.budget_min || '55' }}
         run: |
           ./bin/vlessfilter run \
-            --threads1 1000 \
+            --threads1 $THREADS1 \
             --threads2 20 \
-            --budget-min 60 \
+            --untested-batch $BATCH \
+            --budget-min $BUDGET \
             --checkpoint-min 5 \
-            --accuracy-probe
+            --accuracy-probe \
+            --protocols ${{ matrix.proto }}
 
-      - name: Push results to upstream
+      - name: Upload protocol output as artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: subs-${{ matrix.proto }}
+          path: |
+            subs/${{ matrix.proto }}/
+            all-results.csv
+          retention-days: 7
+
+  merge-and-push:
+    needs: test
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    if: always()  # publish whatever protocols succeeded even if one failed
+    steps:
+      - name: Checkout (full)
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          # Use deploy/PAT for push later. Default GITHUB_TOKEN works for
+          # the same repo unless protections require a PAT.
+          token: ${{ secrets.PUSH_TOKEN || github.token }}
+
+      - name: Download all protocol artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: artifacts/
+
+      - name: Merge artifacts into subs/ + regenerate top-level all.txt + README
+        run: |
+          set -e
+          mkdir -p subs
+          for proto in vless vmess trojan ss; do
+            src="artifacts/subs-$proto/${proto}"
+            if [ -d "$src" ]; then
+              echo "merging $proto"
+              mkdir -p "subs/$proto"
+              # Country files
+              cp -rf "$src"/* "subs/$proto/" 2>/dev/null || true
+            else
+              echo "no artifact for $proto (job may have failed)"
+            fi
+          done
+          # Back-compat: top-level subs/<CC>.txt mirrors vless
+          if [ -d subs/vless ]; then
+            for f in subs/vless/*.txt; do
+              [ -f "$f" ] || continue
+              base=$(basename "$f")
+              # Skip files that aren't 2-letter country codes
+              case "$base" in
+                ??.txt) cp "$f" "subs/$base" ;;
+                all.txt|rotating.txt) cp "$f" "subs/$base" ;;
+              esac
+            done
+          fi
+          # Regenerate top-level all-results.csv if any artifact had one
+          for proto in vless vmess trojan ss; do
+            csv="artifacts/subs-$proto/all-results.csv"
+            if [ -f "$csv" ]; then
+              cp -f "$csv" all-results.csv
+              break
+            fi
+          done
+
+      - name: Commit and push
         env:
           PUSH_TOKEN: ${{ secrets.PUSH_TOKEN }}
-          UPSTREAM_REPO: ${{ vars.UPSTREAM_REPO || 'trikiman/vlessfilter' }}
         run: |
-          if [ -z "$PUSH_TOKEN" ]; then
-            echo "PUSH_TOKEN secret not set — results stay in this fork only"
-            git add -f subs/ README.md all-results.csv raw/dead.txt 2>/dev/null || true
-            git -c user.name="VlessFilter Bot" -c user.email="vf-bot@noreply.github.com" \
-              commit -m "results: scheduled refresh $(date -u +%Y%m%d-%H%M%S)" || echo "no changes"
-            git push origin main || true
+          set -e
+          git config user.name "VlessFilter Bot"
+          git config user.email "vf-bot@noreply.github.com"
+          git add -f subs/ all-results.csv 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "no changes to publish"
+            exit 0
+          fi
+          git commit -m "results: matrix refresh $(date -u +%Y%m%d-%H%M%S)" || exit 0
+          if [ -n "$PUSH_TOKEN" ]; then
+            git push "https://x-access-token:${PUSH_TOKEN}@github.com/${{ github.repository }}.git" HEAD:main
           else
-            git add -f subs/ README.md all-results.csv raw/dead.txt 2>/dev/null || true
-            git -c user.name="VlessFilter Bot" -c user.email="vf-bot@noreply.github.com" \
-              commit -m "results: scheduled refresh $(date -u +%Y%m%d-%H%M%S)" || { echo "no changes"; exit 0; }
-            git push "https://x-access-token:${PUSH_TOKEN}@github.com/${UPSTREAM_REPO}.git" \
-              HEAD:refs/heads/main
+            git push origin HEAD:main
           fi

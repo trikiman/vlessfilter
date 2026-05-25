@@ -15,6 +15,7 @@ import (
 	"time"
 
 	"github.com/trikiman/vlessfilter/internal/pipeline"
+	"github.com/trikiman/vlessfilter/internal/sources"
 	"github.com/trikiman/vlessfilter/internal/xrayknife"
 )
 
@@ -35,6 +36,7 @@ Run flags:
   --stage <name>        Run only one stage: fetch | test | select (default: all stages)
   --threads1 <n>        Stage 1 (handshake) concurrency (default: 1000)
   --threads2 <n>        Stage 2 (speedtest) concurrency (default: 20; cap per D-06)
+  --untested-batch <n>  Cap untested keys per protocol per stage 1 (default: 0 = built-in 80000)
   --limit <n>           Cap number of keys tested in stage 2 (default: 0 = no cap)
   --budget-min <n>      Hard wall-clock budget for the run, minutes (default: 55; <=0 disables)
   --checkpoint-min <n>  Checkpoint cadence: write outputs every N minutes (default: 2; <=0 disables)
@@ -87,6 +89,8 @@ func run() int {
 	switch args[0] {
 	case "run":
 		return runCmd(args[1:])
+	case "sources-list":
+		return sourcesListCmd(args[1:])
 	case "help", "-h", "--help":
 		fmt.Fprint(os.Stderr, usage)
 		return exitOK
@@ -112,6 +116,7 @@ func runCmd(args []string) int {
 	profile := fs.String("profile", "", "Preset for fast iteration: 'dev' = small subset, 2-min budget, dev/ output")
 	accuracyProbe := fs.Bool("accuracy-probe", false, "After publish, sample-test keys against ipinfo.io and compare to published country labels (GEO-04)")
 	protocols := fs.String("protocols", "vless,vmess,trojan,ss", "Comma-separated proxy protocols to test+publish (default: all 4 supported)")
+	untestedBatch := fs.Int("untested-batch", 0, "Cap untested keys per protocol per stage 1 run (0 = use built-in default 80000)")
 
 	if err := fs.Parse(args); err != nil {
 		if errors.Is(err, flag.ErrHelp) {
@@ -189,6 +194,7 @@ func runCmd(args []string) int {
 		GitToken:         token,
 		RunAccuracyProbe: *accuracyProbe,
 		Protocols:        protoList,
+		UntestedBatch:    *untestedBatch,
 		Runner:           runner,
 		Now:              func() time.Time { return time.Now().UTC() },
 	}
@@ -224,4 +230,44 @@ func afterGlobal(args []string) []string {
 		}
 	}
 	return nil
+}
+
+
+// sourcesListCmd loads sources.yaml, expands templates, and dumps URLs to stdout.
+// Output formats: --format=plain (default; one URL per line) or --format=name-url
+// (tab-separated source-name + URL — useful for debugging which source a URL came from).
+//
+// Used to materialize sources.txt — a human-readable manifest of every
+// subscription URL the pipeline pulls from. Helpful for:
+//   - diff'ing source sets between commits
+//   - manual probing of a specific source
+//   - re-creating the source set on a fresh machine without the YAML
+func sourcesListCmd(args []string) int {
+	fs := flag.NewFlagSet("sources-list", flag.ContinueOnError)
+	srcPath := fs.String("sources", "./sources.yaml", "Path to sources.yaml")
+	format := fs.String("format", "plain", "Output format: plain (URL per line) | name-url (tab-separated)")
+	if err := fs.Parse(args); err != nil {
+		if errors.Is(err, flag.ErrHelp) {
+			return exitOK
+		}
+		return exitUserErr
+	}
+	cfg, err := sources.Load(*srcPath)
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "load sources: %v\n", err)
+		return exitRuntime
+	}
+	expanded := sources.Expand(cfg)
+	for _, e := range expanded {
+		switch *format {
+		case "plain":
+			fmt.Println(e.URL)
+		case "name-url":
+			fmt.Printf("%s\t%s\n", e.Name, e.URL)
+		default:
+			fmt.Fprintf(os.Stderr, "unknown --format %q\n", *format)
+			return exitUserErr
+		}
+	}
+	return exitOK
 }

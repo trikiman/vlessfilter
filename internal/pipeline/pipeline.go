@@ -73,6 +73,13 @@ type Opts struct {
 	// drop-rate>75%). Default false (probe runs). Set true for checkpoint
 	// runs which fire every 2 min and don't need the full re-validation.
 	SkipPrePublishProbe bool
+
+	// UntestedBatch caps how many never-tested keys per protocol stage 1
+	// pulls from the DB pool each run. Default (when <=0) is 80000.
+	// Larger values exercise more of the pool per cycle but use more time
+	// in stage 1 and more sockets concurrently. Useful values: 80000
+	// (default), 160000-240000 (powerful runners with --threads1 >= 1500).
+	UntestedBatch int
 }
 
 var validStages = map[string]bool{"": true, "fetch": true, "test": true, "select": true}
@@ -259,6 +266,9 @@ func runTestProtocol(ctx context.Context, opts Opts, protocol, dbPath string, t1
 	// LIVE-04: --profile dev passes opts.Limit > 0 to cap stage 1 to
 	// a small subset for fast iteration.
 	untestedBatch := 80000
+	if opts.UntestedBatch > 0 {
+		untestedBatch = opts.UntestedBatch
+	}
 	if opts.Limit > 0 && opts.Limit < untestedBatch {
 		untestedBatch = opts.Limit
 	}

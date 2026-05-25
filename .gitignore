@@ -28,3 +28,9 @@ Thumbs.db
 configs.txt
 valid.txt
 
+# local-only scratch (probe outputs, ad-hoc scripts)
+dev/
+.bench/
+.kiro/
+scripts/logs/
+

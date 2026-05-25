@@ -2,6 +2,64 @@
 
 All notable changes to VlessFilter are documented here.
 
+## v2.1.0 — 2026-05-25
+
+**Theme: scale-out via matrix parallelism + benchmarks + local backup.**
+
+The v2.0 lineage proved out the multi-protocol pipeline. v2.1 takes the
+scaling lid off: GitHub Actions runs each protocol on its own runner, so
+the four protocols progress in wall-clock parallel rather than stealing
+each other's budget. A separate benchmark workflow finds the empirical
+thread sweet-spot per runner type instead of guessing.
+
+### Added
+
+- **`--untested-batch` flag** on `vlessfilter run` (default 80000 keeps
+  parity; raise to 120000-240000 on powerful runners). Wired through to
+  `pipeline.runTestProtocol` so per-protocol DB-pool coverage scales
+  with available compute. Hardcoded literal previously buried in
+  pipeline.go is now operator-tunable.
+- **`vlessfilter sources-list` subcommand** dumps every fetchable URL
+  after country/range-template expansion. Default `--format=plain`
+  emits one URL per line; `--format=name-url` emits TSV with the
+  declaring source name. Used to materialize `sources.txt`.
+- **`sources.txt`** — committed manifest of all 283 expanded source
+  URLs. Diffable in PRs, useful for manual probing, lets a fresh
+  machine re-create the source set without parsing YAML.
+- **`scripts/dump-sources-txt.sh`** — regenerator for sources.txt.
+- **`scripts/backup-local.ps1`** — point-in-time snapshot of
+  xray-knife.db, all-results.csv, subs/, sources.{yaml,txt}, and a
+  full `git bundle --all`. Output rotates by timestamp under
+  E:\Backups\vlessfilter\. Restores via `git clone vlessfilter.bundle`.
+- **`.github/workflows/benchmark.yml`** — workflow_dispatch sweep that
+  records peak RAM, FD count, /usr/bin/time -v RSS, and stage 1 wall
+  clock at varying `--threads1` (500/1000/1500/2000/2500/3000) and
+  `--untested-batch` (20k/40k/80k/160k). Background monitor samples
+  every 2s. Results uploaded as artifacts (14d retention). Gives us
+  data to set thread defaults instead of armchair-engineering them.
+
+### Changed
+
+- **`refresh.yml` → matrix parallelism**: 4 protocols × ubuntu-latest
+  in parallel + final merge-and-push job. Schedule moved from every
+  6h to every 2h (still $0/month on public repos). Defaults bumped:
+  `--threads1 2000` (was 1000), `--untested-batch 120000` (was 80000),
+  `--budget-min 55` (per protocol). With parallelism, total wall
+  clock per cycle is now ~60min while exercising 4× the keys.
+
+### Investigated (no change)
+
+- **28-country ceiling root cause**: `selector.minPassesForStable = 2`
+  requires two passing tests before publication. With every-6h cycles
+  this took multiple days for a key to "graduate". The matrix + 2h
+  schedule + 50% larger batch should compress this to under 12h.
+  Robustness threshold left intact per user direction; speed comes
+  from running more cycles, not from lowering the bar.
+- **sub.pai.yt/singbox**: confirmed 200 OK, ~46KB sing-box JSON
+  format with ~140+ outbounds (HK/JP/SG/US dominant). Cannot be added
+  as `kind: plain` — needs a JSON→URI converter. Deferred as a
+  follow-up phase since it requires a non-trivial Go converter.
+
 ## v2.0.1 — 2026-05-25 (in progress)
 
 **Critical fix: pre-publish probe + always-probe-on-checkpoint.**

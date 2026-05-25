@@ -1,0 +1,188 @@
+# Benchmark workflow.
+#
+# Runs the pipeline at varying --threads1 settings and records peak RAM, CPU,
+# FDs, and stage 1 wall-clock so we can pick an empirically-justified value
+# instead of guessing.
+#
+# Trigger: workflow_dispatch (manual). Choose `threads1` from the input list.
+# A complete benchmark sweep runs this workflow once per value (1000, 2000, 3000)
+# and compares the resulting artifacts.
+#
+# Robustness guards:
+#   - timeout-minutes capped at 90 so a runaway thread count can't waste a slot
+#   - we DO NOT push results to the upstream repo from benchmark runs (the
+#     subset tested is intentionally small to keep the benchmark <30min)
+#   - resource-monitor runs in background; if vlessfilter exits, we still
+#     upload the partial monitor logs as artifacts
+name: benchmark
+
+on:
+  workflow_dispatch:
+    inputs:
+      threads1:
+        description: 'Stage 1 concurrency to benchmark'
+        required: true
+        default: '2000'
+        type: choice
+        options:
+          - '500'
+          - '1000'
+          - '1500'
+          - '2000'
+          - '2500'
+          - '3000'
+      untested_batch:
+        description: 'Untested keys per protocol per stage 1'
+        required: true
+        default: '40000'
+        type: choice
+        options:
+          - '20000'
+          - '40000'
+          - '80000'
+          - '160000'
+      protocols:
+        description: 'Protocols to test (comma-separated)'
+        required: true
+        default: 'vless'
+        type: string
+      budget_min:
+        description: 'Wall-clock budget (minutes)'
+        required: true
+        default: '25'
+        type: string
+
+jobs:
+  benchmark:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.22'
+
+      - name: Install xray-knife
+        run: |
+          go install github.com/lilendian0x00/xray-knife/v9@latest
+          echo "$HOME/go/bin" >> $GITHUB_PATH
+
+      - name: Build vlessfilter
+        run: go build -o bin/vlessfilter ./cmd/vlessfilter
+
+      - name: Tune kernel
+        run: |
+          sudo sysctl -w net.ipv4.tcp_tw_reuse=1 || true
+          sudo sysctl -w "net.ipv4.ip_local_port_range=1024 65535" || true
+          ulimit -n 100000 || true
+          # Record what the kernel is willing to give us.
+          mkdir -p .bench
+          {
+            echo "=== sysctl ==="
+            sysctl net.ipv4.tcp_tw_reuse net.ipv4.ip_local_port_range fs.file-max
+            echo "=== ulimit ==="
+            ulimit -a
+            echo "=== nproc ==="
+            nproc
+            echo "=== free ==="
+            free -m
+            echo "=== uname ==="
+            uname -a
+            echo "=== /proc/cpuinfo (first cpu) ==="
+            head -25 /proc/cpuinfo
+          } > .bench/preflight.txt
+
+      - name: Start resource monitor
+        run: |
+          # Capture peak RAM, CPU%, FD count every 2s until vlessfilter exits.
+          # Output: .bench/monitor.csv with columns:
+          #   ts,mem_used_mb,mem_avail_mb,cpu_user_pct,cpu_idle_pct,fd_total,proc_count
+          mkdir -p .bench
+          (
+            echo "ts,mem_used_mb,mem_avail_mb,cpu_user_pct,cpu_idle_pct,fd_total,proc_count" > .bench/monitor.csv
+            while true; do
+              ts=$(date -u +%s)
+              # mem
+              mem_line=$(free -m | awk '/^Mem:/ {print $3, $7}')
+              mem_used=$(echo $mem_line | cut -d' ' -f1)
+              mem_avail=$(echo $mem_line | cut -d' ' -f2)
+              # cpu (vmstat 1 1 emits 2 rows; 2nd row is current)
+              cpu_line=$(vmstat 1 2 | tail -1 | awk '{print $13, $15}')
+              cpu_user=$(echo $cpu_line | cut -d' ' -f1)
+              cpu_idle=$(echo $cpu_line | cut -d' ' -f2)
+              # fd count (sum across all PIDs we can read)
+              fd_total=$(ls /proc/*/fd 2>/dev/null | wc -l)
+              proc_count=$(ps -e --no-headers | wc -l)
+              echo "$ts,$mem_used,$mem_avail,$cpu_user,$cpu_idle,$fd_total,$proc_count" >> .bench/monitor.csv
+              sleep 2
+            done
+          ) &
+          echo $! > .bench/monitor.pid
+
+      - name: Run pipeline (benchmark mode)
+        env:
+          VLESSFILTER_QUIET: '1'
+        timeout-minutes: 60
+        run: |
+          mkdir -p .bench
+          # /usr/bin/time gives us peak RSS, total CPU seconds, wall time.
+          # We tee the log so any errors are still visible in the run UI.
+          /usr/bin/time -v ./bin/vlessfilter run \
+            --threads1 ${{ github.event.inputs.threads1 }} \
+            --threads2 20 \
+            --untested-batch ${{ github.event.inputs.untested_batch }} \
+            --budget-min ${{ github.event.inputs.budget_min }} \
+            --checkpoint-min 0 \
+            --protocols ${{ github.event.inputs.protocols }} \
+            --out .bench/out \
+            2> .bench/time.txt | tee .bench/pipeline.log
+          echo "exit=$?" >> .bench/time.txt
+
+      - name: Stop monitor and summarise
+        if: always()
+        run: |
+          if [ -f .bench/monitor.pid ]; then kill $(cat .bench/monitor.pid) 2>/dev/null || true; fi
+          {
+            echo "=== run inputs ==="
+            echo "threads1=${{ github.event.inputs.threads1 }}"
+            echo "untested_batch=${{ github.event.inputs.untested_batch }}"
+            echo "protocols=${{ github.event.inputs.protocols }}"
+            echo "budget_min=${{ github.event.inputs.budget_min }}"
+            echo
+            echo "=== peak resource usage ==="
+            if [ -f .bench/monitor.csv ]; then
+              awk -F, 'NR>1 {
+                if ($2+0 > peak_used) peak_used = $2+0;
+                if ($3+0 > peak_avail || NR==2) peak_avail_min = ($3+0 < peak_avail_min || NR==2) ? $3+0 : peak_avail_min;
+                if ($6+0 > peak_fd) peak_fd = $6+0;
+                if ($7+0 > peak_proc) peak_proc = $7+0;
+                count++
+              } END {
+                printf "samples         : %d\n", count
+                printf "peak_mem_used   : %d MB\n", peak_used
+                printf "min_mem_avail   : %d MB\n", peak_avail_min
+                printf "peak_fd_count   : %d\n", peak_fd
+                printf "peak_proc_count : %d\n", peak_proc
+              }' .bench/monitor.csv
+            fi
+            echo
+            echo "=== /usr/bin/time -v summary ==="
+            grep -E "Maximum resident|User time|System time|Elapsed|Percent of CPU|Voluntary|Involuntary" .bench/time.txt || true
+            echo
+            echo "=== last 50 log lines ==="
+            tail -50 .bench/pipeline.log 2>/dev/null || true
+          } > .bench/summary.txt
+          cat .bench/summary.txt
+
+      - name: Upload artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: bench-t${{ github.event.inputs.threads1 }}-b${{ github.event.inputs.untested_batch }}
+          path: .bench/
+          retention-days: 14
