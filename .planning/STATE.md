@@ -1,15 +1,15 @@
 ---
 gsd_state_version: 1.0
-milestone: v2.0.0
-milestone_name: multi-protocol-xrayfilter
+milestone: v2.1.0
+milestone_name: scale-and-robustness
 status: shipped
-last_updated: "2026-05-25T08:35:00Z"
-last_activity: 2026-05-25 -- Pre-publish probe + always-probe-on-checkpoint fix shipped
+last_updated: "2026-05-25T14:10:00Z"
+last_activity: 2026-05-25 -- Matrix parallelism + benchmark workflow + sources.txt + local backup shipped
 progress:
-  total_phases: 8
-  completed_phases: 8
-  total_plans: 8
-  completed_plans: 8
+  total_phases: 9
+  completed_phases: 9
+  total_plans: 9
+  completed_plans: 9
   percent: 100
 ---
 
@@ -26,16 +26,16 @@ See: .planning/PROJECT.md
 - **v1.4** — Liveness Validation (3x retest, passes>=2) — 2026-05-24
 - **v1.5** — Country Identification (consensus + post-publish probe) — 2026-05-24
 - **v2.0** — Multi-Protocol Pivot (VLESS+VMess+Trojan+SS) — 2026-05-24
-- **v2.0 fixes** — Pre-publish probe + always-on-checkpoint — 2026-05-25
+- **v2.0.1** — Pre-publish probe + always-on-checkpoint — 2026-05-25
+- **v2.1.0** — Scale-out: matrix parallelism, benchmark, sources.txt, local backup — 2026-05-25
 
 ## Currently Running
 
-Manual-triggered scheduled task `VlessFilter Refresh` started 2026-05-25T08:35:09Z with new binary that includes:
-- Pre-publish probe filtering (drops keys that fail re-validation right before publish)
-- Probe-on-every-checkpoint (closes the race where checkpoint output bypassed probe)
-- Fresh-ctx fallback runSelect when budget exhausts
+GitHub Actions:
+- benchmark.yml run #26404559597 (threads1=2000, batch=40k, vless, 20min budget)
+- refresh.yml run #26404569393 (matrix: vless+vmess+trojan+ss in parallel)
 
-ETA completion: ~09:35.
+Both triggered 2026-05-25T14:06Z via gh workflow_dispatch. Benchmark ETA ~20min, refresh ETA ~60min.
 
 ## Accumulated Decisions
 
