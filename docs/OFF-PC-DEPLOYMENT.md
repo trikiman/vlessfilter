@@ -89,9 +89,43 @@ forever, NOT a 30-day trial).
 
 ---
 
-## Option C: Termux on Android phone
+## Option C: h2.nexus 15-minute ephemeral VPS (manual trigger, no signup)
 
-**Cost:** $0.
+**Cost:** $0 — h2.nexus gives free 15-min VPS (4 CPU, 8GB RAM, 1Gbps) with no
+account.
+**Setup time:** Zero.
+**Always-on:** No — manual trigger when you want fresh keys (recommend
+2-4× per day).
+
+### Steps
+
+1. **Generate a PAT** as in Option A step 3 (one-time). Save it somewhere
+   you can paste from quickly.
+2. Open **https://h2.nexus/cli** — click "free server for 15 minutes" and
+   choose **Debian 11**.
+3. Wait ~30 seconds for the VM to provision. Click into the **web console**.
+4. Paste **ONE LINE** (replace `ghp_xxx` with your PAT):
+   ```bash
+   curl -sSL https://raw.githubusercontent.com/trikiman/vlessfilter/main/scripts/h2-quick.sh | bash -s -- ghp_xxx
+   ```
+5. Wait ~12 minutes. Results push to `trikiman/vlessfilter` automatically.
+   The VM auto-deletes at 15 min — no cleanup needed.
+
+### Pros
+- No new accounts, no card, no signup at all
+- 4-CPU AMD EPYC + German peering = much faster than home connections
+- Zero ongoing maintenance — just click + paste when you want fresh keys
+- Russia-friendly host
+
+### Cons
+- Manual trigger required (no auto-schedule)
+- Reduced run scope (5k untested batch vs 80k for full runs) to fit in
+  15 minutes — full pool coverage requires multiple sessions
+- Skips post-publish accuracy probe (saves time)
+
+---
+
+## Option D: Termux on Android phone
 **Setup time:** ~10 minutes.
 **Always-on:** Only when phone is plugged in + on home wifi.
 
@@ -135,13 +169,14 @@ forever, NOT a 30-day trial).
 
 | Your situation | Pick |
 |----------------|------|
-| Have a spare email + can use GitHub | **Option A** (easiest) |
-| Russian-friendly Oracle / Google card works | **Option B** (most reliable) |
-| Don't want a new account or card check | **Option C** (least friction) |
+| Want zero-setup, just click+paste when you want fresh keys | **Option C** (h2.nexus) |
+| Have a spare email + can use GitHub | **Option A** (GitHub Actions fork) |
+| Russian-friendly Oracle / Google card works | **Option B** (Oracle Always-Free) |
+| Don't want a new account or card check | **Option D** (Termux on Android) |
 
-**For most users: try Option A first.** If your card can't pass GitHub's
-billing-account creation (uncommon for new accounts since public-repo
-Actions doesn't actually need a card), fall back to B.
+**Fastest path: try Option C (h2.nexus) RIGHT NOW** — no signup, just paste
+a one-liner in their free VM. Refresh whenever you open the page. For
+full automation later, do Option A or B.
 
 ## After deployment
 
