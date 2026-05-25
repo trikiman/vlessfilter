@@ -22,11 +22,11 @@ on:
       threads1:
         description: 'Stage 1 concurrency override'
         required: false
-        default: '2000'
+        default: '3000'
       untested_batch:
         description: 'Untested keys per protocol per stage 1'
         required: false
-        default: '120000'
+        default: '240000'
       budget_min:
         description: 'Wall-clock budget per protocol (minutes)'
         required: false
@@ -72,8 +72,8 @@ jobs:
       - name: Run pipeline (single protocol)
         env:
           VLESSFILTER_QUIET: '1'
-          THREADS1: ${{ github.event.inputs.threads1 || '2000' }}
-          BATCH: ${{ github.event.inputs.untested_batch || '120000' }}
+          THREADS1: ${{ github.event.inputs.threads1 || '3000' }}
+          BATCH: ${{ github.event.inputs.untested_batch || '240000' }}
           BUDGET: ${{ github.event.inputs.budget_min || '55' }}
         run: |
           ./bin/vlessfilter run \

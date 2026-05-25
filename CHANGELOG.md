@@ -12,6 +12,30 @@ the four protocols progress in wall-clock parallel rather than stealing
 each other's budget. A separate benchmark workflow finds the empirical
 thread sweet-spot per runner type instead of guessing.
 
+### Benchmark findings (commit 777a173)
+
+Ran 4 sweeps at threads1 = 1000, 2000, 3000, 5000 (untested-batch 40k,
+20-min budget, vless protocol, on ubuntu-latest). All 4 runs hit the
+20-min budget without exhausting any resource:
+
+| threads1 | peak RAM | peak FDs | peak procs | wall  |
+|----------|----------|----------|------------|-------|
+| 1000     | 2.85 GB  | 11,800   | 170        | 20:00 |
+| 2000     | 3.41 GB  | 13,458   | 168        | 20:00 |
+| 3000     | 3.58 GB  | 16,870   | 168        | 20:00 |
+| 5000     | 3.70 GB  | 16,813   | 172        | 20:00 |
+
+Conclusions:
+- **Diminishing returns past 3000 threads** — going 3k→5k added only
+  100 MB RAM and FDs were flat (xray-knife internally caps).
+- **RAM is not the constraint** at any tested level (max 23% of 16 GB).
+- **Stage 1 isn't the bottleneck.** Wall clock is dominated by Stage 2
+  speedtests (bandwidth-bound, --threads2 20 maxes the runner uplink)
+  and the pre-publish probe (tests each top-3 selection again).
+- **New default: --threads1 3000, --untested-batch 240000.** Up from
+  the previous v2.0 default of 1000/80000.
+
+
 ### Added
 
 - **`--untested-batch` flag** on `vlessfilter run` (default 80000 keeps
