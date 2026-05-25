@@ -1,0 +1,466 @@
+{
+  "protocol": "vmess",
+  "selections": [
+    {
+      "Country": "AL",
+      "Top": [
+        {
+          "Link": "vmess://eyJhZGQiOiI0NS4xNS4xNzAuMjM3IiwiaG9zdCI6IjQ1LjE1LjE3MC4yMzciLCJpZCI6IjgyMGQ0YjRmLTMzNTctNGRjNy05MzgxLTZlNWZkNTJiNWYzOSIsIm5ldCI6IndzIiwicGF0aCI6Ii92bWVzcy8iLCJwb3J0Ijo4MCwicHMiOiJCeSBFYnJhU2hhIPCfp6oiLCJ0eXBlIjoibm9uZSIsInYiOiIyIn0=",
+          "LatencyMs": 697,
+          "SpeedMbps": 0.000011004126463376451,
+          "Country": "AL",
+          "Score": -0.2787999339752412
+        },
+        {
+          "Link": "vmess://eyJ2IjogIjIiLCAicHMiOiAiXHVkODNjXHVkZGU2XHVkODNjXHVkZGYxQUxfOV9AU3VyZmJvYXJkdjJyYXkiLCAiYWRkIjogIjQ1LjE1LjE3MC4yMzciLCAicG9ydCI6IDgwLCAiaWQiOiAiODIwZDRiNGYtMzM1Ny00ZGM3LTkzODEtNmU1ZmQ1MmI1ZjM5IiwgIm5ldCI6ICJ3cyIsICJ0eXBlIjogIm5vbmUiLCAiaG9zdCI6ICI0NS4xNS4xNzAuMjM3IiwgInBhdGgiOiAiL3ZtZXNzLyJ9",
+          "LatencyMs": 701,
+          "SpeedMbps": 0.000008714596333447844,
+          "Country": "AL",
+          "Score": -0.280399947712422
+        },
+        {
+          "Link": "vmess://eyJhZGQiOiAiNDUuMTUuMTcwLjIzNyIsICJhaWQiOiAiMCIsICJhbHBuIjogIiIsICJmcCI6ICIiLCAiaG9zdCI6ICJwZWxhbmcub3JnIiwgImlkIjogIjgyMGQ0YjRmLTMzNTctNGRjNy05MzgxLTZlNWZkNTJiNWYzOSIsICJpbnNlY3VyZSI6ICIwIiwgIm5ldCI6ICJ3cyIsICJwYXRoIjogIi92bWVzcy8iLCAicG9ydCI6ICI4MCIsICJwcyI6ICJcdWQ4M2NcdWRkZTZcdWQ4M2NcdWRkZjFBTF8xOF9AU3VyZmJvYXJkdjJyYXkiLCAic2N5IjogImF1dG8iLCAic25pIjogIiIsICJ0bHMiOiAiIiwgInR5cGUiOiAiLS0tIiwgInYiOiAiMiJ9",
+          "LatencyMs": 701,
+          "SpeedMbps": 0.000007504690529458458,
+          "Country": "AL",
+          "Score": -0.2803999549718568
+        }
+      ]
+    },
+    {
+      "Country": "BR",
+      "Top": [
+        {
+          "Link": "vmess://eyJ2IjoiMiIsInBzIjoiW09wZW5SYXldIPCfh6fwn4e3IEJSLTY4IiwiYWRkIjoiMTcyLjIzMy4xNy43NiIsInBvcnQiOiIyMjMyNCIsImlkIjoiMDQ2MjFiYWUtYWIzNi0xMWVjLWI5MDktMDI0MmFjMTIwMDAyIiwiYWlkIjoiMSIsInNjeSI6ImF1dG8iLCJuZXQiOiJ0Y3AiLCJ0eXBlIjoiIiwidGxzIjoiIiwiZnAiOiJjaHJvbWUifQ==",
+          "LatencyMs": 495,
+          "SpeedMbps": 29.585798263549805,
+          "Country": "BR",
+          "Score": -0.02048521041870119
+        },
+        {
+          "Link": "vmess://eyJhZGQiOiIxNzIuMjMzLjE3Ljc2IiwiYWlkIjoiMSIsImFscG4iOm51bGwsImZwIjpudWxsLCJob3N0IjoiIiwiaWQiOiIwNDYyMWJhZS1hYjM2LTExZWMtYjkwOS0wMjQyYWMxMjAwMDIiLCJuYW1lIjoiXHVkODNjXHVkZGU3XHVkODNjXHVkZGY3IEJSIDEiLCJuZXQiOiJ0Y3AiLCJwYXRoIjoiXC8iLCJwb3J0IjoyMjMyNCwicHMiOiJcdWQ4M2NcdWRkZTdcdWQ4M2NcdWRkZjdbb3BlbnByb3h5bGlzdC5jb21dIHZtZXNzLUJSIiwic2N5IjpudWxsLCJzbmkiOm51bGwsInRscyI6IiIsInR5cGUiOm51bGwsInYiOm51bGwsInNraXAtY2VydC12ZXJpZnkiOnRydWV9",
+          "LatencyMs": 486,
+          "SpeedMbps": 28.97500991821289,
+          "Country": "BR",
+          "Score": -0.020549940490722673
+        },
+        {
+          "Link": "vmess://eyJhZGQiOiIxNzIuMjMzLjE3Ljc2IiwiYWlkIjoiMSIsImZwIjoiY2hyb21lIiwiaWQiOiIwNDYyMWJhZS1hYjM2LTExZWMtYjkwOS0wMjQyYWMxMjAwMDIiLCJuZXQiOiJ0Y3AiLCJwb3J0IjoiMjIzMjQiLCJwcyI6IkJ5IEVicmFTaGEg4pmj77iPIiwic2N5IjoiYXV0byIsInRscyI6IiIsInR5cGUiOiIiLCJ2IjoiMiJ9",
+          "LatencyMs": 487,
+          "SpeedMbps": 28.93309211730957,
+          "Country": "BR",
+          "Score": -0.021201447296142567
+        }
+      ]
+    },
+    {
+      "Country": "CA",
+      "Top": [
+        {
+          "Link": "vmess://eyJhZGQiOiIyMy4xNjIuMjAwLjE5OCIsImFpZCI6IjAiLCJob3N0IjoiIiwiaWQiOiJmOGM4ZGMzZC0wZDM3LTQ2YjAtOGIzNC1hNzIzMjg4MmZjZmUiLCJuYXRpb24iOiIiLCJuZXQiOiJ0Y3AiLCJwYXRoIjoiIiwicG9ydCI6IjE4MDAwIiwicHMiOiJCeSBFYnJhU2hhIPCfp6giLCJzY3kiOiJhdXRvIiwic2VydmVyUG9ydCI6MCwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6Im5vbmUiLCJ2IjoiMiJ9",
+          "LatencyMs": 194,
+          "SpeedMbps": 74.83629608154297,
+          "Country": "CA",
+          "Score": 0.3714177764892578
+        },
+        {
+          "Link": "vmess://eyJhZGQiOiAiMjMuMTYyLjIwMC4xOTgiLCAiYWlkIjogIjAiLCAiaG9zdCI6ICIiLCAiaWQiOiAiZjhjOGRjM2QtMGQzNy00NmIwLThiMzQtYTcyMzI4ODJmY2ZlIiwgIm5hdGlvbiI6ICIiLCAibmV0IjogInRjcCIsICJwYXRoIjogIiIsICJwb3J0IjogIjE4MDAwIiwgInBzIjogIlx1ZDgzZFx1ZGU4MCBATGV0c0dldFZQTiBAQ3liZXJTZWNQbGF5Z3JvdW5kIHwgXHVkODNjXHVkZjBkIFx1ZDgzY1x1ZGRlOFx1ZDgzY1x1ZGRlNiBDQSIsICJzY3kiOiAiYXV0byIsICJzZXJ2ZXJQb3J0IjogMCwgInNuaSI6ICIiLCAidGxzIjogIiIsICJ0eXBlIjogIm5vbmUiLCAidiI6ICIyIn0=",
+          "LatencyMs": 196,
+          "SpeedMbps": 35.794185638427734,
+          "Country": "CA",
+          "Score": 0.13636511383056638
+        },
+        {
+          "Link": "vmess://eyJhZGQiOiIyMy4xNjIuMjAwLjE5OCIsImFpZCI6IjAiLCJob3N0IjoiIiwiaWQiOiJmOGM4ZGMzZC0wZDM3LTQ2YjAtOGIzNC1hNzIzMjg4MmZjZmUiLCJuZXQiOiJ0Y3AiLCJwYXRoIjoiLyIsInBvcnQiOiIxODAwMCIsInBzIjoiQnkgRWJyYVNoYSDwn6aHIiwidGxzIjoiIiwidHlwZSI6Im5vbmUiLCJ2IjoiMiJ9",
+          "LatencyMs": 196,
+          "SpeedMbps": 34.26123809814453,
+          "Country": "CA",
+          "Score": 0.12716742858886715
+        }
+      ]
+    },
+    {
+      "Country": "DE",
+      "Top": [
+        {
+          "Link": "vmess://eyJhZGQiOiI0NS4xNDQuNTQuMTgzIiwiYWlkIjoiMCIsImhvc3QiOiIiLCJpZCI6ImQ1YjM2NDMyLWUxNjgtNGJjOS04NWNiLWY2OGM5YzIyMDU0YSIsIm5ldCI6InRjcCIsInBhdGgiOiIvIiwicG9ydCI6IjEwMDk3IiwicHMiOiJCeSBFYnJhU2hhIPCfp6wiLCJ0bHMiOiIiLCJ0eXBlIjoibm9uZSIsInYiOiIyIn0=",
+          "LatencyMs": 433,
+          "SpeedMbps": 0.000017241380191990174,
+          "Country": "DE",
+          "Score": -0.17319989655171886
+        },
+        {
+          "Link": "vmess://eyJhZGQiOiI0NS4xNDQuNTQuMTgzIiwiYWlkIjoiMCIsImFscG4iOm51bGwsImZwIjpudWxsLCJob3N0IjpudWxsLCJpZCI6ImQ1YjM2NDMyLWUxNjgtNGJjOS04NWNiLWY2OGM5YzIyMDU0YSIsIm5hbWUiOiLwn4ep8J+HqiBERSA1IiwibmV0IjoidGNwIiwicGF0aCI6Ii8iLCJwb3J0IjoxMDA5NywicHMiOiJCeSBFYnJhU2hhIPCflbfvuI8iLCJzY3kiOiJhdXRvIiwic25pIjpudWxsLCJ0bHMiOiIiLCJ0eXBlIjpudWxsLCJ2IjpudWxsfQ==",
+          "LatencyMs": 433,
+          "SpeedMbps": 0.000017278618543059565,
+          "Country": "DE",
+          "Score": -0.17319989632828875
+        },
+        {
+          "Link": "vmess://eyJhZGQiOiI0NS4xNDQuNTQuMTgzIiwiYWlkIjoiMCIsImlkIjoiZDViMzY0MzItZTE2OC00YmM5LTg1Y2ItZjY4YzljMjIwNTRhIiwibmV0IjoidGNwIiwicG9ydCI6IjEwMDk3IiwicHMiOiJCeSBFYnJhU2hhIPCflbfvuI8iLCJzY3kiOiJhdXRvIiwic2tpcC1jZXJ0LXZlcmlmeSI6dHJ1ZSwidGxzIjoiIiwidHlwZSI6Im5vbmUiLCJ2IjoiMiJ9",
+          "LatencyMs": 434,
+          "SpeedMbps": 0.000018604650904308073,
+          "Country": "DE",
+          "Score": -0.17359988837209459
+        }
+      ]
+    },
+    {
+      "Country": "ES",
+      "Top": [
+        {
+          "Link": "vmess://eyJhZGQiOiAiODUuOTAuMjE3LjQyIiwgImFpZCI6ICIwIiwgImhvc3QiOiAiIiwgImlkIjogIjA0NjIxYmFlLWFiMzYtMTFlYy1iOTA5LTAyNDJhYzEyMDAwMiIsICJuZXQiOiAicmF3IiwgInBhdGgiOiAiLyIsICJwb3J0IjogIjIyMzI0IiwgInBzIjogIjRTYXJpbmEtMTQ0MjQiLCAidGxzIjogIiIsICJ0eXBlIjogIm5vbmUiLCAidiI6ICIyIn0=",
+          "LatencyMs": 369,
+          "SpeedMbps": 0.000020833333110203966,
+          "Country": "ES",
+          "Score": -0.14759987500000135
+        },
+        {
+          "Link": "vmess://eyJhZGQiOiAiODUuOTAuMjE3LjQyIiwgImFpZCI6ICIwIiwgImFscG4iOiBudWxsLCAiZnAiOiBudWxsLCAiaG9zdCI6ICIiLCAiaWQiOiAiMDQ2MjFiYWUtYWIzNi0xMWVjLWI5MDktMDI0MmFjMTIwMDAyIiwgIm5ldCI6ICJ0Y3AiLCAicGF0aCI6ICIvIiwgInBvcnQiOiAyMjMyNCwgInNjeSI6IG51bGwsICJza2lwLWNlcnQtdmVyaWZ5IjogdHJ1ZSwgInNuaSI6IG51bGwsICJ0bHMiOiAiIiwgInR5cGUiOiBudWxsLCAidiI6IG51bGwsICJwcyI6ICJcdWQ4M2RcdWRkMjVKb2luK1RlbGVncmFtOkBGYXJhaF9WUE5cdWQ4M2RcdWRmZTMifQ==",
+          "LatencyMs": 370,
+          "SpeedMbps": 0.0000193236719496781,
+          "Country": "ES",
+          "Score": -0.1479998840579683
+        },
+        {
+          "Link": "vmess://eyJ2IjoiMiIsInBzIjoiQHYycmF5Y29uZmlnYW1pciAzMDQ2IiwiYWRkIjoiODUuOTAuMjE3LjQyIiwicG9ydCI6IjIyMzI0IiwidHlwZSI6Im5vbmUiLCJpZCI6IjA0NjIxYmFlLWFiMzYtMTFlYy1iOTA5LTAyNDJhYzEyMDAwMiIsImFpZCI6IjAiLCJuZXQiOiJ0Y3AiLCJwYXRoIjoiLyIsImhvc3QiOiIiLCJ0bHMiOiIifQ==",
+          "LatencyMs": 371,
+          "SpeedMbps": 0.000021680218196706846,
+          "Country": "ES",
+          "Score": -0.14839986991869084
+        }
+      ]
+    },
+    {
+      "Country": "GB",
+      "Top": [
+        {
+          "Link": "vmess://eyJhZGQiOiI2Ni4xNjMuMTE3LjU4IiwiYWlkIjoiMCIsImhvc3QiOiIiLCJpZCI6IjA0NjIxYmFlLWFiMzYtMTFlYy1iOTA5LTAyNDJhYzEyMDAwMiIsIm5ldCI6InRjcCIsInBhdGgiOiIvIiwicG9ydCI6IjIyMzI0IiwicHMiOiJCeSBFYnJhU2hhIPCfpoIiLCJza2lwLWNlcnQtdmVyaWZ5Ijp0cnVlLCJ0bHMiOiIiLCJ0eXBlIjoibm9uZSIsInYiOiIyIn0=",
+          "LatencyMs": 395,
+          "SpeedMbps": 0.000020202020095894113,
+          "Country": "GB",
+          "Score": -0.15799987878787947
+        },
+        {
+          "Link": "vmess://eyJhZGQiOiI2Ni4xNjMuMTE3LjU4IiwiYWlkIjoiMCIsImhvc3QiOiIiLCJpZCI6IjA0NjIxYmFlLWFiMzYtMTFlYy1iOTA5LTAyNDJhYzEyMDAwMiIsIm5hbWUiOiJcdTAwM2VcdTAwM2VAdjJub2Rlczo6R0I6OkdCOjpHQjo6R0I6OkdCOjpHQjo6R0I6OkdCOjpHQjo6R0I6OkdCOjpHQjo6R0I6OkdCOjpHQjo6R0I6OkdCOjpHQjo6R0I6OkdCOjpHQjo6R0I6OkdCOjpHQjo6R0I6OkdCOjpHQjo6R0I6OkdCOjpHQjo6R0I6OkdCOjpHQjo6R0I6OkdCOjpHQjo6R0I6OkdCOjpHQjo6R0I6OkdCOjpHQjo6R0I6OkdCOjpHQjo6R0I6OkdCOjpHQjo6R0I6OkdCOjpHQjo6R0I6OkdCOjpHQjo6R0IiLCJuZXQiOiJ0Y3AiLCJwYXRoIjoiLyIsInBvcnQiOjIyMzI0LCJwcyI6IkJ5IEVicmFTaGEg8J+TgCIsInNraXAtY2VydC12ZXJpZnkiOnRydWUsInRscyI6IiIsInR5cGUiOiJub25lIiwidiI6IjIifQ==",
+          "LatencyMs": 397,
+          "SpeedMbps": 0.00001980197885131929,
+          "Country": "GB",
+          "Score": -0.1587998811881269
+        },
+        {
+          "Link": "vmess://eyJ2IjpudWxsLCJwcyI6IvCfh6zwn4enIEdCIDIiLCJhZGQiOiI2Ni4xNjMuMTE3LjU4IiwicG9ydCI6MjIzMjQsImlkIjoiMDQ2MjFiYWUtYWIzNi0xMWVjLWI5MDktMDI0MmFjMTIwMDAyIiwiYWlkIjoiMCIsInNjeSI6bnVsbCwibmV0IjoidGNwIiwidHlwZSI6bnVsbCwiaG9zdCI6IiIsImFscG4iOm51bGwsInBhdGgiOiIvIiwidGxzIjoiIiwic25pIjpudWxsLCJmcCI6bnVsbH0=",
+          "LatencyMs": 398,
+          "SpeedMbps": 0.000019999999494757503,
+          "Country": "GB",
+          "Score": -0.15919988000000304
+        }
+      ]
+    },
+    {
+      "Country": "HU",
+      "Top": [
+        {
+          "Link": "vmess://eyJ2IjoiMiIsInBzIjoi5pyq55+lMzYiLCJhZGQiOiJwcS1odW5nYXJ5MS4wOXZwbi5jb20iLCJwb3J0IjoiODAiLCJpZCI6IjcwM2Y3MjJhLTRiZGYtNGU5ZC05YWZkLWE2ODFmZGY4N2M3NCIsImFpZCI6IjAiLCJzY3kiOiJhdXRvIiwibmV0Ijoid3MiLCJ0eXBlIjoiIiwiaG9zdCI6IiIsInBhdGgiOiIvdm1lc3MvIiwidGxzIjoiIiwic25pIjoiIiwidGVzdF9uYW1lIjoiMzYifQ==",
+          "LatencyMs": 643,
+          "SpeedMbps": 0.000012084591617167462,
+          "Country": "HU",
+          "Score": -0.25719992749245035
+        },
+        {
+          "Link": "vmess://eyJhZGQiOiAicHEtaHVuZ2FyeTEuMDl2cG4uY29tIiwgImFpZCI6ICIwIiwgImFscG4iOiAiIiwgImZwIjogIiIsICJob3N0IjogIiIsICJpZCI6ICI3MDNmNzIyYS00YmRmLTRlOWQtOWFmZC1hNjgxZmRmODdjNzQiLCAibmV0IjogIndzIiwgInBhdGgiOiAiL3ZtZXNzLyIsICJwb3J0IjogIjgwIiwgInBzIjogIlx1ZDgzZFx1ZGQyNUpvaW4rVGVsZWdyYW06QEZhcmFoX1ZQTlx1ZDgzZFx1ZGZlMyIsICJzY3kiOiAiYXV0byIsICJzbmkiOiAiIiwgInRscyI6ICIiLCAidHlwZSI6ICIiLCAidiI6ICIyIiwgInNraXAtY2VydC12ZXJpZnkiOiB0cnVlfQ==",
+          "LatencyMs": 648,
+          "SpeedMbps": 0.000012121212421334349,
+          "Country": "HU",
+          "Score": -0.2591999272727255
+        },
+        {
+          "Link": "vmess://eyJhZGQiOiJwcS1odW5nYXJ5MS4wOXZwbi5jb20iLCJhaWQiOiIwIiwiYWxwbiI6IiIsImZwIjoiIiwiaG9zdCI6IiIsImlkIjoiNzAzZjcyMmEtNGJkZi00ZTlkLTlhZmQtYTY4MWZkZjg3Yzc0IiwibmV0Ijoid3MiLCJwYXRoIjoiXC92bWVzc1wvIiwicG9ydCI6IjgwIiwicHMiOiJcdWQ4M2NcdWRkZWRcdWQ4M2NcdWRkZmFbb3BlbnByb3h5bGlzdC5jb21dIHZtZXNzLUhVIiwic2N5IjoiYXV0byIsInNraXAtY2VydC12ZXJpZnkiOnRydWUsInNuaSI6IiIsInRscyI6IiIsInR5cGUiOiIiLCJ2IjoiMiJ9",
+          "LatencyMs": 653,
+          "SpeedMbps": 0.000012139605132688303,
+          "Country": "HU",
+          "Score": -0.2611999271623692
+        }
+      ]
+    },
+    {
+      "Country": "IN",
+      "Top": [
+        {
+          "Link": "vmess://eyJhZGQiOiIxNzIuMjMyLjEwMy4xODYiLCJhaWQiOiIwIiwiZnAiOiJjaHJvbWUiLCJob3N0IjoiIiwiaWQiOiIwNDYyMWJhZS1hYjM2LTExZWMtYjkwOS0wMjQyYWMxMjAwMDIiLCJuZXQiOiJ0Y3AiLCJwYXRoIjoiIiwicG9ydCI6IjIyMzI0IiwicHMiOiJCeSBFYnJhU2hhIPCfm7giLCJzY3kiOiJhdXRvIiwidGxzIjoiIiwidHlwZSI6Im5vbmUiLCJ2IjoiMiJ9",
+          "LatencyMs": 631,
+          "SpeedMbps": 0.000012422360669006594,
+          "Country": "IN",
+          "Score": -0.252399925465836
+        },
+        {
+          "Link": "vmess://eyJhZGQiOiIxNzIuMjMyLjEwMy4xODYiLCJpZCI6IjA0NjIxYmFlLWFiMzYtMTFlYy1iOTA5LTAyNDJhYzEyMDAwMiIsIm5ldCI6InJhdyIsInBvcnQiOiIyMjMyNCIsInBzIjoiQnkgRWJyYVNoYSDwn5CJIiwic2N5IjoiYXV0byIsInRscyI6Im5vbmUiLCJ0eXBlIjoibm9uZSIsInYiOiIyIn0=",
+          "LatencyMs": 632,
+          "SpeedMbps": 0.000012519562005763873,
+          "Country": "IN",
+          "Score": -0.252799924882628
+        },
+        {
+          "Link": "vmess://eyJhZGQiOiAiMTcyLjIzMi4xMDMuMTg2IiwgImFpZCI6ICIwIiwgImFscG4iOiBudWxsLCAiZnAiOiAiY2hyb21lIiwgImhvc3QiOiAiIiwgImlkIjogIjA0NjIxYmFlLWFiMzYtMTFlYy1iOTA5LTAyNDJhYzEyMDAwMiIsICJuYW1lIjogIlx1ZDgzY1x1ZGRlZVx1ZDgzY1x1ZGRmMyBJTiAxIiwgIm5ldCI6ICJ0Y3AiLCAicGF0aCI6ICIvIiwgInBvcnQiOiAyMjMyNCwgInBzIjogIlx1ZDgzZFx1ZGU4MCBATGV0c0dldFZQTiBAQ3liZXJTZWNQbGF5Z3JvdW5kIHwgXHVkODNjXHVkZjBkIFx1ZDgzY1x1ZGRlZVx1ZDgzY1x1ZGRmMyBJTiIsICJzY3kiOiAiYXV0byIsICJzbmkiOiBudWxsLCAidGxzIjogIiIsICJ0eXBlIjogbnVsbCwgInYiOiBudWxsfQ==",
+          "LatencyMs": 632,
+          "SpeedMbps": 0.000012598425200849306,
+          "Country": "IN",
+          "Score": -0.2527999244094488
+        }
+      ]
+    },
+    {
+      "Country": "IT",
+      "Top": [
+        {
+          "Link": "vmess://eyJhZGQiOiI0NS45Mi43MC4yMzYiLCJhaWQiOiIwIiwiaG9zdCI6IiIsImlkIjoiMDQ2MjFiYWUtYWIzNi0xMWVjLWI5MDktMDI0MmFjMTIwMDAyIiwibmV0IjoicmF3IiwicGF0aCI6Ii8iLCJwb3J0IjoiMjIzMjQiLCJwcyI6IkJ5IEVicmFTaGEg8J+mhyIsInRscyI6IiIsInR5cGUiOiJub25lIiwidiI6IjIifQ==",
+          "LatencyMs": 420,
+          "SpeedMbps": 0.000017429192666895688,
+          "Country": "IT",
+          "Score": -0.167999895424844
+        },
+        {
+          "Link": "vmess://eyJhZGQiOiI0NS45Mi43MC4yMzYiLCJhaWQiOiIwIiwiaWQiOiIwNDYyMWJhZS1hYjM2LTExZWMtYjkwOS0wMjQyYWMxMjAwMDIiLCJuZXQiOiJ0Y3AiLCJwb3J0IjoiMjIzMjQiLCJwcyI6IkJ5IEVicmFTaGEg8J+TnyIsInNjeSI6ImF1dG8iLCJza2lwLWNlcnQtdmVyaWZ5Ijp0cnVlLCJ0bHMiOiIiLCJ0eXBlIjoibm9uZSIsInYiOiIyIn0=",
+          "LatencyMs": 422,
+          "SpeedMbps": 0.000019002374756382778,
+          "Country": "IT",
+          "Score": -0.16879988598575146
+        },
+        {
+          "Link": "vmess://eyJhZGQiOiI0NS45Mi43MC4yMzYiLCJhaWQiOiIwIiwiaG9zdCI6IiIsImlkIjoiMDQ2MjFiYWUtYWIzNi0xMWVjLWI5MDktMDI0MmFjMTIwMDAyIiwibmV0IjoidGNwIiwicGF0aCI6Ii8iLCJwb3J0IjoiMjIzMjQiLCJwcyI6IkJ5IEVicmFTaGEg8J+miCIsInNraXAtY2VydC12ZXJpZnkiOnRydWUsInRscyI6IiIsInR5cGUiOiJub25lIiwidiI6IjIifQ==",
+          "LatencyMs": 425,
+          "SpeedMbps": 0.00001809954846976325,
+          "Country": "IT",
+          "Score": -0.16999989140270919
+        }
+      ]
+    },
+    {
+      "Country": "JP",
+      "Top": [
+        {
+          "Link": "vmess://eyJhZGQiOiAiOC4yMDkuMjE4LjEwOSIsICJhaWQiOiAiMCIsICJhbHBuIjogbnVsbCwgImZwIjogbnVsbCwgImhvc3QiOiAiIiwgImlkIjogIjhiZDFmYmYyLWNlZjEtNGU1NC1hYTViLWJhN2JkZTU3NGRkOSIsICJuYW1lIjogIlx1ZDgzY1x1ZGRlZlx1ZDgzY1x1ZGRmNSBKUCAxIiwgIm5ldCI6ICJ0Y3AiLCAicGF0aCI6ICIvIiwgInBvcnQiOiAzODUxMCwgInBzIjogIjRTYXJpbmEtMTM5ODkiLCAic2N5IjogbnVsbCwgInNraXAtY2VydC12ZXJpZnkiOiB0cnVlLCAic25pIjogbnVsbCwgInRscyI6ICIiLCAidHlwZSI6IG51bGwsICJ2IjogbnVsbH0=",
+          "LatencyMs": 354,
+          "SpeedMbps": 41.66666793823242,
+          "Country": "JP",
+          "Score": 0.1084000076293945
+        },
+        {
+          "Link": "vmess://eyJhZGQiOiAiOC4yMDkuMjE4LjEwOSIsICJhaWQiOiAiMCIsICJhbHBuIjogbnVsbCwgImZwIjogbnVsbCwgImhvc3QiOiAiIiwgImlkIjogIjhiZDFmYmYyLWNlZjEtNGU1NC1hYTViLWJhN2JkZTU3NGRkOSIsICJuYW1lIjogIvCfj7Nbb3BlbnByb3h5bGlzdC5jb21dIHZtZXNzLSIsICJuZXQiOiAidGNwIiwgInBhdGgiOiAiLyIsICJwb3J0IjogMzg1MTAsICJwcyI6ICLwn4ev8J+HtSAxNDUgLSBKUCAtIFZNZXNzIC0gMzg1MTAiLCAic2N5IjogbnVsbCwgInNraXAtY2VydC12ZXJpZnkiOiB0cnVlLCAic25pIjogbnVsbCwgInRscyI6ICIiLCAidHlwZSI6IG51bGwsICJ2IjogbnVsbH0=",
+          "LatencyMs": 347,
+          "SpeedMbps": 39.15810012817383,
+          "Country": "JP",
+          "Score": 0.09614860076904294
+        }
+      ]
+    },
+    {
+      "Country": "KR",
+      "Top": [
+        {
+          "Link": "vmess://eyJhZGQiOiAiMTQ2LjU2LjExMi4xMTAiLCAiYWlkIjogIjAiLCAiYWxwbiI6ICIiLCAiZnAiOiAiIiwgImhvc3QiOiAiIiwgImlkIjogImU3YzMwMmYzLTkwZDYtNDJkZC05ZDdkLTk0YTM2ODNhMzcwNyIsICJuZXQiOiAidGNwIiwgInBhdGgiOiAiIiwgInBvcnQiOiAiODg4OCIsICJwcyI6ICJcdWQ4M2RcdWRlODAgQExldHNHZXRWUE4gQEN5YmVyU2VjUGxheWdyb3VuZCB8IFx1ZDgzY1x1ZGYwZCBcdWQ4M2NcdWRkZjBcdWQ4M2NcdWRkZjcgS1IiLCAic2N5IjogImF1dG8iLCAic25pIjogIiIsICJ0bHMiOiAiIiwgInR5cGUiOiAiIiwgInYiOiAiMiIsICJza2lwLWNlcnQtdmVyaWZ5IjogdHJ1ZX0=",
+          "LatencyMs": 431,
+          "SpeedMbps": 30.31451416015625,
+          "Country": "KR",
+          "Score": 0.009487084960937475
+        },
+        {
+          "Link": "vmess://eyJhZGQiOiAiMTQwLjIzOC4yLjI1MCIsICJhaWQiOiAwLCAiaWQiOiAiNDFhNzA4OWEtMDQwYi00NTM4LThiOGQtMDEwOTAyNDA1YmRlIiwgIm5ldCI6ICJ0Y3AiLCAicG9ydCI6IDQ0MywgInBzIjogIjRTYXJpbmEtMTE3NjEiLCAic2N5IjogImF1dG8iLCAic2tpcC1jZXJ0LXZlcmlmeSI6IHRydWUsICJ2IjogIjIifQ==",
+          "LatencyMs": 413,
+          "SpeedMbps": 24.110910415649414,
+          "Country": "KR",
+          "Score": -0.02053453750610354
+        },
+        {
+          "Link": "vmess://eyJ2IjoiMiIsInBzIjoiW09wZW5SYXldIPCfh7Dwn4e3IEtSLTUzNiIsImFkZCI6IjE0Ni41Ni4xMTIuMTEwIiwicG9ydCI6Ijg4ODgiLCJ0eXBlIjoibm9uZSIsImlkIjoiZTdjMzAyZjMtOTBkNi00MmRkLTlkN2QtOTRhMzY4M2EzNzA3IiwiYWlkIjoiMCIsIm5ldCI6InRjcCIsInBhdGgiOiIvIiwiaG9zdCI6IiIsInRscyI6IiJ9",
+          "LatencyMs": 538,
+          "SpeedMbps": 24.64571762084961,
+          "Country": "KR",
+          "Score": -0.0673256942749024
+        }
+      ]
+    },
+    {
+      "Country": "KZ",
+      "Top": [
+        {
+          "Link": "vmess://eyJ2IjoiMiIsInBzIjoiW09wZW5SYXldIPCfh7Dwn4e/IEtaLTY0IiwiYWRkIjoiM2gta2F6YWtoc3RhbjEuMDl2cG4uY29tIiwicG9ydCI6ODAsImlkIjoiNTY3ZjRiZTUtMTJhYi00MmUxLWI4ZDktZGI2ZmQxZmRkMzFjIiwibmV0Ijoid3MiLCJ0eXBlIjoibm9uZSIsImhvc3QiOiJ3cm1lbG13eGxmLmdrdGV2bHJxem53cXFvenkuZmFicGZzNjZnaXptbm9qaGN2cXh3bC5reXRyY2Z6cWxhODdndmd2czZjN2tqbnJ1YnVoLmNjIiwicGF0aCI6Ii92bWVzcy8ifQ==",
+          "LatencyMs": 993,
+          "SpeedMbps": 0.00000746965451980941,
+          "Country": "KZ",
+          "Score": -0.3971999551820729
+        },
+        {
+          "Link": "vmess://eyJ2IjoiMiIsInBzIjoiaGFtZWRwNzE6OvCfj7TigI3imKDvuI8iLCJhZGQiOiIzOC4xMDcuMjM0LjU3IiwicG9ydCI6ODAsImlkIjoiNTY3ZjRiZTUtMTJhYi00MmUxLWI4ZDktZGI2ZmQxZmRkMzFjIiwibmV0Ijoid3MiLCJ0eXBlIjoibm9uZSIsImhvc3QiOiJ3cm1lbG13eGxmLmdrdGV2bHJxem53cXFvenkuZmFicGZzNjZnaXptbm9qaGN2cXh3bC5reXRyY2Z6cWxhODdndmd2czZjN2tqbnJ1YnVoLmNjIiwicGF0aCI6Ii92bWVzcy8ifQ",
+          "LatencyMs": 993,
+          "SpeedMbps": 0.000005420054549176712,
+          "Country": "KZ",
+          "Score": -0.3971999674796727
+        },
+        {
+          "Link": "vmess://eyJ2IjoiMiIsInBzIjoiW09wZW5SYXldIPCfh7Dwn4e/IEtaLTY3IiwiYWRkIjoiMzguMTA3LjIzNC41NyIsInBvcnQiOjgwLCJpZCI6IjU2N2Y0YmU1LTEyYWItNDJlMS1iOGQ5LWRiNmZkMWZkZDMxYyIsIm5ldCI6IndzIiwidHlwZSI6Im5vbmUiLCJob3N0Ijoid3JtZWxtd3hsZi5na3RldmxycXpud3Fxb3p5LmZhYnBmczY2Z2l6bW5vamhjdnF4d2wua3l0cmNmenFsYTg3Z3ZndnM2Yzdram5ydWJ1aC5jYyIsInBhdGgiOiIvdm1lc3MvIn0=",
+          "LatencyMs": 1042,
+          "SpeedMbps": 0.000007976072083692998,
+          "Country": "KZ",
+          "Score": -0.39999995214356754
+        }
+      ]
+    },
+    {
+      "Country": "MX",
+      "Top": [
+        {
+          "Link": "vmess://eyJ2IjoiMiIsInBzIjoiW09wZW5SYXldIPCfh7Lwn4e9IE1YLTI1IiwiYWRkIjoiMjE2LjIzOC44Ni4xNTgiLCJwb3J0IjozNDQ2MCwiaWQiOiI5MGJlMjE0ZC0wNDhjLTRlYTItYTYwMi1iOGU0ZDRlNTFlMzYiLCJuZXQiOiJ0Y3AiLCJ0eXBlIjoibm9uZSJ9",
+          "LatencyMs": 154,
+          "SpeedMbps": 104.57516479492188,
+          "Country": "MX",
+          "Score": 0.5384
+        },
+        {
+          "Link": "vmess://eyJ2IjoiMiIsInBzIjoiW09wZW5SYXldIPCfh7Lwn4e9IE1YLTI5IiwiYWRkIjoiMjE2LjIzOC44Ni4xNTgiLCJwb3J0IjoiMzQ0NjAiLCJ0eXBlIjoibm9uZSIsImlkIjoiOTBiZTIxNGQtMDQ4Yy00ZWEyLWE2MDItYjhlNGQ0ZTUxZTM2IiwiYWlkIjoiMCIsIm5ldCI6InJhdyIsInBhdGgiOiIvIiwiaG9zdCI6IiIsInRscyI6IiJ9",
+          "LatencyMs": 158,
+          "SpeedMbps": 103.49288940429688,
+          "Country": "MX",
+          "Score": 0.5367999999999999
+        },
+        {
+          "Link": "vmess://eyJ2IjogbnVsbCwgInBzIjogIvCfh7Lwn4e9IDkzIC0gTVggLSBWTWVzcyAtIDM0NDYwIiwgImFkZCI6ICIyMTYuMjM4Ljg2LjE1OCIsICJwb3J0IjogMzQ0NjAsICJpZCI6ICI5MGJlMjE0ZC0wNDhjLTRlYTItYTYwMi1iOGU0ZDRlNTFlMzYiLCAiYWlkIjogIjAiLCAic2N5IjogbnVsbCwgIm5ldCI6ICJ0Y3AiLCAidHlwZSI6IG51bGwsICJob3N0IjogIiIsICJhbHBuIjogbnVsbCwgInBhdGgiOiAiLyIsICJ0bHMiOiAiIiwgInNuaSI6IG51bGwsICJmcCI6IG51bGwsICJuYW1lIjogIvCfh7Lwn4e9IE1YIDEifQ==",
+          "LatencyMs": 139,
+          "SpeedMbps": 60.15037155151367,
+          "Country": "MX",
+          "Score": 0.305302229309082
+        }
+      ]
+    },
+    {
+      "Country": "MY",
+      "Top": [
+        {
+          "Link": "vmess://eyJ2IjoiMiIsInBzIjoiaGFtZWRwNzE6OvCfh7Lwn4e+IiwiYWRkIjoiNDcuMjUwLjE0OS41MSIsInBvcnQiOiI1MDAxOCIsImlkIjoiOTY2NTI4MGMtYTNkMS00YWFiLWVmOWYtYTNhNDk3MzM3ZDkxIiwiYWlkIjoiMCIsIm5ldCI6IndzIiwidHlwZSI6Im5vbmUiLCJ0bHMiOiIiLCJwYXRoIjoiLzk2NjUyODBjIiwiYWxsb3dJbnNlY3VyZSI6IjAiLCJhbGxvd19pbnNlY3VyZSI6IjAiLCJpbnNlY3VyZSI6IjAiLCJzZWN1cml0eSI6ImF1dG8iLCJzY3kiOiJhdXRvIiwiaG9zdCI6IiIsInNuaSI6IiIsImFscG4iOiIiLCJmcCI6IiJ9",
+          "LatencyMs": 741,
+          "SpeedMbps": 24.002399444580078,
+          "Country": "MY",
+          "Score": -0.15238560333251955
+        },
+        {
+          "Link": "vmess://eyJ2IjoiMiIsInBzIjoiW09wZW5SYXldIPCfh7Lwn4e+IE1ZLTEyMSIsImFkZCI6IjQ3LjI1MC4xNDkuNTEiLCJwb3J0Ijo1MDAxOCwiaWQiOiI5NjY1MjgwYy1hM2QxLTRhYWItZWY5Zi1hM2E0OTczMzdkOTEiLCJuZXQiOiJ3cyIsInR5cGUiOiJub25lIiwiaG9zdCI6IjQ3LjI1MC4xNDkuNTEiLCJwYXRoIjoiLzk2NjUyODBjIn0=",
+          "LatencyMs": 747,
+          "SpeedMbps": 24.198427200317383,
+          "Country": "MY",
+          "Score": -0.15360943679809572
+        },
+        {
+          "Link": "vmess://eyJhZGQiOiAiNDcuMjUwLjE0OS41MSIsICJhaWQiOiAiMCIsICJhbHBuIjogbnVsbCwgImZwIjogbnVsbCwgImhvc3QiOiBudWxsLCAiaWQiOiAiOTY2NTI4MGMtYTNkMS00YWFiLWVmOWYtYTNhNDk3MzM3ZDkxIiwgIm5ldCI6ICJ3cyIsICJwYXRoIjogIi85NjY1MjgwYyIsICJwb3J0IjogNTAwMTgsICJwcyI6ICJcdWQ4M2RcdWRlODAgQExldHNHZXRWUE4gQEN5YmVyU2VjUGxheWdyb3VuZCB8IFx1ZDgzY1x1ZGYwZCBcdWQ4M2NcdWRmMGQgTVkiLCAic2N5IjogbnVsbCwgInNuaSI6IG51bGwsICJ0bHMiOiBudWxsLCAidHlwZSI6IG51bGwsICJ2IjogbnVsbH0=",
+          "LatencyMs": 735,
+          "SpeedMbps": 21.70963478088379,
+          "Country": "MY",
+          "Score": -0.16374219131469725
+        }
+      ]
+    },
+    {
+      "Country": "PH",
+      "Top": [
+        {
+          "Link": "vmess://eyJhZGQiOiI2MS4yNDUuMTEuNjAiLCJob3N0IjoiNjEuMjQ1LjExLjYwIiwiaWQiOiJhM2UzYTcxMC03OWY4LTRhZTAtYjgzYy02MDdhYWI0MGQxOTciLCJuZXQiOiJ3cyIsInBhdGgiOiIvdm1lc3MvIiwicG9ydCI6ODAsInBzIjoiQnkgRWJyYVNoYSDwn6qQIiwidHlwZSI6Im5vbmUiLCJ2IjoiMiJ9",
+          "LatencyMs": 742,
+          "SpeedMbps": 2.214526653289795,
+          "Country": "PH",
+          "Score": -0.28351284008026123
+        }
+      ]
+    },
+    {
+      "Country": "SG",
+      "Top": [
+        {
+          "Link": "vmess://eyJhZGQiOiI0Ny4yMzcuMTA5LjY3IiwiYWlkIjoiMCIsImhvc3QiOiIiLCJpZCI6IjBiZTNhMzM2LTg1YWQtNGM0Mi05MzBiLTA1MzE4MjM2ZTY4YyIsIm5hdGlvbiI6IiIsIm5ldCI6InRjcCIsInBhdGgiOiIiLCJwb3J0IjoiMjkxMjQiLCJwcyI6IuacquefpSBWTUVTUy0xMTEwIHwgZnJlZS1ub2RlcyIsInNjeSI6ImF1dG8iLCJzZXJ2ZXJQb3J0IjowLCJza2lwLWNlcnQtdmVyaWZ5Ijp0cnVlLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoibm9uZSIsInYiOiIyIn0=",
+          "LatencyMs": 553,
+          "SpeedMbps": 24.891101837158203,
+          "Country": "SG",
+          "Score": -0.07185338897705082
+        },
+        {
+          "Link": "vmess://eyJhZGQiOiIxNDkuODguMjMuMjA3IiwiaWQiOiJmOGM4ZGMzZC0wZDM3LTQ2YjAtOGIzNC1hNzIzMjg4MmZjZmUiLCJwb3J0IjoiMTgwMDAiLCJzY3kiOiJhdXRvIiwidiI6IjIiLCJuZXQiOiJyYXciLCJ0eXBlIjoibm9uZSIsInRscyI6Im5vbmUiLCJwcyI6IltPcGVuUmF5XSDwn4e48J+HrCBTRy03MjYifQ==",
+          "LatencyMs": 540,
+          "SpeedMbps": 0.000014545454178005457,
+          "Country": "SG",
+          "Score": -0.21599991272727495
+        }
+      ]
+    },
+    {
+      "Country": "TR",
+      "Top": [
+        {
+          "Link": "vmess://eyJhZGQiOiI1LjE4OC4xOTAuMjUyIiwiaWQiOiIwNDYyMWJhZS1hYjM2LTExZWMtYjkwOS0wMjQyYWMxMjAwMDIiLCJwb3J0IjoiMjIzMjQiLCJzY3kiOiJhdXRvIiwidiI6IjIiLCJuZXQiOiJyYXciLCJ0eXBlIjoibm9uZSIsInRscyI6Im5vbmUiLCJwcyI6IltPcGVuUmF5XSDwn4e58J+HtyBUUi01MDUifQ==",
+          "LatencyMs": 510,
+          "SpeedMbps": 0.000015414258086821064,
+          "Country": "TR",
+          "Score": -0.2039999075144515
+        },
+        {
+          "Link": "vmess://eyJhZGQiOiI1LjE4OC4xOTAuMjUyIiwiYWlkIjoiMCIsImFscG4iOm51bGwsImZwIjoiY2hyb21lIiwiaG9zdCI6IiIsImlkIjoiMDQ2MjFiYWUtYWIzNi0xMWVjLWI5MDktMDI0MmFjMTIwMDAyIiwibmFtZSI6Ilx1ZDgzY1x1ZGRmOVx1ZDgzY1x1ZGRmNyBUUiAxIiwibmV0IjoidGNwIiwicGF0aCI6IlwvIiwicG9ydCI6MjIzMjQsInBzIjoiXHVkODNjXHVkZGY5XHVkODNjXHVkZGY3W29wZW5wcm94eWxpc3QuY29tXSB2bWVzcy1UUiIsInNjeSI6ImF1dG8iLCJzbmkiOm51bGwsInRscyI6IiIsInR5cGUiOm51bGwsInYiOm51bGwsInNraXAtY2VydC12ZXJpZnkiOnRydWV9",
+          "LatencyMs": 518,
+          "SpeedMbps": 0.000015655577954021282,
+          "Country": "TR",
+          "Score": -0.2071999060665323
+        },
+        {
+          "Link": "vmess://eyJhZGQiOiAiNS4xODguMTkwLjI1MiIsICJhaWQiOiAiMCIsICJhbHBuIjogbnVsbCwgImZwIjogImNocm9tZSIsICJob3N0IjogIiIsICJpZCI6ICIwNDYyMWJhZS1hYjM2LTExZWMtYjkwOS0wMjQyYWMxMjAwMDIiLCAibmFtZSI6ICLwn4e58J+Ht1tvcGVucHJveHlsaXN0LmNvbV0gdm1lc3MtVFIiLCAibmV0IjogInRjcCIsICJwYXRoIjogIi8iLCAicG9ydCI6IDIyMzI0LCAicHMiOiAi8J+HufCfh7cgMTM2IC0gVFIgLSBWTWVzcy9VVExTIC0gMjIzMjQiLCAic2N5IjogImF1dG8iLCAic2tpcC1jZXJ0LXZlcmlmeSI6IHRydWUsICJzbmkiOiBudWxsLCAidGxzIjogIiIsICJ0eXBlIjogbnVsbCwgInYiOiBudWxsfQ==",
+          "LatencyMs": 518,
+          "SpeedMbps": 0.000015180265108938329,
+          "Country": "TR",
+          "Score": -0.20719990891840936
+        }
+      ]
+    },
+    {
+      "Country": "TW",
+      "Top": [
+        {
+          "Link": "vmess://eyJ2IjpudWxsLCJwcyI6IvCfh7nwn4e8IFRXIDEiLCJhZGQiOiIxNjUuMTU0LjE5NS4zOCIsInBvcnQiOjM1MDM0LCJpZCI6Ijk1OWE4Y2FmLTRjZWEtNDNkMC1hNTQ4LTM2MjhlN2RkZmFmYyIsImFpZCI6IjAiLCJzY3kiOiJhdXRvIiwibmV0IjoidGNwIiwidHlwZSI6bnVsbCwiaG9zdCI6bnVsbCwiYWxwbiI6bnVsbCwicGF0aCI6Ii8iLCJ0bHMiOiIiLCJzbmkiOm51bGwsImZwIjpudWxsfQ==",
+          "LatencyMs": 468,
+          "SpeedMbps": 0.00001694915226835292,
+          "Country": "TW",
+          "Score": -0.18719989830508643
+        },
+        {
+          "Link": "vmess://eyJ2IjoiMiIsInBzIjoiW09wZW5SYXldIPCfh7nwn4e8IFRXLTkxIiwiYWRkIjoiMTY1LjE1NC4xOTUuMzgiLCJwb3J0IjoiMzUwMzQiLCJ0eXBlIjoibm9uZSIsImlkIjoiOTU5YThjYWYtNGNlYS00M2QwLWE1NDgtMzYyOGU3ZGRmYWZjIiwiYWlkIjoiMCIsIm5ldCI6InJhdyIsInBhdGgiOiIvIiwiaG9zdCI6IiIsInRscyI6IiJ9",
+          "LatencyMs": 470,
+          "SpeedMbps": 0.00001646090458962135,
+          "Country": "TW",
+          "Score": -0.18799990123457247
+        },
+        {
+          "Link": "vmess://eyJhZGQiOiIxNjUuMTU0LjE5NS4zOCIsImFpZCI6IjAiLCJhbHBuIjpudWxsLCJmcCI6bnVsbCwiaG9zdCI6IiIsImlkIjoiOTU5YThjYWYtNGNlYS00M2QwLWE1NDgtMzYyOGU3ZGRmYWZjIiwibmFtZSI6IvCfh7nwn4e8IFRXIDE2IiwibmV0IjoidGNwIiwicGF0aCI6Ii8iLCJwb3J0IjozNTAzNCwicHMiOiJCeSBFYnJhU2hhIPCfqpAiLCJzY3kiOm51bGwsInNuaSI6bnVsbCwidGxzIjoiIiwidHlwZSI6bnVsbCwidiI6bnVsbH0=",
+          "LatencyMs": 470,
+          "SpeedMbps": 0.00001646090458962135,
+          "Country": "TW",
+          "Score": -0.18799990123457247
+        }
+      ]
+    },
+    {
+      "Country": "US",
+      "Top": [
+        {
+          "Link": "vmess://eyJ2IjoiMiIsInBzIjoiW09wZW5SYXldIPCfh7rwn4e4IFVTLTE0NzY4IiwiYWRkIjoiNjcuMjIwLjcyLjIzNyIsInBvcnQiOiIyMjMyNCIsImlkIjoiMDQ2MjFiYWUtYWIzNi0xMWVjLWI5MDktMDI0MmFjMTIwMDAyIiwiYWlkIjoiMCIsInNjeSI6ImF1dG8iLCJuZXQiOiJ0Y3AiLCJ0eXBlIjoibm9uZSIsImhvc3QiOiIiLCJwYXRoIjoiIiwidGxzIjoiIiwiZnAiOiJjaHJvbWUifQ==",
+          "LatencyMs": 50,
+          "SpeedMbps": 162.2718048095703,
+          "Country": "US",
+          "Score": 0.58
+        },
+        {
+          "Link": "vmess://eyJ2IjoiMiIsInBzIjoiW09wZW5SYXldIPCfh7rwn4e4IFVTLTE0NzY5IiwiYWRkIjoiNjcuMjIwLjcyLjIzNyIsInBvcnQiOiIyMjMyNCIsInR5cGUiOiJub25lIiwiaWQiOiIwNDYyMWJhZS1hYjM2LTExZWMtYjkwOS0wMjQyYWMxMjAwMDIiLCJhaWQiOiIxIiwibmV0IjoidGNwIiwicGF0aCI6Ii8iLCJob3N0IjoiIiwidGxzIjoiIn0=",
+          "LatencyMs": 58,
+          "SpeedMbps": 164.9484405517578,
+          "Country": "US",
+          "Score": 0.5768
+        }
+      ]
+    }
+  ],
+  "rotating": 0,
+  "generated_at": "2026-05-25T23:00:58.049561889Z"
+}

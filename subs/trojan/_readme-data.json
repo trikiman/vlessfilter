@@ -1,0 +1,317 @@
+{
+  "protocol": "trojan",
+  "selections": [
+    {
+      "Country": "DE",
+      "Top": [
+        {
+          "Link": "trojan://03mpolj39zyewzufal2r@51.75.86.196:55646?security=tls\u0026insecure=1\u0026allowInsecure=1\u0026type=tcp\u0026headerType=none#v2go%20%7C%20%F0%9F%87%AB%F0%9F%87%B7%20FR%20%7C%20TROJAN%20%7C%204698",
+          "LatencyMs": 466,
+          "SpeedMbps": 40.28197479248047,
+          "Country": "DE",
+          "Score": 0.0552918487548828
+        },
+        {
+          "Link": "trojan://03mpolj39zyewzufal2r@51.75.86.196:55646?security=tls\u0026insecure=1\u0026allowInsecure=1\u0026type=tcp\u0026headerType=none# By EbraSha",
+          "LatencyMs": 471,
+          "SpeedMbps": 38.75969314575195,
+          "Country": "DE",
+          "Score": 0.044158158874511716
+        }
+      ]
+    },
+    {
+      "Country": "FI",
+      "Top": [
+        {
+          "Link": "trojan://strong-secret-pass-777@45.12.146.179:4443?allowInsecure=1\u0026fp=chrome#@Vip_Security join us - 298",
+          "LatencyMs": 532,
+          "SpeedMbps": 38.27751159667969,
+          "Country": "FI",
+          "Score": 0.01686506958007808
+        },
+        {
+          "Link": "trojan://strong-secret-pass-777@45.12.146.179:4443?allowInsecure=1#v2go%20%7C%20%F0%9F%87%A8%F0%9F%87%BE%20CY%20%7C%20TROJAN%20%7C%2010246",
+          "LatencyMs": 500,
+          "SpeedMbps": 35.11852264404297,
+          "Country": "FI",
+          "Score": 0.010711135864257815
+        },
+        {
+          "Link": "trojan://strong-secret-pass-777@45.12.146.179:4443?allowInsecure=1# By EbraSha",
+          "LatencyMs": 505,
+          "SpeedMbps": 34.64703369140625,
+          "Country": "FI",
+          "Score": 0.00588220214843746
+        }
+      ]
+    },
+    {
+      "Country": "FR",
+      "Top": [
+        {
+          "Link": "trojan://humanity@188.114.98.0:443?type=ws\u0026security=tls\u0026path=%252Fassignment\u0026host=www.calmlunch.com\u0026sni=www.calmlunch.com\u0026allowInsecure=1# By EbraSha",
+          "LatencyMs": 408,
+          "SpeedMbps": 0.000010230179213976953,
+          "Country": "FR",
+          "Score": -0.16319993861892473
+        },
+        {
+          "Link": "trojan://humanity@104.18.32.47:443?path=%2Fassignment\u0026security=tls\u0026insecure=0\u0026type=ws\u0026allowInsecure=0\u0026sni=www.calmlunch.com#4Sarina-4792",
+          "LatencyMs": 410,
+          "SpeedMbps": 0.000012539184353954624,
+          "Country": "FR",
+          "Score": -0.1639999247648939
+        }
+      ]
+    },
+    {
+      "Country": "HK",
+      "Top": [
+        {
+          "Link": "trojan://GKHWMe2R4qwNcNxu6l3KMkdd@121.180.171.43:11310?security=tls\u0026sni=vpn1.rnmcnm.com\u0026type=ws\u0026host=vpn1.rnmcnm.com\u0026path=%2Ftrj-ws#v2go%20%7C%20%F0%9F%87%B0%F0%9F%87%B7%20KR%20%7C%20TROJAN%20%7C%208345",
+          "LatencyMs": 3386,
+          "SpeedMbps": 0.42910242080688477,
+          "Country": "HK",
+          "Score": -0.3974253854751587
+        },
+        {
+          "Link": "trojan://GKHWMe2R4qwNcNxu6l3KMkdd@121.180.171.43:11310?security=tls\u0026sni=vpn1.rnmcnm.com\u0026type=ws\u0026host=vpn1.rnmcnm.com\u0026path=%2Ftrj-ws# By EbraSha",
+          "LatencyMs": 1456,
+          "SpeedMbps": 0.28795358538627625,
+          "Country": "HK",
+          "Score": -0.3982722784876824
+        }
+      ]
+    },
+    {
+      "Country": "JP",
+      "Top": [
+        {
+          "Link": "trojan://BxceQaOe@116.80.80.121:443?allowInsecure=1\u0026sni=t.me%2Fripaojiedian#v2ray_dalghak",
+          "LatencyMs": 578,
+          "SpeedMbps": 33.12629318237305,
+          "Country": "JP",
+          "Score": -0.03244224090576173
+        },
+        {
+          "Link": "trojan://BxceQaOe@116.80.80.121:443?allowInsecure=1\u0026sni=t.me%2Fripaojiedian# By EbraSha",
+          "LatencyMs": 590,
+          "SpeedMbps": 33.264034271240234,
+          "Country": "JP",
+          "Score": -0.036415794372558596
+        },
+        {
+          "Link": "trojan://BxceQaOe@116.80.80.121:443?allowInsecure=1\u0026sni=t.me%2Fripaojiedian#v2go%20%7C%20%F0%9F%87%AF%F0%9F%87%B5%20JP%20%7C%20TROJAN%20%7C%20500",
+          "LatencyMs": 582,
+          "SpeedMbps": 32.467533111572266,
+          "Country": "JP",
+          "Score": -0.0379948013305664
+        }
+      ]
+    },
+    {
+      "Country": "LV",
+      "Top": [
+        {
+          "Link": "trojan://0FMrl2zi9o@138.124.182.202:56338?security=reality\u0026sni=www.intel.com\u0026fp=chrome\u0026pbk=Hbg-UI9nXbK55b92yQ_keS2wQY4HGBL075aklMOItlk\u0026sid=77\u0026spx=/\u0026type=tcp\u0026path=/#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20285686",
+          "LatencyMs": 532,
+          "SpeedMbps": 8.925482749938965,
+          "Country": "LV",
+          "Score": -0.15924710350036622
+        },
+        {
+          "Link": "trojan://0FMrl2zi9o@138.124.182.202:56338?security=reality\u0026sni=www.intel.com\u0026fp=chrome\u0026pbk=Hbg-UI9nXbK55b92yQ_keS2wQY4HGBL075aklMOItlk\u0026sid=77\u0026spx=%2f\u0026type=tcp\u0026path=%2f#%f0%9f%87%b1%f0%9f%87%bb%20LV%202",
+          "LatencyMs": 533,
+          "SpeedMbps": 7.381080150604248,
+          "Country": "LV",
+          "Score": -0.16891351909637453
+        },
+        {
+          "Link": "trojan://0FMrl2zi9o@138.124.182.202:56338?security=reality\u0026sni=www.intel.com\u0026fp=chrome\u0026pbk=Hbg-UI9nXbK55b92yQ_keS2wQY4HGBL075aklMOItlk\u0026sid=77\u0026spx=/\u0026type=tcp\u0026path=/# By EbraSha",
+          "LatencyMs": 524,
+          "SpeedMbps": 6.5121169090271,
+          "Country": "LV",
+          "Score": -0.17052729854583742
+        }
+      ]
+    },
+    {
+      "Country": "NL",
+      "Top": [
+        {
+          "Link": "trojan://MeaDiUmPlkWbZJ2BON8tz@78.159.131.12:28259?allowInsecure=1\u0026sni=%F0%9F%94%92# By EbraSha",
+          "LatencyMs": 442,
+          "SpeedMbps": 42.53056716918945,
+          "Country": "NL",
+          "Score": 0.07838340301513669
+        },
+        {
+          "Link": "trojan://MeaDiUmPlkWbZJ2BON8tz@78.159.131.12:28259?allowInsecure=1\u0026sni=#20@oneclickvpnkeys",
+          "LatencyMs": 442,
+          "SpeedMbps": 41.86289978027344,
+          "Country": "NL",
+          "Score": 0.07437739868164062
+        },
+        {
+          "Link": "trojan://MeaDiUmPlkWbZJ2BON8tz@78.159.131.12:28259?allowInsecure=1\u0026sni=# By EbraSha",
+          "LatencyMs": 441,
+          "SpeedMbps": 41.34367370605469,
+          "Country": "NL",
+          "Score": 0.07166204223632813
+        }
+      ]
+    },
+    {
+      "Country": "PL",
+      "Top": [
+        {
+          "Link": "trojan://humanity@188.114.96.3:443?path=%2Fassignment\u0026security=tls\u0026insecure=0\u0026host=www.creationlong.org\u0026type=ws\u0026allowInsecure=0\u0026sni=www.creationlong.org#hamedp71%3A%3A%F0%9F%87%B5%F0%9F%87%B1",
+          "LatencyMs": 677,
+          "SpeedMbps": 0.00000217627848542179,
+          "Country": "PL",
+          "Score": -0.27079998694232915
+        },
+        {
+          "Link": "trojan://humanity@188.114.98.0:443?type=ws\u0026security=tls\u0026path=%252Fassignment\u0026host=www.creationlong.org\u0026sni=www.creationlong.org\u0026allowInsecure=1# By EbraSha",
+          "LatencyMs": 688,
+          "SpeedMbps": 0.000008154943316185381,
+          "Country": "PL",
+          "Score": -0.2751999510703401
+        },
+        {
+          "Link": "trojan://humanity@www.creationlong.org:443?security=tls\u0026sni=www.creationlong.org\u0026alpn=h2,http/1.1\u0026fp=chrome\u0026type=ws\u0026path=/assignment# By EbraSha",
+          "LatencyMs": 693,
+          "SpeedMbps": 0.000004608295057551004,
+          "Country": "PL",
+          "Score": -0.27719997235022964
+        }
+      ]
+    },
+    {
+      "Country": "RU",
+      "Top": [
+        {
+          "Link": "trojan://204bc731190243e7a8cc9c1d0b7ac3ba@94.103.2.31:9443?security=reality\u0026sni=static.rutube.ru\u0026fp=random\u0026pbk=Zuu0slAOjX2uWf6-xRWeZzv7O_URTgpe8BHpvoS1llw\u0026sid=aabbccdd\u0026type=tcp\u0026path=/# By EbraSha",
+          "LatencyMs": 580,
+          "SpeedMbps": 0.9153103828430176,
+          "Country": "RU",
+          "Score": -0.22650813770294187
+        },
+        {
+          "Link": "trojan://204bc731190243e7a8cc9c1d0b7ac3ba@94.103.2.31:9443?fp=\u0026pbk=Zuu0slAOjX2uWf6-xRWeZzv7O_URTgpe8BHpvoS1llw\u0026security=reality\u0026sid=aabbccdd\u0026sni=static.rutube.ru#[63575] - Telegram : @V2All",
+          "LatencyMs": 586,
+          "SpeedMbps": 1.0878047943115234,
+          "Country": "RU",
+          "Score": -0.22787317123413087
+        },
+        {
+          "Link": "trojan://204bc731190243e7a8cc9c1d0b7ac3ba@94.103.2.31:9443?fp=\u0026pbk=Zuu0slAOjX2uWf6-xRWeZzv7O_URTgpe8BHpvoS1llw\u0026security=reality\u0026sid=aabbccdd\u0026sni=static.rutube.ru# By EbraSha",
+          "LatencyMs": 592,
+          "SpeedMbps": 0.8768720030784607,
+          "Country": "RU",
+          "Score": -0.23153876798152925
+        }
+      ]
+    },
+    {
+      "Country": "SE",
+      "Top": [
+        {
+          "Link": "trojan://lpfAiPjB00@193.168.197.76:39425?security=reality\u0026sni=www.amazon.com\u0026fp=chrome\u0026pbk=DoKBudC7Cd1TXpRPWAu7ClkqwEzEPVgfteqs7c0XwXk\u0026sid=8d0e8a871f53\u0026spx=/\u0026type=tcp\u0026path=/# By EbraSha",
+          "LatencyMs": 463,
+          "SpeedMbps": 0.000015717092537670396,
+          "Country": "SE",
+          "Score": -0.1851999056974448
+        },
+        {
+          "Link": "trojan://lpfAiPjB00@193.168.197.76:39425?security=reality\u0026sni=www.amazon.com\u0026fp=chrome\u0026pbk=DoKBudC7Cd1TXpRPWAu7ClkqwEzEPVgfteqs7c0XwXk\u0026sid=8d0e8a871f53\u0026spx=/\u0026type=tcp\u0026path=/#4Sarina-5108",
+          "LatencyMs": 465,
+          "SpeedMbps": 0.000015748029909445904,
+          "Country": "SE",
+          "Score": -0.18599990551182058
+        },
+        {
+          "Link": "trojan://lpfAiPjB00@193.168.197.76:39425?security=reality\u0026sni=www.amazon.com\u0026fp=chrome\u0026pbk=DoKBudC7Cd1TXpRPWAu7ClkqwEzEPVgfteqs7c0XwXk\u0026sid=8d0e8a871f53\u0026spx=/\u0026type=tcp\u0026path=/#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20981370",
+          "LatencyMs": 471,
+          "SpeedMbps": 0.000015655577954021282,
+          "Country": "SE",
+          "Score": -0.18839990606653229
+        }
+      ]
+    },
+    {
+      "Country": "SG",
+      "Top": [
+        {
+          "Link": "trojan://gcuCpQfaiVeDBdWG@jpbgp.netvigor.cc:19128?security=tls\u0026sni=yazhou10.dynu.net#🇸🇬[openproxylist.com] trojan-SG",
+          "LatencyMs": 978,
+          "SpeedMbps": 0,
+          "Country": "SG",
+          "Score": -0.3912
+        },
+        {
+          "Link": "trojan://gcuCpQfaiVeDBdWG@jpbgp.netvigor.cc:19128?security=tls\u0026sni=yazhou10.dynu.net#hamedp71%3A%3A%F0%9F%87%B8%F0%9F%87%AC",
+          "LatencyMs": 1219,
+          "SpeedMbps": 0.000007999999979801942,
+          "Country": "SG",
+          "Score": -0.39999995200000016
+        },
+        {
+          "Link": "trojan://gcuCpQfaiVeDBdWG@jpbgp.netvigor.cc:19128?allowInsecure=0\u0026sni=yazhou10.dynu.net#🇹🇼 63 - TW - Trojan/TLS - 19128",
+          "LatencyMs": 1689,
+          "SpeedMbps": 0.000008088978574960493,
+          "Country": "SG",
+          "Score": -0.39999995146612854
+        }
+      ]
+    },
+    {
+      "Country": "US",
+      "Top": [
+        {
+          "Link": "trojan://kkzh2prsyr2ik47as615@64.94.95.118:57142?allowInsecure=1# By EbraSha",
+          "LatencyMs": 116,
+          "SpeedMbps": 158.41583251953125,
+          "Country": "US",
+          "Score": 0.5536
+        },
+        {
+          "Link": "trojan://8f3a2b1c9d4e5f6a7b8c9d0e1f2a3b4c@link.honghongai.top:8443#v2go%20%7C%20%F0%9F%87%BA%F0%9F%87%B8%20US%20%7C%20TROJAN%20%7C%205292",
+          "LatencyMs": 285,
+          "SpeedMbps": 31.496063232421875,
+          "Country": "US",
+          "Score": 0.07497637939453125
+        },
+        {
+          "Link": "trojan://8f3a2b1c9d4e5f6a7b8c9d0e1f2a3b4c@link.honghongai.top:8443?type=raw\u0026headerType=none\u0026security=tls#%5BOpenRay%5D%20%F0%9F%87%BA%F0%9F%87%B8%20US-16791",
+          "LatencyMs": 271,
+          "SpeedMbps": 30.018762588500977,
+          "Country": "US",
+          "Score": 0.07171257553100584
+        }
+      ]
+    },
+    {
+      "Country": "ZA",
+      "Top": [
+        {
+          "Link": "trojan://q2jXRWncMA7pQren_VjQKhSQfoBWK_@160.119.251.210:2083?allowInsecure=1\u0026host=xo.e0f.cx\u0026path=%2Ftrojan-ws\u0026sni=xo.e0f.cx\u0026type=ws#v2go%20%7C%20%F0%9F%87%BF%F0%9F%87%A6%20ZA%20%7C%20TROJAN%20%7C%2010248",
+          "LatencyMs": 1201,
+          "SpeedMbps": 18.165306091308594,
+          "Country": "ZA",
+          "Score": -0.29100816345214847
+        },
+        {
+          "Link": "trojan://q2jXRWncMA7pQren_VjQKhSQfoBWK_@160.119.251.210:2083?allowInsecure=1\u0026host=xo.e0f.cx\u0026path=%2Ftrojan-ws\u0026sni=xo.e0f.cx\u0026type=ws# By EbraSha",
+          "LatencyMs": 1199,
+          "SpeedMbps": 18.115942001342773,
+          "Country": "ZA",
+          "Score": -0.2913043479919434
+        }
+      ]
+    }
+  ],
+  "rotating": 71,
+  "generated_at": "2026-05-25T23:00:54.991733969Z"
+}
