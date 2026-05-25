@@ -1,0 +1,88 @@
+# VlessFilter scheduled refresh workflow
+#
+# This workflow runs the full pipeline on GitHub-hosted runners every 6 hours
+# and pushes results back to the upstream repo via a personal access token.
+#
+# DEPLOYMENT (when PC scheduling isn't available):
+# 1. Create a new GitHub account (or use any account that has Actions enabled)
+# 2. Fork github.com/trikiman/vlessfilter
+# 3. In the FORKED repo: Settings → Secrets and variables → Actions
+#    Add secret: PUSH_TOKEN = personal access token with "Contents: write"
+#    on the upstream trikiman/vlessfilter repo (Fine-grained PAT preferred)
+# 4. (Optional) Settings → Variables: UPSTREAM_REPO = trikiman/vlessfilter
+# 5. Enable Actions in the fork (Settings → Actions → Allow all)
+# 6. The schedule below runs the pipeline every 6h on the new account's
+#    Actions minutes (free tier: unlimited for public repos)
+#
+# COSTS: $0 — public repos get unlimited Actions minutes on free tier.
+# No card, no billing setup needed on the fork's account.
+
+name: refresh
+
+on:
+  schedule:
+    # Every 6h: 00:00, 06:00, 12:00, 18:00 UTC
+    - cron: '0 0,6,12,18 * * *'
+  workflow_dispatch:
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 75
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.22'
+
+      - name: Tune kernel for stage 1 concurrency
+        run: |
+          # Mirror what kerntune.Apply does on supported VPSes
+          sudo sysctl -w net.ipv4.tcp_tw_reuse=1 || true
+          sudo sysctl -w "net.ipv4.ip_local_port_range=1024 65535" || true
+          ulimit -n 100000 || true
+
+      - name: Install xray-knife
+        run: |
+          go install github.com/lilendian0x00/xray-knife/v9@latest
+          echo "$HOME/go/bin" >> $GITHUB_PATH
+
+      - name: Build vlessfilter
+        run: go build -o bin/vlessfilter ./cmd/vlessfilter
+
+      - name: Run pipeline (60-min budget, accuracy probe enabled)
+        env:
+          VLESSFILTER_QUIET: '1'
+        run: |
+          ./bin/vlessfilter run \
+            --threads1 1000 \
+            --threads2 20 \
+            --budget-min 60 \
+            --checkpoint-min 5 \
+            --accuracy-probe
+
+      - name: Push results to upstream
+        env:
+          PUSH_TOKEN: ${{ secrets.PUSH_TOKEN }}
+          UPSTREAM_REPO: ${{ vars.UPSTREAM_REPO || 'trikiman/vlessfilter' }}
+        run: |
+          if [ -z "$PUSH_TOKEN" ]; then
+            echo "PUSH_TOKEN secret not set — results stay in this fork only"
+            git add -f subs/ README.md all-results.csv raw/dead.txt 2>/dev/null || true
+            git -c user.name="VlessFilter Bot" -c user.email="vf-bot@noreply.github.com" \
+              commit -m "results: scheduled refresh $(date -u +%Y%m%d-%H%M%S)" || echo "no changes"
+            git push origin main || true
+          else
+            git add -f subs/ README.md all-results.csv raw/dead.txt 2>/dev/null || true
+            git -c user.name="VlessFilter Bot" -c user.email="vf-bot@noreply.github.com" \
+              commit -m "results: scheduled refresh $(date -u +%Y%m%d-%H%M%S)" || { echo "no changes"; exit 0; }
+            git push "https://x-access-token:${PUSH_TOKEN}@github.com/${UPSTREAM_REPO}.git" \
+              HEAD:refs/heads/main
+          fi
