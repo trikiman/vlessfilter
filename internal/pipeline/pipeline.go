@@ -16,6 +16,7 @@ import (
 	"log/slog"
 	"os"
 	"path/filepath"
+	"strings"
 	"sync"
 	"time"
 
@@ -178,7 +179,21 @@ func Run(ctx context.Context, opts Opts) error {
 	}
 
 	if err := runSelect(ctx, opts); err != nil {
-		return fmt.Errorf("stage select: %w", err)
+		// If budget expired between stage 2 finishing and select starting,
+		// the ctx is already dead. Retry with a fresh 5-min ctx so we can
+		// at least publish whatever stage 2 just confirmed.
+		if errors.Is(err, context.DeadlineExceeded) || errors.Is(err, context.Canceled) ||
+			strings.Contains(err.Error(), "context deadline exceeded") ||
+			strings.Contains(err.Error(), "context canceled") {
+			slog.Warn("final runSelect ctx-cancelled; retrying with fresh 5-min ctx", "error", err)
+			cleanupCtx, cleanupCancel := context.WithTimeout(context.Background(), 5*time.Minute)
+			defer cleanupCancel()
+			if err2 := runSelect(cleanupCtx, opts); err2 != nil {
+				return fmt.Errorf("stage select (retry with fresh ctx also failed): %w", err2)
+			}
+		} else {
+			return fmt.Errorf("stage select: %w", err)
+		}
 	}
 
 	finalCommitPush(opts)
