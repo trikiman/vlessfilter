@@ -33,7 +33,72 @@ on:
         default: '55'
 
 jobs:
+  prep-sources:
+    # Fetch upstream sources that need conversion (e.g. sub.pai.yt sing-box
+    # JSON → URI list), commit to repo so the test jobs read fresh data.
+    # Must complete before any test job starts.
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write
+    outputs:
+      changed: ${{ steps.commit.outputs.changed }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.PUSH_TOKEN || github.token }}
+
+      - name: Setup Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.22'
+
+      - name: Build singboxconv
+        run: go build -o bin/singboxconv ./cmd/singboxconv
+
+      - name: Convert sub.pai.yt sing-box JSON to URI subscription
+        run: |
+          mkdir -p dev/sources-fetched
+          set +e
+          ./bin/singboxconv \
+            --url https://sub.pai.yt/singbox \
+            --timeout 90 \
+            > dev/sources-fetched/paiyt.txt
+          rc=$?
+          set -e
+          if [ $rc -ne 0 ] || [ ! -s dev/sources-fetched/paiyt.txt ]; then
+            echo "WARN: paiyt fetch failed (rc=$rc); leaving previous file intact"
+            git checkout -- dev/sources-fetched/paiyt.txt 2>/dev/null || true
+            exit 0
+          fi
+          echo "paiyt.txt: $(wc -l < dev/sources-fetched/paiyt.txt) lines"
+
+      - name: Commit prep changes (if any)
+        id: commit
+        env:
+          PUSH_TOKEN: ${{ secrets.PUSH_TOKEN }}
+        run: |
+          set -e
+          git config user.name "VlessFilter Bot"
+          git config user.email "vf-bot@noreply.github.com"
+          git add -f dev/sources-fetched/ 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "no changes"
+            echo "changed=false" >> $GITHUB_OUTPUT
+            exit 0
+          fi
+          git commit -m "prep: refresh converted sources $(date -u +%Y%m%d-%H%M%S)"
+          if [ -n "$PUSH_TOKEN" ]; then
+            git push "https://x-access-token:${PUSH_TOKEN}@github.com/${{ github.repository }}.git" HEAD:main
+          else
+            git push origin HEAD:main
+          fi
+          echo "changed=true" >> $GITHUB_OUTPUT
+
   test:
+    needs: prep-sources
     name: test (${{ matrix.proto }})
     runs-on: ubuntu-latest
     timeout-minutes: 75

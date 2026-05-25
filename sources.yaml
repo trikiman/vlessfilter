@@ -70,6 +70,16 @@ sources:
     kind: plain
     enabled: true
 
+  # sub.pai.yt — sing-box JSON aggregator, 130+ outbounds, HK/JP/SG/US dominant.
+  # Pre-converted by prep-sources job in refresh.yml every cycle (the upstream
+  # is JSON, not URI subscription, so we run cmd/singboxconv to translate it
+  # and commit the URI form to dev/sources-fetched/paiyt.txt — that's what
+  # this URL fetches).
+  - name: sub-paiyt-converted
+    url: https://raw.githubusercontent.com/trikiman/vlessfilter/main/dev/sources-fetched/paiyt.txt
+    kind: plain
+    enabled: true
+
   # R3ZARAHIMI/tg-v2ray-configs-every2h — bulk-collected from telegram,
   # split per country in conf-XX.txt files. High-volume DE (660+),
   # NL (240+), US (270+), FR (180+), UK (90+). Refreshed every 2h.
