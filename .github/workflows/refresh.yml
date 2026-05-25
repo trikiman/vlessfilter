@@ -61,19 +61,37 @@ jobs:
       - name: Convert sub.pai.yt sing-box JSON to URI subscription
         run: |
           mkdir -p dev/sources-fetched
-          set +e
-          ./bin/singboxconv \
-            --url https://sub.pai.yt/singbox \
-            --timeout 90 \
-            > dev/sources-fetched/paiyt.txt
-          rc=$?
-          set -e
-          if [ $rc -ne 0 ] || [ ! -s dev/sources-fetched/paiyt.txt ]; then
-            echo "WARN: paiyt fetch failed (rc=$rc); leaving previous file intact"
+          # 3 attempts with exponential backoff. sub.pai.yt is sometimes
+          # slow, sometimes returns partial JSON. Total max wait: 90+120+150
+          # = 360s before we give up and keep previous file.
+          ok=0
+          for attempt in 1 2 3; do
+            timeout=$((60 + attempt * 30))
+            echo "attempt $attempt with timeout ${timeout}s"
+            set +e
+            ./bin/singboxconv \
+              --url https://sub.pai.yt/singbox \
+              --timeout $timeout \
+              > dev/sources-fetched/paiyt.txt.tmp
+            rc=$?
+            set -e
+            if [ $rc -eq 0 ] && [ -s dev/sources-fetched/paiyt.txt.tmp ]; then
+              # Verify the output looks like URIs (has at least one vless/vmess/trojan/ss URI)
+              if grep -qE '^(vless|vmess|trojan|ss)://' dev/sources-fetched/paiyt.txt.tmp; then
+                mv dev/sources-fetched/paiyt.txt.tmp dev/sources-fetched/paiyt.txt
+                echo "paiyt.txt: $(wc -l < dev/sources-fetched/paiyt.txt) lines (attempt $attempt)"
+                ok=1
+                break
+              fi
+            fi
+            echo "attempt $attempt failed (rc=$rc); waiting before retry"
+            sleep 10
+          done
+          rm -f dev/sources-fetched/paiyt.txt.tmp
+          if [ "$ok" -ne 1 ]; then
+            echo "WARN: all 3 paiyt fetch attempts failed; leaving previous file intact"
             git checkout -- dev/sources-fetched/paiyt.txt 2>/dev/null || true
-            exit 0
           fi
-          echo "paiyt.txt: $(wc -l < dev/sources-fetched/paiyt.txt) lines"
 
       - name: Commit prep changes (if any)
         id: commit
