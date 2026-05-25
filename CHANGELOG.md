@@ -79,10 +79,28 @@ Conclusions:
   schedule + 50% larger batch should compress this to under 12h.
   Robustness threshold left intact per user direction; speed comes
   from running more cycles, not from lowering the bar.
-- **sub.pai.yt/singbox**: confirmed 200 OK, ~46KB sing-box JSON
-  format with ~140+ outbounds (HK/JP/SG/US dominant). Cannot be added
-  as `kind: plain` — needs a JSON→URI converter. Deferred as a
-  follow-up phase since it requires a non-trivial Go converter.
+
+### Late additions (post-initial-ship)
+
+- **sub.pai.yt sing-box source** integrated. New `cmd/singboxconv`
+  parses sing-box client JSON and emits vless/vmess/trojan/ss URI
+  lines. Refresh workflow gained a `prep-sources` job that fetches
+  https://sub.pai.yt/singbox, runs the converter, and commits the
+  result to `dev/sources-fetched/paiyt.txt`. The 4 protocol matrix
+  jobs depend on prep-sources via `needs:`. First run extracted 122
+  URIs from 131 outbounds (vless 36 / vmess 5 / trojan 73 / ss 4).
+  Hysteria2 and v2ray-plugin SS skipped (xray-knife doesn't support
+  them).
+- **Pipeline ctx-cancellation fix**: when stage 2 finishes with budget
+  on the edge of expiry, the parent ctx becomes dead between
+  `runTest()` returning and `runSelect()` starting, causing the DB
+  ping to fail with "context deadline exceeded". Added a retry with a
+  fresh 5-min ctx, mirroring the existing fallback path. Manifested
+  as test (vless) and test (ss) failing in matrix runs while smaller
+  pools (vmess/trojan) succeeded — these jobs now publish reliably.
+- **Push race fix in merge-and-push**: added `git fetch + rebase`
+  before push, with force-overwrite-with-ours fallback if rebase
+  conflicts. Handles the case where main moved during a 60min run.
 
 ## v2.0.1 — 2026-05-25 (in progress)
 

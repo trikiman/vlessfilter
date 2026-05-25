@@ -74,10 +74,10 @@ accrual should compress from days to hours.
 - [ ] **Country growth tracking.** Need to watch the next ~7 days of
   results to see if 28→100 trajectory materializes. If country count
   plateaus < 80, source-set diversification is the next lever.
-- [ ] **sub.pai.yt source converter.** Deferred. Implementation note:
-  parse `outbounds[]` array, emit one URI per outbound based on `type`
-  field (vless/vmess/trojan/shadowsocks/hysteria2 → standard URI form).
-  Estimate ~150 LOC + tests.
+- [x] **sub.pai.yt source converter.** ✅ Shipped. `cmd/singboxconv`
+  parses sing-box JSON, emits vless/vmess/trojan/ss URIs. 122 URIs
+  from 131 outbounds first run. prep-sources job in refresh.yml
+  refreshes the converted file every cycle.
 - [ ] **DB pool backup.** xray-knife.db lives on the user's
   pipeline-host machine, not on the local PC where backup-local.ps1
   runs. To get a true offsite backup of the DB, we'd need to add a
