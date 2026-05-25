@@ -260,7 +260,7 @@ jobs:
           set -e
           git config user.name "VlessFilter Bot"
           git config user.email "vf-bot@noreply.github.com"
-          git add -f subs/ all-results.csv 2>/dev/null || true
+          git add -f subs/ all-results.csv README.md 2>/dev/null || true
           if git diff --cached --quiet; then
             echo "no changes to publish"
             exit 0
@@ -275,7 +275,7 @@ jobs:
             git rebase --abort 2>/dev/null || true
             git reset --hard origin/main
             # Re-apply our generated outputs
-            git add -f subs/ all-results.csv 2>/dev/null || true
+            git add -f subs/ all-results.csv README.md 2>/dev/null || true
             git commit -m "results: matrix refresh $(date -u +%Y%m%d-%H%M%S) (forced)" --allow-empty
           }
           if [ -n "$PUSH_TOKEN" ]; then
