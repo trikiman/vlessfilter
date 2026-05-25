@@ -170,6 +170,11 @@ https://raw.githubusercontent.com/AvenCores/goida-vpn-configs/main/githubmirror/
 https://raw.githubusercontent.com/yaney01/telegram-collector/main/splitted/mixed
 https://raw.githubusercontent.com/yaney01/telegram-collector/main/subscribe/protocols/vless
 https://raw.githubusercontent.com/yaney01/telegram-collector/main/networks/ws
+https://raw.githubusercontent.com/Epodonios/v2ray-configs/main/All_Configs_Sub.txt
+https://raw.githubusercontent.com/mahdibland/V2RayAggregator/master/sub/sub_merge.txt
+https://raw.githubusercontent.com/azadnetCH/Clash/main/AzadNet.txt
+https://raw.githubusercontent.com/ndsphonemy/proxy-sub/main/speed.txt
+https://raw.githubusercontent.com/ALIILAPRO/v2rayNG-Config/main/server.txt
 https://raw.githubusercontent.com/trikiman/vlessfilter/main/dev/sources-fetched/paiyt.txt
 https://raw.githubusercontent.com/R3ZARAHIMI/tg-v2ray-configs-every2h/main/conf-DE.txt
 https://raw.githubusercontent.com/R3ZARAHIMI/tg-v2ray-configs-every2h/main/conf-NL.txt

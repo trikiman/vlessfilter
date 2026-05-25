@@ -70,6 +70,38 @@ sources:
     kind: plain
     enabled: true
 
+  # Epodonios — large aggregator (4300+ mix), broad geographic coverage
+  # validated 2026-05-25 to fill country gaps beyond HK/JP/SG/US.
+  - name: epodonios-mix
+    url: https://raw.githubusercontent.com/Epodonios/v2ray-configs/main/All_Configs_Sub.txt
+    kind: plain
+    enabled: true
+
+  # mahdibland-V2RayAggregator — 5000 configs (vmess/trojan/ss heavy).
+  # This one is the biggest single non-vless source we've found.
+  - name: mahdibland-aggregator
+    url: https://raw.githubusercontent.com/mahdibland/V2RayAggregator/master/sub/sub_merge.txt
+    kind: plain
+    enabled: true
+
+  # azadnetCH-Clash — 1900 configs, balanced across protocols.
+  - name: azadnet-clash
+    url: https://raw.githubusercontent.com/azadnetCH/Clash/main/AzadNet.txt
+    kind: plain
+    enabled: true
+
+  # ndsphonemy — 500 configs, mostly vless+ss
+  - name: ndsphonemy-speed
+    url: https://raw.githubusercontent.com/ndsphonemy/proxy-sub/main/speed.txt
+    kind: plain
+    enabled: true
+
+  # ALIILAPRO — 480 configs, mostly vless+vmess
+  - name: aliilapro
+    url: https://raw.githubusercontent.com/ALIILAPRO/v2rayNG-Config/main/server.txt
+    kind: plain
+    enabled: true
+
   # sub.pai.yt — sing-box JSON aggregator, 130+ outbounds, HK/JP/SG/US dominant.
   # Pre-converted by prep-sources job in refresh.yml every cycle (the upstream
   # is JSON, not URI subscription, so we run cmd/singboxconv to translate it
