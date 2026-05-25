@@ -8,6 +8,7 @@ package output
 
 import (
 	"encoding/csv"
+	"encoding/json"
 	"fmt"
 	"net/url"
 	"os"
@@ -101,6 +102,26 @@ func WriteProtocol(outDir, protocol string, selections []selector.CountrySelecti
 		return err
 	}
 	_ = generatedAt // reserved for future per-protocol README per-dir
+
+	// Write a JSON sidecar with the data the merge step needs to rebuild
+	// a multi-protocol README. We can't pass selector.Result directly —
+	// the merge runner doesn't have xray-knife.db — so we serialize the
+	// minimum that WriteMultiProtocolReadme needs: per-country top entries
+	// and rotating count.
+	sidecar := struct {
+		Protocol    string                       `json:"protocol"`
+		Selections  []selector.CountrySelection  `json:"selections"`
+		Rotating    int                          `json:"rotating"`
+		GeneratedAt time.Time                    `json:"generated_at"`
+	}{
+		Protocol:    protocol,
+		Selections:  sortedSel,
+		Rotating:    len(rotating),
+		GeneratedAt: generatedAt,
+	}
+	if buf, err := json.MarshalIndent(sidecar, "", "  "); err == nil {
+		_ = os.WriteFile(filepath.Join(subsDir, "_readme-data.json"), buf, 0o644)
+	}
 	return nil
 }
 

@@ -4,17 +4,21 @@ package main
 
 import (
 	"context"
+	"encoding/json"
 	"errors"
 	"flag"
 	"fmt"
 	"log/slog"
 	"os"
 	"os/signal"
+	"path/filepath"
 	"strings"
 	"syscall"
 	"time"
 
+	"github.com/trikiman/vlessfilter/internal/output"
 	"github.com/trikiman/vlessfilter/internal/pipeline"
+	"github.com/trikiman/vlessfilter/internal/selector"
 	"github.com/trikiman/vlessfilter/internal/sources"
 	"github.com/trikiman/vlessfilter/internal/xrayknife"
 )
@@ -91,6 +95,8 @@ func run() int {
 		return runCmd(args[1:])
 	case "sources-list":
 		return sourcesListCmd(args[1:])
+	case "regen-readme":
+		return regenReadmeCmd(args[1:])
 	case "help", "-h", "--help":
 		fmt.Fprint(os.Stderr, usage)
 		return exitOK
@@ -269,5 +275,70 @@ func sourcesListCmd(args []string) int {
 			return exitUserErr
 		}
 	}
+	return exitOK
+}
+
+// regenReadmeCmd reads subs/<proto>/_readme-data.json sidecars (written by
+// each protocol's matrix job) and regenerates README.md with all 4
+// protocols' tables. Used in the merge-and-push job after artifact merge.
+//
+// Without this, the matrix-merge runner has no xray-knife.db to derive
+// fresh selections from, so README would be stale (showing only one
+// protocol's data, or worse, the previous run's data).
+func regenReadmeCmd(args []string) int {
+	fs := flag.NewFlagSet("regen-readme", flag.ContinueOnError)
+	outDir := fs.String("out", ".", "Output directory (must contain subs/)")
+	if err := fs.Parse(args); err != nil {
+		if errors.Is(err, flag.ErrHelp) {
+			return exitOK
+		}
+		return exitUserErr
+	}
+
+	type sidecar struct {
+		Protocol    string                      `json:"protocol"`
+		Selections  []selector.CountrySelection `json:"selections"`
+		Rotating    int                         `json:"rotating"`
+		GeneratedAt time.Time                   `json:"generated_at"`
+	}
+
+	// Iterate canonical protocol order so the README has stable section order.
+	var protos []output.ProtoReadme
+	var latest time.Time
+	for _, proto := range []string{"vless", "vmess", "trojan", "ss"} {
+		path := filepath.Join(*outDir, "subs", proto, "_readme-data.json")
+		raw, err := os.ReadFile(path)
+		if err != nil {
+			slog.Warn("regen-readme: sidecar missing, protocol omitted from README",
+				"protocol", proto, "path", path)
+			continue
+		}
+		var sc sidecar
+		if err := json.Unmarshal(raw, &sc); err != nil {
+			slog.Warn("regen-readme: sidecar parse failed, omitting protocol",
+				"protocol", proto, "error", err)
+			continue
+		}
+		protos = append(protos, output.ProtoReadme{
+			Protocol:   sc.Protocol,
+			Selections: sc.Selections,
+			Rotating:   sc.Rotating,
+		})
+		if sc.GeneratedAt.After(latest) {
+			latest = sc.GeneratedAt
+		}
+	}
+	if len(protos) == 0 {
+		fmt.Fprintln(os.Stderr, "regen-readme: no _readme-data.json sidecars found in subs/")
+		return exitRuntime
+	}
+	if latest.IsZero() {
+		latest = time.Now().UTC()
+	}
+	if err := output.WriteMultiProtocolReadme(*outDir, protos, latest); err != nil {
+		fmt.Fprintf(os.Stderr, "regen-readme: write failed: %v\n", err)
+		return exitRuntime
+	}
+	slog.Info("regen-readme ok", "protocols", len(protos), "generated_at", latest.Format(time.RFC3339))
 	return exitOK
 }

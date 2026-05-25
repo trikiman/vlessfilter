@@ -199,6 +199,21 @@ jobs:
               ls -la artifacts/subs-$proto/ 2>/dev/null | head -10 || true
             fi
           done
+
+      - name: Setup Go (for regen-readme)
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.22'
+
+      - name: Regenerate top-level README from per-protocol sidecars
+        run: |
+          go build -o /tmp/vlessfilter ./cmd/vlessfilter
+          /tmp/vlessfilter regen-readme --out . || {
+            echo "WARN: regen-readme failed but continuing — README may be stale"
+          }
+
+      - name: Mirror VLESS to top-level subs/ for v1 back-compat
+        run: |
           # Back-compat: top-level subs/<CC>.txt mirrors vless
           if [ -d subs/vless ]; then
             for f in subs/vless/*.txt; do
