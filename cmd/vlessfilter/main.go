@@ -306,7 +306,7 @@ func regenReadmeCmd(args []string) int {
 	var protos []output.ProtoReadme
 	var latest time.Time
 	for _, proto := range []string{"vless", "vmess", "trojan", "ss"} {
-		path := filepath.Join(*outDir, "subs", proto, "_readme-data.json")
+		path := filepath.Join(*outDir, ".readme-data", proto+".json")
 		raw, err := os.ReadFile(path)
 		if err != nil {
 			slog.Warn("regen-readme: sidecar missing, protocol omitted from README",

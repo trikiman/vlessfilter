@@ -108,19 +108,26 @@ func WriteProtocol(outDir, protocol string, selections []selector.CountrySelecti
 	// the merge runner doesn't have xray-knife.db — so we serialize the
 	// minimum that WriteMultiProtocolReadme needs: per-country top entries
 	// and rotating count.
-	sidecar := struct {
-		Protocol    string                       `json:"protocol"`
-		Selections  []selector.CountrySelection  `json:"selections"`
-		Rotating    int                          `json:"rotating"`
-		GeneratedAt time.Time                    `json:"generated_at"`
-	}{
-		Protocol:    protocol,
-		Selections:  sortedSel,
-		Rotating:    len(rotating),
-		GeneratedAt: generatedAt,
-	}
-	if buf, err := json.MarshalIndent(sidecar, "", "  "); err == nil {
-		_ = os.WriteFile(filepath.Join(subsDir, "_readme-data.json"), buf, 0o644)
+	//
+	// Path: <outDir>/.readme-data/<proto>.json (NOT under subs/ so the
+	// workflow's git add -f subs/ doesn't pick them up — they're build
+	// artifacts, not subscription content).
+	sidecarDir := filepath.Join(outDir, ".readme-data")
+	if err := os.MkdirAll(sidecarDir, 0o755); err == nil {
+		sidecar := struct {
+			Protocol    string                       `json:"protocol"`
+			Selections  []selector.CountrySelection  `json:"selections"`
+			Rotating    int                          `json:"rotating"`
+			GeneratedAt time.Time                    `json:"generated_at"`
+		}{
+			Protocol:    protocol,
+			Selections:  sortedSel,
+			Rotating:    len(rotating),
+			GeneratedAt: generatedAt,
+		}
+		if buf, err := json.MarshalIndent(sidecar, "", "  "); err == nil {
+			_ = os.WriteFile(filepath.Join(sidecarDir, protocol+".json"), buf, 0o644)
+		}
 	}
 	return nil
 }

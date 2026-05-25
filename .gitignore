@@ -37,3 +37,7 @@ dev/*
 .kiro/
 scripts/logs/
 
+# README sidecar JSONs written by per-protocol matrix jobs and read back
+# by the merge job's regen-readme step. Transient artifacts, not commit-worthy.
+.readme-data/
+

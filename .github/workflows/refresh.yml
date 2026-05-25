@@ -175,8 +175,10 @@ jobs:
           name: subs-${{ matrix.proto }}
           path: |
             subs/${{ matrix.proto }}/
+            .readme-data/${{ matrix.proto }}.json
             all-results.csv
           retention-days: 7
+          include-hidden-files: true
 
   merge-and-push:
     needs: test
@@ -202,7 +204,7 @@ jobs:
       - name: Merge artifacts into subs/ + regenerate top-level all.txt + README
         run: |
           set -e
-          mkdir -p subs
+          mkdir -p subs .readme-data
           for proto in vless vmess trojan ss; do
             # actions/upload-artifact preserves the source directory
             # structure inside the artifact. We uploaded `subs/<proto>/`
@@ -215,6 +217,11 @@ jobs:
             else
               echo "no artifact for $proto (job may have failed) — looked for $src"
               ls -la artifacts/subs-$proto/ 2>/dev/null | head -10 || true
+            fi
+            # Copy the JSON sidecar (lives outside subs/ to keep commits clean)
+            sidecar="artifacts/subs-$proto/.readme-data/${proto}.json"
+            if [ -f "$sidecar" ]; then
+              cp -f "$sidecar" ".readme-data/${proto}.json"
             fi
           done
 
