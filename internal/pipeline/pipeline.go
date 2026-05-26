@@ -447,6 +447,23 @@ func runSelect(ctx context.Context, opts Opts) error {
 			"stable_alive", len(stable),
 			"rotating_alive", len(rotating))
 
+		// PROTECT PREVIOUS OUTPUT: if this run produced zero stable
+		// countries (e.g., all keys ended up rotating, or DB was reset),
+		// DON'T call WriteProtocol — its first action is to delete every
+		// existing subs/<proto>/<CC>.txt before the for-loop fills them
+		// in. With empty selections, that means we'd wipe perfectly good
+		// previous output. The pipeline's contract is "best-effort improve
+		// the published set, never make it strictly worse than last run".
+		//
+		// This is separate from the post-probe empty check below — that
+		// one fires when probe filtering drops everything; this one fires
+		// when the selector itself returns empty.
+		if len(selections) == 0 {
+			slog.Warn("select returned 0 stable countries; skipping publish to protect previous output",
+				"protocol", proto, "rotating_alive", len(rotating))
+			continue
+		}
+
 		// PRE-PUBLISH PROBE — re-validate each top-3 selection RIGHT NOW
 		// (not 50min ago when stage 2 ran). Drops keys that died between
 		// stage 2 and publish. Without this, users see "80-90% timeout"
