@@ -237,20 +237,43 @@ jobs:
             echo "WARN: regen-readme failed but continuing — README may be stale"
           }
 
-      - name: Mirror VLESS to top-level subs/ for v1 back-compat
+      - name: Build top-level subs/ as union of all 4 protocols
         run: |
-          # Back-compat: top-level subs/<CC>.txt mirrors vless
-          if [ -d subs/vless ]; then
-            for f in subs/vless/*.txt; do
+          # subs/all.txt — UNION of all 4 protocols' all.txt (every working
+          # key regardless of protocol or country). One subscription URL
+          # imports the entire pool.
+          : > subs/all.txt
+          for proto in vless vmess trojan ss; do
+            if [ -f "subs/$proto/all.txt" ]; then
+              cat "subs/$proto/all.txt" >> subs/all.txt
+            fi
+          done
+
+          # subs/rotating.txt — UNION of all 4 protocols' rotating.txt.
+          : > subs/rotating.txt
+          for proto in vless vmess trojan ss; do
+            if [ -f "subs/$proto/rotating.txt" ]; then
+              cat "subs/$proto/rotating.txt" >> subs/rotating.txt
+            fi
+          done
+
+          # subs/<CC>.txt — for each country code seen in any protocol,
+          # concat that country's keys across all 4 protocols. So
+          # subs/DE.txt has DE keys from vless+vmess+trojan+ss.
+          rm -f subs/[A-Z][A-Z].txt 2>/dev/null || true
+          for proto in vless vmess trojan ss; do
+            for f in subs/$proto/*.txt; do
               [ -f "$f" ] || continue
               base=$(basename "$f")
-              # Skip files that aren't 2-letter country codes
               case "$base" in
-                ??.txt) cp "$f" "subs/$base" ;;
-                all.txt|rotating.txt) cp "$f" "subs/$base" ;;
+                ??.txt)
+                  cc=$(basename "$base" .txt)
+                  cat "$f" >> "subs/${cc}.txt"
+                  ;;
               esac
             done
-          fi
+          done
+
           # Regenerate top-level all-results.csv if any artifact had one
           for proto in vless vmess trojan ss; do
             csv="artifacts/subs-$proto/all-results.csv"

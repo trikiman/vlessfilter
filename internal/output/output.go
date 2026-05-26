@@ -426,8 +426,14 @@ func buildMultiProtocolReadme(protos []ProtoReadme, generatedAt time.Time) strin
 			p.Protocol, p.Rotating))
 	}
 
-	// VLESS back-compat note
-	b.WriteString("**Back-compat (v1 URLs):** `subs/all.txt`, `subs/<CC>.txt`, `subs/rotating.txt` continue to work — they mirror the VLESS protocol files.\n\n")
+	// Top-level subs/ is the multi-protocol union (every working key,
+	// every protocol, every country). Useful when the client supports
+	// all 4 schemes and you want maximum coverage from one URL.
+	b.WriteString("### All protocols combined (one URL → everything)\n\n")
+	b.WriteString("```\nhttps://raw.githubusercontent.com/trikiman/vlessfilter/main/subs/all.txt\n```\n\n")
+	b.WriteString("Specific country across all protocols:\n\n")
+	b.WriteString("```\nhttps://raw.githubusercontent.com/trikiman/vlessfilter/main/subs/<CC>.txt\n```\n\n")
+	b.WriteString("Rotating exits (all protocols): `subs/rotating.txt`\n\n")
 
 	b.WriteString("## Stability filter\n\n")
 	b.WriteString("Many public configs route through proxy chains, load balancers, or Cloudflare Workers — these have **rotating exit countries** (e.g., one connection lands in Sweden, the next in India). Tagging them with a single country would be misleading.\n\n")
