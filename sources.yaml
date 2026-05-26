@@ -102,6 +102,22 @@ sources:
     kind: plain
     enabled: true
 
+  # Danialsamadi/v2go — country-organized aggregator with 105+ country files.
+  # Verified to cover currently-missing countries: BE, VN (363), CZ (40),
+  # UA, NZ, LU (58), IS, RO (126), CN, SI (42), ME, BA. Same {CC}.txt
+  # structure as SoliSpirit so we use the same country-template kind.
+  - name: v2go-cc
+    url: https://raw.githubusercontent.com/Danialsamadi/v2go/main/Splitted-By-Country/{CC}.txt
+    kind: country-template
+    enabled: true
+
+  # Giromo0/Collector — 4849-config mixed aggregator (vless 2511, vmess 974,
+  # trojan 1295, ss 69). Continuous GitHub Actions refresh.
+  - name: giromo0-collector
+    url: https://raw.githubusercontent.com/Giromo0/Collector/main/All_Configs_Sub.txt
+    kind: plain
+    enabled: true
+
   # sub.pai.yt — sing-box JSON aggregator, 130+ outbounds, HK/JP/SG/US dominant.
   # Pre-converted by prep-sources job in refresh.yml every cycle (the upstream
   # is JSON, not URI subscription, so we run cmd/singboxconv to translate it
