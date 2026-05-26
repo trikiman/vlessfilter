@@ -14,9 +14,10 @@
 name: refresh
 
 on:
-  schedule:
-    # Every 2 hours.
-    - cron: '0 */2 * * *'
+  # Cron disabled while we work on the from-Russia verified pipeline.
+  # Re-enable by uncommenting the schedule block below.
+  # schedule:
+  #   - cron: '0 */2 * * *'
   workflow_dispatch:
     inputs:
       threads1:
