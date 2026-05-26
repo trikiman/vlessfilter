@@ -1,3 +1,6 @@
 vless://42ba03da-78cf-413e-9e79-1128ee6ddb30@pol2.o4ka-internet.com:443?flow=xtls-rprx-vision&fp=random&headertype=none&pbk=V2JprbR_aJkS7uX6anyU3nrswGxdvDQT2HpY4WnzuC8&security=reality&sid=5629431325884ff0&sni=pol2.o4ka-internet.com&spx=%2F&type=tcp#%F0%9F%87%B5%F0%9F%87%B1%20PL%20Poland
 vless://42ba03da-78cf-413e-9e79-1128ee6ddb30@pol2.o4ka-internet.com:443?encryption=none&flow=xtls-rprx-vision&fp=&pbk=V2JprbR_aJkS7uX6anyU3nrswGxdvDQT2HpY4WnzuC8&security=reality&sid=5629431325884ff0&sni=pol2.o4ka-internet.com&type=tcp#%F0%9F%87%B5%F0%9F%87%B1%20PL%20Poland
 vless://60d0630c-8ac4-436d-ad2c-b798b63e1c69@195.3.221.147:443?security=reality&flow=xtls-rprx-vision&sni=pl.nodes.rocketnetwork.ru&type=raw&fp=chrome&pbk=Mn0DIMKW6zu0_D3E1qKO7xMlIVZvB-rqO_-f7Le2vAs&sid=428ef87fd47a3a32#%F0%9F%87%B5%F0%9F%87%B1%20PL%20Poland
+trojan://humanity@104.17.150.76:443?path=%2Fassignment&security=tls&insecure=0&host=www.creationlong.org&type=ws&allowInsecure=0&sni=www.creationlong.org#%F0%9F%87%B5%F0%9F%87%B1%20PL%20Poland
+trojan://humanity@104.16.147.104:443?host=www.creationlong.org&path=/assignment&sni=www.creationlong.org&type=ws#%F0%9F%87%B5%F0%9F%87%B1%20PL%20Poland
+trojan://humanity@104.16.147.104:443?host=www.creationlong.org&path=%2Fassignment&sni=www.creationlong.org&type=ws#%F0%9F%87%B5%F0%9F%87%B1%20PL%20Poland

@@ -1,1 +1,4 @@
 vless://f815b837-8504-41f9-9a06-bd3c72d2fcf3@89.232.176.146:443?type=tcp&headerType=none&security=reality&encryption=none&sni=wikihow.com&fp=chrome&pbk=1HeKf_8KDjfzXfUi9P7WBaGStMvr96TKdUbofpkwBzQ&sid=8bd29483ded126b4&flow=xtls-rprx-vision#%F0%9F%87%A7%F0%9F%87%AC%20BG%20Bulgaria
+ss://YWVzLTI1Ni1nY206bEdxczk1UWtGSG8yTlY=@38.180.2.141:5499#%F0%9F%87%A7%F0%9F%87%AC%20BG%20Bulgaria
+ss://YWVzLTI1Ni1nY206bEdxczk1UWtGSG8yTlY=@38.180.2.141:5499#%F0%9F%87%A7%F0%9F%87%AC%20BG%20Bulgaria
+ss://YWVzLTI1Ni1nY206bEdxczk1UWtGSG8yTlY=@38.180.2.141:5499#%F0%9F%87%A7%F0%9F%87%AC%20BG%20Bulgaria
