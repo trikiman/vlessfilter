@@ -347,10 +347,10 @@ func LoadStableAndRotating(ctx context.Context, dbPath, protocol string) (stable
 		}
 
 		// Determine consensus country: count distinct non-empty countries.
-		countries := make(map[string]bool)
+		countryCounts := make(map[string]int)
 		for _, p := range passes {
 			if p.country != "" {
-				countries[p.country] = true
+				countryCounts[p.country]++
 			}
 		}
 
@@ -379,22 +379,53 @@ func LoadStableAndRotating(ctx context.Context, dbPath, protocol string) (stable
 			continue
 		}
 
-		switch len(countries) {
-		case 0:
+		// Compute total passes with non-empty country + find majority.
+		totalCountryPasses := 0
+		var majorityCC string
+		var majorityCount int
+		for cc, n := range countryCounts {
+			totalCountryPasses += n
+			if n > majorityCount {
+				majorityCount = n
+				majorityCC = cc
+			}
+		}
+
+		if totalCountryPasses == 0 {
 			// No country info ever → can't honestly classify. Skip.
 			continue
-		case 1:
-			// Same country every pass → stable. Use that country.
-			for c := range countries {
-				r.Country = c
-			}
-			stable = append(stable, r)
-		default:
-			// Rotated across 2+ countries → not stable for any single one.
-			// Keep latest country in the field for diagnostics but caller
-			// should treat as rotating.
-			rotating = append(rotating, r)
 		}
+
+		// MAJORITY-COUNTRY classification (LIVE-08 / GEO-05):
+		// Strict "every pass same country" was leaving vless's
+		// CDN-routed keys (~1200) all in rotating because xray-knife's
+		// stage 2 retests pick different CF edge-PoPs each attempt.
+		// Pragmatic compromise: if >=60% of passes agree on a country
+		// AND that country has >=2 passes, accept it as stable. The
+		// remaining ~40% rotation is honest noise from CDN routing —
+		// users get a usable key in the right ballpark instead of
+		// nothing.
+		const majorityThreshold = 0.60
+		const minMajorityCount = 2
+		majorityRatio := float64(majorityCount) / float64(totalCountryPasses)
+
+		if len(countryCounts) == 1 {
+			// Only one country observed → unambiguous stable.
+			r.Country = majorityCC
+			stable = append(stable, r)
+			continue
+		}
+
+		if majorityCount >= minMajorityCount && majorityRatio >= majorityThreshold {
+			// Strong majority on one country — call it stable for that
+			// country, even though some tests showed other exits.
+			r.Country = majorityCC
+			stable = append(stable, r)
+			continue
+		}
+
+		// No clear majority → genuinely rotating.
+		rotating = append(rotating, r)
 	}
 	return stable, rotating, nil
 }
