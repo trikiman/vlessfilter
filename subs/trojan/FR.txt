@@ -1,3 +1,2 @@
-trojan://2238e2f3-1a01-485e-8c22-24b65764c68b@172.64.152.23:443?allowInsecure=0&sni=gzjx.dpdns.org&type=ws&host=gzjx.dpdns.org&path=/51.91.253.83=8443#%F0%9F%87%AB%F0%9F%87%B7%20FR%20France
-trojan://2238e2f3-1a01-485e-8c22-24b65764c68b@172.64.152.23:443?type=ws&host=gzjx.dpdns.org&path=%2F51.91.253.83%3D8443&security=tls&sni=gzjx.dpdns.org#%F0%9F%87%AB%F0%9F%87%B7%20FR%20France
 trojan://humanity@185.18.250.252:443?type=ws&sni=www.calmlunch.com&path=/assignment&host=www.calmlunch.com#%F0%9F%87%AB%F0%9F%87%B7%20FR%20France
+trojan://humanity@104.20.42.250:443?path=/assignment&security=tls&host=www.calmloud.com&fp=chrome&type=ws&sni=www.calmloud.com#%F0%9F%87%AB%F0%9F%87%B7%20FR%20France
