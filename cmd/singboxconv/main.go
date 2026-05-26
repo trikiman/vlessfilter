@@ -1,22 +1,33 @@
-// Command singboxconv converts a sing-box client JSON config into the URI
+// Command singboxconv converts a sing-box OR Xray JSON config into URI
 // subscription format that xray-knife understands.
 //
-// Input  : sing-box JSON (stdin OR --url <http://...> OR --file <path>)
-// Output : one URI per line on stdout — vless:// / vmess:// / trojan:// / ss://
+// FORMATS HANDLED:
 //
-// We only emit URIs for outbounds whose `type` matches the schemes that
-// vlessfilter supports. Selector/urltest/direct/dns/block outbounds are
-// skipped silently (they're routing aggregators, not actual proxies).
+//   sing-box (https://sing-box.sagernet.org):
+//     {"outbounds":[{"type":"vless","server":"...","server_port":443,
+//                    "uuid":"...","tls":{...},"transport":{"type":"ws",...}}]}
 //
-// Sing-box outbounds are richer than URI fields (e.g. `reality.public_key`,
-// `utls.fingerprint`) — we round-trip whatever maps cleanly and drop the rest.
-// xray-knife will still test the resulting URI; if a TLS detail was lost,
-// the proxy may fail handshake, which the pipeline treats as "dead" anyway.
+//   Xray (https://xtls.github.io):
+//     {"outbounds":[{"protocol":"vless","settings":{"vnext":[{
+//                    "address":"...","port":443,
+//                    "users":[{"id":"...","encryption":"none","flow":"..."}]}]},
+//                    "streamSettings":{"network":"ws","security":"tls",...}}]}
+//
+// Auto-detection per-outbound: if `type` field is present we treat as sing-box,
+// if `protocol` is present we treat as Xray. Falls through to skip.
+//
+// Input: stdin OR --url <http-url> OR --file <path>
+// Output: one URI per line on stdout — vless:// / vmess:// / trojan:// / ss://
+//
+// Skipped silently:
+//   - Aggregator outbounds: selector, urltest, freedom, blackhole, dns, loopback
+//   - Unsupported protocols: hysteria/hysteria2, tuic, wireguard
+//   - Shadowsocks with v2ray-plugin (xray-knife doesn't speak it)
 //
 // Usage:
 //
 //	singboxconv --url https://sub.pai.yt/singbox > paiyt.txt
-//	curl -sSL https://sub.pai.yt/singbox | singboxconv > paiyt.txt
+//	curl -sSL https://example/xray.json | singboxconv > out.txt
 package main
 
 import (
@@ -34,7 +45,7 @@ import (
 	"time"
 )
 
-const usage = `singboxconv — convert sing-box JSON config to vlessfilter URI lines.
+const usage = `singboxconv — convert sing-box or Xray JSON config to URI lines.
 
 Usage:
   singboxconv [--url <http-url> | --file <path>] [flags]
@@ -44,10 +55,8 @@ Flags:
   --url <url>         Fetch JSON from this URL instead of stdin
   --file <path>       Read JSON from this local file instead of stdin
   --timeout <secs>    HTTP timeout when fetching --url (default 60)
-  --keep-tag          Use the outbound's "tag" as URI fragment (default: yes)
   --filter-protocol   Only emit URIs for this proto (vless,vmess,trojan,ss).
                       Empty (default) = all four supported protocols.
-  --skip-bad          Skip outbounds we can't convert (default; otherwise log+skip)
 `
 
 func main() {
@@ -77,19 +86,20 @@ func run() int {
 		return 1
 	}
 
-	var cfg singboxConfig
-	if err := json.Unmarshal(data, &cfg); err != nil {
+	// Generic decode — each outbound is a raw object so we can sniff its
+	// shape (sing-box vs Xray) before structured unmarshal.
+	var top struct {
+		Outbounds []json.RawMessage `json:"outbounds"`
+	}
+	if err := json.Unmarshal(data, &top); err != nil {
 		fmt.Fprintf(os.Stderr, "parse JSON: %v\n", err)
 		return 1
 	}
 
 	emitted := 0
 	skipped := 0
-	for _, ob := range cfg.Outbounds {
-		if *filterProto != "" && !matchesProto(ob.Type, *filterProto) {
-			continue
-		}
-		uri, ok := outboundToURI(ob)
+	for _, raw := range top.Outbounds {
+		uri, ok := convertOutbound(raw, *filterProto)
 		if !ok {
 			skipped++
 			continue
@@ -98,7 +108,7 @@ func run() int {
 		emitted++
 	}
 	fmt.Fprintf(os.Stderr, "singboxconv: emitted=%d skipped=%d total=%d\n",
-		emitted, skipped, len(cfg.Outbounds))
+		emitted, skipped, len(top.Outbounds))
 	return 0
 }
 
@@ -118,39 +128,57 @@ func fetchURL(rawURL string, timeout time.Duration) ([]byte, error) {
 	if resp.StatusCode != http.StatusOK {
 		return nil, fmt.Errorf("status %d", resp.StatusCode)
 	}
-	return io.ReadAll(io.LimitReader(resp.Body, 16<<20)) // 16 MiB
+	return io.ReadAll(io.LimitReader(resp.Body, 16<<20))
 }
 
-// singboxConfig captures only the parts of a sing-box config we care about.
-// Unknown fields are silently dropped by encoding/json's default behavior.
-type singboxConfig struct {
-	Outbounds []outbound `json:"outbounds"`
+// convertOutbound dispatches on format. Sniffs the object: presence of
+// `type` -> sing-box; presence of `protocol` -> Xray. Returns "", false if
+// neither matches or the protocol is unsupported.
+func convertOutbound(raw json.RawMessage, filterProto string) (string, bool) {
+	var sniff struct {
+		Type     string `json:"type"`
+		Protocol string `json:"protocol"`
+	}
+	if err := json.Unmarshal(raw, &sniff); err != nil {
+		return "", false
+	}
+	switch {
+	case sniff.Type != "":
+		return convertSingboxOutbound(raw, filterProto)
+	case sniff.Protocol != "":
+		return convertXrayOutbound(raw, filterProto)
+	}
+	return "", false
 }
 
-type outbound struct {
-	Type       string         `json:"type"`
-	Tag        string         `json:"tag"`
-	Server     string         `json:"server"`
-	ServerPort int            `json:"server_port"`
-	UUID       string         `json:"uuid"`
-	Password   string         `json:"password"`
-	Method     string         `json:"method"`     // ss
-	AlterID    int            `json:"alter_id"`   // vmess
-	Security   string         `json:"security"`   // vmess: auto/aes-128-gcm
-	Flow       string         `json:"flow"`       // vless: xtls-rprx-vision
-	TLS        *tlsBlock      `json:"tls"`
-	Transport  *transportBlk  `json:"transport"`
-	Plugin     string         `json:"plugin"`      // ss
-	PluginOpts string         `json:"plugin_opts"` // ss
+// ============================================================================
+// SING-BOX FORMAT
+// ============================================================================
+
+type singboxOutbound struct {
+	Type       string        `json:"type"`
+	Tag        string        `json:"tag"`
+	Server     string        `json:"server"`
+	ServerPort int           `json:"server_port"`
+	UUID       string        `json:"uuid"`
+	Password   string        `json:"password"`
+	Method     string        `json:"method"`
+	AlterID    int           `json:"alter_id"`
+	Security   string        `json:"security"`
+	Flow       string        `json:"flow"`
+	TLS        *tlsBlock     `json:"tls"`
+	Transport  *transportBlk `json:"transport"`
+	Plugin     string        `json:"plugin"`
+	PluginOpts string        `json:"plugin_opts"`
 }
 
 type tlsBlock struct {
-	Enabled    bool         `json:"enabled"`
-	Insecure   bool         `json:"insecure"`
-	ServerName string       `json:"server_name"`
-	ALPN       []string     `json:"alpn"`
-	UTLS       *utlsBlock   `json:"utls"`
-	Reality    *realityBlk  `json:"reality"`
+	Enabled    bool        `json:"enabled"`
+	Insecure   bool        `json:"insecure"`
+	ServerName string      `json:"server_name"`
+	ALPN       []string    `json:"alpn"`
+	UTLS       *utlsBlock  `json:"utls"`
+	Reality    *realityBlk `json:"reality"`
 }
 
 type utlsBlock struct {
@@ -165,14 +193,37 @@ type realityBlk struct {
 }
 
 type transportBlk struct {
-	Type    string            `json:"type"` // ws / grpc / http / quic
-	Path    string            `json:"path"`
-	Headers map[string]string `json:"headers"`
-	// gRPC-specific
-	ServiceName string `json:"service_name"`
+	Type        string            `json:"type"`
+	Path        string            `json:"path"`
+	Headers     map[string]string `json:"headers"`
+	ServiceName string            `json:"service_name"`
 }
 
-func matchesProto(sbType, want string) bool {
+func convertSingboxOutbound(raw json.RawMessage, filterProto string) (string, bool) {
+	var ob singboxOutbound
+	if err := json.Unmarshal(raw, &ob); err != nil {
+		return "", false
+	}
+	if filterProto != "" && !singboxMatchesProto(ob.Type, filterProto) {
+		return "", false
+	}
+	if ob.Server == "" || ob.ServerPort == 0 {
+		return "", false
+	}
+	switch ob.Type {
+	case "vless":
+		return singboxVlessURI(ob), true
+	case "vmess":
+		return singboxVmessURI(ob), true
+	case "trojan":
+		return singboxTrojanURI(ob), true
+	case "shadowsocks":
+		return singboxSsURI(ob)
+	}
+	return "", false
+}
+
+func singboxMatchesProto(sbType, want string) bool {
 	want = strings.ToLower(want)
 	switch sbType {
 	case "vless", "vmess", "trojan":
@@ -183,24 +234,7 @@ func matchesProto(sbType, want string) bool {
 	return false
 }
 
-func outboundToURI(ob outbound) (string, bool) {
-	if ob.Server == "" || ob.ServerPort == 0 {
-		return "", false
-	}
-	switch ob.Type {
-	case "vless":
-		return vlessURI(ob), true
-	case "vmess":
-		return vmessURI(ob), true
-	case "trojan":
-		return trojanURI(ob), true
-	case "shadowsocks":
-		return ssURI(ob)
-	}
-	return "", false
-}
-
-func vlessURI(ob outbound) string {
+func singboxVlessURI(ob singboxOutbound) string {
 	q := url.Values{}
 	q.Set("type", "tcp")
 	if ob.Transport != nil {
@@ -249,8 +283,7 @@ func vlessURI(ob outbound) string {
 		ob.UUID, ob.Server, ob.ServerPort, q.Encode(), frag)
 }
 
-func vmessURI(ob outbound) string {
-	// vmess uses a base64-JSON URI per v2rayN convention.
+func singboxVmessURI(ob singboxOutbound) string {
 	v := map[string]any{
 		"v":    "2",
 		"ps":   ob.Tag,
@@ -292,7 +325,7 @@ func vmessURI(ob outbound) string {
 	return "vmess://" + base64.StdEncoding.EncodeToString(body)
 }
 
-func trojanURI(ob outbound) string {
+func singboxTrojanURI(ob singboxOutbound) string {
 	q := url.Values{}
 	q.Set("security", "tls")
 	if ob.TLS != nil && ob.TLS.Enabled {
@@ -326,12 +359,7 @@ func trojanURI(ob outbound) string {
 		url.QueryEscape(ob.Password), ob.Server, ob.ServerPort, q.Encode(), frag)
 }
 
-// ssURI emits ss://method:password@host:port#tag with userinfo base64-encoded
-// (the v2rayN/SIP002 format). xray-knife and most clients accept this.
-//
-// Skips configs with v2ray-plugin since the URI form for those is
-// implementation-specific and tends to break our pipeline.
-func ssURI(ob outbound) (string, bool) {
+func singboxSsURI(ob singboxOutbound) (string, bool) {
 	if ob.Plugin != "" {
 		return "", false
 	}
@@ -346,10 +374,318 @@ func ssURI(ob outbound) (string, bool) {
 		encoded, ob.Server, strconv.Itoa(ob.ServerPort), frag), true
 }
 
-// safeFragment URL-escapes the tag for use as the URI fragment. Newlines
-// and CRs would corrupt the line-per-URI output.
+// ============================================================================
+// XRAY FORMAT
+// ============================================================================
+
+type xrayOutbound struct {
+	Tag            string        `json:"tag"`
+	Protocol       string        `json:"protocol"`
+	Settings       *xraySettings `json:"settings"`
+	StreamSettings *xrayStream   `json:"streamSettings"`
+}
+
+type xraySettings struct {
+	Vnext   []xrayVnext  `json:"vnext"`
+	Servers []xrayServer `json:"servers"`
+}
+
+type xrayVnext struct {
+	Address string     `json:"address"`
+	Port    int        `json:"port"`
+	Users   []xrayUser `json:"users"`
+}
+
+type xrayUser struct {
+	ID         string `json:"id"`
+	AlterID    int    `json:"alterId"`
+	Security   string `json:"security"`
+	Encryption string `json:"encryption"`
+	Flow       string `json:"flow"`
+}
+
+type xrayServer struct {
+	Address  string `json:"address"`
+	Port     int    `json:"port"`
+	Method   string `json:"method"`
+	Password string `json:"password"`
+}
+
+type xrayStream struct {
+	Network         string                `json:"network"`
+	Security        string                `json:"security"`
+	TLSSettings     *xrayTLS              `json:"tlsSettings"`
+	RealitySettings *xrayReality          `json:"realitySettings"`
+	WSSettings      *xrayWS               `json:"wsSettings"`
+	GRPCSettings    *xrayGRPC             `json:"grpcSettings"`
+	TCPSettings     *xrayTCP              `json:"tcpSettings"`
+	HTTPSettings    *xrayHTTP             `json:"httpSettings"`
+}
+
+type xrayTLS struct {
+	ServerName  string   `json:"serverName"`
+	Fingerprint string   `json:"fingerprint"`
+	ALPN        []string `json:"alpn"`
+}
+
+type xrayReality struct {
+	ServerName  string `json:"serverName"`
+	Fingerprint string `json:"fingerprint"`
+	PublicKey   string `json:"publicKey"`
+	ShortID     string `json:"shortId"`
+}
+
+type xrayWS struct {
+	Path    string            `json:"path"`
+	Headers map[string]string `json:"headers"`
+}
+
+type xrayGRPC struct {
+	ServiceName string `json:"serviceName"`
+	MultiMode   bool   `json:"multiMode"`
+}
+
+type xrayTCP struct {
+	Header *xrayHeader `json:"header"`
+}
+
+type xrayHeader struct {
+	Type string `json:"type"`
+}
+
+type xrayHTTP struct {
+	Path string   `json:"path"`
+	Host []string `json:"host"`
+}
+
+func convertXrayOutbound(raw json.RawMessage, filterProto string) (string, bool) {
+	var ob xrayOutbound
+	if err := json.Unmarshal(raw, &ob); err != nil {
+		return "", false
+	}
+	proto := strings.ToLower(ob.Protocol)
+	// Skip aggregator/local outbounds
+	switch proto {
+	case "freedom", "blackhole", "dns", "loopback":
+		return "", false
+	}
+	if filterProto != "" && !xrayMatchesProto(proto, filterProto) {
+		return "", false
+	}
+	switch proto {
+	case "vless":
+		return xrayVlessURI(ob)
+	case "vmess":
+		return xrayVmessURI(ob)
+	case "trojan":
+		return xrayTrojanURI(ob)
+	case "shadowsocks":
+		return xraySsURI(ob)
+	}
+	return "", false
+}
+
+func xrayMatchesProto(p, want string) bool {
+	want = strings.ToLower(want)
+	switch p {
+	case "vless", "vmess", "trojan":
+		return p == want
+	case "shadowsocks":
+		return want == "ss" || want == "shadowsocks"
+	}
+	return false
+}
+
+// xrayBuildStreamQuery extracts transport + tls/reality params from
+// streamSettings into a url.Values that's shared across vless/trojan URIs.
+func xrayBuildStreamQuery(stream *xrayStream) url.Values {
+	q := url.Values{}
+	if stream == nil {
+		q.Set("type", "tcp")
+		q.Set("security", "none")
+		return q
+	}
+	network := stream.Network
+	if network == "" {
+		network = "tcp"
+	}
+	security := stream.Security
+	if security == "" {
+		security = "none"
+	}
+	q.Set("type", network)
+	q.Set("security", security)
+
+	switch network {
+	case "ws":
+		if stream.WSSettings != nil {
+			if stream.WSSettings.Path != "" {
+				q.Set("path", stream.WSSettings.Path)
+			}
+			if h, ok := stream.WSSettings.Headers["Host"]; ok && h != "" {
+				q.Set("host", h)
+			} else if h, ok := stream.WSSettings.Headers["host"]; ok && h != "" {
+				q.Set("host", h)
+			}
+		}
+	case "grpc":
+		if stream.GRPCSettings != nil {
+			if stream.GRPCSettings.ServiceName != "" {
+				q.Set("serviceName", stream.GRPCSettings.ServiceName)
+			}
+			if stream.GRPCSettings.MultiMode {
+				q.Set("mode", "multi")
+			} else {
+				q.Set("mode", "gun")
+			}
+		}
+	case "tcp":
+		if stream.TCPSettings != nil && stream.TCPSettings.Header != nil && stream.TCPSettings.Header.Type != "" {
+			q.Set("headerType", stream.TCPSettings.Header.Type)
+		}
+	case "h2", "http":
+		if stream.HTTPSettings != nil {
+			if stream.HTTPSettings.Path != "" {
+				q.Set("path", stream.HTTPSettings.Path)
+			}
+			if len(stream.HTTPSettings.Host) > 0 {
+				q.Set("host", strings.Join(stream.HTTPSettings.Host, ","))
+			}
+		}
+	}
+
+	switch security {
+	case "tls":
+		if stream.TLSSettings != nil {
+			if stream.TLSSettings.ServerName != "" {
+				q.Set("sni", stream.TLSSettings.ServerName)
+			}
+			if stream.TLSSettings.Fingerprint != "" {
+				q.Set("fp", stream.TLSSettings.Fingerprint)
+			}
+			if len(stream.TLSSettings.ALPN) > 0 {
+				q.Set("alpn", strings.Join(stream.TLSSettings.ALPN, ","))
+			}
+		}
+	case "reality":
+		if stream.RealitySettings != nil {
+			if stream.RealitySettings.ServerName != "" {
+				q.Set("sni", stream.RealitySettings.ServerName)
+			}
+			if stream.RealitySettings.Fingerprint != "" {
+				q.Set("fp", stream.RealitySettings.Fingerprint)
+			}
+			if stream.RealitySettings.PublicKey != "" {
+				q.Set("pbk", stream.RealitySettings.PublicKey)
+			}
+			if stream.RealitySettings.ShortID != "" {
+				q.Set("sid", stream.RealitySettings.ShortID)
+			}
+		}
+	}
+	return q
+}
+
+func xrayVlessURI(ob xrayOutbound) (string, bool) {
+	if ob.Settings == nil || len(ob.Settings.Vnext) == 0 {
+		return "", false
+	}
+	sv := ob.Settings.Vnext[0]
+	if sv.Address == "" || sv.Port == 0 || len(sv.Users) == 0 {
+		return "", false
+	}
+	user := sv.Users[0]
+	q := xrayBuildStreamQuery(ob.StreamSettings)
+	enc := user.Encryption
+	if enc == "" {
+		enc = "none"
+	}
+	q.Set("encryption", enc)
+	if user.Flow != "" {
+		q.Set("flow", user.Flow)
+	}
+	frag := safeFragment(ob.Tag)
+	return fmt.Sprintf("vless://%s@%s:%d?%s#%s",
+		user.ID, sv.Address, sv.Port, q.Encode(), frag), true
+}
+
+func xrayVmessURI(ob xrayOutbound) (string, bool) {
+	if ob.Settings == nil || len(ob.Settings.Vnext) == 0 {
+		return "", false
+	}
+	sv := ob.Settings.Vnext[0]
+	if sv.Address == "" || sv.Port == 0 || len(sv.Users) == 0 {
+		return "", false
+	}
+	user := sv.Users[0]
+	q := xrayBuildStreamQuery(ob.StreamSettings)
+
+	v := map[string]any{
+		"v":    "2",
+		"ps":   ob.Tag,
+		"add":  sv.Address,
+		"port": fmt.Sprintf("%d", sv.Port),
+		"id":   user.ID,
+		"aid":  fmt.Sprintf("%d", user.AlterID),
+		"net":  q.Get("type"),
+		"type": q.Get("headerType"),
+		"host": q.Get("host"),
+		"path": q.Get("path"),
+		"tls":  q.Get("security"),
+		"sni":  q.Get("sni"),
+		"alpn": q.Get("alpn"),
+		"fp":   q.Get("fp"),
+	}
+	if user.Security != "" {
+		v["scy"] = user.Security
+	} else {
+		v["scy"] = "auto"
+	}
+	if v["tls"] == "none" {
+		v["tls"] = ""
+	}
+	body, _ := json.Marshal(v)
+	return "vmess://" + base64.StdEncoding.EncodeToString(body), true
+}
+
+func xrayTrojanURI(ob xrayOutbound) (string, bool) {
+	if ob.Settings == nil || len(ob.Settings.Servers) == 0 {
+		return "", false
+	}
+	sv := ob.Settings.Servers[0]
+	if sv.Address == "" || sv.Port == 0 || sv.Password == "" {
+		return "", false
+	}
+	q := xrayBuildStreamQuery(ob.StreamSettings)
+	frag := safeFragment(ob.Tag)
+	return fmt.Sprintf("trojan://%s@%s:%d?%s#%s",
+		url.QueryEscape(sv.Password), sv.Address, sv.Port, q.Encode(), frag), true
+}
+
+func xraySsURI(ob xrayOutbound) (string, bool) {
+	if ob.Settings == nil || len(ob.Settings.Servers) == 0 {
+		return "", false
+	}
+	sv := ob.Settings.Servers[0]
+	if sv.Address == "" || sv.Port == 0 || sv.Method == "" {
+		return "", false
+	}
+	userinfo := sv.Method + ":" + sv.Password
+	encoded := base64.StdEncoding.EncodeToString([]byte(userinfo))
+	frag := safeFragment(ob.Tag)
+	return fmt.Sprintf("ss://%s@%s:%d#%s",
+		encoded, sv.Address, sv.Port, frag), true
+}
+
+// ============================================================================
+// SHARED HELPERS
+// ============================================================================
+
 func safeFragment(tag string) string {
 	tag = strings.ReplaceAll(tag, "\n", " ")
 	tag = strings.ReplaceAll(tag, "\r", " ")
+	if tag == "" {
+		tag = "node"
+	}
 	return url.QueryEscape(tag)
 }
