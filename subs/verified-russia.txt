@@ -1,6 +1,10 @@
-﻿vless://de87620b-6bff-4077-99cc-ce65e06b64ed@5.188.156.138:4443?encryption=none&security=none&type=tcp#%F0%9F%87%B7%F0%9F%87%BA%20RU%20Russia
-vless://de87620b-6bff-4077-99cc-ce65e06b64ed@5.188.156.138:4443?encryption=none&type=tcp&security=none#%F0%9F%87%B7%F0%9F%87%BA%20RU%20Russia
+vless://de87620b-6bff-4077-99cc-ce65e06b64ed@87.228.124.196:4443?encryption=none&type=tcp&security=none#%F0%9F%87%B7%F0%9F%87%BA%20Russia%20%5B%2ACIDR%5D
+vless://b6083a84-80a5-3e88-9dbb-5c8ef241be3a@158.160.250.45:443?type=tcp&security=reality&fp=chrome&pbk=mDtiIWLFPJoPVrDLOCvKn6lvlS8r0TdRO9MxmmdIDmo&sid=917fd5a45e8840&sni=ads.x5.ru#%F0%9F%87%B7%F0%9F%87%BA%20Russia%20%5B%2ACIDR%5D%20YA
+vless://35325a3c-411e-42a8-962b-db12e55b071d@185.236.25.24:2027?flow=xtls-rprx-vision&fp=chrome&pbk=EApxy12MeXpqt-78odxizwcXT6hX9f8XeAcbMDVRAV0&security=reality&sid=6ba7b8109dad11d1&sni=sp.skysafe.online&type=tcp#%F0%9F%87%AA%F0%9F%87%B8%20Spain%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D
+vless://91a3f712-c4e0-42a0-9475-bdd551a06e73@155.212.146.195:443?path=%2Fapi%2Fv3%2Ff29479507adb&security=reality&encryption=none&pbk=AhQkw1Ydp_ZkXnE7UbIZvwHk9KE_Bf5_TkojYZZUuGs&host=ads.x5.ru&fp=chrome&type=xhttp&sni=ads.x5.ru&sid=2da46294d6a521B2#%F0%9F%87%BA%F0%9F%87%B8%20United%20States%20%7C%20%F0%9F%8C%90%20%5BSNI-RU%5D%20ads.x5.ru
+trojan://03mpolj39zyewzufal2r@51.75.86.196:55646?security=tls&insecure=1&allowInsecure=1&type=tcp&headerType=none#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
+vless://6d49fae1-374d-313e-b360-1227b0ea8dea@s356.ccgfw.online:443?encryption=none&type=tcp&headerType=none&fp=random&host=s356.ccgfw.online&path=&flow=xtls-rprx-vision&security=tls&sni=09d7s356.ccgfw.online&serviceName=&mode=&alpn=#%F0%9F%87%AD%F0%9F%87%B0%20Hong%20Kong%20%7C%20%F0%9F%8C%90%20%7C%20%5BBL%5D
+vless://de87620b-6bff-4077-99cc-ce65e06b64ed@5.188.156.138:4443?encryption=none&security=none&type=tcp#%F0%9F%87%B7%F0%9F%87%BA%20RU%20Russia
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo3ZTczMWVjMy1mOGUxLTQzZjYtOTJjZi0zOTc4ZDE0NzA1YzQ@r3mrcg001269pz2.cybervena.com:50099#%F0%9F%87%B9%F0%9F%87%BC%20TW%20Taiwan
 trojan://BxceQaOe@116.80.61.236:443?allowInsecure=1&sni=t.me%252Fripaojiedian#%F0%9F%87%AF%F0%9F%87%B5%20JP%20Japan
-trojan://03mpolj39zyewzufal2r@51.75.86.196:55646?security=tls&insecure=1&allowInsecure=1&type=tcp&headerType=none#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
 trojan://2238e2f3-1a01-485e-8c22-24b65764c68b@172.64.152.23:443?allowInsecure=0&sni=gzjx.dpdns.org&type=ws&host=gzjx.dpdns.org&path=/51.91.253.83=8443#%F0%9F%87%AB%F0%9F%87%B7%20FR%20France
