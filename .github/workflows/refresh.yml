@@ -14,10 +14,10 @@
 name: refresh
 
 on:
-  # Cron disabled while we work on the from-Russia verified pipeline.
-  # Re-enable by uncommenting the schedule block below.
-  # schedule:
-  #   - cron: '0 */2 * * *'
+  # Re-enabled at 4h interval (less aggressive than original 2h).
+  # The verify-russia workflow runs every 30min on its own.
+  schedule:
+    - cron: '0 */4 * * *'
   workflow_dispatch:
     inputs:
       threads1:

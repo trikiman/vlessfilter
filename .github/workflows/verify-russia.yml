@@ -1,0 +1,240 @@
+# verify-russia.yml — bridge-verify candidate keys via RU SOCKS proxy
+#
+# How this works:
+# 1. Pick alive RU keys from subs/RU.txt as bridge candidates.
+# 2. Start xray-knife proxy inbound with the best bridge → local SOCKS5.
+# 3. Use proxychains4 to route xray-knife http tests through the bridge.
+#    Test traffic egresses via Russian datacenter IP, approximating
+#    what users on Russian residential IPs experience.
+# 4. Keys that pass the bridge test → subs/verified-russia.txt.
+# 5. Commit + push.
+#
+# Runs every 30 min (much faster than the full refresh.yml every 4h).
+# Total cycle ~3-5 min: bridge boot + ~120 candidate tests at ~2s each.
+name: verify-russia
+
+on:
+  schedule:
+    # Every 30 min
+    - cron: '*/30 * * * *'
+  workflow_dispatch:
+  workflow_run:
+    # Also run immediately after refresh.yml completes (so freshly
+    # discovered keys get bridge-verified ASAP).
+    workflows: ['refresh']
+    types: [completed]
+
+concurrency:
+  group: verify-russia
+  cancel-in-progress: false
+
+jobs:
+  bridge-verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          token: ${{ secrets.PUSH_TOKEN || github.token }}
+
+      - name: Setup Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.22'
+
+      - name: Install xray-knife + proxychains4
+        run: |
+          go install github.com/lilendian0x00/xray-knife/v9@latest
+          echo "$HOME/go/bin" >> $GITHUB_PATH
+          sudo apt-get install -y proxychains4
+
+      - name: Pick first alive RU bridge
+        id: pick-bridge
+        run: |
+          set +e
+          export PATH=$PATH:$HOME/go/bin
+
+          BRIDGE_FILE="subs/RU.txt"
+          if [ ! -f "$BRIDGE_FILE" ]; then
+            echo "::error::no $BRIDGE_FILE — nothing to use as bridge"
+            exit 1
+          fi
+
+          # Dedupe candidates (some keys appear multiple times)
+          mapfile -t candidates < <(grep -E "^(vless|trojan|ss|vmess)://" "$BRIDGE_FILE" | sort -u)
+          if [ ${#candidates[@]} -eq 0 ]; then
+            echo "::error::$BRIDGE_FILE has no protocol URIs"
+            exit 1
+          fi
+
+          echo "Have ${#candidates[@]} unique RU candidates to try as bridge"
+
+          # Test each candidate; pick first that passes a quick liveness probe
+          BRIDGE=""
+          for c in "${candidates[@]}"; do
+            host=$(echo "$c" | grep -oE '@[^:?/#]+:[0-9]+' | head -1 | tr -d '@')
+            echo "Testing bridge: $host"
+            out=$(timeout 10 xray-knife http -c "$c" -u "https://www.cloudflare.com/cdn-cgi/trace" -d 5000 -b 2>&1)
+            if echo "$out" | grep -q "✅"; then
+              echo "  $host PASS — using as bridge"
+              BRIDGE="$c"
+              break
+            else
+              echo "  $host FAIL"
+            fi
+          done
+
+          if [ -z "$BRIDGE" ]; then
+            echo "::warning::no live RU bridge — skipping verify (keeping previous verified-russia.txt)"
+            echo "skip=true" >> $GITHUB_OUTPUT
+            exit 0
+          fi
+
+          # Stash bridge to file (env var has length limits)
+          echo "$BRIDGE" > /tmp/ru-bridge.txt
+          echo "skip=false" >> $GITHUB_OUTPUT
+
+      - name: Start RU bridge as SOCKS proxy
+        if: steps.pick-bridge.outputs.skip != 'true'
+        run: |
+          export PATH=$PATH:$HOME/go/bin
+          BRIDGE=$(cat /tmp/ru-bridge.txt)
+
+          nohup xray-knife proxy inbound -c "$BRIDGE" -p 19999 -a 127.0.0.1 > /tmp/bridge.log 2>&1 &
+          echo $! > /tmp/bridge.pid
+          sleep 5
+
+          if ! kill -0 $(cat /tmp/bridge.pid) 2>/dev/null; then
+            echo "::error::bridge process died"
+            tail -30 /tmp/bridge.log
+            exit 1
+          fi
+
+          USER=$(grep -oE 'Username:\s*\S+' /tmp/bridge.log | head -1 | awk '{print $2}')
+          PASS=$(grep -oE 'Password:\s*\S+' /tmp/bridge.log | head -1 | awk '{print $2}')
+          echo "Bridge SOCKS auth: $USER / $PASS"
+
+          cat > /tmp/pc.conf <<EOF
+strict_chain
+proxy_dns
+remote_dns_subnet 224
+tcp_read_time_out 15000
+tcp_connect_time_out 8000
+[ProxyList]
+socks5 127.0.0.1 19999 $USER $PASS
+EOF
+
+          # Sanity check: what IP does the bridge exit through?
+          echo "=== Bridge exit identity ==="
+          proxychains4 -f /tmp/pc.conf curl -sSL --max-time 10 https://api.ipify.org 2>/dev/null || echo "ipify failed"
+          echo
+
+      - name: Bridge-verify candidates
+        if: steps.pick-bridge.outputs.skip != 'true'
+        run: |
+          export PATH=$PATH:$HOME/go/bin
+          set +e
+
+          # Candidate pool: every key in subs/all.txt (union of all 4 protos)
+          if [ ! -f subs/all.txt ]; then
+            echo "::error::no subs/all.txt"
+            exit 1
+          fi
+
+          mapfile -t cands < <(grep -E "^(vless|vmess|trojan|ss)://" subs/all.txt | sort -u)
+          echo "Pool: ${#cands[@]} unique candidates"
+
+          : > /tmp/verified.txt
+          : > /tmp/timings.txt
+          PASS_COUNT=0
+          FAIL_COUNT=0
+          DEADLINE=$(($(date +%s) + 480))  # 8-min budget for tests
+
+          for c in "${cands[@]}"; do
+            if [ $(date +%s) -gt $DEADLINE ]; then
+              echo "[TIMEOUT] $PASS_COUNT pass, $FAIL_COUNT fail; budget exhausted"
+              break
+            fi
+
+            # Test 3 URLs; require all 3 to pass to qualify
+            all_ok=1
+            total_delay=0
+            for url in "https://ipinfo.io/json" "https://www.google.com/" "https://www.cloudflare.com/cdn-cgi/trace"; do
+              out=$(timeout 15 proxychains4 -f /tmp/pc.conf xray-knife http -c "$c" -u "$url" -d 6000 -b 2>&1)
+              if ! echo "$out" | grep -q "✅"; then
+                all_ok=0
+                break
+              fi
+              delay=$(echo "$out" | grep -oE "Real Delay:\s*[0-9]+" | awk '{print $NF}')
+              total_delay=$((total_delay + delay))
+            done
+
+            if [ $all_ok -eq 1 ]; then
+              avg=$((total_delay / 3))
+              # Reject high-latency (>2500ms avg through bridge)
+              if [ $avg -le 2500 ]; then
+                echo "$c" >> /tmp/verified.txt
+                echo "$avg $c" >> /tmp/timings.txt
+                PASS_COUNT=$((PASS_COUNT + 1))
+                echo "  [+$PASS_COUNT] avg=${avg}ms"
+              fi
+            else
+              FAIL_COUNT=$((FAIL_COUNT + 1))
+            fi
+
+            # Stop early once we have 25 verified
+            if [ $PASS_COUNT -ge 25 ]; then
+              echo "[TARGET] hit 25 verified, stopping"
+              break
+            fi
+          done
+
+          echo
+          echo "Result: $PASS_COUNT verified out of $((PASS_COUNT + FAIL_COUNT)) tested"
+
+          # Sort by latency, write to subs/verified-russia.txt
+          if [ $PASS_COUNT -gt 0 ]; then
+            sort -n /tmp/timings.txt | awk '{$1=""; sub(/^ /,""); print}' > subs/verified-russia.txt
+            echo "Top 10 fastest:"
+            sort -n /tmp/timings.txt | head -10 | awk '{print "  " $1 "ms  " substr($2, 1, 60) "..."}'
+          else
+            echo "::warning::0 verified — keeping previous subs/verified-russia.txt unchanged"
+          fi
+
+      - name: Stop bridge
+        if: always() && steps.pick-bridge.outputs.skip != 'true'
+        run: |
+          if [ -f /tmp/bridge.pid ]; then
+            kill $(cat /tmp/bridge.pid) 2>/dev/null || true
+          fi
+
+      - name: Commit and push
+        if: steps.pick-bridge.outputs.skip != 'true'
+        env:
+          PUSH_TOKEN: ${{ secrets.PUSH_TOKEN }}
+        run: |
+          set -e
+          git config user.name "VlessFilter Bot"
+          git config user.email "vf-bot@noreply.github.com"
+          git add -f subs/verified-russia.txt
+          if git diff --cached --quiet; then
+            echo "no changes to verified-russia.txt"
+            exit 0
+          fi
+          git commit -m "verify-russia: refresh $(date -u +%Y%m%d-%H%M%S)"
+          git fetch origin main
+          git rebase origin/main || {
+            git rebase --abort 2>/dev/null || true
+            git reset --hard origin/main
+            git add -f subs/verified-russia.txt
+            git commit -m "verify-russia: refresh $(date -u +%Y%m%d-%H%M%S) (forced)" --allow-empty
+          }
+          if [ -n "$PUSH_TOKEN" ]; then
+            git push "https://x-access-token:${PUSH_TOKEN}@github.com/${{ github.repository }}.git" HEAD:main
+          else
+            git push origin HEAD:main
+          fi
