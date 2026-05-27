@@ -1,6 +1,6 @@
 vless://256c5f48-4908-4255-83d1-c86cb58f22b4@185.171.202.48:443?encryption=none&flow=xtls-rprx-vision&fp=chrome&pbk=wgoLhL4pRP0y6fu6He4qW_ElohCM_ANWJF3HEoUhNz4&security=reality&sid=9c2378562188c3cb&sni=fr.denditop.site&type=tcp&source_name=argh_v2rayauto_vless&provider_id=argh_v2rayauto_vless#%F0%9F%87%AB%F0%9F%87%B7%20FR%20France
 vless://256c5f48-4908-4255-83d1-c86cb58f22b4@185.171.202.38:443?encryption=none&flow=xtls-rprx-vision&fp=chrome&pbk=wgoLhL4pRP0y6fu6He4qW_ElohCM_ANWJF3HEoUhNz4&security=reality&sid=9c2378562188c3cb&sni=fr.denditop.site&type=tcp#%F0%9F%87%AB%F0%9F%87%B7%20FR%20France
 vless://256c5f48-4908-4255-83d1-c86cb58f22b4@fr.denditop.site:443?flow=xtls-rprx-vision&fp=chrome&pbk=wgoLhL4pRP0y6fu6He4qW_ElohCM_ANWJF3HEoUhNz4&security=reality&sid=9c2378562188c3cb&sni=fr.denditop.site#%F0%9F%87%AB%F0%9F%87%B7%20FR%20France
-trojan://2238e2f3-1a01-485e-8c22-24b65764c68b@172.64.152.23:443?allowInsecure=0&sni=gzjx.dpdns.org&type=ws&host=gzjx.dpdns.org&path=/51.91.253.83=8443#%F0%9F%87%AB%F0%9F%87%B7%20FR%20France
-trojan://humanity@188.114.98.0:443?security=tls&type=ws&sni=www.calmlunch.com&path=/assignment&host=www.calmlunch.com#%F0%9F%87%AB%F0%9F%87%B7%20FR%20France
-trojan://humanity@172.64.152.23:443?path=/assignment&security=tls&insecure=0&host=www.gossipglove.com&fp=chrome&type=ws&allowInsecure=0&sni=www.gossipglove.com#%F0%9F%87%AB%F0%9F%87%B7%20FR%20France
+trojan://humanity@188.114.98.0:443?path=%2Fassignment&security=tls&insecure=0&host=www.calmlunch.com&type=ws&allowInsecure=0&sni=www.calmlunch.com#%F0%9F%87%AB%F0%9F%87%B7%20FR%20France
+trojan://humanity@185.18.250.245:443?security=tls&sni=www.calmlunch.com&allowInsecure=1&type=ws&host=www.calmlunch.com&path=/assignment#%F0%9F%87%AB%F0%9F%87%B7%20FR%20France
+trojan://humanity@188.114.98.0:443?host=www.calmlunch.com&path=%2Fassignment&sni=www.calmlunch.com&type=ws#%F0%9F%87%AB%F0%9F%87%B7%20FR%20France
