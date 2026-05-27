@@ -631,3 +631,56 @@ sources:
     url: https://raw.githubusercontent.com/Surfboardv2ray/Proxy-sorter/main/output/IR.txt
     kind: plain
     enabled: true
+
+  # === RU-curated sources (from saleapp/vless/sources.py) ===
+  # These are aggregators specifically curated for working-from-Russia keys.
+  # Empirically validated by the saleapp project for VkusVill scraper. Higher
+  # signal-to-noise for Russian users than the generic aggregators above.
+
+  # igareck/vpn-configs-for-russia — 7 files unioned (BLACK = bypass-uplink,
+  # WHITE = CIDR/SNI-whitelist). Multiple variants ship the same nodes
+  # tagged differently; dedup is handled downstream.
+  - name: igareck-black-vless-rus
+    url: https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/BLACK_VLESS_RUS.txt
+    kind: plain
+    enabled: true
+  - name: igareck-black-vless-rus-mobile
+    url: https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/BLACK_VLESS_RUS_mobile.txt
+    kind: plain
+    enabled: true
+  - name: igareck-vless-reality-white-rus-mobile
+    url: https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/Vless-Reality-White-Lists-Rus-Mobile.txt
+    kind: plain
+    enabled: true
+  - name: igareck-vless-reality-white-rus-mobile-2
+    url: https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/Vless-Reality-White-Lists-Rus-Mobile-2.txt
+    kind: plain
+    enabled: true
+  - name: igareck-white-cidr-ru-all
+    url: https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/WHITE-CIDR-RU-all.txt
+    kind: plain
+    enabled: true
+  - name: igareck-white-cidr-ru-checked
+    url: https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/WHITE-CIDR-RU-checked.txt
+    kind: plain
+    enabled: true
+  - name: igareck-white-sni-ru-all
+    url: https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/WHITE-SNI-RU-all.txt
+    kind: plain
+    enabled: true
+
+  # kort0881/vpn-vless-configs-russia — SNI-filtered for RU usage.
+  # Distinct from kort0881/vpn-aggregator (which is EU-focused). saleapp
+  # noted ~595 RU-flagged vless URIs at last sample.
+  - name: kort0881-rus-sni-filtered
+    url: https://raw.githubusercontent.com/kort0881/vpn-vless-configs-russia/main/subscriptions/sni_filtered.txt
+    kind: plain
+    enabled: true
+
+  # v2nodes.com paid RU subscription. API key provided by saleapp operator
+  # 2026-05-22; returns small batch of vless+reality nodes (~6 per fetch).
+  # base64-encoded body — auto-detected by sources.DecodeBody.
+  - name: v2nodes-ru-paid
+    url: https://www.v2nodes.com/subscriptions/country/ru/?key=B128098C26C74AF
+    kind: plain
+    enabled: true
