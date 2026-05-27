@@ -54,33 +54,60 @@ jobs:
 
       - name: Pick first alive RU bridge
         id: pick-bridge
+        env:
+          # Optional fallback bridge supplied as repo secret. If subs/RU.txt
+          # is stale-empty / all dead, we try this. Set RU_BRIDGE_FALLBACK
+          # in repo Settings > Secrets to enable.
+          RU_BRIDGE_FALLBACK: ${{ secrets.RU_BRIDGE_FALLBACK }}
         run: |
           set +e
           export PATH=$PATH:$HOME/go/bin
 
           BRIDGE_FILE="subs/RU.txt"
-          if [ ! -f "$BRIDGE_FILE" ]; then
-            echo "::error::no $BRIDGE_FILE — nothing to use as bridge"
-            exit 1
+          declare -a candidates
+
+          if [ -f "$BRIDGE_FILE" ]; then
+            # Dedupe by host:port — same server may appear with different
+            # query-string param orders. Read line, extract host:port,
+            # keep first occurrence.
+            declare -A seen
+            while IFS= read -r line; do
+              [[ "$line" =~ ^(vless|trojan|ss|vmess):// ]] || continue
+              hp=$(echo "$line" | grep -oE '@[^:?/#]+:[0-9]+' | head -1)
+              [ -z "$hp" ] && continue
+              if [ -z "${seen[$hp]:-}" ]; then
+                seen[$hp]=1
+                candidates+=("$line")
+              fi
+            done < "$BRIDGE_FILE"
           fi
 
-          # Dedupe candidates (some keys appear multiple times)
-          mapfile -t candidates < <(grep -E "^(vless|trojan|ss|vmess)://" "$BRIDGE_FILE" | sort -u)
+          # Always append the fallback (deduped); ensures we have at least
+          # one candidate even if subs/RU.txt is stale.
+          if [ -n "$RU_BRIDGE_FALLBACK" ]; then
+            hp=$(echo "$RU_BRIDGE_FALLBACK" | grep -oE '@[^:?/#]+:[0-9]+' | head -1)
+            if [ -n "$hp" ] && [ -z "${seen[$hp]:-}" ]; then
+              candidates+=("$RU_BRIDGE_FALLBACK")
+              echo "Added fallback bridge: $hp"
+            fi
+          fi
+
           if [ ${#candidates[@]} -eq 0 ]; then
-            echo "::error::$BRIDGE_FILE has no protocol URIs"
-            exit 1
+            echo "::warning::no bridge candidates (RU.txt empty + no fallback secret)"
+            echo "skip=true" >> $GITHUB_OUTPUT
+            exit 0
           fi
 
-          echo "Have ${#candidates[@]} unique RU candidates to try as bridge"
+          echo "Have ${#candidates[@]} unique bridge candidates to try"
 
-          # Test each candidate; pick first that passes a quick liveness probe
+          # Test each candidate; pick first that passes liveness
           BRIDGE=""
           for c in "${candidates[@]}"; do
             host=$(echo "$c" | grep -oE '@[^:?/#]+:[0-9]+' | head -1 | tr -d '@')
             echo "Testing bridge: $host"
-            out=$(timeout 10 xray-knife http -c "$c" -u "https://www.cloudflare.com/cdn-cgi/trace" -d 5000 -b 2>&1)
+            out=$(timeout 12 xray-knife http -c "$c" -u "https://www.cloudflare.com/cdn-cgi/trace" -d 6000 -b 2>&1)
             if echo "$out" | grep -q "✅"; then
-              echo "  $host PASS — using as bridge"
+              echo "  $host PASS - using as bridge"
               BRIDGE="$c"
               break
             else
@@ -89,12 +116,11 @@ jobs:
           done
 
           if [ -z "$BRIDGE" ]; then
-            echo "::warning::no live RU bridge — skipping verify (keeping previous verified-russia.txt)"
+            echo "::warning::all ${#candidates[@]} bridges dead — skipping verify (keeping previous verified-russia.txt)"
             echo "skip=true" >> $GITHUB_OUTPUT
             exit 0
           fi
 
-          # Stash bridge to file (env var has length limits)
           echo "$BRIDGE" > /tmp/ru-bridge.txt
           echo "skip=false" >> $GITHUB_OUTPUT
 
