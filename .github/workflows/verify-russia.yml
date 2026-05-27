@@ -182,49 +182,60 @@ jobs:
           : > /tmp/timings.txt
           PASS_COUNT=0
           FAIL_COUNT=0
-          DEADLINE=$(($(date +%s) + 480))  # 8-min budget for tests
+          DEADLINE=$(($(date +%s) + 480))  # 8-min budget
 
+          # Two-stage filter:
+          # Stage 1: fast cf-trace probe (4s timeout) — quickly drops dead keys.
+          # Stage 2: only stage-1 passers get tested against ipinfo + google.
+          # This cuts total test count from 3N to ~1N + 2*0.05N = 1.1N
+          # (assuming ~95% drop on stage 1 — typical decay rate).
           for c in "${cands[@]}"; do
             if [ $(date +%s) -gt $DEADLINE ]; then
-              echo "[TIMEOUT] $PASS_COUNT pass, $FAIL_COUNT fail; budget exhausted"
+              echo "[TIMEOUT-BUDGET] $PASS_COUNT pass, $FAIL_COUNT fail, ${#cands[@]} pool"
               break
             fi
 
-            # Test 3 URLs; require all 3 to pass to qualify
-            all_ok=1
-            total_delay=0
-            for url in "https://ipinfo.io/json" "https://www.google.com/" "https://www.cloudflare.com/cdn-cgi/trace"; do
-              out=$(timeout 15 proxychains4 -f /tmp/pc.conf xray-knife http -c "$c" -u "$url" -d 6000 -b 2>&1)
+            # Stage 1: cf-trace fast gate
+            out=$(timeout 8 proxychains4 -f /tmp/pc.conf xray-knife http -c "$c" -u "https://www.cloudflare.com/cdn-cgi/trace" -d 4000 -b 2>&1)
+            if ! echo "$out" | grep -q "✅"; then
+              FAIL_COUNT=$((FAIL_COUNT + 1))
+              continue
+            fi
+            d1=$(echo "$out" | grep -oE "Real Delay:\s*[0-9]+" | awk '{print $NF}')
+
+            # Stage 2: ipinfo + google confirmation
+            stage2_ok=1
+            d_total=$d1
+            for url in "https://ipinfo.io/json" "https://www.google.com/"; do
+              out=$(timeout 12 proxychains4 -f /tmp/pc.conf xray-knife http -c "$c" -u "$url" -d 6000 -b 2>&1)
               if ! echo "$out" | grep -q "✅"; then
-                all_ok=0
+                stage2_ok=0
                 break
               fi
-              delay=$(echo "$out" | grep -oE "Real Delay:\s*[0-9]+" | awk '{print $NF}')
-              total_delay=$((total_delay + delay))
+              d=$(echo "$out" | grep -oE "Real Delay:\s*[0-9]+" | awk '{print $NF}')
+              d_total=$((d_total + d))
             done
 
-            if [ $all_ok -eq 1 ]; then
-              avg=$((total_delay / 3))
+            if [ $stage2_ok -eq 1 ]; then
+              avg=$((d_total / 3))
               # Reject high-latency (>2500ms avg through bridge)
               if [ $avg -le 2500 ]; then
                 echo "$c" >> /tmp/verified.txt
                 echo "$avg $c" >> /tmp/timings.txt
                 PASS_COUNT=$((PASS_COUNT + 1))
-                echo "  [+$PASS_COUNT] avg=${avg}ms"
+                echo "  [+$PASS_COUNT] avg=${avg}ms  $(echo $c | grep -oE '@[^:?/#]+:[0-9]+' | head -1 | tr -d @)"
               fi
-            else
-              FAIL_COUNT=$((FAIL_COUNT + 1))
             fi
 
             # Stop early once we have 25 verified
             if [ $PASS_COUNT -ge 25 ]; then
-              echo "[TARGET] hit 25 verified, stopping"
+              echo "[TARGET-25] hit, stopping"
               break
             fi
           done
 
           echo
-          echo "Result: $PASS_COUNT verified out of $((PASS_COUNT + FAIL_COUNT)) tested"
+          echo "Result: $PASS_COUNT verified, $FAIL_COUNT failed (out of ${#cands[@]} pool)"
 
           # Sort by latency, write to subs/verified-russia.txt
           if [ $PASS_COUNT -gt 0 ]; then
@@ -232,7 +243,7 @@ jobs:
             echo "Top 10 fastest:"
             sort -n /tmp/timings.txt | head -10 | awk '{print "  " $1 "ms  " substr($2, 1, 60) "..."}'
           else
-            echo "::warning::0 verified — keeping previous subs/verified-russia.txt unchanged"
+            echo "::warning::0 verified through bridge — keeping previous subs/verified-russia.txt"
           fi
 
       - name: Stop bridge
