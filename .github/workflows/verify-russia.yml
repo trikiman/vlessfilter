@@ -118,15 +118,19 @@ jobs:
           PASS=$(grep -oE 'Password:\s*\S+' /tmp/bridge.log | head -1 | awk '{print $2}')
           echo "Bridge SOCKS auth: $USER / $PASS"
 
-          cat > /tmp/pc.conf <<EOF
-strict_chain
-proxy_dns
-remote_dns_subnet 224
-tcp_read_time_out 15000
-tcp_connect_time_out 8000
-[ProxyList]
-socks5 127.0.0.1 19999 $USER $PASS
-EOF
+          cat > /tmp/pc.conf <<-EOF
+          strict_chain
+          proxy_dns
+          remote_dns_subnet 224
+          tcp_read_time_out 15000
+          tcp_connect_time_out 8000
+          [ProxyList]
+          socks5 127.0.0.1 19999 $USER $PASS
+          EOF
+          # The <<-EOF + leading tabs would be ideal but YAML | preserves
+          # leading spaces. Strip them so proxychains4 parses correctly.
+          sed -i 's/^          //' /tmp/pc.conf
+          cat /tmp/pc.conf
 
           # Sanity check: what IP does the bridge exit through?
           echo "=== Bridge exit identity ==="
