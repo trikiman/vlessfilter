@@ -110,11 +110,27 @@ $urls = @(
 )
 
 function Test-Key($key, $url) {
-    $output = & $xkExe http -c $key -u $url -d 4000 -b 2>&1 | Out-String
+    $output = & $xkExe http -c $key -u $url -d 3000 -b 2>&1 | Out-String
     if ($output -match '\u2705' -and $output -match "Real Delay:\s*(\d+)\s*ms") {
         return @{ pass = $true; delay = [int]$Matches[1] }
     }
     return @{ pass = $false; delay = -1 }
+}
+
+# Stability test: require 2 consecutive passes per URL (catches flaky keys)
+function Test-KeyStable($key, $url) {
+    $r1 = Test-Key $key $url
+    if (-not $r1.pass) { return @{ pass = $false; delay = -1 } }
+    Start-Sleep -Milliseconds 200
+    $r2 = Test-Key $key $url
+    if (-not $r2.pass) { return @{ pass = $false; delay = -1 } }
+    # Reject high variance (>50% delta) - sign of flakiness
+    $maxDelay = [Math]::Max($r1.delay, $r2.delay)
+    $minDelay = [Math]::Min($r1.delay, $r2.delay)
+    if ($maxDelay -gt ($minDelay * 1.5) -and $maxDelay -gt 500) {
+        return @{ pass = $false; delay = -1 }
+    }
+    return @{ pass = $true; delay = [int](($r1.delay + $r2.delay) / 2) }
 }
 
 Write-Host "Testing... (target=$TARGET_VERIFIED verified, budget=$TIME_BUDGET_SEC sec)"
@@ -131,12 +147,14 @@ foreach ($key in $candidates) {
     $totalDelay = 0
     $allPass = $true
     foreach ($u in $urls) {
-        $r = Test-Key $key $u.Url
+        $r = Test-KeyStable $key $u.Url
         if (-not $r.pass) { $allPass = $false; break }
         $totalDelay += $r.delay
     }
     if ($allPass) {
         $avgDelay = [int]($totalDelay / $urls.Count)
+        # Reject high-latency keys (>1500ms avg = unreliable for real use)
+        if ($avgDelay -gt 1500) { continue }
         $proto = if ($key -match "^([a-z]+)://") { $Matches[1] } else { "?" }
         [void]$verified.Add(@{ Key = $key; AvgDelay = $avgDelay; Proto = $proto })
         Write-Host ("  [+] [{0}/{1}] {2,-7} avg={3,5}ms  ({4:N0}s)" -f $verified.Count, $TARGET_VERIFIED, $proto, $avgDelay, $elapsed) -ForegroundColor Green
