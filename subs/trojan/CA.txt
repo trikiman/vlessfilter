@@ -1,0 +1,1 @@
+trojan://lEjtI3pFYfU7O1UYozJcfZV5K6Fwfths@64.74.163.118:58536?allowInsecure=1&headerType=none&insecure=1&security=tls&type=tcp&sni=eh.vk.com#%F0%9F%87%A8%F0%9F%87%A6%20CA%20Canada
