@@ -1,3 +1,1 @@
-trojan://humanity@8.6.112.6:443?security=tls&sni=www.calmloud.com&allowInsecure=1&fp=chrome&type=ws&path=/assignment&host=www.calmloud.com#%F0%9F%87%AB%F0%9F%87%B7%20FR%20France
-trojan://humanity@8.6.112.0:443?allowInsecure=1&alpn=http%2F1.1&host=www.calmloud.com&path=%2Fassignment&sni=www.calmloud.com&type=ws#%F0%9F%87%AB%F0%9F%87%B7%20FR%20France
-trojan://humanity@172.64.229.75:443?security=tls&sni=www.calmloud.com&alpn=http%2F1.1&insecure=1&allowInsecure=1&type=ws&host=www.calmloud.com&path=%2Fassignment#%F0%9F%87%AB%F0%9F%87%B7%20FR%20France
+trojan://humanity@185.18.250.245:443?security=tls&sni=www.calmlunch.com&allowInsecure=1&type=ws&host=www.calmlunch.com&path=/assignment#%F0%9F%87%AB%F0%9F%87%B7%20FR%20France

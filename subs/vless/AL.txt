@@ -1,3 +1,2 @@
-vless://10f58ab9-cafd-47b4-a6f9-fc66d8d79815@84.54.48.253:443/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=al.crunch-crunch.com&fp=firefox&security=reality&pbk=djTtGqd0XWqtt_WHukU7BTPQSn9o7gIpAosAxMy8tUo&sid=ea1058117be12087#%F0%9F%87%A6%F0%9F%87%B1%20AL%20Albania
-vless://10f58ab9-cafd-47b4-a6f9-fc66d8d79815@84.54.48.253:443/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=al.crunch-crunch.com&fp=firefox&security=reality&pbk=djTtGqd0XWqtt_WHukU7BTPQSn9o7gIpAosAxMy8tUo&sid=ea1058117be12087#%F0%9F%87%A6%F0%9F%87%B1%20AL%20Albania
-vless://10f58ab9-cafd-47b4-a6f9-fc66d8d79815@84.54.48.253:443/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=al.crunch-crunch.com&fp=firefox&security=reality&pbk=djTtGqd0XWqtt_WHukU7BTPQSn9o7gIpAosAxMy8tUo&sid=ea1058117be12087#%F0%9F%87%A6%F0%9F%87%B1%20AL%20Albania
+vless://b4819c49-6c7e-4b57-9b9b-c73031e1de11@45.15.170.237:80?type=ws&encryption=none&path=/vless/#%F0%9F%87%A6%F0%9F%87%B1%20AL%20Albania
+vless://b4819c49-6c7e-4b57-9b9b-c73031e1de11@pq-albania1.09vpn.com:80?host=pq-albania1.09vpn.com&path=%2Fvless%2F&type=ws#%F0%9F%87%A6%F0%9F%87%B1%20AL%20Albania

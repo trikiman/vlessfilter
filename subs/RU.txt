@@ -1,6 +1,4 @@
-vless://de87620b-6bff-4077-99cc-ce65e06b64ed@5.188.156.138:4443?encryption=none&security=none&type=tcp#%F0%9F%87%B7%F0%9F%87%BA%20RU%20Russia
-vless://de87620b-6bff-4077-99cc-ce65e06b64ed@5.188.156.138:4443?encryption=none&security=none&type=tcp#%F0%9F%87%B7%F0%9F%87%BA%20RU%20Russia
-vless://de87620b-6bff-4077-99cc-ce65e06b64ed@5.188.156.138:4443?encryption=none&type=tcp&security=none#%F0%9F%87%B7%F0%9F%87%BA%20RU%20Russia
+vless://20ecee51-1044-4be3-89a9-f3c700425ead@45.67.230.230:443?Telegram=@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad&encryption=none&type=tcp&security=reality&headerType=none&sni=yahoo.com&fp=chrome&allowInsecure=1&pbk=qYg2nPdLpBYWM7-9leTq43SoqAc5nT90gFH-AHAMShY&sid=abb1#%F0%9F%87%B7%F0%9F%87%BA%20RU%20Russia
 trojan://204bc731190243e7a8cc9c1d0b7ac3ba@94.103.2.31:9443?fp=&pbk=Zuu0slAOjX2uWf6-xRWeZzv7O_URTgpe8BHpvoS1llw&security=reality&sid=aabbccdd&sni=static.rutube.ru#%F0%9F%87%B7%F0%9F%87%BA%20RU%20Russia
 trojan://204bc731190243e7a8cc9c1d0b7ac3ba@94.103.2.31:9443?fp=&pbk=Zuu0slAOjX2uWf6-xRWeZzv7O_URTgpe8BHpvoS1llw&security=reality&sid=aabbccdd&sni=static.rutube.ru#%F0%9F%87%B7%F0%9F%87%BA%20RU%20Russia
 trojan://204bc731190243e7a8cc9c1d0b7ac3ba@94.103.2.31:9443?security=reality&sni=static.rutube.ru&pbk=Zuu0slAOjX2uWf6-xRWeZzv7O_URTgpe8BHpvoS1llw&sid=aabbccdd&type=tcp&fp=random#%F0%9F%87%B7%F0%9F%87%BA%20RU%20Russia
