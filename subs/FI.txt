@@ -1,9 +1,9 @@
 vless://dc0470c2-50c2-445c-bfdf-1d1fe38d69da@65.109.221.68:8443?encryption=none&type=tcp&headerType=http&path=%2F&host=varzesh3.com#%F0%9F%87%AB%F0%9F%87%AE%20FI%20Finland
 vless://d511e429-e32b-46a7-ac07-a0fffa9b634c@2.26.3.148:443?encryption=none&flow=xtls-rprx-vision&fp=&pbk=ZHEMPjSWslk6_qD2JNQzd5enUPz8nY9mYRRuM6NkZmU&security=reality&sid=67ccfc02&sni=www.deepl.com&type=tcp#%F0%9F%87%AB%F0%9F%87%AE%20FI%20Finland
 vless://d511e429-e32b-46a7-ac07-a0fffa9b634c@144.31.235.62:443?encryption=none&flow=xtls-rprx-vision&fp=&pbk=ZHEMPjSWslk6_qD2JNQzd5enUPz8nY9mYRRuM6NkZmU&security=reality&sid=0123456789abcdef&sni=www.deepl.com&type=tcp#%F0%9F%87%AB%F0%9F%87%AE%20FI%20Finland
-trojan://WXgoPIGPSr@2.27.23.226:5231?security=reality&sni=www.icloud.com&fp=chrome&pbk=ksyeiEzHremNnFa1kqsHJkIEXQqPZ3CPQvU65WaMNWM&sid=02&type=tcp&path=/#%F0%9F%87%AB%F0%9F%87%AE%20FI%20Finland
 trojan://WXgoPIGPSr@2.27.23.226:5231?security=reality&pbk=ksyeiEzHremNnFa1kqsHJkIEXQqPZ3CPQvU65WaMNWM&headerType=none&fp=chrome&type=tcp&sni=www.icloud.com&sid=02#%F0%9F%87%AB%F0%9F%87%AE%20FI%20Finland
 trojan://WXgoPIGPSr@2.27.23.226:5231/?type=tcp&sni=www.icloud.com&fp=chrome&security=reality&pbk=ksyeiEzHremNnFa1kqsHJkIEXQqPZ3CPQvU65WaMNWM&sid=02#%F0%9F%87%AB%F0%9F%87%AE%20FI%20Finland
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp5S1ZNb0IzQXdpVEV6bnBub3EyRllS@193.47.60.186:28687?#%F0%9F%87%AB%F0%9F%87%AE%20FI%20Finland
+trojan://WXgoPIGPSr@2.27.23.226:5231?security=reality&pbk=ksyeiEzHremNnFa1kqsHJkIEXQqPZ3CPQvU65WaMNWM&headerType=none&fp=chrome&type=tcp&sni=www.icloud.com&sid=02#%F0%9F%87%AB%F0%9F%87%AE%20FI%20Finland
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp5S1ZNb0IzQXdpVEV6bnBub3EyRllS@193.47.60.186:28687#%F0%9F%87%AB%F0%9F%87%AE%20FI%20Finland
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp5S1ZNb0IzQXdpVEV6bnBub3EyRllS@193.47.60.186:28687#%F0%9F%87%AB%F0%9F%87%AE%20FI%20Finland
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp5S1ZNb0IzQXdpVEV6bnBub3EyRllS@193.47.60.186:28687#%F0%9F%87%AB%F0%9F%87%AE%20FI%20Finland

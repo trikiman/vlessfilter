@@ -2,6 +2,5 @@ vless://20ecee51-1044-4be3-89a9-f3c700425ead@45.67.230.230:443?Telegram=@Gozarga
 trojan://204bc731190243e7a8cc9c1d0b7ac3ba@94.103.2.31:9443?fp=&pbk=Zuu0slAOjX2uWf6-xRWeZzv7O_URTgpe8BHpvoS1llw&security=reality&sid=aabbccdd&sni=static.rutube.ru#%F0%9F%87%B7%F0%9F%87%BA%20RU%20Russia
 trojan://204bc731190243e7a8cc9c1d0b7ac3ba@94.103.2.31:9443?fp=&pbk=Zuu0slAOjX2uWf6-xRWeZzv7O_URTgpe8BHpvoS1llw&security=reality&sid=aabbccdd&sni=static.rutube.ru#%F0%9F%87%B7%F0%9F%87%BA%20RU%20Russia
 trojan://204bc731190243e7a8cc9c1d0b7ac3ba@94.103.2.31:9443?security=reality&sni=static.rutube.ru&pbk=Zuu0slAOjX2uWf6-xRWeZzv7O_URTgpe8BHpvoS1llw&sid=aabbccdd&type=tcp&fp=random#%F0%9F%87%B7%F0%9F%87%BA%20RU%20Russia
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpoY3h2MEN2VDE0WmtpNGIxcDFKOW5F@84.54.44.54:11270#%F0%9F%87%B7%F0%9F%87%BA%20RU%20Russia
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTotLVU2aXRPLUNYUTZ3amQ4Sk1RZm9n@45.93.201.73:8388#%F0%9F%87%B7%F0%9F%87%BA%20RU%20Russia
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpVQW5MR3B4bTBhNDhBTm1zX0RhM1Rn@5.42.104.94:2060#%F0%9F%87%B7%F0%9F%87%BA%20RU%20Russia
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTotLVU2aXRPLUNYUTZ3amQ4Sk1RZm9n@45.93.201.73:8388#%F0%9F%87%B7%F0%9F%87%BA%20RU%20Russia
