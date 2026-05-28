@@ -88,8 +88,12 @@
     color: var(--text-dim);
     overflow-x: auto;
     white-space: nowrap;
+    cursor: pointer;
+    transition: background 0.15s, color 0.15s, border-color 0.15s;
   }
-  .url-block:hover { color: var(--text); }
+  .url-block:hover { color: var(--text); border-color: var(--accent); }
+  .url-block.copied { background: rgba(63, 185, 80, 0.15); border-color: var(--green); color: var(--green); }
+  .url-block.copied::after { content: ' ✓ copied'; }
   .refresh-info { color: var(--text-dim); font-size: 0.85em; }
   a { color: var(--accent); text-decoration: none; }
   a:hover { text-decoration: underline; }
@@ -154,10 +158,37 @@
     </div>
     <div class="card">
       <div class="card-label">Schedule</div>
-      <div class="card-value">every 2h</div>
-      <div class="card-sub" id="schedule-sub">$0/month forever</div>
+      <div class="card-value">every 4h + 30min</div>
+      <div class="card-sub">refresh + verify-russia</div>
+    </div>
+    <div class="card" style="border-color: var(--green);">
+      <div class="card-label">🇷🇺 Verified-from-Russia</div>
+      <div class="card-value loading" id="ru-verified-count">…</div>
+      <div class="card-sub" id="ru-verified-sub">bridge-tested keys</div>
+    </div>
+    <div class="card">
+      <div class="card-label">RU bridge pool</div>
+      <div class="card-value loading" id="ru-bridges-count">…</div>
+      <div class="card-sub">unique RU servers</div>
     </div>
   </div>
+</section>
+
+<section>
+  <h2>🇷🇺 For users in Russia (recommended)</h2>
+  <p style="color: var(--text-dim); font-size: 0.9em; margin-bottom: 12px;">
+    Bridge-verified subscription. Each key is tested through a Russian SOCKS proxy
+    before being published, so it actually works from RU networks. Auto-refreshed every 30 min.
+    Set v2rayN's auto-update to 15 min for best results.
+  </p>
+  <table>
+    <tbody>
+      <tr>
+        <td><strong>verified-russia.txt</strong></td>
+        <td><div class="url-block">https://raw.githubusercontent.com/trikiman/vlessfilter/main/subs/verified-russia.txt</div></td>
+      </tr>
+    </tbody>
+  </table>
 </section>
 
 <section>
@@ -180,8 +211,19 @@
 
 <section>
   <h2>Recent workflow runs</h2>
-  <div class="runs-list" id="runs-list">
-    <div class="loading">Loading from GitHub Actions API…</div>
+  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+    <div>
+      <h3 style="font-size:0.95em; color:var(--text-dim); margin-bottom:8px;">refresh.yml (broad pipeline, every 4h)</h3>
+      <div class="runs-list" id="runs-list">
+        <div class="loading">Loading…</div>
+      </div>
+    </div>
+    <div>
+      <h3 style="font-size:0.95em; color:var(--text-dim); margin-bottom:8px;">verify-russia.yml (bridge filter, every 30min)</h3>
+      <div class="runs-list" id="runs-list-verify">
+        <div class="loading">Loading…</div>
+      </div>
+    </div>
   </div>
   <p style="margin-top:8px; font-size:0.85em; color:var(--text-dim);">
     Full history: <a href="https://github.com/trikiman/vlessfilter/actions" target="_blank">github.com/trikiman/vlessfilter/actions</a>
@@ -196,9 +238,21 @@
 </section>
 
 <section>
-  <h2>Quick links</h2>
+  <h2>All subscription URLs</h2>
   <table>
     <tbody>
+      <tr>
+        <td>🇷🇺 <strong>verified-russia</strong> (recommended for RU)</td>
+        <td><div class="url-block">https://raw.githubusercontent.com/trikiman/vlessfilter/main/subs/verified-russia.txt</div></td>
+      </tr>
+      <tr>
+        <td>RU bridges (raw RU exits)</td>
+        <td><div class="url-block">https://raw.githubusercontent.com/trikiman/vlessfilter/main/subs/RU.txt</div></td>
+      </tr>
+      <tr>
+        <td>All protocols combined</td>
+        <td><div class="url-block">https://raw.githubusercontent.com/trikiman/vlessfilter/main/subs/all.txt</div></td>
+      </tr>
       <tr>
         <td>VLESS — all countries</td>
         <td><div class="url-block">https://raw.githubusercontent.com/trikiman/vlessfilter/main/subs/vless/all.txt</div></td>
@@ -217,14 +271,15 @@
       </tr>
       <tr>
         <td>Specific country (any protocol)</td>
-        <td><div class="url-block">https://raw.githubusercontent.com/trikiman/vlessfilter/main/subs/&lt;proto&gt;/&lt;CC&gt;.txt</div></td>
+        <td><div class="url-block">https://raw.githubusercontent.com/trikiman/vlessfilter/main/subs/&lt;CC&gt;.txt</div></td>
       </tr>
     </tbody>
   </table>
 </section>
 
 <footer>
-  Auto-curated, geo-tagged proxy keys · Multi-protocol pipeline · Refreshed every 2 hours via GitHub Actions
+  Auto-curated, geo-tagged proxy keys · Multi-protocol pipeline ·
+  Broad refresh every 4h, RU-bridge verify every 30min · Click any URL above to copy
 </footer>
 
 <script>
@@ -367,9 +422,81 @@ async function loadRuns() {
   }
 }
 
+async function loadRuStats() {
+  // verified-russia.txt count
+  try {
+    const txt = await fetchTextOk(`${RAW}/subs/verified-russia.txt`);
+    const lines = txt.split('\n').filter(s => s.match(/^(vless|vmess|trojan|ss):\/\//));
+    const el = document.getElementById('ru-verified-count');
+    el.textContent = lines.length;
+    el.classList.remove('loading');
+    if (lines.length >= 10) el.classList.add('ok');
+    else if (lines.length >= 3) el.classList.add('warn');
+    else el.classList.add('err');
+    document.getElementById('ru-verified-sub').textContent =
+      lines.length === 0 ? 'no verified yet (waiting on bridge)' : `${lines.length} bridge-tested keys`;
+  } catch (e) {
+    document.getElementById('ru-verified-count').textContent = '0';
+    document.getElementById('ru-verified-count').classList.remove('loading');
+    document.getElementById('ru-verified-count').classList.add('err');
+    document.getElementById('ru-verified-sub').textContent = 'file not found';
+  }
+
+  // RU.txt — unique RU bridges (dedupe by host:port)
+  try {
+    const txt = await fetchTextOk(`${RAW}/subs/RU.txt`);
+    const seen = new Set();
+    txt.split('\n').forEach(line => {
+      const m = line.match(/@([^:?/#]+):(\d+)/);
+      if (m) seen.add(`${m[1].toLowerCase()}:${m[2]}`);
+    });
+    const el = document.getElementById('ru-bridges-count');
+    el.textContent = seen.size;
+    el.classList.remove('loading');
+    if (seen.size >= 5) el.classList.add('ok');
+    else if (seen.size >= 1) el.classList.add('warn');
+    else el.classList.add('err');
+  } catch (e) {
+    document.getElementById('ru-bridges-count').textContent = '0';
+    document.getElementById('ru-bridges-count').classList.remove('loading');
+    document.getElementById('ru-bridges-count').classList.add('err');
+  }
+}
+
+async function loadVerifyRussiaRuns() {
+  try {
+    const data = await fetchJsonOk(`${API}/actions/workflows/verify-russia.yml/runs?per_page=8`);
+    const list = document.getElementById('runs-list-verify');
+    list.innerHTML = '';
+    if (!data.workflow_runs || data.workflow_runs.length === 0) {
+      list.innerHTML = '<div class="loading">No runs yet</div>';
+      return;
+    }
+    for (const r of data.workflow_runs) {
+      const div = document.createElement('div');
+      div.className = 'run-row';
+      const dur = r.run_started_at && r.updated_at
+        ? Math.floor((new Date(r.updated_at) - new Date(r.run_started_at)) / 1000) + 's'
+        : '';
+      const status = r.conclusion || r.status || 'unknown';
+      div.innerHTML = `
+        <div>
+          <a href="${r.html_url}" target="_blank">#${r.run_number}</a>
+          <span class="badge ${status}">${status}</span>
+          <span style="color: var(--text-dim);">${r.event}</span>
+        </div>
+        <div class="run-time">${fmtRelative(r.created_at)} · ${dur}</div>
+      `;
+      list.appendChild(div);
+    }
+  } catch (e) {
+    document.getElementById('runs-list-verify').innerHTML = `<div class="err">Failed: ${e.message}</div>`;
+  }
+}
+
 async function refreshAll() {
   document.getElementById('last-fetch').textContent = new Date().toLocaleTimeString();
-  await Promise.all([loadOverview(), loadRuns()]);
+  await Promise.all([loadOverview(), loadRuns(), loadRuStats(), loadVerifyRussiaRuns()]);
 }
 
 // Refresh every 60s
@@ -385,6 +512,18 @@ function tick() {
 setInterval(tick, 1000);
 
 refreshAll();
+
+// Click-to-copy on .url-block elements
+document.addEventListener('click', (e) => {
+  const el = e.target.closest('.url-block');
+  if (!el) return;
+  const text = el.textContent.trim();
+  if (text.includes('<') || text.length < 5) return;
+  navigator.clipboard.writeText(text).then(() => {
+    el.classList.add('copied');
+    setTimeout(() => el.classList.remove('copied'), 1500);
+  });
+});
 </script>
 
 </body>
