@@ -1,3 +1,3 @@
-trojan://MeaDiUmPlkWbZJ2BON8tz@78.159.131.12:28259?allowInsecure=1&sni=🔒#%F0%9F%87%B3%F0%9F%87%B1%20NL%20Netherlands
-trojan://MeaDiUmPlkWbZJ2BON8tz@78.159.131.12:28259?allowInsecure=1&sni=#%F0%9F%87%B3%F0%9F%87%B1%20NL%20Netherlands
 trojan://MeaDiUmPlkWbZJ2BON8tz@78.159.131.12:28259?allowInsecure=1&sni=%F0%9F%94%92#%F0%9F%87%B3%F0%9F%87%B1%20NL%20Netherlands
+trojan://MeaDiUmPlkWbZJ2BON8tz@78.159.131.12:28259?allowInsecure=1&sni=%F0%9F%94%92#%F0%9F%87%B3%F0%9F%87%B1%20NL%20Netherlands
+trojan://MeaDiUmPlkWbZJ2BON8tz@78.159.131.12:28259?allowInsecure=1#%F0%9F%87%B3%F0%9F%87%B1%20NL%20Netherlands

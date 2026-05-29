@@ -1,0 +1,2 @@
+trojan://f58cd113-a3b1-319d-a993-331481731e82@a.twodnwnpoe.xyz:32544?allowInsecure=1&security=tls&sni=water.waittomorrow.top&type=tcp#%F0%9F%87%B9%F0%9F%87%BC%20TW%20Taiwan
+trojan://f58cd113-a3b1-319d-a993-331481731e82@a.twodnwnpoe.xyz:55759?allowInsecure=1&security=tls&sni=water.waittomorrow.top&type=tcp#%F0%9F%87%B9%F0%9F%87%BC%20TW%20Taiwan

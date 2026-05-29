@@ -1,2 +1,3 @@
-trojan://d49a85d5-aa2a-3b1f-843c-bc49be359e2d@517531307031831.yf.r.hy2use.net:47104?security=tls&type=tcp&sni=13313jk.r.bilibili.com&peer=13313jk.r.bilibili.com&allowInsecure=1#%F0%9F%87%AB%F0%9F%87%B7%20FR%20France
-trojan://arshiacomplus@104.17.121.71:2083?mode=auto&path=/NilouCore&security=tls&alpn=h2,http/1.1&insecure=1&host=oof.acp.us.ci&fp=chrome&type=xhttp&allowInsecure=1&sni=oof.acp.us.ci#%F0%9F%87%AB%F0%9F%87%B7%20FR%20France
+trojan://humanity@104.20.6.134:443?path=%2Fassignment&security=tls&host=www.ignitelimit.com&type=ws&sni=www.ignitelimit.com#%F0%9F%87%AB%F0%9F%87%B7%20FR%20France
+trojan://humanity@104.16.7.70:443?path=%2Fassignment&security=tls&insecure=0&host=www.ignitelimit.com&type=ws&allowInsecure=0&sni=www.ignitelimit.com#%F0%9F%87%AB%F0%9F%87%B7%20FR%20France
+trojan://humanity@165.215.250.14:443?type=ws&security=tls&path=/assignment&host=www.ignitelimit.com&sni=www.ignitelimit.com&fp=chrome&allowInsecure=1#%F0%9F%87%AB%F0%9F%87%B7%20FR%20France

@@ -2,8 +2,9 @@ vless://InternetAzadRobot@151.101.1.57:80?Telegram=@GozargahAzad,@GozargahAzad,@
 vless://InternetAzadRobot@151.101.1.57:80?mode=auto&path=%2Flogin&security=&encryption=none&extra=%7B%22mode%22%3A%22auto%22%2C%22scMaxEachPostBytes%22%3A%221000000%22%2C%22xPaddingBytes%22%3A%22100-1000%22%7D&host=shangulin.global.ssl.fastly.net&type=xhttp#%F0%9F%87%AB%F0%9F%87%B7%20FR%20France
 vless://InternetAzadRobot@151.101.1.57:80?Telegram=@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad&mode=auto&path=/login&security=none&encryption=none&extra={"mode":"auto","scMaxEachPostBytes":"1000000","xPaddingBytes":"100-1000"}&host=shangulin.global.ssl.fastly.net&type=xhttp#%F0%9F%87%AB%F0%9F%87%B7%20FR%20France
 vmess://eyJhZGQiOiIxODUuMjQ4LjMzLjE3MyIsImFpZCI6MCwiZnAiOiJjaHJvbWUiLCJob3N0IjoiaW1hZmFrZS5sb2NrZXIiLCJpZCI6IjI1NDU1MWY2LWVjMjgtNDkzOC1hZDBlLTBhYTRhYTE5NjVlYyIsIm5ldCI6IndzIiwicGF0aCI6Ii9zcGVlZHRlc3QiLCJwb3J0IjozODE0NywicHMiOiJCeSBFYnJhU2hhIPCfk7EiLCJzbmkiOiJpbWFmYWtlLmxvY2tlciIsInRscyI6InRscyIsInR5cGUiOiJub25lIiwidiI6Mn0=#%F0%9F%87%AB%F0%9F%87%B7%20FR%20France
-trojan://d49a85d5-aa2a-3b1f-843c-bc49be359e2d@517531307031831.yf.r.hy2use.net:47104?security=tls&type=tcp&sni=13313jk.r.bilibili.com&peer=13313jk.r.bilibili.com&allowInsecure=1#%F0%9F%87%AB%F0%9F%87%B7%20FR%20France
-trojan://arshiacomplus@104.17.121.71:2083?mode=auto&path=/NilouCore&security=tls&alpn=h2,http/1.1&insecure=1&host=oof.acp.us.ci&fp=chrome&type=xhttp&allowInsecure=1&sni=oof.acp.us.ci#%F0%9F%87%AB%F0%9F%87%B7%20FR%20France
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTotamQ0M2F5bjFteHpRNHQ2ZEVJN09R@45.91.171.108:157#%F0%9F%87%AB%F0%9F%87%B7%20FR%20France
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTotamQ0M2F5bjFteHpRNHQ2ZEVJN09R@45.91.171.108:157#%F0%9F%87%AB%F0%9F%87%B7%20FR%20France
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTotamQ0M2F5bjFteHpRNHQ2ZEVJN09R@45.91.171.108:157#%F0%9F%87%AB%F0%9F%87%B7%20FR%20France
+trojan://humanity@104.20.6.134:443?path=%2Fassignment&security=tls&host=www.ignitelimit.com&type=ws&sni=www.ignitelimit.com#%F0%9F%87%AB%F0%9F%87%B7%20FR%20France
+trojan://humanity@104.16.7.70:443?path=%2Fassignment&security=tls&insecure=0&host=www.ignitelimit.com&type=ws&allowInsecure=0&sni=www.ignitelimit.com#%F0%9F%87%AB%F0%9F%87%B7%20FR%20France
+trojan://humanity@165.215.250.14:443?type=ws&security=tls&path=/assignment&host=www.ignitelimit.com&sni=www.ignitelimit.com&fp=chrome&allowInsecure=1#%F0%9F%87%AB%F0%9F%87%B7%20FR%20France
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTotamQ0M2F5bjFteHpRNHQ2ZEVJN09R@45.91.171.108:158#%F0%9F%87%AB%F0%9F%87%B7%20FR%20France
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTotamQ0M2F5bjFteHpRNHQ2ZEVJN09R@45.91.171.108:158#%F0%9F%87%AB%F0%9F%87%B7%20FR%20France
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTotamQ0M2F5bjFteHpRNHQ2ZEVJN09R@45.91.171.108:158#%F0%9F%87%AB%F0%9F%87%B7%20FR%20France
