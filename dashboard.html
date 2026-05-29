@@ -192,6 +192,29 @@
 </section>
 
 <section>
+  <h2>🇷🇺 verified-russia.txt — current keys & 24h reliability</h2>
+  <p style="color: var(--text-dim); font-size: 0.85em; margin-bottom: 12px;">
+    Per-key bridge-test history. "Seen" = number of verify-russia runs in last 24h that found this key alive.
+    Higher % = more reliable. New keys (just verified once) start at 4%.
+  </p>
+  <table>
+    <thead>
+      <tr>
+        <th class="num">#</th>
+        <th>Protocol</th>
+        <th>Host:Port</th>
+        <th class="num">Avg latency</th>
+        <th class="num">Seen 24h</th>
+        <th class="num">Alive %</th>
+      </tr>
+    </thead>
+    <tbody id="ru-key-table">
+      <tr><td colspan="6" class="loading">Loading…</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section>
   <h2>Per-protocol</h2>
   <table>
     <thead>
@@ -494,9 +517,76 @@ async function loadVerifyRussiaRuns() {
   }
 }
 
+async function loadKeyTable() {
+  const tbody = document.getElementById('ru-key-table');
+  try {
+    const txt = await fetchTextOk(`${RAW}/subs/verified-russia.txt`);
+    const lines = txt.split('\n').filter(s => s.match(/^(vless|vmess|trojan|ss):\/\//));
+
+    // Try to load history (may not exist yet on first runs)
+    let history = [];
+    try {
+      const hist = await fetchTextOk(`${RAW}/.readme-data/verified-russia-history.jsonl`);
+      const cutoff = Date.now() - 24 * 3600 * 1000;
+      // Count distinct runs in last 24h to compute denominator
+      const allRuns24h = new Set();
+      hist.split('\n').forEach(line => {
+        if (!line.trim()) return;
+        try {
+          const e = JSON.parse(line);
+          if (new Date(e.ts).getTime() >= cutoff) {
+            allRuns24h.add(e.run_id);
+            history.push(e);
+          }
+        } catch {}
+      });
+      window.__totalRuns24h = allRuns24h.size;
+    } catch (e) {
+      window.__totalRuns24h = 0;
+    }
+
+    const totalRuns = window.__totalRuns24h || 0;
+
+    // Build per-key seen count
+    const seenByHostPort = {};
+    const lastDelay = {};
+    history.forEach(e => {
+      seenByHostPort[e.host_port] = (seenByHostPort[e.host_port] || 0) + 1;
+      lastDelay[e.host_port] = e.delay_ms;
+    });
+
+    tbody.innerHTML = '';
+    lines.forEach((line, i) => {
+      const m = line.match(/^([a-z]+):\/\/[^@]+@([^:?/#]+):(\d+)/);
+      if (!m) return;
+      const proto = m[1];
+      const hostPort = `${m[2]}:${m[3]}`;
+      const seen = seenByHostPort[hostPort] || 1;
+      const alivePct = totalRuns > 0 ? Math.round(seen / totalRuns * 100) : '—';
+      const delay = lastDelay[hostPort] || '?';
+      const pctClass = totalRuns === 0 ? '' : (alivePct >= 80 ? 'ok' : alivePct >= 50 ? 'warn' : 'err');
+      const tr = document.createElement('tr');
+      tr.innerHTML = `
+        <td class="num">${i + 1}</td>
+        <td><span class="protocol-tag ${proto}">${proto}</span></td>
+        <td style="font-family: ui-monospace, monospace; font-size: 0.9em;">${hostPort}</td>
+        <td class="num">${delay}ms</td>
+        <td class="num">${seen}/${totalRuns || '?'}</td>
+        <td class="num ${pctClass}">${alivePct}${totalRuns > 0 ? '%' : ''}</td>
+      `;
+      tbody.appendChild(tr);
+    });
+    if (lines.length === 0) {
+      tbody.innerHTML = '<tr><td colspan="6" class="loading">No verified keys yet</td></tr>';
+    }
+  } catch (e) {
+    tbody.innerHTML = `<tr><td colspan="6" class="err">Failed: ${e.message}</td></tr>`;
+  }
+}
+
 async function refreshAll() {
   document.getElementById('last-fetch').textContent = new Date().toLocaleTimeString();
-  await Promise.all([loadOverview(), loadRuns(), loadRuStats(), loadVerifyRussiaRuns()]);
+  await Promise.all([loadOverview(), loadRuns(), loadRuStats(), loadVerifyRussiaRuns(), loadKeyTable()]);
 }
 
 // Refresh every 60s
