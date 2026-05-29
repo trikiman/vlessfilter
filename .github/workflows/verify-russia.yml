@@ -175,8 +175,39 @@ jobs:
             exit 1
           fi
 
-          mapfile -t cands < <(grep -E "^(vless|vmess|trojan|ss)://" subs/all.txt | sort -u)
-          echo "Pool: ${#cands[@]} unique candidates"
+          mapfile -t raw_lines < <(grep -E "^(vless|vmess|trojan|ss)://" subs/all.txt)
+
+          # Dedup by host:port (consistent with bridge picker), preserving
+          # first-seen order. Round-robin across protocols so all 4 get
+          # tested before we hit the early-stop target.
+          declare -A seen_hp
+          declare -a vless_q vmess_q trojan_q ss_q
+          for line in "${raw_lines[@]}"; do
+            hp=$(echo "$line" | grep -oE '@[^:?/#]+:[0-9]+' | head -1)
+            [ -z "$hp" ] && continue
+            [ -n "${seen_hp[$hp]:-}" ] && continue
+            seen_hp[$hp]=1
+            case "$line" in
+              vless://*)  vless_q+=("$line")  ;;
+              vmess://*)  vmess_q+=("$line")  ;;
+              trojan://*) trojan_q+=("$line") ;;
+              ss://*)     ss_q+=("$line")     ;;
+            esac
+          done
+
+          # Interleave: take 1 from each queue per round until all empty.
+          declare -a cands
+          max_len=$((${#vless_q[@]}>${#vmess_q[@]}?${#vless_q[@]}:${#vmess_q[@]}))
+          if [ ${#trojan_q[@]} -gt $max_len ]; then max_len=${#trojan_q[@]}; fi
+          if [ ${#ss_q[@]} -gt $max_len ]; then max_len=${#ss_q[@]}; fi
+          for ((i=0; i<max_len; i++)); do
+            [ "$i" -lt "${#vless_q[@]}" ]  && cands+=("${vless_q[$i]}")
+            [ "$i" -lt "${#trojan_q[@]}" ] && cands+=("${trojan_q[$i]}")
+            [ "$i" -lt "${#vmess_q[@]}" ]  && cands+=("${vmess_q[$i]}")
+            [ "$i" -lt "${#ss_q[@]}" ]     && cands+=("${ss_q[$i]}")
+          done
+
+          echo "Pool: ${#cands[@]} unique candidates  (vless=${#vless_q[@]} vmess=${#vmess_q[@]} trojan=${#trojan_q[@]} ss=${#ss_q[@]})"
 
           : > /tmp/verified.txt
           : > /tmp/timings.txt
