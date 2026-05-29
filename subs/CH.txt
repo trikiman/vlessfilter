@@ -3,7 +3,7 @@ vless://58fbbc47-237d-4bc2-a8c3-6db623585a1b@104.18.120.34:8443?path=%2F&securit
 vless://58fbbc47-237d-4bc2-a8c3-6db623585a1b@104.18.120.34:8443?encryption=none&security=tls&sni=superconducting.turboo-server.space&insecure=0&allowInsecure=0&type=ws&host=superconducting.turboo-server.space&path=%2F#%F0%9F%87%A8%F0%9F%87%AD%20CH%20Switzerland
 trojan://duaR-NjjdGGLeZ+W6j=3NY46vZW+zyMD1z@89.125.95.152:11300?security=tls&insecure=0&headerType=none&fp=chrome&type=tcp&allowInsecure=0&sni=www.toughapp.click#%F0%9F%87%A8%F0%9F%87%AD%20CH%20Switzerland
 trojan://duaR-NjjdGGLeZ+W6j=3NY46vZW+zyMD1z@89.125.95.152:11300?security=tls&insecure=0&headerType=none&fp=chrome&type=tcp&allowInsecure=0&sni=www.toughapp.click#%F0%9F%87%A8%F0%9F%87%AD%20CH%20Switzerland
-trojan://duaR-NjjdGGLeZ+W6j=3NY46vZW+zyMD1z@89.125.95.152:11300?type=tcp&security=tls&headerType=none&sni=www.toughapp.click&fp=chrome&allowInsecure=1#%F0%9F%87%A8%F0%9F%87%AD%20CH%20Switzerland
+trojan://duaR-NjjdGGLeZ+W6j=3NY46vZW+zyMD1z@89.125.95.152:11300?security=tls&insecure=0&headerType=none&fp=chrome&type=tcp&allowInsecure=0&sni=www.toughapp.click#%F0%9F%87%A8%F0%9F%87%AD%20CH%20Switzerland
 ss://YWVzLTI1Ni1nY206Y2RCSURWNDJEQ3duZklO@38.180.161.123:8119#%F0%9F%87%A8%F0%9F%87%AD%20CH%20Switzerland
 ss://YWVzLTI1Ni1nY206Y2RCSURWNDJEQ3duZklO@38.180.161.123:8119#%F0%9F%87%A8%F0%9F%87%AD%20CH%20Switzerland
 ss://YWVzLTI1Ni1nY206Y2RCSURWNDJEQ3duZklO@38.180.161.123:8119#%F0%9F%87%A8%F0%9F%87%AD%20CH%20Switzerland
