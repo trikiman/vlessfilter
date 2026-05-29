@@ -2,5 +2,5 @@ vless://d4ca8f1f-45b2-486c-8944-b6524887e656@130.49.219.124:443?encryption=none&
 vless://256c5f48-4908-4255-83d1-c86cb58f22b4@152.53.47.91:443?type=tcp&security=reality&flow=xtls-rprx-vision&fp=chrome&pbk=wgoLhL4pRP0y6fu6He4qW_ElohCM_ANWJF3HEoUhNz4&sid=9c2378562188c3cb&sni=austria.denditop.site&spx=/#%F0%9F%87%A6%F0%9F%87%B9%20AT%20Austria
 vless://256c5f48-4908-4255-83d1-c86cb58f22b4@152.53.47.91:443?Telegram=@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad&type=tcp&security=reality&flow=xtls-rprx-vision&fp=chrome&pbk=wgoLhL4pRP0y6fu6He4qW_ElohCM_ANWJF3HEoUhNz4&sid=9c2378562188c3cb&sni=austria.denditop.site&spx=/#%F0%9F%87%A6%F0%9F%87%B9%20AT%20Austria
 ss://YWVzLTI1Ni1nY206S2l4THZLendqZWtHMDBybQ@38.180.197.41:8080#%F0%9F%87%A6%F0%9F%87%B9%20AT%20Austria
-ss://YWVzLTI1Ni1nY206S2l4THZLendqZWtHMDBybQ@38.180.197.41:8080?#%F0%9F%87%A6%F0%9F%87%B9%20AT%20Austria
+ss://YWVzLTI1Ni1nY206S2l4THZLendqZWtHMDBybQ@38.180.197.41:8080#%F0%9F%87%A6%F0%9F%87%B9%20AT%20Austria
 ss://YWVzLTI1Ni1nY206S2l4THZLendqZWtHMDBybQ@38.180.197.41:8080#%F0%9F%87%A6%F0%9F%87%B9%20AT%20Austria

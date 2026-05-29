@@ -1,3 +1,3 @@
-trojan://f58cd113-a3b1-319d-a993-331481731e82@a.twodnwnpoe.xyz:53217?allowInsecure=1&security=tls&sni=1.lossyesterday.xyz&type=tcp#%F0%9F%87%A8%F0%9F%87%AD%20CH%20Switzerland
+trojan://duaR-NjjdGGLeZ+W6j=3NY46vZW+zyMD1z@89.125.95.152:11300?type=tcp&security=tls&headerType=none&sni=www.toughapp.click&fp=chrome&allowInsecure=1#%F0%9F%87%A8%F0%9F%87%AD%20CH%20Switzerland
 trojan://duaR-NjjdGGLeZ+W6j=3NY46vZW+zyMD1z@89.125.95.152:11300?type=tcp&security=tls&headerType=none&sni=www.toughapp.click&fp=chrome&allowInsecure=1#%F0%9F%87%A8%F0%9F%87%AD%20CH%20Switzerland
 trojan://duaR-NjjdGGLeZ+W6j=3NY46vZW+zyMD1z@89.125.95.152:11300?type=tcp&security=tls&headerType=none&sni=www.toughapp.click&fp=chrome&allowInsecure=1#%F0%9F%87%A8%F0%9F%87%AD%20CH%20Switzerland
