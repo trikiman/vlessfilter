@@ -333,6 +333,28 @@ async function fetchTextOk(url) {
 }
 
 async function fetchJsonOk(url) {
+  // Cache GH API responses for 5 min in localStorage to dodge unauth rate limit (60/hr)
+  if (url.includes('api.github.com')) {
+    const cacheKey = 'gh-api-' + url;
+    try {
+      const cached = JSON.parse(localStorage.getItem(cacheKey) || 'null');
+      if (cached && Date.now() - cached.ts < 5 * 60 * 1000) {
+        return cached.data;
+      }
+    } catch {}
+    const r = await fetch(url, {cache: 'no-store'});
+    if (!r.ok) {
+      // Return cached even if stale on rate limit
+      try {
+        const stale = JSON.parse(localStorage.getItem(cacheKey) || 'null');
+        if (stale && r.status === 403) return stale.data;
+      } catch {}
+      throw new Error(`${url} -> ${r.status}`);
+    }
+    const data = await r.json();
+    try { localStorage.setItem(cacheKey, JSON.stringify({ts: Date.now(), data})); } catch {}
+    return data;
+  }
   const r = await fetch(url, {cache: 'no-store'});
   if (!r.ok) throw new Error(`${url} -> ${r.status}`);
   return r.json();
