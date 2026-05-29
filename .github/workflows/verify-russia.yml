@@ -274,6 +274,37 @@ jobs:
             echo "::warning::0 verified through bridge — keeping previous subs/verified-russia.txt"
           fi
 
+      - name: Update reliability history
+        if: steps.pick-bridge.outputs.skip != 'true'
+        run: |
+          # Append per-key per-run results to a JSONL history file.
+          # Dashboard reads this to show "alive % over last 24h" per key.
+          mkdir -p .readme-data
+          HIST=".readme-data/verified-russia-history.jsonl"
+          touch "$HIST"
+
+          NOW=$(date -u +%Y-%m-%dT%H:%M:%SZ)
+          RUN_ID="${{ github.run_id }}"
+
+          if [ -f /tmp/timings.txt ]; then
+            while IFS= read -r line; do
+              [ -z "$line" ] && continue
+              avg=$(echo "$line" | awk '{print $1}')
+              uri=$(echo "$line" | awk '{$1=""; sub(/^ /,""); print}')
+              hp=$(echo "$uri" | grep -oE '@[^:?/#]+:[0-9]+' | head -1 | tr -d '@')
+              proto=$(echo "$uri" | grep -oE '^[a-z]+')
+              echo "{\"ts\":\"$NOW\",\"host_port\":\"$hp\",\"proto\":\"$proto\",\"alive\":true,\"delay_ms\":$avg,\"run_id\":\"$RUN_ID\"}" >> "$HIST"
+            done < /tmp/timings.txt
+          fi
+
+          # Trim history to last 50000 entries (~7 days at 30min × 25 keys)
+          if [ $(wc -l < "$HIST") -gt 50000 ]; then
+            tail -50000 "$HIST" > "${HIST}.tmp"
+            mv "${HIST}.tmp" "$HIST"
+          fi
+
+          echo "history size: $(wc -l < $HIST) entries"
+
       - name: Stop bridge
         if: always() && steps.pick-bridge.outputs.skip != 'true'
         run: |
@@ -289,7 +320,7 @@ jobs:
           set -e
           git config user.name "VlessFilter Bot"
           git config user.email "vf-bot@noreply.github.com"
-          git add -f subs/verified-russia.txt
+          git add -f subs/verified-russia.txt .readme-data/verified-russia-history.jsonl 2>/dev/null
           if git diff --cached --quiet; then
             echo "no changes to verified-russia.txt"
             exit 0
