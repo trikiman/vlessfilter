@@ -52,12 +52,9 @@ jobs:
           echo "$HOME/go/bin" >> $GITHUB_PATH
           sudo apt-get install -y proxychains4
 
-      - name: Pick first alive RU bridge
+      - name: Pick + start RU bridge (with fallback)
         id: pick-bridge
         env:
-          # Optional fallback bridge supplied as repo secret. If subs/RU.txt
-          # is stale-empty / all dead, we try this. Set RU_BRIDGE_FALLBACK
-          # in repo Settings > Secrets to enable.
           RU_BRIDGE_FALLBACK: ${{ secrets.RU_BRIDGE_FALLBACK }}
         run: |
           set +e
@@ -67,9 +64,6 @@ jobs:
           declare -a candidates
 
           if [ -f "$BRIDGE_FILE" ]; then
-            # Dedupe by host:port — same server may appear with different
-            # query-string param orders. Read line, extract host:port,
-            # keep first occurrence.
             declare -A seen
             while IFS= read -r line; do
               [[ "$line" =~ ^(vless|trojan|ss|vmess):// ]] || continue
@@ -82,8 +76,6 @@ jobs:
             done < "$BRIDGE_FILE"
           fi
 
-          # Always append the fallback (deduped); ensures we have at least
-          # one candidate even if subs/RU.txt is stale.
           if [ -n "$RU_BRIDGE_FALLBACK" ]; then
             hp=$(echo "$RU_BRIDGE_FALLBACK" | grep -oE '@[^:?/#]+:[0-9]+' | head -1)
             if [ -n "$hp" ] && [ -z "${seen[$hp]:-}" ]; then
@@ -93,75 +85,80 @@ jobs:
           fi
 
           if [ ${#candidates[@]} -eq 0 ]; then
-            echo "::warning::no bridge candidates (RU.txt empty + no fallback secret)"
+            echo "::warning::no bridge candidates"
             echo "skip=true" >> $GITHUB_OUTPUT
             exit 0
           fi
 
-          echo "Have ${#candidates[@]} unique bridge candidates to try"
+          echo "Have ${#candidates[@]} unique bridge candidates"
 
-          # Test each candidate; pick first that passes liveness
-          BRIDGE=""
+          # Try each candidate: liveness probe → start as SOCKS → verify SOCKS works.
+          # Move to next on any failure. Tracks BRIDGE_OK=1 once we find a working one.
+          BRIDGE_OK=0
           for c in "${candidates[@]}"; do
             host=$(echo "$c" | grep -oE '@[^:?/#]+:[0-9]+' | head -1 | tr -d '@')
-            echo "Testing bridge: $host"
+            echo "=== Trying bridge: $host ==="
+
+            # 1. Quick liveness probe (transient connection)
             out=$(timeout 12 xray-knife http -c "$c" -u "https://www.cloudflare.com/cdn-cgi/trace" -d 6000 -b 2>&1)
-            if echo "$out" | grep -q "✅"; then
-              echo "  $host PASS - using as bridge"
-              BRIDGE="$c"
-              break
-            else
-              echo "  $host FAIL"
+            if ! echo "$out" | grep -q "✅"; then
+              echo "  liveness FAIL"
+              continue
             fi
+            echo "  liveness PASS"
+
+            # 2. Start as long-running SOCKS5 inbound
+            pkill -f 'xray-knife proxy inbound' 2>/dev/null || true
+            sleep 1
+            nohup xray-knife proxy inbound -c "$c" -p 19999 -a 127.0.0.1 > /tmp/bridge.log 2>&1 &
+            echo $! > /tmp/bridge.pid
+            sleep 5
+
+            if ! kill -0 $(cat /tmp/bridge.pid) 2>/dev/null; then
+              echo "  proxy-inbound process died:"
+              tail -10 /tmp/bridge.log | sed 's/^/    /'
+              continue
+            fi
+
+            USER=$(grep -oE 'Username:\s*\S+' /tmp/bridge.log | head -1 | awk '{print $2}')
+            PASS=$(grep -oE 'Password:\s*\S+' /tmp/bridge.log | head -1 | awk '{print $2}')
+            if [ -z "$USER" ] || [ -z "$PASS" ]; then
+              echo "  could not read SOCKS auth from log"
+              kill $(cat /tmp/bridge.pid) 2>/dev/null
+              continue
+            fi
+
+            # 3. Verify SOCKS actually proxies (curl through it to ipify)
+            cat > /tmp/pc.conf <<-EOF
+            strict_chain
+            proxy_dns
+            tcp_read_time_out 15000
+            tcp_connect_time_out 8000
+            [ProxyList]
+            socks5 127.0.0.1 19999 $USER $PASS
+            EOF
+            sed -i 's/^            //' /tmp/pc.conf
+
+            EXIT_IP=$(timeout 12 proxychains4 -f /tmp/pc.conf curl -sSL --max-time 10 https://api.ipify.org 2>/dev/null)
+            if [ -z "$EXIT_IP" ]; then
+              echo "  SOCKS proxy not actually proxying (ipify timeout)"
+              kill $(cat /tmp/bridge.pid) 2>/dev/null
+              continue
+            fi
+
+            echo "  SOCKS works! Exit IP: $EXIT_IP"
+            echo "$c" > /tmp/ru-bridge.txt
+            BRIDGE_OK=1
+            break
           done
 
-          if [ -z "$BRIDGE" ]; then
-            echo "::warning::all ${#candidates[@]} bridges dead — skipping verify (keeping previous verified-russia.txt)"
+          if [ $BRIDGE_OK -eq 0 ]; then
+            echo "::warning::all ${#candidates[@]} bridge candidates failed"
             echo "skip=true" >> $GITHUB_OUTPUT
             exit 0
           fi
 
-          echo "$BRIDGE" > /tmp/ru-bridge.txt
           echo "skip=false" >> $GITHUB_OUTPUT
-
-      - name: Start RU bridge as SOCKS proxy
-        if: steps.pick-bridge.outputs.skip != 'true'
-        run: |
-          export PATH=$PATH:$HOME/go/bin
-          BRIDGE=$(cat /tmp/ru-bridge.txt)
-
-          nohup xray-knife proxy inbound -c "$BRIDGE" -p 19999 -a 127.0.0.1 > /tmp/bridge.log 2>&1 &
-          echo $! > /tmp/bridge.pid
-          sleep 5
-
-          if ! kill -0 $(cat /tmp/bridge.pid) 2>/dev/null; then
-            echo "::error::bridge process died"
-            tail -30 /tmp/bridge.log
-            exit 1
-          fi
-
-          USER=$(grep -oE 'Username:\s*\S+' /tmp/bridge.log | head -1 | awk '{print $2}')
-          PASS=$(grep -oE 'Password:\s*\S+' /tmp/bridge.log | head -1 | awk '{print $2}')
-          echo "Bridge SOCKS auth: $USER / $PASS"
-
-          cat > /tmp/pc.conf <<-EOF
-          strict_chain
-          proxy_dns
-          remote_dns_subnet 224
-          tcp_read_time_out 15000
-          tcp_connect_time_out 8000
-          [ProxyList]
-          socks5 127.0.0.1 19999 $USER $PASS
-          EOF
-          # The <<-EOF + leading tabs would be ideal but YAML | preserves
-          # leading spaces. Strip them so proxychains4 parses correctly.
-          sed -i 's/^          //' /tmp/pc.conf
-          cat /tmp/pc.conf
-
-          # Sanity check: what IP does the bridge exit through?
-          echo "=== Bridge exit identity ==="
-          proxychains4 -f /tmp/pc.conf curl -sSL --max-time 10 https://api.ipify.org 2>/dev/null || echo "ipify failed"
-          echo
 
       - name: Bridge-verify candidates
         if: steps.pick-bridge.outputs.skip != 'true'
