@@ -3,14 +3,14 @@ gsd_state_version: 1.0
 milestone: v2.2.0
 milestone_name: ru-verified-10
 status: in-progress
-last_updated: "2026-05-28T13:25:00Z"
-last_activity: 2026-05-28 -- verify-russia.yml shipped, bridge architecture validated, dashboard updated
+last_updated: "2026-05-29T06:05:00Z"
+last_activity: 2026-05-29 -- 22.4 reliability tracking shipped (per-key history + dashboard table)
 progress:
   total_phases: 5
   completed_phases: 3
   total_plans: 5
   completed_plans: 3
-  percent: 60
+  percent: 75
 ---
 
 # Project State
@@ -54,10 +54,13 @@ See: .planning/PROJECT.md
   - Schedule: every 30 min + after refresh.yml + workflow_dispatch
 
 - ⏳ **22.4** — Validate 10 × 99% over 7 days [IN PROGRESS]
-  - Need: dashboard tracking actual reliability over time
-  - Need: residential RU verification spot-checks (user's PC, manual)
-  - Decision pending: residential always-on (self-hosted runner) or accept DC-bridge approximation
-  - Current observed: 70% mortality per 12h on free public keys → architecture must compensate via 30min refresh
+  - ✅ Per-key reliability tracking (`.readme-data/verified-russia-history.jsonl`)
+  - ✅ Dashboard surfaces "Seen N/M" + "Alive %" per key over last 24h
+  - ✅ Round-robin protocol selection so verified-russia.txt has mixed vless/trojan/ss (was 100% ss earlier)
+  - ✅ Bridge pick+start unified with fallback: tries each candidate end-to-end (liveness probe + start as SOCKS + curl through SOCKS to verify it actually proxies)
+  - ⏳ Need 7-day baseline data accumulated (~336 verify-russia runs)
+  - ⏳ Decision pending: residential always-on (self-hosted runner) or accept DC-bridge approximation
+  - Current observed: ~25 keys verified per cycle, 30min cron, 2-4min runtime each
 
 - ⏳ **22.5** — Document & ship as stable v2.2
   - Update README.md to point at verified-russia.txt as recommended for RU users
