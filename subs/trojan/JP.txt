@@ -1,3 +1,2 @@
-trojan://BxceQaOe@116.80.61.236:443?allowInsecure=1&sni=t.me%252Fripaojiedian#%F0%9F%87%AF%F0%9F%87%B5%20JP%20Japan
-trojan://BxceQaOe@116.80.61.236:443?allowInsecure=1&sni=t.me%2Fripaojiedian#%F0%9F%87%AF%F0%9F%87%B5%20JP%20Japan
-trojan://BxceQaOe@116.80.61.236:443?allowInsecure=1&sni=t.me/ripaojiedian#%F0%9F%87%AF%F0%9F%87%B5%20JP%20Japan
+trojan://d49a85d5-aa2a-3b1f-843c-bc49be359e2d@517531307031831.yf.r.hy2use.net:46922?security=tls&type=tcp&sni=13857jk.r.bilibili.com&peer=13857jk.r.bilibili.com&allowInsecure=1#%F0%9F%87%AF%F0%9F%87%B5%20JP%20Japan
+trojan://IbezlLAYfrLRwFn9.mHn5FDwk1asLi599U@130.94.65.52:443?type=tcp&security=tls&headerType=none&sni=www.static-cast.click&fp=chrome&allowInsecure=1#%F0%9F%87%AF%F0%9F%87%B5%20JP%20Japan
