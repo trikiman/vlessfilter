@@ -129,15 +129,7 @@ jobs:
             fi
 
             # 3. Verify SOCKS actually proxies (curl through it to ipify)
-            cat > /tmp/pc.conf <<-EOF
-            strict_chain
-            proxy_dns
-            tcp_read_time_out 15000
-            tcp_connect_time_out 8000
-            [ProxyList]
-            socks5 127.0.0.1 19999 $USER $PASS
-            EOF
-            sed -i 's/^            //' /tmp/pc.conf
+            printf 'strict_chain\nproxy_dns\ntcp_read_time_out 15000\ntcp_connect_time_out 8000\n[ProxyList]\nsocks5 127.0.0.1 19999 %s %s\n' "$USER" "$PASS" > /tmp/pc.conf
 
             EXIT_IP=$(timeout 12 proxychains4 -f /tmp/pc.conf curl -sSL --max-time 10 https://api.ipify.org 2>/dev/null)
             if [ -z "$EXIT_IP" ]; then
