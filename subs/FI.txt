@@ -4,6 +4,6 @@ vless://d511e429-e32b-46a7-ac07-a0fffa9b634c@144.31.235.62:443?encryption=none&f
 trojan://WXgoPIGPSr@2.27.23.226:5231?security=reality&pbk=ksyeiEzHremNnFa1kqsHJkIEXQqPZ3CPQvU65WaMNWM&headerType=none&fp=chrome&type=tcp&sni=www.icloud.com&sid=02#%F0%9F%87%AB%F0%9F%87%AE%20FI%20Finland
 trojan://WXgoPIGPSr@2.27.23.226:5231/?type=tcp&sni=www.icloud.com&fp=chrome&security=reality&pbk=ksyeiEzHremNnFa1kqsHJkIEXQqPZ3CPQvU65WaMNWM&sid=02#%F0%9F%87%AB%F0%9F%87%AE%20FI%20Finland
 trojan://WXgoPIGPSr@2.27.23.226:5231?security=reality&pbk=ksyeiEzHremNnFa1kqsHJkIEXQqPZ3CPQvU65WaMNWM&headerType=none&fp=chrome&type=tcp&sni=www.icloud.com&sid=02#%F0%9F%87%AB%F0%9F%87%AE%20FI%20Finland
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp5S1ZNb0IzQXdpVEV6bnBub3EyRllS@193.47.60.186:28687?#%F0%9F%87%AB%F0%9F%87%AE%20FI%20Finland
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp5S1ZNb0IzQXdpVEV6bnBub3EyRllS@193.47.60.186:28687#%F0%9F%87%AB%F0%9F%87%AE%20FI%20Finland
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp5S1ZNb0IzQXdpVEV6bnBub3EyRllS@193.47.60.186:28687#%F0%9F%87%AB%F0%9F%87%AE%20FI%20Finland
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp5S1ZNb0IzQXdpVEV6bnBub3EyRllS@193.47.60.186:28687#%F0%9F%87%AB%F0%9F%87%AE%20FI%20Finland

@@ -1,3 +1,2 @@
 trojan://BstBsRr71p@104.18.32.47:8443?mode=auto&security=tls&insecure=1&fp=chrome&type=xhttp&allowInsecure=1&sni=sv-free.n2buy.ir#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
-trojan://s_WEN9lMmufG+qDIsn-4C7JOVAnDdbS3Ui@172.236.220.10:443?type=tcp&security=tls&headerType=none&sni=172.236.220.10&fp=chrome&allowInsecure=1#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
-trojan://r-_YbwF.j0TtHVewoFIppramjAnmSfqYzJ@172.238.120.124:443?security=tls&fp=chrome&type=tcp&headerType=none&path=/#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
+trojan://r-_YbwF.j0TtHVewoFIppramjAnmSfqYzJ@172.238.120.124:443#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany

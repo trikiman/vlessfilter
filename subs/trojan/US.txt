@@ -1,3 +1,3 @@
 trojan://f7J0Sli5s1m25DJbfulPtXAu@199.195.254.136:27427?security=none&type=ws&host=199.195.254.136&path=%2Fws#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States
 trojan://f7J0Sli5s1m25DJbfulPtXAu@199.195.254.136:27427?security=none&type=ws&host=199.195.254.136&path=%2Fws#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States
-trojan://rXyShM8Jni+5Sbq3k4gkyr5Lq0zOMRL2Uf@45.79.8.17:443?type=tcp&security=tls&headerType=none&sni=45.79.8.17&fp=chrome&allowInsecure=1#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States
+trojan://f7J0Sli5s1m25DJbfulPtXAu@199.195.254.136:27427?security=none&type=ws&host=199.195.254.136&path=%2Fws#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States

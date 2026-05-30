@@ -1,0 +1,2 @@
+trojan://mitivpn@188.114.97.6:443?type=ws&security=tls&path=/720f09dba195249b423f771661162528/workers/services/view/mitivpn/production/settings&host=mitivpn.ws-ws-ws.workers.dev&sni=mitivpn.ws-ws-ws.workers.dev&alpn=http/1.1&fp=chrome&allowInsecure=1#%F0%9F%8C%90%20ROTATING
+trojan://mitivpn@188.114.97.6:443?type=ws&security=tls&path=/720f09dba195249b423f771661162528/workers/services/view/mitivpn/production/settings&host=mitivpn.ws-ws-ws.workers.dev&sni=mitivpn.ws-ws-ws.workers.dev&alpn=http/1.1&fp=chrome&allowInsecure=1#%F0%9F%8C%90%20ROTATING
