@@ -1,5 +1,5 @@
-trojan://avA=NpxA2_yNqY11PT=OrbCXh8C4LdYUeS@38.54.63.105:443?security=tls&sni=www.cdn-setting.click&fp=chrome&type=tcp#%F0%9F%87%BF%F0%9F%87%A6%20ZA%20South%20Africa
 trojan://avA=NpxA2_yNqY11PT=OrbCXh8C4LdYUeS@38.54.63.105:443?type=tcp&security=tls&headerType=none&sni=www.cdn-setting.click&fp=chrome&allowInsecure=1#%F0%9F%87%BF%F0%9F%87%A6%20ZA%20South%20Africa
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpYc3k4T3g0eU9WM3hMbHB4dGp6czNY@102.133.165.160:16233?type=tcp#%F0%9F%87%BF%F0%9F%87%A6%20ZA%20South%20Africa
+trojan://avA=NpxA2_yNqY11PT=OrbCXh8C4LdYUeS@38.54.63.105:443?security=tls&sni=www.cdn-setting.click&fp=chrome&type=tcp#%F0%9F%87%BF%F0%9F%87%A6%20ZA%20South%20Africa
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpYc3k4T3g0eU9WM3hMbHB4dGp6czNY@102.133.165.160:16233#%F0%9F%87%BF%F0%9F%87%A6%20ZA%20South%20Africa
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpYc3k4T3g0eU9WM3hMbHB4dGp6czNY@102.133.165.160:16233#%F0%9F%87%BF%F0%9F%87%A6%20ZA%20South%20Africa
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpVYjN4WmVQaFV4ckxBTllG@102.37.99.100:443?outline=1&prefix=POST w336392l#%F0%9F%87%BF%F0%9F%87%A6%20ZA%20South%20Africa
