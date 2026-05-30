@@ -1,2 +1,1 @@
 trojan://d30ab83dbde4480082048fb315bedebd@5.180.78.22:443?allowInsecure=1&sni=5.180.78.22#%F0%9F%87%B8%F0%9F%87%AC%20SG%20Singapore
-trojan://BxceQaOe@140.235.140.105:443?allowInsecure=1&sni=t.me/ripaojiedian#%F0%9F%87%B8%F0%9F%87%AC%20SG%20Singapore

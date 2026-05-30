@@ -1,0 +1,2 @@
+trojan://rYuChHcwQZskq9E0zdoR@119.195.0.158:35342?sni=vpn5.rnmcnm.com&type=ws&host=vpn5.rnmcnm.com&path=/ws-79dffb8106db#%F0%9F%87%A6%F0%9F%87%BA%20AU%20Australia
+trojan://rYuChHcwQZskq9E0zdoR@119.195.0.158:35342?type=ws&host=vpn5.rnmcnm.com&path=%2Fws-79dffb8106db&security=tls&sni=vpn5.rnmcnm.com#%F0%9F%87%A6%F0%9F%87%BA%20AU%20Australia
