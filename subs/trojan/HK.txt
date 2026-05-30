@@ -1,3 +1,2 @@
-trojan://4f4d1167-ef14-4304-9bce-0740472503ef@90081bb25c.node.tro.cac.cab:46424?allowInsecure=1&sni=de.01.naiun.bilibili.com#%F0%9F%87%AD%F0%9F%87%B0%20HK%20Hong%20Kong
-trojan://4f4d1167-ef14-4304-9bce-0740472503ef@90081bb25c.node.tro.cac.cab:48697?allowInsecure=1&sni=gh.01.naiun.bilibili.com#%F0%9F%87%AD%F0%9F%87%B0%20HK%20Hong%20Kong
-trojan://4f4d1167-ef14-4304-9bce-0740472503ef@90081bb25c.node.tro.cac.cab:47909?allowInsecure=1&sni=is.01.naiun.bilibili.com#%F0%9F%87%AD%F0%9F%87%B0%20HK%20Hong%20Kong
+trojan://2399fe0a-b359-40a9-a3f0-b70c3c177a01@cloudflare-ip.mofashi.ltd:443?type=ws&host=aa.beijng.dpdns.org&path=/?ed=2048&security=tls&sni=aa.beijng.dpdns.org#%F0%9F%87%AD%F0%9F%87%B0%20HK%20Hong%20Kong
+trojan://2399fe0a-b359-40a9-a3f0-b70c3c177a01@cloudflare-ip.mofashi.ltd:443?type=ws&host=aa.beijng.dpdns.org&path=%2F%3Fed%3D2048&security=tls&sni=aa.beijng.dpdns.org#%F0%9F%87%AD%F0%9F%87%B0%20HK%20Hong%20Kong
