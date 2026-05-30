@@ -1,3 +1,2 @@
 trojan://BstBsRr71p@104.18.32.47:8443?mode=auto&security=tls&insecure=1&fp=chrome&type=xhttp&allowInsecure=1&sni=sv-free.n2buy.ir#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
 trojan://BstBsRr71p@104.18.32.47:8443?mode=auto&security=tls&insecure=1&fp=chrome&type=xhttp&allowInsecure=1&sni=sv-free.n2buy.ir#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
-trojan://hxn2jK9Uzezogua0oHuq9Y8viN=UCe.2Jd@185.137.157.254:443?type=raw&headerType=none&security=tls&fp=chrome&sni=www.directorypipeline.click#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany

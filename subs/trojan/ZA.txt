@@ -1,2 +1,2 @@
-trojan://avA=NpxA2_yNqY11PT=OrbCXh8C4LdYUeS@38.54.63.105:443?type=tcp&security=tls&headerType=none&sni=www.cdn-setting.click&fp=chrome&allowInsecure=1#%F0%9F%87%BF%F0%9F%87%A6%20ZA%20South%20Africa
 trojan://avA=NpxA2_yNqY11PT=OrbCXh8C4LdYUeS@38.54.63.105:443?security=tls&sni=www.cdn-setting.click&fp=chrome&type=tcp#%F0%9F%87%BF%F0%9F%87%A6%20ZA%20South%20Africa
+trojan://avA=NpxA2_yNqY11PT=OrbCXh8C4LdYUeS@38.54.63.105:443?type=tcp&security=tls&headerType=none&sni=www.cdn-setting.click&fp=chrome&allowInsecure=1#%F0%9F%87%BF%F0%9F%87%A6%20ZA%20South%20Africa
