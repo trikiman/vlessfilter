@@ -1,3 +1,0 @@
-trojan://bpb-trojan@104.21.26.36:443?security=tls&sni=vless.herogoing.top&type=ws&host=vless.herogoing.top&path=/tr?ed=2560#%F0%9F%8C%90%20ROTATING
-trojan://bpb-trojan@vless.herogoing.top:443?security=tls&sni=vless.herogoing.top&type=ws&host=vless.herogoing.top&path=%2Ftr%3Fed%3D2560#%F0%9F%8C%90%20ROTATING
-trojan://bpb-trojan@vless.herogoing.top:443?sni=vless.herogoing.top&type=ws&host=vless.herogoing.top&path=/tr?ed=2560#%F0%9F%8C%90%20ROTATING
