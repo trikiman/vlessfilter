@@ -1,1 +1,2 @@
-trojan://YGWIMlg.W1wRWQkRDcKfjZY7sng09aC=Yh@217.69.2.107:443?sni=www.weavenet.click&fp=chrome&path=/#%F0%9F%87%AB%F0%9F%87%B7%20FR%20France
+trojan://YGWIMlg.W1wRWQkRDcKfjZY7sng09aC=Yh@217.69.2.107:443?fp=chrome&sni=www.weavenet.click#%F0%9F%87%AB%F0%9F%87%B7%20FR%20France
+trojan://YGWIMlg.W1wRWQkRDcKfjZY7sng09aC=Yh@217.69.2.107:443?allowInsecure=0&sni=www.weavenet.click#%F0%9F%87%AB%F0%9F%87%B7%20FR%20France

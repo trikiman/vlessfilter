@@ -1,3 +1,3 @@
-trojan://humanity@www.multiplydose.com:443/?type=ws&path=%2Fassignment&security=tls&sni=www.multiplydose.com&allowInsecure=1&fp=chrome#%F0%9F%87%B3%F0%9F%87%B1%20NL%20Netherlands
-trojan://XDWhVpqFE1@31.59.39.192:8443?path=%2Fwsamd&security=none&host=www.amd.com&type=ws#%F0%9F%87%B3%F0%9F%87%B1%20NL%20Netherlands
-trojan://XDWhVpqFE1@31.59.39.192:8443?path=%2Fwsamd&security=none&host=www.amd.com&type=ws#%F0%9F%87%B3%F0%9F%87%B1%20NL%20Netherlands
+trojan://po5u3ol81xjpalfv@89.124.116.211:443?mode=auto&path=%2F&security=reality&pbk=tRk_bCR4ARBc_wEIhCBWqAN1VUNolntSAsTndVpeQ2Y&fp=chrome&spx=%2FEYeY1YMHGSXWQAx&type=xhttp&sni=my.yektanet.com&sid=ef051d#%F0%9F%87%B3%F0%9F%87%B1%20NL%20Netherlands
+trojan://po5u3ol81xjpalfv@89.124.116.211:443?mode=auto&path=%2F&security=reality&pbk=tRk_bCR4ARBc_wEIhCBWqAN1VUNolntSAsTndVpeQ2Y&fp=chrome&spx=%2FEYeY1YMHGSXWQAx&type=xhttp&sni=my.yektanet.com&sid=ef051d#%F0%9F%87%B3%F0%9F%87%B1%20NL%20Netherlands
+trojan://po5u3ol81xjpalfv@89.124.116.211:443?type=xhttp&security=reality&path=/&mode=auto&extra={"mode":"auto","scMaxEachPostBytes":"1000000","xPaddingBytes":"100-1000"}&sni=my.yektanet.com&fp=chrome&allowInsecure=1&pbk=tRk_bCR4ARBc_wEIhCBWqAN1VUNolntSAsTndVpeQ2Y&sid=ef051d&spx=/EYeY1YMHGSXWQAx#%F0%9F%87%B3%F0%9F%87%B1%20NL%20Netherlands
