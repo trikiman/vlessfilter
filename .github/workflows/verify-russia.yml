@@ -84,6 +84,24 @@ jobs:
             fi
           fi
 
+          # Fetch igareck's pre-validated Reality+Vision RU whitelist as additional
+          # bridge candidates. These are auto-curated by igareck's in-RU probe so
+          # they're way fresher than our subs/RU.txt cycle.
+          for f in Vless-Reality-White-Lists-Rus-Mobile.txt Vless-Reality-White-Lists-Rus-Mobile-2.txt; do
+            curl -sSL --max-time 15 "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/$f" 2>/dev/null \
+              | grep -E '^vless://.*security=reality' | head -10 > /tmp/igareck-bridges.txt 2>/dev/null || true
+            while IFS= read -r line; do
+              [ -z "$line" ] && continue
+              hp=$(echo "$line" | grep -oE '@[^:?/#]+:[0-9]+' | head -1)
+              [ -z "$hp" ] && continue
+              if [ -z "${seen[$hp]:-}" ]; then
+                seen[$hp]=1
+                candidates+=("$line")
+              fi
+            done < /tmp/igareck-bridges.txt
+          done
+          echo "After igareck bridge add: ${#candidates[@]} candidates"
+
           if [ ${#candidates[@]} -eq 0 ]; then
             echo "::warning::no bridge candidates"
             echo "skip=true" >> $GITHUB_OUTPUT
