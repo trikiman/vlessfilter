@@ -1,3 +1,3 @@
-trojan://zWFjJENcljZm@104.18.3.150:443?sni=vahidqaz-7o61u7.vahidqaz.workers.dev&type=ws&path=%2F%3Fed%3D2560&fp=chrome&allowInsecure=1#%F0%9F%87%B3%F0%9F%87%B1%20NL%20Netherlands
-trojan://MeaDiUmPlkWbZJ2BON8tz@78.159.131.12:28259?allowInsecure=1&sni=%F0%9F%94%92#%F0%9F%87%B3%F0%9F%87%B1%20NL%20Netherlands
-trojan://MeaDiUmPlkWbZJ2BON8tz@78.159.131.12:28259?allowInsecure=1&sni=ads.x5.ru#%F0%9F%87%B3%F0%9F%87%B1%20NL%20Netherlands
+trojan://MeaDiUmPlkWbZJ2BON8tz@78.159.131.12:28259?allowInsecure=1&sni=#%F0%9F%87%B3%F0%9F%87%B1%20NL%20Netherlands
+trojan://XDWhVpqFE1@31.59.39.192:8443?path=%2Fwsamd&security=none&host=www.amd.com&type=ws#%F0%9F%87%B3%F0%9F%87%B1%20NL%20Netherlands
+trojan://XDWhVpqFE1@31.59.39.192:8443?path=%2Fwsamd&security=none&host=www.amd.com&type=ws#%F0%9F%87%B3%F0%9F%87%B1%20NL%20Netherlands
