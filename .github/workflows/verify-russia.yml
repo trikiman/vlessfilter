@@ -184,72 +184,74 @@ jobs:
 
           mapfile -t raw_lines < <(grep -E "^(vless|vmess|trojan)://" subs/all.txt)
 
-          # ALSO fetch igareck's pre-validated Reality whitelist directly.
-          # Per 2026 research: igareck runs an in-Russia probe every 1-2h that
-          # filters their lists to actually-working residential keys. These
-          # already-curated entries should pass our DC bridge AND residential.
-          IGARECK_FILES=(
-            "Vless-Reality-White-Lists-Rus-Mobile.txt"
-            "Vless-Reality-White-Lists-Rus-Mobile-2.txt"
-            "WHITE-CIDR-RU-checked.txt"
-          )
-          for f in "${IGARECK_FILES[@]}"; do
-            curl -sSL --max-time 15 "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/$f" 2>/dev/null \
-              | grep -E "^(vless|vmess|trojan)://" >> /tmp/igareck.txt 2>/dev/null || true
-          done
-          if [ -f /tmp/igareck.txt ]; then
-            mapfile -t igareck_lines < /tmp/igareck.txt
-            echo "Igareck pre-curated input: ${#igareck_lines[@]} URIs"
-            # Prepend igareck lines to the front
-            raw_lines=("${igareck_lines[@]}" "${raw_lines[@]}")
-          fi
+          # NOTE: we deliberately do NOT prepend igareck's Reality whitelist to
+          # the candidate pool. Those are Reality keys that pass the RU datacenter
+          # bridge but FAIL the user's RU residential network (2026-05-31 test:
+          # 1/15 alive). igareck's list is still used as a BRIDGE source (the
+          # bridge runs on a datacenter where Reality works fine).
 
           # Dedup by host:port + score by protocol resilience.
           # Per 2026 community evidence (igareck, fexyn, ntc.party):
-          #   Reality + xtls-rprx-vision  → ~95% residential RU pass (best)
-          #   VLESS over WS+TLS (CDN)     → medium (TLS hardened works)
-          #   VLESS plain TCP/TLS         → DPI-blocked frequently
-          #   Trojan WS+TLS               → inconsistent
-          #   Shadowsocks AEAD            → "largely blocked" — EXCLUDED entirely
-          #   VMess                       → declining
+          #   Trojan TLS/TCP              → EMPIRICALLY BEST on user's Iskratelecom
+          #   VLESS Reality (+/- Vision)  → mixed: passes RU datacenter, often
+          #                                 BLOCKED on RU residential (TSPU). The
+          #                                 bridge can't detect this gap.
+          #   VLESS over WS+TLS / xhttp   → medium
+          #   plain VLESS TCP / vmess     → low
+          #   Shadowsocks AEAD            → blocked, EXCLUDED
+          #
+          # NOTE: 2026-05-31 — user residential v2rayN test showed Reality+Vision
+          # 1/15 alive but Trojan-TLS ~70% alive. Flipped tier order to match
+          # actual residential behavior over global research consensus.
           declare -A seen_hp
-          declare -a tier_a tier_b tier_c
+          declare -a tier_a tier_b tier_c tier_d
           for line in "${raw_lines[@]}"; do
             hp=$(echo "$line" | grep -oE '@[^:?/#]+:[0-9]+' | head -1)
             [ -z "$hp" ] && continue
             [ -n "${seen_hp[$hp]:-}" ] && continue
             seen_hp[$hp]=1
 
-            # Tier A: VLESS Reality + Vision flow (the gold standard for RU)
-            if [[ "$line" == vless://* && "$line" == *"security=reality"* && "$line" == *"flow=xtls-rprx-vision"* ]]; then
+            # Tier A: Trojan over TLS (the empirically-best on user's RU residential)
+            if [[ "$line" == trojan://*"security=tls"* ]] || \
+               [[ "$line" == trojan://* && "$line" != *"type=ws"* && "$line" != *"security=reality"* ]]; then
               tier_a+=("$line")
               continue
             fi
-            # Tier B: VLESS Reality (any flow) OR VLESS+WS+TLS via CDN OR Trojan+WS+TLS
-            if [[ "$line" == vless://*"security=reality"* ]] || \
-               [[ "$line" == vless://*"type=ws"* && "$line" == *"security=tls"* ]] || \
-               [[ "$line" == trojan://*"type=ws"* && "$line" == *"security=tls"* ]]; then
+            # Tier B: VLESS Reality (datacenter-friendly; some residential pass)
+            if [[ "$line" == vless://*"security=reality"* ]]; then
               tier_b+=("$line")
               continue
             fi
-            # Tier C: everything else (plain VLESS TCP, plain Trojan, vmess)
-            tier_c+=("$line")
+            # Tier C: VLESS/Trojan WS+TLS, xhttp (CDN-fronted)
+            if [[ "$line" == *"type=ws"* && "$line" == *"security=tls"* ]] || \
+               [[ "$line" == *"type=xhttp"* ]]; then
+              tier_c+=("$line")
+              continue
+            fi
+            # Tier D: everything else (plain VLESS TCP, vmess)
+            tier_d+=("$line")
           done
 
-          # Concatenate by tier — best-quality first. Cap at 200 candidates total
-          # so we have time to bridge-test all of them within 8min budget.
+          # Interleave A and B so output has BOTH trojan and reality (don't let
+          # one protocol fill all 15 slots — user wants protocol diversity as
+          # a hedge since residential behavior shifts). Then C, then D.
           declare -a cands
-          for line in "${tier_a[@]}"; do cands+=("$line"); done
-          for line in "${tier_b[@]}"; do cands+=("$line"); done
+          max_ab=$(( ${#tier_a[@]} > ${#tier_b[@]} ? ${#tier_a[@]} : ${#tier_b[@]} ))
+          for ((i=0; i<max_ab; i++)); do
+            [ "$i" -lt "${#tier_a[@]}" ] && cands+=("${tier_a[$i]}")
+            [ "$i" -lt "${#tier_b[@]}" ] && cands+=("${tier_b[$i]}")
+          done
           for line in "${tier_c[@]}"; do cands+=("$line"); done
+          for line in "${tier_d[@]}"; do cands+=("$line"); done
           if [ ${#cands[@]} -gt 200 ]; then
             cands=("${cands[@]:0:200}")
           fi
 
           echo "Pool: ${#cands[@]} unique candidates"
-          echo "  Tier A (Reality+Vision): ${#tier_a[@]}"
-          echo "  Tier B (Reality/WS+TLS): ${#tier_b[@]}"
-          echo "  Tier C (other):          ${#tier_c[@]}"
+          echo "  Tier A (Trojan TLS):      ${#tier_a[@]}"
+          echo "  Tier B (VLESS Reality):   ${#tier_b[@]}"
+          echo "  Tier C (WS+TLS / xhttp):  ${#tier_c[@]}"
+          echo "  Tier D (other):           ${#tier_d[@]}"
           echo "  (SS/AEAD excluded — blocked by TSPU residential)"
 
           : > /tmp/verified.txt
