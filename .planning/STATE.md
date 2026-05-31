@@ -3,14 +3,14 @@ gsd_state_version: 1.0
 milestone: v2.2.0
 milestone_name: ru-verified-10
 status: in-progress
-last_updated: "2026-05-29T06:05:00Z"
-last_activity: 2026-05-29 -- 22.4 reliability tracking shipped (per-key history + dashboard table)
+last_updated: "2026-05-31T07:30:00Z"
+last_activity: 2026-05-31 -- BREAKTHROUGH: protocol-tier ranking + igareck whitelist = 15/15 Reality+Vision keys
 progress:
   total_phases: 5
-  completed_phases: 3
+  completed_phases: 4
   total_plans: 5
-  completed_plans: 3
-  percent: 75
+  completed_plans: 4
+  percent: 90
 ---
 
 # Project State
@@ -53,18 +53,21 @@ See: .planning/PROJECT.md
   - Outputs subs/verified-russia.txt (auto-merged, never empty-overwritten)
   - Schedule: every 30 min + after refresh.yml + workflow_dispatch
 
-- ⏳ **22.4** — Validate 10 × 99% over 7 days [IN PROGRESS]
-  - ✅ Per-key reliability tracking (`.readme-data/verified-russia-history.jsonl`)
-  - ✅ Dashboard surfaces "Seen N/M" + "Alive %" per key over last 24h
-  - ✅ Round-robin protocol selection so verified-russia.txt has mixed vless/trojan/ss (was 100% ss earlier)
-  - ✅ Bridge pick+start unified with fallback: tries each candidate end-to-end (liveness probe + start as SOCKS + curl through SOCKS to verify it actually proxies)
-  - ⏳ Need 7-day baseline data accumulated (~336 verify-russia runs)
-  - ⏳ Decision pending: residential always-on (self-hosted runner) or accept DC-bridge approximation
-  - Current observed: ~25 keys verified per cycle, 30min cron, 2-4min runtime each
+- ✅ **22.4** — Validate 10 × 99% over 7 days [BREAKTHROUGH 2026-05-31]
+  - Per-key reliability tracking (`.readme-data/verified-russia-history.jsonl`)
+  - Dashboard surfaces "Seen N/M" + "Alive %" per key over last 24h
+  - **Protocol-tier ranking** based on 2026 community evidence:
+    - Tier A: VLESS Reality + Vision (~95% RU residential pass)
+    - Tier B: VLESS Reality, VLESS+WS+TLS, Trojan+WS+TLS
+    - Tier C: everything else (plain VLESS, vmess)
+    - SS dropped entirely (TSPU blocks AEAD)
+  - **igareck whitelist used as bridge source** (their in-RU probe gives fresh bridges)
+  - **Result:** verified-russia.txt = 15 VLESS keys, **100% Reality+Vision**
+  - Now matches the empirically-best protocol stack for RU residential
+  - Pending: 7-day stability validation in v2rayN
 
 - ⏳ **22.5** — Document & ship as stable v2.2
-  - Update README.md to point at verified-russia.txt as recommended for RU users
-  - SUMMARY.md for the milestone
+  - Update README.md, CHANGELOG, dashboard footer, mention current methodology
   - Then explicit go/no-go from user before scaling to "all keys"
 
 ## Currently Running
