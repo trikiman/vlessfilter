@@ -6,5 +6,5 @@ trojan://humanity@www.multiplydose.com:443/?type=ws&path=%2Fassignment&security=
 trojan://XDWhVpqFE1@31.59.39.192:8443?path=%2Fwsamd&security=none&host=www.amd.com&type=ws#%F0%9F%87%B3%F0%9F%87%B1%20NL%20Netherlands
 trojan://XDWhVpqFE1@31.59.39.192:8443?path=%2Fwsamd&security=none&host=www.amd.com&type=ws#%F0%9F%87%B3%F0%9F%87%B1%20NL%20Netherlands
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpuS3N1MEdIc1FUcGVoQnUya2tGenZ6@5.253.59.156:32140#%F0%9F%87%B3%F0%9F%87%B1%20NL%20Netherlands
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.210:8080#%F0%9F%87%B3%F0%9F%87%B1%20NL%20Netherlands
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.210:8080#%F0%9F%87%B3%F0%9F%87%B1%20NL%20Netherlands
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@193.29.139.144:8080#%F0%9F%87%B3%F0%9F%87%B1%20NL%20Netherlands
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@193.29.139.144:8080#%F0%9F%87%B3%F0%9F%87%B1%20NL%20Netherlands
