@@ -1,1 +1,1 @@
-trojan://owreRY1bmquS1WcYN2@hk-2.tr202605.com:465?type=tcp&security=tls&headerType=none&allowInsecure=0#%F0%9F%87%AD%F0%9F%87%B0%20HK%20Hong%20Kong
+trojan://GKHWMe2R4qwNcNxu6l3KMkdd@121.178.83.161:26214?security=tls&sni=vpn1.rnmcnm.com&type=ws&path=%2Ftrj-ws&Host=vpn1.rnmcnm.com#%F0%9F%87%AD%F0%9F%87%B0%20HK%20Hong%20Kong

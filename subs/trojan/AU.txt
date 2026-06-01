@@ -1,1 +1,1 @@
-trojan://owreRY1bmquS1WcYN2@au-3.tr202605.com:443?security=tls&insecure=0&headerType=none&type=tcp&allowInsecure=0#%F0%9F%87%A6%F0%9F%87%BA%20AU%20Australia
+trojan://rYuChHcwQZskq9E0zdoR@103.63.30.230:443?security=tls&sni=vpn5.rnmcnm.com&type=ws&path=%2Fws-79dffb8106db&Host=vpn5.rnmcnm.com#%F0%9F%87%A6%F0%9F%87%BA%20AU%20Australia
