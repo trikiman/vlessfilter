@@ -81,10 +81,29 @@ Both are stable; cron is enabled. No long ad-hoc runs in flight.
 
 ## Accumulated Decisions (v2.2)
 
+### HARD CONSTRAINT (user 2026-05-31): NO user PC, ever
+- No self-hosted GitHub Actions runner on user's PC
+- No local PowerShell verifier (dev/*.ps1 are dead — do not run them)
+- No "run this on your PC" requests
+- ALL compute must be free cloud: GitHub Actions runners + Oracle VPS (Frankfurt)
+- Consequence: we CANNOT test from a true RU residential IP. Best available
+  approximation is the RU-datacenter bridge. We accept the residential gap and
+  compensate by biasing toward protocols that empirically survive the user's
+  residential TSPU (Trojan-TLS > VLESS Reality for their Iskratelecom network).
+
 ### Why "RU residential ≠ RU datacenter"
 - Frankfurt + GH Actions runners pass 95% of probe tests on the same keys that Russian Iskratelecom-residential sees as 0%
 - TSPU/RKN treats residential and datacenter traffic differently
 - Bridge architecture (route GH Actions through RU datacenter) approximates residential but is NOT identical
+- 2026-05-31 user test: Reality+Vision 1/15 alive residential, Trojan-TLS ~70% alive
+
+### Protocol tier order (user-empirical, overrides global research)
+- Tier A: Trojan TLS/TCP — best on user's residential
+- Tier B: VLESS Reality — passes datacenter bridge, mixed residential
+- Tier C: WS+TLS / xhttp (CDN-fronted)
+- Tier D: plain VLESS TCP, vmess
+- Excluded: Shadowsocks AEAD (TSPU-blocked)
+- verify-russia.yml interleaves A+B so output carries both protocols as a hedge
 
 ### Why bridge from `subs/RU.txt` instead of dedicated RU VPS
 - Free, self-bootstrapping (no external infra)
