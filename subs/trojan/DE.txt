@@ -1,1 +1,3 @@
-trojan://d-VoBikwImgO9HMG7YWANlh=QNlHzjK32P@91.233.8.116:443?Telegram=@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad&security=tls&insecure=0&headerType=none&type=tcp&allowInsecure=0&sni=fra116.plasmaapp.click#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
+trojan://LRvXTUTPHT@45.130.125.76:443?path=%2F%3Fed%3D2048&security=tls&insecure=0&fp=chrome&type=ws&allowInsecure=0&sni=da.aananas.ir#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
+trojan://I1vtf6pjYsAu-nFnraWAMjKTy90AHitdAz@91.233.8.25:443?security=tls&insecure=0&headerType=none&fp=chrome&type=tcp&allowInsecure=0&sni=fra34.tracker-ws.click#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
+trojan://I1vtf6pjYsAu-nFnraWAMjKTy90AHitdAz@91.233.8.25:443?security=tls&fp=chrome&type=tcp&sni=fra34.tracker-ws.click#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
