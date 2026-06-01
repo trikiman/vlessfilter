@@ -1,3 +1,1 @@
-trojan://8b45d379-702f-41b3-a6b2-9c87a01dcd5c@23.227.38.178:443?allowInsecure=1&sni=q6clkp794liy3y90.hktimecsgo.xyz&type=ws&host=q6clkp794liy3y90.hktimecsgo.xyz&path=/images#%F0%9F%87%AD%F0%9F%87%B0%20HK%20Hong%20Kong
-trojan://4f4d1167-ef14-4304-9bce-0740472503ef@155.117.198.82:46424?type=tcp&security=tls&sni=de.01.naiun.bilibili.com&allowInsecure=1#%F0%9F%87%AD%F0%9F%87%B0%20HK%20Hong%20Kong
-trojan://4f4d1167-ef14-4304-9bce-0740472503ef@90081bb25c.node.tro.cac.cab:47909?allowInsecure=1&sni=is.01.naiun.bilibili.com#%F0%9F%87%AD%F0%9F%87%B0%20HK%20Hong%20Kong
+trojan://owreRY1bmquS1WcYN2@hk-2.tr202605.com:465?type=tcp&security=tls&headerType=none&allowInsecure=0#%F0%9F%87%AD%F0%9F%87%B0%20HK%20Hong%20Kong

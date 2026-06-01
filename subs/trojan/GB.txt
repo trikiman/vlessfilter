@@ -1,3 +1,1 @@
-trojan://LSS6HLnp7IeEEJUcox@uk-1.tr202607.com:443?type=tcp&security=tls&headerType=none&allowInsecure=1#%F0%9F%87%AC%F0%9F%87%A7%20GB%20United%20Kingdom
-trojan://LSS6HLnp7IeEEJUcox@uk-1.tr202607.com:443?type=tcp&security=tls&headerType=none&allowInsecure=1#%F0%9F%87%AC%F0%9F%87%A7%20GB%20United%20Kingdom
-trojan://LSS6HLnp7IeEEJUcox@uk-1.tr202607.com:443?type=tcp&security=tls&headerType=none&allowInsecure=1#%F0%9F%87%AC%F0%9F%87%A7%20GB%20United%20Kingdom
+trojan://ASoZeIVwzX4w4wxwig@uk-1.tr202605.com:443?security=tls&headerType=none&type=tcp#%F0%9F%87%AC%F0%9F%87%A7%20GB%20United%20Kingdom

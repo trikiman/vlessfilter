@@ -1,1 +1,1 @@
-trojan://gcuCpQfaiVeDBdWG@211.76.176.98:19128?security=tls&sni=yazhou10.dynu.net&type=tcp&headerType=none&path=%2f#%F0%9F%87%B8%F0%9F%87%AC%20SG%20Singapore
+trojan://gcuCpQfaiVeDBdWG@211.76.176.99:19128?security=tls&sni=yazhou10.dynu.net&type=tcp#%F0%9F%87%B8%F0%9F%87%AC%20SG%20Singapore

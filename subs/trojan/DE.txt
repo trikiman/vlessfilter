@@ -1,3 +1,2 @@
-trojan://BstBsRr71p@104.18.32.47:8443?mode=auto&security=tls&insecure=1&fp=chrome&type=xhttp&allowInsecure=1&sni=sv-free.n2buy.ir#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
-trojan://BstBsRr71p@104.18.32.47:8443?mode=auto&security=tls&insecure=1&fp=chrome&type=xhttp&allowInsecure=1&sni=sv-free.n2buy.ir#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
-trojan://mitivpn@188.114.97.6:443?path=/720f09dba195249b423f771661162528/workers/services/view/mitivpn/production/settings&security=tls&alpn=http/1.1&insecure=1&host=www.linkman1.ir&fp=chrome&type=ws&allowInsecure=1&sni=www.linkman1.ir#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
+trojan://bpb-trojan@vless.herogoing.top:443?sni=vless.herogoing.top&type=ws&host=vless.herogoing.top&path=/tr?ed=2560#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
+trojan://bpb-trojan@vless.herogoing.top:443?security=tls&type=ws&path=/tr?ed=2560#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
