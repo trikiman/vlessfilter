@@ -1,3 +1,2 @@
-trojan://RJbtIstwtcU5buDY3r@nl-1.tr202604.com:443?security=tls#%F0%9F%87%B3%F0%9F%87%B1%20NL%20Netherlands
-trojan://RJbtIstwtcU5buDY3r@nl-1.tr202604.com:443?security=tls&insecure=0&headerType=none&type=tcp&allowInsecure=0#%F0%9F%87%B3%F0%9F%87%B1%20NL%20Netherlands
-trojan://RJbtIstwtcU5buDY3r@nl-1.tr202604.com:443?allowInsecure=0#%F0%9F%87%B3%F0%9F%87%B1%20NL%20Netherlands
+trojan://XDWhVpqFE1@31.59.39.192:8443?path=%2Fwsamd&security=none&host=www.amd.com&type=ws#%F0%9F%87%B3%F0%9F%87%B1%20NL%20Netherlands
+trojan://XDWhVpqFE1@31.59.39.192:8443?path=%2Fwsamd&security=none&host=www.amd.com&type=ws#%F0%9F%87%B3%F0%9F%87%B1%20NL%20Netherlands

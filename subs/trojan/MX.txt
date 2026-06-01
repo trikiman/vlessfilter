@@ -1,2 +1,1 @@
-trojan://PtRV8to08i8FMsY.Uw7=yMuIaR3eVTGmvA@149.104.87.182:443?sni=www.jewelapp.click&peer=www.jewelapp.click&security=tls#%F0%9F%87%B2%F0%9F%87%BD%20MX%20Mexico
 trojan://PtRV8to08i8FMsY.Uw7=yMuIaR3eVTGmvA@149.104.87.182:443?allow_insecure=0&headerType=none&security=tls&sni=www.jewelapp.click#%F0%9F%87%B2%F0%9F%87%BD%20MX%20Mexico
