@@ -1,3 +1,2 @@
-trojan://2399fe0a-b359-40a9-a3f0-b70c3c177a01@cloudflare-ip.mofashi.ltd:443?type=ws&host=aa.beijng.dpdns.org&path=%2F%3Fed%3D2048&security=tls&sni=aa.beijng.dpdns.org#%F0%9F%87%AD%F0%9F%87%B0%20HK%20Hong%20Kong
-trojan://2399fe0a-b359-40a9-a3f0-b70c3c177a01@cloudflare-ip.mofashi.ltd:443?type=ws&host=aa.beijng.dpdns.org&path=%2F%3Fed%3D2048&security=tls&sni=aa.beijng.dpdns.org#%F0%9F%87%AD%F0%9F%87%B0%20HK%20Hong%20Kong
-trojan://da292191-b895-3264-b41c-200512b8f965@85.211.198.109:40017?sni=water.waittomorrow.top&fp=chrome&type=tcp&path=/#%F0%9F%87%AD%F0%9F%87%B0%20HK%20Hong%20Kong
+trojan://8b6fa5e7-2583-4dcf-a589-f3924c685dbb@cf.wdqgn.eu.org:443?sni=HKNTT1.nauk.eu.cc&type=ws&path=%2F8b6fa5e7-2583-4dcf-a589-f3924c685dbb-tr&host=HKNTT1.nauk.eu.cc&alpn=h2&fp=chrome#%F0%9F%87%AD%F0%9F%87%B0%20HK%20Hong%20Kong
+trojan://8b6fa5e7-2583-4dcf-a589-f3924c685dbb@cf.wdqgn.eu.org:443?sni=HKNTT1.nauk.eu.cc&type=ws&path=/8b6fa5e7-2583-4dcf-a589-f3924c685dbb-tr&alpn=h2&fp=chrome#%F0%9F%87%AD%F0%9F%87%B0%20HK%20Hong%20Kong

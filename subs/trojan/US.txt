@@ -1,3 +1,1 @@
-trojan://5e40c007-9ea9-470f-8824-cdf4eaa6441f@108.181.4.83:443?sni=us6lh1fsyabizv5m.lovebaipiao.net&type=ws&path=/images&fp=chrome#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States
-trojan://5e40c007-9ea9-470f-8824-cdf4eaa6441f@us6lh1fsyabizv5m.lovebaipiao.net:443?sni=us6lh1fsyabizv5m.lovebaipiao.net&type=ws&path=/images&fp=chrome#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States
-trojan://A3uIh_5NqMg3hFa.gDYWT.afz0UuJ6=VIM@172.237.145.189:443?security=tls&sni=172.237.145.189&fp=chrome&type=tcp&headerType=none&path=/#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States
+trojan://A3uIh_5NqMg3hFa.gDYWT.afz0UuJ6=VIM@172.237.145.189:443?security=tls&amp;insecure=0&amp;headerType=none&amp;type=tcp&amp;allowInsecure=0&amp;sni=172.237.145.189#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States
