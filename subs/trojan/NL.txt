@@ -1,3 +1,2 @@
-trojan://XDWhVpqFE1@31.59.39.192:8443?path=%2Fwsamd&security=none&host=www.amd.com&type=ws#%F0%9F%87%B3%F0%9F%87%B1%20NL%20Netherlands
-trojan://humanity@185.18.250.252:443?type=ws&host=www.multiplydose.com&path=%2Fassignment&security=tls&fp=chrome&sni=www.multiplydose.com#%F0%9F%87%B3%F0%9F%87%B1%20NL%20Netherlands
-trojan://humanity@185.18.250.252:443?type=ws&security=tls&path=/assignment&host=www.multiplydose.com&sni=www.multiplydose.com&fp=chrome&allowInsecure=0#%F0%9F%87%B3%F0%9F%87%B1%20NL%20Netherlands
+trojan://humanity@www.multiplydose.com:443?security=tls&sni=www.multiplydose.com&fp=chrome&allowInsecure=0&type=ws&path=/assignment#%F0%9F%87%B3%F0%9F%87%B1%20NL%20Netherlands
+trojan://humanity@www.multiplydose.com:443?path=/assignment&security=tls&fp=chrome&type=ws&sni=www.multiplydose.com#%F0%9F%87%B3%F0%9F%87%B1%20NL%20Netherlands
