@@ -1,3 +1,3 @@
-trojan://lTLVIqIvFqp+es9giS.0o77ztLrCQLaxVh@172.105.9.126:443?sni=172.105.9.126&type=tcp&fp=chrome#%F0%9F%87%A8%F0%9F%87%A6%20CA%20Canada
-trojan://lTLVIqIvFqp+es9giS.0o77ztLrCQLaxVh@172.105.9.126:443?security=tls&insecure=0&headerType=none&fp=chrome&type=tcp&allowInsecure=0&sni=172.105.9.126#%F0%9F%87%A8%F0%9F%87%A6%20CA%20Canada
-trojan://lTLVIqIvFqp+es9giS.0o77ztLrCQLaxVh@172.105.9.126:443?security=tls&sni=172.105.9.126&fp=chrome&type=tcp&headerType=none&path=%2f&allow_insecure=0#%F0%9F%87%A8%F0%9F%87%A6%20CA%20Canada
+trojan://5e40c007-9ea9-470f-8824-cdf4eaa6441f@141.193.213.60:443?sni=hfaw9h34.bpca2026.top&type=ws&path=/images&fp=chrome#%F0%9F%87%A8%F0%9F%87%A6%20CA%20Canada
+trojan://5e40c007-9ea9-470f-8824-cdf4eaa6441f@141.193.213.60:443?path=%2Fimages&security=tls&insecure=0&host=hfaw9h34.bpca2026.top&type=ws&allowInsecure=0&sni=hfaw9h34.bpca2026.top#%F0%9F%87%A8%F0%9F%87%A6%20CA%20Canada
+trojan://lTLVIqIvFqp+es9giS.0o77ztLrCQLaxVh@172.105.9.126:443?security=tls&sni=172.105.9.126&fp=chrome&type=tcp#%F0%9F%87%A8%F0%9F%87%A6%20CA%20Canada

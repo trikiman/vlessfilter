@@ -1,3 +1,3 @@
-trojan://tunnel-ljlcf@tr-1.stunnel.cc:8441?path=/#%F0%9F%87%B9%F0%9F%87%B7%20TR%20Turkey
-trojan://tunnel-ljlcf@tr-1.stunnel.cc:8441?type=raw&headerType=none&security=tls#%F0%9F%87%B9%F0%9F%87%B7%20TR%20Turkey
-trojan://tunnel-ljlcf@tr-1.stunnel.cc:8441?path=%2f#%F0%9F%87%B9%F0%9F%87%B7%20TR%20Turkey
+trojan://tunnel-ljlcf@tr-1.stunnel.cc:8441?security=tls&path=%2f#%F0%9F%87%B9%F0%9F%87%B7%20TR%20Turkey
+trojan://tunnel-ljlcf@tr-1.stunnel.cc:8441?security=tls#%F0%9F%87%B9%F0%9F%87%B7%20TR%20Turkey
+trojan://tunnel-ljlcf@tr-1.stunnel.cc:8441?security=tls&path=%2f#%F0%9F%87%B9%F0%9F%87%B7%20TR%20Turkey
