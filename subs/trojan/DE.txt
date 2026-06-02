@@ -1,3 +1,1 @@
-trojan://32lD9zwMuN@45.130.125.76:443?type=ws&security=tls&path=%2F%3Fed%3D2048&sni=da.aananas.ir&fp=chrome&allowInsecure=0#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
-trojan://32lD9zwMuN@45.130.125.76:443?type=ws&security=tls&path=%2F%3Fed%3D2048&sni=da.aananas.ir&fp=chrome&allowInsecure=0#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
-trojan://32lD9zwMuN@45.130.125.76:443?type=ws&security=tls&path=%2F%3Fed%3D2048&sni=da.aananas.ir&fp=chrome&allowInsecure=0#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
+trojan://hxn2jK9Uzezogua0oHuq9Y8viN=UCe.2Jd@185.137.157.254:443?security=tls&insecure=0&host=v2rayNplus-v2rayNplus-v2rayNplus&headerType=none&type=tcp&allowInsecure=0&sni=www.directorypipeline.click#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany

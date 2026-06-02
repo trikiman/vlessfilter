@@ -1,2 +1,0 @@
-trojan://Nova-Proxy@spring-tooth-7fa3.ahmadrj.workers.dev:443?security=tls&sni=spring-tooth-7fa3.ahmadrj.workers.dev&fp=random&allowInsecure=0&type=ws&path=/?ed%3D2560#%F0%9F%8C%90%20ROTATING
-trojan://Nova-Proxy@spring-tooth-7fa3.ahmadrj.workers.dev:443?security=tls&sni=spring-tooth-7fa3.ahmadrj.workers.dev&fp=random&type=ws&path=%2f%3fed%3d2560#%F0%9F%8C%90%20ROTATING
