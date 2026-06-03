@@ -7,6 +7,6 @@ vmess://eyJhZGQiOiAiNS4xODguMTkwLjI1MiIsICJhaWQiOiAiMCIsICJhbHBuIjogbnVsbCwgImZw
 trojan://mdhwoon0a01p31xn@8.47.69.41:443?mode=auto&path=/Kose-nanat-decoder&security=tls&alpn=h2,http/1.1&host=www.nscl.ir&fp=chrome&type=xhttp&sni=www.nscl.ir#%F0%9F%87%B9%F0%9F%87%B7%20TR%20Turkey
 trojan://mdhwoon0a01p31xn@8.47.69.41:443?mode=auto&path=/Kose-nanat-decoder&security=tls&alpn=h2,http/1.1&host=www.nscl.ir&fp=chrome&type=xhttp&sni=www.nscl.ir#%F0%9F%87%B9%F0%9F%87%B7%20TR%20Turkey
 trojan://mdhwoon0a01p31xn@8.47.69.41:443?mode=auto&path=%2FKose-nanat-decoder&security=tls&alpn=h2%2Chttp%2F1.1&insecure=0&host=www.nscl.ir&fp=firefox&type=xhttp&allowInsecure=0&sni=www.nscl.ir#%F0%9F%87%B9%F0%9F%87%B7%20TR%20Turkey
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp0dW5uZWwtZmJyb2Y=@193.124.46.134:8444#%F0%9F%87%B9%F0%9F%87%B7%20TR%20Turkey
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp0dW5uZWwtZmJyb2Y=@193.124.46.134:8444#%F0%9F%87%B9%F0%9F%87%B7%20TR%20Turkey
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp0dW5uZWwtZmJyb2Y@tr-1.stunnel.cc:8444#%F0%9F%87%B9%F0%9F%87%B7%20TR%20Turkey
+ss://YWVzLTI1Ni1nY206ZmFCQW9ENTRrODdVSkc3@185.123.101.64:2376#%F0%9F%87%B9%F0%9F%87%B7%20TR%20Turkey
+ss://YWVzLTI1Ni1nY206ZmFCQW9ENTRrODdVSkc3@185.123.101.64:2376#%F0%9F%87%B9%F0%9F%87%B7%20TR%20Turkey
+ss://YWVzLTI1Ni1nY206ZmFCQW9ENTRrODdVSkc3@185.123.101.64:2376#%F0%9F%87%B9%F0%9F%87%B7%20TR%20Turkey
