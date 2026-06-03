@@ -1,6 +1,6 @@
+trojan://avA=NpxA2_yNqY11PT=OrbCXh8C4LdYUeS@38.54.63.105:443?sni=www.cdn-setting.click&fp=chrome&type=tcp&path=%2f#%F0%9F%87%BF%F0%9F%87%A6%20ZA%20South%20Africa
+trojan://avA=NpxA2_yNqY11PT=OrbCXh8C4LdYUeS@38.54.63.105:443?sni=www.cdn-setting.click&fp=chrome&type=tcp&path=/#%F0%9F%87%BF%F0%9F%87%A6%20ZA%20South%20Africa
 trojan://avA=NpxA2_yNqY11PT=OrbCXh8C4LdYUeS@38.54.63.105:443?sni=www.cdn-setting.click&type=tcp&path=%2f#%F0%9F%87%BF%F0%9F%87%A6%20ZA%20South%20Africa
-trojan://avA=NpxA2_yNqY11PT=OrbCXh8C4LdYUeS@38.54.63.105:443?sni=www.cdn-setting.click&type=tcp&path=/#%F0%9F%87%BF%F0%9F%87%A6%20ZA%20South%20Africa
-trojan://avA=NpxA2_yNqY11PT=OrbCXh8C4LdYUeS@38.54.63.105:443?sni=www.cdn-setting.click&type=raw&fp=chrome#%F0%9F%87%BF%F0%9F%87%A6%20ZA%20South%20Africa
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpYc3k4T3g0eU9WM3hMbHB4dGp6czNY@102.133.165.160:16233#%F0%9F%87%BF%F0%9F%87%A6%20ZA%20South%20Africa
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpYc3k4T3g0eU9WM3hMbHB4dGp6czNY@102.133.165.160:16233#%F0%9F%87%BF%F0%9F%87%A6%20ZA%20South%20Africa
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpYc3k4T3g0eU9WM3hMbHB4dGp6czNY@102.133.165.160:16233#%F0%9F%87%BF%F0%9F%87%A6%20ZA%20South%20Africa
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp5V2lQNHV4ek1pOVQ0ZXIy@20.164.210.27:443#%F0%9F%87%BF%F0%9F%87%A6%20ZA%20South%20Africa
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp5V2lQNHV4ek1pOVQ0ZXIy@20.164.210.27:443#%F0%9F%87%BF%F0%9F%87%A6%20ZA%20South%20Africa
