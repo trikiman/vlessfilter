@@ -53,9 +53,11 @@ vless://f86f5a03-3872-46b5-bf03-a50388a0261d@a1-tss.pages.dev:443?encryption=non
 vless://f86f5a03-3872-46b5-bf03-a50388a0261d@a1-tss.pages.dev:443?encryption=none&path=/&security=tls&type=ws&source_name=mirror_0124&provider_id=mirror_0124#%F0%9F%8C%90%20ROTATING
 vless://f86f5a03-3872-46b5-bf03-a50388a0261d@a1-tss.pages.dev:443?encryption=none&type=ws&path=%2F&security=tls#%F0%9F%8C%90%20ROTATING
 vless://f86f5a03-3872-46b5-bf03-a50388a0261d@a1-tss.pages.dev:443?encryption=none&type=ws&path=%2F&security=tls#%F0%9F%8C%90%20ROTATING
-trojan://1710442808@188.114.98.0:443?host=subb.nrshop198.workers.dev&path=%2F&sni=subb.nrshop198.workers.dev&type=ws#%F0%9F%8C%90%20ROTATING
-trojan://1710442808@188.114.98.0:443?path=%2F%3Fed%3D2560&security=tls&host=subb.nrshop198.workers.dev&fp=random&type=ws&sni=subb.nrshop198.workers.dev#%F0%9F%8C%90%20ROTATING
-trojan://25ae6230-7834-41dc-94a4-586e1a79ea89@188.114.97.3:443?path=/?ed=2048&security=tls&alpn=http/1.1&insecure=0&host=shy-brook-df1e.amirkhan69.workers.dev&fp=chrome&type=ws&allowInsecure=0&sni=shy-brook-df1e.amirkhan69.workers.dev#%F0%9F%8C%90%20ROTATING
-trojan://Nova-Proxy@8.39.125.191:2083?type=ws&host=spring-queen-a95f.cewon19053.workers.dev&path=%2F&security=tls&sni=spring-queen-a95f.cewon19053.workers.dev#%F0%9F%8C%90%20ROTATING
-trojan://f05ee819-5f42-44b6-bd2a-bf4917cbf38e@172.64.35.196:80?path=/?ed=2048&security=none&host=hidden-pine-8798.amon-morningstar01.workers.dev&type=ws#%F0%9F%8C%90%20ROTATING
-trojan://f05ee819-5f42-44b6-bd2a-bf4917cbf38e@172.64.35.196:80?type=ws&security=none&path=%2F%3Fed%3D2048&host=hidden-pine-8798.amon-morningstar01.workers.dev#%F0%9F%8C%90%20ROTATING
+trojan://25ae6230-7834-41dc-94a4-586e1a79ea89@188.114.97.3:443?path=/?ed=2048&security=tls&alpn=http/1.1&host=shy-brook-df1e.amirkhan69.workers.dev&fp=chrome&type=ws&sni=shy-brook-df1e.amirkhan69.workers.dev#%F0%9F%8C%90%20ROTATING
+trojan://25ae6230-7834-41dc-94a4-586e1a79ea89@188.114.97.3:443?type=ws&host=shy-brook-df1e.amirkhan69.workers.dev&path=%2F%3Fed%3D2048&security=tls&alpn=http%2F1.1&fp=chrome&sni=shy-brook-df1e.amirkhan69.workers.dev#%F0%9F%8C%90%20ROTATING
+trojan://Nova-Proxy@spring-tooth-7fa3.ahmadrj.workers.dev:443?security=tls&sni=spring-tooth-7fa3.ahmadrj.workers.dev&fp=random&type=ws&path=/?ed=2560#%F0%9F%8C%90%20ROTATING
+trojan://Nova-Proxy@spring-tooth-7fa3.ahmadrj.workers.dev:443?security=tls&type=ws&path=/#%F0%9F%8C%90%20ROTATING
+trojan://bpb-trojan@vless.herogoing.top:443?allowInsecure=0&sni=vless.herogoing.top&type=ws&host=vless.herogoing.top&path=/tr?ed=2560#%F0%9F%8C%90%20ROTATING
+trojan://r137979f@162.159.153.212:2087?fp=chrome&host=sheleqaz.emotionreza.workers.dev&path=%2F&sni=sheleqaz.emotionreza.workers.dev&type=ws#%F0%9F%8C%90%20ROTATING
+trojan://r137979f@162.159.153.212:2087?fp=chrome&host=sheleqaz.emotionreza.workers.dev&path=/&sni=sheleqaz.emotionreza.workers.dev&type=ws#%F0%9F%8C%90%20ROTATING
+trojan://r137979f@162.159.153.212:2087?type=ws&host=sheleqaz.emotionreza.workers.dev&path=%2F&security=tls&fp=chrome&sni=sheleqaz.emotionreza.workers.dev#%F0%9F%8C%90%20ROTATING
