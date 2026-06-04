@@ -1,1 +1,0 @@
-trojan://Nova-Proxy@spring-tooth-7fa3.ahmadrj.workers.dev:443?security=tls&type=ws&path=/#%F0%9F%8C%90%20ROTATING
