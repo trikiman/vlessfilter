@@ -53,3 +53,14 @@ vless://f86f5a03-3872-46b5-bf03-a50388a0261d@a1-tss.pages.dev:443?encryption=non
 vless://f86f5a03-3872-46b5-bf03-a50388a0261d@a1-tss.pages.dev:443?encryption=none&path=/&security=tls&type=ws&source_name=mirror_0124&provider_id=mirror_0124#%F0%9F%8C%90%20ROTATING
 vless://f86f5a03-3872-46b5-bf03-a50388a0261d@a1-tss.pages.dev:443?encryption=none&type=ws&path=%2F&security=tls#%F0%9F%8C%90%20ROTATING
 vless://f86f5a03-3872-46b5-bf03-a50388a0261d@a1-tss.pages.dev:443?encryption=none&type=ws&path=%2F&security=tls#%F0%9F%8C%90%20ROTATING
+trojan://d8bc8425-5e80-4c26-bd93-af634c033e2d@104.17.112.200:443?security=tls&sni=purnet.gmijcp.workers.dev&fp=chrome&type=ws&host=purnet.gmijcp.workers.dev&path=%2F%3Fed%3D2048#%F0%9F%8C%90%20ROTATING
+trojan://d8bc8425-5e80-4c26-bd93-af634c033e2d@104.17.135.199:443?security=tls&sni=purnet.gmijcp.workers.dev&fp=chrome&type=ws&host=purnet.gmijcp.workers.dev&path=%2F%3Fed%3D2048#%F0%9F%8C%90%20ROTATING
+trojan://d8bc8425-5e80-4c26-bd93-af634c033e2d@104.17.135.199:80?security=none&type=ws&host=purnet.gmijcp.workers.dev&path=%2F%3Fed%3D2048#%F0%9F%8C%90%20ROTATING
+trojan://d8bc8425-5e80-4c26-bd93-af634c033e2d@104.17.176.228:443?security=tls&sni=purnet.gmijcp.workers.dev&fp=chrome&type=ws&host=purnet.gmijcp.workers.dev&path=%2F%3Fed%3D2048#%F0%9F%8C%90%20ROTATING
+trojan://d8bc8425-5e80-4c26-bd93-af634c033e2d@162.159.13.201:80?security=none&type=ws&host=purnet.gmijcp.workers.dev&path=%2F%3Fed%3D2048#%F0%9F%8C%90%20ROTATING
+trojan://d8bc8425-5e80-4c26-bd93-af634c033e2d@162.159.20.155:443?security=tls&sni=purnet.gmijcp.workers.dev&fp=chrome&type=ws&host=purnet.gmijcp.workers.dev&path=%2F%3Fed%3D2048#%F0%9F%8C%90%20ROTATING
+trojan://d8bc8425-5e80-4c26-bd93-af634c033e2d@162.159.20.155:80?security=none&type=ws&host=purnet.gmijcp.workers.dev&path=%2F%3Fed%3D2048#%F0%9F%8C%90%20ROTATING
+trojan://d8bc8425-5e80-4c26-bd93-af634c033e2d@172.64.41.163:80?security=none&type=ws&host=purnet.gmijcp.workers.dev&path=%2F%3Fed%3D2048#%F0%9F%8C%90%20ROTATING
+trojan://d8bc8425-5e80-4c26-bd93-af634c033e2d@172.64.50.224:80?security=none&type=ws&host=purnet.gmijcp.workers.dev&path=%2F%3Fed%3D2048#%F0%9F%8C%90%20ROTATING
+trojan://d8bc8425-5e80-4c26-bd93-af634c033e2d@purnet.gmijcp.workers.dev:443?sni=purnet.gmijcp.workers.dev&type=ws&path=/?ed=2048&fp=chrome#%F0%9F%8C%90%20ROTATING
+trojan://r137979f@162.159.153.212:2087?type=ws&host=sheleqaz.emotionreza.workers.dev&path=%2F&security=tls&fp=chrome&sni=sheleqaz.emotionreza.workers.dev#%F0%9F%8C%90%20ROTATING

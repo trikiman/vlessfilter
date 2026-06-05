@@ -1,2 +1,3 @@
-trojan://cf3d48cf-750c-4f18-89a7-f81d2e153fbe@cyylr.eu.cc:443?host=blog.webex.com.cyylr.eu.cc&path=%2Fin-do&sni=blog.webex.com.cyylr.eu.cc&type=ws#%F0%9F%87%AE%F0%9F%87%B3%20IN%20India
-trojan://Tu1fZjElnkRg0ECRj0sI0u54PY8ptUmATg@65.20.90.225:443?security=tls&sni=www.sandbox-cloud.click#%F0%9F%87%AE%F0%9F%87%B3%20IN%20India
+trojan://Tu1fZjElnkRg0ECRj0sI0u54PY8ptUmATg@65.20.90.225:443?security=tls&sni=www.sandbox-cloud.click&type=tcp#%F0%9F%87%AE%F0%9F%87%B3%20IN%20India
+trojan://Tu1fZjElnkRg0ECRj0sI0u54PY8ptUmATg@65.20.90.225:443?sni=www.sandbox-cloud.click&fp=chrome&path=%2f#%F0%9F%87%AE%F0%9F%87%B3%20IN%20India
+trojan://Tu1fZjElnkRg0ECRj0sI0u54PY8ptUmATg@65.20.90.225:443?security=tls&sni=www.sandbox-cloud.click&fp=chrome&type=tcp#%F0%9F%87%AE%F0%9F%87%B3%20IN%20India
