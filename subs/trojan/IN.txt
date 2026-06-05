@@ -1,3 +1,2 @@
-trojan://Tu1fZjElnkRg0ECRj0sI0u54PY8ptUmATg@65.20.90.225:443?security=tls&sni=www.sandbox-cloud.click&type=tcp#%F0%9F%87%AE%F0%9F%87%B3%20IN%20India
-trojan://Tu1fZjElnkRg0ECRj0sI0u54PY8ptUmATg@65.20.90.225:443?sni=www.sandbox-cloud.click&fp=chrome&path=%2f#%F0%9F%87%AE%F0%9F%87%B3%20IN%20India
-trojan://Tu1fZjElnkRg0ECRj0sI0u54PY8ptUmATg@65.20.90.225:443?security=tls&sni=www.sandbox-cloud.click&fp=chrome&type=tcp#%F0%9F%87%AE%F0%9F%87%B3%20IN%20India
+trojan://Config0plus@45.130.125.160:443?path=/in-pdr&security=tls&host=investors.spotify.com.cyylr.eu.cc&allowinsecure=0&type=ws&sni=investors.spotify.com.cyylr.eu.cc#%F0%9F%87%AE%F0%9F%87%B3%20IN%20India
+trojan://Telegram-Config0plus@45.130.125.2:443?path=/in-pdr&security=tls&insecure=0&host=media-sin6-3.cdn.whatsapp.net.cyylr.eu.cc&type=ws&allowInsecure=0&sni=media-sin6-3.cdn.whatsapp.net.cyylr.eu.cc#%F0%9F%87%AE%F0%9F%87%B3%20IN%20India

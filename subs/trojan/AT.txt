@@ -1,3 +1,1 @@
-trojan://BSs5IAVMQdYuykvDsOYZoa6gNPSGBjAbLL@185.126.236.44:443?sni=www.mesaly.click&type=raw&fp=chrome#%F0%9F%87%A6%F0%9F%87%B9%20AT%20Austria
-trojan://BSs5IAVMQdYuykvDsOYZoa6gNPSGBjAbLL@185.126.236.44:443?security=tls&sni=www.mesaly.click&fp=chrome&type=tcp&headerType=none&path=/&allow_insecure=1#%F0%9F%87%A6%F0%9F%87%B9%20AT%20Austria
 trojan://BSs5IAVMQdYuykvDsOYZoa6gNPSGBjAbLL@185.126.236.44:443?security=tls&headerType=none&fp=chrome&type=tcp&sni=www.mesaly.click#%F0%9F%87%A6%F0%9F%87%B9%20AT%20Austria
