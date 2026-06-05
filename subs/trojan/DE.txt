@@ -1,3 +1,1 @@
-trojan://ixy30xdjonb2sa19@188.245.48.29:47292?type=tcp&security=none#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
-trojan://ixy30xdjonb2sa19@188.245.48.29:47292?type=tcp&security=none#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
-trojan://s_WEN9lMmufG+qDIsn-4C7JOVAnDdbS3Ui@172.236.220.10:443?security=tls&amp%3Binsecure=1&amp%3BheaderType=none&amp%3Bfp=chrome&amp%3Btype=tcp&amp%3BallowInsecure=1&amp%3Bsni=172.236.220.10#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
+trojan://du3axs7et6ywwaok@162.19.181.213:47962?Telegram=@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad&security=none&headerType=http&type=tcp#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
