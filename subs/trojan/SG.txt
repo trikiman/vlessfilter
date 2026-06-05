@@ -1,3 +1,2 @@
-trojan://gcuCpQfaiVeDBdWG@211.76.176.97:19128?security=tls&sni=yazhou10.dynu.net&path=/#%F0%9F%87%B8%F0%9F%87%AC%20SG%20Singapore
-trojan://gcuCpQfaiVeDBdWG@211.76.176.98:19128?security=tls&headerType=none&type=tcp&sni=yazhou10.dynu.net#%F0%9F%87%B8%F0%9F%87%AC%20SG%20Singapore
-trojan://gcuCpQfaiVeDBdWG@211.76.176.98:19128?security=tls&sni=yazhou10.dynu.net&path=%2f#%F0%9F%87%B8%F0%9F%87%AC%20SG%20Singapore
+trojan://gcuCpQfaiVeDBdWG@jpbgp.netvigor.cc:19128?type=raw&headerType=none&security=tls&sni=yazhou10.dynu.net#%F0%9F%87%B8%F0%9F%87%AC%20SG%20Singapore
+trojan://gcuCpQfaiVeDBdWG@jpbgp.netvigor.cc:19128?type=raw&headerType=none&security=tls&sni=yazhou10.dynu.net#%F0%9F%87%B8%F0%9F%87%AC%20SG%20Singapore

@@ -9,4 +9,3 @@ trojan://mdhwoon0a01p31xn@8.47.69.41:443?mode=auto&path=/Kose-nanat-decoder&secu
 trojan://mdhwoon0a01p31xn@8.47.69.41:443?mode=auto&path=%2FKose-nanat-decoder&security=tls&alpn=h2%2Chttp%2F1.1&insecure=0&host=www.nscl.ir&fp=firefox&type=xhttp&allowInsecure=0&sni=www.nscl.ir#%F0%9F%87%B9%F0%9F%87%B7%20TR%20Turkey
 ss://YWVzLTI1Ni1nY206ZmFCQW9ENTRrODdVSkc3@185.123.101.64:2376#%F0%9F%87%B9%F0%9F%87%B7%20TR%20Turkey
 ss://YWVzLTI1Ni1nY206ZmFCQW9ENTRrODdVSkc3@185.123.101.64:2376#%F0%9F%87%B9%F0%9F%87%B7%20TR%20Turkey
-ss://YWVzLTI1Ni1nY206Y2RCSURWNDJEQ3duZklO@38.180.113.194:8119#%F0%9F%87%B9%F0%9F%87%B7%20TR%20Turkey

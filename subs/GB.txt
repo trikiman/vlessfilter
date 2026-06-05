@@ -7,4 +7,4 @@ vmess://eyJ2IjogbnVsbCwgInBzIjogIvCfh6zwn4enIDY3IC0gR0IgLSBWTWVzcyAtIDIyMzI0Iiwg
 trojan://ASoZeIVwzX4w4wxwig@uk-1.tr202605.com:443?security=tls&headerType=none&type=tcp#%F0%9F%87%AC%F0%9F%87%A7%20GB%20United%20Kingdom
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpNV1JsTQ@uk1.ssobfs.site:8388#%F0%9F%87%AC%F0%9F%87%A7%20GB%20United%20Kingdom
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpXNzRYRkFMTEx1dzZtNUlB@51.140.15.73:443#%F0%9F%87%AC%F0%9F%87%A7%20GB%20United%20Kingdom
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxa1ZyMEtBVElKSTdtd09G@51.140.15.73:443#%F0%9F%87%AC%F0%9F%87%A7%20GB%20United%20Kingdom
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpXNzRYRkFMTEx1dzZtNUlB@51.140.15.73:443#%F0%9F%87%AC%F0%9F%87%A7%20GB%20United%20Kingdom
