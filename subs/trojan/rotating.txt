@@ -1,8 +1,1 @@
 trojan://Nova-Proxy@8.39.125.191:2083?type=ws&host=spring-queen-a95f.cewon19053.workers.dev&path=%2F&security=tls&sni=spring-queen-a95f.cewon19053.workers.dev#%F0%9F%8C%90%20ROTATING
-trojan://Nova-Proxy@8.39.125.191:2083?type=ws&host=spring-queen-a95f.cewon19053.workers.dev&path=%2F&security=tls&sni=spring-queen-a95f.cewon19053.workers.dev#%F0%9F%8C%90%20ROTATING
-trojan://Nova-Proxy@spring-tooth-7fa3.ahmadrj.workers.dev:443?security=tls&sni=spring-tooth-7fa3.ahmadrj.workers.dev&fp=random&allowInsecure=0&type=ws&path=/?ed%3D2560#%F0%9F%8C%90%20ROTATING
-trojan://Nova-Proxy@spring-tooth-7fa3.ahmadrj.workers.dev:443?security=tls&sni=spring-tooth-7fa3.ahmadrj.workers.dev&fp=random&type=ws&path=/?ed=2560#%F0%9F%8C%90%20ROTATING
-trojan://Nova-Proxy@spring-tooth-7fa3.ahmadrj.workers.dev:443?security=tls&type=ws&path=%2f#%F0%9F%8C%90%20ROTATING
-trojan://Nova-Proxy@spring-tooth-7fa3.ahmadrj.workers.dev:443?security=tls&type=ws&path=/#%F0%9F%8C%90%20ROTATING
-trojan://Nova-Proxy@spring-tooth-7fa3.ahmadrj.workers.dev:443?security=tls&type=ws&path=/#%F0%9F%8C%90%20ROTATING
-trojan://r137979f@162.159.153.212:2087?fp=chrome&host=sheleqaz.emotionreza.workers.dev&path=/&sni=sheleqaz.emotionreza.workers.dev&type=ws#%F0%9F%8C%90%20ROTATING
