@@ -2,8 +2,9 @@ vless://37a0bd7c-8b9f-4693-8916-bd1e2da0a817@128.204.223.94:9815?encryption=none
 vmess://eyJhZGQiOiAicGwuY29ubmZ1bGwub3JnIiwgImFpZCI6ICIwIiwgImFscG4iOiAiIiwgImZwIjogImNocm9tZSIsICJob3N0IjogIiIsICJpZCI6ICJhMWEzYTllNS05YjE1LTQ1NmItOGMyNi04YmRhMGVmNzAxZTgiLCAiaW5zZWN1cmUiOiAiMCIsICJuZXQiOiAidGNwIiwgInBhdGgiOiAiIiwgInBvcnQiOiAiMjA1MyIsICJwcyI6ICJcdWQ4M2RcdWRlODAgQExldHNHZXRWUE4gQEN5YmVyU2VjUGxheWdyb3VuZCB8IFx1ZDgzY1x1ZGYwZCBcdWQ4M2NcdWRkZWVcdWQ4M2NcdWRkZjMgSU4iLCAic2N5IjogImF1dG8iLCAic25pIjogIiIsICJ0bHMiOiAidGxzIiwgInR5cGUiOiAibm9uZSIsICJ2IjogIjIifQ==#%F0%9F%87%B5%F0%9F%87%B1%20PL%20Poland
 vmess://eyJhZGQiOiJwbC5jb25uZnVsbC5vcmciLCJhaWQiOiIwIiwiYWxwbiI6IiIsImZwIjoiY2hyb21lIiwiaG9zdCI6IiIsImlkIjoiYTFhM2E5ZTUtOWIxNS00NTZiLThjMjYtOGJkYTBlZjcwMWU4IiwiaW5zZWN1cmUiOiIwIiwibmV0IjoidGNwIiwicGF0aCI6IiIsInBvcnQiOiIyMDUzIiwicHMiOiJCeSBFYnJhU2hhIPCfjIMiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoidGxzIiwidHlwZSI6Im5vbmUiLCJ2IjoiMiJ9#%F0%9F%87%B5%F0%9F%87%B1%20PL%20Poland
 vmess://eyJhZGQiOiJwbC5jb25uZnVsbC5vcmciLCJhaWQiOiIwIiwiYWxwbiI6IiIsImZwIjoiY2hyb21lIiwiaG9zdCI6IiIsImlkIjoiYTFhM2E5ZTUtOWIxNS00NTZiLThjMjYtOGJkYTBlZjcwMWU4IiwiaW5zZWN1cmUiOiIwIiwibmV0IjoidGNwIiwicGF0aCI6IiIsInBvcnQiOiIyMDUzIiwicHMiOiJbT3BlblJheV0g8J+HtfCfh7EgUEwtMTIyMyIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiJ0bHMiLCJ0eXBlIjoibm9uZSIsInYiOiIyIn0=#%F0%9F%87%B5%F0%9F%87%B1%20PL%20Poland
-trojan://iGccGWTMHtoXtBhGYK4mogg7iIUhGbcvCf@64.176.65.85:443?allowInsecure=0#%F0%9F%87%B5%F0%9F%87%B1%20PL%20Poland
-trojan://iGccGWTMHtoXtBhGYK4mogg7iIUhGbcvCf@64.176.65.85:443?fp=chrome#%F0%9F%87%B5%F0%9F%87%B1%20PL%20Poland
+trojan://humanity@104.16.147.104:443?sni=www.creationlong.org&type=ws&path=/assignment&fp=chrome#%F0%9F%87%B5%F0%9F%87%B1%20PL%20Poland
+trojan://humanity@104.18.6.147:443?sni=www.creationlong.org&type=ws&path=/assignment&fp=chrome#%F0%9F%87%B5%F0%9F%87%B1%20PL%20Poland
+trojan://iGccGWTMHtoXtBhGYK4mogg7iIUhGbcvCf@64.176.65.85:443?security=tls&alpn=http%2F1.1&insecure=0&headerType=none&type=tcp&allowInsecure=0#%F0%9F%87%B5%F0%9F%87%B1%20PL%20Poland
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo4enc1ajlo@54.36.174.134:443#%F0%9F%87%B5%F0%9F%87%B1%20PL%20Poland
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo4enc1ajlo@54.36.174.134:443#%F0%9F%87%B5%F0%9F%87%B1%20PL%20Poland
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo4enc1ajlo@54.36.174.134:443?#%F0%9F%87%B5%F0%9F%87%B1%20PL%20Poland
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo4enc1ajlo@54.36.174.134:443#%F0%9F%87%B5%F0%9F%87%B1%20PL%20Poland
