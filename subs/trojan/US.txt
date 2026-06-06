@@ -1,3 +1,2 @@
-trojan://bX_lNHWoW6ywq82mI=KUr+8i__VSp0Hs_E@172.235.63.252:443?security=tls&amp%3BheaderType=none&amp%3Bfp=chrome&amp%3Btype=tcp&amp%3Bsni=172.235.63.252#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States
-trojan://bX_lNHWoW6ywq82mI=KUr+8i__VSp0Hs_E@172.235.63.252:443?security=tls&headerType=none&type=tcp#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States
-trojan://bX_lNHWoW6ywq82mI=KUr+8i__VSp0Hs_E@172.235.63.252:443?security=tls&insecure=0&allowInsecure=0&type=tcp&headerType=none#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States
+trojan://A3uIh_5NqMg3hFa.gDYWT.afz0UuJ6=VIM@172.237.145.189:443?security=tls&sni=172.237.145.189&fp=chrome&headerType=none&allowInsecure=0&type=tcp#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States
+trojan://d8bc8425-5e80-4c26-bd93-af634c033e2d@104.17.135.199:443?sni=purnet.gmijcp.workers.dev&type=ws&path=/?ed=2048&fp=chrome#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States
