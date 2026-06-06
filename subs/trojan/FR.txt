@@ -1,2 +1,3 @@
-trojan://YGWIMlg.W1wRWQkRDcKfjZY7sng09aC=Yh@217.69.2.107:443?security=tls&sni=www.weavenet.click#%F0%9F%87%AB%F0%9F%87%B7%20FR%20France
-trojan://YGWIMlg.W1wRWQkRDcKfjZY7sng09aC=Yh@217.69.2.107:443?security=tls&sni=www.weavenet.click#%F0%9F%87%AB%F0%9F%87%B7%20FR%20France
+trojan://humanity@www.calmloud.com:443?alpn=http/1.1&fp=chrome&type=ws&path=/assignment#%F0%9F%87%AB%F0%9F%87%B7%20FR%20France
+trojan://humanity@www.calmloud.com:443?alpn=http%2f1.1&fp=chrome&type=ws&path=%2fassignment#%F0%9F%87%AB%F0%9F%87%B7%20FR%20France
+trojan://YGWIMlg.W1wRWQkRDcKfjZY7sng09aC=Yh@217.69.2.107:443?allowInsecure=0&sni=www.weavenet.click#%F0%9F%87%AB%F0%9F%87%B7%20FR%20France
