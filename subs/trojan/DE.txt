@@ -1,1 +1,1 @@
-trojan://bpb-trojan@172.67.135.88:443?sni=vless.herogoing.top&type=ws&host=vless.herogoing.top&path=/tr?ed=2560#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
+trojan://qDVh0NalwefxyZlHh3Ni2JSlhErcuC3Wiq@91.233.8.138:443?sni=www.homelywebs.click&path=/#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
