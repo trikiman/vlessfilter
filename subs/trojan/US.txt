@@ -1,3 +1,2 @@
-trojan://A3uIh_5NqMg3hFa.gDYWT.afz0UuJ6=VIM@172.237.145.189:443?sni=172.237.145.189&path=/#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States
-trojan://A3uIh_5NqMg3hFa.gDYWT.afz0UuJ6=VIM@172.237.145.189:443?security=tls&type=tcp&headerType=none&path=/&allow_insecure=0#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States
-trojan://A3uIh_5NqMg3hFa.gDYWT.afz0UuJ6=VIM@172.237.145.189:443?sni=172.237.145.189&path=/#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States
+trojan://d8bc8425-5e80-4c26-bd93-af634c033e2d@104.17.128.196:443?sni=purnet.gmijcp.workers.dev&type=ws&path=/?ed=2048&fp=chrome#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States
+trojan://d8bc8425-5e80-4c26-bd93-af634c033e2d@104.17.135.199:443?sni=purnet.gmijcp.workers.dev&type=ws&path=/?ed=2048&fp=chrome#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States
