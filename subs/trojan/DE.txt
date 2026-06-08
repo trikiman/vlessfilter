@@ -1,2 +1,1 @@
-trojan://bpb-trojan@104.21.26.36:443?security=tls&sni=vless.herogoing.top&type=ws&host=vless.herogoing.top&path=/tr?ed=2560#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
-trojan://hxn2jK9Uzezogua0oHuq9Y8viN=UCe.2Jd@185.137.157.254:443?security=tls&sni=www.directorypipeline.click&type=tcp&headerType=none&host=v2rayNplus-v2rayNplus-v2rayNplus&path=%2f&allow_insecure=0#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
+trojan://hxn2jK9Uzezogua0oHuq9Y8viN=UCe.2Jd@185.137.157.254:443?security=tls&sni=www.directorypipeline.click&fp=chrome&type=tcp#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
