@@ -3,4 +3,3 @@ trojan://204bc731190243e7a8cc9c1d0b7ac3ba@94.103.2.31:9443?fp=&pbk=Zuu0slAOjX2uW
 trojan://204bc731190243e7a8cc9c1d0b7ac3ba@94.103.2.31:9443?fp=&pbk=Zuu0slAOjX2uWf6-xRWeZzv7O_URTgpe8BHpvoS1llw&security=reality&sid=aabbccdd&sni=static.rutube.ru#%F0%9F%87%B7%F0%9F%87%BA%20RU%20Russia
 trojan://204bc731190243e7a8cc9c1d0b7ac3ba@94.103.2.31:9443?security=reality&sni=static.rutube.ru&pbk=Zuu0slAOjX2uWf6-xRWeZzv7O_URTgpe8BHpvoS1llw&sid=aabbccdd&type=tcp&fp=random#%F0%9F%87%B7%F0%9F%87%BA%20RU%20Russia
 ss://YWVzLTI1Ni1nY206MzJjMGVhNmU4MjMzNDFhMg@46.29.163.200:20129#%F0%9F%87%B7%F0%9F%87%BA%20RU%20Russia
-ss://YWVzLTI1Ni1nY206MzJjMGVhNmU4MjMzNDFhMg@46.29.163.200:20129#%F0%9F%87%B7%F0%9F%87%BA%20RU%20Russia

@@ -1,3 +1,2 @@
-trojan://rXyShM8Jni+5Sbq3k4gkyr5Lq0zOMRL2Uf@45.79.8.17:443?allowInsecure=0&sni=45.79.8.17#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States
-trojan://rXyShM8Jni+5Sbq3k4gkyr5Lq0zOMRL2Uf@45.79.8.17:443#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States
-trojan://rXyShM8Jni+5Sbq3k4gkyr5Lq0zOMRL2Uf@45.79.8.17:443?security=tls&sni=45.79.8.17#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States
+trojan://d8bc8425-5e80-4c26-bd93-af634c033e2d@104.17.128.196:443?sni=purnet.gmijcp.workers.dev&type=ws&path=/?ed=2048&fp=chrome#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States
+trojan://d8bc8425-5e80-4c26-bd93-af634c033e2d@104.17.135.199:443?sni=purnet.gmijcp.workers.dev&type=ws&path=/?ed=2048&fp=chrome#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States
