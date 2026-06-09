@@ -1,3 +1,3 @@
-trojan://KaQKzYh6dd@188.114.97.6:443?type=ws&security=tls&path=/?ed=2048&sni=dd.aananas.ir.&fp=chrome&allowInsecure=0#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
-trojan://KaQKzYh6dd@188.114.97.6:443?path=/?ed=2048&security=tls&insecure=0&fp=chrome&type=ws&allowInsecure=0&sni=dd.aananas.ir.#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
-trojan://KaQKzYh6dd@188.114.97.6:443?type=ws&security=tls&path=/?ed=2048&sni=dd.aananas.ir.&fp=chrome&allowInsecure=0#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
+trojan://cczQCxQBdYzynosgqLVSmUnZzwjJcWEnpWnMAjZQUy94hDdN@gm2.bw8848.org:443/?type=ws&host=gm2.bw8848.org&path=/gm2-gm2-mo9ag9&security=tls&sni=gm2.bw8848.org#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
+trojan://cczQCxQBdYzynosgqLVSmUnZzwjJcWEnpWnMAjZQUy94hDdN@gm2.bw8848.org:443/?type=ws&host=gm2.bw8848.org&path=/gm2-gm2-mo9ag9&security=tls&sni=gm2.bw8848.org#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
+trojan://cczQCxQBdYzynosgqLVSmUnZzwjJcWEnpWnMAjZQUy94hDdN@gm2.bw8848.org:443/?type=ws&host=gm2.bw8848.org&path=%2Fgm2-gm2-mo9ag9&security=tls&sni=gm2.bw8848.org#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
