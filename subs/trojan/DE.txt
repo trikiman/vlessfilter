@@ -1,2 +1,1 @@
-trojan://LYaEYwjN8LjWTRJdCCTzW7V6gK7atJVu@94.103.173.70:9443?security=tls&sni=de-1.hysteria.ltd&path=/#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
-trojan://LYaEYwjN8LjWTRJdCCTzW7V6gK7atJVu@de-1.hysteria.ltd:9443?allowInsecure=0&sni=de-1.hysteria.ltd#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
+trojan://mitivpn@188.114.97.6:443?type=ws&security=tls&path=%2Fhttps%3A%2F%2Fchatgpt.com&host=mitivpn.de.ssl.global.fastly.net.mitivpn.site&sni=2.1.mitivpn.dee.srfsl.gleobal.fastl3y.n3et.mitivpn.site&alpn=http%2F1.1&fp=chrome&allowInsecure=0#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
