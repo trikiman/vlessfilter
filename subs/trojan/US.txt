@@ -1,3 +1,3 @@
-trojan://rXyShM8Jni+5Sbq3k4gkyr5Lq0zOMRL2Uf@45.79.8.17:443?security=tls&headerType=none&type=tcp&sni=45.79.8.17#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States
-trojan://rXyShM8Jni+5Sbq3k4gkyr5Lq0zOMRL2Uf@45.79.8.17:443?security=tls&alpn=http%252F1.1&headerType=none&fp=chrome&type=tcp&sni=45.79.8.17#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States
-trojan://rXyShM8Jni+5Sbq3k4gkyr5Lq0zOMRL2Uf@45.79.8.17:443?Telegram=@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad&security=tls&alpn=http%252F1.1&headerType=none&fp=chrome&type=tcp&sni=#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States
+trojan://EM7HwoxdP8r5yQoxwDxEJU3VSBAXzAuFGBTUgVMjiuRCkNUN@usa1.bw8848.org:443/?type=ws&host=usa1.bw8848.org&path=%2Fusa1-usa1-bktm3x&security=tls&sni=usa1.bw8848.org#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States
+trojan://EM7HwoxdP8r5yQoxwDxEJU3VSBAXzAuFGBTUgVMjiuRCkNUN@usa1.bw8848.org:443/?type=ws&host=usa1.bw8848.org&path=/usa1-usa1-bktm3x&security=tls&sni=usa1.bw8848.org#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States
+trojan://EM7HwoxdP8r5yQoxwDxEJU3VSBAXzAuFGBTUgVMjiuRCkNUN@usa1.bw8848.org:443/?Telegram=@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad&type=ws&host=&path=%2Fusa1-usa1-bktm3x&security=tls&sni=#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States

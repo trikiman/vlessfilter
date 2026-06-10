@@ -1,1 +1,2 @@
+trojan://TheVPNMethod@188.114.97.6:443?path=/trojan&security=tls&insecure=0&type=ws&allowInsecure=0&sni=shomali1.themusiccenter.dpdns.org#%F0%9F%87%AB%F0%9F%87%AE%20FI%20Finland
 trojan://TheVPNMethod@188.114.97.6:443?path=%2Ftrojan&security=tls&insecure=0&type=ws&allowInsecure=0&sni=shomali1.themusiccenter.dpdns.org#%F0%9F%87%AB%F0%9F%87%AE%20FI%20Finland

@@ -1,3 +1,2 @@
-trojan://GedH5PTxP5F4oP4kZ5opF3PWgPPCwYw3kfHMN9ZZTEXFbz9c@kr2.bw8848.org:443/?type=ws&host=kr2.bw8848.org&path=/kr2-kr2-g9xjmv&security=tls&sni=kr2.bw8848.org#%F0%9F%87%B0%F0%9F%87%B7%20KR%20South%20Korea
-trojan://GedH5PTxP5F4oP4kZ5opF3PWgPPCwYw3kfHMN9ZZTEXFbz9c@kr2.bw8848.org:443/?type=ws&host=kr2.bw8848.org&path=%2Fkr2-kr2-g9xjmv&security=tls&sni=kr2.bw8848.org#%F0%9F%87%B0%F0%9F%87%B7%20KR%20South%20Korea
-trojan://GedH5PTxP5F4oP4kZ5opF3PWgPPCwYw3kfHMN9ZZTEXFbz9c@kr2.bw8848.org:443/?type=ws&host=kr2.bw8848.org&path=%2Fkr2-kr2-g9xjmv&security=tls&sni=kr2.bw8848.org#%F0%9F%87%B0%F0%9F%87%B7%20KR%20South%20Korea
+trojan://pUkVhYVSnjbEy4xbkNJ2QvXTSSLHxRN6sRbdSnnwpbMSXTbC@node3.bw8848.org:443?allowInsecure=0&sni=node3.bw8848.org&type=ws&host=node3.bw8848.org&path=/node3-node3-jgnkjy#%F0%9F%87%B0%F0%9F%87%B7%20KR%20South%20Korea
+trojan://pUkVhYVSnjbEy4xbkNJ2QvXTSSLHxRN6sRbdSnnwpbMSXTbC@node3.bw8848.org:443/?type=ws&host=node3.bw8848.org&path=/node3-node3-jgnkjy&security=tls&sni=node3.bw8848.org#%F0%9F%87%B0%F0%9F%87%B7%20KR%20South%20Korea
