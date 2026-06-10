@@ -1,3 +1,2 @@
 trojan://hF7uSJfeBPtSNXKtuYvTRNaBdGkkXHpKJfLRfbpaDWovomSL@3.8.238.251:443?security=tls&sni=uk1.bw8848.org&type=ws&host=uk1.bw8848.org&path=/uk1-uk1-gcjtze#%F0%9F%87%AC%F0%9F%87%A7%20GB%20United%20Kingdom
 trojan://hF7uSJfeBPtSNXKtuYvTRNaBdGkkXHpKJfLRfbpaDWovomSL@3.8.238.251:443?security=tls&sni=uk1.bw8848.org&type=ws&host=uk1.bw8848.org&path=/uk1-uk1-gcjtze#%F0%9F%87%AC%F0%9F%87%A7%20GB%20United%20Kingdom
-trojan://hF7uSJfeBPtSNXKtuYvTRNaBdGkkXHpKJfLRfbpaDWovomSL@3.8.238.251:443?security=tls&sni=uk1.bw8848.org&type=ws&host=uk1.bw8848.org&path=/uk1-uk1-gcjtze#%F0%9F%87%AC%F0%9F%87%A7%20GB%20United%20Kingdom

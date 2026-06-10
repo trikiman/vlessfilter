@@ -4,6 +4,6 @@ vless://a6d20e79-d326-42c1-bc20-f4cecc6dc42d@ul-mexico1.09vpn.com:8443?encryptio
 vmess://eyJ2IjoiMiIsInBzIjoiW09wZW5SYXldIPCfh7Lwn4e9IE1YLTI5IiwiYWRkIjoiMjE2LjIzOC44Ni4xNTgiLCJwb3J0IjoiMzQ0NjAiLCJ0eXBlIjoibm9uZSIsImlkIjoiOTBiZTIxNGQtMDQ4Yy00ZWEyLWE2MDItYjhlNGQ0ZTUxZTM2IiwiYWlkIjoiMCIsIm5ldCI6InJhdyIsInBhdGgiOiIvIiwiaG9zdCI6IiIsInRscyI6IiJ9#%F0%9F%87%B2%F0%9F%87%BD%20MX%20Mexico
 vmess://eyJhZGQiOiIyMTYuMjM4Ljg2LjE1OCIsImFpZCI6IjAiLCJob3N0IjoiIiwiaWQiOiI5MGJlMjE0ZC0wNDhjLTRlYTItYTYwMi1iOGU0ZDRlNTFlMzYiLCJuZXQiOiJ0Y3AiLCJwYXRoIjoiLyIsInBvcnQiOiIzNDQ2MCIsInBzIjoiQnkgRWJyYVNoYSDwn6qQIiwic2tpcC1jZXJ0LXZlcmlmeSI6dHJ1ZSwidGxzIjoiIiwidHlwZSI6Im5vbmUiLCJ2IjoiMiJ9#%F0%9F%87%B2%F0%9F%87%BD%20MX%20Mexico
 vmess://eyJ2IjoiMiIsInBzIjoiW09wZW5SYXldIPCfh7Lwn4e9IE1YLTI1IiwiYWRkIjoiMjE2LjIzOC44Ni4xNTgiLCJwb3J0IjozNDQ2MCwiaWQiOiI5MGJlMjE0ZC0wNDhjLTRlYTItYTYwMi1iOGU0ZDRlNTFlMzYiLCJuZXQiOiJ0Y3AiLCJ0eXBlIjoibm9uZSJ9#%F0%9F%87%B2%F0%9F%87%BD%20MX%20Mexico
+trojan://PtRV8to08i8FMsY.Uw7=yMuIaR3eVTGmvA@149.104.87.182:443?security=tls&sni=www.jewelapp.click#%F0%9F%87%B2%F0%9F%87%BD%20MX%20Mexico
+trojan://PtRV8to08i8FMsY.Uw7=yMuIaR3eVTGmvA@149.104.87.182:443?security=tls&sni=www.jewelapp.click#%F0%9F%87%B2%F0%9F%87%BD%20MX%20Mexico
 trojan://PtRV8to08i8FMsY.Uw7=yMuIaR3eVTGmvA@149.104.87.182:443?allowInsecure=0&security=tls&sni=www.jewelapp.click#%F0%9F%87%B2%F0%9F%87%BD%20MX%20Mexico
-trojan://PtRV8to08i8FMsY.Uw7=yMuIaR3eVTGmvA@149.104.87.182:443?allowInsecure=0&sni=www.jewelapp.click#%F0%9F%87%B2%F0%9F%87%BD%20MX%20Mexico
-trojan://PtRV8to08i8FMsY.Uw7=yMuIaR3eVTGmvA@149.104.87.182:443?allowInsecure=0&sni=www.jewelapp.click#%F0%9F%87%B2%F0%9F%87%BD%20MX%20Mexico
