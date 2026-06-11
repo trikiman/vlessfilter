@@ -7,3 +7,4 @@ vmess://eyJhZGQiOiJzcnZyZmUxLm5leG9yYXNlcnZyZTEudG9wIiwiYWlkIjoiMCIsImFscG4iOiJo
 trojan://TheVPNMethod@188.114.97.6:443?path=%2Ftrojan&security=tls&insecure=0&type=ws&allowInsecure=0&sni=shomali1.themusiccenter.dpdns.org#%F0%9F%87%AB%F0%9F%87%AE%20FI%20Finland
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp5S1ZNb0IzQXdpVEV6bnBub3EyRllS@193.47.60.186:28687#%F0%9F%87%AB%F0%9F%87%AE%20FI%20Finland
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp5S1ZNb0IzQXdpVEV6bnBub3EyRllS@193.47.60.186:28687#%F0%9F%87%AB%F0%9F%87%AE%20FI%20Finland
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp5S1ZNb0IzQXdpVEV6bnBub3EyRllS@193.47.60.186:28687#%F0%9F%87%AB%F0%9F%87%AE%20FI%20Finland
