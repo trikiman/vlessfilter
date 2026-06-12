@@ -53,4 +53,3 @@ vless://f86f5a03-3872-46b5-bf03-a50388a0261d@a1-tss.pages.dev:443?encryption=non
 vless://f86f5a03-3872-46b5-bf03-a50388a0261d@a1-tss.pages.dev:443?encryption=none&path=/&security=tls&type=ws&source_name=mirror_0124&provider_id=mirror_0124#%F0%9F%8C%90%20ROTATING
 vless://f86f5a03-3872-46b5-bf03-a50388a0261d@a1-tss.pages.dev:443?encryption=none&type=ws&path=%2F&security=tls#%F0%9F%8C%90%20ROTATING
 vless://f86f5a03-3872-46b5-bf03-a50388a0261d@a1-tss.pages.dev:443?encryption=none&type=ws&path=%2F&security=tls#%F0%9F%8C%90%20ROTATING
-trojan://b1c58d44-e3ab-49d5-8fd9-50b4a119bf6a@172.64.152.23:443?path=/?ed=2048&security=tls&insecure=0&host=shy-star-5cdf.citydig90.workers.dev&fp=chrome&type=ws&allowInsecure=0&sni=shy-star-5cdf.citydig90.workers.dev#%F0%9F%8C%90%20ROTATING
