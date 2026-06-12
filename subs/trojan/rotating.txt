@@ -1,5 +1,1 @@
-trojan://Nova-Proxy@spring-tooth-7fa3.ahmadrj.workers.dev:443?security=tls&sni=spring-tooth-7fa3.ahmadrj.workers.dev&fp=random&allowInsecure=0&type=ws&path=/?ed%3D2560#%F0%9F%8C%90%20ROTATING
-trojan://Nova-Proxy@spring-tooth-7fa3.ahmadrj.workers.dev:443?security=tls&sni=spring-tooth-7fa3.ahmadrj.workers.dev&fp=random&type=ws&path=/?ed=2560#%F0%9F%8C%90%20ROTATING
 trojan://b1c58d44-e3ab-49d5-8fd9-50b4a119bf6a@172.64.152.23:443?path=/?ed=2048&security=tls&insecure=0&host=shy-star-5cdf.citydig90.workers.dev&fp=chrome&type=ws&allowInsecure=0&sni=shy-star-5cdf.citydig90.workers.dev#%F0%9F%8C%90%20ROTATING
-trojan://ppmk@104.18.32.47:8443?alpn=http%252F1.1&fp=chrome&host=flat-firefly-6022.rixewi3168.workers.dev&path=%2F&sni=flat-firefly-6022.rixewi3168.workers.dev&type=ws#%F0%9F%8C%90%20ROTATING
-trojan://ppmk@104.18.32.47:8443?alpn=http%252F1.1&fp=chrome&host=flat-firefly-6022.rixewi3168.workers.dev&path=%2F&sni=flat-firefly-6022.rixewi3168.workers.dev&type=ws#%F0%9F%8C%90%20ROTATING
