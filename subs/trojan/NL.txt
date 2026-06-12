@@ -1,2 +1,3 @@
-trojan://mitivpn@188.114.97.6:443?path=/?mitivpn&security=tls&alpn=http/1.1&insecure=0&host=dash.cloudflare.com.www.95r.ir&fp=chrome&type=ws&allowInsecure=0&sni=95r.ir#%F0%9F%87%B3%F0%9F%87%B1%20NL%20Netherlands
-trojan://mitivpn@188.114.97.6:443?path=/?mitivpn&security=tls&alpn=http/1.1&insecure=0&host=dash.cloudflare.com.www.95r.ir&fp=qq&type=ws&allowInsecure=0&sni=95r.ir#%F0%9F%87%B3%F0%9F%87%B1%20NL%20Netherlands
+trojan://humanity@104.19.229.21:443?path=%2Fassignment&security=tls&insecure=0&host=www.multiplydose.com&type=ws&allowInsecure=0&sni=www.multiplydose.com#%F0%9F%87%B3%F0%9F%87%B1%20NL%20Netherlands
+trojan://humanity@172.66.47.69:443?host=www.multiplydose.com&path=%2Fassignment&security=tls&sni=www.multiplydose.com&type=ws#%F0%9F%87%B3%F0%9F%87%B1%20NL%20Netherlands
+trojan://humanity@185.18.250.252:443?path=%2Fassignment&security=tls&insecure=0&fp=chrome&type=ws&allowInsecure=0&sni=www.multiplydose.com#%F0%9F%87%B3%F0%9F%87%B1%20NL%20Netherlands

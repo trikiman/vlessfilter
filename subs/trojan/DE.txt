@@ -1,3 +1,2 @@
-trojan://a0rXGjmHwY@116.202.96.72:20177?type=tcp&path=/193.123.81.105=443&host=zoomgov.vipren.biz.id&headerType=http&security=none#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
 trojan://a0rXGjmHwY@116.202.96.72:20177?type=tcp&path=%2F193.123.81.105%3D443&host=zoomgov.vipren.biz.id&headerType=http&security=none#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
 trojan://a0rXGjmHwY@116.202.96.72:20177?type=tcp&path=/193.123.81.105=443&host=zoomgov.vipren.biz.id&headerType=http&security=none#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany

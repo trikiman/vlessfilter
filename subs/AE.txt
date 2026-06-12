@@ -1,5 +1,5 @@
-trojan://SoftNetConnect@85.234.73.63:8443?type=xhttp&security=reality&path=/&mode=auto&extra={"xPaddingBytes":"100-1000"}&sni=www.yahoo.com&fp=chrome&insecure=1&allowInsecure=1&pbk=bIzRyt6-wut4bghVAF7v_12wkM1McpzZFwsPAqCtrHY&sid=78851a413f5033b0&spx=/#%F0%9F%87%A6%F0%9F%87%AA%20AE%20UAE
 trojan://SoftNetConnect@85.234.73.63:443?mode=gun&security=reality&authority=85.234.73.63&pbk=FYiQVTMa4quf2LeyLscmmFN5iqkV85Rn9HdgimvnbSQ&fp=chrome&spx=%2F&type=grpc&sni=www.yahoo.com&sid=42bb1ccc5bde#%F0%9F%87%A6%F0%9F%87%AA%20AE%20UAE
 trojan://SoftNetConnect@85.234.73.63:443?mode=gun&security=reality&authority=85.234.73.63&pbk=FYiQVTMa4quf2LeyLscmmFN5iqkV85Rn9HdgimvnbSQ&fp=chrome&spx=%2F&type=grpc&sni=www.yahoo.com&sid=42bb1ccc5bde#%F0%9F%87%A6%F0%9F%87%AA%20AE%20UAE
+trojan://SoftNetConnect@85.234.73.63:8443?type=xhttp&security=reality&path=%2F&mode=auto&extra=%7B%22xPaddingBytes%22%3A%22100-1000%22%7D&sni=www.yahoo.com&fp=chrome&insecure=1&allowInsecure=1&pbk=bIzRyt6-wut4bghVAF7v_12wkM1McpzZFwsPAqCtrHY&sid=78851a413f5033b0&spx=%2F#%F0%9F%87%A6%F0%9F%87%AA%20AE%20UAE
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTphOWQ3MjdjZC0zMzBiLTRlZGQtODkxMS03YzIyNGRmNmFmZDU=@77.74.201.171:25891#%F0%9F%87%A6%F0%9F%87%AA%20AE%20UAE
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTphOWQ3MjdjZC0zMzBiLTRlZGQtODkxMS03YzIyNGRmNmFmZDU=@77.74.201.171:25891#%F0%9F%87%A6%F0%9F%87%AA%20AE%20UAE
