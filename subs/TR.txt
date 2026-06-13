@@ -7,6 +7,5 @@ vmess://eyJhZGQiOiI1LjE4OC4xOTAuMjUyIiwiYWlkIjoiMSIsImhvc3QiOiIiLCJpZCI6IjA0NjIx
 trojan://ldcowwKly0@66.81.247.176:2087?type=xhttp&mode=packet-up&host=x-cdn.ana-company.com&path=%2F&security=tls&alpn=h3%2Ch2%2Chttp%2F1.1&fp=chrome&sni=x-cdn.ana-company.com#%F0%9F%87%B9%F0%9F%87%B7%20TR%20Turkey
 trojan://ldcowwKly0@66.81.247.176:2087?mode=packet-up&security=tls&alpn=h3,h2,http/1.1&extra={"xPaddingBytes":"100-1000"}&sni=x-cdn.ana-company.com&fp=chrome&type=xhttp&sni=x-cdn.ana-company.com#%F0%9F%87%B9%F0%9F%87%B7%20TR%20Turkey
 trojan://ldcowwKly0@66.81.247.176:2087?mode=packet-up&path=/&security=tls&alpn=h3,h2,http/1.1&extra={"xPaddingBytes":"100-1000"}&insecure=0&host=x-cdn.ana-company.com&fp=chrome&type=xhttp&allowInsecure=0&sni=x-cdn.ana-company.com#%F0%9F%87%B9%F0%9F%87%B7%20TR%20Turkey
-ss://YWVzLTI1Ni1nY206ZmFCQW9ENTRrODdVSkc3@185.123.101.64:2376#%F0%9F%87%B9%F0%9F%87%B7%20TR%20Turkey
-ss://YWVzLTI1Ni1nY206ZmFCQW9ENTRrODdVSkc3@185.123.101.64:2376#%F0%9F%87%B9%F0%9F%87%B7%20TR%20Turkey
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp0dW5uZWwtZmJyb2Y@tr-1.stunnel.cc:8444#%F0%9F%87%B9%F0%9F%87%B7%20TR%20Turkey
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp0dW5uZWwtZmJyb2Y@193.124.46.134:8444#%F0%9F%87%B9%F0%9F%87%B7%20TR%20Turkey
