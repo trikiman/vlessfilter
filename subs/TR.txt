@@ -9,3 +9,4 @@ trojan://ldcowwKly0@66.81.247.176:2087?mode=packet-up&security=tls&alpn=h3,h2,ht
 trojan://ldcowwKly0@66.81.247.176:2087?mode=packet-up&path=/&security=tls&alpn=h3,h2,http/1.1&extra={"xPaddingBytes":"100-1000"}&insecure=0&host=x-cdn.ana-company.com&fp=chrome&type=xhttp&allowInsecure=0&sni=x-cdn.ana-company.com#%F0%9F%87%B9%F0%9F%87%B7%20TR%20Turkey
 ss://YWVzLTI1Ni1nY206ZmFCQW9ENTRrODdVSkc3@185.123.101.64:2376#%F0%9F%87%B9%F0%9F%87%B7%20TR%20Turkey
 ss://YWVzLTI1Ni1nY206ZmFCQW9ENTRrODdVSkc3@185.123.101.64:2376#%F0%9F%87%B9%F0%9F%87%B7%20TR%20Turkey
+ss://YWVzLTI1Ni1nY206ZmFCQW9ENTRrODdVSkc3@185.123.101.64:2376#%F0%9F%87%B9%F0%9F%87%B7%20TR%20Turkey
