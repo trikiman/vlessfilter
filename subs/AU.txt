@@ -5,5 +5,5 @@ trojan://rYuChHcwQZskq9E0zdoR@2.56.204.246:443?path=%2Fws-79dffb8106db&security=
 trojan://rYuChHcwQZskq9E0zdoR@2.56.204.246:443?path=%2Fws-79dffb8106db&security=tls&insecure=0&type=ws&allowInsecure=0&sni=vpn5.rnmcnm.com#%F0%9F%87%A6%F0%9F%87%BA%20AU%20Australia
 trojan://rYuChHcwQZskq9E0zdoR@2.56.204.246:443?security=tls&sni=vpn5.rnmcnm.com&type=ws&host=vpn5.rnmcnm.com&path=%2Fws-79dffb8106db#%F0%9F%87%A6%F0%9F%87%BA%20AU%20Australia
 ss://YWVzLTI1Ni1nY206ZGFkYTEyMDM@3.27.212.11:80#%F0%9F%87%A6%F0%9F%87%BA%20AU%20Australia
-ss://YWVzLTI1Ni1nY206ZGFkYTEyMDM=@3.27.212.11:80#%F0%9F%87%A6%F0%9F%87%BA%20AU%20Australia
+ss://YWVzLTI1Ni1nY206ZGFkYTEyMDM@3.27.212.11:80#%F0%9F%87%A6%F0%9F%87%BA%20AU%20Australia
 ss://YWVzLTI1Ni1nY206ZGFkYTEyMDM=@3.27.212.11:80#%F0%9F%87%A6%F0%9F%87%BA%20AU%20Australia

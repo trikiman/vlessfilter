@@ -1,3 +1,1 @@
-trojan://d8bc8425-5e80-4c26-bd93-af634c033e2d@104.17.112.200:443?sni=purnet.gmijcp.workers.dev&type=ws&path=/?ed=2048&fp=chrome#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States
-trojan://d8bc8425-5e80-4c26-bd93-af634c033e2d@173.245.59.215:443?sni=purnet.gmijcp.workers.dev&type=ws&path=/?ed=2048&fp=chrome#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States
-trojan://d8bc8425-5e80-4c26-bd93-af634c033e2d@162.159.20.55:443?sni=purnet.gmijcp.workers.dev&type=ws&path=/?ed=2048&fp=chrome#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States
+trojan://25ae6230-7834-41dc-94a4-586e1a79ea89@188.114.97.3:443?sni=shy-brook-df1e.amirkhan69.workers.dev&type=ws&path=/?ed=2048&alpn=http/1.1&fp=ios#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States
