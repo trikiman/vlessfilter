@@ -1,1 +1,3 @@
-trojan://25ae6230-7834-41dc-94a4-586e1a79ea89@188.114.97.3:443?sni=shy-brook-df1e.amirkhan69.workers.dev&type=ws&path=/?ed=2048&alpn=http/1.1&fp=ios#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States
+trojan://ce92cd20-671e-11f1-a13f-1239d0255272@news.microsoft.com:443?path=/howdy&security=tls&insecure=0&host=usa.test3.net&type=ws&allowInsecure=0&sni=usa.test3.net#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States
+trojan://ce92cd20-671e-11f1-a13f-1239d0255272@news.microsoft.com:443?path=/howdy&security=tls&insecure=0&host=usa.test3.net&type=ws&allowInsecure=0&sni=usa.test3.net#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States
+trojan://6d9c4400-671a-11f1-ac62-1239d0255272@news.microsoft.com:443?path=%2Fhowdy&security=tls&insecure=0&host=usa.test3.net&type=ws&allowInsecure=0&sni=usa.test3.net#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States
