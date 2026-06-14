@@ -1,3 +1,4 @@
+vmess://eyJhZGQiOiI0Mi45Ni4xOS4yMDgiLCJhaWQiOjAsImhvc3QiOiJoZHBvcm45Mi5uZXQiLCJpZCI6ImI2MzY5ZjRmLTc0ZWYtNDg4ZS04YTM5LTNmM2JhNjAyMjc2NiIsIm5ldCI6InRjcCIsInBhdGgiOiIvIiwicG9ydCI6MTk2MDMsInBzIjoidjJnbyB8IPCfh7vwn4ezIFZOIHwgVk1FU1MgfCAzMTMzMiIsInRscyI6Im5vbmUiLCJ0eXBlIjoiaHR0cCIsInYiOiIyIn0=#%F0%9F%87%BB%F0%9F%87%B3%20VN%20Vietnam
 trojan://DX4wKmVl.CNIjwO5CYf7_qg+f1eMN4yt_F@130.94.3.146:443?security=tls&sni=www.event-snapshot.click#%F0%9F%87%BB%F0%9F%87%B3%20VN%20Vietnam
 trojan://DX4wKmVl.CNIjwO5CYf7_qg+f1eMN4yt_F@130.94.3.146:443?security=tls&insecure=0&headerType=none&fp=chrome&type=tcp&allowInsecure=0&sni=www.event-snapshot.click#%F0%9F%87%BB%F0%9F%87%B3%20VN%20Vietnam
 trojan://DX4wKmVl.CNIjwO5CYf7_qg+f1eMN4yt_F@130.94.3.146:443?security=tls&sni=www.event-snapshot.click&fp=chrome&type=tcp#%F0%9F%87%BB%F0%9F%87%B3%20VN%20Vietnam
