@@ -1,1 +1,2 @@
-trojan://mitivpn@27.50.48.49:443?security=tls&sni=gamingdll.ir&alpn=http/1.1&type=ws&host=gamingdll.ir&path=/index.html/ed=mitivpn#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
+trojan://mitivpn@104.19.229.21:443?security=tls&sni=gamingdll.ir&alpn=http/1.1&type=ws&host=gamingdll.ir&path=/ed=mitivpn#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
+trojan://mitivpn@216.24.57.210:443?security=tls&sni=gamingdll.ir&fp=chrome&alpn=http%2F1.1&insecure=0&allowInsecure=0&type=ws&host=gamingdll.ir&path=%2Fed%3Dmitivpn%2Findex.php#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
