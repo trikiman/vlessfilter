@@ -1,2 +1,3 @@
-trojan://c9352e86-2a03-497d-a686-ceb90806858c@172.64.146.199:443?sni=sweet-heart-7bc8.netshopchannel.workers.dev&type=ws&path=%2F%3Fed%3D2048&fp=chrome#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States
+trojan://25ae6230-7834-41dc-94a4-586e1a79ea89@188.114.97.3:443?sni=shy-brook-df1e.amirkhan69.workers.dev&type=ws&path=/?ed=2048&alpn=http/1.1&fp=ios#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States
+trojan://Nova-Proxy@104.21.23.135:443?security=tls&sni=spring-tooth-7fa3.ahmadrj.workers.dev&fp=random&type=ws&path=/?ed=2560#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States
 trojan://eeb6823c-b926-4ea2-866a-5542edd26e59@154.17.4.159:2053?path=%2F&security=tls&insecure=0&host=hhcm.hhxaf.cc.cd&type=ws&allowInsecure=0&sni=hhcm.hhxaf.cc.cd#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States
