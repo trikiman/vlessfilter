@@ -53,15 +53,3 @@ vless://f86f5a03-3872-46b5-bf03-a50388a0261d@a1-tss.pages.dev:443?encryption=non
 vless://f86f5a03-3872-46b5-bf03-a50388a0261d@a1-tss.pages.dev:443?encryption=none&path=/&security=tls&type=ws&source_name=mirror_0124&provider_id=mirror_0124#%F0%9F%8C%90%20ROTATING
 vless://f86f5a03-3872-46b5-bf03-a50388a0261d@a1-tss.pages.dev:443?encryption=none&type=ws&path=%2F&security=tls#%F0%9F%8C%90%20ROTATING
 vless://f86f5a03-3872-46b5-bf03-a50388a0261d@a1-tss.pages.dev:443?encryption=none&type=ws&path=%2F&security=tls#%F0%9F%8C%90%20ROTATING
-trojan://25ae6230-7834-41dc-94a4-586e1a79ea89@188.114.97.3:443?path=%2F%3Fed%3D2048&security=tls&alpn=http%2F1.1&insecure=0&host=shy-brook-df1e.amirkhan69.workers.dev&fp=ios&type=ws&allowInsecure=0&sni=shy-brook-df1e.amirkhan69.workers.dev#%F0%9F%8C%90%20ROTATING
-trojan://25ae6230-7834-41dc-94a4-586e1a79ea89@188.114.97.3:443?path=/?ed=2048&security=tls&alpn=http/1.1&insecure=0&host=shy-brook-df1e.amirkhan69.workers.dev&fp=chrome&type=ws&allowInsecure=0&sni=shy-brook-df1e.amirkhan69.workers.dev#%F0%9F%8C%90%20ROTATING
-trojan://5b5c7abb-cbfa-4375-a2bc-96ee15ad4cd9@cf.090227.xyz:443?security=tls&sni=muddy-glitter-02cf.netshopvip.workers.dev&fp=chrome&insecure=0&allowInsecure=0&type=ws&host=muddy-glitter-02cf.netshopvip.workers.dev&path=%2F%3Fed%3D2048#%F0%9F%8C%90%20ROTATING
-trojan://5b5c7abb-cbfa-4375-a2bc-96ee15ad4cd9@cf.090227.xyz:443?security=tls&sni=muddy-glitter-02cf.netshopvip.workers.dev&fp=chrome&insecure=0&allowInsecure=0&type=ws&host=muddy-glitter-02cf.netshopvip.workers.dev&path=/?ed=2048#%F0%9F%8C%90%20ROTATING
-trojan://Nova-Proxy@spring-tooth-7fa3.ahmadrj.workers.dev:443?security=tls&sni=spring-tooth-7fa3.ahmadrj.workers.dev&fp=random&allowInsecure=0&type=ws&path=/?ed%3D2560#%F0%9F%8C%90%20ROTATING
-trojan://Nova-Proxy@spring-tooth-7fa3.ahmadrj.workers.dev:443?security=tls&sni=spring-tooth-7fa3.ahmadrj.workers.dev&fp=random&type=ws&path=/?ed=2560#%F0%9F%8C%90%20ROTATING
-trojan://Nova-Proxy@spring-tooth-7fa3.ahmadrj.workers.dev:443?security=tls&type=ws&path=/#%F0%9F%8C%90%20ROTATING
-trojan://b1c58d44-e3ab-49d5-8fd9-50b4a119bf6a@172.64.152.23:443?path=/?ed=2048&security=tls&insecure=0&host=shy-star-5cdf.citydig90.workers.dev&fp=chrome&type=ws&allowInsecure=0&sni=shy-star-5cdf.citydig90.workers.dev#%F0%9F%8C%90%20ROTATING
-trojan://ppmk@104.18.32.47:8443?type=ws&host=flat-firefly-6022.rixewi3168.workers.dev&path=%2F&security=tls&alpn=http%252F1.1&fp=chrome&sni=flat-firefly-6022.rixewi3168.workers.dev#%F0%9F%8C%90%20ROTATING
-trojan://ppmk@104.18.32.47:8443?type=ws&host=flat-firefly-6022.rixewi3168.workers.dev&path=%2F&security=tls&alpn=http%2F1.1&fp=chrome&sni=flat-firefly-6022.rixewi3168.workers.dev#%F0%9F%8C%90%20ROTATING
-trojan://ppmk@188.114.97.6:8443?type=ws&security=tls&host=flat-firefly-6022.rixewi3168.workers.dev&path=%2F&sni=flat-firefly-6022.rixewi3168.workers.dev#%F0%9F%8C%90%20ROTATING
-trojan://ppmk@188.114.97.6:8443?type=ws&security=tls&host=flat-firefly-6022.rixewi3168.workers.dev&path=/&sni=flat-firefly-6022.rixewi3168.workers.dev#%F0%9F%8C%90%20ROTATING

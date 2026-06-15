@@ -1,3 +1,3 @@
-trojan://N53GqFZAHv@45.130.125.75:8080?type=ws&security=none&path=%2F%3Fed%3D2048&host=c.aananas.ir#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
-trojan://N53GqFZAHv@45.130.125.75:8080?type=ws&security=none&path=/?ed=2048&host=c.aananas.ir#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
-trojan://N53GqFZAHv@45.130.125.75:8080?type=ws&security=none&path=%2F%3Fed%3D2048&host=c.aananas.ir#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
+trojan://cIatXQiBDG@45.130.125.158:8080?type=ws&security=none&path=%2F%3Fed%3D2048&host=s2.aananas.ir#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
+trojan://LYaEYwjN8LjWTRJdCCTzW7V6gK7atJVu@94.103.173.70:9443?allowInsecure=0&sni=de-1.hysteria.ltd#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
+trojan://LYaEYwjN8LjWTRJdCCTzW7V6gK7atJVu@94.103.173.70:9443?security=tls&sni=de-1.hysteria.ltd&fp=chrome&type=tcp&headerType=none&path=%2f&allow_insecure=0#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
