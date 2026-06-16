@@ -1,1 +1,2 @@
 trojan://EbsKv_weudqnr7-Zfld6F06M8HzO671+9c@103.208.85.4:443?sni=103.208.85.4&peer=103.208.85.4&security=tls#%F0%9F%87%B3%F0%9F%87%BF%20NZ%20New%20Zealand
+trojan://EbsKv_weudqnr7-Zfld6F06M8HzO671+9c@103.208.85.4:443?sni=103.208.85.4&peer=103.208.85.4&security=tls#%F0%9F%87%B3%F0%9F%87%BF%20NZ%20New%20Zealand

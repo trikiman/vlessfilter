@@ -1,3 +1,3 @@
-trojan://cIatXQiBDG@45.130.125.158:8080?type=ws&security=none&path=/?ed=2048&host=s2.aananas.ir#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
-trojan://cIatXQiBDG@45.130.125.158:8080?type=ws&security=none&path=/?ed=2048&host=s2.aananas.ir#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
-trojan://cIatXQiBDG@45.130.125.158:8080?type=ws&security=none&path=/?ed=2048&host=s2.aananas.ir#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
+trojan://mitivpn@45.130.125.220:443?path=index.html%3Dmitivpn&security=tls&alpn=http%2F1.1&insecure=0&host=linkkon-a.ir&fp=chrome&type=ws&allowInsecure=0&sni=linkkon-a.ir#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
+trojan://mitivpn@45.130.125.220:443?security=tls&sni=linkkon-a.ir&fp=chrome&alpn=http%2F1.1&insecure=0&allowInsecure=0&type=ws&host=linkkon-a.ir&path=index.html%3Dmitivpn#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
+trojan://mitivpn@45.130.125.220:443?path=index.html=mitivpn&security=tls&alpn=http/1.1&insecure=0&host=linkkon-a.ir&fp=chrome&type=ws&allowInsecure=0&sni=linkkon-a.ir#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
