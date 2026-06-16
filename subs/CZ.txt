@@ -1,8 +1,8 @@
 vless://a6bdf293-c3b0-4b8f-9a70-528874376f62@104.19.229.21:443?encryption=none&type=xhttp&security=tls&path=%2F&host=my.pars-cdn.ir&mode=packet-up&sni=my.pars-cdn.ir&alpn=h2&fp=chrome&allowInsecure=1#%F0%9F%87%A8%F0%9F%87%BF%20CZ%20Czechia
 vless://a6bdf293-c3b0-4b8f-9a70-528874376f62@104.19.229.21:443?mode=packet-up&path=%2F&security=tls&alpn=h2&encryption=none&insecure=1&host=my.pars-cdn.ir&fp=chrome&type=xhttp&allowInsecure=1&sni=my.pars-cdn.ir#%F0%9F%87%A8%F0%9F%87%BF%20CZ%20Czechia
 vless://a6bdf293-c3b0-4b8f-9a70-528874376f62@104.19.229.21:443?encryption=none&type=xhttp&security=tls&path=%2F&host=my.pars-cdn.ir&mode=packet-up&sni=my.pars-cdn.ir&alpn=h2&fp=chrome&allowInsecure=1#%F0%9F%87%A8%F0%9F%87%BF%20CZ%20Czechia
-trojan://LYaEYwjN8LjWTRJdCCTzW7V6gK7atJVu@46.8.113.142:443?security=tls&headerType=none&fp=chrome&type=tcp&sni=ch-2.bexum.fun#%F0%9F%87%A8%F0%9F%87%BF%20CZ%20Czechia
-trojan://LYaEYwjN8LjWTRJdCCTzW7V6gK7atJVu@46.8.113.142:443?security=tls&headerType=none&fp=chrome&type=tcp&sni=ch-2.bexum.fun#%F0%9F%87%A8%F0%9F%87%BF%20CZ%20Czechia
+trojan://LYaEYwjN8LjWTRJdCCTzW7V6gK7atJVu@46.8.113.142:443?security=tls&sni=ch-2.bexum.fun&fp=chrome&headerType=none&allowInsecure=0&type=tcp&note=Telegram---@Raiv2mmr---Telegram---@Raiv2mmr---Telegram---@Raiv2mmr---Telegram---@Raiv2mmr---Telegram---@Raiv2mmr---Telegram---@Raiv2mmr---Telegram---@Raiv2mmr---Telegram---@Raiv2mmr---Telegram---@Raiv2mmr---#%F0%9F%87%A8%F0%9F%87%BF%20CZ%20Czechia
+trojan://LYaEYwjN8LjWTRJdCCTzW7V6gK7atJVu@46.8.113.142:443?security=tls&insecure=0&headerType=none&fp=chrome&type=tcp&allowInsecure=0&sni=ch-2.bexum.fun#%F0%9F%87%A8%F0%9F%87%BF%20CZ%20Czechia
 trojan://LYaEYwjN8LjWTRJdCCTzW7V6gK7atJVu@46.8.113.142:443?security=tls&insecure=0&headerType=none&fp=chrome&type=tcp&allowInsecure=0&sni=ch-2.bexum.fun#%F0%9F%87%A8%F0%9F%87%BF%20CZ%20Czechia
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToyQzZQT0ZMZ3VaTlBFdU5oMjdyUmp1@45.83.130.96:51847/?outline=1#%F0%9F%87%A8%F0%9F%87%BF%20CZ%20Czechia
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpoZlNFM3Rod0FRcXZTSWFjNXhMcFVE@45.83.130.97:53292#%F0%9F%87%A8%F0%9F%87%BF%20CZ%20Czechia

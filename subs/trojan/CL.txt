@@ -1,3 +1,1 @@
-trojan://lTs6OZOMoqYAkDEbK10t-tE8KMjuREBW3m@130.94.104.210:443?Telegram=@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad&security=tls&insecure=0&headerType=none&type=tcp&allowInsecure=0&sni=www.cdn-structure.click#%F0%9F%87%A8%F0%9F%87%B1%20CL%20Chile
-trojan://lTs6OZOMoqYAkDEbK10t-tE8KMjuREBW3m@130.94.104.210:443?security=tls&insecure=0&headerType=none&type=tcp&allowInsecure=0&sni=www.cdn-structure.click#%F0%9F%87%A8%F0%9F%87%B1%20CL%20Chile
-trojan://lTs6OZOMoqYAkDEbK10t-tE8KMjuREBW3m@130.94.104.210:443?security=tls&sni=www.cdn-structure.click#%F0%9F%87%A8%F0%9F%87%B1%20CL%20Chile
+trojan://Mzp+sTklU5g1c_TH17Vl5np7HSQnAd7E-Q@130.94.104.148:443?sni=130.94.104.148&peer=130.94.104.148&security=tls#%F0%9F%87%A8%F0%9F%87%B1%20CL%20Chile
