@@ -1,1 +1,3 @@
-trojan://TheVPNMethod@188.114.97.6:443?path=%2Ftrojan&security=tls&insecure=0&type=ws&allowInsecure=0&sni=shomali1.themusiccenter.dpdns.org#%F0%9F%87%AB%F0%9F%87%AE%20FI%20Finland
+trojan://Bhi3WHtOR7SGiDERv3KkOjhknaQNDWFm0NcmowUEsVE=@89.167.82.102:2080?security=none&type=tcp#%F0%9F%87%AB%F0%9F%87%AE%20FI%20Finland
+trojan://Bhi3WHtOR7SGiDERv3KkOjhknaQNDWFm0NcmowUEsVE=@89.167.82.102:2080?type=raw&headerType=none&security=none#%F0%9F%87%AB%F0%9F%87%AE%20FI%20Finland
+trojan://Bhi3WHtOR7SGiDERv3KkOjhknaQNDWFm0NcmowUEsVE=@89.167.82.102:2080?security=none&type=tcp#%F0%9F%87%AB%F0%9F%87%AE%20FI%20Finland

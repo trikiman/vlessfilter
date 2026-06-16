@@ -1,3 +1,2 @@
-trojan://oUAfbL8z87q-mhgjZ6g7mWQobf9=b7ut_F@130.94.92.144:443?security=tls&sni=www.node-finder.click&fp=chrome&type=tcp#%F0%9F%87%AE%F0%9F%87%A9%20ID%20Indonesia
-trojan://oUAfbL8z87q-mhgjZ6g7mWQobf9=b7ut_F@130.94.92.144:443?sni=www.node-finder.click&type=tcp&fp=chrome#%F0%9F%87%AE%F0%9F%87%A9%20ID%20Indonesia
-trojan://oUAfbL8z87q-mhgjZ6g7mWQobf9=b7ut_F@130.94.92.144:443?allowInsecure=0&sni=www.node-finder.click#%F0%9F%87%AE%F0%9F%87%A9%20ID%20Indonesia
+trojan://tUtK5TKdjxsPnOyritLtv8OQWHAK8f8yNR@130.94.94.15:443?type=raw&headerType=none&security=tls&fp=chrome&sni=130.94.94.15#%F0%9F%87%AE%F0%9F%87%A9%20ID%20Indonesia
+trojan://tUtK5TKdjxsPnOyritLtv8OQWHAK8f8yNR@130.94.94.15:443?sni=130.94.94.15&peer=130.94.94.15&security=tls#%F0%9F%87%AE%F0%9F%87%A9%20ID%20Indonesia

@@ -1,3 +1,3 @@
-trojan://hF7uSJfeBPtSNXKtuYvTRNaBdGkkXHpKJfLRfbpaDWovomSL@3.8.238.251:443?host=uk1.bw8848.org&path=/uk1-uk1-gcjtze&sni=uk1.bw8848.org&type=ws#%F0%9F%87%AC%F0%9F%87%A7%20GB%20United%20Kingdom
-trojan://hF7uSJfeBPtSNXKtuYvTRNaBdGkkXHpKJfLRfbpaDWovomSL@3.8.238.251:443?host=uk1.bw8848.org&path=/uk1-uk1-gcjtze&sni=uk1.bw8848.org&type=ws#%F0%9F%87%AC%F0%9F%87%A7%20GB%20United%20Kingdom
-trojan://hF7uSJfeBPtSNXKtuYvTRNaBdGkkXHpKJfLRfbpaDWovomSL@3.8.238.251:443/?type=ws&host=uk1.bw8848.org&path=%2Fuk1-uk1-gcjtze&security=tls&sni=uk1.bw8848.org#%F0%9F%87%AC%F0%9F%87%A7%20GB%20United%20Kingdom
+trojan://bpb-trojan@vless.herogoing.top:443?sni=vless.herogoing.top&type=ws&host=vless.herogoing.top&path=/tr?ed=2560#%F0%9F%87%AC%F0%9F%87%A7%20GB%20United%20Kingdom
+trojan://hF7uSJfeBPtSNXKtuYvTRNaBdGkkXHpKJfLRfbpaDWovomSL@3.8.238.251:443?host=uk1.bw8848.org&path=%2Fuk1-uk1-gcjtze&sni=uk1.bw8848.org&type=ws#%F0%9F%87%AC%F0%9F%87%A7%20GB%20United%20Kingdom
+trojan://hF7uSJfeBPtSNXKtuYvTRNaBdGkkXHpKJfLRfbpaDWovomSL@3.8.238.251:443?type=ws&security=tls&path=/uk1-uk1-gcjtze&host=uk1.bw8848.org&sni=uk1.bw8848.org&insecure=0&allowInsecure=0#%F0%9F%87%AC%F0%9F%87%A7%20GB%20United%20Kingdom
