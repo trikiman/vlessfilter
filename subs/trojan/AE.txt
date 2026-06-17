@@ -1,3 +1,2 @@
-trojan://SoftNetConnect@85.234.73.63:443?mode=gun&security=reality&authority=85.234.73.63&pbk=FYiQVTMa4quf2LeyLscmmFN5iqkV85Rn9HdgimvnbSQ&fp=chrome&spx=%2F&type=grpc&sni=www.yahoo.com&sid=42bb1ccc5bde#%F0%9F%87%A6%F0%9F%87%AA%20AE%20UAE
-trojan://SoftNetConnect@85.234.73.63:443?mode=gun&security=reality&authority=85.234.73.63&pbk=FYiQVTMa4quf2LeyLscmmFN5iqkV85Rn9HdgimvnbSQ&fp=chrome&spx=%2F&type=grpc&sni=www.yahoo.com&sid=42bb1ccc5bde#%F0%9F%87%A6%F0%9F%87%AA%20AE%20UAE
-trojan://SoftNetConnect@85.234.73.63:8443?type=xhttp&security=reality&path=%2F&mode=auto&extra=%7B%22xPaddingBytes%22%3A%22100-1000%22%7D&sni=www.yahoo.com&fp=chrome&insecure=1&allowInsecure=1&pbk=bIzRyt6-wut4bghVAF7v_12wkM1McpzZFwsPAqCtrHY&sid=78851a413f5033b0&spx=%2F#%F0%9F%87%A6%F0%9F%87%AA%20AE%20UAE
+trojan://ZfhGKkAmGl.hxRfIUI0LUU.MuK3hkQdxed@38.60.202.163:443?security=tls&sni=38.60.202.163&fp=chrome&type=tcp&headerType=none&path=%2f&allow_insecure=1#%F0%9F%87%A6%F0%9F%87%AA%20AE%20UAE
+trojan://ZfhGKkAmGl.hxRfIUI0LUU.MuK3hkQdxed@38.60.202.163:443?security=tls&sni=38.60.202.163&fp=chrome&type=tcp&headerType=none&path=/&allow_insecure=1#%F0%9F%87%A6%F0%9F%87%AA%20AE%20UAE
