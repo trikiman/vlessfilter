@@ -1,3 +1,2 @@
-trojan://humanity@104.18.6.147:443?security=tls&encryption=none&sni=www.creationlong.org&alpn=h2,http/1.1&type=ws&path=/assignment#%F0%9F%87%B5%F0%9F%87%B1%20PL%20Poland
-trojan://humanity@www.creationlong.org:443?path=%2Fassignment&security=tls&insecure=0&fp=chrome&type=ws&allowInsecure=0&sni=www.creationlong.org#%F0%9F%87%B5%F0%9F%87%B1%20PL%20Poland
-trojan://humanity@104.16.117.43:443/?type=ws&host=www.creationlong.org&path=%2Fassignment&security=tls&sni=www.creationlong.org#%F0%9F%87%B5%F0%9F%87%B1%20PL%20Poland
+trojan://humanity@104.16.147.104:443?host=www.creationlong.org&path=%2Fassignment&security=tls&sni=www.creationlong.org&type=ws#%F0%9F%87%B5%F0%9F%87%B1%20PL%20Poland
+trojan://humanity@www.creationlong.org:443?security=tls&sni=www.creationlong.org&fp=chrome&allowInsecure=0&type=ws&path=/assignment#%F0%9F%87%B5%F0%9F%87%B1%20PL%20Poland
