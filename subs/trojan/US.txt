@@ -1,3 +1,3 @@
-trojan://4c3164ee-abcf-4091-abea-d1cd4937a68d@cloudflare-ip.mofashi.ltd:443?path=%2F&security=tls&sni=jy.hhllfly.kdns.fr&type=ws#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States
-trojan://4c3164ee-abcf-4091-abea-d1cd4937a68d@nexusmods.com:443?path=%2F&security=tls&sni=jy.hhllfly.kdns.fr&type=ws#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States
-trojan://4c3164ee-abcf-4091-abea-d1cd4937a68d@cdn.9889888.xyz:443?security=tls&sni=jy.hhllfly.kdns.fr&fp=chrome&type=ws&host=jy.hhllfly.kdns.fr&path=/?ed=2048&alpn=http%2F1.1&ech=cloudflare-ech.com%2Bhttps%3A%2F%2F223.5.5.5%2Fdns-query#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States
+trojan://MiTiVPN@188.114.97.6:443?security=tls&sni=cdn.95r.ir&fp=chrome&alpn=http%2F1.1&insecure=0&allowInsecure=0&type=ws&host=cdn.95r.ir&path=index.php%3Fmitivpn#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States
+trojan://O4O8.Ew+ujFX6GJBQ=xQr.heGwux0GYHqk@207.126.167.150:443?sni=207.126.167.150&peer=207.126.167.150&security=tls#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States
+trojan://MiTiVPN@cdn.95r.ir:443?security=tls&sni=cdn.95r.ir&fp=chrome&allowInsecure=0&alpn=http/1.1&type=ws&path=index.php?mitivpn#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States

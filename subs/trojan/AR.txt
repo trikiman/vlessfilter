@@ -1,2 +1,2 @@
-trojan://Bt-qzyomC7g37TaHwvPSV0.YrNSxFmlvIP@130.94.107.242:443?sni=130.94.107.242&peer=130.94.107.242&security=tls#%F0%9F%87%A6%F0%9F%87%B7%20AR%20Argentina
+trojan://Bt-qzyomC7g37TaHwvPSV0.YrNSxFmlvIP@130.94.107.242:443?security=tls#%F0%9F%87%A6%F0%9F%87%B7%20AR%20Argentina
 trojan://Bt-qzyomC7g37TaHwvPSV0.YrNSxFmlvIP@130.94.107.242:443?sni=130.94.107.242&peer=130.94.107.242&security=tls#%F0%9F%87%A6%F0%9F%87%B7%20AR%20Argentina

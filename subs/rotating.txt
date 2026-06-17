@@ -54,10 +54,7 @@ vless://f86f5a03-3872-46b5-bf03-a50388a0261d@a1-tss.pages.dev:443?encryption=non
 vless://f86f5a03-3872-46b5-bf03-a50388a0261d@a1-tss.pages.dev:443?encryption=none&type=ws&path=%2F&security=tls#%F0%9F%8C%90%20ROTATING
 vless://f86f5a03-3872-46b5-bf03-a50388a0261d@a1-tss.pages.dev:443?encryption=none&type=ws&path=%2F&security=tls#%F0%9F%8C%90%20ROTATING
 trojan://125bd815be9b406f@trytoconect.pages.dev:443?security=tls&sni=TrytOcOnEcT.PAGeS.Dev&fp=chrome&allowInsecure=0&alpn=http/1.1&type=ws&path=/eyJqdW5rIjoicXUzbXp6SXBiVCIsInByb3RvY29sIjoidHIiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0%3D?ed%3D2560#%F0%9F%8C%90%20ROTATING
-trojan://bpb-trojan@vless.herogoing.top:443?path=%2Ftr%3Fed%3D2560&security=tls&insecure=0&fp=chrome&type=ws&allowInsecure=0&sni=vless.herogoing.top#%F0%9F%8C%90%20ROTATING
-trojan://ppmk@104.18.32.47:8443?alpn=http/1.1&fp=chrome&host=flat-firefly-6022.rixewi3168.workers.dev&path=/&sni=flat-firefly-6022.rixewi3168.workers.dev&type=ws#%F0%9F%8C%90%20ROTATING
-trojan://ppmk@104.18.32.47:8443?type=ws&host=flat-firefly-6022.rixewi3168.workers.dev&path=%2F&security=tls&alpn=http%2F1.1&fp=chrome&sni=flat-firefly-6022.rixewi3168.workers.dev#%F0%9F%8C%90%20ROTATING
-trojan://ppmk@188.114.97.6:8443?type=ws&security=tls&host=flat-firefly-6022.rixewi3168.workers.dev&path=/&sni=flat-firefly-6022.rixewi3168.workers.dev#%F0%9F%8C%90%20ROTATING
-trojan://r137979f@104.19.63.25:443?encryption=none&security=tls&sni=sheleqaz.emotionreza.workers.dev&fp=random&type=ws&host=sheleqaz.emotionreza.workers.dev&path=%2F%3Fed%3D2560#%F0%9F%8C%90%20ROTATING
-trojan://r137979f@104.19.63.25:443?encryption=none&security=tls&sni=sheleqaz.emotionreza.workers.dev&fp=random&type=ws&host=sheleqaz.emotionreza.workers.dev&path=%2F%3Fed%3D2560#%F0%9F%8C%90%20ROTATING
-trojan://r137979f@162.159.153.212:2087?type=ws&host=sheleqaz.emotionreza.workers.dev&path=%2F&security=tls&fp=chrome&sni=sheleqaz.emotionreza.workers.dev#%F0%9F%8C%90%20ROTATING
+trojan://125bd815be9b406f@trytoconect.pages.dev:443?security=tls&sni=trytoConECt.PageS.dEv&alpn=http/1.1&fp=chrome&type=ws&host=trytoconect.pages.dev&path=/eyJqdW5rIjoiTmFBclhQeE83ZyIsInByb3RvY29sIjoidHIiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=?ed=2560#%F0%9F%8C%90%20ROTATING
+trojan://e2706e57-690b-fd2e-0c53-9c34e1805162@104.20.30.73:443?security=tls&sni=purple-rain-4512.erfan22.workers.dev&fp=chrome&insecure=0&allowInsecure=0&type=ws&host=purple-rain-4512.erfan22.workers.dev&path=/sync#%F0%9F%8C%90%20ROTATING
+trojan://e2706e57-690b-fd2e-0c53-9c34e1805162@104.20.30.73:443?security=tls&sni=purple-rain-4512.erfan22.workers.dev&fp=chrome&insecure=0&allowInsecure=0&type=ws&host=purple-rain-4512.erfan22.workers.dev&path=/sync#%F0%9F%8C%90%20ROTATING
+trojan://e2706e57-690b-fd2e-0c53-9c34e1805162@104.20.30.73:443?security=tls&sni=purple-rain-4512.erfan22.workers.dev&fp=chrome&insecure=0&allowInsecure=0&type=ws&host=purple-rain-4512.erfan22.workers.dev&path=/sync#%F0%9F%8C%90%20ROTATING
