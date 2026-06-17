@@ -1,3 +1,3 @@
+trojan://4iZbv+W5BAAFM0EX0vLSSCZ03nBzESmmltE67ZCIPSA=@89.167.82.102:2080?Telegram=@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad&security=none&type=tcp#%F0%9F%87%AB%F0%9F%87%AE%20FI%20Finland
 trojan://4iZbv+W5BAAFM0EX0vLSSCZ03nBzESmmltE67ZCIPSA=@89.167.82.102:2080?security=none&type=tcp#%F0%9F%87%AB%F0%9F%87%AE%20FI%20Finland
 trojan://4iZbv+W5BAAFM0EX0vLSSCZ03nBzESmmltE67ZCIPSA=@89.167.82.102:2080?security=none&type=tcp#%F0%9F%87%AB%F0%9F%87%AE%20FI%20Finland
-trojan://Bhi3WHtOR7SGiDERv3KkOjhknaQNDWFm0NcmowUEsVE=@89.167.82.102:2080?security=none&type=tcp#%F0%9F%87%AB%F0%9F%87%AE%20FI%20Finland
