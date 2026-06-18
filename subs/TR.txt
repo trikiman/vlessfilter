@@ -6,6 +6,6 @@ vmess://eyJhZGQiOiI1LjE4OC4xOTAuMjUyIiwiYWlkIjoiMSIsImhvc3QiOiIiLCJpZCI6IjA0NjIx
 vmess://eyJhZGQiOiAiNS4xODguMTkwLjI1MiIsICJhaWQiOiAiMSIsICJob3N0IjogIiIsICJpZCI6ICIwNDYyMWJhZS1hYjM2LTExZWMtYjkwOS0wMjQyYWMxMjAwMDIiLCAibmV0IjogInRjcCIsICJwYXRoIjogIi8iLCAicG9ydCI6ICIyMjMyNCIsICJwcyI6ICJcdWQ4M2RcdWRlODAgQExldHNHZXRWUE4gQEN5YmVyU2VjUGxheWdyb3VuZCB8IFx1ZDgzY1x1ZGYwZCBcdWQ4M2NcdWRkZjlcdWQ4M2NcdWRkZjcgVFIiLCAidGxzIjogIiIsICJ0eXBlIjogIm5vbmUiLCAidiI6ICIyIn0=#%F0%9F%87%B9%F0%9F%87%B7%20TR%20Turkey
 trojan://pvLSiyVj6wsERnbAOCzhdoSp0zzzEzdrsS@38.54.105.117:443?security=tls&sni=38.54.105.117&fp=chrome&type=tcp&headerType=none&path=%2f&allow_insecure=1#%F0%9F%87%B9%F0%9F%87%B7%20TR%20Turkey
 trojan://pvLSiyVj6wsERnbAOCzhdoSp0zzzEzdrsS@38.54.105.117:443?security=tls&sni=38.54.105.117&fp=chrome&type=tcp&headerType=none&path=/&allow_insecure=1#%F0%9F%87%B9%F0%9F%87%B7%20TR%20Turkey
-trojan://pvLSiyVj6wsERnbAOCzhdoSp0zzzEzdrsS@38.54.105.117:443?security=tls&sni=38.54.105.117&fp=chrome&type=tcp&headerType=none&path=/&allow_insecure=1#%F0%9F%87%B9%F0%9F%87%B7%20TR%20Turkey
+ss://YWVzLTI1Ni1nY206ZmFCQW9ENTRrODdVSkc3@185.123.101.64:2376#%F0%9F%87%B9%F0%9F%87%B7%20TR%20Turkey
 ss://YWVzLTI1Ni1nY206ZmFCQW9ENTRrODdVSkc3@185.123.101.64:2376#%F0%9F%87%B9%F0%9F%87%B7%20TR%20Turkey
 ss://YWVzLTI1Ni1nY206ZmFCQW9ENTRrODdVSkc3@185.123.101.64:2376#%F0%9F%87%B9%F0%9F%87%B7%20TR%20Turkey
