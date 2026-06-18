@@ -36,7 +36,7 @@ Specific country:
 https://raw.githubusercontent.com/trikiman/vlessfilter/main/subs/trojan/<CC>.txt
 ```
 
-Rotating exits: `subs/trojan/rotating.txt` (28 configs)
+Rotating exits: `subs/trojan/rotating.txt` (21 configs)
 
 ### SS
 
@@ -52,7 +52,7 @@ Specific country:
 https://raw.githubusercontent.com/trikiman/vlessfilter/main/subs/ss/<CC>.txt
 ```
 
-Rotating exits: `subs/ss/rotating.txt` (0 configs)
+Rotating exits: `subs/ss/rotating.txt` (4 configs)
 
 ### All protocols combined (one URL → everything)
 
@@ -81,24 +81,26 @@ Each config's full test history is checked:
 
 | Country | Top latency (ms) | Median speed (Mbps) | Keys |
 |---------|------------------|---------------------|------|
-| 🇨🇦 CA | 134 | 49.3 | 3 |
-| 🇩🇪 DE | 770 | 36.2 | 3 |
-| 🇪🇸 ES | 465 | 29.3 | 3 |
-| 🇫🇮 FI | 449 | 0.0 | 3 |
-| 🇫🇷 FR | 527 | 0.0 | 3 |
-| 🇬🇧 GB | 361 | 36.1 | 3 |
-| 🇭🇰 HK | 626 | 22.9 | 3 |
-| 🇮🇳 IN | 647 | 0.0 | 3 |
-| 🇮🇹 IT | 417 | 0.0 | 3 |
-| 🇯🇵 JP | 366 | 38.7 | 3 |
-| 🇰🇷 KR | 508 | 22.8 | 3 |
-| 🇲🇾 MY | 568 | 23.6 | 3 |
-| 🇳🇱 NL | 1048 | 0.0 | 3 |
-| 🇸🇬 SG | 562 | 27.0 | 3 |
-| 🇹🇷 TR | 506 | 28.8 | 3 |
-| 🇹🇼 TW | 497 | 1.2 | 3 |
-| 🇺🇸 US | 99 | 150.1 | 3 |
-| 🇻🇳 VN | 877 | 0.0 | 3 |
+| 🇨🇦 CA | 91 | 51.2 | 3 |
+| 🇩🇪 DE | 390 | 0.0 | 3 |
+| 🇪🇸 ES | 284 | 44.7 | 3 |
+| 🇫🇮 FI | 383 | 6.2 | 3 |
+| 🇫🇷 FR | 586 | 0.0 | 2 |
+| 🇬🇧 GB | 405 | 36.8 | 3 |
+| 🇭🇰 HK | 743 | 18.9 | 3 |
+| 🇮🇳 IN | 664 | 0.0 | 3 |
+| 🇮🇹 IT | 295 | 0.0 | 3 |
+| 🇯🇵 JP | 486 | 27.9 | 3 |
+| 🇰🇷 KR | 590 | 21.8 | 3 |
+| 🇰🇿 KZ | 806 | 0.0 | 3 |
+| 🇲🇾 MY | 705 | 19.1 | 1 |
+| 🇳🇱 NL | 637 | 18.1 | 2 |
+| 🇵🇭 PH | 927 | 0.0 | 3 |
+| 🇸🇬 SG | 695 | 22.4 | 3 |
+| 🇹🇷 TR | 382 | 36.2 | 3 |
+| 🇹🇼 TW | 618 | 4.3 | 3 |
+| 🇺🇸 US | 29 | 173.9 | 3 |
+| 🇻🇳 VN | 1066 | 0.0 | 3 |
 
 **Rotating-exit pool:** 0 configs in `subs/vmess/rotating.txt`
 
@@ -106,66 +108,61 @@ Each config's full test history is checked:
 
 | Country | Top latency (ms) | Median speed (Mbps) | Keys |
 |---------|------------------|---------------------|------|
-| 🇦🇪 AE | 763 | 5.9 | 3 |
-| 🇦🇷 AR | 578 | 0.0 | 3 |
-| 🇦🇹 AT | 408 | 45.0 | 3 |
-| 🇧🇷 BR | 618 | 8.2 | 3 |
-| 🇨🇦 CA | 109 | 23.9 | 3 |
-| 🇨🇱 CL | 489 | 6.4 | 2 |
-| 🇨🇿 CZ | 406 | 0.0 | 3 |
-| 🇩🇪 DE | 401 | 63.0 | 3 |
-| 🇫🇮 FI | 351 | 0.0 | 3 |
-| 🇫🇷 FR | 349 | 0.0 | 3 |
-| 🇬🇧 GB | 324 | 6.8 | 3 |
-| 🇬🇷 GR | 589 | 31.9 | 3 |
-| 🇭🇰 HK | 1018 | 0.0 | 3 |
-| 🇮🇩 ID | 936 | 0.0 | 3 |
-| 🇮🇳 IN | 913 | 19.8 | 1 |
-| 🇮🇶 IQ | 958 | 10.1 | 3 |
-| 🇰🇷 KR | 1057 | 0.0 | 3 |
-| 🇰🇿 KZ | 1016 | 2.2 | 2 |
-| 🇳🇱 NL | 383 | 49.6 | 3 |
-| 🇵🇱 PL | 441 | 0.0 | 3 |
-| 🇸🇬 SG | 1120 | 0.0 | 3 |
-| 🇹🇷 TR | 547 | 17.4 | 3 |
-| 🇺🇸 US | 187 | 116.1 | 2 |
+| 🇦🇪 AE | 877 | 0.0 | 3 |
+| 🇦🇷 AR | 647 | 1.0 | 3 |
+| 🇦🇹 AT | 475 | 39.3 | 3 |
+| 🇦🇺 AU | 991 | 33.0 | 1 |
+| 🇧🇷 BR | 658 | 8.5 | 3 |
+| 🇨🇦 CA | 75 | 8.0 | 3 |
+| 🇨🇱 CL | 539 | 4.1 | 2 |
+| 🇨🇿 CZ | 490 | 1.5 | 3 |
+| 🇩🇪 DE | 472 | 54.4 | 3 |
+| 🇫🇷 FR | 422 | 61.0 | 2 |
+| 🇬🇧 GB | 510 | 12.2 | 3 |
+| 🇬🇷 GR | 647 | 29.9 | 3 |
+| 🇭🇰 HK | 926 | 22.7 | 3 |
+| 🇮🇩 ID | 977 | 0.3 | 3 |
+| 🇮🇶 IQ | 1085 | 1.3 | 3 |
+| 🇯🇵 JP | 743 | 29.2 | 3 |
+| 🇰🇷 KR | 1081 | 0.0 | 3 |
+| 🇳🇱 NL | 434 | 60.2 | 3 |
+| 🇵🇱 PL | 511 | 0.0 | 2 |
+| 🇸🇬 SG | 1124 | 0.0 | 3 |
+| 🇹🇷 TR | 629 | 7.3 | 3 |
+| 🇺🇸 US | 364 | 101.7 | 1 |
 
-**Rotating-exit pool:** 28 configs in `subs/trojan/rotating.txt`
+**Rotating-exit pool:** 21 configs in `subs/trojan/rotating.txt`
 
 ## SS — top 3 per country (stable only)
 
 | Country | Top latency (ms) | Median speed (Mbps) | Keys |
 |---------|------------------|---------------------|------|
-| 🇦🇹 AT | 614 | 0.6 | 3 |
-| 🇨🇦 CA | 209 | 0.0 | 3 |
-| 🇨🇭 CH | 460 | 0.0 | 1 |
-| 🇨🇳 CN | 1180 | 12.9 | 1 |
-| 🇨🇿 CZ | 357 | 44.6 | 3 |
-| 🇩🇪 DE | 297 | 47.5 | 3 |
-| 🇪🇪 EE | 465 | 0.0 | 3 |
-| 🇪🇸 ES | 385 | 0.0 | 3 |
-| 🇫🇮 FI | 333 | 45.0 | 3 |
+| 🇦🇹 AT | 865 | 0.4 | 3 |
+| 🇨🇦 CA | 205 | 0.0 | 3 |
+| 🇨🇭 CH | 1048 | 0.2 | 3 |
+| 🇨🇿 CZ | 360 | 44.8 | 3 |
+| 🇩🇪 DE | 308 | 48.8 | 3 |
+| 🇪🇸 ES | 386 | 0.0 | 3 |
+| 🇫🇮 FI | 337 | 43.7 | 3 |
 | 🇫🇷 FR | 281 | 0.0 | 3 |
-| 🇬🇧 GB | 281 | 56.3 | 3 |
-| 🇮🇪 IE | 217 | 0.0 | 3 |
-| 🇮🇹 IT | 301 | 46.8 | 3 |
-| 🇯🇵 JP | 521 | 28.8 | 3 |
-| 🇰🇷 KR | 557 | 0.0 | 3 |
-| 🇳🇱 NL | 281 | 50.2 | 3 |
-| 🇳🇴 NO | 300 | 48.5 | 3 |
-| 🇵🇭 PH | 759 | 10.8 | 3 |
-| 🇵🇱 PL | 357 | 41.9 | 3 |
-| 🇷🇴 RO | 355 | 4.4 | 3 |
-| 🇸🇦 SA | 640 | 16.3 | 3 |
-| 🇸🇪 SE | 304 | 47.5 | 3 |
-| 🇸🇬 SG | 675 | 9.6 | 3 |
-| 🇹🇷 TR | 594 | 29.8 | 3 |
-| 🇹🇼 TW | 586 | 24.3 | 3 |
-| 🇺🇸 US | 33 | 457.1 | 3 |
-| 🇿🇦 ZA | 654 | 21.7 | 3 |
+| 🇬🇧 GB | 279 | 57.8 | 3 |
+| 🇮🇪 IE | 214 | 0.0 | 3 |
+| 🇮🇹 IT | 292 | 33.1 | 3 |
+| 🇯🇵 JP | 476 | 0.0 | 3 |
+| 🇰🇷 KR | 721 | 0.6 | 3 |
+| 🇳🇱 NL | 286 | 48.3 | 3 |
+| 🇵🇭 PH | 760 | 1.3 | 3 |
+| 🇵🇱 PL | 364 | 17.0 | 3 |
+| 🇸🇦 SA | 715 | 12.0 | 3 |
+| 🇸🇪 SE | 313 | 7.2 | 3 |
+| 🇸🇬 SG | 674 | 0.0 | 3 |
+| 🇹🇷 TR | 432 | 36.0 | 3 |
+| 🇹🇼 TW | 575 | 0.0 | 3 |
+| 🇺🇸 US | 18 | 465.1 | 3 |
+| 🇿🇦 ZA | 656 | 21.5 | 3 |
 
-**Rotating-exit pool:** 0 configs in `subs/ss/rotating.txt`
+**Rotating-exit pool:** 4 configs in `subs/ss/rotating.txt`
 
 _Generated by [vlessfilter](https://github.com/trikiman/vlessfilter). Source list: `sources.yaml`._
 
-<!-- last-tested: 2026-06-18T02:59:18Z -->
+<!-- last-tested: 2026-06-18T09:20:47Z -->
