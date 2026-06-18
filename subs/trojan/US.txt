@@ -1,2 +1,2 @@
-trojan://MiTiVPN@188.114.97.6:443?path=index.php?mitivpn&security=tls&alpn=http/1.1&host=cdn.95r.ir&fp=chrome&type=ws&sni=cdn.95r.ir#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States
-trojan://MiTiVPN@188.114.97.6:443?security=tls&sni=cdn.95r.ir&fp=chrome&alpn=http%2F1.1&insecure=0&allowInsecure=0&type=ws&host=cdn.95r.ir&path=index.php%3Fmitivpn#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States
+trojan://MiTiVPN@cdn.95r.ir:443?security=tls&sni=cdn.95r.ir&fp=chrome&allowInsecure=0&alpn=http/1.1&type=ws&path=index.php?mitivpn#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States
+trojan://1p29xdpgzjxq5vp8@104.252.77.226:44547?security=tls&sni=104.252.77.226&fp=safari&headerType=none&allowInsecure=0&alpn=h2,h3,http/1.1&type=tcp#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States
