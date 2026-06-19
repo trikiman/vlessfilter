@@ -1,1 +1,3 @@
-trojan://T9qoEuuxUEa9Dk3KxnTWrs6J8ilng9sCIf@103.125.216.11:443?sni=103.125.216.11&peer=103.125.216.11&security=tls#%F0%9F%87%AF%F0%9F%87%B5%20JP%20Japan
+trojan://tsuchiya@161.34.39.108:443?sni=aa.ccmusic.jp&fp=chrome&type=tcp&path=/#%F0%9F%87%AF%F0%9F%87%B5%20JP%20Japan
+trojan://eeb6823c-b926-4ea2-866a-5542edd26e59@209.33.173.167:443?security=tls&type=ws&ech=cloudflare-ech.com%2Bhttps%3A%2F%2Fdns.alidns.com%2Fdns-query&host=tjsp.hhxaf.cc.cd&fp=chrome&sni=tjsp.hhxaf.cc.cd&path=%2F&encryption=none#%F0%9F%87%AF%F0%9F%87%B5%20JP%20Japan
+trojan://eeb6823c-b926-4ea2-866a-5542edd26e59@45.76.102.47:443?security=tls&type=ws&ech=cloudflare-ech.com%2Bhttps%3A%2F%2Fdns.alidns.com%2Fdns-query&host=tjsp.hhxaf.cc.cd&fp=chrome&sni=tjsp.hhxaf.cc.cd&path=%2F&encryption=none#%F0%9F%87%AF%F0%9F%87%B5%20JP%20Japan

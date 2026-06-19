@@ -1,3 +1,1 @@
-trojan://hCunaKqdEJDBO+3jCrJUSMevXOw9Q_r4Ey@38.60.136.156:443?security=tls&fp=chrome&type=tcp&path=%2f&allow_insecure=1#%F0%9F%87%AB%F0%9F%87%B7%20FR%20France
-trojan://hCunaKqdEJDBO+3jCrJUSMevXOw9Q_r4Ey@38.60.136.156:443?security=tls&fp=chrome&type=tcp&path=%2f&allow_insecure=1#%F0%9F%87%AB%F0%9F%87%B7%20FR%20France
-trojan://hCunaKqdEJDBO+3jCrJUSMevXOw9Q_r4Ey@38.60.136.156:443?security=tls&fp=chrome&type=tcp&path=/&allow_insecure=1#%F0%9F%87%AB%F0%9F%87%B7%20FR%20France
+trojan://humanity@104.16.174.109:443?path=%2Fassignment&security=tls&insecure=0&host=www.ignitelimit.com&type=ws&allowInsecure=0&sni=www.ignitelimit.com#%F0%9F%87%AB%F0%9F%87%B7%20FR%20France

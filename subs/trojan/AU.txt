@@ -1,3 +1,2 @@
-trojan://86957ec0-b213-433b-a43b-51f2175e0ec3@141.193.213.30:443?path=/au-do&security=tls&insecure=0&type=ws&allowInsecure=0&sni=space.byu.id.yxls.eu.cc#%F0%9F%87%A6%F0%9F%87%BA%20AU%20Australia
-trojan://86957ec0-b213-433b-a43b-51f2175e0ec3@141.193.213.30:443?path=/au-do&security=tls&insecure=0&type=ws&allowInsecure=0&sni=space.byu.id.yxls.eu.cc#%F0%9F%87%A6%F0%9F%87%BA%20AU%20Australia
+trojan://86957ec0-b213-433b-a43b-51f2175e0ec3@141.193.213.30:443?path=%2Fau-do&security=tls&insecure=0&type=ws&allowInsecure=0&sni=space.byu.id.yxls.eu.cc#%F0%9F%87%A6%F0%9F%87%BA%20AU%20Australia
 trojan://86957ec0-b213-433b-a43b-51f2175e0ec3@141.193.213.30:443?path=%2Fau-do&security=tls&insecure=0&type=ws&allowInsecure=0&sni=space.byu.id.yxls.eu.cc#%F0%9F%87%A6%F0%9F%87%BA%20AU%20Australia
