@@ -7,6 +7,6 @@ vmess://eyJhZGQiOiAiMTA0LjE2LjcuNzAiLCAiYWlkIjogIjAiLCAiYWxwbiI6ICIiLCAiZnAiOiAi
 trojan://Bhi3WHtOR7SGiDERv3KkOjhknaQNDWFm0NcmowUEsVE=@89.167.82.102:2080?security=none&type=tcp#%F0%9F%87%AB%F0%9F%87%AE%20FI%20Finland
 trojan://Bhi3WHtOR7SGiDERv3KkOjhknaQNDWFm0NcmowUEsVE=@89.167.82.102:2080?security=none&type=tcp#%F0%9F%87%AB%F0%9F%87%AE%20FI%20Finland
 trojan://nhqAnGSvb5sNjWHvSNpishGMFK2vZnD+whcA1P7erYs=@89.167.82.102:2053?security=none&headerType=&type=tcp#%F0%9F%87%AB%F0%9F%87%AE%20FI%20Finland
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp5S1ZNb0IzQXdpVEV6bnBub3EyRllS@193.47.60.186:28687?note=Telegram---@Raiv2mmr---Telegram---@Raiv2mmr---Telegram---@Raiv2mmr---Telegram---@Raiv2mmr---Telegram---@Raiv2mmr---Telegram---@Raiv2mmr---Telegram---@Raiv2mmr---Telegram---@Raiv2mmr---Telegram---@Raiv2mmr---#%F0%9F%87%AB%F0%9F%87%AE%20FI%20Finland
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp5S1ZNb0IzQXdpVEV6bnBub3EyRllS@193.47.60.186:28687?note=Telegram---@Raiv2mmr---Telegram---@Raiv2mmr---Telegram---@Raiv2mmr---Telegram---@Raiv2mmr---Telegram---@Raiv2mmr---Telegram---@Raiv2mmr---Telegram---@Raiv2mmr---Telegram---@Raiv2mmr---Telegram---@Raiv2mmr---#%F0%9F%87%AB%F0%9F%87%AE%20FI%20Finland
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp5S1ZNb0IzQXdpVEV6bnBub3EyRllS@193.47.60.186:28687#%F0%9F%87%AB%F0%9F%87%AE%20FI%20Finland
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp5S1ZNb0IzQXdpVEV6bnBub3EyRllS@193.47.60.186:28687#%F0%9F%87%AB%F0%9F%87%AE%20FI%20Finland
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp5S1ZNb0IzQXdpVEV6bnBub3EyRllS@193.47.60.186:28687#%F0%9F%87%AB%F0%9F%87%AE%20FI%20Finland
