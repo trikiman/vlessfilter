@@ -3,5 +3,6 @@ vless://91e120bc-159a-4390-b4e1-197b19602ea0@5.175.178.183:443?security=tls&flow
 vless://91e120bc-159a-4390-b4e1-197b19602ea0@5.175.178.184:443?security=tls&flow=xtls-rprx-vision&sni=sub.sbrf-cdn342.ru&type=tcp&host=est-def.sbrf-cdn342.ru&path=%2F#%F0%9F%87%AA%F0%9F%87%AA%20EE%20Estonia
 trojan://pjqRC5wfEFhYTyiaKF@ee-1.tr202604.com:443?security=tls&insecure=0&headerType=none&type=tcp&allowInsecure=0#%F0%9F%87%AA%F0%9F%87%AA%20EE%20Estonia
 trojan://pjqRC5wfEFhYTyiaKF@ee-1.tr202604.com:443?security=tls&insecure=0&headerType=none&type=tcp&allowInsecure=0#%F0%9F%87%AA%F0%9F%87%AA%20EE%20Estonia
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo2VTNwc1Iwc1F1UXhXWG9CSEI0S1REM1lhY3dRd1MyMVh2U0V5OQ@45.129.96.62:41348#%F0%9F%87%AA%F0%9F%87%AA%20EE%20Estonia
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo2VTNwc1Iwc1F1UXhXWG9CSEI0S1REM1lhY3dRd1MyMVh2U0V5OQ==@45.129.96.62:41348#%F0%9F%87%AA%F0%9F%87%AA%20EE%20Estonia
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo2VTNwc1Iwc1F1UXhXWG9CSEI0S1REM1lhY3dRd1MyMVh2U0V5OQ==@45.129.96.62:41348#%F0%9F%87%AA%F0%9F%87%AA%20EE%20Estonia
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo2VTNwc1Iwc1F1UXhXWG9CSEI0S1REM1lhY3dRd1MyMVh2U0V5OQ==@45.129.96.62:41348#%F0%9F%87%AA%F0%9F%87%AA%20EE%20Estonia

@@ -2,8 +2,7 @@ vless://58fbbc47-237d-4bc2-a8c3-6db623585a1b@104.18.120.34:8443?encryption=none&
 vless://58fbbc47-237d-4bc2-a8c3-6db623585a1b@104.18.120.34:8443?path=%2F&security=tls&encryption=none&insecure=0&host=superconducting.turboo-server.space&type=ws&allowInsecure=0&sni=superconducting.turboo-server.space#%F0%9F%87%A8%F0%9F%87%AD%20CH%20Switzerland
 vless://58fbbc47-237d-4bc2-a8c3-6db623585a1b@104.18.120.34:8443?encryption=none&security=tls&sni=superconducting.turboo-server.space&insecure=0&allowInsecure=0&type=ws&host=superconducting.turboo-server.space&path=%2F#%F0%9F%87%A8%F0%9F%87%AD%20CH%20Switzerland
 trojan://SoftNetConnect@83.228.230.226:2087?mode=gun&security=reality&authority=185.204.169.129&pbk=tDzuiaElyFXPtFP25CeCKWW5dsdC4055CnqzYcFyfB8&fp=chrome&spx=/&type=grpc&sni=www.yahoo.com&sid=96a17085678b#%F0%9F%87%A8%F0%9F%87%AD%20CH%20Switzerland
+trojan://SoftNetConnect@83.228.230.226:2087?type=grpc&security=reality&authority=185.204.169.129&sni=www.yahoo.com&fp=chrome&insecure=1&allowInsecure=1&pbk=tDzuiaElyFXPtFP25CeCKWW5dsdC4055CnqzYcFyfB8&sid=96a17085678b&spx=%2F#%F0%9F%87%A8%F0%9F%87%AD%20CH%20Switzerland
 trojan://SoftNetConnect@83.228.230.226:2087?type=grpc&security=reality&authority=185.204.169.129&sni=www.yahoo.com&fp=chrome&insecure=1&allowInsecure=1&pbk=tDzuiaElyFXPtFP25CeCKWW5dsdC4055CnqzYcFyfB8&sid=96a17085678b&spx=/#%F0%9F%87%A8%F0%9F%87%AD%20CH%20Switzerland
-trojan://SoftNetConnect@83.228.230.226:2087?mode=gun&security=reality&authority=185.204.169.129&pbk=tDzuiaElyFXPtFP25CeCKWW5dsdC4055CnqzYcFyfB8&fp=chrome&spx=/&type=grpc&sni=www.yahoo.com&sid=96a17085678b#%F0%9F%87%A8%F0%9F%87%AD%20CH%20Switzerland
-ss://YWVzLTI1Ni1nY206Y2RCSURWNDJEQ3duZklO@38.180.161.123:8119#%F0%9F%87%A8%F0%9F%87%AD%20CH%20Switzerland
 ss://YWVzLTI1Ni1nY206Y2RCSURWNDJEQ3duZklO@38.180.161.123:8119#%F0%9F%87%A8%F0%9F%87%AD%20CH%20Switzerland
 ss://YWVzLTI1Ni1nY206Y2RCSURWNDJEQ3duZklO@38.180.161.123:8119#%F0%9F%87%A8%F0%9F%87%AD%20CH%20Switzerland
