@@ -1,2 +1,2 @@
-trojan://bpb-trojan@172.67.135.88:443?sni=vless.herogoing.top&type=ws&path=/tr?ed=2560&fp=chrome#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
-trojan://bpb-trojan@vless.herogoing.top:443?security=tls&sni=vless.herogoing.top&type=ws&host=vless.herogoing.top&path=%2Ftr%3Fed%3D2560#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
+trojan://MiTiVPN@151.101.110.219:443?path=%2Fed%3Dmitivpn&security=tls&alpn=http%2F1.1&host=mitivpn-s2.global.ssl.fastly.net&fp=chrome&type=ws&sni=global.fastly.com#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
+trojan://LYaEYwjN8LjWTRJdCCTzW7V6gK7atJVu@94.103.173.70:9443?security=tls&sni=de-1.hysteria.ltd&fp=chrome&type=tcp&headerType=none&path=/&allow_insecure=0#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany

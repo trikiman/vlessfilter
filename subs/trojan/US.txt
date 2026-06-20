@@ -1,2 +1,3 @@
+trojan://O4O8.Ew+ujFX6GJBQ=xQr.heGwux0GYHqk@207.126.167.150:443?security=tls&amp%3BheaderType=none&amp%3Bfp=chrome&amp%3Btype=tcp&amp%3Bsni=207.126.167.150#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States
+trojan://O4O8.Ew+ujFX6GJBQ=xQr.heGwux0GYHqk@45.61.58.89:443?sni=45.61.58.89&peer=45.61.58.89&security=tls#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States
 trojan://6c862415-30d2-4813-8e49-42e99a0bd415@188.164.248.122:443?host=space.byu.id.yxls.eu.cc&path=/us-gllc&sni=space.byu.id.yxls.eu.cc&type=ws#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States
-trojan://eeb6823c-b926-4ea2-866a-5542edd26e59@45.59.184.78:8443?security=tls&type=ws&ech=cloudflare-ech.com%2Bhttps%3A%2F%2Fdns.alidns.com%2Fdns-query&host=hhcm.hhxaf.cc.cd&fp=chrome&sni=hhcm.hhxaf.cc.cd&path=%2F&encryption=none#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States
