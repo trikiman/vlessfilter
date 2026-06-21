@@ -4,6 +4,6 @@ vmess://eyJhZGQiOiAiNDYuMjQ2LjEyNi4xNTQiLCAiYWlkIjogIjAiLCAiYWxwbiI6ICIiLCAiaWQi
 trojan://UFY3z8y3U0@5.10.214.53:443?Telegram=@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad&path=%2Fc%3Fed%3D2048&security=tls&insecure=0&host=cdn.ana-company.com&fp=chrome&type=ws&allowInsecure=0&sni=cdn.ana-company.com#%F0%9F%87%B8%F0%9F%87%AA%20SE%20Sweden
 trojan://UFY3z8y3U0@5.10.214.53:443?path=%2Fc%3Fed%3D2048&security=tls&insecure=0&host=cdn.ana-company.com&fp=chrome&type=ws&allowInsecure=0&sni=cdn.ana-company.com#%F0%9F%87%B8%F0%9F%87%AA%20SE%20Sweden
 trojan://UFY3z8y3U0@5.10.214.53:443?sni=cdn.ana-company.com&type=ws&path=/c?ed=2048&fp=chrome#%F0%9F%87%B8%F0%9F%87%AA%20SE%20Sweden
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp5dTJYblNQV2htUWp4bjgzaUpBM0RB@207.2.120.46:3478#%F0%9F%87%B8%F0%9F%87%AA%20SE%20Sweden
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp5dTJYblNQV2htUWp4bjgzaUpBM0RB@207.2.120.46:3478#%F0%9F%87%B8%F0%9F%87%AA%20SE%20Sweden
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp5dTJYblNQV2htUWp4bjgzaUpBM0RB@148.253.211.190:3478#%F0%9F%87%B8%F0%9F%87%AA%20SE%20Sweden
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp5dTJYblNQV2htUWp4bjgzaUpBM0RB@148.253.211.190:3478#%F0%9F%87%B8%F0%9F%87%AA%20SE%20Sweden
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp5dTJYblNQV2htUWp4bjgzaUpBM0RB@207.2.120.46:3478#%F0%9F%87%B8%F0%9F%87%AA%20SE%20Sweden

@@ -1,3 +1,3 @@
-trojan://T9qoEuuxUEa9Dk3KxnTWrs6J8ilng9sCIf@103.125.216.11:443?sni=103.125.216.11&peer=103.125.216.11&security=tls#%F0%9F%87%AF%F0%9F%87%B5%20JP%20Japan
-trojan://T9qoEuuxUEa9Dk3KxnTWrs6J8ilng9sCIf@103.125.216.11:443?sni=103.125.216.11&peer=103.125.216.11&security=tls#%F0%9F%87%AF%F0%9F%87%B5%20JP%20Japan
-trojan://T9qoEuuxUEa9Dk3KxnTWrs6J8ilng9sCIf@103.125.216.11:443?security=tls#%F0%9F%87%AF%F0%9F%87%B5%20JP%20Japan
+trojan://tsuchiya@161.34.39.108:443?sni=aa.ccmusic.jp&fp=chrome&type=tcp&path=%2f#%F0%9F%87%AF%F0%9F%87%B5%20JP%20Japan
+trojan://tsuchiya@161.34.39.108:443?sni=aa.ccmusic.jp&type=raw&fp=chrome#%F0%9F%87%AF%F0%9F%87%B5%20JP%20Japan
+trojan://tsuchiya@161.34.39.108:443?sni=aa.ccmusic.jp&type=tcp&path=%2f#%F0%9F%87%AF%F0%9F%87%B5%20JP%20Japan
