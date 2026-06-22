@@ -1,3 +1,1 @@
-trojan://fFj7MAGy1VlAWmB_gMBG_27oPYTSHvV6MX@185.137.157.59:443?security=tls&sni=www.lateralio.click#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
-trojan://fFj7MAGy1VlAWmB_gMBG_27oPYTSHvV6MX@185.137.157.59:443?security=tls&sni=www.lateralio.click#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
-trojan://fFj7MAGy1VlAWmB_gMBG_27oPYTSHvV6MX@185.137.157.59:443?security=tls&insecure=0&headerType=&type=tcp&allowInsecure=0&sni=www.lateralio.click#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
+trojan://bpb-trojan@vless.herogoing.top:443?sni=vless.herogoing.top&fp=chrome&type=ws&path=%2ftr%3fed%3d2560#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
