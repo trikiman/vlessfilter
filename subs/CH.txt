@@ -5,5 +5,3 @@ trojan://SoftNetConnect@37.156.45.237:8443?security=reality&pbk=h0Lem3eyDGqkye4y
 trojan://SoftNetConnect@37.156.45.237:443?type=xhttp&security=reality&path=/&mode=auto&extra={"xPaddingBytes":"100-1000"}&sni=www.yahoo.com&fp=chrome&insecure=1&allowInsecure=1&pbk=lnP3zaTgKpFJpC8IYOJZUuAedJghDQPowXJp5diOzQA&sid=141b14d8&spx=/#%F0%9F%87%A8%F0%9F%87%AD%20CH%20Switzerland
 trojan://SoftNetConnect@37.156.45.237:443?type=xhttp&security=reality&path=/&mode=auto&extra={"xPaddingBytes":"100-1000"}&sni=www.yahoo.com&fp=chrome&insecure=1&allowInsecure=1&pbk=lnP3zaTgKpFJpC8IYOJZUuAedJghDQPowXJp5diOzQA&sid=141b14d8&spx=/#%F0%9F%87%A8%F0%9F%87%AD%20CH%20Switzerland
 ss://YWVzLTI1Ni1nY206Y2RCSURWNDJEQ3duZklO@38.180.161.123:8119#%F0%9F%87%A8%F0%9F%87%AD%20CH%20Switzerland
-ss://YWVzLTI1Ni1nY206Y2RCSURWNDJEQ3duZklO@38.180.161.123:8119#%F0%9F%87%A8%F0%9F%87%AD%20CH%20Switzerland
-ss://YWVzLTI1Ni1nY206Y2RCSURWNDJEQ3duZklO@38.180.161.123:8119#%F0%9F%87%A8%F0%9F%87%AD%20CH%20Switzerland

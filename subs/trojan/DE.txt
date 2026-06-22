@@ -1,1 +1,3 @@
-trojan://bpb-trojan@vless.herogoing.top:443?security=tls&sni=vless.herogoing.top&fp=chrome&type=ws&path=%2ftr%3fed%3d2560&allow_insecure=0#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
+trojan://LYaEYwjN8LjWTRJdCCTzW7V6gK7atJVu@94.103.173.70:9443?security=tls&insecure=0&headerType=none&type=tcp&allowInsecure=0&sni=de-1.hysteria.ltd#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
+trojan://LYaEYwjN8LjWTRJdCCTzW7V6gK7atJVu@94.103.173.70:9443?Telegram=@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad&security=tls&insecure=0&headerType=none&type=tcp&allowInsecure=0&sni=de-1.hysteria.ltd#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
+trojan://LYaEYwjN8LjWTRJdCCTzW7V6gK7atJVu@94.103.173.70:9443?security=tls&insecure=0&headerType=none&type=tcp&allowInsecure=0&sni=de-1.hysteria.ltd#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
