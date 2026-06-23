@@ -7,6 +7,6 @@ vmess://eyJhZGQiOiJhdGlpbnMuY29tLnRyIiwiYWxwbiI6ImgyLGh0dHAvMS4xIiwiZWNoIjoiQUdE
 trojan://humanity@104.16.7.70:443?path=%2Fassignment&security=tls&insecure=0&fp=chrome&type=ws&allowInsecure=0&sni=www.calmlunch.com#%F0%9F%87%AB%F0%9F%87%B7%20FR%20France
 trojan://humanity@104.16.7.70:443?type=ws&host=www.calmlunch.com&path=%2Fassignment&security=tls&sni=www.calmlunch.com#%F0%9F%87%AB%F0%9F%87%B7%20FR%20France
 trojan://humanity@104.16.7.70:443?path=/assignment&security=tls&fp=chrome&type=ws&sni=www.calmlunch.com#%F0%9F%87%AB%F0%9F%87%B7%20FR%20France
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpiam5ySW5zbnlObGJZb3RTdjl5a2d5@51.254.142.162:8388#%F0%9F%87%AB%F0%9F%87%B7%20FR%20France
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpiam5ySW5zbnlObGJZb3RTdjl5a2d5@51.254.142.162:8388#%F0%9F%87%AB%F0%9F%87%B7%20FR%20France
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpiam5ySW5zbnlObGJZb3RTdjl5a2d5@51.254.142.162:8388#%F0%9F%87%AB%F0%9F%87%B7%20FR%20France
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpkaU9NQlU1SUR2SmNGcXlOUGJSallS@137.74.119.18:10443#%F0%9F%87%AB%F0%9F%87%B7%20FR%20France
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpkaU9NQlU1SUR2SmNGcXlOUGJSallS@137.74.119.18:10443#%F0%9F%87%AB%F0%9F%87%B7%20FR%20France
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpkaU9NQlU1SUR2SmNGcXlOUGJSallS@137.74.119.18:10443#%F0%9F%87%AB%F0%9F%87%B7%20FR%20France

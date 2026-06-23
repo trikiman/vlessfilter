@@ -1,3 +1,2 @@
-trojan://T9qoEuuxUEa9Dk3KxnTWrs6J8ilng9sCIf@103.125.216.11:443#%F0%9F%87%AF%F0%9F%87%B5%20JP%20Japan
-trojan://T9qoEuuxUEa9Dk3KxnTWrs6J8ilng9sCIf@103.125.216.11:443#%F0%9F%87%AF%F0%9F%87%B5%20JP%20Japan
-trojan://T9qoEuuxUEa9Dk3KxnTWrs6J8ilng9sCIf@103.125.216.11:443#%F0%9F%87%AF%F0%9F%87%B5%20JP%20Japan
+trojan://eeb6823c-b926-4ea2-866a-5542edd26e59@45.77.21.104:443?path=%2F&security=tls&insecure=0&host=tjsp.hhxaf.cc.cd&type=ws&allowInsecure=0&sni=tjsp.hhxaf.cc.cd#%F0%9F%87%AF%F0%9F%87%B5%20JP%20Japan
+trojan://eeb6823c-b926-4ea2-866a-5542edd26e59@167.179.84.175:443?security=tls&type=ws&ech=cloudflare-ech.com%2Bhttps%3A%2F%2Fdns.alidns.com%2Fdns-query&host=tjsp.hhxaf.cc.cd&fp=chrome&sni=tjsp.hhxaf.cc.cd&path=%2F&encryption=none#%F0%9F%87%AF%F0%9F%87%B5%20JP%20Japan
