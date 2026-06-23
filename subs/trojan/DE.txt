@@ -1,3 +1,2 @@
-trojan://bpb-trojan@104.21.59.101:443?security=tls&sni=wing2452.nyc.mn&type=ws&host=wing2452.nyc.mn&path=/tr#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
-trojan://LYaEYwjN8LjWTRJdCCTzW7V6gK7atJVu@94.103.173.70:9443?security=tls&insecure=0&headerType=none&type=tcp&allowInsecure=0&sni=de-1.hysteria.ltd#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
-trojan://LYaEYwjN8LjWTRJdCCTzW7V6gK7atJVu@94.103.173.70:9443?security=tls&sni=de-1.hysteria.ltd&type=tcp&headerType=none&path=%2f&allow_insecure=0#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
+trojan://LYaEYwjN8LjWTRJdCCTzW7V6gK7atJVu@94.103.173.70:9443?Telegram=@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad&security=tls&insecure=0&headerType=none&type=tcp&allowInsecure=0&sni=de-1.hysteria.ltd#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
+trojan://MITIVPN@151.101.1.194:80?path=/ed=mitivpn&security=none&host=mitivpn--3.global.ssl.fastly.net&type=ws#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
