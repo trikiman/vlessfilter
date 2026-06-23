@@ -6,5 +6,5 @@ vmess://eyJhZGQiOiI0NS4zOS44NC42NSIsImFpZCI6IjAiLCJob3N0IjoiIiwiaWQiOiJjN2RjYzZh
 trojan://af2fx0icji5bqrbr@Riga1.ns.asriranfun.ir:56064?headerType=http&host=&path=/&security=none&type=tcp#%F0%9F%87%B1%F0%9F%87%BB%20LV%20Latvia
 trojan://af2fx0icji5bqrbr@Riga1.ns.asriranfun.ir:56064?headerType=http&host=&path=/&security=none&type=tcp#%F0%9F%87%B1%F0%9F%87%BB%20LV%20Latvia
 ss://YWVzLTI1Ni1nY206REwza3AvYzltdytWY1BCZzlwbkN1Z1FvejlrRlVabHZ0c2toaHFmU3lLST0=@95.182.85.39:27934#%F0%9F%87%B1%F0%9F%87%BB%20LV%20Latvia
-ss://YWVzLTI1Ni1nY206REwza3AvYzltdytWY1BCZzlwbkN1Z1FvejlrRlVabHZ0c2toaHFmU3lLST0@95.182.85.39:27934#%F0%9F%87%B1%F0%9F%87%BB%20LV%20Latvia
+ss://YWVzLTI1Ni1nY206REwza3AvYzltdytWY1BCZzlwbkN1Z1FvejlrRlVabHZ0c2toaHFmU3lLST0=@95.182.85.39:27934#%F0%9F%87%B1%F0%9F%87%BB%20LV%20Latvia
 ss://YWVzLTI1Ni1nY206REwza3AvYzltdytWY1BCZzlwbkN1Z1FvejlrRlVabHZ0c2toaHFmU3lLST0=@95.182.85.39:27934#%F0%9F%87%B1%F0%9F%87%BB%20LV%20Latvia

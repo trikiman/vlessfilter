@@ -1,3 +1,2 @@
-trojan://GTCCjtvCtuy03-aV1mwF0OkG2q6yL+Fc5K@198.52.244.10:443?security=tls&%3BheaderType=none&%3Bfp=chrome&%3Btype=tcp&%3Bsni=198.52.244.10#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States
-trojan://GTCCjtvCtuy03-aV1mwF0OkG2q6yL+Fc5K@198.52.244.10:443?security=tls#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States
-trojan://GTCCjtvCtuy03-aV1mwF0OkG2q6yL+Fc5K@198.52.244.10:443?security=tls&amp%3BheaderType=none&amp%3Bfp=chrome&amp%3Btype=tcp&amp%3Bsni=198.52.244.10#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States
+trojan://6c862415-30d2-4813-8e49-42e99a0bd415@104.16.72.70:443?path=%2Fus-gllc&security=tls&host=space.byu.id.yxls.eu.cc&allowinsecure=0&type=ws&sni=space.byu.id.yxls.eu.cc#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States
+trojan://6c862415-30d2-4813-8e49-42e99a0bd415@188.164.248.122:443?security=tls&sni=space.byu.id.yxls.eu.cc&type=ws&sni=space.byu.id.yxls.eu.cc&path=/us-gllc#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States
