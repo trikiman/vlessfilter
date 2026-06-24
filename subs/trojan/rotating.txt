@@ -1,0 +1,1 @@
+trojan://8205bee049104962@www.speedtest.net:443?path=/eyJqdW5rIjoiTGZyV2IwUmNjdk5zeCIsInByb3RvY29sIjoidHIiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=?ed=2560&security=tls&host=ezaccess-project-d309e2.ez-8bb74b.workers.dev&fp=chrome&type=ws#%F0%9F%8C%90%20ROTATING
