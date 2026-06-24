@@ -1,1 +1,2 @@
+trojan://114514@103.219.194.43:443?security=tls&sni=tjaaa.hhllfly.kdns.fr&insecure=0&allowInsecure=0&type=ws&host=tjaaa.hhllfly.kdns.fr&path=%2F#%F0%9F%87%B8%F0%9F%87%AC%20SG%20Singapore
 trojan://OccIqeORGQwiNkwS@jpbgp.netvigor.cc:19128?security=tls&sni=yazhou10.dynu.net&insecure=0&allowInsecure=0&type=tcp&headerType=none#%F0%9F%87%B8%F0%9F%87%AC%20SG%20Singapore

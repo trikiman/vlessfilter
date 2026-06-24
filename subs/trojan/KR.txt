@@ -1,3 +1,3 @@
-trojan://t5FsyeQXkNCY6eVGiqBXmPu4..jBEpNbak@38.60.220.65:443?security=tls&insecure=0&headerType=none&type=tcp&allowInsecure=0#%F0%9F%87%B0%F0%9F%87%B7%20KR%20South%20Korea
-trojan://eeb6823c-b926-4ea2-866a-5542edd26e59@158.247.209.57:443?security=tls&type=ws&ech=cloudflare-ech.com%2Bhttps%3A%2F%2Fdns.alidns.com%2Fdns-query&host=hhcm.hhxaf.cc.cd&fp=chrome&sni=hhcm.hhxaf.cc.cd&path=%2F&encryption=none#%F0%9F%87%B0%F0%9F%87%B7%20KR%20South%20Korea
-trojan://eeb6823c-b926-4ea2-866a-5542edd26e59@211.49.57.161:443?path=%2F&security=tls&insecure=0&host=hhcm.hhxaf.cc.cd&fp=chrome&type=ws&allowInsecure=0&sni=hhcm.hhxaf.cc.cd#%F0%9F%87%B0%F0%9F%87%B7%20KR%20South%20Korea
+trojan://t5FsyeQXkNCY6eVGiqBXmPu4..jBEpNbak@38.60.220.65:443?type=raw&headerType=none&security=tls#%F0%9F%87%B0%F0%9F%87%B7%20KR%20South%20Korea
+trojan://t5FsyeQXkNCY6eVGiqBXmPu4..jBEpNbak@38.60.220.65:443/?type=tcp&security=tls&sni=38.60.220.65#%F0%9F%87%B0%F0%9F%87%B7%20KR%20South%20Korea
+trojan://t5FsyeQXkNCY6eVGiqBXmPu4..jBEpNbak@38.60.220.65:443?sni=38.60.220.65&peer=38.60.220.65&security=tls#%F0%9F%87%B0%F0%9F%87%B7%20KR%20South%20Korea
