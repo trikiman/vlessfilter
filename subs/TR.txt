@@ -4,6 +4,6 @@ vless://94968e80-d1ab-4763-9d4b-1d29fb21b642@188.114.96.12:443?encryption=none&s
 vmess://eyJ2IjoiMiIsInBzIjoiW09wZW5SYXldIPCfh7nwn4e3IFRSLTQ2MCIsImFkZCI6IjUuMTg4LjE5MC4yNTIiLCJwb3J0IjoiMjIzMjQiLCJ0eXBlIjoibm9uZSIsImlkIjoiMDQ2MjFiYWUtYWIzNi0xMWVjLWI5MDktMDI0MmFjMTIwMDAyIiwiYWlkIjoiMSIsIm5ldCI6InRjcCIsInBhdGgiOiIvIiwiaG9zdCI6IiIsInRscyI6IiJ9#%F0%9F%87%B9%F0%9F%87%B7%20TR%20Turkey
 trojan://pvLSiyVj6wsERnbAOCzhdoSp0zzzEzdrsS@38.54.105.117:443?security=tls&sni=38.54.105.117&fp=chrome&type=tcp&headerType=none&path=/&allow_insecure=1#%F0%9F%87%B9%F0%9F%87%B7%20TR%20Turkey
 trojan://pvLSiyVj6wsERnbAOCzhdoSp0zzzEzdrsS@38.54.105.117:443?security=tls&sni=38.54.105.117&fp=chrome&type=tcp&headerType=none&path=%2f&allow_insecure=1#%F0%9F%87%B9%F0%9F%87%B7%20TR%20Turkey
-ss://YWVzLTI1Ni1nY206ZmFCQW9ENTRrODdVSkc3@185.123.101.64:2376?note=Telegram---@Raiv2mmr---Telegram---@Raiv2mmr---Telegram---@Raiv2mmr---Telegram---@Raiv2mmr---Telegram---@Raiv2mmr---Telegram---@Raiv2mmr---Telegram---@Raiv2mmr---Telegram---@Raiv2mmr---Telegram---@Raiv2mmr---#%F0%9F%87%B9%F0%9F%87%B7%20TR%20Turkey
-ss://YWVzLTI1Ni1nY206ZmFCQW9ENTRrODdVSkc3@185.123.101.64:2376?note=Telegram---@Raiv2mmr---Telegram---@Raiv2mmr---Telegram---@Raiv2mmr---Telegram---@Raiv2mmr---Telegram---@Raiv2mmr---Telegram---@Raiv2mmr---Telegram---@Raiv2mmr---Telegram---@Raiv2mmr---Telegram---@Raiv2mmr---#%F0%9F%87%B9%F0%9F%87%B7%20TR%20Turkey
 ss://YWVzLTI1Ni1nY206ZmFCQW9ENTRrODdVSkc3@185.123.101.64:2376#%F0%9F%87%B9%F0%9F%87%B7%20TR%20Turkey
+ss://YWVzLTI1Ni1nY206ZmFCQW9ENTRrODdVSkc3@185.123.101.64:2376#%F0%9F%87%B9%F0%9F%87%B7%20TR%20Turkey
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpZNUVKWm9qVk1FTnZrRFZGWWxpRXFF@62.133.63.169:37096#%F0%9F%87%B9%F0%9F%87%B7%20TR%20Turkey
