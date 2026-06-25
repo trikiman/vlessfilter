@@ -1,3 +1,2 @@
-trojan://kflYwtj8VD7Pd4V9ixedIxEDsac4QQXvbP@45.77.227.183:443?security=tls&insecure=0&headerType=none&type=tcp&allowInsecure=0#%F0%9F%87%AC%F0%9F%87%A7%20GB%20United%20Kingdom
-trojan://kflYwtj8VD7Pd4V9ixedIxEDsac4QQXvbP@45.77.227.183:443?security=tls&insecure=0&headerType=none&type=tcp&allowInsecure=0#%F0%9F%87%AC%F0%9F%87%A7%20GB%20United%20Kingdom
-trojan://kflYwtj8VD7Pd4V9ixedIxEDsac4QQXvbP@45.77.227.183:443/?type=tcp&security=tls&sni=45.77.227.183#%F0%9F%87%AC%F0%9F%87%A7%20GB%20United%20Kingdom
+trojan://MiTiVPN@151.101.1.242:443?path=%2Fde%3Dmitivpn&security=tls&alpn=http%2F1.1&insecure=0&host=www.f6r.ir&fp=chrome&type=ws&allowInsecure=0&sni=www.f6r.ir#%F0%9F%87%AC%F0%9F%87%A7%20GB%20United%20Kingdom
+trojan://MiTiVPN@151.101.1.242:443?path=/de=mitivpn&security=tls&alpn=http/1.1&sni=www.f6r.ir&fp=chrome&type=ws&sni=www.f6r.ir#%F0%9F%87%AC%F0%9F%87%A7%20GB%20United%20Kingdom
