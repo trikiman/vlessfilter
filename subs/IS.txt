@@ -1,5 +1,5 @@
 vless://43488128-319e-f480-64ea-0acdc712e2a8@45.83.21.39:443?encryption=none&flow=xtls-rprx-vision&fp=&pbk=7OqbbLDZwsSwh6D25ZavNneK3NiQs-gwrUJkrHAs_hI&security=reality&sid=f717aafc9dfcc96e&sni=www.grab.com&type=tcp#%F0%9F%87%AE%F0%9F%87%B8%20IS%20Iceland
 vless://43488128-319e-f480-64ea-0acdc712e2a8@45.83.21.39:443?encryption=none&flow=xtls-rprx-vision&fp=&pbk=7OqbbLDZwsSwh6D25ZavNneK3NiQs-gwrUJkrHAs_hI&security=reality&sid=f717aafc9dfcc96e&sni=www.grab.com&type=tcp#%F0%9F%87%AE%F0%9F%87%B8%20IS%20Iceland
-trojan://p=Xuu4jK_lJ9rOKw5+7BsW798DZ-01cv4S@37.235.49.118:443/?type=tcp&security=tls&sni=37.235.49.118#%F0%9F%87%AE%F0%9F%87%B8%20IS%20Iceland
 trojan://p=Xuu4jK_lJ9rOKw5+7BsW798DZ-01cv4S@37.235.49.118:443?security=tls&insecure=0&headerType=none&type=tcp&allowInsecure=0#%F0%9F%87%AE%F0%9F%87%B8%20IS%20Iceland
-trojan://p=Xuu4jK_lJ9rOKw5+7BsW798DZ-01cv4S@37.235.49.118:443/?type=tcp&security=tls&sni=37.235.49.118#%F0%9F%87%AE%F0%9F%87%B8%20IS%20Iceland
+trojan://p=Xuu4jK_lJ9rOKw5+7BsW798DZ-01cv4S@37.235.49.118:443?security=tls&amp;insecure=0&amp;headerType=&amp;type=tcp&amp;allowInsecure=0&amp;sni=37.235.49.118#%F0%9F%87%AE%F0%9F%87%B8%20IS%20Iceland
+trojan://p=Xuu4jK_lJ9rOKw5+7BsW798DZ-01cv4S@37.235.49.118:443?security=tls&amp%3Binsecure=0&amp%3Btype=tcp&amp%3BallowInsecure=0&amp%3Bsni=37.235.49.118#%F0%9F%87%AE%F0%9F%87%B8%20IS%20Iceland
