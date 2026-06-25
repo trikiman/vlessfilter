@@ -1,1 +1,1 @@
-trojan://bpb-trojan@104.21.26.36:443?sni=vless.herogoing.top&type=ws&host=vless.herogoing.top&path=/tr?ed=2560#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
+trojan://MiTiVPN@151.101.193.242:443?path=/usa=mitivpn&security=tls&alpn=http/1.1&sni=f6r.ir&fp=chrome&type=ws&sni=f6r.ir#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
