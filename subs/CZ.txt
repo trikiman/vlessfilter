@@ -3,7 +3,7 @@ vless://a6bdf293-c3b0-4b8f-9a70-528874376f62@104.19.229.21:443?mode=packet-up&pa
 vless://a6bdf293-c3b0-4b8f-9a70-528874376f62@104.19.229.21:443?encryption=none&type=xhttp&security=tls&path=%2F&host=my.pars-cdn.ir&mode=packet-up&sni=my.pars-cdn.ir&alpn=h2&fp=chrome&allowInsecure=1#%F0%9F%87%A8%F0%9F%87%BF%20CZ%20Czechia
 trojan://LYaEYwjN8LjWTRJdCCTzW7V6gK7atJVu@46.8.113.142:443?security=tls&insecure=0&headerType=none&fp=chrome&type=tcp&allowInsecure=0&sni=ch-2.bexum.fun#%F0%9F%87%A8%F0%9F%87%BF%20CZ%20Czechia
 trojan://LYaEYwjN8LjWTRJdCCTzW7V6gK7atJVu@46.8.113.142:443/?type=tcp&security=tls&sni=ch-2.bexum.fun&fp=chrome#%F0%9F%87%A8%F0%9F%87%BF%20CZ%20Czechia
-trojan://LYaEYwjN8LjWTRJdCCTzW7V6gK7atJVu@46.8.113.142:443/?type=tcp&security=tls&sni=ch-2.bexum.fun&fp=chrome#%F0%9F%87%A8%F0%9F%87%BF%20CZ%20Czechia
+trojan://LYaEYwjN8LjWTRJdCCTzW7V6gK7atJVu@46.8.113.142:443?security=tls&headerType=none&fp=chrome&type=tcp&sni=ch-2.bexum.fun#%F0%9F%87%A8%F0%9F%87%BF%20CZ%20Czechia
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpjQXFiQllCQjBmOUNBbXBVX21jXzdGeXZ2TENjd3p0MA@31.76.7.28:8388#%F0%9F%87%A8%F0%9F%87%BF%20CZ%20Czechia
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpjQXFiQllCQjBmOUNBbXBVX21jXzdGeXZ2TENjd3p0MA@31.76.7.28:8388#%F0%9F%87%A8%F0%9F%87%BF%20CZ%20Czechia
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpjQXFiQllCQjBmOUNBbXBVX21jXzdGeXZ2TENjd3p0MA@31.76.7.28:8388#%F0%9F%87%A8%F0%9F%87%BF%20CZ%20Czechia

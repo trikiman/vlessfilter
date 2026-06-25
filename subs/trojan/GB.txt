@@ -1,2 +1,3 @@
-trojan://MiTiVPN@167.82.101.251:443?path=%2Fusa%3Dmitivpn&security=tls&alpn=http%2F1.1&host=cdn-mitivpn.global.ssl.fastly.net&fp=edge&type=ws&sni=global.fastly.com#%F0%9F%87%AC%F0%9F%87%A7%20GB%20United%20Kingdom
-trojan://MiTiVPN@167.82.101.251:443?path=%2Fnl%3Dmitivpn&security=tls&alpn=http%2F1.1&insecure=0&host=cdn-mitivpn.global.ssl.fastly.net&fp=firefox&type=ws&allowInsecure=0&sni=default.ssl.fastly.net#%F0%9F%87%AC%F0%9F%87%A7%20GB%20United%20Kingdom
+trojan://kflYwtj8VD7Pd4V9ixedIxEDsac4QQXvbP@45.77.227.183:443?security=tls&insecure=0&headerType=none&type=tcp&allowInsecure=0#%F0%9F%87%AC%F0%9F%87%A7%20GB%20United%20Kingdom
+trojan://kflYwtj8VD7Pd4V9ixedIxEDsac4QQXvbP@45.77.227.183:443?security=tls&insecure=0&headerType=none&type=tcp&allowInsecure=0#%F0%9F%87%AC%F0%9F%87%A7%20GB%20United%20Kingdom
+trojan://kflYwtj8VD7Pd4V9ixedIxEDsac4QQXvbP@45.77.227.183:443/?type=tcp&security=tls&sni=45.77.227.183#%F0%9F%87%AC%F0%9F%87%A7%20GB%20United%20Kingdom
