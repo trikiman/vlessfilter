@@ -1,4 +1,4 @@
-vmess://eyJhZGQiOiI0Ny4yNTAuNDUuMjM0IiwiaWQiOiJjNzdmNDhmNS00YmUzLTQ0NjEtYjUyYi00OTk5OGU3Yjg5N2IiLCJwb3J0IjoiNDMwNjMiLCJzY3kiOiJhdXRvIiwidiI6IjIiLCJuZXQiOiJ3cyIsImhvc3QiOiIiLCJwYXRoIjoiL2Fya2k/ZWQ9MjA0OCIsInRscyI6Im5vbmUiLCJwcyI6Ilvwn4ey8J+Hvl0gW3ZtLW5vLXdzXSBbMjYwNjI2LTA4MzA1Ni42NDVdIn0K#%F0%9F%87%B2%F0%9F%87%BE%20MY%20Malaysia
-trojan://Lw_DP4+W.J5K33MD2Jy5zQVuT5n71+=BcD@38.60.168.129:443?security=tls&type=tcp&headerType=none&path=/#%F0%9F%87%B2%F0%9F%87%BE%20MY%20Malaysia
+vmess://eyJ2IjoiMiIsInBzIjoiW09wZW5SYXldIPCfh7Lwn4e+IE1ZLTQzIiwiYWRkIjoiNDcuMjUwLjQ1LjIzNCIsInBvcnQiOjg2MTMsImlkIjoiODAwMzliNGQtYmFjMC00Zjg5LTgyYzctNTRmYWQzYjBhMWVhIiwibmV0Ijoid3MiLCJ0eXBlIjoibm9uZSIsImhvc3QiOiI0Ny4yNTAuNDUuMjM0IiwicGF0aCI6Ii9hcmtpIn0=#%F0%9F%87%B2%F0%9F%87%BE%20MY%20Malaysia
+trojan://Lw_DP4+W.J5K33MD2Jy5zQVuT5n71+=BcD@38.60.168.129:443?security=tls&amp;insecure=0&amp;headerType=none&amp;type=tcp&amp;allowInsecure=0#%F0%9F%87%B2%F0%9F%87%BE%20MY%20Malaysia
 trojan://Lw_DP4+W.J5K33MD2Jy5zQVuT5n71+=BcD@38.60.168.129:443/?type=tcp&security=tls&sni=38.60.168.129#%F0%9F%87%B2%F0%9F%87%BE%20MY%20Malaysia
-trojan://Lw_DP4+W.J5K33MD2Jy5zQVuT5n71+=BcD@38.60.168.129:443?security=tls&type=tcp&headerType=none&path=%2f#%F0%9F%87%B2%F0%9F%87%BE%20MY%20Malaysia
+trojan://Lw_DP4+W.J5K33MD2Jy5zQVuT5n71+=BcD@38.60.168.129:443?security=tls&insecure=0&headerType=none&type=tcp&allowInsecure=0#%F0%9F%87%B2%F0%9F%87%BE%20MY%20Malaysia

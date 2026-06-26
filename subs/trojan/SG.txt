@@ -1,1 +1,1 @@
-trojan://114514@122.10.119.252:443?host=tjaaa.hhllfly.kdns.fr&path=%2F&security=tls&sni=tjaaa.hhllfly.kdns.fr&type=ws#%F0%9F%87%B8%F0%9F%87%AC%20SG%20Singapore
+trojan://114514@23.156.153.57:443?security=tls&sni=tjaaa.hhllfly.kdns.fr&insecure=0&allowInsecure=0&type=ws&host=tjaaa.hhllfly.kdns.fr&path=%2F#%F0%9F%87%B8%F0%9F%87%AC%20SG%20Singapore

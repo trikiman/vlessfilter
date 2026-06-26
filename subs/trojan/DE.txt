@@ -1,2 +1,1 @@
-trojan://Mitivpn@151.101.56.6:443?security=tls&type=ws&host=4-4-3-mitivpn.global.ssl.fastly.net&path=/stable=mitivpn&sni=ssl.fastly.com#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
-trojan://Mitivpn@151.101.56.6:443?security=tls&type=ws&host=4-4-3-mitivpn.global.ssl.fastly.net&path=/slowdns=mitivpn&sni=ssl.fastly.com#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
+trojan://Mitivpn@151.101.110.219:443?security=tls&type=ws&host=3-mitivpn.global.ssl.fastly.net&path=/boost=mitivpn&sni=ssl.fastly.com#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
