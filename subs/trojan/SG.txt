@@ -1,1 +1,1 @@
-trojan://114514@23.156.153.57:443?security=tls&sni=tjaaa.hhllfly.kdns.fr&insecure=0&allowInsecure=0&type=ws&host=tjaaa.hhllfly.kdns.fr&path=%2F#%F0%9F%87%B8%F0%9F%87%AC%20SG%20Singapore
+trojan://eeb6823c-b926-4ea2-866a-5542edd26e59@172.236.154.50:443?security=tls&type=ws&ech=cloudflare-ech.com%2Bhttps%3A%2F%2Fdns.alidns.com%2Fdns-query&host=tjsp.hhxaf.cc.cd&fp=chrome&sni=tjsp.hhxaf.cc.cd&path=%2F&encryption=none#%F0%9F%87%B8%F0%9F%87%AC%20SG%20Singapore
