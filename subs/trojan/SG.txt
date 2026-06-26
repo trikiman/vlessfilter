@@ -1,1 +1,1 @@
-trojan://114514@23.156.153.57:443?path=%2F&security=tls&insecure=0&type=ws&allowInsecure=0&sni=tjaaa.hhllfly.kdns.fr#%F0%9F%87%B8%F0%9F%87%AC%20SG%20Singapore
+trojan://OccIqeORGQwiNkwS@jpbgp.netvigor.cc:19128?security=tls&insecure=0&headerType=none&type=tcp&allowInsecure=0&sni=yazhou10.dynu.net#%F0%9F%87%B8%F0%9F%87%AC%20SG%20Singapore
