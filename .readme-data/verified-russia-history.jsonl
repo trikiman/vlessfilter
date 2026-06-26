@@ -5437,3 +5437,17 @@
 {"ts":"2026-06-26T08:43:06Z","host_port":"104.16.7.70:443","proto":"trojan","alive":true,"delay_ms":695,"run_id":"28227105567"}
 {"ts":"2026-06-26T08:43:06Z","host_port":"178.236.16.98:35728","proto":"vless","alive":true,"delay_ms":1663,"run_id":"28227105567"}
 {"ts":"2026-06-26T08:43:06Z","host_port":"149.104.104.58:443","proto":"trojan","alive":true,"delay_ms":1263,"run_id":"28227105567"}
+{"ts":"2026-06-26T11:45:54Z","host_port":"104.16.72.70:443","proto":"trojan","alive":true,"delay_ms":423,"run_id":"28235659738"}
+{"ts":"2026-06-26T11:45:54Z","host_port":"151.101.56.6:443","proto":"trojan","alive":true,"delay_ms":439,"run_id":"28235659738"}
+{"ts":"2026-06-26T11:45:54Z","host_port":"45.77.227.183:443","proto":"trojan","alive":true,"delay_ms":592,"run_id":"28235659738"}
+{"ts":"2026-06-26T11:45:54Z","host_port":"37.235.49.118:443","proto":"trojan","alive":true,"delay_ms":792,"run_id":"28235659738"}
+{"ts":"2026-06-26T11:45:54Z","host_port":"64.176.166.143:443","proto":"vless","alive":true,"delay_ms":779,"run_id":"28235659738"}
+{"ts":"2026-06-26T11:45:54Z","host_port":"104.17.121.71:443","proto":"trojan","alive":true,"delay_ms":2052,"run_id":"28235659738"}
+{"ts":"2026-06-26T11:45:54Z","host_port":"support.aparat.com:2087","proto":"trojan","alive":true,"delay_ms":1745,"run_id":"28235659738"}
+{"ts":"2026-06-26T11:45:54Z","host_port":"207.126.167.150:443","proto":"trojan","alive":true,"delay_ms":484,"run_id":"28235659738"}
+{"ts":"2026-06-26T11:45:54Z","host_port":"45.61.52.243:443","proto":"trojan","alive":true,"delay_ms":566,"run_id":"28235659738"}
+{"ts":"2026-06-26T11:45:54Z","host_port":"81.208.170.142:1500","proto":"vless","alive":true,"delay_ms":1512,"run_id":"28235659738"}
+{"ts":"2026-06-26T11:45:54Z","host_port":"147.182.212.232:56565","proto":"vless","alive":true,"delay_ms":160,"run_id":"28235659738"}
+{"ts":"2026-06-26T11:45:54Z","host_port":"204.216.216.23:10086","proto":"vless","alive":true,"delay_ms":553,"run_id":"28235659738"}
+{"ts":"2026-06-26T11:45:54Z","host_port":"45.130.125.126:443","proto":"trojan","alive":true,"delay_ms":441,"run_id":"28235659738"}
+{"ts":"2026-06-26T11:45:54Z","host_port":"104.17.121.43:443","proto":"trojan","alive":true,"delay_ms":367,"run_id":"28235659738"}
