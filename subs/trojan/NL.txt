@@ -1,3 +1,1 @@
-trojan://humanity@104.18.10.110:443/?type=ws&host=www.multiplydose.com&path=%2F%2Fassignment&security=tls&sni=www.multiplydose.com#%F0%9F%87%B3%F0%9F%87%B1%20NL%20Netherlands
-trojan://humanity@104.16.7.70:443?path=%2F%2Fassignment&security=tls&insecure=0&host=www.multiplydose.com&type=ws&allowInsecure=0&sni=www.multiplydose.com#%F0%9F%87%B3%F0%9F%87%B1%20NL%20Netherlands
-trojan://humanity@104.16.7.70:443?security=tls&sni=www.multiplydose.com&type=ws&host=www.multiplydose.com&path=%2F%2Fassignment#%F0%9F%87%B3%F0%9F%87%B1%20NL%20Netherlands
+trojan://humanity@104.17.121.71:443?path=%2Fassignment&security=tls&insecure=0&host=www.multiplydose.com&fp=chrome&type=ws&allowInsecure=0&sni=www.multiplydose.com#%F0%9F%87%B3%F0%9F%87%B1%20NL%20Netherlands

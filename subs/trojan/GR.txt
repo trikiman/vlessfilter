@@ -1,3 +1,3 @@
 trojan://UexGnX2+RhN8PB6GMyUL-8fNYvR1=JBzxm@185.126.238.84:443/?type=tcp&security=tls&sni=185.126.238.84#%F0%9F%87%AC%F0%9F%87%B7%20GR%20Greece
-trojan://UexGnX2+RhN8PB6GMyUL-8fNYvR1=JBzxm@185.126.238.84:443/?type=tcp&security=tls&sni=185.126.238.84#%F0%9F%87%AC%F0%9F%87%B7%20GR%20Greece
 trojan://UexGnX2+RhN8PB6GMyUL-8fNYvR1=JBzxm@185.126.238.84:443?Telegram=@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad&security=tls&insecure=0&headerType=none&type=tcp&allowInsecure=0&sni=#%F0%9F%87%AC%F0%9F%87%B7%20GR%20Greece
+trojan://UexGnX2+RhN8PB6GMyUL-8fNYvR1=JBzxm@185.126.238.84:443/?type=tcp&security=tls&sni=185.126.238.84#%F0%9F%87%AC%F0%9F%87%B7%20GR%20Greece
