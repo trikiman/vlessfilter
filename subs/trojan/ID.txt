@@ -1,3 +1,3 @@
-trojan://tUtK5TKdjxsPnOyritLtv8OQWHAK8f8yNR@130.94.94.15:443?security=tls#%F0%9F%87%AE%F0%9F%87%A9%20ID%20Indonesia
-trojan://tUtK5TKdjxsPnOyritLtv8OQWHAK8f8yNR@130.94.94.15:443?security=tls#%F0%9F%87%AE%F0%9F%87%A9%20ID%20Indonesia
-trojan://tUtK5TKdjxsPnOyritLtv8OQWHAK8f8yNR@130.94.94.15:443?allowInsecure=0&sni=130.94.94.15#%F0%9F%87%AE%F0%9F%87%A9%20ID%20Indonesia
+trojan://tUtK5TKdjxsPnOyritLtv8OQWHAK8f8yNR@130.94.94.15:443#%F0%9F%87%AE%F0%9F%87%A9%20ID%20Indonesia
+trojan://tUtK5TKdjxsPnOyritLtv8OQWHAK8f8yNR@130.94.94.15:443#%F0%9F%87%AE%F0%9F%87%A9%20ID%20Indonesia
+trojan://tUtK5TKdjxsPnOyritLtv8OQWHAK8f8yNR@130.94.94.15:443?security=tls&%3Binsecure=1&%3BheaderType=none&%3Bfp=chrome&%3Btype=tcp&%3BallowInsecure=1&%3Bsni=130.94.94.15#%F0%9F%87%AE%F0%9F%87%A9%20ID%20Indonesia
