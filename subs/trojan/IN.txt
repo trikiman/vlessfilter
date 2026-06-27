@@ -1,1 +1,2 @@
+trojan://63872b0d-87dd-4474-b690-92773af2922e@kkvlvvq-a.catcat321.com:20035?sni=hk.catxstar.com#%F0%9F%87%AE%F0%9F%87%B3%20IN%20India
 trojan://63872b0d-87dd-4474-b690-92773af2922e@kkvlvvq-a.catcat321.com:20035?security=tls&sni=hk.catxstar.com#%F0%9F%87%AE%F0%9F%87%B3%20IN%20India
