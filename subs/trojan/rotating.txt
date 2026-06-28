@@ -1,6 +1,0 @@
-trojan://73796e63-0000-4000-8000-000000000000@104.17.148.22:443/?type=ws&host=hide.sasadism77.workers.dev&path=%2Fsync&security=tls&sni=hide.sasadism77.workers.dev&fp=chrome#%F0%9F%8C%90%20ROTATING
-trojan://73796e63-0000-4000-8000-000000000000@104.17.148.22:443/?type=ws&host=hide.sasadism77.workers.dev&path=%2Fsync&security=tls&sni=hide.sasadism77.workers.dev&fp=chrome#%F0%9F%8C%90%20ROTATING
-trojan://73796e63-0000-4000-8000-000000000000@104.17.148.22:443?Telegram=@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad&path=%2Fsync&security=tls&host=hide.sasadism77.workers.dev&fp=chrome&type=ws&sni=hide.sasadism77.workers.dev#%F0%9F%8C%90%20ROTATING
-trojan://73796e63-0000-4000-8000-000000000000@104.17.148.22:443?path=%2Fsync&security=tls&host=hide.sasadism77.workers.dev&fp=chrome&type=ws&sni=hide.sasadism77.workers.dev#%F0%9F%8C%90%20ROTATING
-trojan://73796e63-0000-4000-8000-000000000000@104.17.148.22:443?path=%2Fsync&security=tls&host=hide.sasadism77.workers.dev&fp=chrome&type=ws&sni=hide.sasadism77.workers.dev#%F0%9F%8C%90%20ROTATING
-trojan://73796e63-0000-4000-8000-000000000000@104.17.148.22:443?path=/sync&security=tls&host=hide.sasadism77.workers.dev&fp=chrome&type=ws&sni=hide.sasadism77.workers.dev#%F0%9F%8C%90%20ROTATING
