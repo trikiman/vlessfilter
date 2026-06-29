@@ -1,3 +1,2 @@
-trojan://MITIVPN@164.38.155.135:443?path=/MiTiVPN=De&security=tls&alpn=http/1.1&insecure=0&host=95r.ir&fp=chrome&type=ws&allowInsecure=0&sni=95r.ir#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
-trojan://Mitivpn@151.101.110.219:443?path=/de=mitivpn&security=tls&alpn=http/1.1&insecure=0&host=3-mitivpn.global.ssl.fastly.net&fp=chrome&type=ws&allowInsecure=0&sni=global.fastly.com#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
-trojan://MITIVPN@164.38.155.135:443?security=tls&sni=95r.ir&alpn=http/1.1&fp=chrome&type=ws&host=95r.ir&path=/MiTiVPN=De#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
+trojan://Mitivpn@iranpoems.ir:443?security=tls&sni=cdn.gamingdll.ir&fp=firefox&alpn=h2&insecure=0&allowInsecure=0&type=ws&host=cdn.gamingdll.ir&path=%2Fde%3Dmitivpn#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
+trojan://Mitivpn@151.101.56.6:443?security=tls&sni=ssl.fastly.com&alpn=http/1.1&type=ws&host=3-mitivpn.global.ssl.fastly.net&path=/de#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany

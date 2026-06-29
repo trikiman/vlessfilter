@@ -1,2 +1,1 @@
 trojan://c206d543-023d-46cc-9d5a-1f0f2fc16323@188.164.248.122:443?security=tls&sni=space.byu.id.yxls.eu.cc&type=ws&host=space.byu.id.yxls.eu.cc&path=/in-pdr#%F0%9F%87%AE%F0%9F%87%B3%20IN%20India
-trojan://63872b0d-87dd-4474-b690-92773af2922e@kkvlvvq-a.catcat321.com:20035?security=tls&sni=hk.catxstar.com#%F0%9F%87%AE%F0%9F%87%B3%20IN%20India
