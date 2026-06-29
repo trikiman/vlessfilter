@@ -3,8 +3,7 @@ vmess://eyJhZGQiOiAicGwuY29ubmZ1bGwub3JnIiwgImFpZCI6ICIwIiwgImFscG4iOiAiIiwgImZw
 vmess://eyJhZGQiOiJwbC5jb25uZnVsbC5vcmciLCJhaWQiOiIwIiwiYWxwbiI6IiIsImZwIjoiY2hyb21lIiwiaG9zdCI6IiIsImlkIjoiYTFhM2E5ZTUtOWIxNS00NTZiLThjMjYtOGJkYTBlZjcwMWU4IiwiaW5zZWN1cmUiOiIwIiwibmV0IjoidGNwIiwicGF0aCI6IiIsInBvcnQiOiIyMDUzIiwicHMiOiJCeSBFYnJhU2hhIPCfjIMiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoidGxzIiwidHlwZSI6Im5vbmUiLCJ2IjoiMiJ9#%F0%9F%87%B5%F0%9F%87%B1%20PL%20Poland
 vmess://eyJhZGQiOiJwbC5jb25uZnVsbC5vcmciLCJhaWQiOiIwIiwiYWxwbiI6IiIsImZwIjoiY2hyb21lIiwiaG9zdCI6IiIsImlkIjoiYTFhM2E5ZTUtOWIxNS00NTZiLThjMjYtOGJkYTBlZjcwMWU4IiwiaW5zZWN1cmUiOiIwIiwibmV0IjoidGNwIiwicGF0aCI6IiIsInBvcnQiOiIyMDUzIiwicHMiOiJbT3BlblJheV0g8J+HtfCfh7EgUEwtMTIyMyIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiJ0bHMiLCJ0eXBlIjoibm9uZSIsInYiOiIyIn0=#%F0%9F%87%B5%F0%9F%87%B1%20PL%20Poland
 trojan://humanity@104.16.117.43:443/?type=ws&host=www.creationlong.org&path=%2Fassignment&security=tls&sni=www.creationlong.org#%F0%9F%87%B5%F0%9F%87%B1%20PL%20Poland
-trojan://humanity@104.16.117.43:443?encryption=none&security=tls&sni=www.creationlong.org&type=ws&host=www.creationlong.org&path=%2Fassignment#%F0%9F%87%B5%F0%9F%87%B1%20PL%20Poland
-trojan://humanity@104.16.117.43:443/?type=ws&host=www.creationlong.org&path=%2Fassignment&security=tls&sni=www.creationlong.org#%F0%9F%87%B5%F0%9F%87%B1%20PL%20Poland
+trojan://humanity@188.114.97.6:443?type=ws&security=tls&path=/assignment&sni=www.creationlong.org&insecure=0&allowInsecure=0#%F0%9F%87%B5%F0%9F%87%B1%20PL%20Poland
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpJNWloSnplZFNuR3pEb2VRWmg2cGtU@91.198.166.110:443#%F0%9F%87%B5%F0%9F%87%B1%20PL%20Poland
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpJNWloSnplZFNuR3pEb2VRWmg2cGtU@91.198.166.110:443#%F0%9F%87%B5%F0%9F%87%B1%20PL%20Poland
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpJNWloSnplZFNuR3pEb2VRWmg2cGtU@91.198.166.110:443#%F0%9F%87%B5%F0%9F%87%B1%20PL%20Poland
