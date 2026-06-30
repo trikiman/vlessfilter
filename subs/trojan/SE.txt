@@ -1,3 +1,2 @@
-trojan://MiTiVPN@45.131.4.118:443/?type=ws&host=95r.ir&path=%2FMiTiVPN%3DSe&security=tls&sni=95r.ir#%F0%9F%87%B8%F0%9F%87%AA%20SE%20Sweden
-trojan://MiTiVPN@45.131.4.118:443?path=/MiTiVPN=Se&security=tls&alpn=http/1.1&host=95r.ir&fp=chrome&type=ws&sni=95r.ir#%F0%9F%87%B8%F0%9F%87%AA%20SE%20Sweden
+trojan://MiTiVPN@45.131.4.118:443?path=/MiTiVPN=Se&security=tls&alpn=http/1.1&insecure=0&host=95r.ir&fp=chrome&type=ws&allowInsecure=0&sni=95r.ir#%F0%9F%87%B8%F0%9F%87%AA%20SE%20Sweden
 trojan://MiTiVPN@45.131.4.118:443?host=95r.ir&path=/MiTiVPN=Se&sni=95r.ir&type=ws#%F0%9F%87%B8%F0%9F%87%AA%20SE%20Sweden
