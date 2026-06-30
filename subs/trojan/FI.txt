@@ -1,3 +1,1 @@
 trojan://FfZBYvMZQ9UPE9lpGqS9vo1OJUikitDIYwTGfKA67Cs=@65.109.186.44:1010?security=none&type=tcp#%F0%9F%87%AB%F0%9F%87%AE%20FI%20Finland
-trojan://2ATuA3fHUSjXpz6De3yqb8nzChM6YQkxKIACuLvmd58=@65.109.186.44:1010?security=none&type=tcp#%F0%9F%87%AB%F0%9F%87%AE%20FI%20Finland
-trojan://FfZBYvMZQ9UPE9lpGqS9vo1OJUikitDIYwTGfKA67Cs=@65.109.186.44:1010?security=none&type=tcp#%F0%9F%87%AB%F0%9F%87%AE%20FI%20Finland
