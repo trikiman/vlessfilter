@@ -1,5 +1,5 @@
 trojan://ZfhGKkAmGl.hxRfIUI0LUU.MuK3hkQdxed@38.60.202.163:443/?type=tcp&security=tls&sni=38.60.202.163#%F0%9F%87%A6%F0%9F%87%AA%20AE%20UAE
 trojan://ZfhGKkAmGl.hxRfIUI0LUU.MuK3hkQdxed@38.60.202.163:443?security=tls&alpn=v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus&insecure=0&headerType=none&type=tcp&allowInsecure=0&sni=38.60.202.163#%F0%9F%87%A6%F0%9F%87%AA%20AE%20UAE
-trojan://ZfhGKkAmGl.hxRfIUI0LUU.MuK3hkQdxed@38.60.202.163:443?type=tcp&security=tls&headerType=none&insecure=0&allowInsecure=0#%F0%9F%87%A6%F0%9F%87%AA%20AE%20UAE
+trojan://ZfhGKkAmGl.hxRfIUI0LUU.MuK3hkQdxed@38.60.202.163:443?allowInsecure=0&security=tls&sni=38.60.202.163#%F0%9F%87%A6%F0%9F%87%AA%20AE%20UAE
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTphOWQ3MjdjZC0zMzBiLTRlZGQtODkxMS03YzIyNGRmNmFmZDU=@77.74.201.171:25891#%F0%9F%87%A6%F0%9F%87%AA%20AE%20UAE
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTphOWQ3MjdjZC0zMzBiLTRlZGQtODkxMS03YzIyNGRmNmFmZDU=@77.74.201.171:25891#%F0%9F%87%A6%F0%9F%87%AA%20AE%20UAE
