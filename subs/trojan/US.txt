@@ -1,3 +1,3 @@
-trojan://MITIVPN@94.140.0.100:443?security=tls&sni=95r.ir&fp=chrome&alpn=http/1.1&insecure=0&allowInsecure=0&type=ws&host=95r.ir&path=/MiTiVPN=Usa#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States
-trojan://MITIVPN@94.140.0.100:443?Telegram=@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad&path=/MiTiVPN=Usa&security=tls&alpn=http/1.1&sni=95r.ir&fp=chrome&type=ws&sni=95r.ir#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States
-trojan://MITIVPN@94.140.0.100:443?path=/MiTiVPN=Usa&security=tls&alpn=http/1.1&insecure=0&host=95r.ir&fp=chrome&type=ws&allowInsecure=0&sni=95r.ir#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States
+trojan://MITIVPN@94.140.0.100:443?path=%2FMiTiVPN%3DUsa&security=tls&alpn=http%2F1.1&insecure=0&host=95r.ir&fp=chrome&type=ws&allowInsecure=0&sni=95r.ir#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States
+trojan://MITIVPN@94.140.0.100:443?path=%2FMiTiVPN%3DUsa&security=tls&alpn=http%2F1.1&insecure=0&host=95r.ir&fp=firefox&type=ws&allowInsecure=0&sni=95r.ir#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States
+trojan://MITIVPN@94.140.0.100:443?path=%2FMiTiVPN%3DUsa&security=tls&alpn=http%2F1.1&insecure=0&host=95r.ir&fp=firefox&type=ws&allowInsecure=0&sni=95r.ir#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States
