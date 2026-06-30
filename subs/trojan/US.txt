@@ -1,2 +1,3 @@
-trojan://MITIVPN@94.140.0.100:443?host=95r.ir&path=/MiTiVPN=Usa&sni=95r.ir&type=ws#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States
-trojan://MITIVPN@94.140.0.100:443?type=ws&security=tls&path=%2FMiTiVPN%3DUsa&host=95r.ir&sni=95r.ir&alpn=http%2F1.1&fp=firefox&insecure=0&allowInsecure=0#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States
+trojan://MITIVPN@45.131.4.115:443?path=/MiTiVPN=Usa&sni=PioHosting.ir&type=ws&insecure=0&host=PioHosting.ir&fp=chrome&security=tls&alpn=http/1.1&allowInsecure=0#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States
+trojan://MITIVPN@94.140.0.100:443?path=/MiTiVPN=Usa&security=tls&alpn=http/1.1&insecure=0&host=PioHosting.ir&fp=chrome&type=ws&allowInsecure=0&sni=PioHosting.ir#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States
+trojan://MITIVPN@45.131.4.115:443?path=/MiTiVPN=Usa&security=tls&alpn=http/1.1&insecure=0&host=PioHosting.ir&fp=chrome&type=ws&allowInsecure=0&sni=PioHosting.ir#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States
