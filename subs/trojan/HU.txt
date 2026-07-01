@@ -1,1 +1,1 @@
-trojan://C0ldyhgjg-vpnjantit.com@hu2.vpnjantit.com:4443?sni=hu2.vpnjantit.com&peer=hu2.vpnjantit.com&security=tls#%F0%9F%87%AD%F0%9F%87%BA%20HU%20Hungary
+trojan://Greggg0-vpnjantit.com@hu2.vpnjantit.com:4443?security=tls&insecure=0&headerType=none&fp=android&type=tcp&allowInsecure=0&sni=hu2.vpnjantit.com#%F0%9F%87%AD%F0%9F%87%BA%20HU%20Hungary

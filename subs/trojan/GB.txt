@@ -1,3 +1,1 @@
-trojan://kflYwtj8VD7Pd4V9ixedIxEDsac4QQXvbP@45.77.227.183:443?security=tls#%F0%9F%87%AC%F0%9F%87%A7%20GB%20United%20Kingdom
-trojan://kflYwtj8VD7Pd4V9ixedIxEDsac4QQXvbP@45.77.227.183:443/?type=tcp&security=tls&sni=45.77.227.183#%F0%9F%87%AC%F0%9F%87%A7%20GB%20United%20Kingdom
-trojan://kflYwtj8VD7Pd4V9ixedIxEDsac4QQXvbP@45.77.227.183:443?allowInsecure=0#%F0%9F%87%AC%F0%9F%87%A7%20GB%20United%20Kingdom
+trojan://LSS6HLnp7IeEEJUcox@uk-1.tr202607.com:443?security=tls#%F0%9F%87%AC%F0%9F%87%A7%20GB%20United%20Kingdom
