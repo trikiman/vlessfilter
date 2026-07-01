@@ -1,2 +1,1 @@
 trojan://AG4yPUSazj57DBFnKG@ee-1.tr202604.com:443?security=tls&headerType=none&type=tcp#%F0%9F%87%AA%F0%9F%87%AA%20EE%20Estonia
-trojan://AG4yPUSazj57DBFnKG@ee-1.tr202604.com:443?security=tls&headerType=none&type=tcp#%F0%9F%87%AA%F0%9F%87%AA%20EE%20Estonia
