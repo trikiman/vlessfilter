@@ -1,3 +1,3 @@
-trojan://MiTiVPN@91.193.58.201:443?path=/MiTiVPN=NL&fp=firefox&sni=PioHosting.ir&type=ws&insecure=0&alpn=http/1.1&security=tls&allowInsecure=0&host=PioHosting.ir#%F0%9F%87%B3%F0%9F%87%B1%20NL%20Netherlands
-trojan://MiTiVPN@91.193.58.201:443?path=%2FMiTiVPN%3DNL&fp=firefox&sni=PioHosting.ir&type=ws&insecure=0&alpn=http%2F1.1&security=tls&allowInsecure=0&host=PioHosting.ir#%F0%9F%87%B3%F0%9F%87%B1%20NL%20Netherlands
-trojan://MiTiVPN@91.193.58.201:443?path=%2FMiTiVPN%3DNL&security=tls&alpn=http%2F1.1&insecure=0&host=PioHosting.ir&fp=firefox&type=ws&allowInsecure=0&sni=PioHosting.ir#%F0%9F%87%B3%F0%9F%87%B1%20NL%20Netherlands
+trojan://MiTiVPN@104.18.114.47:443?type=ws&security=tls&path=/MiTiVPN=NL&host=PioHosting.ir&sni=PioHosting.ir&alpn=http/1.1&fp=firefox&insecure=0&allowInsecure=0#%F0%9F%87%B3%F0%9F%87%B1%20NL%20Netherlands
+trojan://MiTiVPN@91.193.58.201:443?path=/MiTiVPN=NL&security=tls&alpn=http/1.1&host=PioHosting.ir&type=ws&sni=PioHosting.ir#%F0%9F%87%B3%F0%9F%87%B1%20NL%20Netherlands
+trojan://MiTiVPN@104.18.113.47:443?type=ws&security=tls&path=/MiTiVPN=NL&host=PioHosting.ir&sni=PioHosting.ir&alpn=http/1.1&fp=firefox&insecure=0&allowInsecure=0#%F0%9F%87%B3%F0%9F%87%B1%20NL%20Netherlands
