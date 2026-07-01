@@ -1,2 +1,2 @@
-trojan://MiTiVPN@104.16.72.41:443?path=%2FMiTiVPN%3DSe&security=tls&alpn=http%2F1.1&insecure=0&host=PioHosting.ir&fp=firefox&type=ws&allowInsecure=0&sni=PioHosting.ir#%F0%9F%87%B8%F0%9F%87%AA%20SE%20Sweden
-trojan://MiTiVPN@www.hcaptcha.com:443?type=ws&security=tls&path=/MiTiVPN=Se&host=PioHosting.ir&sni=PioHosting.ir&alpn=http/1.1&fp=chrome&insecure=0&allowInsecure=0#%F0%9F%87%B8%F0%9F%87%AA%20SE%20Sweden
+trojan://MiTiVPN@104.16.72.41:443?path=%2F%4D%69%54%69%56%50%4E%3DSe&security=tls&alpn=http%2F1.1&insecure=0&host=PioHosting.ir&fp=firefox&type=ws&allowInsecure=0&sni=PioHosting.ir#%F0%9F%87%B8%F0%9F%87%AA%20SE%20Sweden
+trojan://MiTiVPN@104.16.72.41:443?path=/MiTiVPN=Se&security=tls&alpn=http/1.1&insecure=0&host=PioHosting.ir&fp=chrome&type=ws&allowInsecure=0&sni=PioHosting.ir#%F0%9F%87%B8%F0%9F%87%AA%20SE%20Sweden

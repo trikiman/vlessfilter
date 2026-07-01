@@ -1,3 +1,3 @@
-trojan://MiTiVPN@assets.fiverr.com:443?type=ws&security=tls&path=%2FMiTiVPN%3DfL&host=PioHosting.ir&sni=PioHosting.ir&alpn=http%2F1.1&fp=firefox&insecure=0&allowInsecure=0#%F0%9F%87%AB%F0%9F%87%AE%20FI%20Finland
-trojan://MiTiVPN@199.181.197.176:443?path=%2FMiTiVPN%3DfL&security=tls&alpn=http%2F1.1&insecure=0&host=PioHosting.ir&fp=firefox&type=ws&allowInsecure=0&sni=PioHosting.ir#%F0%9F%87%AB%F0%9F%87%AE%20FI%20Finland
-trojan://MiTiVPN@91.193.58.201:443?path=/MiTiVPN=fL&security=tls&alpn=http/1.1&insecure=0&host=PioHosting.ir&fp=chrome&type=ws&allowInsecure=0&sni=PioHosting.ir#%F0%9F%87%AB%F0%9F%87%AE%20FI%20Finland
+trojan://MiTiVPN@91.193.58.201:443?path=%2FMiTiVPN%3DfL&security=tls&alpn=http%2F1.1&insecure=0&host=PioHosting.ir&fp=firefox&type=ws&allowInsecure=0&sni=PioHosting.ir#%F0%9F%87%AB%F0%9F%87%AE%20FI%20Finland
+trojan://MiTiVPN@91.193.58.201:443?security=tls&insecure=0&path=%2FMiTiVPN%3DfL&sni=PioHosting.ir&alpn=http%2F1.1&fp=firefox&type=ws&allowInsecure=0&host=PioHosting.ir#%F0%9F%87%AB%F0%9F%87%AE%20FI%20Finland
+trojan://MiTiVPN@91.193.58.201:443?alpn=http/1.1&host=PioHosting.ir&fp=chrome&security=tls&insecure=0&sni=PioHosting.ir&type=ws&path=/MiTiVPN=fL&allowInsecure=0#%F0%9F%87%AB%F0%9F%87%AE%20FI%20Finland
