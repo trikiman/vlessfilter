@@ -1,3 +1,3 @@
-trojan://MITIVPN@104.16.72.41:443?security=tls&sni=PioHosting.ir&fp=chrome&alpn=http/1.1&insecure=0&allowInsecure=0&type=ws&host=PioHosting.ir&path=/MiTiVPN=De#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
-trojan://MITIVPN@www.hcaptcha.com:443?type=ws&security=tls&path=/MiTiVPN=De&host=PioHosting.ir&sni=PioHosting.ir&alpn=http/1.1&fp=chrome&insecure=0&allowInsecure=0#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
-trojan://MITIVPN@velocore.co:443?security=tls&sni=PioHosting.ir&fp=firefox&alpn=http%2F1.1&insecure=0&allowInsecure=0&type=ws&host=PioHosting.ir&path=%2FMiTiVPN%3DDe#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
+trojan://bpb-trojan@172.67.174.196:443?sni=wing2452.nyc.mn&type=ws&path=/tr?ed=2560&fp=chrome#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
+trojan://MITIVPN@104.18.114.47:443?type=ws&security=tls&path=/MiTiVPN=De&host=PioHosting.ir&sni=PioHosting.ir&alpn=http/1.1&fp=firefox&insecure=0&allowInsecure=0#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
+trojan://MITIVPN@104.16.72.41:443?security=tls&sni=PioHosting.ir&type=ws&host=PioHosting.ir&path=%2FMiTiVPN%3DDe&fp=firefox&alpn=http%2F1.1#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
