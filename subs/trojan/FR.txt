@@ -1,3 +1,2 @@
-trojan://humanity@45.130.125.112:443?Telegram=@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad&path=/assignment&security=tls&insecure=0&fp=chrome&type=ws&allowInsecure=0&sni=www.calmlunch.com#%F0%9F%87%AB%F0%9F%87%B7%20FR%20France
-trojan://humanity@45.130.125.112:443/?type=ws&path=%2Fassignment&security=tls&sni=www.calmlunch.com&fp=chrome#%F0%9F%87%AB%F0%9F%87%B7%20FR%20France
-trojan://humanity@104.16.174.109:443?path=%2Fassignment&security=tls&insecure=0&host=www.ignitelimit.com&type=ws&allowInsecure=0&sni=www.ignitelimit.com#%F0%9F%87%AB%F0%9F%87%B7%20FR%20France
+trojan://PI36027154@pumped-eft.rooster465.autos:443?security=tls#%F0%9F%87%AB%F0%9F%87%B7%20FR%20France
+trojan://PI36027154@pumped-eft.rooster465.autos:443?security=tls#%F0%9F%87%AB%F0%9F%87%B7%20FR%20France
