@@ -1,1 +1,2 @@
+trojan://afbcd89a-5a90-4a44-a42a-be08f444aa3f@141.193.213.21:443?host=unnes.ac.id.yxls.eu.cc&path=/br-orcl&sni=unnes.ac.id.yxls.eu.cc&type=ws#%F0%9F%87%A7%F0%9F%87%B7%20BR%20Brazil
 trojan://f922fa0f-3311-4368-85ff-cf65e727c854@104.16.72.41:443?path=/br-orcl&security=tls&host=space.byu.id.yxls.eu.cc&type=ws&sni=space.byu.id.yxls.eu.cc#%F0%9F%87%A7%F0%9F%87%B7%20BR%20Brazil
