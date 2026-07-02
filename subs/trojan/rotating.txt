@@ -3,4 +3,3 @@ trojan://73796e63-0000-4000-8000-000000000000@104.17.148.22:443?Telegram=@Gozarg
 trojan://73796e63-0000-4000-8000-000000000000@104.17.148.22:443?path=%2Fsync&security=tls&host=hide.sasadism77.workers.dev&fp=chrome&type=ws&sni=hide.sasadism77.workers.dev#%F0%9F%8C%90%20ROTATING
 trojan://73796e63-0000-4000-8000-000000000000@104.17.148.22:443?path=%2Fsync&security=tls&host=hide.sasadism77.workers.dev&fp=chrome&type=ws&sni=hide.sasadism77.workers.dev#%F0%9F%8C%90%20ROTATING
 trojan://73796e63-0000-4000-8000-000000000000@104.17.148.22:443?path=/sync&security=tls&host=hide.sasadism77.workers.dev&fp=chrome&type=ws&sni=hide.sasadism77.workers.dev#%F0%9F%8C%90%20ROTATING
-trojan://f922fa0f-3311-4368-85ff-cf65e727c854@space.byu.id.yxls.eu.cc:443?fp=chrome&path=/br-orcl&type=ws#%F0%9F%8C%90%20ROTATING

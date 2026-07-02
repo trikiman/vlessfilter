@@ -6,7 +6,6 @@ vmess://eyJ2IjoiMiIsInBzIjoiR2xvYmFsIPCfjJAgfCBAUmF5ZGlrYWx4IHwgMjUxMCIsImFkZCI6
 vmess://eyJ2IjogIjIiLCAicHMiOiAiXHVkODNkXHVkZDI1Sm9pbitUZWxlZ3JhbTpARmFyYWhfVlBOXHVkODNkXHVkZmUzIiwgImFkZCI6ICI2NS4xMDkuMjE4LjYwIiwgInBvcnQiOiA0NDkwOCwgImlkIjogIjJiY2FlZTlhLTZkZTgtNGU4Yi04ZTM1LWU4MTVjYmNlODY2ZSIsICJzY3kiOiAiYXV0byIsICJuZXQiOiAidGNwIiwgInRscyI6ICJub25lIiwgInR5cGUiOiAibm9uZSJ9#%F0%9F%87%AB%F0%9F%87%AE%20FI%20Finland
 trojan://MiTiVPN@91.193.58.201:443?path=/MiTiVPN=fL&security=tls&insecure=0&host=Fl.App-Cloud.ir&type=ws&allowInsecure=0#%F0%9F%87%AB%F0%9F%87%AE%20FI%20Finland
 trojan://MiTiVPN@91.193.58.201:443?path=/MiTiVPN=fL&security=tls&insecure=0&host=Fl.App-Cloud.ir&type=ws&allowInsecure=0#%F0%9F%87%AB%F0%9F%87%AE%20FI%20Finland
-trojan://MiTiVPN@91.193.58.201:443?path=/MiTiVPN=fL&security=tls&alpn=http/1.1&insecure=0&host=Fl.App-Cloud.ir&fp=chrome&type=ws&allowInsecure=0&sni=fl.App-Cloud.ir#%F0%9F%87%AB%F0%9F%87%AE%20FI%20Finland
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp5S1ZNb0IzQXdpVEV6bnBub3EyRllS@193.47.60.186:28687#%F0%9F%87%AB%F0%9F%87%AE%20FI%20Finland
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp5S1ZNb0IzQXdpVEV6bnBub3EyRllS@193.47.60.186:28687#%F0%9F%87%AB%F0%9F%87%AE%20FI%20Finland
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp5S1ZNb0IzQXdpVEV6bnBub3EyRllS@193.47.60.186:28687#%F0%9F%87%AB%F0%9F%87%AE%20FI%20Finland
