@@ -1,3 +1,3 @@
-trojan://MiTiVPN@91.193.58.201:443?path=/MiTiVPN=fL&security=tls&alpn=http/1.1&insecure=0&host=Fl.App-Cloud.ir&fp=chrome&type=ws&allowInsecure=0&sni=fl.App-Cloud.ir#%F0%9F%87%AB%F0%9F%87%AE%20FI%20Finland
-trojan://MiTiVPN@91.193.58.201:443?path=/MiTiVPN=fL&security=tls&alpn=http/1.1&insecure=0&host=Fl.App-Cloud.ir&fp=chrome&type=ws&allowInsecure=0&sni=fl.App-Cloud.ir#%F0%9F%87%AB%F0%9F%87%AE%20FI%20Finland
-trojan://MiTiVPN@91.193.58.201:443?path=/MiTiVPN=fL&security=tls&alpn=http/1.1&host=Fl.App-Cloud.ir&fp=chrome&type=ws&sni=fl.App-Cloud.ir#%F0%9F%87%AB%F0%9F%87%AE%20FI%20Finland
+trojan://MiTiVPN@91.193.58.201:443?path=%2FMiTiVPN%3DfL&security=tls&alpn=http%2F1.1&insecure=0&host=Fl.App-Cloud.ir&fp=firefox&type=ws&allowInsecure=0&sni=fl.App-Cloud.ir#%F0%9F%87%AB%F0%9F%87%AE%20FI%20Finland
+trojan://MiTiVPN@91.193.58.201:443?path=%2FMiTiVPN%3DfL&security=tls&alpn=http%2F1.1&insecure=0&host=Fl.App-Cloud.ir&fp=firefox&type=ws&allowInsecure=0&sni=fl.App-Cloud.ir#%F0%9F%87%AB%F0%9F%87%AE%20FI%20Finland
+trojan://MiTiVPN@185.133.35.22:443?allowInsecure=0&sni=Finl.App-Cloud.ir&alpn=http/1.1&type=ws&path=/MiTiVPN=fL#%F0%9F%87%AB%F0%9F%87%AE%20FI%20Finland

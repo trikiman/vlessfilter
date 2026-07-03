@@ -4,9 +4,9 @@ vless://d511e429-e32b-46a7-ac07-a0fffa9b634c@144.31.235.62:443?encryption=none&f
 vmess://eyJ2IjoiMiIsInBzIjoiRkkg8J+Hq/Cfh64gfCBAUmF5ZGlrYWx4IHwgNDgwIiwiYWRkIjoiNjUuMTA5LjIxOC42MCIsInBvcnQiOjQ0OTA4LCJpZCI6ImYzMTE1MzI5LWUyNWItNGJjZi1iMDM1LTUyZmRmYjUzNzFiMiIsInNjeSI6ImF1dG8iLCJuZXQiOiJ0Y3AiLCJ0bHMiOiJub25lIiwidHlwZSI6Im5vbmUiLCJza2lwLWNlcnQtdmVyaWZ5Ijp0cnVlfQ==#%F0%9F%87%AB%F0%9F%87%AE%20FI%20Finland
 vmess://eyJ2IjoiMiIsInBzIjoiR2xvYmFsIPCfjJAgfCBAUmF5ZGlrYWx4IHwgMjUxMCIsImFkZCI6IjY1LjEwOS4yMTguNjAiLCJwb3J0Ijo0NDkwOCwiaWQiOiJmMzExNTMyOS1lMjViLTRiY2YtYjAzNS01MmZkZmI1MzcxYjIiLCJzY3kiOiJhdXRvIiwibmV0IjoidGNwIiwidGxzIjoibm9uZSIsInR5cGUiOiJub25lIn0=#%F0%9F%87%AB%F0%9F%87%AE%20FI%20Finland
 vmess://eyJ2IjogIjIiLCAicHMiOiAiXHVkODNkXHVkZDI1Sm9pbitUZWxlZ3JhbTpARmFyYWhfVlBOXHVkODNkXHVkZmUzIiwgImFkZCI6ICI2NS4xMDkuMjE4LjYwIiwgInBvcnQiOiA0NDkwOCwgImlkIjogIjJiY2FlZTlhLTZkZTgtNGU4Yi04ZTM1LWU4MTVjYmNlODY2ZSIsICJzY3kiOiAiYXV0byIsICJuZXQiOiAidGNwIiwgInRscyI6ICJub25lIiwgInR5cGUiOiAibm9uZSJ9#%F0%9F%87%AB%F0%9F%87%AE%20FI%20Finland
-trojan://MiTiVPN@91.193.58.201:443?path=/MiTiVPN=fL&security=tls&alpn=http/1.1&insecure=0&host=Fl.App-Cloud.ir&fp=chrome&type=ws&allowInsecure=0&sni=fl.App-Cloud.ir#%F0%9F%87%AB%F0%9F%87%AE%20FI%20Finland
-trojan://MiTiVPN@91.193.58.201:443?path=/MiTiVPN=fL&security=tls&alpn=http/1.1&insecure=0&host=Fl.App-Cloud.ir&fp=chrome&type=ws&allowInsecure=0&sni=fl.App-Cloud.ir#%F0%9F%87%AB%F0%9F%87%AE%20FI%20Finland
-trojan://MiTiVPN@91.193.58.201:443?path=/MiTiVPN=fL&security=tls&alpn=http/1.1&host=Fl.App-Cloud.ir&fp=chrome&type=ws&sni=fl.App-Cloud.ir#%F0%9F%87%AB%F0%9F%87%AE%20FI%20Finland
+trojan://MiTiVPN@91.193.58.201:443?path=%2FMiTiVPN%3DfL&security=tls&alpn=http%2F1.1&insecure=0&host=Fl.App-Cloud.ir&fp=firefox&type=ws&allowInsecure=0&sni=fl.App-Cloud.ir#%F0%9F%87%AB%F0%9F%87%AE%20FI%20Finland
+trojan://MiTiVPN@91.193.58.201:443?path=%2FMiTiVPN%3DfL&security=tls&alpn=http%2F1.1&insecure=0&host=Fl.App-Cloud.ir&fp=firefox&type=ws&allowInsecure=0&sni=fl.App-Cloud.ir#%F0%9F%87%AB%F0%9F%87%AE%20FI%20Finland
+trojan://MiTiVPN@185.133.35.22:443?allowInsecure=0&sni=Finl.App-Cloud.ir&alpn=http/1.1&type=ws&path=/MiTiVPN=fL#%F0%9F%87%AB%F0%9F%87%AE%20FI%20Finland
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp5S1ZNb0IzQXdpVEV6bnBub3EyRllS@193.47.60.186:28687#%F0%9F%87%AB%F0%9F%87%AE%20FI%20Finland
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp5S1ZNb0IzQXdpVEV6bnBub3EyRllS@193.47.60.186:28687#%F0%9F%87%AB%F0%9F%87%AE%20FI%20Finland
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp5S1ZNb0IzQXdpVEV6bnBub3EyRllS@193.47.60.186:28687#%F0%9F%87%AB%F0%9F%87%AE%20FI%20Finland

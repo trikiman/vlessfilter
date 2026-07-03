@@ -1,3 +1,3 @@
-trojan://MiTiVPN@88.216.67.230:443?type=ws&security=tls&path=/MiTiVPN=NL&host=Nel.App-Cloud.ir&sni=Nel.App-Cloud.ir&alpn=http/1.1&fp=chrome&insecure=0&allowInsecure=0#%F0%9F%87%B3%F0%9F%87%B1%20NL%20Netherlands
-trojan://MiTiVPN@104.19.230.21:443?path=%2FMiTiVPN%3DNL&security=tls&alpn=http%2F1.1&insecure=0&host=Nl.App-Cloud.ir&fp=firefox&type=ws&allowInsecure=0&sni=Nl.App-Cloud.ir#%F0%9F%87%B3%F0%9F%87%B1%20NL%20Netherlands
-trojan://MiTiVPN@104.19.230.21:443?path=%2FMiTiVPN%3DNL&security=tls&alpn=http%2F1.1&host=Nl.App-Cloud.ir&fp=firefox&type=ws&sni=Nl.App-Cloud.ir#%F0%9F%87%B3%F0%9F%87%B1%20NL%20Netherlands
+trojan://MiTiVPN@104.16.72.41:443?path=%2FMiTiVPN%3DNL&security=tls&insecure=0&host=NL.App-Cloud.ir&type=ws&allowInsecure=0#%F0%9F%87%B3%F0%9F%87%B1%20NL%20Netherlands
+trojan://MiTiVPN@celestara.biz:443?allowInsecure=0&sni=Nl.App-Cloud.ir&alpn=http/1.1&type=ws&path=/MiTiVPN=NL#%F0%9F%87%B3%F0%9F%87%B1%20NL%20Netherlands
+trojan://MiTiVPN@104.19.230.21:443?alpn=http/1.1&fp=chrome&host=Nl.App-Cloud.ir&path=/MiTiVPN=NL&sni=Nl.App-Cloud.ir&type=ws#%F0%9F%87%B3%F0%9F%87%B1%20NL%20Netherlands
