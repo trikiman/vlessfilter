@@ -53,9 +53,3 @@ vless://f86f5a03-3872-46b5-bf03-a50388a0261d@a1-tss.pages.dev:443?encryption=non
 vless://f86f5a03-3872-46b5-bf03-a50388a0261d@a1-tss.pages.dev:443?encryption=none&path=/&security=tls&type=ws&source_name=mirror_0124&provider_id=mirror_0124#%F0%9F%8C%90%20ROTATING
 vless://f86f5a03-3872-46b5-bf03-a50388a0261d@a1-tss.pages.dev:443?encryption=none&type=ws&path=%2F&security=tls#%F0%9F%8C%90%20ROTATING
 vless://f86f5a03-3872-46b5-bf03-a50388a0261d@a1-tss.pages.dev:443?encryption=none&type=ws&path=%2F&security=tls#%F0%9F%8C%90%20ROTATING
-trojan://123444@104.17.122.10:2083?path=%2F%3Fed%3D2560&security=tls&host=northrendserver.sherekontop.workers.dev&fp=random&type=ws&sni=northrendserver.sherekontop.workers.dev#%F0%9F%8C%90%20ROTATING
-trojan://123444@104.17.122.10:2083?path=/?ed=2560&security=tls&host=northrendserver.sherekontop.workers.dev&fp=chrome&type=ws&sni=northrendserver.sherekontop.workers.dev#%F0%9F%8C%90%20ROTATING
-trojan://bpb-trojan@vless.herogoing.top:443?path=%2Ftr%3Fed%3D2560&security=tls&insecure=0&fp=chrome&type=ws&allowInsecure=0&sni=vless.herogoing.top#%F0%9F%8C%90%20ROTATING
-trojan://e2706e57-690b-fd2e-0c53-9c34e1805162@104.20.30.73:443?security=tls&sni=purple-rain-4512.erfan22.workers.dev&fp=chrome&insecure=0&allowInsecure=0&type=ws&host=purple-rain-4512.erfan22.workers.dev&path=%2Fsync#%F0%9F%8C%90%20ROTATING
-trojan://e2706e57-690b-fd2e-0c53-9c34e1805162@104.20.30.73:443?security=tls&sni=purple-rain-4512.erfan22.workers.dev&fp=chrome&insecure=0&allowInsecure=0&type=ws&host=purple-rain-4512.erfan22.workers.dev&path=/sync#%F0%9F%8C%90%20ROTATING
-trojan://e2706e57-690b-fd2e-0c53-9c34e1805162@104.20.30.73:443?security=tls&sni=purple-rain-4512.erfan22.workers.dev&fp=chrome&type=ws&host=purple-rain-4512.erfan22.workers.dev&path=%2Fsync#%F0%9F%8C%90%20ROTATING
