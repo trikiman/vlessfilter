@@ -1,3 +1,3 @@
+trojan://MITIVPN@91.193.58.35:443?ed=2560&eh=Sec-WebSocket-Protocol&host=De.App-Cloud.ir&path=/MiTiVPN=Usa&sni=De.App-Cloud.ir&type=ws#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States
+trojan://MITIVPN@172.64.32.75:443?path=/MiTiVPN=Usa&security=tls&alpn=http/1.1&insecure=0&host=united.App-Cloud.ir&fp=chrome&type=ws&allowInsecure=0&sni=united.App-Cloud.ir#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States
 trojan://MITIVPN@172.64.32.75:443?type=ws&security=tls&path=/MiTiVPN=Usa&host=united.App-Cloud.ir&sni=united.App-Cloud.ir&alpn=http/1.1&fp=chrome&insecure=0&allowInsecure=0#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States
-trojan://MITIVPN@69.84.182.44:443?path=%2FMiTiVPN%3DUsa&security=tls&alpn=http%2F1.1&insecure=0&host=us--a.App-Cloud.ir&fp=chrome&type=ws&allowInsecure=0&sni=us--a.App-Cloud.ir#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States
-trojan://MITIVPN@94.140.0.40:443?path=%2FMiTiVPN%3DUsa&security=tls&alpn=http%2F1.1&insecure=0&host=Usa.App-Cloud.ir&fp=chrome&type=ws&allowInsecure=0&sni=Usa.App-Cloud.ir#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States

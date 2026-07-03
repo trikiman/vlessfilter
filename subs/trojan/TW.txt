@@ -1,2 +1,1 @@
-trojan://825929f4-c702-35ce-9124-00d3f95b8c32@adak.sonofthewinds.com:34450?sni=tt1.sonofthewinds.com#%F0%9F%87%B9%F0%9F%87%BC%20TW%20Taiwan
-trojan://825929f4-c702-35ce-9124-00d3f95b8c32@adak.sonofthewinds.com:34450?sni=tt1.sonofthewinds.com#%F0%9F%87%B9%F0%9F%87%BC%20TW%20Taiwan
+trojan://9bae11fd9fc7b41b4dcffc0bfbc63613@103.159.89.90:443?type=raw&headerType=none&security=tls&fp=chrome&sni=tw.pitopone.com#%F0%9F%87%B9%F0%9F%87%BC%20TW%20Taiwan
