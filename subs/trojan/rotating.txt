@@ -1,2 +1,0 @@
-trojan://bpb-trojan@vless.herogoing.top:443?security=tls&sni=vless.herogoing.top&fp=chrome&type=ws&path=%2ftr%3fed%3d2560&allow_insecure=0#%F0%9F%8C%90%20ROTATING
-trojan://bpb-trojan@vless.herogoing.top:443?security=tls&type=ws&path=%2ftr%3fed%3d2560#%F0%9F%8C%90%20ROTATING
