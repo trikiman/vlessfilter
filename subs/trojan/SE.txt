@@ -1,2 +1,3 @@
-trojan://MiTiVPN@104.18.152.225:443?type=ws&security=tls&path=%2FMiTiVPN%3DSe&host=swe.App-Cloud.ir&sni=swe.App-Cloud.ir&alpn=http%2F1.1&fp=chrome&insecure=0&allowInsecure=0#%F0%9F%87%B8%F0%9F%87%AA%20SE%20Sweden
-trojan://MiTiVPN@104.18.152.225:443?path=/MiTiVPN=Se&security=tls&alpn=http/1.1&host=swe.App-Cloud.ir&fp=chrome&type=ws&sni=swe.App-Cloud.ir#%F0%9F%87%B8%F0%9F%87%AA%20SE%20Sweden
+trojan://MiTiVPN@velocore.co:443?security=tls&type=ws&sni=sw.App-Cloud.ir&path=/MiTiVPN=Se&host=sw.App-Cloud.ir#%F0%9F%87%B8%F0%9F%87%AA%20SE%20Sweden
+trojan://MiTiVPN@104.18.152.225:443?security=tls&type=ws&sni=swe.App-Cloud.ir&path=/MiTiVPN=Se&host=swe.App-Cloud.ir#%F0%9F%87%B8%F0%9F%87%AA%20SE%20Sweden
+trojan://MiTiVPN@104.18.42.98:443?path=%2FMiTiVPN%3DSe&security=tls&alpn=http%2F1.1&insecure=0&host=s-w.App-Cloud.ir&fp=chrome&type=ws&allowInsecure=0&sni=s-w.App-Cloud.ir#%F0%9F%87%B8%F0%9F%87%AA%20SE%20Sweden

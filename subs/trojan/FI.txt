@@ -1,2 +1,3 @@
-trojan://MiTiVPN@91.193.58.201:443?path=/MiTiVPN=fL&security=tls&host=Fl.App-Cloud.ir&type=ws&sni=Fl.App-Cloud.ir#%F0%9F%87%AB%F0%9F%87%AE%20FI%20Finland
+trojan://MiTiVPN@91.193.58.201:443?security=tls&type=ws&sni=fl.App-Cloud.ir&path=/MiTiVPN=fL&host=Fl.App-Cloud.ir#%F0%9F%87%AB%F0%9F%87%AE%20FI%20Finland
+trojan://MiTiVPN@199.232.78.140:443?path=/MiTiVPN=fL&security=tls&alpn=http/1.1&host=miticonfig.global.ssl.fastly.net&fp=chrome&type=ws&sni=ssl.fastly.com#%F0%9F%87%AB%F0%9F%87%AE%20FI%20Finland
 trojan://MiTiVPN@91.193.58.201:443?path=/MiTiVPN=fL&security=tls&insecure=0&host=Fl.App-Cloud.ir&type=ws&allowInsecure=0#%F0%9F%87%AB%F0%9F%87%AE%20FI%20Finland
