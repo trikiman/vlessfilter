@@ -1,3 +1,2 @@
-trojan://bpb-trojan@wing2452.nyc.mn:443?sni=wing2452.nyc.mn&fp=chrome&type=ws&path=%2ftr%3fed%3d2560#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
-trojan://bpb-trojan@vless.herogoing.top:443?sni=vless.herogoing.top&type=ws&host=vless.herogoing.top&path=/tr?ed=2560#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
-trojan://bpb-trojan@wing2452.nyc.mn:443?security=tls&sni=wing2452.nyc.mn&type=ws&host=wing2452.nyc.mn&path=/tr&allow_insecure=0#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
+trojan://MITIVPN@172.67.71.247:443?path=/MiTiVPN=DE&security=tls&alpn=h3,h2,http/1.1&insecure=0&host=Ger.App-Cloud.ir&fp=chrome&type=ws&allowInsecure=0&sni=Ger.App-Cloud.ir#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
+trojan://dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q@185.137.157.145:443?security=tls&path=/#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
