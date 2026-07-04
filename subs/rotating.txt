@@ -53,14 +53,10 @@ vless://f86f5a03-3872-46b5-bf03-a50388a0261d@a1-tss.pages.dev:443?encryption=non
 vless://f86f5a03-3872-46b5-bf03-a50388a0261d@a1-tss.pages.dev:443?encryption=none&path=/&security=tls&type=ws&source_name=mirror_0124&provider_id=mirror_0124#%F0%9F%8C%90%20ROTATING
 vless://f86f5a03-3872-46b5-bf03-a50388a0261d@a1-tss.pages.dev:443?encryption=none&type=ws&path=%2F&security=tls#%F0%9F%8C%90%20ROTATING
 vless://f86f5a03-3872-46b5-bf03-a50388a0261d@a1-tss.pages.dev:443?encryption=none&type=ws&path=%2F&security=tls#%F0%9F%8C%90%20ROTATING
+trojan://123444@104.17.122.10:2083?path=/?ed=2560&security=tls&host=northrendserver.sherekontop.workers.dev&fp=chrome&type=ws&sni=northrendserver.sherekontop.workers.dev#%F0%9F%8C%90%20ROTATING
 trojan://73796e63-0000-4000-8000-000000000000@104.17.148.22:443/?type=ws&host=hide.sasadism77.workers.dev&path=%2Fsync&security=tls&sni=hide.sasadism77.workers.dev&fp=chrome#%F0%9F%8C%90%20ROTATING
 trojan://73796e63-0000-4000-8000-000000000000@104.17.148.22:443?Telegram=@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad&path=%2Fsync&security=tls&host=hide.sasadism77.workers.dev&fp=chrome&type=ws&sni=hide.sasadism77.workers.dev#%F0%9F%8C%90%20ROTATING
 trojan://73796e63-0000-4000-8000-000000000000@104.17.148.22:443?path=%2Fsync&security=tls&host=hide.sasadism77.workers.dev&fp=chrome&type=ws&sni=hide.sasadism77.workers.dev#%F0%9F%8C%90%20ROTATING
 trojan://73796e63-0000-4000-8000-000000000000@104.17.148.22:443?path=%2Fsync&security=tls&host=hide.sasadism77.workers.dev&fp=chrome&type=ws&sni=hide.sasadism77.workers.dev#%F0%9F%8C%90%20ROTATING
 trojan://73796e63-0000-4000-8000-000000000000@104.17.148.22:443?path=/sync&security=tls&host=hide.sasadism77.workers.dev&fp=chrome&type=ws&sni=hide.sasadism77.workers.dev#%F0%9F%8C%90%20ROTATING
-trojan://SoftNetConnect@213.108.20.209:2087?mode=gun&security=reality&authority=185.204.169.129&pbk=tDzuiaElyFXPtFP25CeCKWW5dsdC4055CnqzYcFyfB8&fp=chrome&spx=/&type=grpc&sni=www.yahoo.com&sid=96a17085678b#%F0%9F%8C%90%20ROTATING
-trojan://SoftNetConnect@213.108.20.209:8443?security=reality&pbk=h0Lem3eyDGqkye4yAMuxixCMI2EqD1EKdH9Ky0Xetjg&headerType=none&fp=chrome&spx=%2F&type=tcp&sni=play.google.com&sid=c7#%F0%9F%8C%90%20ROTATING
-trojan://SoftNetConnect@213.108.20.209:8443?security=reality&pbk=h0Lem3eyDGqkye4yAMuxixCMI2EqD1EKdH9Ky0Xetjg&headerType=none&fp=chrome&spx=/&type=tcp&sni=play.google.com&sid=c7#%F0%9F%8C%90%20ROTATING
-trojan://SoftNetConnect@213.108.20.209:8443?security=reality&pbk=h0Lem3eyDGqkye4yAMuxixCMI2EqD1EKdH9Ky0Xetjg&headerType=none&fp=chrome&spx=/&type=tcp&sni=play.google.com&sid=c7#%F0%9F%8C%90%20ROTATING
-trojan://SoftNetConnect@213.108.20.209:8443?security=reality&pbk=h0Lem3eyDGqkye4yAMuxixCMI2EqD1EKdH9Ky0Xetjg&headerType=none&fp=chrome&spx=/&type=tcp&sni=play.google.com&sid=c7#%F0%9F%8C%90%20ROTATING
-trojan://SoftNetConnect@213.108.20.209:8443?type=tcp&security=reality&sni=play.google.com&fp=chrome&insecure=1&allowInsecure=1&pbk=h0Lem3eyDGqkye4yAMuxixCMI2EqD1EKdH9Ky0Xetjg&sid=c7&spx=/#%F0%9F%8C%90%20ROTATING
+trojan://SoftNetConnect@213.108.20.209:443?mode=auto&path=/&security=reality&extra={"xPaddingBytes":"100-1000"}&pbk=lnP3zaTgKpFJpC8IYOJZUuAedJghDQPowXJp5diOzQA&fp=chrome&spx=/&type=xhttp&sni=www.yahoo.com&sid=141b14d8#%F0%9F%8C%90%20ROTATING
