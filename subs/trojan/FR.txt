@@ -1,3 +1,3 @@
-trojan://PI36027154@pumped-eft.rooster465.autos:443?security=tls#%F0%9F%87%AB%F0%9F%87%B7%20FR%20France
-trojan://PI36027154@pumped-eft.rooster465.autos:443#%F0%9F%87%AB%F0%9F%87%B7%20FR%20France
-trojan://PI36027154@pumped-eft.rooster465.autos:443?security=tls#%F0%9F%87%AB%F0%9F%87%B7%20FR%20France
+trojan://humanity@104.16.7.70:443?type=ws&security=tls&path=/assignment&host=www.calmlunch.com&sni=www.calmlunch.com&allowInsecure=0#%F0%9F%87%AB%F0%9F%87%B7%20FR%20France
+trojan://humanity@104.16.7.70:443?type=ws&security=tls&path=%2Fassignment&host=www.calmlunch.com&sni=www.calmlunch.com&allowInsecure=0#%F0%9F%87%AB%F0%9F%87%B7%20FR%20France
+trojan://humanity@104.16.71.213:443/?type=ws&host=www.calmlunch.com&path=%2Fassignment&security=tls&sni=www.calmlunch.com#%F0%9F%87%AB%F0%9F%87%B7%20FR%20France
