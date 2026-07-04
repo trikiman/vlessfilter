@@ -1,3 +1,3 @@
+trojan://lcGo9bOwOB8yC7oAAI.TC=rBFs6PfVgCeF@149.28.241.235:443/?type=tcp&security=tls#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States
 trojan://lcGo9bOwOB8yC7oAAI.TC=rBFs6PfVgCeF@45.32.198.247:443/?type=tcp&security=tls#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States
-trojan://MITIVPN@172.64.32.75:443?security=tls&sni=united.App-Cloud.ir&fp=chrome&alpn=http%2F1.1&insecure=0&allowInsecure=0&type=ws&host=united.App-Cloud.ir&path=%2FMiTiVPN%3DUsa#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States
-trojan://lcGo9bOwOB8yC7oAAI.TC=rBFs6PfVgCeF@45.32.195.168:443/?type=tcp&security=tls#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States
+trojan://lcGo9bOwOB8yC7oAAI.TC=rBFs6PfVgCeF@45.32.198.247:443/?type=tcp&security=tls#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States
