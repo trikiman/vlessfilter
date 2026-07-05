@@ -1,3 +1,2 @@
-trojan://MITIVPN@www.speedtest.net:443?type=ws&security=tls&path=/MiTiVPN=DE&host=Ger.App-Cloud.ir&sni=Ger.App-Cloud.ir&alpn=h3,h2,http/1.1&fp=chrome&insecure=0&allowInsecure=0#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
-trojan://MITIVPN@45.8.211.217:443?type=ws&security=tls&path=%2FMiTiVPN%3DDE&host=D--e.App-Cloud.ir&sni=D--e.App-Cloud.ir&alpn=http%2F1.1&fp=chrome&insecure=0&allowInsecure=0#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
 trojan://MITIVPN@172.67.71.247:443?path=/MiTiVPN=DE&security=tls&alpn=h3,h2,http/1.1&insecure=0&host=Ger.App-Cloud.ir&fp=chrome&type=ws&allowInsecure=0&sni=Ger.App-Cloud.ir#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
+trojan://MITIVPN@172.67.71.247:443?path=/MiTiVPN=DE&security=tls&alpn=h3,h2,http/1.1&host=Ger.App-Cloud.ir&fp=chrome&type=ws&sni=Ger.App-Cloud.ir#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany

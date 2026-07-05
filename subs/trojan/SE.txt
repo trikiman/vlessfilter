@@ -1,3 +1,3 @@
-trojan://MiTiVPN@assets.fiverr.com:443?type=ws&security=tls&path=/MiTiVPN=Sw&host=sw-W.App-Cloud.ir&sni=sw-W.App-Cloud.ir&alpn=h3,h2,http/1.1&fp=chrome&insecure=0&allowInsecure=0#%F0%9F%87%B8%F0%9F%87%AA%20SE%20Sweden
 trojan://2458d16f560846a9af04fdc76d355b16@support.aparat.com:2087?type=xhttp&mode=packet-up&host=xn--8mqz30a05hmosugiwmz.natina.ir&path=/xn--q9jybc4&security=tls&fp=chrome&sni=xn--8mqz30a05hmosugiwmz.natina.ir&alpn=h3,h2,http/1.1#%F0%9F%87%B8%F0%9F%87%AA%20SE%20Sweden
 trojan://MiTiVPN@104.21.5.75:443?path=/MiTiVPN=Sw&security=tls&alpn=h3,h2,http/1.1&insecure=0&host=sw-W.App-Cloud.ir&fp=chrome&type=ws&allowInsecure=0&sni=sw-W.App-Cloud.ir#%F0%9F%87%B8%F0%9F%87%AA%20SE%20Sweden
+trojan://MiTiVPN@104.21.61.186:443?path=/MiTiVPN=Sw&security=tls&type=ws&sni=sw-Ws.App-Cloud.ir&insecure=0&allowInsecure=0&alpn=http/1.1&host=sw-Ws.App-Cloud.ir&fp=chrome#%F0%9F%87%B8%F0%9F%87%AA%20SE%20Sweden
