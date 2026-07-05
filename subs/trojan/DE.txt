@@ -1,3 +1,2 @@
-trojan://ZfzFChpuN4h08FphLPk52NOuMCve8nMU@91.107.181.155:10001?security=none&headerType=none&type=tcp#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
-trojan://ZfzFChpuN4h08FphLPk52NOuMCve8nMU@91.107.181.155:10001?security=none&headerType=none&type=tcp#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
-trojan://ZfzFChpuN4h08FphLPk52NOuMCve8nMU@91.107.181.155:10001?security=none&headerType=none&type=tcp#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
+trojan://------------BanV2ray------------@179.237.75.217:47740?security=reality&pbk=S6Urxz22KIfwiMpEip65mTaA8JKe_d-Ocav2KXlG0lo&headerType=none&fp=firefox&spx=%2FN37K88bsDJIUqo8&type=tcp&sni=promotion.yahoo.com&sid=f8e24e1c58f5#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
+trojan://------------BanV2ray------------@179.237.75.217:47740?security=reality&pbk=S6Urxz22KIfwiMpEip65mTaA8JKe_d-Ocav2KXlG0lo&headerType=none&fp=firefox&spx=%2FN37K88bsDJIUqo8&type=tcp&sni=promotion.yahoo.com&sid=f8e24e1c58f5#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany

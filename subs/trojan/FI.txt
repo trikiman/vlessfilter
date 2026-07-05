@@ -1,3 +1,3 @@
-trojan://Ldbgt4IUYv0S+5cFrG4vcWEbvdf8RgPGmoIXhnnOEh4=@65.109.208.236:54673?security=none&headerType=&type=tcp#%F0%9F%87%AB%F0%9F%87%AE%20FI%20Finland
-trojan://Ldbgt4IUYv0S+5cFrG4vcWEbvdf8RgPGmoIXhnnOEh4=@65.109.208.236:54673?security=none&headerType=&type=tcp#%F0%9F%87%AB%F0%9F%87%AE%20FI%20Finland
-trojan://Ldbgt4IUYv0S+5cFrG4vcWEbvdf8RgPGmoIXhnnOEh4=@65.109.208.236:54673?security=none&headerType=&type=tcp#%F0%9F%87%AB%F0%9F%87%AE%20FI%20Finland
+trojan://MiTiVPN@104.21.33.129:443?type=ws&security=tls&path=/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=Fl&host=F-l.MaQror.ir&sni=Fo-F-lL.MaQror.ir&alpn=http/1.1&fp=chrome&insecure=0&allowInsecure=0#%F0%9F%87%AB%F0%9F%87%AE%20FI%20Finland
+trojan://MiTiVPN@petrolicious.com:443?type=ws&security=tls&path=/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=Fl&host=F-l.MaQror.ir&sni=Fo-F-lL.MaQror.ir&alpn=http/1.1&fp=chrome&insecure=0&allowInsecure=0#%F0%9F%87%AB%F0%9F%87%AE%20FI%20Finland
+trojan://------------BanV2ray------------@179.237.75.217:2695?security=reality&pbk=S6Urxz22KIfwiMpEip65mTaA8JKe_d-Ocav2KXlG0lo&headerType=none&fp=firefox&spx=%2FOgdkBCKWPW9oGZx&type=tcp&sni=promotion.yahoo.com&sid=21c11ba53c#%F0%9F%87%AB%F0%9F%87%AE%20FI%20Finland
