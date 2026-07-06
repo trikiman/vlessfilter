@@ -1,3 +1,3 @@
-trojan://MITIVPN@petrolicious.com:443?type=ws&security=tls&path=/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=De&host=D-e.MaQror.ir&sni=G-Dee.MaQror.ir&alpn=http/1.1&fp=chrome&insecure=0&allowInsecure=0#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
-trojan://bpb-trojan@vless.herogoing.top:443?security=tls&type=ws&path=/tr?ed=2560#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
+trojan://MITIVPN@151.101.56.7:443?path=/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=GE&security=tls&alpn=http/1.1&host=miticonfig.global.ssl.fastly.net&fp=chrome&type=ws&sni=ssl.fastly.com#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
 trojan://MITIVPN@104.31.16.65:443?path=/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=De&security=tls&alpn=http/1.1&insecure=0&host=U-s.MaQror.ir&fp=chrome&type=ws&allowInsecure=0&sni=U-S-A.MaQror.ir#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
+trojan://MITIVPN@104.25.193.8:443?type=ws&security=tls&path=%2F---%40MiTiVPN%2F---%40MiTiVPN%2F---%40MiTiVPN%2F---%40MiTiVPN%2F---%40MiTiVPN%3DDe&host=D-e.MaQror.ir&sni=G-Dee.MaQror.ir&alpn=http%2F1.1&fp=chrome&insecure=0&allowInsecure=0#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
