@@ -1,3 +1,2 @@
-trojan://MiTiVPN@petrolicious.com:443?allowInsecure=0&sni=Fo-F-lL.MaQror.ir&alpn=http/1.1&type=ws&path=/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=Fl#%F0%9F%87%AB%F0%9F%87%AE%20FI%20Finland
+trojan://MiTiVPN@104.16.72.50:443?security=tls&sni=Fl-u-ueisi.App-Cloud.ir&alpn=http/1.1&type=ws&host=fl-ll-i.App-Cloud.ir&path=/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=fl#%F0%9F%87%AB%F0%9F%87%AE%20FI%20Finland
 trojan://MiTiVPN@199.232.78.140:443?path=/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=fl&security=tls&alpn=http/1.1&host=miticonfig.global.ssl.fastly.net&fp=chrome&type=ws&sni=ssl.fastly.com#%F0%9F%87%AB%F0%9F%87%AE%20FI%20Finland
-trojan://MiTiVPN@104.21.33.129:443?security=tls&sni=Fo-F-lL.MaQror.ir&alpn=http%2F1.1&type=ws&host=F-l.MaQror.ir&path=%2F---%40MiTiVPN%2F---%40MiTiVPN%2F---%40MiTiVPN%2F---%40MiTiVPN%2F---%40MiTiVPN%3DFl#%F0%9F%87%AB%F0%9F%87%AE%20FI%20Finland

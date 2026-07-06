@@ -1,3 +1,2 @@
-trojan://MITIVPN@104.25.193.8:443?security=tls&sni=G-Dee.MaQror.ir&alpn=http/1.1&type=ws&host=D-e.MaQror.ir&path=/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=De#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
-trojan://MITIVPN@104.31.16.65:443?security=tls&sni=U-S-A.MaQror.ir&alpn=http/1.1&type=ws&host=U-s.MaQror.ir&path=/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=De#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
-trojan://MITIVPN@104.25.193.8:443?path=/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=De&security=tls&alpn=http/1.1&insecure=0&host=D-e.MaQror.ir&fp=chrome&type=ws&allowInsecure=0&sni=G-Dee.MaQror.ir#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
+trojan://dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q@185.137.157.140:443#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
+trojan://dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q@185.137.157.145:443?security=tls&type=tcp&headerType=none&path=/#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
