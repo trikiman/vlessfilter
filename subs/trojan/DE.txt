@@ -1,2 +1,2 @@
-trojan://------------BanV2ray------------@179.237.75.217:47740?security=reality&pbk=S6Urxz22KIfwiMpEip65mTaA8JKe_d-Ocav2KXlG0lo&headerType=none&fp=firefox&spx=%2FN37K88bsDJIUqo8&type=tcp&sni=promotion.yahoo.com&sid=f8e24e1c58f5#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
-trojan://------------BanV2ray------------@179.237.75.217:47740?security=reality&pbk=S6Urxz22KIfwiMpEip65mTaA8JKe_d-Ocav2KXlG0lo&headerType=none&fp=firefox&spx=%2FN37K88bsDJIUqo8&type=tcp&sni=promotion.yahoo.com&sid=f8e24e1c58f5#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
+trojan://bpb-trojan@172.67.174.196:443?sni=wing2452.nyc.mn&fp=chrome&type=ws&path=/tr?ed=2560#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
+trojan://bpb-trojan@172.67.135.88:443?sni=vless.herogoing.top&type=ws&path=/tr?ed=2560&fp=chrome#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
