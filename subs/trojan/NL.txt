@@ -1,3 +1,3 @@
-trojan://MiTiVPN@petrolicious.com:443?type=ws&security=tls&path=/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=Nl&host=N-l.MaQror.ir&sni=NL-L-ll.MaQror.ir&alpn=http/1.1&fp=chrome&insecure=0&allowInsecure=0#%F0%9F%87%B3%F0%9F%87%B1%20NL%20Netherlands
-trojan://MiTiVPN@104.26.4.60:443?security=tls&sni=NL-L-ll.MaQror.ir&alpn=http/1.1&type=ws&host=N-l.MaQror.ir&path=/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=Nl#%F0%9F%87%B3%F0%9F%87%B1%20NL%20Netherlands
 trojan://MiTiVPN@104.16.72.2:443?security=tls&sni=nl-ll-nl.App-Cloud.ir&alpn=http/1.1&type=ws&host=sjus-kdid-iodp.App-Cloud.ir&path=/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=NL#%F0%9F%87%B3%F0%9F%87%B1%20NL%20Netherlands
+trojan://MiTiVPN@104.26.4.60:443?security=tls&sni=NL-L-ll.MaQror.ir&alpn=http/1.1&type=ws&host=N-l.MaQror.ir&path=/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=Nl#%F0%9F%87%B3%F0%9F%87%B1%20NL%20Netherlands
+trojan://MiTiVPN@104.26.4.60:443?security=tls&type=ws&sni=NL-L-ll.MaQror.ir&path=/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=Nl&host=N-l.MaQror.ir#%F0%9F%87%B3%F0%9F%87%B1%20NL%20Netherlands
