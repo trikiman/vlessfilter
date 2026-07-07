@@ -1,1 +1,2 @@
-trojan://OccIqeORGQwiNkwS@jpbgp.netvigor.cc:19128?security=tls&sni=yazhou10.dynu.net&insecure=0&allowInsecure=0&type=tcp&headerType=none#%F0%9F%87%B8%F0%9F%87%AC%20SG%20Singapore
+trojan://gcuCpQfaiVeDBdWG@jpbgp.netvigor.cc:19128?allowInsecure=0&security=tls&sni=yazhou10.dynu.net#%F0%9F%87%B8%F0%9F%87%AC%20SG%20Singapore
+trojan://gcuCpQfaiVeDBdWG@jpbgp.netvigor.cc:19128?Telegram=@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad&security=tls&insecure=0&headerType=none&type=tcp&allowInsecure=0&sni=yazhou10.dynu.net#%F0%9F%87%B8%F0%9F%87%AC%20SG%20Singapore
