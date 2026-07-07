@@ -1,3 +1,3 @@
-trojan://T9qoEuuxUEa9Dk3KxnTWrs6J8ilng9sCIf@103.125.216.68:443?sni=103.125.216.68&type=tcp&fp=chrome#%F0%9F%87%AF%F0%9F%87%B5%20JP%20Japan
-trojan://T9qoEuuxUEa9Dk3KxnTWrs6J8ilng9sCIf@103.125.216.11:443?security=tls&type=tcp&allow_insecure=0#%F0%9F%87%AF%F0%9F%87%B5%20JP%20Japan
-trojan://T9qoEuuxUEa9Dk3KxnTWrs6J8ilng9sCIf@103.125.216.68:443?security=tls&path=/#%F0%9F%87%AF%F0%9F%87%B5%20JP%20Japan
+trojan://---------------BanV2ray---------------@83.228.226.166:40179?security=reality&pbk=S6Urxz22KIfwiMpEip65mTaA8JKe_d-Ocav2KXlG0lo&headerType=none&fp=firefox&spx=%2F0z6xXPL3Sag6XUt&type=tcp&sni=promotion.yahoo.com&sid=5b77e973a2e70c48#%F0%9F%87%AF%F0%9F%87%B5%20JP%20Japan
+trojan://---------------BanV2ray---------------@83.228.226.166:40179?security=reality&pbk=S6Urxz22KIfwiMpEip65mTaA8JKe_d-Ocav2KXlG0lo&headerType=none&fp=chrome&spx=/0z6xXPL3Sag6XUt&type=tcp&sni=promotion.yahoo.com&sid=5b77e973a2e70c48#%F0%9F%87%AF%F0%9F%87%B5%20JP%20Japan
+trojan://---------------BanV2ray---------------@83.228.226.166:40179?security=reality&pbk=S6Urxz22KIfwiMpEip65mTaA8JKe_d-Ocav2KXlG0lo&headerType=none&fp=firefox&spx=%2F0z6xXPL3Sag6XUt&type=tcp&sni=promotion.yahoo.com&sid=5b77e973a2e70c48#%F0%9F%87%AF%F0%9F%87%B5%20JP%20Japan
