@@ -1,2 +1,3 @@
-trojan://bpb-trojan@104.21.26.36:443?security=tls&sni=vless.herogoing.top&fp=chrome&type=ws&path=/tr?ed=2560&allow_insecure=0#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
-trojan://bpb-trojan@172.67.174.196:443?sni=wing2452.nyc.mn&fp=chrome&type=ws&path=/tr?ed=2560#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
+trojan://MITIVPN@45.130.125.2:443?path=%2F---%40MiTiVPN%2F---%40MiTiVPN%2F---%40MiTiVPN%2F---%40MiTiVPN%2F---%40MiTiVPN%3DGE&security=tls&alpn=http%2F1.1&host=De-e-d.App-Cloud.ir&fp=chrome&type=ws&sni=deioej-ieid.App-Cloud.ir#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
+trojan://MITIVPN@45.130.125.2:443?path=/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=GE&security=tls&alpn=http/1.1&host=De-e-d.App-Cloud.ir&fp=chrome&type=ws&sni=deioej-ieid.App-Cloud.ir#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
+trojan://bpb-trojan@172.67.135.88:443?sni=vless.herogoing.top&fp=chrome&type=ws&path=/tr?ed=2560#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
