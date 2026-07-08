@@ -1,3 +1,1 @@
-trojan://t5FsyeQXkNCY6eVGiqBXmPu4..jBEpNbak@38.60.220.65:443?security=tls&type=tcp&headerType=none&path=/#%F0%9F%87%B0%F0%9F%87%B7%20KR%20South%20Korea
-trojan://t5FsyeQXkNCY6eVGiqBXmPu4..jBEpNbak@38.60.220.65:443?security=tls&type=tcp&headerType=none&path=/#%F0%9F%87%B0%F0%9F%87%B7%20KR%20South%20Korea
-trojan://t5FsyeQXkNCY6eVGiqBXmPu4..jBEpNbak@38.60.220.65:443?security=tls&type=tcp&headerType=none&path=/&allow_insecure=0#%F0%9F%87%B0%F0%9F%87%B7%20KR%20South%20Korea
+trojan://t5FsyeQXkNCY6eVGiqBXmPu4..jBEpNbak@38.60.220.65:443?security=tls&insecure=0&headerType=none&fp=chrome&type=tcp&allowInsecure=0#%F0%9F%87%B0%F0%9F%87%B7%20KR%20South%20Korea

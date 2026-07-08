@@ -4,6 +4,6 @@ vless://a6d20e79-d326-42c1-bc20-f4cecc6dc42d@ul-mexico1.09vpn.com:8443?encryptio
 vmess://eyJ2IjoiMiIsInBzIjoiW09wZW5SYXldIPCfh7Lwn4e9IE1YLTMzIiwiYWRkIjoiMTMxLjE5Ni4yNTIuNTkiLCJwb3J0IjoyMDUyMSwiaWQiOiI1ODA5OTExYS1hMTZlLTQzZDMtOTBiMC0yYzk0Y2ZjMjAzNWUiLCJzY3kiOiJhdXRvIiwibmV0Ijoid3MiLCJ0eXBlIjoibm9uZSIsInBhdGgiOiIvIn0=#%F0%9F%87%B2%F0%9F%87%BD%20MX%20Mexico
 vmess://eyJ2IjoiMiIsInBzIjoiTVgtMTMxLjE5Ni4yNTIuNTktNjM2MSIsImFkZCI6IjEzMS4xOTYuMjUyLjU5IiwicG9ydCI6IjIwNTIxIiwidHlwZSI6Im5vbmUiLCJpZCI6IjU4MDk5MTFhLWExNmUtNDNkMy05MGIwLTJjOTRjZmMyMDM1ZSIsImFpZCI6IjAiLCJuZXQiOiJ3cyIsInBhdGgiOiIvIiwiaG9zdCI6IiIsInRscyI6IiJ9#%F0%9F%87%B2%F0%9F%87%BD%20MX%20Mexico
 vmess://eyJhZGQiOiIxMzEuMTk2LjI1Mi41OSIsImlkIjoiNTgwOTkxMWEtYTE2ZS00M2QzLTkwYjAtMmM5NGNmYzIwMzVlIiwibmV0Ijoid3MiLCJwYXRoIjoiLyIsInBvcnQiOjIwNTIxLCJwcyI6InYyZ28gfCDwn4ey8J+HvSBNWCB8IFZNRVNTIHwgMzc1NTIiLCJzY3kiOiJhdXRvIiwidHlwZSI6Im5vbmUiLCJ2IjoiMiJ9#%F0%9F%87%B2%F0%9F%87%BD%20MX%20Mexico
-trojan://NX7LOtiM.=RdQTq..yxi-dm6OcQrkgE5rg@149.104.87.141:443?security=tls#%F0%9F%87%B2%F0%9F%87%BD%20MX%20Mexico
-trojan://NX7LOtiM.=RdQTq..yxi-dm6OcQrkgE5rg@149.104.87.141:443?security=tls#%F0%9F%87%B2%F0%9F%87%BD%20MX%20Mexico
-trojan://NX7LOtiM.=RdQTq..yxi-dm6OcQrkgE5rg@149.104.87.141:443?sni=149.104.87.141&type=tcp#%F0%9F%87%B2%F0%9F%87%BD%20MX%20Mexico
+trojan://NX7LOtiM.=RdQTq..yxi-dm6OcQrkgE5rg@149.104.87.141:443/?type=tcp&security=tls#%F0%9F%87%B2%F0%9F%87%BD%20MX%20Mexico
+trojan://NX7LOtiM.=RdQTq..yxi-dm6OcQrkgE5rg@149.104.87.141:443/?type=tcp&security=tls#%F0%9F%87%B2%F0%9F%87%BD%20MX%20Mexico
+trojan://NX7LOtiM.=RdQTq..yxi-dm6OcQrkgE5rg@149.104.87.141:443?allowInsecure=0#%F0%9F%87%B2%F0%9F%87%BD%20MX%20Mexico
