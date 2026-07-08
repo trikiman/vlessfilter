@@ -1,2 +1,3 @@
-trojan://OccIqeORGQwiNkwS@jpbgp.netvigor.cc:19128?sni=yazhou10.dynu.net&path=/#%F0%9F%87%B8%F0%9F%87%AC%20SG%20Singapore
-trojan://OccIqeORGQwiNkwS@jpbgp.netvigor.cc:19128?security=tls&sni=yazhou10.dynu.net#%F0%9F%87%B8%F0%9F%87%AC%20SG%20Singapore
+trojan://XG59623478@pumped-sailfish.rooster465.autos:443?security=tls#%F0%9F%87%B8%F0%9F%87%AC%20SG%20Singapore
+trojan://XG59623478@polite-husky.rooster465.autos:443?security=tls#%F0%9F%87%B8%F0%9F%87%AC%20SG%20Singapore
+trojan://XG59623478@elegant-marten.rooster465.autos:443?security=tls#%F0%9F%87%B8%F0%9F%87%AC%20SG%20Singapore
