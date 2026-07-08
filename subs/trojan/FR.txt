@@ -1,2 +1,3 @@
-trojan://humanity@104.16.174.109:443/?type=ws&host=www.ignitelimit.com&path=%2Fassignment&security=tls&sni=www.ignitelimit.com#%F0%9F%87%AB%F0%9F%87%B7%20FR%20France
-trojan://humanity@104.16.174.101:443/?type=ws&host=www.ignitelimit.com&path=%2Fassignment&security=tls&sni=www.ignitelimit.com#%F0%9F%87%AB%F0%9F%87%B7%20FR%20France
+trojan://XG59623478@new-antelope.rooster465.autos:443?security=tls#%F0%9F%87%AB%F0%9F%87%B7%20FR%20France
+trojan://XG59623478@new-antelope.rooster465.autos:443?security=tls#%F0%9F%87%AB%F0%9F%87%B7%20FR%20France
+trojan://XG59623478@new-antelope.rooster465.autos:443?security=tls#%F0%9F%87%AB%F0%9F%87%B7%20FR%20France

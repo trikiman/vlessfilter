@@ -1,3 +1,3 @@
-trojan://---------------BanV2ray---------------@83.228.226.166:1131?security=reality&pbk=S6Urxz22KIfwiMpEip65mTaA8JKe_d-Ocav2KXlG0lo&headerType=none&fp=firefox&spx=/6L8IWubOVKWXGM8&type=tcp&sni=promotion.yahoo.com&sid=21c11ba53c#%F0%9F%87%B0%F0%9F%87%BF%20KZ%20Kazakhstan
-trojan://---------------BanV2ray---------------@83.228.226.166:1131?security=reality&pbk=S6Urxz22KIfwiMpEip65mTaA8JKe_d-Ocav2KXlG0lo&headerType=none&fp=firefox&spx=%2F6L8IWubOVKWXGM8&type=tcp&sni=promotion.yahoo.com&sid=21c11ba53c#%F0%9F%87%B0%F0%9F%87%BF%20KZ%20Kazakhstan
-trojan://---------------BanV2ray---------------@83.228.226.166:1131?security=reality&pbk=S6Urxz22KIfwiMpEip65mTaA8JKe_d-Ocav2KXlG0lo&headerType=none&fp=chrome&spx=/6L8IWubOVKWXGM8&type=tcp&sni=promotion.yahoo.com&sid=21c11ba53c#%F0%9F%87%B0%F0%9F%87%BF%20KZ%20Kazakhstan
+trojan://vpn@45.82.14.144:2025?security=none&fp=chrome&type=ws&path=/&host=dns.google.com#%F0%9F%87%B0%F0%9F%87%BF%20KZ%20Kazakhstan
+trojan://vpn@45.82.14.144:2025?security=none&fp=chrome&type=ws&host=dns.google.com&path=%2f#%F0%9F%87%B0%F0%9F%87%BF%20KZ%20Kazakhstan
+trojan://vpn@45.82.14.144:2025?security=none&type=ws&host=wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc&path=%2F&ed=2048&eh=Sec-Websocket-Protocol&fp=chrome#%F0%9F%87%B0%F0%9F%87%BF%20KZ%20Kazakhstan
