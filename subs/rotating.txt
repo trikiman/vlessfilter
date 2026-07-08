@@ -53,11 +53,5 @@ vless://f86f5a03-3872-46b5-bf03-a50388a0261d@a1-tss.pages.dev:443?encryption=non
 vless://f86f5a03-3872-46b5-bf03-a50388a0261d@a1-tss.pages.dev:443?encryption=none&path=/&security=tls&type=ws&source_name=mirror_0124&provider_id=mirror_0124#%F0%9F%8C%90%20ROTATING
 vless://f86f5a03-3872-46b5-bf03-a50388a0261d@a1-tss.pages.dev:443?encryption=none&type=ws&path=%2F&security=tls#%F0%9F%8C%90%20ROTATING
 vless://f86f5a03-3872-46b5-bf03-a50388a0261d@a1-tss.pages.dev:443?encryption=none&type=ws&path=%2F&security=tls#%F0%9F%8C%90%20ROTATING
-trojan://1710442808@188.114.98.0:443?host=subb.nrshop198.workers.dev&path=%2F&sni=subb.nrshop198.workers.dev&type=ws#%F0%9F%8C%90%20ROTATING
-trojan://1710442808@188.114.98.0:443?host=subb.nrshop198.workers.dev&path=/&sni=subb.nrshop198.workers.dev&type=ws#%F0%9F%8C%90%20ROTATING
-trojan://1710442808@188.114.98.0:443?path=%2F%3Fed%3D2560&security=tls&host=subb.nrshop198.workers.dev&fp=random&type=ws&sni=subb.nrshop198.workers.dev#%F0%9F%8C%90%20ROTATING
-trojan://bpb-trojan@vless.herogoing.top:443?path=/tr?ed=2560&security=tls&insecure=0&fp=chrome&type=ws&allowInsecure=0&sni=vless.herogoing.top#%F0%9F%8C%90%20ROTATING
-trojan://bpb-trojan@vless.herogoing.top:443?security=tls&sni=vless.herogoing.top&type=ws&host=vless.herogoing.top&path=%2Ftr%3Fed%3D2560#%F0%9F%8C%90%20ROTATING
-trojan://ppmk@104.18.32.47:8443?alpn=http%2F1.1&fp=chrome&host=flat-firefly-6022.rixewi3168.workers.dev&path=%2F&sni=flat-firefly-6022.rixewi3168.workers.dev&type=ws#%F0%9F%8C%90%20ROTATING
-trojan://ppmk@104.18.32.47:8443?alpn=http/1.1&fp=chrome&host=flat-firefly-6022.rixewi3168.workers.dev&path=/&sni=flat-firefly-6022.rixewi3168.workers.dev&type=ws#%F0%9F%8C%90%20ROTATING
-trojan://ppmk@104.18.32.47:8443?type=ws&host=flat-firefly-6022.rixewi3168.workers.dev&path=%2F&security=tls&alpn=http%252F1.1&fp=chrome&sni=flat-firefly-6022.rixewi3168.workers.dev#%F0%9F%8C%90%20ROTATING
+trojan://ppmk@104.18.32.47:8443?type=ws&host=flat-firefly-6022.rixewi3168.workers.dev&path=%2F&security=tls&alpn=http%2F1.1&fp=chrome&sni=flat-firefly-6022.rixewi3168.workers.dev#%F0%9F%8C%90%20ROTATING
+trojan://ppmk@188.114.97.6:8443?type=ws&security=tls&host=flat-firefly-6022.rixewi3168.workers.dev&path=%2F&sni=flat-firefly-6022.rixewi3168.workers.dev#%F0%9F%8C%90%20ROTATING

@@ -4,5 +4,5 @@ trojan://ff5aeddc-8fea-4d17-b504-1a9fdacca802@45.130.125.160:443?host=go.appsfly
 trojan://ff5aeddc-8fea-4d17-b504-1a9fdacca802@45.130.125.160:443?host=go.appsflyer.com.r3xxe.eu.cc&path=/br-orcl&sni=go.appsflyer.com.r3xxe.eu.cc&type=ws#%F0%9F%87%A7%F0%9F%87%B7%20BR%20Brazil
 trojan://ff5aeddc-8fea-4d17-b504-1a9fdacca802@45.130.125.160:443?path=/br-orcl&security=tls&insecure=0&host=go.appsflyer.com.r3xxe.eu.cc&type=ws&allowInsecure=0&sni=go.appsflyer.com.r3xxe.eu.cc#%F0%9F%87%A7%F0%9F%87%B7%20BR%20Brazil
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpid2pOUGN3Z3o1KzFnQ3lpK3JCK25mcXVndzM4Qjd0cVZh@38.180.221.145:17283#%F0%9F%87%A7%F0%9F%87%B7%20BR%20Brazil
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpid2pOUGN3Z3o1KzFnQ3lpK3JCK25mcXVndzM4Qjd0cVZh@38.180.221.147:17283#%F0%9F%87%A7%F0%9F%87%B7%20BR%20Brazil
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpid2pOUGN3Z3o1KzFnQ3lpK3JCK25mcXVndzM4Qjd0cVZh@38.180.221.143:17283#%F0%9F%87%A7%F0%9F%87%B7%20BR%20Brazil
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpid2pOUGN3Z3o1KzFnQ3lpK3JCK25mcXVndzM4Qjd0cVZh@38.180.221.145:17283#%F0%9F%87%A7%F0%9F%87%B7%20BR%20Brazil
