@@ -1,3 +1,3 @@
 trojan://OnbLQqEtdB@43.154.124.136:26666?host=vn2.wxgqlfx.icu&path=%2FTG%40wxgqlfx&security=tls&sni=vn2.wxgqlfx.icu&type=ws#%F0%9F%87%BB%F0%9F%87%B3%20VN%20Vietnam
-trojan://OnbLQqEtdB@47.74.254.191:8900?host=vn2.wxgqlfx.icu&path=%2FTG%40wxgqlfx&security=tls&sni=vn2.wxgqlfx.icu&type=ws#%F0%9F%87%BB%F0%9F%87%B3%20VN%20Vietnam
-trojan://OnbLQqEtdB@47.76.218.163:443?host=vn2.wxgqlfx.icu&path=%2FTG%40wxgqlfx&security=tls&sni=vn2.wxgqlfx.icu&type=ws#%F0%9F%87%BB%F0%9F%87%B3%20VN%20Vietnam
+trojan://NAdtbpuyJXPH=CfKmdBqD2YVbzdvwAtuxw@38.60.252.118:443/?type=tcp&security=tls#%F0%9F%87%BB%F0%9F%87%B3%20VN%20Vietnam
+trojan://NAdtbpuyJXPH=CfKmdBqD2YVbzdvwAtuxw@38.60.252.118:443/?type=tcp&security=tls&sni=38.60.252.118#%F0%9F%87%BB%F0%9F%87%B3%20VN%20Vietnam
