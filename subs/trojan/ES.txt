@@ -1,3 +1,3 @@
 trojan://t1k5znTjT8@212.227.98.235:4433?security=none&type=ws&host=sp.cloudv.qzz.io&path=%2Ftrojan#%F0%9F%87%AA%F0%9F%87%B8%20ES%20Spain
-trojan://t1k5znTjT8@212.227.98.235:4433?security=none&type=ws&host=sp.cloudv.qzz.io&path=%2Ftrojan#%F0%9F%87%AA%F0%9F%87%B8%20ES%20Spain
-trojan://t1k5znTjT8@212.227.98.235:4433?security=none&type=ws&host=sp.cloudv.qzz.io&path=/trojan#%F0%9F%87%AA%F0%9F%87%B8%20ES%20Spain
+trojan://t1k5znTjT8@sp.cloudv.qzz.io:4433?type=ws&path=/trojan&host=sp.cloudv.qzz.io&security=none#%F0%9F%87%AA%F0%9F%87%B8%20ES%20Spain
+trojan://t1k5znTjT8@sp.cloudv.qzz.io:4433?security=none&type=ws&host=sp.cloudv.qzz.io&path=/trojan#%F0%9F%87%AA%F0%9F%87%B8%20ES%20Spain
