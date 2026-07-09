@@ -1,1 +1,2 @@
 trojan://2458d16f560846a9af04fdc76d355b16@support.aparat.com:2087?type=xhttp&mode=packet-up&host=xn--8mqz30a05hmosugiwmz.natina.ir&path=/xn--q9jybc4&security=tls&fp=chrome&sni=xn--8mqz30a05hmosugiwmz.natina.ir&alpn=h3,h2,http/1.1#%F0%9F%87%B8%F0%9F%87%AA%20SE%20Sweden
+trojan://MiTiVPN@104.21.55.230:443?security=tls&sni=wbjj-bbcs-.App-Cloud.ir&alpn=http/1.1&type=ws&host=bw--ivs-b--vvs.App-Cloud.ir&path=/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=SS-w#%F0%9F%87%B8%F0%9F%87%AA%20SE%20Sweden

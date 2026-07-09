@@ -1,6 +1,3 @@
-trojan://e2706e57-690b-fd2e-0c53-9c34e1805162@104.20.30.73:443?security=tls&sni=purple-rain-4512.erfan22.workers.dev&fp=chrome&insecure=0&allowInsecure=0&type=ws&host=purple-rain-4512.erfan22.workers.dev&path=%2Fsync#%F0%9F%8C%90%20ROTATING
-trojan://e2706e57-690b-fd2e-0c53-9c34e1805162@104.20.30.73:443?security=tls&sni=purple-rain-4512.erfan22.workers.dev&fp=chrome&insecure=0&allowInsecure=0&type=ws&host=purple-rain-4512.erfan22.workers.dev&path=/sync#%F0%9F%8C%90%20ROTATING
-trojan://e2706e57-690b-fd2e-0c53-9c34e1805162@104.20.30.73:443?security=tls&sni=purple-rain-4512.erfan22.workers.dev&fp=chrome&type=ws&host=purple-rain-4512.erfan22.workers.dev&path=%2Fsync#%F0%9F%8C%90%20ROTATING
-trojan://ppmk@104.18.32.47:8443?alpn=http%252F1.1&fp=chrome&host=flat-firefly-6022.rixewi3168.workers.dev&path=%2F&sni=flat-firefly-6022.rixewi3168.workers.dev&type=ws#%F0%9F%8C%90%20ROTATING
-trojan://ppmk@188.114.97.6:8443?type=ws&security=tls&host=flat-firefly-6022.rixewi3168.workers.dev&path=/&sni=flat-firefly-6022.rixewi3168.workers.dev#%F0%9F%8C%90%20ROTATING
+trojan://123444@104.17.122.10:2083?path=/?ed=2560&security=tls&host=northrendserver.sherekontop.workers.dev&fp=chrome&type=ws&sni=northrendserver.sherekontop.workers.dev#%F0%9F%8C%90%20ROTATING
 trojan://r137979f@104.19.63.25:443?encryption=none&security=tls&sni=sheleqaz.emotionreza.workers.dev&fp=random&type=ws&host=sheleqaz.emotionreza.workers.dev&path=%2F%3Fed%3D2560#%F0%9F%8C%90%20ROTATING
+trojan://r137979f@162.159.153.212:2087?type=ws&host=sheleqaz.emotionreza.workers.dev&path=%2F&security=tls&fp=chrome&sni=sheleqaz.emotionreza.workers.dev#%F0%9F%8C%90%20ROTATING
