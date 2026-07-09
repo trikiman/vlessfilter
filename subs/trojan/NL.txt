@@ -1,3 +1,3 @@
-trojan://XG59623478@renewed-chigger.rooster465.autos:443?security=tls#%F0%9F%87%B3%F0%9F%87%B1%20NL%20Netherlands
+trojan://MiTiVPN@162.159.8.123:443?path=%2F---%40MiTiVPN%2F---%40MiTiVPN%2F---%40MiTiVPN%2F---%40MiTiVPN%2F---%40MiTiVPN%3DnLL&security=tls&alpn=http%2F1.1&host=n-la-nbad.App-Cloud.ir&fp=chrome&type=ws&sni=nland-o-nl.App-Cloud.ir#%F0%9F%87%B3%F0%9F%87%B1%20NL%20Netherlands
 trojan://XG59623478@renewed-chigger.rooster465.autos:443?allowInsecure=0#%F0%9F%87%B3%F0%9F%87%B1%20NL%20Netherlands
 trojan://XG59623478@renewed-chigger.rooster465.autos:443?security=tls#%F0%9F%87%B3%F0%9F%87%B1%20NL%20Netherlands

@@ -1,3 +1,3 @@
 trojan://ZfzFChpuN4h08FphLPk52NOuMCve8nMU@145.63.136.171:10001?security=none&headerType=http&type=tcp#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States
-trojan://lcGo9bOwOB8yC7oAAI.TC=rBFs6PfVgCeF@45.32.198.247:443/?type=tcp&security=tls#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States
-trojan://lcGo9bOwOB8yC7oAAI.TC=rBFs6PfVgCeF@149.28.241.235:443?allowInsecure=0&sni=149.28.241.235#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States
+trojan://ZfzFChpuN4h08FphLPk52NOuMCve8nMU@145.63.136.171:10001?security=none&headerType=http&type=tcp#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States
+trojan://lcGo9bOwOB8yC7oAAI.TC=rBFs6PfVgCeF@45.32.195.168:443/?type=tcp&security=tls#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States

@@ -1,2 +1,3 @@
-trojan://humanity@43.169.18.179:443?Telegram=@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad&type=ws&security=tls&path=/assignment&host=www.creationlong.org&sni=www.creationlong.org&allowInsecure=0#%F0%9F%87%B5%F0%9F%87%B1%20PL%20Poland
-trojan://humanity@43.169.18.179:443?host=www.creationlong.org&path=%2Fassignment&sni=www.creationlong.org&type=ws#%F0%9F%87%B5%F0%9F%87%B1%20PL%20Poland
+trojan://PI36027154@upright-hamster.rooster465.autos:443?security=tls&sni=upright-hamster.rooster465.autos#%F0%9F%87%B5%F0%9F%87%B1%20PL%20Poland
+trojan://PI36027154@upright-hamster.rooster465.autos:443?security=tls&sni=upright-hamster.rooster465.autos#%F0%9F%87%B5%F0%9F%87%B1%20PL%20Poland
+trojan://PI36027154@upright-hamster.rooster465.autos:443?security=tls&sni=upright-hamster.rooster465.autos#%F0%9F%87%B5%F0%9F%87%B1%20PL%20Poland

@@ -1,1 +1,2 @@
-trojan://MITIVPN@162.159.38.119:443?path=%2F---%40MiTiVPN%2F---%40MiTiVPN%2F---%40MiTiVPN%2F---%40MiTiVPN%2F---%40MiTiVPN%3DGer&security=tls&alpn=http%2F1.1&host=De1-2-3.App-Cloud.ir&fp=chrome&type=ws&sni=de-jodo.App-Cloud.ir#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
+trojan://MITIVPN@162.159.38.119:443?path=%2F---%40MiTiVPN%2F---%40MiTiVPN%2F---%40MiTiVPN%2F---%40MiTiVPN%2F---%40MiTiVPN%3DDEE&security=tls&alpn=http%2F1.1&host=De1-2-3.Maqror.ir&fp=chrome&type=ws&sni=de-ms.Maqror.ir#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
+trojan://dh-Ws-YoJIgTYLZ-A5VljeduVse-vhDl7Q@185.137.157.145:443#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
