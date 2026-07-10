@@ -1,3 +1,1 @@
-trojan://humanity@104.16.250.22:443?path=%2Fassignment&security=tls&insecure=0&fp=chrome&type=ws&allowInsecure=0&sni=www.multiplydose.com#%F0%9F%87%B3%F0%9F%87%B1%20NL%20Netherlands
-trojan://humanity@104.16.250.22:443?path=%2Fassignment&security=tls&insecure=0&fp=chrome&type=ws&allowInsecure=0&sni=www.multiplydose.com#%F0%9F%87%B3%F0%9F%87%B1%20NL%20Netherlands
-trojan://humanity@104.16.24.132:443?type=ws&security=tls&host=www.multiplydose.com&path=//assignment&sni=www.multiplydose.com&alpn=h2,http/1.1#%F0%9F%87%B3%F0%9F%87%B1%20NL%20Netherlands
+trojan://MiTiVPN@162.159.8.123:443?path=%2F---%40MiTiVPN%2F---%40MiTiVPN%2F---%40MiTiVPN%2F---%40MiTiVPN%2F---%40MiTiVPN%3DnLL&security=tls&alpn=http%2F1.1&host=n-la-nbad.App-Cloud.ir&fp=chrome&type=ws&sni=nland-o-nl.App-Cloud.ir#%F0%9F%87%B3%F0%9F%87%B1%20NL%20Netherlands
