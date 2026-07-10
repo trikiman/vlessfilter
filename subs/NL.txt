@@ -5,8 +5,8 @@ vmess://eyJhZGQiOiJobDExMi5jb3dqdW1wLnNpdGUiLCJhaWQiOiIwIiwiYWxwbiI6IiIsImZwIjoi
 vmess://eyJhZGQiOiJobDExMi5jb3dqdW1wLnNpdGUiLCJhaWQiOiIwIiwiYWxwbiI6IiIsImZwIjoiIiwiaG9zdCI6ImhsMTEyLmNvd2p1bXAuc2l0ZSIsImlkIjoiMGJmMWNlYWQtYmRkNC00NjkyLWIzZDQtNjg2NmNjYjlmMzdhIiwibmV0Ijoid3MiLCJwYXRoIjoiLyIsInBvcnQiOiI0NDMiLCJwcyI6IvCfj6A5NEBvbmVjbGlja3ZwbmtleXMiLCJzY3kiOiJhdXRvIiwic25pIjoiaGwxMTIuY293anVtcC5zaXRlIiwidGxzIjoidGxzIiwidHlwZSI6IiIsInYiOiIyIn0#%F0%9F%87%B3%F0%9F%87%B1%20NL%20Netherlands
 vmess://eyJhZGQiOiJobDExMi5jb3dqdW1wLnNpdGUiLCJpZCI6IjBiZjFjZWFkLWJkZDQtNDY5Mi1iM2Q0LTY4NjZjY2I5ZjM3YSIsInBvcnQiOiI0NDMiLCJzY3kiOiJhdXRvIiwidiI6IjIiLCJuZXQiOiJ3cyIsImhvc3QiOiJobDExMi5jb3dqdW1wLnNpdGUiLCJwYXRoIjoiLyIsInRscyI6InRscyIsImFscG4iOiIiLCJmcCI6IiIsInNuaSI6IiIsInBzIjoiW/Cfh7Pwn4exXSBbdm0tdGwtd3NdIFsyNjA3MDktMDIyMDE1LjMyMF0ifQo=#%F0%9F%87%B3%F0%9F%87%B1%20NL%20Netherlands
 trojan://XG59623478@renewed-chigger.rooster465.autos:443?security=tls#%F0%9F%87%B3%F0%9F%87%B1%20NL%20Netherlands
-trojan://XG59623478@renewed-chigger.rooster465.autos:443?allowInsecure=0#%F0%9F%87%B3%F0%9F%87%B1%20NL%20Netherlands
-trojan://XG59623478@renewed-chigger.rooster465.autos:443?security=tls#%F0%9F%87%B3%F0%9F%87%B1%20NL%20Netherlands
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpXTU5GRmpRcWRGTlg0b0RvMWIyTFZP@5.253.59.156:32140#%F0%9F%87%B3%F0%9F%87%B1%20NL%20Netherlands
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpXTU5GRmpRcWRGTlg0b0RvMWIyTFZP@5.253.59.156:32140#%F0%9F%87%B3%F0%9F%87%B1%20NL%20Netherlands
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpXTU5GRmpRcWRGTlg0b0RvMWIyTFZP@5.253.59.156:32140#%F0%9F%87%B3%F0%9F%87%B1%20NL%20Netherlands
+trojan://XG59623478@renewed-chigger.rooster465.autos:443?security=tls&insecure=0&headerType=none&type=tcp&allowInsecure=0#%F0%9F%87%B3%F0%9F%87%B1%20NL%20Netherlands
+trojan://XG59623478@renewed-chigger.rooster465.autos:443?security=tls&insecure=0&headerType=none&type=tcp&allowInsecure=0#%F0%9F%87%B3%F0%9F%87%B1%20NL%20Netherlands
+ss://YWVzLTI1Ni1nY206ZmFCQW9ENTRrODdVSkc3@109.104.154.163:2375#%F0%9F%87%B3%F0%9F%87%B1%20NL%20Netherlands
+ss://YWVzLTI1Ni1nY206ZmFCQW9ENTRrODdVSkc3@109.104.154.163:2375#%F0%9F%87%B3%F0%9F%87%B1%20NL%20Netherlands
+ss://YWVzLTI1Ni1nY206ZmFCQW9ENTRrODdVSkc3@109.104.154.163:2375#%F0%9F%87%B3%F0%9F%87%B1%20NL%20Netherlands

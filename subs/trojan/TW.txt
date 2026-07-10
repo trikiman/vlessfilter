@@ -1,1 +1,1 @@
-trojan://9bae11fd9fc7b41b4dcffc0bfbc63613@103.159.89.90:443?sni=tw.pitopone.com&peer=tw.pitopone.com&security=tls#%F0%9F%87%B9%F0%9F%87%BC%20TW%20Taiwan
+trojan://3632736327@tw060401.tmdsb.org:1321?allowInsecure=0&sni=tw060401.tmdsb.org#%F0%9F%87%B9%F0%9F%87%BC%20TW%20Taiwan

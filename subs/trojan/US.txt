@@ -1,2 +1,2 @@
-trojan://ZfzFChpuN4h08FphLPk52NOuMCve8nMU@145.63.136.171:10001?security=none&headerType=http&type=tcp#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States
-trojan://ZfzFChpuN4h08FphLPk52NOuMCve8nMU@145.63.136.171:10001?security=none&headerType=http&type=tcp#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States
+trojan://lcGo9bOwOB8yC7oAAI.TC=rBFs6PfVgCeF@149.28.241.235:443/?type=tcp&security=tls#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States
+trojan://MITIVPN@162.159.8.101:443?path=/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=USSA&security=tls&alpn=http/1.1&host=my-usa-ol.App-Cloud.ir&fp=chrome&type=ws&sni=UsAa-bUs.App-Cloud.ir#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States
