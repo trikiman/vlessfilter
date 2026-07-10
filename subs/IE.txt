@@ -8,5 +8,5 @@ trojan://XG59623478@singular-lark.rooster465.autos:443?security=tls&sni=singular
 trojan://XG59623478@singular-lark.rooster465.autos:443?security=tls&sni=singular-lark.rooster465.autos#%F0%9F%87%AE%F0%9F%87%AA%20IE%20Ireland
 trojan://XG59623478@singular-lark.rooster465.autos:443?security=tls&sni=singular-lark.rooster465.autos#%F0%9F%87%AE%F0%9F%87%AA%20IE%20Ireland
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpJNlJzU1VJWXJLSHBJMjZK@20.223.152.73:443#%F0%9F%87%AE%F0%9F%87%AA%20IE%20Ireland
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpJNlJzU1VJWXJLSHBJMjZK@20.223.152.73:443#%F0%9F%87%AE%F0%9F%87%AA%20IE%20Ireland
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpJNlJzU1VJWXJLSHBJMjZK@20.223.152.73:443#%F0%9F%87%AE%F0%9F%87%AA%20IE%20Ireland
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpJNlJzU1VJWXJLSHBJMjZK@20.223.152.73:443?outline=1&prefix=POST o341ca5w#%F0%9F%87%AE%F0%9F%87%AA%20IE%20Ireland
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpJNlJzU1VJWXJLSHBJMjZK@20.223.152.73:443?outline=1&prefix=POST o341ca5w#%F0%9F%87%AE%F0%9F%87%AA%20IE%20Ireland
