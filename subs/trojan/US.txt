@@ -1,3 +1,3 @@
-trojan://lcGo9bOwOB8yC7oAAI.TC=rBFs6PfVgCeF@149.28.241.235:443?security=tls&sni=149.28.241.235#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States
-trojan://lcGo9bOwOB8yC7oAAI.TC=rBFs6PfVgCeF@149.28.241.235:443?security=tls&amp;sni=149.28.241.235#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States
-trojan://lcGo9bOwOB8yC7oAAI.TC=rBFs6PfVgCeF@149.28.241.235:443?security=tls&sni=149.28.241.235#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States
+trojan://MITIVPN@170.114.45.6:443?path=/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=U-s&security=tls&alpn=http/1.1&sni=my-usa-ol.MaQRor.Ir&fp=chrome&type=ws&sni=UsAa-bUs.MaQRor.Ir#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States
+trojan://lcGo9bOwOB8yC7oAAI.TC=rBFs6PfVgCeF@149.28.241.235:443/?type=tcp&security=tls#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States
+trojan://lcGo9bOwOB8yC7oAAI.TC=rBFs6PfVgCeF@149.28.241.235:443/?type=tcp&security=tls#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States
