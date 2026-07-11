@@ -1,10 +1,9 @@
 vless://a4caef32-090f-4f17-b7fa-2808f205620d@64.49.46.225:57502?type=tcp&encryption=none&security=reality&pbk=IOAu39FSiRk_VX4sfzCVZorWhUY0ikftPdHqcmNoY1c&fp=firefox&sni=www.tesla.com&sid=ebfeeffb94d5bd5d&spx=/&flow=xtls-rprx-vision#%F0%9F%87%AD%F0%9F%87%B0%20HK%20Hong%20Kong
 vless://a4caef32-090f-4f17-b7fa-2808f205620d@64.49.46.225:57502?type=tcp&encryption=none&security=reality&pbk=IOAu39FSiRk_VX4sfzCVZorWhUY0ikftPdHqcmNoY1c&fp=firefox&sni=www.tesla.com&sid=ebfeeffb94d5bd5d&spx=/&flow=xtls-rprx-vision#%F0%9F%87%AD%F0%9F%87%B0%20HK%20Hong%20Kong
 vless://a4caef32-090f-4f17-b7fa-2808f205620d@64.49.46.225:57502?type=tcp&encryption=none&security=reality&pbk=IOAu39FSiRk_VX4sfzCVZorWhUY0ikftPdHqcmNoY1c&fp=firefox&sni=www.tesla.com&sid=ebfeeffb94d5bd5d&spx=/&flow=xtls-rprx-vision#%F0%9F%87%AD%F0%9F%87%B0%20HK%20Hong%20Kong
-vmess://eyJhZGQiOiAiMzguMjA3LjE3Ny4xMzQiLCAiYWlkIjogIjAiLCAiaWQiOiAiMzZjZjY1NjUtYmM3MS00ZjhjLTllMzAtYTljYzYxNTZlNTgzIiwgIm5ldCI6ICJ0Y3AiLCAicG9ydCI6ICIzOTc0MiIsICJwcyI6ICJFUE9ET05JT1MiLCAic2N5IjogImF1dG8iLCAidGxzIjogIiIsICJ0eXBlIjogIiIsICJ2IjogIjIiLCAic2tpcC1jZXJ0LXZlcmlmeSI6IHRydWV9#%F0%9F%87%AD%F0%9F%87%B0%20HK%20Hong%20Kong
-trojan://XG59623478@growing-oyster.rooster465.autos:443?security=tls#%F0%9F%87%AD%F0%9F%87%B0%20HK%20Hong%20Kong
+vmess://eyJ2IjogbnVsbCwgInBzIjogIvCfh63wn4ewIDI4IC0gSEsgLSBWTWVzcyAtIDM5NzQyIiwgImFkZCI6ICIzOC4yMDcuMTc3LjEzNCIsICJwb3J0IjogMzk3NDIsICJpZCI6ICIzNmNmNjU2NS1iYzcxLTRmOGMtOWUzMC1hOWNjNjE1NmU1ODMiLCAiYWlkIjogIjAiLCAic2N5IjogImF1dG8iLCAibmV0IjogInRjcCIsICJ0eXBlIjogbnVsbCwgImhvc3QiOiBudWxsLCAiYWxwbiI6IG51bGwsICJwYXRoIjogIi8iLCAidGxzIjogIiIsICJzbmkiOiBudWxsLCAiZnAiOiBudWxsLCAibmFtZSI6ICLwn4et8J+HsCBISyA1In0=#%F0%9F%87%AD%F0%9F%87%B0%20HK%20Hong%20Kong
+vmess://eyJ2IjpudWxsLCJwcyI6IvCfh63wn4ewIEhLIDUiLCJhZGQiOiIzOC4yMDcuMTc3LjEzNCIsInBvcnQiOjM5NzQyLCJpZCI6IjM2Y2Y2NTY1LWJjNzEtNGY4Yy05ZTMwLWE5Y2M2MTU2ZTU4MyIsImFpZCI6IjAiLCJzY3kiOiJhdXRvIiwibmV0IjoidGNwIiwidHlwZSI6bnVsbCwiaG9zdCI6bnVsbCwiYWxwbiI6bnVsbCwicGF0aCI6Ii8iLCJ0bHMiOiIiLCJzbmkiOm51bGwsImZwIjpudWxsfQ==#%F0%9F%87%AD%F0%9F%87%B0%20HK%20Hong%20Kong
 trojan://XG59623478@growing-oyster.rooster465.autos:443?security=tls#%F0%9F%87%AD%F0%9F%87%B0%20HK%20Hong%20Kong
 trojan://XG59623478@growing-oyster.rooster465.autos:443?security=tls&path=%2f#%F0%9F%87%AD%F0%9F%87%B0%20HK%20Hong%20Kong
-ss://YWVzLTI1Ni1nY206N2UxZGQ0YzU1YmY4NWRhNQ@212.192.15.108:20123#%F0%9F%87%AD%F0%9F%87%B0%20HK%20Hong%20Kong
-ss://YWVzLTI1Ni1nY206N2UxZGQ0YzU1YmY4NWRhNQ@212.192.15.108:20123#%F0%9F%87%AD%F0%9F%87%B0%20HK%20Hong%20Kong
-ss://YWVzLTI1Ni1nY206N2UxZGQ0YzU1YmY4NWRhNQ@212.192.15.108:20123#%F0%9F%87%AD%F0%9F%87%B0%20HK%20Hong%20Kong
+trojan://XG59623478@growing-oyster.rooster465.autos:443?security=tls&path=/#%F0%9F%87%AD%F0%9F%87%B0%20HK%20Hong%20Kong
+ss://YWVzLTI1Ni1nY206N2UxZGQ0YzU1YmY4NWRhNQ==@212.192.15.138:20123#%F0%9F%87%AD%F0%9F%87%B0%20HK%20Hong%20Kong
