@@ -1,3 +1,3 @@
+trojan://MITIVPN@170.114.45.6:443?security=tls&sni=UsAa-bUs.MaQRor.Ir&alpn=http%2F1.1&type=ws&host=my-usa-ol.MaQRor.Ir&path=%2F---%40MiTiVPN%2F---%40MiTiVPN%2F---%40MiTiVPN%2F---%40MiTiVPN%2F---%40MiTiVPN%3DU-s#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States
+trojan://MITIVPN@162.159.38.62:443?type=ws&security=tls&host=bvck-oizksj-sWin-usje-C-o.Maqror.ir&headerType=none&path=%2F---%40MiTiVPN%2F---%40MiTiVPN%2F---%40MiTiVPN%2F---%40MiTiVPN%2F---%40MiTiVPN%3DU-s-W&fp=chrome&sni=Win-use-Cv-o.Maqror.ir&alpn=http%2F1.1#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States
 trojan://MITIVPN@170.114.45.6:443?path=/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=U-s&security=tls&alpn=http/1.1&sni=my-usa-ol.MaQRor.Ir&fp=chrome&type=ws&sni=UsAa-bUs.MaQRor.Ir#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States
-trojan://lcGo9bOwOB8yC7oAAI.TC=rBFs6PfVgCeF@149.28.241.235:443/?type=tcp&security=tls#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States
-trojan://lcGo9bOwOB8yC7oAAI.TC=rBFs6PfVgCeF@149.28.241.235:443/?type=tcp&security=tls#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States

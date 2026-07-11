@@ -3,8 +3,8 @@ vless://a4caef32-090f-4f17-b7fa-2808f205620d@64.49.46.225:57502?type=tcp&encrypt
 vless://a4caef32-090f-4f17-b7fa-2808f205620d@64.49.46.225:57502?type=tcp&encryption=none&security=reality&pbk=IOAu39FSiRk_VX4sfzCVZorWhUY0ikftPdHqcmNoY1c&fp=firefox&sni=www.tesla.com&sid=ebfeeffb94d5bd5d&spx=/&flow=xtls-rprx-vision#%F0%9F%87%AD%F0%9F%87%B0%20HK%20Hong%20Kong
 vmess://eyJhZGQiOiAiMzguMjA3LjE3Ny4xMzQiLCAiYWlkIjogIjAiLCAiaWQiOiAiMzZjZjY1NjUtYmM3MS00ZjhjLTllMzAtYTljYzYxNTZlNTgzIiwgIm5ldCI6ICJ0Y3AiLCAicG9ydCI6ICIzOTc0MiIsICJwcyI6ICJFUE9ET05JT1MiLCAic2N5IjogImF1dG8iLCAidGxzIjogIiIsICJ0eXBlIjogIiIsICJ2IjogIjIiLCAic2tpcC1jZXJ0LXZlcmlmeSI6IHRydWV9#%F0%9F%87%AD%F0%9F%87%B0%20HK%20Hong%20Kong
 trojan://XG59623478@growing-oyster.rooster465.autos:443?security=tls#%F0%9F%87%AD%F0%9F%87%B0%20HK%20Hong%20Kong
-trojan://XG59623478@growing-oyster.rooster465.autos:443?allowInsecure=0&sni=#%F0%9F%87%AD%F0%9F%87%B0%20HK%20Hong%20Kong
 trojan://XG59623478@growing-oyster.rooster465.autos:443?security=tls#%F0%9F%87%AD%F0%9F%87%B0%20HK%20Hong%20Kong
+trojan://XG59623478@growing-oyster.rooster465.autos:443?security=tls&path=%2f#%F0%9F%87%AD%F0%9F%87%B0%20HK%20Hong%20Kong
 ss://YWVzLTI1Ni1nY206N2UxZGQ0YzU1YmY4NWRhNQ@212.192.15.108:20123#%F0%9F%87%AD%F0%9F%87%B0%20HK%20Hong%20Kong
 ss://YWVzLTI1Ni1nY206N2UxZGQ0YzU1YmY4NWRhNQ@212.192.15.108:20123#%F0%9F%87%AD%F0%9F%87%B0%20HK%20Hong%20Kong
 ss://YWVzLTI1Ni1nY206N2UxZGQ0YzU1YmY4NWRhNQ@212.192.15.108:20123#%F0%9F%87%AD%F0%9F%87%B0%20HK%20Hong%20Kong
