@@ -1,8 +1,0 @@
-trojan://ppmk@104.18.32.47:8443?alpn=http%2F1.1&fp=chrome&host=flat-firefly-6022.rixewi3168.workers.dev&path=%2F&sni=flat-firefly-6022.rixewi3168.workers.dev&type=ws#%F0%9F%8C%90%20ROTATING
-trojan://ppmk@104.18.32.47:8443?security=tls&sni=flat-firefly-6022.rixewi3168.workers.dev&alpn=http%2F1.1&type=ws&host=flat-firefly-6022.rixewi3168.workers.dev&path=%2F%3Fed%3D2560#%F0%9F%8C%90%20ROTATING
-trojan://ppmk@104.18.32.47:8443?security=tls&sni=flat-firefly-6022.rixewi3168.workers.dev&alpn=http/1.1&type=ws&host=flat-firefly-6022.rixewi3168.workers.dev&path=/?ed=2560#%F0%9F%8C%90%20ROTATING
-trojan://ppmk@104.18.32.47:8443?type=ws&host=flat-firefly-6022.rixewi3168.workers.dev&path=%2F&security=tls&alpn=http%252F1.1&fp=chrome&sni=flat-firefly-6022.rixewi3168.workers.dev#%F0%9F%8C%90%20ROTATING
-trojan://ppmk@188.114.97.6:8443?type=ws&security=tls&host=flat-firefly-6022.rixewi3168.workers.dev&path=%2F&sni=flat-firefly-6022.rixewi3168.workers.dev#%F0%9F%8C%90%20ROTATING
-trojan://r137979f@162.159.153.212:2087?fp=chrome&host=sheleqaz.emotionreza.workers.dev&path=/&sni=sheleqaz.emotionreza.workers.dev&type=ws#%F0%9F%8C%90%20ROTATING
-trojan://r137979f@162.159.153.212:2087?security=tls&sni=sheleqaz.emotionreza.workers.dev&type=ws&host=sheleqaz.emotionreza.workers.dev&path=%2F#%F0%9F%8C%90%20ROTATING
-trojan://r137979f@162.159.153.212:2087?security=tls&sni=sheleqaz.emotionreza.workers.dev&type=ws&host=sheleqaz.emotionreza.workers.dev&path=/#%F0%9F%8C%90%20ROTATING
