@@ -1,3 +1,3 @@
 trojan://PI36027154@upright-hamster.rooster465.autos:443?security=tls&sni=upright-hamster.rooster465.autos#%F0%9F%87%B5%F0%9F%87%B1%20PL%20Poland
-trojan://PI36027154@upright-hamster.rooster465.autos:443?security=tls&sni=upright-hamster.rooster465.autos#%F0%9F%87%B5%F0%9F%87%B1%20PL%20Poland
+trojan://e0847a89a1664221ad7dbfa85619afc3@144.31.113.56:58371?security=reality&sni=ymail.com&fp=random&pbk=y_2T2eHweTAvMscT79ukT4yDLYyA7lLAOuSIhaxHNhI&sid=000cd4ed50cad4&spx=%2F&allowinsecure=0&type=tcp&headerType=none#%F0%9F%87%B5%F0%9F%87%B1%20PL%20Poland
 trojan://PI36027154@upright-hamster.rooster465.autos:443#%F0%9F%87%B5%F0%9F%87%B1%20PL%20Poland
