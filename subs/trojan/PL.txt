@@ -1,3 +1,3 @@
-trojan://e0847a89a1664221ad7dbfa85619afc3@144.31.113.56:58371?security=reality&sni=ymail.com&fp=random&pbk=y_2T2eHweTAvMscT79ukT4yDLYyA7lLAOuSIhaxHNhI&sid=000cd4ed50cad4&spx=%2F&allowinsecure=0&type=tcp&headerType=none#%F0%9F%87%B5%F0%9F%87%B1%20PL%20Poland
-trojan://e0847a89a1664221ad7dbfa85619afc3@144.31.113.56:58371?security=reality&sni=ymail.com&fp=random&pbk=y_2T2eHweTAvMscT79ukT4yDLYyA7lLAOuSIhaxHNhI&sid=000cd4ed50cad4&spx=%2f&type=tcp&headerType=none&path=%2f#%F0%9F%87%B5%F0%9F%87%B1%20PL%20Poland
-trojan://e0847a89a1664221ad7dbfa85619afc3@144.31.113.56:58371?security=reality&sni=ymail.com&fp=random&pbk=y_2T2eHweTAvMscT79ukT4yDLYyA7lLAOuSIhaxHNhI&sid=000cd4ed50cad4&spx=/&type=tcp&headerType=none&path=/#%F0%9F%87%B5%F0%9F%87%B1%20PL%20Poland
+trojan://humanity@104.16.147.104:443?host=www.creationlong.org&path=/assignment&security=tls&sni=www.creationlong.org&type=ws#%F0%9F%87%B5%F0%9F%87%B1%20PL%20Poland
+trojan://humanity@104.16.118.43:443?path=%2Fassignment&security=tls&insecure=0&type=ws&allowInsecure=0&sni=www.creationlong.org#%F0%9F%87%B5%F0%9F%87%B1%20PL%20Poland
+trojan://humanity@104.16.147.104:443?sni=www.creationlong.org&type=ws&host=www.creationlong.org&path=/assignment#%F0%9F%87%B5%F0%9F%87%B1%20PL%20Poland

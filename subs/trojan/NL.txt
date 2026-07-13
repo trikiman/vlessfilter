@@ -1,2 +1,3 @@
-trojan://MiTiVPN@89.116.250.135:443?path=%2F---%40MiTiVPN%2F---%40MiTiVPN%2F---%40MiTiVPN%2F---%40MiTiVPN%2F---%40MiTiVPN%3DWIN-nl&security=tls&alpn=http%2F1.1&insecure=0&host=Wihn-Nlkl--ol.App-Cloud.Ir&fp=chrome&type=ws&allowInsecure=0&sni=Win-Nll--l.App-Cloud.Ir#%F0%9F%87%B3%F0%9F%87%B1%20NL%20Netherlands
-trojan://MiTiVPN@89.116.250.135:443?path=%2F---%40MiTiVPN%2F---%40MiTiVPN%2F---%40MiTiVPN%2F---%40MiTiVPN%2F---%40MiTiVPN%3DWIN-nl&security=tls&alpn=http%2F1.1&insecure=0&host=Wihn-Nlkl--ol.App-Cloud.Ir&fp=chrome&type=ws&allowInsecure=0&sni=Win-Nll--l.App-Cloud.Ir#%F0%9F%87%B3%F0%9F%87%B1%20NL%20Netherlands
+trojan://XG59623478@renewed-chigger.rooster465.autos:443?path=%2f#%F0%9F%87%B3%F0%9F%87%B1%20NL%20Netherlands
+trojan://XG59623478@renewed-chigger.rooster465.autos:443?allowInsecure=0#%F0%9F%87%B3%F0%9F%87%B1%20NL%20Netherlands
+trojan://XG59623478@renewed-chigger.rooster465.autos:443?allowInsecure=0&sni=#%F0%9F%87%B3%F0%9F%87%B1%20NL%20Netherlands
