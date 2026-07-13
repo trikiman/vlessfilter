@@ -1,3 +1,3 @@
-trojan://bpb-trojan@vless.herogoing.top:443?type=ws&host=vless.herogoing.top&path=%2Ftr%3Fed%3D2560&security=tls&sni=vless.herogoing.top#%F0%9F%87%B3%F0%9F%87%B1%20NL%20Netherlands
-trojan://XG59623478@renewed-chigger.rooster465.autos:443?security=tls&path=/#%F0%9F%87%B3%F0%9F%87%B1%20NL%20Netherlands
+trojan://XG59623478@renewed-chigger.rooster465.autos:443?security=tls#%F0%9F%87%B3%F0%9F%87%B1%20NL%20Netherlands
+trojan://MiTiVPN@170.114.45.6:443?type=ws&security=tls&path=/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=NL-55&sni=n-la-nbvjad.MaQror.IR&sni=nlandif-o-nhdl.MaQror.IR&alpn=h2,http/1.1&fp=chrome#%F0%9F%87%B3%F0%9F%87%B1%20NL%20Netherlands
 trojan://XG59623478@renewed-chigger.rooster465.autos:443?security=tls#%F0%9F%87%B3%F0%9F%87%B1%20NL%20Netherlands
