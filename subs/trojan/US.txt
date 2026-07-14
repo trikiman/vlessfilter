@@ -1,1 +1,2 @@
-trojan://MITIVPN@162.159.38.62:443?alpn=http/1.1&fp=chrome&host=bvck-oizksj-sWin-usje-C-o.Maqror.ir&path=/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=U-s-W&sni=Win-use-Cv-o.Maqror.ir&type=ws#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States
+trojan://e2706e57-690b-fd2e-0c53-9c34e1805162@104.20.30.73:443?sni=purple-rain-4512.erfan22.workers.dev&type=ws&path=/sync&fp=chrome#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States
+trojan://e2706e57-690b-fd2e-0c53-9c34e1805162@104.20.30.73:443?sni=purple-rain-4512.erfan22.workers.dev&type=ws&path=%2Fsync&fp=chrome#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States

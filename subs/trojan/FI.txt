@@ -1,1 +1,3 @@
+trojan://MiTiVPN@basecamp.com:443?security=tls&type=ws&sni=fl-o--7-fllav.MaQror.IR&path=/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=FL-44&host=f--ls-Fvl.MaQror.IR#%F0%9F%87%AB%F0%9F%87%AE%20FI%20Finland
 trojan://MiTiVPN@104.17.122.62:443?security=tls&type=ws&sni=fl-o--7-fllav.MaQror.IR&path=/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=FL-44&host=f--ls-Fvl.MaQror.IR#%F0%9F%87%AB%F0%9F%87%AE%20FI%20Finland
+trojan://MiTiVPN@basecamp.com:443?security=tls&type=ws&sni=fl-o--7-fllav.MaQror.IR&path=/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=FL-44&host=f--ls-Fvl.MaQror.IR#%F0%9F%87%AB%F0%9F%87%AE%20FI%20Finland

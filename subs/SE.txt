@@ -1,8 +1,7 @@
 vless://7625adbb-52f7-4ff4-95f8-677471071a77@89.127.207.188:8443?type=tcp&security=reality&sni=io.ozone.ru&fp=chrome&flow=xtls-rprx-vision&pbk=A9jwrodyycJJV-apFQ91_rrh1vfJ_hSzZGNP9GBPGCM&sid=92d0c4089b6c1da3#%F0%9F%87%B8%F0%9F%87%AA%20SE%20Sweden
 vmess://eyJhZGQiOiIyMTMuMjEuMjI5LjMiLCJhaWQiOiIwIiwiaWQiOiIxMzhkOGU5ZS04MTQ0LTRmNzItOWFmYi1mNGVlMWE4MGFmYjciLCJuZXQiOiJ0Y3AiLCJwb3J0IjoiODA4NSIsInBzIjoidjJnbyB8IPCfh7Hwn4e7IExWIHwgVk1FU1MgfCA0MDI1NCIsInNjeSI6ImF1dG8iLCJ0bHMiOiIiLCJ0eXBlIjoiIiwidiI6IjIifQ==#%F0%9F%87%B8%F0%9F%87%AA%20SE%20Sweden
-trojan://MiTiVPN@89.116.250.135:443?host=bw--ivb-b--vvbcs.MaQror.IR&path=/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=SW-22&sni=Swdb-ueu-oe.MaQror.IR&type=ws#%F0%9F%87%B8%F0%9F%87%AA%20SE%20Sweden
+trojan://MiTiVPN@89.116.250.135:443?host=bw--ivb-b--vvbcs.MaQror.IR&path=%2F---%40MiTiVPN%2F---%40MiTiVPN%2F---%40MiTiVPN%2F---%40MiTiVPN%2F---%40MiTiVPN%3DSW-22&sni=Swdb-ueu-oe.MaQror.IR&type=ws#%F0%9F%87%B8%F0%9F%87%AA%20SE%20Sweden
 trojan://MiTiVPN@151.101.1.194:443?path=/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=s---W&security=tls&alpn=h2,http/1.1&sni=mitivpn--mitivpn--mitivpn-mitivpn--mitivpn-mitivpn.global.ssl.fastly.net&fp=chrome&type=ws&sni=ssl.fastly.com#%F0%9F%87%B8%F0%9F%87%AA%20SE%20Sweden
-trojan://MiTiVPN@89.116.250.135:443?type=ws&security=tls&path=/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=SW-22&sni=bw--ivb-b--vvbcs.MaQror.IR&sni=Swdb-ueu-oe.MaQror.IR&alpn=h2,http/1.1&fp=chrome#%F0%9F%87%B8%F0%9F%87%AA%20SE%20Sweden
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp5dTJYblNQV2htUWp4bjgzaUpBM0RB@207.2.120.46:3478#%F0%9F%87%B8%F0%9F%87%AA%20SE%20Sweden
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp5dTJYblNQV2htUWp4bjgzaUpBM0RB@207.2.120.46:3478#%F0%9F%87%B8%F0%9F%87%AA%20SE%20Sweden
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp5dTJYblNQV2htUWp4bjgzaUpBM0RB@207.2.120.46:3478#%F0%9F%87%B8%F0%9F%87%AA%20SE%20Sweden
