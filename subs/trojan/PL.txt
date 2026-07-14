@@ -1,2 +1,3 @@
 trojan://PI36027154@upright-hamster.rooster465.autos:443?sni=upright-hamster.rooster465.autos&type=tcp&fp=chrome#%F0%9F%87%B5%F0%9F%87%B1%20PL%20Poland
+trojan://PI36027154@upright-hamster.rooster465.autos:443?security=tls&sni=upright-hamster.rooster465.autos#%F0%9F%87%B5%F0%9F%87%B1%20PL%20Poland
 trojan://PI36027154@upright-hamster.rooster465.autos:443?sni=upright-hamster.rooster465.autos&type=tcp&fp=chrome#%F0%9F%87%B5%F0%9F%87%B1%20PL%20Poland

@@ -1,1 +1,2 @@
 trojan://3632736327@flb06181447.tmdsb.org:2398?security=tls&sni=flb06181447.tmdsb.org#%F0%9F%87%B5%F0%9F%87%AD%20PH%20Philippines
+trojan://3632736327@flb06181447.tmdsb.org:2398?security=tls&sni=flb06181447.tmdsb.org#%F0%9F%87%B5%F0%9F%87%AD%20PH%20Philippines
