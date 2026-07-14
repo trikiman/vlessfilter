@@ -1,3 +1,2 @@
-trojan://humanity@104.17.131.88:443?fp=chrome&host=www.gossipglove.com&path=%2Fassignment&sni=www.gossipglove.com&type=ws#%F0%9F%87%AB%F0%9F%87%B7%20FR%20France
-trojan://humanity@104.17.121.37:443?path=%2Fassignment&security=tls&alpn=http%2F1.1&host=www.gossipglove.com&fp=chrome&type=ws&sni=www.gossipglove.com#%F0%9F%87%AB%F0%9F%87%B7%20FR%20France
-trojan://humanity@104.16.80.73:443?encryption=none&security=tls&sni=www.gossipglove.com&fp=chrome&type=ws&path=%2Fassignment#%F0%9F%87%AB%F0%9F%87%B7%20FR%20France
+trojan://humanity@104.16.7.70:443?sni=www.calmlunch.com&type=ws&path=/assignment&fp=chrome#%F0%9F%87%AB%F0%9F%87%B7%20FR%20France
+trojan://humanity@104.16.7.70:443?Telegram=&path=/assignment&security=tls&host=www.calmlunch.com&type=ws&sni=www.calmlunch.com#%F0%9F%87%AB%F0%9F%87%B7%20FR%20France
