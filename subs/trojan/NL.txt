@@ -1,2 +1,2 @@
-trojan://MiTiVPN@89.116.250.135:443?path=%2F---%40MiTiVPN%2F---%40MiTiVPN%2F---%40MiTiVPN%2F---%40MiTiVPN%2F---%40MiTiVPN%3DWIN-nl&security=tls&alpn=http%2F1.1&insecure=0&host=Wihn-Nlkl--ol.App-Cloud.Ir&type=ws&allowInsecure=0&sni=Win-Nll--l.App-Cloud.Ir&fp=chrome#%F0%9F%87%B3%F0%9F%87%B1%20NL%20Netherlands
-trojan://humanity@104.16.7.70:443?encryption=none&security=tls&sni=www.multiplydose.com&type=ws&host=www.multiplydose.com&path=%2F%2Fassignment#%F0%9F%87%B3%F0%9F%87%B1%20NL%20Netherlands
+trojan://humanity@188.114.96.3:443/?type=ws&host=www.multiplydose.com&path=%2Fassignment&security=tls&sni=www.multiplydose.com&fp=chrome#%F0%9F%87%B3%F0%9F%87%B1%20NL%20Netherlands
+trojan://humanity@185.18.250.252:443?path=%2Fassignment&security=tls&insecure=0&type=ws&allowInsecure=0&sni=www.multiplydose.com#%F0%9F%87%B3%F0%9F%87%B1%20NL%20Netherlands
