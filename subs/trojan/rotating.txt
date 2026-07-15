@@ -1,6 +1,6 @@
-trojan://1710442808@188.114.98.0:443?host=subb.nrshop198.workers.dev&path=%2F&sni=subb.nrshop198.workers.dev&type=ws#%F0%9F%8C%90%20ROTATING
-trojan://53e812dc-ddf6-cc77-d053-16598927e29c@wispy-recipe-213f.tmjensn.workers.dev:443?encryption=none&security=tls&sni=wispy-recipe-213f.tmjensn.workers.dev&fp=chrome&type=ws&host=wispy-recipe-213f.tmjensn.workers.dev&path=/sync&allowInsecure=0#%F0%9F%8C%90%20ROTATING
-trojan://53e812dc-ddf6-cc77-d053-16598927e29c@wispy-recipe-213f.tmjensn.workers.dev:443?type=ws&host=wispy-recipe-213f.tmjensn.workers.dev&path=%2Fsync&security=tls&fp=chrome&sni=wispy-recipe-213f.tmjensn.workers.dev#%F0%9F%8C%90%20ROTATING
-trojan://bpb-trojan@104.21.59.101:443?sni=wing2452.nyc.mn&type=ws&path=/tr?ed=2560&fp=chrome#%F0%9F%8C%90%20ROTATING
-trojan://d14188397fc44bdf@www.speedtest.net:443?alpn=http%2F1.1&fp=chrome&host=ezaccess-project-d489e3.ez-267716.workers.dev&path=%2FeyJqdW5rIjoiNm4xb2ZCdUI3R0VQNXhuYyIsInByb3RvY29sIjoidHIiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0%3D%3Fed%3D2560&security=tls&sni=EZacCEss-ProjECt-D489e3.Ez-267716.worKERs.dev&type=ws#%F0%9F%8C%90%20ROTATING
-trojan://d14188397fc44bdf@www.speedtest.net:443?alpn=http/1.1&fp=chrome&host=ezaccess-project-d489e3.ez-267716.workers.dev&path=/eyJqdW5rIjoiNm4xb2ZCdUI3R0VQNXhuYyIsInByb3RvY29sIjoidHIiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=?ed=2560&security=tls&sni=EZacCEss-ProjECt-D489e3.Ez-267716.worKERs.dev&type=ws#%F0%9F%8C%90%20ROTATING
+trojan://bpb-trojan@172.67.135.88:443?security=tls&sni=vless.herogoing.top&type=ws&host=vless.herogoing.top&path=/tr?ed=2560#%F0%9F%8C%90%20ROTATING
+trojan://bpb-trojan@vless.herogoing.top:443?security=tls&type=ws&path=%2ftr%3fed%3d2560#%F0%9F%8C%90%20ROTATING
+trojan://ppmk@188.114.97.6:8443?type=ws&security=tls&host=flat-firefly-6022.rixewi3168.workers.dev&path=%2F&sni=flat-firefly-6022.rixewi3168.workers.dev#%F0%9F%8C%90%20ROTATING
+trojan://r137979f@104.19.63.25:443?encryption=none&security=tls&sni=sheleqaz.emotionreza.workers.dev&fp=chrome&type=ws&host=sheleqaz.emotionreza.workers.dev&path=/?ed=2560#%F0%9F%8C%90%20ROTATING
+trojan://r137979f@162.159.153.212:2087?encryption=none&security=tls&sni=sheleqaz.emotionreza.workers.dev&fp=chrome&type=ws&host=sheleqaz.emotionreza.workers.dev&path=%2F#%F0%9F%8C%90%20ROTATING
+trojan://r137979f@162.159.153.212:2087?host=sheleqaz.emotionreza.workers.dev&path=%2F&sni=sheleqaz.emotionreza.workers.dev&type=ws#%F0%9F%8C%90%20ROTATING
