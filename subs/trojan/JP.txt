@@ -1,3 +1,1 @@
-trojan://PI36027154@faithful-clam.rooster465.autos:443?allowInsecure=0&sni=faithful-clam.rooster465.autos#%F0%9F%87%AF%F0%9F%87%B5%20JP%20Japan
-trojan://PI36027154@faithful-clam.rooster465.autos:443?allowInsecure=0&sni=faithful-clam.rooster465.autos#%F0%9F%87%AF%F0%9F%87%B5%20JP%20Japan
-trojan://PI36027154@faithful-clam.rooster465.autos:443?allowInsecure=0&sni=faithful-clam.rooster465.autos#%F0%9F%87%AF%F0%9F%87%B5%20JP%20Japan
+trojan://CF68213490@noble-tahr.rooster465.autos:443?allowInsecure=0&sni=noble-tahr.rooster465.autos#%F0%9F%87%AF%F0%9F%87%B5%20JP%20Japan
