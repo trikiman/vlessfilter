@@ -1,1 +1,1 @@
-trojan://MiTiVPN@151.101.1.194:443?path=/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=s---W&security=tls&alpn=h2,http/1.1&sni=mitivpn--mitivpn--mitivpn-mitivpn--mitivpn-mitivpn.global.ssl.fastly.net&fp=chrome&type=ws&sni=ssl.fastly.com#%F0%9F%87%B8%F0%9F%87%AA%20SE%20Sweden
+trojan://MiTiVPN@104.16.71.48:2096?path=/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=s--ws&security=tls&alpn=h2,http/1.1&host=8282-272-283-39.MaqRoR.iR&fp=chrome&type=ws&sni=93-282-493-28.MaqRoR.iR#%F0%9F%87%B8%F0%9F%87%AA%20SE%20Sweden
