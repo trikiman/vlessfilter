@@ -1,3 +1,3 @@
-trojan://CF68213490@normal-macaque.rooster465.autos:443?sni=normal-macaque.rooster465.autos#%F0%9F%87%B8%F0%9F%87%AC%20SG%20Singapore
-trojan://CF68213490@intimate-moray.rooster465.autos:443?sni=intimate-moray.rooster465.autos&peer=intimate-moray.rooster465.autos&security=tls#%F0%9F%87%B8%F0%9F%87%AC%20SG%20Singapore
-trojan://CF68213490@immense-eagle.rooster465.autos:443?allowInsecure=0&sni=immense-eagle.rooster465.autos#%F0%9F%87%B8%F0%9F%87%AC%20SG%20Singapore
+trojan://CF68213490@bright-cicada.rooster465.autos:443?allowInsecure=0&sni=bright-cicada.rooster465.autos#%F0%9F%87%B8%F0%9F%87%AC%20SG%20Singapore
+trojan://CF68213490@18.143.179.167:443?allowInsecure=0&sni=active-hippo.rooster465.autos#%F0%9F%87%B8%F0%9F%87%AC%20SG%20Singapore
+trojan://CF68213490@sharp-scorpion.rooster465.autos:443?security=tls&sni=sharp-scorpion.rooster465.autos#%F0%9F%87%B8%F0%9F%87%AC%20SG%20Singapore

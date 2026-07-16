@@ -1,3 +1,3 @@
-trojan://FdmECD7RGw@179.237.75.28:61235?security=reality&pbk=oNsecxmNieB69yz09GhDj87Bcz4vgeokWlrZO1qJlmY&host=yahoo.com&headerType=http&fp=chrome&spx=/&type=tcp&sni=yahoo.com#%F0%9F%87%A8%F0%9F%87%AD%20CH%20Switzerland
 trojan://FdmECD7RGw@179.237.75.28:61235?security=reality&pbk=oNsecxmNieB69yz09GhDj87Bcz4vgeokWlrZO1qJlmY&host=yahoo.com&headerType=http&fp=firefox&spx=%2F&type=tcp&sni=yahoo.com#%F0%9F%87%A8%F0%9F%87%AD%20CH%20Switzerland
-trojan://FdmECD7RGw@179.237.75.28:61235?security=reality&pbk=oNsecxmNieB69yz09GhDj87Bcz4vgeokWlrZO1qJlmY&host=yahoo.com&headerType=http&fp=chrome&spx=/&type=tcp&sni=yahoo.com#%F0%9F%87%A8%F0%9F%87%AD%20CH%20Switzerland
+trojan://FdmECD7RGw@179.237.75.28:61235?security=reality&pbk=oNsecxmNieB69yz09GhDj87Bcz4vgeokWlrZO1qJlmY&host=yahoo.com&headerType=http&fp=firefox&spx=%2F&type=tcp&sni=yahoo.com#%F0%9F%87%A8%F0%9F%87%AD%20CH%20Switzerland
+trojan://FdmECD7RGw@179.237.75.28:61235?security=reality&pbk=oNsecxmNieB69yz09GhDj87Bcz4vgeokWlrZO1qJlmY&host=yahoo.com&headerType=http&fp=firefox&spx=%2F&type=tcp&sni=yahoo.com#%F0%9F%87%A8%F0%9F%87%AD%20CH%20Switzerland
