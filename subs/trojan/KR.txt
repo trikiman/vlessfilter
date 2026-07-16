@@ -1,3 +1,3 @@
-trojan://CF68213490@smooth-lark.rooster465.autos:443?allowInsecure=0&sni=smooth-lark.rooster465.autos#%F0%9F%87%B0%F0%9F%87%B7%20KR%20South%20Korea
-trojan://CF68213490@helping-shark.rooster465.autos:443?allowInsecure=0&sni=helping-shark.rooster465.autos#%F0%9F%87%B0%F0%9F%87%B7%20KR%20South%20Korea
-trojan://CF68213490@helping-shark.rooster465.autos:443?allowInsecure=0&sni=helping-shark.rooster465.autos#%F0%9F%87%B0%F0%9F%87%B7%20KR%20South%20Korea
+trojan://CF68213490@43.201.102.23:443?allowInsecure=0&sni=upward-yak.rooster465.autos#%F0%9F%87%B0%F0%9F%87%B7%20KR%20South%20Korea
+trojan://CF68213490@pure-ram.rooster465.autos:443?allowInsecure=0&sni=pure-ram.rooster465.autos#%F0%9F%87%B0%F0%9F%87%B7%20KR%20South%20Korea
+trojan://CF68213490@43.203.209.247:443?allowInsecure=0&sni=tolerant-stag.rooster465.autos#%F0%9F%87%B0%F0%9F%87%B7%20KR%20South%20Korea
