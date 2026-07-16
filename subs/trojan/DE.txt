@@ -1,3 +1,3 @@
-trojan://MITIVPN@188.114.97.6:443?path=%2F---%40MiTiVPN%2F---%40MiTiVPN%2F---%40MiTiVPN%2F---%40MiTiVPN%2F---%40MiTiVPN%3Dwin-de&security=tls&alpn=http%2F1.1&insecure=0&host=8282-282-382-28.App-Cloud.Ir&fp=chrome&type=ws&allowInsecure=0&sni=9292-283-382-282-82.App-Cloud.Ir#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
-trojan://MITIVPN@188.114.97.6:443?path=%2F---%40%4D%69%54%69%56%50%4E%2F---%40%4D%69%54%69%56%50%4E%2F---%40%4D%69%54%69%56%50%4E%2F---%40%4D%69%54%69%56%50%4E%2F---%40%4D%69%54%69%56%50%4E%3Dwin-de&security=tls&alpn=http%2F1.1&insecure=0&host=8282-282-382-28.App-Cloud.Ir&fp=chrome&type=ws&allowInsecure=0&sni=9292-283-382-282-82.App-Cloud.Ir#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
-trojan://XG59623478@18.195.11.206:443?sni=enabling-asp.rooster465.autos&type=tcp&fp=chrome#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
+trojan://CF68213490@harmless-lab.rooster465.autos:443?sni=harmless-lab.rooster465.autos&peer=harmless-lab.rooster465.autos&security=tls#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
+trojan://CF68213490@harmless-lab.rooster465.autos:443?allowInsecure=0&sni=harmless-lab.rooster465.autos#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
+trojan://CF68213490@harmless-lab.rooster465.autos:443?sni=harmless-lab.rooster465.autos&path=%2f#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany

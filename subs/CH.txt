@@ -5,5 +5,5 @@ trojan://FdmECD7RGw@179.237.75.28:61235?security=reality&pbk=oNsecxmNieB69yz09Gh
 trojan://FdmECD7RGw@179.237.75.28:61235?security=reality&pbk=oNsecxmNieB69yz09GhDj87Bcz4vgeokWlrZO1qJlmY&host=yahoo.com&headerType=http&fp=firefox&spx=%2F&type=tcp&sni=yahoo.com#%F0%9F%87%A8%F0%9F%87%AD%20CH%20Switzerland
 trojan://FdmECD7RGw@179.237.75.28:61235?security=reality&pbk=oNsecxmNieB69yz09GhDj87Bcz4vgeokWlrZO1qJlmY&host=yahoo.com&headerType=http&fp=firefox&spx=%2F&type=tcp&sni=yahoo.com#%F0%9F%87%A8%F0%9F%87%AD%20CH%20Switzerland
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpWcjA2clVfdjF2RlBZZVhxOXpic0FB@146.70.26.156:1080#%F0%9F%87%A8%F0%9F%87%AD%20CH%20Switzerland
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpWcjA2clVfdjF2RlBZZVhxOXpic0FB@195.242.213.238:1080#%F0%9F%87%A8%F0%9F%87%AD%20CH%20Switzerland
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpWcjA2clVfdjF2RlBZZVhxOXpic0FB@146.70.26.156:1080#%F0%9F%87%A8%F0%9F%87%AD%20CH%20Switzerland
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpWcjA2clVfdjF2RlBZZVhxOXpic0FB@146.70.26.156:1080#%F0%9F%87%A8%F0%9F%87%AD%20CH%20Switzerland
