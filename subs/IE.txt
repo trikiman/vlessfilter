@@ -7,6 +7,6 @@ vmess://eyJhZGQiOiAiOTEuMjUwLjI0OS4yMTkiLCAiYWlkIjogIjAiLCAiYWxwbiI6ICIiLCAiZnAi
 trojan://OD90375861@52.212.156.233:443?allowInsecure=0&sni=wired-tick.rooster465.autos#%F0%9F%87%AE%F0%9F%87%AA%20IE%20Ireland
 trojan://OD90375861@fit-calf.rooster465.autos:443?allowInsecure=0&sni=fit-calf.rooster465.autos#%F0%9F%87%AE%F0%9F%87%AA%20IE%20Ireland
 trojan://OD90375861@52.212.156.233:443?allowInsecure=0&sni=wired-tick.rooster465.autos#%F0%9F%87%AE%F0%9F%87%AA%20IE%20Ireland
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpsZ2hYM3JjRzdicVNROEw2@128.251.12.23:443#%F0%9F%87%AE%F0%9F%87%AA%20IE%20Ireland
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpsZ2hYM3JjRzdicVNROEw2@128.251.12.23:443#%F0%9F%87%AE%F0%9F%87%AA%20IE%20Ireland
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp1N01CaG5EMWtNOEdod2VZ@128.251.12.23:443#%F0%9F%87%AE%F0%9F%87%AA%20IE%20Ireland
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpsZ2hYM3JjRzdicVNROEw2@128.251.12.23:443?#%F0%9F%87%AE%F0%9F%87%AA%20IE%20Ireland
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpsZ2hYM3JjRzdicVNROEw2@128.251.12.23:443?#%F0%9F%87%AE%F0%9F%87%AA%20IE%20Ireland
