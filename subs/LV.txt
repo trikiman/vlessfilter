@@ -4,4 +4,6 @@ vmess://eyJhZGQiOiAiOTUuMTgyLjg1LjM5IiwgImFpZCI6IDAsICJpZCI6ICI0MDFhZjFjNC05YTRm
 vmess://eyJhZGQiOiAiOTUuMTgyLjg1LjM5IiwgImFpZCI6IDAsICJpZCI6ICI2YTJjOWFhYS00NDQ3LTQ3NmMtODE0ZC04MWQ2NDk4MmY0NGIiLCAibmV0IjogInRjcCIsICJwb3J0IjogIjQ3MTg0IiwgInBzIjogIvCfh7Hwn4e7ODMwNjQgfCDimqHvuI9UZWxlZ3JhbSA9IHQubWUvU09Ta2V5TkVUIiwgInRscyI6ICJub25lIiwgInYiOiAiMiJ9#%F0%9F%87%B1%F0%9F%87%BB%20LV%20Latvia
 trojan://n8X-MwE52zJ1c6TpX5ePutoVNBRF5SVM@scr.unlimitedteam.space:2053?security=tls&insecure=0&headerType=none&fp=firefox&type=tcp&allowInsecure=0&sni=scr.unlimitedteam.space#%F0%9F%87%B1%F0%9F%87%BB%20LV%20Latvia
 trojan://n8X-MwE52zJ1c6TpX5ePutoVNBRF5SVM@scr.unlimitedteam.space:2053?security=tls&insecure=0&headerType=none&fp=firefox&type=tcp&allowInsecure=0&sni=scr.unlimitedteam.space#%F0%9F%87%B1%F0%9F%87%BB%20LV%20Latvia
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpUbDN5YkU5eExsMlNwd2pRbC1sZUxldzl4VmhKRnFDTQ==@latvia.mrapanel.shop:1080#%F0%9F%87%B1%F0%9F%87%BB%20LV%20Latvia
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpWcjA2clVfdjF2RlBZZVhxOXpic0FB@195.123.209.159:1080#%F0%9F%87%B1%F0%9F%87%BB%20LV%20Latvia
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpWcjA2clVfdjF2RlBZZVhxOXpic0FB@195.123.209.159:1080#%F0%9F%87%B1%F0%9F%87%BB%20LV%20Latvia
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpWcjA2clVfdjF2RlBZZVhxOXpic0FB@195.123.209.159:1080#%F0%9F%87%B1%F0%9F%87%BB%20LV%20Latvia
