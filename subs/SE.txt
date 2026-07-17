@@ -1,6 +1,6 @@
 vless://7625adbb-52f7-4ff4-95f8-677471071a77@89.127.207.188:8443?type=tcp&security=reality&sni=io.ozone.ru&fp=chrome&flow=xtls-rprx-vision&pbk=A9jwrodyycJJV-apFQ91_rrh1vfJ_hSzZGNP9GBPGCM&sid=92d0c4089b6c1da3#%F0%9F%87%B8%F0%9F%87%AA%20SE%20Sweden
 vmess://eyJhZGQiOiIyMTMuMjEuMjI5LjMiLCJhaWQiOiIwIiwiaWQiOiIxMzhkOGU5ZS04MTQ0LTRmNzItOWFmYi1mNGVlMWE4MGFmYjciLCJuZXQiOiJ0Y3AiLCJwb3J0IjoiODA4NSIsInBzIjoidjJnbyB8IPCfh7Hwn4e7IExWIHwgVk1FU1MgfCA0MDI1NCIsInNjeSI6ImF1dG8iLCJ0bHMiOiIiLCJ0eXBlIjoiIiwidiI6IjIifQ==#%F0%9F%87%B8%F0%9F%87%AA%20SE%20Sweden
-trojan://MiTiVPN@104.16.71.48:2096?security=tls&type=ws&sni=93-282-493-28.MaqRoR.iR&path=/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=s--ws&host=8282-272-283-39.MaqRoR.iR#%F0%9F%87%B8%F0%9F%87%AA%20SE%20Sweden
+trojan://MiTiVPN@151.101.1.194:443?Telegram=@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad&path=/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=sws-s&security=tls&alpn=h2,http/1.1&sni=mitivpn--mitivpn--mitivpn-mitivpn--mitivpn-mitivpn.global.ssl.fastly.net&type=ws&sni=ssl.fastly.com&fp=edge#%F0%9F%87%B8%F0%9F%87%AA%20SE%20Sweden
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpWcjA2clVfdjF2RlBZZVhxOXpic0FB@185.117.88.9:1080#%F0%9F%87%B8%F0%9F%87%AA%20SE%20Sweden
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpWcjA2clVfdjF2RlBZZVhxOXpic0FB@185.117.88.9:1080#%F0%9F%87%B8%F0%9F%87%AA%20SE%20Sweden
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpWcjA2clVfdjF2RlBZZVhxOXpic0FB@185.117.88.9:1080#%F0%9F%87%B8%F0%9F%87%AA%20SE%20Sweden

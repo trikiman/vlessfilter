@@ -1,3 +1,3 @@
-trojan://CF68213490@13.212.190.163:443?sni=learning-wren.rooster465.autos&type=tcp&fp=chrome#%F0%9F%87%B8%F0%9F%87%AC%20SG%20Singapore
-trojan://CF68213490@13.212.190.163:443?sni=learning-wren.rooster465.autos&path=/#%F0%9F%87%B8%F0%9F%87%AC%20SG%20Singapore
-trojan://CF68213490@13.213.12.84:443?sni=immense-eagle.rooster465.autos&path=/#%F0%9F%87%B8%F0%9F%87%AC%20SG%20Singapore
+trojan://CF68213490@13.212.252.228:443?sni=prime-buzzard.rooster465.autos&type=tcp&fp=chrome#%F0%9F%87%B8%F0%9F%87%AC%20SG%20Singapore
+trojan://CF68213490@54.255.158.218:443?sni=powerful-troll.rooster465.autos&path=/#%F0%9F%87%B8%F0%9F%87%AC%20SG%20Singapore
+trojan://CF68213490@47.131.233.29:443?sni=internal-krill.rooster465.autos&path=/#%F0%9F%87%B8%F0%9F%87%AC%20SG%20Singapore
