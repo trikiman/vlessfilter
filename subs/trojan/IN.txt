@@ -1,2 +1,2 @@
+trojan://c206d543-023d-46cc-9d5a-1f0f2fc16323@188.164.248.122:443?sni=space.byu.id.yxls.eu.cc&type=ws&host=space.byu.id.yxls.eu.cc&path=/in-pdr#%F0%9F%87%AE%F0%9F%87%B3%20IN%20India
 trojan://c206d543-023d-46cc-9d5a-1f0f2fc16323@188.164.248.122:443?security=tls&sni=space.byu.id.yxls.eu.cc&type=ws&host=space.byu.id.yxls.eu.cc&path=/in-pdr#%F0%9F%87%AE%F0%9F%87%B3%20IN%20India
-trojan://c206d543-023d-46cc-9d5a-1f0f2fc16323@188.164.248.122:443?type=ws&host=space.byu.id.yxls.eu.cc&path=%2Fin-pdr&security=tls&sni=space.byu.id.yxls.eu.cc#%F0%9F%87%AE%F0%9F%87%B3%20IN%20India

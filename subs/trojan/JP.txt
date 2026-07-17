@@ -1,3 +1,3 @@
-trojan://CF68213490@13.230.252.28:443?sni=sacred-anemone.rooster465.autos&path=/#%F0%9F%87%AF%F0%9F%87%B5%20JP%20Japan
-trojan://CF68213490@54.65.240.194:443?sni=accurate-frog.rooster465.autos&path=/#%F0%9F%87%AF%F0%9F%87%B5%20JP%20Japan
-trojan://CF68213490@13.112.180.140:443?sni=settling-humpback.rooster465.autos&type=tcp&fp=chrome#%F0%9F%87%AF%F0%9F%87%B5%20JP%20Japan
+trojan://tsuchiya@161.34.39.108:443?sni=aa.ccmusic.jp&fp=chrome&type=tcp&path=%2f#%F0%9F%87%AF%F0%9F%87%B5%20JP%20Japan
+trojan://NQ26071394@grand-grub.rooster465.autos:443?allowInsecure=0&sni=grand-grub.rooster465.autos#%F0%9F%87%AF%F0%9F%87%B5%20JP%20Japan
+trojan://CF68213490@43.207.122.159:443?sni=ultimate-jaguar.rooster465.autos&path=/#%F0%9F%87%AF%F0%9F%87%B5%20JP%20Japan
