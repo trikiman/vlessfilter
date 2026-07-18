@@ -7,6 +7,6 @@ vmess://eyJhZGQiOiAiZmFtaWx5LmJ1Y2tldC54OS5rZmMtNTIwLmNvbSIsICJhaWQiOiAiMCIsICJo
 trojan://NQ26071394@thorough-falcon.rooster465.autos:443?sni=thorough-falcon.rooster465.autos&path=%2f#%F0%9F%87%B3%F0%9F%87%B1%20NL%20Netherlands
 trojan://XG59623478@upward-hedgehog.rooster465.autos:443?sni=upward-hedgehog.rooster465.autos&type=tcp&fp=chrome#%F0%9F%87%B3%F0%9F%87%B1%20NL%20Netherlands
 trojan://NQ26071394@renewed-phoenix.rooster465.autos:443?sni=renewed-phoenix.rooster465.autos&path=%2f#%F0%9F%87%B3%F0%9F%87%B1%20NL%20Netherlands
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.16:8080#%F0%9F%87%B3%F0%9F%87%B1%20NL%20Netherlands
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.17:8080#%F0%9F%87%B3%F0%9F%87%B1%20NL%20Netherlands
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.17:8080#%F0%9F%87%B3%F0%9F%87%B1%20NL%20Netherlands
+ss://YWVzLTI1Ni1nY206ZmFCQW9ENTRrODdVSkc3@109.104.154.163:2375#%F0%9F%87%B3%F0%9F%87%B1%20NL%20Netherlands
+ss://YWVzLTI1Ni1nY206ZmFCQW9ENTRrODdVSkc3@109.104.154.163:2375#%F0%9F%87%B3%F0%9F%87%B1%20NL%20Netherlands
+ss://YWVzLTI1Ni1nY206ZmFCQW9ENTRrODdVSkc3@109.104.154.163:2375#%F0%9F%87%B3%F0%9F%87%B1%20NL%20Netherlands
