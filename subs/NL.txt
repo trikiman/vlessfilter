@@ -7,3 +7,4 @@ trojan://XG59623478@upward-hedgehog.rooster465.autos:443?sni=upward-hedgehog.roo
 trojan://NQ26071394@renewed-phoenix.rooster465.autos:443?sni=renewed-phoenix.rooster465.autos&path=%2f#%F0%9F%87%B3%F0%9F%87%B1%20NL%20Netherlands
 ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@158.173.20.171:443#%F0%9F%87%B3%F0%9F%87%B1%20NL%20Netherlands
 ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M@158.173.20.171:443#%F0%9F%87%B3%F0%9F%87%B1%20NL%20Netherlands
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@158.173.20.171:443#%F0%9F%87%B3%F0%9F%87%B1%20NL%20Netherlands
