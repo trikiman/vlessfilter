@@ -3,6 +3,6 @@ vless://9bbc4303-c291-42b8-8eb4-38923f4b6cdd@89.185.81.68:443?encryption=none&ty
 vless://9bbc4303-c291-42b8-8eb4-38923f4b6cdd@89.185.81.68:443?type=tcp&security=reality&sni=yahoo.com&pbk=VKnmZTvFbnmlCDWFpZiLw8054w02QOmXmXVCFFG7T2U&sid=d5d0#%F0%9F%87%B3%F0%9F%87%B4%20NO%20Norway
 trojan://------------BanV2ray------------@179.237.75.217:2745?security=reality&pbk=S6Urxz22KIfwiMpEip65mTaA8JKe_d-Ocav2KXlG0lo&headerType=none&fp=chrome&spx=/0SiJcUgPFFMiG2S&type=tcp&sni=promotion.yahoo.com&sid=7fe58b16f2d6c3#%F0%9F%87%B3%F0%9F%87%B4%20NO%20Norway
 trojan://------------BanV2ray------------@179.237.75.217:2745?security=reality&pbk=S6Urxz22KIfwiMpEip65mTaA8JKe_d-Ocav2KXlG0lo&headerType=none&fp=chrome&spx=/0SiJcUgPFFMiG2S&type=tcp&sni=promotion.yahoo.com&sid=7fe58b16f2d6c3#%F0%9F%87%B3%F0%9F%87%B4%20NO%20Norway
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpBUmd2R1p5d0ErZ2FjZ0dWMjZCdm11MDUrd1ptUlcvaitBZFUrWjhCdDQ0PQ@185.213.23.63:990#%F0%9F%87%B3%F0%9F%87%B4%20NO%20Norway
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpBUmd2R1p5d0ErZ2FjZ0dWMjZCdm11MDUrd1ptUlcvaitBZFUrWjhCdDQ0PQ@185.213.23.63:990#%F0%9F%87%B3%F0%9F%87%B4%20NO%20Norway
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpBUmd2R1p5d0ErZ2FjZ0dWMjZCdm11MDUrd1ptUlcvaitBZFUrWjhCdDQ0PQ==@185.213.23.63:990#%F0%9F%87%B3%F0%9F%87%B4%20NO%20Norway
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpBUmd2R1p5d0ErZ2FjZ0dWMjZCdm11MDUrd1ptUlcvaitBZFUrWjhCdDQ0PQ==@185.213.23.63:990#%F0%9F%87%B3%F0%9F%87%B4%20NO%20Norway
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpBUmd2R1p5d0ErZ2FjZ0dWMjZCdm11MDUrd1ptUlcvaitBZFUrWjhCdDQ0PQ==@185.213.23.63:990#%F0%9F%87%B3%F0%9F%87%B4%20NO%20Norway
