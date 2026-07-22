@@ -11571,3 +11571,17 @@
 {"ts":"2026-07-22T11:10:28Z","host_port":"renewed-phoenix.rooster465.autos:443","proto":"trojan","alive":true,"delay_ms":549,"run_id":"29914265465"}
 {"ts":"2026-07-22T11:10:28Z","host_port":"81.208.170.142:1500","proto":"vless","alive":true,"delay_ms":1331,"run_id":"29914265465"}
 {"ts":"2026-07-22T11:10:28Z","host_port":"212.227.98.235:4433","proto":"trojan","alive":true,"delay_ms":466,"run_id":"29914265465"}
+{"ts":"2026-07-22T14:15:57Z","host_port":"82.117.225.123:443","proto":"trojan","alive":true,"delay_ms":774,"run_id":"29927095583"}
+{"ts":"2026-07-22T14:15:57Z","host_port":"82.117.225.56:443","proto":"trojan","alive":true,"delay_ms":788,"run_id":"29927095583"}
+{"ts":"2026-07-22T14:15:57Z","host_port":"82.117.225.216:443","proto":"trojan","alive":true,"delay_ms":778,"run_id":"29927095583"}
+{"ts":"2026-07-22T14:15:57Z","host_port":"63.178.193.196:443","proto":"trojan","alive":true,"delay_ms":773,"run_id":"29927095583"}
+{"ts":"2026-07-22T14:15:57Z","host_port":"18.184.4.15:443","proto":"trojan","alive":true,"delay_ms":940,"run_id":"29927095583"}
+{"ts":"2026-07-22T14:15:57Z","host_port":"185.244.208.64:443","proto":"trojan","alive":true,"delay_ms":1077,"run_id":"29927095583"}
+{"ts":"2026-07-22T14:15:57Z","host_port":"amused-peacock.rooster465.autos:443","proto":"trojan","alive":true,"delay_ms":978,"run_id":"29927095583"}
+{"ts":"2026-07-22T14:15:57Z","host_port":"funky-opossum.rooster465.autos:443","proto":"trojan","alive":true,"delay_ms":670,"run_id":"29927095583"}
+{"ts":"2026-07-22T14:15:57Z","host_port":"tops-marlin.rooster465.autos:443","proto":"trojan","alive":true,"delay_ms":662,"run_id":"29927095583"}
+{"ts":"2026-07-22T14:15:57Z","host_port":"upward-hedgehog.rooster465.autos:443","proto":"trojan","alive":true,"delay_ms":768,"run_id":"29927095583"}
+{"ts":"2026-07-22T14:15:57Z","host_port":"renewed-phoenix.rooster465.autos:443","proto":"trojan","alive":true,"delay_ms":749,"run_id":"29927095583"}
+{"ts":"2026-07-22T14:15:57Z","host_port":"81.208.170.142:1500","proto":"vless","alive":true,"delay_ms":1541,"run_id":"29927095583"}
+{"ts":"2026-07-22T14:15:57Z","host_port":"147.182.212.232:56565","proto":"vless","alive":true,"delay_ms":390,"run_id":"29927095583"}
+{"ts":"2026-07-22T14:15:57Z","host_port":"sp.cloudv.qzz.io:4433","proto":"trojan","alive":true,"delay_ms":755,"run_id":"29927095583"}
