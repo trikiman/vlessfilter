@@ -7,6 +7,6 @@ vmess://eyJhZGQiOiAiOTEuMjUwLjI0OS4yMTkiLCAiYWlkIjogIjAiLCAiYWxwbiI6ICIiLCAiZnAi
 trojan://NQ26071394@funky-opossum.rooster465.autos:443?allowInsecure=0&sni=funky-opossum.rooster465.autos#%F0%9F%87%AE%F0%9F%87%AA%20IE%20Ireland
 trojan://NQ26071394@tops-marlin.rooster465.autos:443?security=tls&sni=tops-marlin.rooster465.autos&fp=chrome&type=tcp&headerType=none&path=%2f&allow_insecure=0#%F0%9F%87%AE%F0%9F%87%AA%20IE%20Ireland
 trojan://NQ26071394@funky-opossum.rooster465.autos:443?allowInsecure=0&sni=funky-opossum.rooster465.autos#%F0%9F%87%AE%F0%9F%87%AA%20IE%20Ireland
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpoV09GZ25xN2w1b3FCRFFX@68.219.211.7:443#%F0%9F%87%AE%F0%9F%87%AA%20IE%20Ireland
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpzQ3cyYmhSWm1KaHBtZ3JM@4.210.67.30:443#%F0%9F%87%AE%F0%9F%87%AA%20IE%20Ireland
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpoV09GZ25xN2w1b3FCRFFX@68.219.211.7:443#%F0%9F%87%AE%F0%9F%87%AA%20IE%20Ireland
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpaejNjQlI5MVV4UFUwNThB@4.210.67.30:443#%F0%9F%87%AE%F0%9F%87%AA%20IE%20Ireland
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpzQ3cyYmhSWm1KaHBtZ3JM@4.210.67.30:443#%F0%9F%87%AE%F0%9F%87%AA%20IE%20Ireland
