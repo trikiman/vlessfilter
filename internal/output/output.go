@@ -125,8 +125,16 @@ func WriteProtocol(outDir, protocol string, selections []selector.CountrySelecti
 			Rotating:    len(rotating),
 			GeneratedAt: generatedAt,
 		}
-		if buf, err := json.MarshalIndent(sidecar, "", "  "); err == nil {
-			_ = os.WriteFile(filepath.Join(sidecarDir, protocol+".json"), buf, 0o644)
+		// A dropped sidecar is not cosmetic: regen-readme builds the README
+		// purely from these, so losing one silently deletes that protocol's
+		// entire section and its subscription URLs from the docs while the
+		// keys stay published. Surface the failure instead of swallowing it.
+		buf, err := json.MarshalIndent(sidecar, "", "  ")
+		if err != nil {
+			return fmt.Errorf("marshal readme sidecar [%s]: %w", protocol, err)
+		}
+		if err := os.WriteFile(filepath.Join(sidecarDir, protocol+".json"), buf, 0o644); err != nil {
+			return fmt.Errorf("write readme sidecar [%s]: %w", protocol, err)
 		}
 	}
 	return nil

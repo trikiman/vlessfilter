@@ -285,6 +285,24 @@ func sourcesListCmd(args []string) int {
 // Without this, the matrix-merge runner has no xray-knife.db to derive
 // fresh selections from, so README would be stale (showing only one
 // protocol's data, or worse, the previous run's data).
+// protocolIsPublished reports whether subs/<proto>/all.txt exists with keys in
+// it, and how many. Used to tell "this protocol legitimately has nothing to
+// show" apart from "we lost its data and are about to publish a README that
+// hides it".
+func protocolIsPublished(outDir, proto string) (bool, int) {
+	raw, err := os.ReadFile(filepath.Join(outDir, "subs", proto, "all.txt"))
+	if err != nil {
+		return false, 0
+	}
+	n := 0
+	for _, line := range strings.Split(string(raw), "\n") {
+		if strings.Contains(line, "://") {
+			n++
+		}
+	}
+	return n > 0, n
+}
+
 func regenReadmeCmd(args []string) int {
 	fs := flag.NewFlagSet("regen-readme", flag.ContinueOnError)
 	outDir := fs.String("out", ".", "Output directory (must contain subs/)")
@@ -309,6 +327,15 @@ func regenReadmeCmd(args []string) int {
 		path := filepath.Join(*outDir, ".readme-data", proto+".json")
 		raw, err := os.ReadFile(path)
 		if err != nil {
+			// A slog warning scrolls past in CI. If this protocol still has
+			// published keys, the README is about to drop its section and its
+			// subscription URLs while those keys remain live — readers simply
+			// never learn the protocol exists. Annotate so it surfaces in the
+			// Actions summary.
+			if published, n := protocolIsPublished(*outDir, proto); published {
+				fmt.Printf("::warning::README will omit %s despite %d published keys — sidecar missing at %s\n",
+					proto, n, path)
+			}
 			slog.Warn("regen-readme: sidecar missing, protocol omitted from README",
 				"protocol", proto, "path", path)
 			continue
