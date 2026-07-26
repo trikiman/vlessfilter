@@ -18,6 +18,23 @@ on:
     # Every 30 min
     - cron: '*/30 * * * *'
   workflow_dispatch:
+    inputs:
+      max_candidates:
+        description: 'Max candidates to probe (0 = whole pool)'
+        required: false
+        default: '1500'
+      target_keys:
+        description: 'Stop once this many keys verify'
+        required: false
+        default: '150'
+      probe_budget_sec:
+        description: 'Wall-clock budget for the probe sweep'
+        required: false
+        default: '900'
+      parallel:
+        description: 'Concurrent probes through the bridge'
+        required: false
+        default: '12'
   workflow_run:
     # Also run immediately after refresh.yml completes (so freshly
     # discovered keys get bridge-verified ASAP).
@@ -31,7 +48,9 @@ concurrency:
 jobs:
   bridge-verify:
     runs-on: ubuntu-latest
-    timeout-minutes: 12
+    # Must stay under the 30-min cron interval: bridge boot + probe budget
+    # (default 15 min) + commit/push, with headroom.
+    timeout-minutes: 25
     permissions:
       contents: write
     steps:
@@ -176,13 +195,51 @@ jobs:
           export PATH=$PATH:$HOME/go/bin
           set +e
 
-          # Candidate pool: every key in subs/all.txt (union of all 4 protos)
+          # Candidate pool: subs/all.txt first (already curated, so the best
+          # keys are probed first), then everything else that tested alive in
+          # all-results.csv.
+          #
+          # subs/all.txt alone is capped at 3-per-country upstream, which left
+          # this job choosing from ~115 endpoints while thousands sat measured
+          # and unused. Dedup below keeps first-seen, so the curated keys still
+          # win their slots — the CSV only extends the tail.
           if [ ! -f subs/all.txt ]; then
             echo "::error::no subs/all.txt"
             exit 1
           fi
 
-          mapfile -t raw_lines < <(grep -E "^(vless|vmess|trojan)://" subs/all.txt)
+          # Shadowsocks was excluded here on the assumption that TSPU blocks
+          # AEAD outright. A 2026-07-26 v2rayN run from the operator's actual
+          # residential connection returned 18 alive keys that were 100% SS,
+          # with zero trojan/vless surviving — the exact inverse of the tier
+          # model. The assumption is now in doubt, so SS is probed at lowest
+          # priority: it can never displace a better-tiered key, but its real
+          # pass rate lands in the reliability history instead of staying
+          # unmeasured. Re-settle the tier order from that data, not from this
+          # comment.
+          # The trailing 4 CSV columns are LatencyMs,SpeedMbps,Country,Score;
+          # a link may itself contain commas (and is then CSV-quoted), so the
+          # link is rebuilt from every field except those last 4.
+          cat > /tmp/csvlinks.awk <<'AWK'
+          NR == 1 { next }
+          NF < 5 { next }
+          $(NF-3) + 0 <= 0 { next }
+          {
+            link = $1
+            for (i = 2; i <= NF-4; i++) link = link "," $i
+            if (link ~ /^".*"$/) {
+              link = substr(link, 2, length(link)-2)
+              gsub(/""/, "\"", link)
+            }
+            if (link ~ /^(vless|vmess|trojan|ss):\/\//) print link
+          }
+          AWK
+          {
+            grep -E "^(vless|vmess|trojan|ss)://" subs/all.txt
+            [ -f all-results.csv ] && awk -F',' -f /tmp/csvlinks.awk all-results.csv
+          } > /tmp/raw-pool.txt
+          mapfile -t raw_lines < /tmp/raw-pool.txt
+          echo "Raw pool: ${#raw_lines[@]} lines (subs/all.txt + all-results.csv)"
 
           # NOTE: we deliberately do NOT prepend igareck's Reality whitelist to
           # the candidate pool. Those are Reality keys that pass the RU datacenter
@@ -204,10 +261,22 @@ jobs:
           # 1/15 alive but Trojan-TLS ~70% alive. Flipped tier order to match
           # actual residential behavior over global research consensus.
           declare -A seen_hp
-          declare -a tier_a tier_b tier_c tier_d
+          declare -a tier_a tier_b tier_c tier_d tier_e
+          # Endpoint extraction is a bash regex, not `echo | grep`: this loop
+          # now walks thousands of lines, and two subprocess spawns per line
+          # cost more wall-clock than the probing does.
+          no_endpoint=0
           for line in "${raw_lines[@]}"; do
-            hp=$(echo "$line" | grep -oE '@[^:?/#]+:[0-9]+' | head -1)
-            [ -z "$hp" ] && continue
+            if [[ "$line" =~ @([^:?/#]+):([0-9]+) ]]; then
+              hp="${BASH_REMATCH[1]}:${BASH_REMATCH[2]}"
+            else
+              # vmess:// hides add/port inside a base64 JSON body, so it never
+              # matches and is dropped here — it has never actually reached
+              # this pool despite tier D claiming to cover it. Counted rather
+              # than silently skipped; decoding belongs in the Go selector.
+              no_endpoint=$((no_endpoint + 1))
+              continue
+            fi
             [ -n "${seen_hp[$hp]:-}" ] && continue
             seen_hp[$hp]=1
 
@@ -228,6 +297,11 @@ jobs:
               tier_c+=("$line")
               continue
             fi
+            # Tier E: Shadowsocks — probed last, purely to measure it.
+            if [[ "$line" == ss://* ]]; then
+              tier_e+=("$line")
+              continue
+            fi
             # Tier D: everything else (plain VLESS TCP, vmess)
             tier_d+=("$line")
           done
@@ -243,75 +317,89 @@ jobs:
           done
           for line in "${tier_c[@]}"; do cands+=("$line"); done
           for line in "${tier_d[@]}"; do cands+=("$line"); done
-          if [ ${#cands[@]} -gt 200 ]; then
-            cands=("${cands[@]:0:200}")
+          for line in "${tier_e[@]}"; do cands+=("$line"); done
+          MAX_CANDIDATES="${{ github.event.inputs.max_candidates || '1500' }}"
+          POOL_TOTAL=${#cands[@]}
+          if [ "$MAX_CANDIDATES" -gt 0 ] && [ "$POOL_TOTAL" -gt "$MAX_CANDIDATES" ]; then
+            cands=("${cands[@]:0:$MAX_CANDIDATES}")
+            echo "::notice::pool truncated ${POOL_TOTAL} -> ${MAX_CANDIDATES} candidates ($(( POOL_TOTAL - MAX_CANDIDATES )) never probed)"
           fi
 
-          echo "Pool: ${#cands[@]} unique candidates"
+          echo "Pool: ${#cands[@]} unique candidates (of $POOL_TOTAL available)"
           echo "  Tier A (Trojan TLS):      ${#tier_a[@]}"
           echo "  Tier B (VLESS Reality):   ${#tier_b[@]}"
           echo "  Tier C (WS+TLS / xhttp):  ${#tier_c[@]}"
           echo "  Tier D (other):           ${#tier_d[@]}"
-          echo "  (SS/AEAD excluded — blocked by TSPU residential)"
+          echo "  Tier E (Shadowsocks):     ${#tier_e[@]}  (probed last — measuring the TSPU-block assumption)"
+          if [ "$no_endpoint" -gt 0 ]; then
+            echo "::notice::${no_endpoint} configs skipped — no cleartext host:port (vmess base64 bodies)"
+          fi
 
           : > /tmp/verified.txt
           : > /tmp/timings.txt
-          PASS_COUNT=0
-          FAIL_COUNT=0
-          DEADLINE=$(($(date +%s) + 480))  # 8-min budget
 
-          # Two-stage filter:
-          # Stage 1: fast cf-trace probe (4s timeout) — quickly drops dead keys.
-          # Stage 2: only stage-1 passers get tested against ipinfo + google.
-          # This cuts total test count from 3N to ~1N + 2*0.05N = 1.1N
-          # (assuming ~95% drop on stage 1 — typical decay rate).
-          for c in "${cands[@]}"; do
-            if [ $(date +%s) -gt $DEADLINE ]; then
-              echo "[TIMEOUT-BUDGET] $PASS_COUNT pass, $FAIL_COUNT fail, ${#cands[@]} pool"
-              break
-            fi
+          TARGET_KEYS="${{ github.event.inputs.target_keys || '150' }}"
+          PROBE_BUDGET="${{ github.event.inputs.probe_budget_sec || '900' }}"
+          PARALLEL="${{ github.event.inputs.parallel || '12' }}"
 
-            # Stage 1: cf-trace fast gate
-            out=$(timeout 8 proxychains4 -f /tmp/pc.conf xray-knife http -c "$c" -u "https://www.cloudflare.com/cdn-cgi/trace" -d 4000 -b 2>&1)
-            if ! echo "$out" | grep -q "✅"; then
-              FAIL_COUNT=$((FAIL_COUNT + 1))
-              continue
-            fi
-            d1=$(echo "$out" | grep -oE "Real Delay:\s*[0-9]+" | awk '{print $NF}')
+          printf '%s\n' "${cands[@]}" > /tmp/cands.txt
 
-            # Stage 2: ipinfo + google confirmation
-            stage2_ok=1
-            d_total=$d1
-            for url in "https://ipinfo.io/json" "https://www.google.com/"; do
-              out=$(timeout 12 proxychains4 -f /tmp/pc.conf xray-knife http -c "$c" -u "$url" -d 6000 -b 2>&1)
-              if ! echo "$out" | grep -q "✅"; then
-                stage2_ok=0
-                break
-              fi
-              d=$(echo "$out" | grep -oE "Real Delay:\s*[0-9]+" | awk '{print $NF}')
-              d_total=$((d_total + d))
-            done
+          # Probing is network-bound: each candidate spends most of its time
+          # waiting on a handshake through the bridge. Running these one at a
+          # time meant a 480s budget bought ~40 probes out of a 200 pool, and
+          # the sweep stopped at 15 keys — the published count was a ceiling,
+          # not a survival rate. Fan out instead, and let the budget bound the
+          # sweep rather than the serial probe latency.
+          #
+          # Stage 1: fast cf-trace gate drops dead keys cheaply.
+          # Stage 2: only stage-1 passers pay for ipinfo + google confirmation.
+          cat > /tmp/probe.sh <<'PROBE'
+          #!/usr/bin/env bash
+          c="$1"
+          # Cheap early-out so the fan-out stops near the target instead of
+          # draining the whole pool. Racy by design: overshoot is harmless.
+          if [ "$(wc -l < /tmp/timings.txt)" -ge "$TARGET_KEYS" ]; then exit 0; fi
 
-            if [ $stage2_ok -eq 1 ]; then
-              avg=$((d_total / 3))
-              # Reject high-latency (>2500ms avg through bridge)
-              if [ $avg -le 2500 ]; then
-                echo "$c" >> /tmp/verified.txt
-                echo "$avg $c" >> /tmp/timings.txt
-                PASS_COUNT=$((PASS_COUNT + 1))
-                echo "  [+$PASS_COUNT] avg=${avg}ms  $(echo $c | grep -oE '@[^:?/#]+:[0-9]+' | head -1 | tr -d @)"
-              fi
-            fi
+          out=$(timeout 8 proxychains4 -f /tmp/pc.conf xray-knife http -c "$c" -u "https://www.cloudflare.com/cdn-cgi/trace" -d 4000 -b 2>&1)
+          echo "$out" | grep -q "✅" || exit 0
+          d_total=$(echo "$out" | grep -oE "Real Delay:\s*[0-9]+" | awk '{print $NF}')
 
-            # Stop early once we have 15 verified (matches v2.2 goal: 10-20 keys)
-            if [ $PASS_COUNT -ge 15 ]; then
-              echo "[TARGET-15] hit, stopping"
-              break
-            fi
+          for url in "https://ipinfo.io/json" "https://www.google.com/"; do
+            out=$(timeout 12 proxychains4 -f /tmp/pc.conf xray-knife http -c "$c" -u "$url" -d 6000 -b 2>&1)
+            echo "$out" | grep -q "✅" || exit 0
+            d=$(echo "$out" | grep -oE "Real Delay:\s*[0-9]+" | awk '{print $NF}')
+            d_total=$((d_total + d))
           done
 
+          avg=$((d_total / 3))
+          # Reject high-latency (>2500ms avg through bridge)
+          [ "$avg" -le 2500 ] || exit 0
+          # flock keeps concurrent appends from interleaving mid-line. Piping
+          # into it avoids re-quoting $c, which carries arbitrary #fragment text.
+          printf '%s %s\n' "$avg" "$c" | flock /tmp/timings.lock tee -a /tmp/timings.txt > /dev/null
+          echo "  [+] avg=${avg}ms  $(echo "$c" | grep -oE '@[^:?/#]+:[0-9]+' | head -1 | tr -d @)"
+          PROBE
+          chmod +x /tmp/probe.sh
+          export TARGET_KEYS
+
+          START=$(date +%s)
+          # Budget bounds the sweep; already-written results survive the kill
+          # because probe.sh appends incrementally.
+          # -r so an empty pool runs nothing instead of one no-arg invocation.
+          timeout "$PROBE_BUDGET" xargs -a /tmp/cands.txt -d '\n' -r -P "$PARALLEL" -n 1 /tmp/probe.sh || true
+          ELAPSED=$(( $(date +%s) - START ))
+
+          PASS_COUNT=$(wc -l < /tmp/timings.txt)
+          cut -d' ' -f2- /tmp/timings.txt > /tmp/verified.txt
+
           echo
-          echo "Result: $PASS_COUNT verified, $FAIL_COUNT failed (out of ${#cands[@]} pool)"
+          echo "Result: $PASS_COUNT verified from ${#cands[@]} probed in ${ELAPSED}s (parallel=$PARALLEL, target=$TARGET_KEYS)"
+          if [ "$ELAPSED" -ge "$PROBE_BUDGET" ]; then
+            echo "::notice::probe sweep hit the ${PROBE_BUDGET}s budget — raise probe_budget_sec or parallel for deeper coverage"
+          fi
+          if [ "$PASS_COUNT" -ge "$TARGET_KEYS" ]; then
+            echo "::notice::hit target of ${TARGET_KEYS} keys — more may have been available; raise target_keys"
+          fi
 
           # Sort by latency, write to subs/verified-russia.txt
           if [ $PASS_COUNT -gt 0 ]; then

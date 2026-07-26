@@ -10,12 +10,16 @@ package selector
 import (
 	"context"
 	"database/sql"
+	"encoding/base64"
+	"encoding/json"
 	"errors"
 	"fmt"
 	"log/slog"
 	"math"
+	"net"
 	"net/url"
 	"sort"
+	"strconv"
 	"strings"
 
 	_ "modernc.org/sqlite" // pure-Go sqlite driver (no CGO)
@@ -75,14 +79,118 @@ func Score(r Result) float64 {
 	return WSpeed*normSpeed - WLatency*normLatency
 }
 
+// EndpointKey returns a canonical "host:port" identity for a proxy URI.
+//
+// Two configs sharing an endpoint are the same physical server reached with
+// different credentials, so publishing both buys the user no redundancy: when
+// the box dies, both keys die together. Returns "" when the endpoint can't be
+// parsed, which callers must treat as "unique" so an unparseable config is
+// never silently dropped.
+func EndpointKey(link string) string {
+	if ProtocolFromLink(link) == "vmess" {
+		return vmessEndpoint(link)
+	}
+	// vless/trojan/ss all use the userinfo@host:port form, which url.Parse
+	// handles even when the userinfo is base64.
+	u, err := url.Parse(link)
+	if err != nil {
+		return ""
+	}
+	host, port := strings.ToLower(u.Hostname()), u.Port()
+	if host == "" || port == "" {
+		return ""
+	}
+	return host + ":" + port
+}
+
+// vmessEndpoint pulls add/port out of the base64-encoded JSON body of a
+// vmess:// URI. Sources disagree on whether "port" is a JSON number or a
+// quoted string, so both are accepted.
+func vmessEndpoint(link string) string {
+	payload := strings.TrimPrefix(link, "vmess://")
+	if i := strings.IndexAny(payload, "#?"); i >= 0 {
+		payload = payload[:i]
+	}
+	raw, err := decodeBase64Loose(payload)
+	if err != nil {
+		return ""
+	}
+	var cfg struct {
+		Add  string `json:"add"`
+		Port any    `json:"port"`
+	}
+	if err := json.Unmarshal(raw, &cfg); err != nil {
+		return ""
+	}
+	var port string
+	switch v := cfg.Port.(type) {
+	case string:
+		port = v
+	case float64:
+		port = strconv.FormatInt(int64(v), 10)
+	}
+	if cfg.Add == "" || port == "" {
+		return ""
+	}
+	return strings.ToLower(cfg.Add) + ":" + port
+}
+
+// decodeBase64Loose tolerates the four base64 spellings found in the wild:
+// standard/URL-safe alphabet, padded or not.
+func decodeBase64Loose(s string) ([]byte, error) {
+	encodings := []*base64.Encoding{
+		base64.StdEncoding, base64.RawStdEncoding,
+		base64.URLEncoding, base64.RawURLEncoding,
+	}
+	var err error
+	for _, enc := range encodings {
+		var out []byte
+		if out, err = enc.DecodeString(s); err == nil {
+			return out, nil
+		}
+	}
+	return nil, err
+}
+
+// diversityKey groups endpoints that are likely the same operator, so the
+// top-3 doesn't fill up with three boxes from one rack. IPv4 hosts collapse
+// to their /24; hostnames collapse to their registrable-ish suffix (last two
+// labels). Port is included because one host serving several ports is
+// commonly several independent tenants.
+func diversityKey(endpoint string) string {
+	host, port, err := net.SplitHostPort(endpoint)
+	if err != nil {
+		return endpoint
+	}
+	if ip := net.ParseIP(host); ip != nil {
+		if v4 := ip.To4(); v4 != nil {
+			return fmt.Sprintf("%d.%d.%d.0/24:%s", v4[0], v4[1], v4[2], port)
+		}
+		return endpoint
+	}
+	if labels := strings.Split(host, "."); len(labels) > 2 {
+		return strings.Join(labels[len(labels)-2:], ".") + ":" + port
+	}
+	return endpoint
+}
+
+// TopPerCountryLimit caps how many keys each country publishes.
+const TopPerCountryLimit = 3
+
 // Top3PerCountry computes scores for each result, groups by Country, sorts
-// each group, and returns top 3 per country sorted alphabetically by code.
+// each group, and returns the top keys per country sorted alphabetically by
+// code.
 //
 // Behavior per D-07:
 //   - Empty Country → row dropped
-//   - <3 alive keys per country → partial output (1 or 2 entries)
+//   - Fewer alive keys than the limit → partial output
 //   - Tie on Score → lower LatencyMs wins
 //   - Output countries listed alphabetically by ISO code
+//
+// Selection is endpoint-aware: a given host:port may occupy at most one slot,
+// and the first pass additionally spreads picks across distinct /24s and
+// domains. A second pass backfills from already-used neighbourhoods only if
+// the country can't otherwise fill its quota, so diversity never costs supply.
 func Top3PerCountry(results []Result) []CountrySelection {
 	groups := make(map[string][]Result)
 	for _, r := range results {
@@ -102,13 +210,65 @@ func Top3PerCountry(results []Result) []CountrySelection {
 			}
 			return rs[i].LatencyMs < rs[j].LatencyMs
 		})
-		if len(rs) > 3 {
-			rs = rs[:3]
-		}
-		out = append(out, CountrySelection{Country: cc, Top: rs})
+		out = append(out, CountrySelection{Country: cc, Top: pickDiverse(rs, TopPerCountryLimit)})
 	}
 	sort.SliceStable(out, func(i, j int) bool { return out[i].Country < out[j].Country })
 	return out
+}
+
+// pickDiverse takes up to limit entries from an already score-sorted slice,
+// never repeating an endpoint and preferring unseen neighbourhoods first.
+func pickDiverse(sorted []Result, limit int) []Result {
+	picked := make([]Result, 0, limit)
+	usedEndpoint := make(map[string]bool, limit)
+	usedNeighbourhood := make(map[string]bool, limit)
+	// An unparseable endpoint can't be compared, so it's always distinct.
+	keyFor := func(r Result) (string, bool) {
+		ep := EndpointKey(r.Link)
+		return ep, ep != ""
+	}
+
+	for _, r := range sorted {
+		if len(picked) == limit {
+			return picked
+		}
+		ep, ok := keyFor(r)
+		if ok {
+			nb := diversityKey(ep)
+			if usedEndpoint[ep] || usedNeighbourhood[nb] {
+				continue
+			}
+			usedEndpoint[ep], usedNeighbourhood[nb] = true, true
+		}
+		picked = append(picked, r)
+	}
+
+	// Backfill: distinct endpoints only, neighbourhood reuse allowed.
+	for _, r := range sorted {
+		if len(picked) == limit {
+			break
+		}
+		ep, ok := keyFor(r)
+		if ok {
+			if usedEndpoint[ep] {
+				continue
+			}
+			usedEndpoint[ep] = true
+		} else if containsResult(picked, r) {
+			continue
+		}
+		picked = append(picked, r)
+	}
+	return picked
+}
+
+func containsResult(rs []Result, want Result) bool {
+	for _, r := range rs {
+		if r.Link == want.Link {
+			return true
+		}
+	}
+	return false
 }
 
 // LoadResults opens the xray-knife SQLite DB, discovers the results table and

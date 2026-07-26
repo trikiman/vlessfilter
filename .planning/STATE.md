@@ -102,8 +102,22 @@ Both are stable; cron is enabled. No long ad-hoc runs in flight.
 - Tier B: VLESS Reality — passes datacenter bridge, mixed residential
 - Tier C: WS+TLS / xhttp (CDN-fronted)
 - Tier D: plain VLESS TCP, vmess
-- Excluded: Shadowsocks AEAD (TSPU-blocked)
+- Tier E: Shadowsocks AEAD — **under measurement, no longer excluded** (see below)
 - verify-russia.yml interleaves A+B so output carries both protocols as a hedge
+
+### OPEN QUESTION (2026-07-26): the Shadowsocks exclusion is contradicted
+A v2rayN run from the operator's actual residential connection returned 18 alive
+keys that were **100% Shadowsocks**, with zero trojan/vless surviving — the exact
+inverse of the tier order above, which was set from a 2026-05-31 test.
+
+Both results cannot be right. Rather than pick one, verify-russia.yml now probes
+SS at lowest priority (Tier E), so it cannot displace a better-tiered key but its
+true pass rate lands in `.readme-data/verified-russia-history.jsonl`. **Re-settle
+the tier order from that history, not from either anecdote.**
+
+Caveat worth resolving first: SS has no TLS handshake, so a v2rayN delay probe can
+succeed on a bare TCP connect that passes real traffic nowhere. The 18 "alive" SS
+keys may be false positives. Confirm by browsing through one, not by reading its ms.
 
 ### Why bridge from `subs/RU.txt` instead of dedicated RU VPS
 - Free, self-bootstrapping (no external infra)
