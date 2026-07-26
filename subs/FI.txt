@@ -6,6 +6,6 @@ vmess://eyJ2IjogIjIiLCAicHMiOiAiXHVkODNkXHVkZDI1Sm9pbitUZWxlZ3JhbTpARmFyYWhfVlBO
 vmess://eyJhZGQiOiI2NS4xMDkuMTg5LjI1NSIsImFpZCI6IjAiLCJhbHBuIjoiIiwiZnAiOiIiLCJob3N0IjoicGxheS5nb29nbGUuY29tIiwiaWQiOiJUZWxlZ3JhbS1AQ29vb25maWctQENvb29uZmlnIiwibmV0IjoidGNwIiwicGF0aCI6Ii8iLCJwb3J0IjoiMzU0OTIiLCJwcyI6InYyZ28gfCDwn4er8J+HriBGSSB8IFZNRVNTIHwgMjI2Iiwic2N5IjoiYXV0byIsInNraXAtY2VydC12ZXJpZnkiOnRydWUsInNuaSI6IiIsInRscyI6Im5vbmUiLCJ0eXBlIjoiaHR0cCIsInYiOiIyIn0=#%F0%9F%87%AB%F0%9F%87%AE%20FI%20Finland
 trojan://MiTiVPN@104.21.48.168:2053?path=%2F---%40MiTiVPN%2F---%40MiTiVPN%2F---%40MiTiVPN%2F---%40MiTiVPN%2F---%40MiTiVPN%3Dfl-ss&security=tls&alpn=h2%2Chttp%2F1.1&host=8282-273-3762-183-9.MaqRoR.iR&fp=chrome&type=ws&sni=iri-282-38-38-2.MaqRoR.iR#%F0%9F%87%AB%F0%9F%87%AE%20FI%20Finland
 trojan://MiTiVPN@188.114.97.6:2087?security=tls&type=ws&sni=fl-bo--7---u.aPp-cLoud.IR&path=/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=f--ll&host=f--l---g--s-.aPp-cLoud.IR#%F0%9F%87%AB%F0%9F%87%AE%20FI%20Finland
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpVWlFZOWhOalZOV3dhbWFqclhBZjF2dDh1NjNuajBmRg==@31.76.80.205:8388#%F0%9F%87%AB%F0%9F%87%AE%20FI%20Finland
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpVWlFZOWhOalZOV3dhbWFqclhBZjF2dDh1NjNuajBmRg@31.76.80.205:8388#%F0%9F%87%AB%F0%9F%87%AE%20FI%20Finland
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpVWlFZOWhOalZOV3dhbWFqclhBZjF2dDh1NjNuajBmRg==@31.76.80.205:8388#%F0%9F%87%AB%F0%9F%87%AE%20FI%20Finland
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpVWlFZOWhOalZOV3dhbWFqclhBZjF2dDh1NjNuajBmRg==@31.76.80.205:8388#%F0%9F%87%AB%F0%9F%87%AE%20FI%20Finland
