@@ -8,4 +8,4 @@ trojan://MiTiVPN@104.21.48.168:2053?path=%2F---%40MiTiVPN%2F---%40MiTiVPN%2F---%
 trojan://MiTiVPN@188.114.97.6:2087?security=tls&type=ws&sni=fl-bo--7---u.aPp-cLoud.IR&path=/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN/---@MiTiVPN=f--ll&host=f--l---g--s-.aPp-cLoud.IR#%F0%9F%87%AB%F0%9F%87%AE%20FI%20Finland
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp4aGE3aW5hN3dzMXdzNnl4@batman4.kovira2.ir:25026#%F0%9F%87%AB%F0%9F%87%AE%20FI%20Finland
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp4aGE3aW5hN3dzMXdzNnl4@batman4.kovira2.ir:25026#%F0%9F%87%AB%F0%9F%87%AE%20FI%20Finland
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpVWlFZOWhOalZOV3dhbWFqclhBZjF2dDh1NjNuajBmRg==@31.76.80.205:8388#%F0%9F%87%AB%F0%9F%87%AE%20FI%20Finland
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp4aGE3aW5hN3dzMXdzNnl4@batman4.kovira2.ir:25026#%F0%9F%87%AB%F0%9F%87%AE%20FI%20Finland
