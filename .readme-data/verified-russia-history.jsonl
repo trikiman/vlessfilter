@@ -12599,3 +12599,16 @@
 {"ts":"2026-07-27T08:07:33Z","host_port":"104.16.63.25:443","proto":"trojan","alive":true,"delay_ms":1042,"run_id":"30248281705"}
 {"ts":"2026-07-27T08:07:33Z","host_port":"81.208.170.142:1500","proto":"vless","alive":true,"delay_ms":1422,"run_id":"30248281705"}
 {"ts":"2026-07-27T08:07:33Z","host_port":"147.182.212.232:56565","proto":"vless","alive":true,"delay_ms":164,"run_id":"30248281705"}
+{"ts":"2026-07-27T14:46:18Z","host_port":"82.117.225.123:443","proto":"trojan","alive":true,"delay_ms":984,"run_id":"30276066341"}
+{"ts":"2026-07-27T14:46:18Z","host_port":"77.91.68.70:55983","proto":"vless","alive":true,"delay_ms":1725,"run_id":"30276066341"}
+{"ts":"2026-07-27T14:46:18Z","host_port":"82.117.225.56:443","proto":"trojan","alive":true,"delay_ms":989,"run_id":"30276066341"}
+{"ts":"2026-07-27T14:46:18Z","host_port":"82.117.225.216:443","proto":"trojan","alive":true,"delay_ms":982,"run_id":"30276066341"}
+{"ts":"2026-07-27T14:46:18Z","host_port":"185.244.208.64:443","proto":"trojan","alive":true,"delay_ms":1161,"run_id":"30276066341"}
+{"ts":"2026-07-27T14:46:18Z","host_port":"thorough-falcon.rooster465.autos:443","proto":"trojan","alive":true,"delay_ms":858,"run_id":"30276066341"}
+{"ts":"2026-07-27T14:46:18Z","host_port":"upward-hedgehog.rooster465.autos:443","proto":"trojan","alive":true,"delay_ms":635,"run_id":"30276066341"}
+{"ts":"2026-07-27T14:46:18Z","host_port":"renewed-phoenix.rooster465.autos:443","proto":"trojan","alive":true,"delay_ms":644,"run_id":"30276066341"}
+{"ts":"2026-07-27T14:46:18Z","host_port":"81.208.170.142:1500","proto":"vless","alive":true,"delay_ms":1416,"run_id":"30276066341"}
+{"ts":"2026-07-27T14:46:18Z","host_port":"147.182.212.232:56565","proto":"vless","alive":true,"delay_ms":183,"run_id":"30276066341"}
+{"ts":"2026-07-27T14:46:18Z","host_port":"128.204.223.94:9815","proto":"vless","alive":true,"delay_ms":964,"run_id":"30276066341"}
+{"ts":"2026-07-27T14:46:18Z","host_port":"212.227.98.235:4433","proto":"trojan","alive":true,"delay_ms":598,"run_id":"30276066341"}
+{"ts":"2026-07-27T14:46:18Z","host_port":"sp.cloudv.qzz.io:4433","proto":"trojan","alive":true,"delay_ms":678,"run_id":"30276066341"}
