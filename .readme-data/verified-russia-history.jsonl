@@ -12776,3 +12776,10 @@
 {"ts":"2026-07-28T07:18:19Z","host_port":"212.227.98.235:4433","proto":"trojan","alive":true,"delay_ms":458,"run_id":"30337459761"}
 {"ts":"2026-07-28T07:18:19Z","host_port":"sp.cloudv.qzz.io:4433","proto":"trojan","alive":true,"delay_ms":634,"run_id":"30337459761"}
 {"ts":"2026-07-28T07:18:19Z","host_port":"104.26.5.11:443","proto":"trojan","alive":true,"delay_ms":581,"run_id":"30337459761"}
+{"ts":"2026-07-28T10:14:24Z","host_port":"77.91.68.70:55983","proto":"vless","alive":true,"delay_ms":1992,"run_id":"30349490024"}
+{"ts":"2026-07-28T10:14:24Z","host_port":"renewed-phoenix.rooster465.autos:443","proto":"trojan","alive":true,"delay_ms":670,"run_id":"30349490024"}
+{"ts":"2026-07-28T10:14:24Z","host_port":"81.208.170.142:1500","proto":"vless","alive":true,"delay_ms":1649,"run_id":"30349490024"}
+{"ts":"2026-07-28T10:14:24Z","host_port":"147.182.212.232:56565","proto":"vless","alive":true,"delay_ms":340,"run_id":"30349490024"}
+{"ts":"2026-07-28T10:14:24Z","host_port":"128.204.223.94:9815","proto":"vless","alive":true,"delay_ms":1771,"run_id":"30349490024"}
+{"ts":"2026-07-28T10:14:24Z","host_port":"212.227.98.235:4433","proto":"trojan","alive":true,"delay_ms":668,"run_id":"30349490024"}
+{"ts":"2026-07-28T10:14:24Z","host_port":"sp.cloudv.qzz.io:4433","proto":"trojan","alive":true,"delay_ms":759,"run_id":"30349490024"}
