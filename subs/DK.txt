@@ -1,4 +1,4 @@
 vless://e4fc4761-154f-490e-bbaa-b4fa193f1073@45.148.31.0:15855/?type=ws&encryption=none&flow=&host=45.148.31.0&path=%2F#%F0%9F%87%A9%F0%9F%87%B0%20DK%20Denmark
 vless://e4fc4761-154f-490e-bbaa-b4fa193f1073@45.148.31.0:15855?type=ws&path=%2f#%F0%9F%87%A9%F0%9F%87%B0%20DK%20Denmark
 vless://e4fc4761-154f-490e-bbaa-b4fa193f1073@45.148.31.0:15855?path=%2F&security=&encryption=none&host=45.148.31.0&fp=chrome&type=ws#%F0%9F%87%A9%F0%9F%87%B0%20DK%20Denmark
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpnZWx3dlU5bVVSMG9yRUZTNUQ2dTdB@135.136.33.134:1080#%F0%9F%87%A9%F0%9F%87%B0%20DK%20Denmark
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpYRjBrbHc3ODcwdlhuM3VRSXhlMTlR@37.120.131.62:1080#%F0%9F%87%A9%F0%9F%87%B0%20DK%20Denmark
