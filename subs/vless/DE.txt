@@ -1,3 +1,2 @@
+vless://f376f8ed-779f-450b-ae80-55400ce10258@157.230.118.14:57776?security=none&encryption=none&host=play.google.com&headerType=http&type=tcp#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
 vless://9e1b3859-634f-4dc9-8f59-848a1216f47c@94.143.231.53:39200?security=none&type=tcp&headerType=http&path=/&packetEncoding=xudp&encryption=none#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
-vless://9e1b3859-634f-4dc9-8f59-848a1216f47c@94.143.231.53:39200?encryption=none&headerType=http&security=none&type=tcp#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
-vless://9e1b3859-634f-4dc9-8f59-848a1216f47c@94.143.231.53:39200?encryption=none&headerType=http&security=none&type=tcp#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
