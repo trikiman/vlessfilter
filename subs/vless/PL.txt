@@ -1,1 +1,2 @@
-vless://37a0bd7c-8b9f-4693-8916-bd1e2da0a817@128.204.223.94:9815?encryption=none&host=beichuan.serv00.net&path=/&security=none&type=ws#%F0%9F%87%B5%F0%9F%87%B1%20PL%20Poland
+vless://f165affe-ffb4-4f13-a081-f14434e51152@188.130.230.10:443?security=reality&flow=xtls-rprx-vision&sni=pol1.panel11.ru&type=tcp&fp=chrome&pbk=1FryqGmMpa7T_bHmy3Uy11C5GWe6F2uzcsCYa9QXJBw&sid=ff993907a731979a#%F0%9F%87%B5%F0%9F%87%B1%20PL%20Poland
+vless://6f34a071-9a87-4665-b01a-4b5a5c95e552@31.76.87.210:8443?security=tls&type=xhttp&path=/api/v1/events&packetEncoding=xudp&sni=pl1.gobalance.live&fp=chrome&mode=auto&encryption=none#%F0%9F%87%B5%F0%9F%87%B1%20PL%20Poland

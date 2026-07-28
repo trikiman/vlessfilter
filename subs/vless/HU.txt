@@ -1,3 +1,1 @@
-vless://1c7fcc38-e6be-43c5-875f-b8de2516b9f2@5.182.38.91:17267?encryption=none&security=reality&sni=yahoo.com&fp=chrome&pbk=SnWZg6ORcQepuWLI1EVCTTVc4KyfDiGWR4o_CXCMhgk&sid=4ae260&type=tcp&headerType=none#%F0%9F%87%AD%F0%9F%87%BA%20HU%20Hungary
-vless://1c7fcc38-e6be-43c5-875f-b8de2516b9f2@5.182.38.91:17267/?type=raw&encryption=none&sni=yahoo.com&fp=chrome&security=reality&pbk=SnWZg6ORcQepuWLI1EVCTTVc4KyfDiGWR4o_CXCMhgk&sid=4ae260#%F0%9F%87%AD%F0%9F%87%BA%20HU%20Hungary
-vless://1c7fcc38-e6be-43c5-875f-b8de2516b9f2@5.182.38.91:17267/?type=tcp&encryption=none&flow=&sni=yahoo.com&fp=chrome&security=reality&pbk=SnWZg6ORcQepuWLI1EVCTTVc4KyfDiGWR4o_CXCMhgk&sid=4ae260&packetEncoding=xudp#%F0%9F%87%AD%F0%9F%87%BA%20HU%20Hungary
+vless://fc64e874-656e-402e-a303-e0d161f907fb@37.221.210.188:443?security=reality&type=tcp&sni=hu888.bearbeer.digital&fp=qq&flow=xtls-rprx-vision&pbk=z-TKWOWgZLfzQ-wNdwXQqVwaUgCmbchM2Xtrk1NGynU&encryption=none#%F0%9F%87%AD%F0%9F%87%BA%20HU%20Hungary
