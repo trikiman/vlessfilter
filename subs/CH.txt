@@ -4,6 +4,6 @@ vless://5d509a60-737f-4dd5-ab57-4396361a1011@128.140.114.57:22004?security=reali
 trojan://-------BanV2ray------@edededededededededededede-66.poki-pakipon.ir:61383?security=reality&pbk=bJrhMKdMfPjEZ-EUazGR6h-uUDWAFxXG1MZlUVsd3Ak&fp=chrome&spx=/&type=grpc&sni=chi.yahoo.com#%F0%9F%87%A8%F0%9F%87%AD%20CH%20Switzerland
 trojan://----------BanV2ray-----------@uupupupuppupupupuuppupupupupuup-11.poki-pakipon.ir:62115?mode=gun&security=reality&pbk=6PX0SCkt6TANowjz80Ugiv4cSg0vF8g0mVt4WbyIGhI&fp=chrome&spx=/8a462d1782ef2bf&type=grpc&sni=chi.yahoo.com&sid=8c1d45d1#%F0%9F%87%A8%F0%9F%87%AD%20CH%20Switzerland
 trojan://----------BanV2ray-----------@uupupupuppupupupuuppupupupupuup-11.poki-pakipon.ir:62115?mode=gun&security=reality&pbk=6PX0SCkt6TANowjz80Ugiv4cSg0vF8g0mVt4WbyIGhI&fp=chrome&spx=/8a462d1782ef2bf&type=grpc&sni=chi.yahoo.com&sid=8c1d45d1#%F0%9F%87%A8%F0%9F%87%AD%20CH%20Switzerland
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpYRjBrbHc3ODcwdlhuM3VRSXhlMTlR@195.242.213.238:1080#%F0%9F%87%A8%F0%9F%87%AD%20CH%20Switzerland
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpYRjBrbHc3ODcwdlhuM3VRSXhlMTlR@195.242.213.238:1080#%F0%9F%87%A8%F0%9F%87%AD%20CH%20Switzerland
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpYRjBrbHc3ODcwdlhuM3VRSXhlMTlR@195.242.213.238:1080#%F0%9F%87%A8%F0%9F%87%AD%20CH%20Switzerland
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpYRjBrbHc3ODcwdlhuM3VRSXhlMTlR@185.212.170.58:1080#%F0%9F%87%A8%F0%9F%87%AD%20CH%20Switzerland
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpYRjBrbHc3ODcwdlhuM3VRSXhlMTlR@185.212.170.58:1080#%F0%9F%87%A8%F0%9F%87%AD%20CH%20Switzerland
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpYRjBrbHc3ODcwdlhuM3VRSXhlMTlR@146.70.26.156:1080#%F0%9F%87%A8%F0%9F%87%AD%20CH%20Switzerland
