@@ -7,6 +7,6 @@ vmess://eyJ2IjoiMiIsInBzIjoiXHVkODNjXHVkZGViXHVkODNjXHVkZGY3W29wZW5wcm94eWxpc3Qu
 trojan://humanity@104.26.5.11:443?sni=www.gossipglove.com&type=ws&path=/assignment&fp=chrome#%F0%9F%87%AB%F0%9F%87%B7%20FR%20France
 trojan://humanity@172.64.155.209:443?host=www.gossipglove.com&path=%2Fassignment&sni=www.gossipglove.com&type=ws#%F0%9F%87%AB%F0%9F%87%B7%20FR%20France
 trojan://humanity@104.21.40.34:443?encryption=none&security=tls&sni=www.gossipglove.com&fp=chrome&type=ws&host=www.gossipglove.com&path=%2Fassignment#%F0%9F%87%AB%F0%9F%87%B7%20FR%20France
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpYRjBrbHc3ODcwdlhuM3VRSXhlMTlR@194.187.249.218:1080#%F0%9F%87%AB%F0%9F%87%B7%20FR%20France
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpYRjBrbHc3ODcwdlhuM3VRSXhlMTlR@194.187.249.220:1080#%F0%9F%87%AB%F0%9F%87%B7%20FR%20France
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpYRjBrbHc3ODcwdlhuM3VRSXhlMTlR@185.128.25.44:1080#%F0%9F%87%AB%F0%9F%87%B7%20FR%20France
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpYRjBrbHc3ODcwdlhuM3VRSXhlMTlR@194.187.249.218:1080#%F0%9F%87%AB%F0%9F%87%B7%20FR%20France
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpYRjBrbHc3ODcwdlhuM3VRSXhlMTlR@185.156.173.206:1080#%F0%9F%87%AB%F0%9F%87%B7%20FR%20France

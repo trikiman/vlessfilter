@@ -5,3 +5,4 @@ trojan://CFvS99VcEv82u3XFr36EPbumLPadKXT6@trojan-tcp-tls-test.hysteria.ltd:9443?
 trojan://CFvS99VcEv82u3XFr36EPbumLPadKXT6@trojan-tcp-tls-test.hysteria.ltd:9443?type=raw&headerType=none&security=tls#%F0%9F%87%AA%F0%9F%87%AA%20EE%20Estonia
 trojan://CFvS99VcEv82u3XFr36EPbumLPadKXT6@trojan-tcp-tls-test.hysteria.ltd:9443?security=tls&allowinsecure=0&type=tcp#%F0%9F%87%AA%F0%9F%87%AA%20EE%20Estonia
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpYRjBrbHc3ODcwdlhuM3VRSXhlMTlR@77.83.198.104:1080#%F0%9F%87%AA%F0%9F%87%AA%20EE%20Estonia
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpYRjBrbHc3ODcwdlhuM3VRSXhlMTlR@77.83.198.104:1080#%F0%9F%87%AA%F0%9F%87%AA%20EE%20Estonia
