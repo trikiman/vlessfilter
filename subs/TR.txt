@@ -9,4 +9,4 @@ trojan://0ds_NIm933rf_Nxio294_nbZi3@78.135.73.38:449?type=tcp&security=tls&heade
 trojan://0ds_NIm933rf_Nxio294_nbZi3@78.135.73.38:449?security=tls&sni=grape-ataturk-tr.yyuyy.com&type=tcp&headerType=none&path=%2f#%F0%9F%87%B9%F0%9F%87%B7%20TR%20Turkey
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpyWWZpNGNRM3o3enRzN0JPNC1ZOV9B@188.41.249.20:1080#%F0%9F%87%B9%F0%9F%87%B7%20TR%20Turkey
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpyWWZpNGNRM3o3enRzN0JPNC1ZOV9B@188.41.249.20:1080#%F0%9F%87%B9%F0%9F%87%B7%20TR%20Turkey
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpyWWZpNGNRM3o3enRzN0JPNC1ZOV9B@188.41.249.20:1080#%F0%9F%87%B9%F0%9F%87%B7%20TR%20Turkey
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpyWWZpNGNRM3o3enRzN0JPNC1ZOV9B@vpna.poorifast.ir:1080#%F0%9F%87%B9%F0%9F%87%B7%20TR%20Turkey
