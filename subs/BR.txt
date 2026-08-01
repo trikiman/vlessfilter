@@ -6,6 +6,6 @@ vmess://eyJhZGQiOiIxNzIuMjMzLjE3Ljc2IiwiYWlkIjoiMSIsImZwIjoiY2hyb21lIiwiaWQiOiIw
 trojan://ff5aeddc-8fea-4d17-b504-1a9fdacca802@45.130.125.160:443?host=go.appsflyer.com.r3xxe.eu.cc&path=%2Fbr-orcl&sni=go.appsflyer.com.r3xxe.eu.cc&type=ws#%F0%9F%87%A7%F0%9F%87%B7%20BR%20Brazil
 trojan://3b91d95b-0478-451a-a372-4f417417f650@216.24.57.6:443?Telegram=@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad&path=/br-orcl&security=tls&insecure=0&host=unnes.ac.id.r3xxe.eu.cc&type=ws&allowInsecure=0&sni=unnes.ac.id.r3xxe.eu.cc#%F0%9F%87%A7%F0%9F%87%B7%20BR%20Brazil
 trojan://3b91d95b-0478-451a-a372-4f417417f650@216.24.57.6:443?path=%2Fbr-orcl&security=tls&insecure=0&host=unnes.ac.id.r3xxe.eu.cc&type=ws&allowInsecure=0&sni=unnes.ac.id.r3xxe.eu.cc#%F0%9F%87%A7%F0%9F%87%B7%20BR%20Brazil
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpZamxpWW1GbE56Vm1NbUU0Wm1Ka1lqQXhOelEyTldVeU56WmxOamhrWkdVPQ@137.131.170.144:59319#%F0%9F%87%A7%F0%9F%87%B7%20BR%20Brazil
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpZamxpWW1GbE56Vm1NbUU0Wm1Ka1lqQXhOelEyTldVeU56WmxOamhrWkdVPQ@137.131.170.144:59319#%F0%9F%87%A7%F0%9F%87%B7%20BR%20Brazil
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpZamxpWW1GbE56Vm1NbUU0Wm1Ka1lqQXhOelEyTldVeU56WmxOamhrWkdVPQ@137.131.170.144:59319#%F0%9F%87%A7%F0%9F%87%B7%20BR%20Brazil
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpZamxpWW1GbE56Vm1NbUU0Wm1Ka1lqQXhOelEyTldVeU56WmxOamhrWkdVPQ@163.176.57.58:59319#%F0%9F%87%A7%F0%9F%87%B7%20BR%20Brazil
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpZamxpWW1GbE56Vm1NbUU0Wm1Ka1lqQXhOelEyTldVeU56WmxOamhrWkdVPQ@163.176.57.58:59319#%F0%9F%87%A7%F0%9F%87%B7%20BR%20Brazil
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpZamxpWW1GbE56Vm1NbUU0Wm1Ka1lqQXhOelEyTldVeU56WmxOamhrWkdVPQ@163.176.57.58:59319#%F0%9F%87%A7%F0%9F%87%B7%20BR%20Brazil
