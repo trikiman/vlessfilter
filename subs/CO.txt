@@ -5,3 +5,4 @@ trojan://---------------BanV2ray---------------@83.228.226.166:12830?security=re
 trojan://---------------BanV2ray---------------@83.228.226.166:12830?security=reality&pbk=S6Urxz22KIfwiMpEip65mTaA8JKe_d-Ocav2KXlG0lo&headerType=none&fp=chrome&spx=/bp21jKSkfMoF1yY&type=tcp&sni=promotion.yahoo.com&sid=da8f66#%F0%9F%87%A8%F0%9F%87%B4%20CO%20Colombia
 ss://YWVzLTI1Ni1nY206UmV4bkJnVTdFVjVBRHhH@156.244.32.9:7002#%F0%9F%87%A8%F0%9F%87%B4%20CO%20Colombia
 ss://YWVzLTI1Ni1nY206UmV4bkJnVTdFVjVBRHhH@156.244.32.9:7002#%F0%9F%87%A8%F0%9F%87%B4%20CO%20Colombia
+ss://YWVzLTI1Ni1nY206VEV6amZBWXEySWp0dW9T@154.223.16.96:6697#%F0%9F%87%A8%F0%9F%87%B4%20CO%20Colombia
