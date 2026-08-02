@@ -7,3 +7,4 @@ trojan://ewpvezqjycgfeebg@38.79.154.34:1818?security=reality&pbk=_PvxwvgQue6Gt2n
 trojan://ewpvezqjycgfeebg@38.79.154.34:1818?security=reality&pbk=_PvxwvgQue6Gt2nbnPXRtkmLVu_gH2-rBK_7lgUFXUY&headerType=none&fp=chrome&spx=/353add2ce7a3241&type=tcp&sni=www.cloudflare.com&sid=cee1b559#%F0%9F%87%B7%F0%9F%87%B4%20RO%20Romania
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpRRld6Q3cydVg5QjlpNnFBWWVGQklF@154.46.31.106:443#%F0%9F%87%B7%F0%9F%87%B4%20RO%20Romania
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpRRld6Q3cydVg5QjlpNnFBWWVGQklF@154.46.31.106:443#%F0%9F%87%B7%F0%9F%87%B4%20RO%20Romania
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpRRld6Q3cydVg5QjlpNnFBWWVGQklF@154.46.31.106:443#%F0%9F%87%B7%F0%9F%87%B4%20RO%20Romania
