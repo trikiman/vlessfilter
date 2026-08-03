@@ -9,4 +9,4 @@ trojan://ed598a47-d0df-4bd4-aefa-2aee72f3ec4d@web-production-779a7.up.railway.ap
 trojan://ed598a47-d0df-4bd4-aefa-2aee72f3ec4d@web-production-779a7.up.railway.app:443?security=tls&type=xhttp&mode=stream-up&host=web-production-779a7.up.railway.app&path=/xhttp/stream-up/ed598a47-d0df-4bd4-aefa-2aee72f3ec4d&sni=web-production-779a7.up.railway.app&fp=chrome&alpn=h2,http/1.1#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States
 ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@173.244.56.9:443#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States
 ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@173.244.56.9:443#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States
-ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@173.244.56.6:443#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@173.244.56.9:443#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States
