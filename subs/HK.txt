@@ -8,5 +8,5 @@ trojan://KV63147582@185.244.208.64:443?sni=desired-tahr.rooster465.autos&path=/#
 trojan://KV63147582@185.244.208.64:443?sni=desired-tahr.rooster465.autos&path=/#%F0%9F%87%AD%F0%9F%87%B0%20HK%20Hong%20Kong
 trojan://KV63147582@amused-peacock.rooster465.autos:443?sni=amused-peacock.rooster465.autos&fp=chrome&type=tcp&path=/#%F0%9F%87%AD%F0%9F%87%B0%20HK%20Hong%20Kong
 ss://YWVzLTI1Ni1nY206V1dNbzhGTVhOR0xz@212.192.15.13:8388#%F0%9F%87%AD%F0%9F%87%B0%20HK%20Hong%20Kong
-ss://YWVzLTI1Ni1nY206NzI1NTMzMjBhZTZiY2M4Zg==@212.192.15.33:10910#%F0%9F%87%AD%F0%9F%87%B0%20HK%20Hong%20Kong
+ss://YWVzLTI1Ni1nY206NzI1NTMzMjBhZTZiY2M4Zg@212.192.15.33:10910#%F0%9F%87%AD%F0%9F%87%B0%20HK%20Hong%20Kong
 ss://YWVzLTI1Ni1nY206NzI1NTMzMjBhZTZiY2M4Zg==@212.192.15.33:10910#%F0%9F%87%AD%F0%9F%87%B0%20HK%20Hong%20Kong
