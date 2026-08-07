@@ -1,3 +1,1 @@
-vless://564150f0-c0ad-46d1-8cf1-71e1900322e8@170.114.45.6:8080?security=none&type=ws&path=/mvpnpph2026&host=pphfree3.mvpnpvpn.de5.net&packetEncoding=xudp&encryption=none#%F0%9F%87%B9%F0%9F%87%AD%20TH%20Thailand
-vless://564150f0-c0ad-46d1-8cf1-71e1900322e8@170.114.46.6:8080?encryption=none&host=pphfree3.mvpnpvpn.de5.net&path=%2Fmvpnpph2026&security=none&type=ws#%F0%9F%87%B9%F0%9F%87%AD%20TH%20Thailand
-vless://564150f0-c0ad-46d1-8cf1-71e1900322e8@170.114.46.6:8080?security=none&type=ws&path=%2Fmvpnpph2026&host=pphfree3.mvpnpvpn.de5.net&packetEncoding=xudp&encryption=none#%F0%9F%87%B9%F0%9F%87%AD%20TH%20Thailand
+vless://7ce54bb3-d612-4aa7-be08-089d3c461d53@www.true.th:443/?type=ws&encryption=none&flow=&host=d1yxsk0zprgivr.cloudfront.net&path=/&security=tls&sni=d1yxsk0zprgivr.cloudfront.net&fp=chrome#%F0%9F%87%B9%F0%9F%87%AD%20TH%20Thailand
