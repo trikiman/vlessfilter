@@ -1,3 +1,3 @@
 vless://23a9b46e-9443-4268-81c5-399929919ab0@155.103.69.195:48711/?encryption=none&flow=&host=snapp.ir&path=/&type=tcp&headerType=http#%F0%9F%87%B9%F0%9F%87%B7%20TR%20Turkey
-vless://7d6d3391-7bf8-46bf-bd2e-01e82a790017@109.163.239.6:443?encryption=none&flow=xtls-rprx-vision&type=tcp&security=reality&sni=cdn6-24.yahoo.com&pbk=CMkW1axrhEXoiJ6anMz9XEjlfqlAtEZya7L0b5ZPMyw&sid=99e78ee91698aaaa&fp=firefox#%F0%9F%87%B9%F0%9F%87%B7%20TR%20Turkey
+vless://23a9b46e-9443-4268-81c5-399929919ab0@155.103.69.195:48711?security=none&encryption=none&host=snapp.ir&headerType=http&type=tcp#%F0%9F%87%B9%F0%9F%87%B7%20TR%20Turkey
 vless://23a9b46e-9443-4268-81c5-399929919ab0@155.103.69.195:48711/?encryption=none&flow=&host=snapp.ir&path=/&type=tcp&headerType=http#%F0%9F%87%B9%F0%9F%87%B7%20TR%20Turkey

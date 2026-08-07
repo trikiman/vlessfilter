@@ -1,1 +1,1 @@
-vless://5d509a60-737f-4dd5-ab57-4396361a1011@167.233.213.99:22002?security=reality&sni=login.yahoo.com&type=tcp&fp=firefox&pbk=OncWhxWwzrKOFH21JT9WxcenacQuc7ZmuQy_rZFJ8xg&sid=c6e19c434dc87df7#%F0%9F%87%B7%F0%9F%87%B4%20RO%20Romania
+vless://301d514e-4aa0-47b0-ba44-a0cb891cd52f@151.242.191.161:443?encryption=none&security=reality&sni=www.samsung.com&fp=chrome&pbk=OZVjfQBboTDTBw0baMFqzVPsVUI4FNQmspTEb0b0zW4&sid=a1b2c3d4&packetEncoding=xudp#%F0%9F%87%B7%F0%9F%87%B4%20RO%20Romania
