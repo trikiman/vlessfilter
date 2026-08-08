@@ -1,3 +1,3 @@
-vless://23a9b46e-9443-4268-81c5-399929919ab0@155.103.69.195:48711?encryption=none&headerType=http&host=snapp.ir&path=%2F&security=none&type=tcp#%F0%9F%87%B9%F0%9F%87%B7%20TR%20Turkey
-vless://f75814f6-8f81-4847-b792-168c41f2dc85@45.196.201.23:443?security=reality&encryption=none&pbk=zii4nGNapnFKL6SN8GzWNqFlElBvUCUFUThEP0kFH04&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=storage.yandex.net&sid=c6ef72e4635d15a5#%F0%9F%87%B9%F0%9F%87%B7%20TR%20Turkey
+vless://23a9b46e-9443-4268-81c5-399929919ab0@155.103.69.195:48711/?encryption=none&flow=&host=snapp.ir&path=/&type=tcp&headerType=http#%F0%9F%87%B9%F0%9F%87%B7%20TR%20Turkey
+vless://23a9b46e-9443-4268-81c5-399929919ab0@155.103.69.195:48711/?encryption=none&flow=&host=snapp.ir&path=/&type=tcp&headerType=http#%F0%9F%87%B9%F0%9F%87%B7%20TR%20Turkey
 vless://23a9b46e-9443-4268-81c5-399929919ab0@155.103.69.195:48711/?encryption=none&flow=&host=snapp.ir&path=/&type=tcp&headerType=http#%F0%9F%87%B9%F0%9F%87%B7%20TR%20Turkey

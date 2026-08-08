@@ -1,3 +1,3 @@
-vless://8f046c7d-2e11-46b3-91c6-d20c240fd202@165.22.75.207:24522?security=none&encryption=none&host=play.google.com&headerType=http&type=tcp#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
+vless://56807c98-350d-460c-86e3-518c0572a5fa@49.12.100.150:50399?headerType=http&host=play.google.com&path=/&security=none&type=tcp#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
 vless://a3d0ae99-b694-45b5-842d-25e7c33515d0@49.12.100.150:47467?security=none&type=tcp&headerType=http&path=/&host=play.google.com&encryption=none#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
-vless://c40f773e-3b96-417e-b22c-e48cb63ca7d9@144.31.87.16:2053?encryption=none&fp=&pbk=EDeWEPBq0QDOPp73PNVlaV2EWaEBWhgBcNy3MROgZ00&security=reality&sid=04b38b6b152a1b0b&sni=wildberries.ru&type=tcp#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
+vless://2cca8201-c93e-40eb-bd8a-fea4170c169e@185.136.12.179:443?alpn=h2&encryption=none&extra=%7B%22xmux%22%3A%7B%22maxConcurrency%22%3A%2216-32%22%2C%22cMaxLifetimeMs%22%3A%22180000-300000%22%2C%22cMaxReuseTimes%22%3A%220%22%7D%7D&fp=firefox&mode=auto&path=%2Fapi%2Fv1%2F&security=tls&sni=deu683.lackerdeu.org&type=xhttp#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
