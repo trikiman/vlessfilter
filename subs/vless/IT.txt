@@ -1,3 +1,2 @@
 vless://9f0285ee-20ca-4953-bcdb-86a920652923@204.216.216.23:10086?encryption=none&type=tcp&headerType=none#%F0%9F%87%AE%F0%9F%87%B9%20IT%20Italy
-vless://9f0285ee-20ca-4953-bcdb-86a920652923@204.216.216.23:10086?encryption=none&security=none&type=tcp#%F0%9F%87%AE%F0%9F%87%B9%20IT%20Italy
-vless://9f0285ee-20ca-4953-bcdb-86a920652923@204.216.216.23:10086?security=none&encryption=none&headerType=none&type=tcp#%F0%9F%87%AE%F0%9F%87%B9%20IT%20Italy
+vless://cd1673b3-7cec-4fe6-bedf-b534eb54e647@31.76.113.187:443?type=tcp&security=tls&encryption=none&sni=it1-akn.astralweb.tech&fp=chrome#%F0%9F%87%AE%F0%9F%87%B9%20IT%20Italy
