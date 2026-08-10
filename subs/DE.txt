@@ -5,6 +5,6 @@ vmess://eyJhZGQiOiJkZWFwcC5qaXN1eXVuLnRvcCIsImFpZCI6IjAiLCJob3N0IjoiZGVhcHAuamlz
 trojan://NQ26071394@63.178.193.196:443?sni=quiet-condor.rooster465.autos&path=%2f#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
 trojan://CF68213490@18.184.4.15:443?sni=harmless-lab.rooster465.autos&path=%2f#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
 trojan://CF68213490@18.184.4.15:443?sni=harmless-lab.rooster465.autos&path=/#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxaGhycXJva2ozYWc=@209.46.102.22:8388#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxaGhycXJva2ozYWc@209.46.102.22:8388#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxaGhycXJva2ozYWc@209.46.102.22:8388#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
+ss://YWVzLTI1Ni1nY206WEtGS2wyclVMaklwNzQ@185.226.172.8:8008#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
+ss://YWVzLTI1Ni1nY206WEtGS2wyclVMaklwNzQ@185.226.172.8:8008#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
+ss://YWVzLTI1Ni1nY206WEtGS2wyclVMaklwNzQ@185.226.172.8:8008#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany
