@@ -1,1 +1,1 @@
-vless://e9824072-c700-4aa2-bcbb-7e6cc2d895aa@109.163.239.4:443?encryption=none&type=tcp&security=reality&pbk=CMkW1axrhEXoiJ6anMz9XEjlfqlAtEZya7L0b5ZPMyw&sid=2f3e735aedc55aaf&sni=cdn9-40.yahoo.com&fp=chrome&allowInsecure=1&flow=xtls-rprx-vision#%F0%9F%87%B3%F0%9F%87%B4%20NO%20Norway
+vless://73435d4e-2ac1-4dba-900e-81aac3dc5913@no-fardad.oorluma.ir:6800?security=reality&encryption=none&pbk=lQbgwNDYw6Zbjdim0JtXUarzb-3GSjDvtX6FJYZD9Qo&headerType=none&fp=qq&type=tcp&sni=play.google.com#%F0%9F%87%B3%F0%9F%87%B4%20NO%20Norway

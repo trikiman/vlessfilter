@@ -1,1 +1,2 @@
 vless://7f1f5848-da44-47df-8581-df83e88ee2b3@194.61.31.126:2053?type=tcp&security=reality&encryption=none&fp=firefox&pbk=GAYlNViQ9mkjs0iTjNmijAIXOaK2h0P2opHCYOrCNy0&sid=ae3ba555edc1ba0a&sni=www.apple.com#%F0%9F%87%AE%F0%9F%87%B3%20IN%20India
+vless://e99ba96d-dec8-42eb-be53-19e71eef7cab@5.253.42.164:40443?security=reality&encryption=none&pbk=g77ZJbm18JEotapmVRjaXi133MzkbhkU2lxhVeXx8zw&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=deepl.com&sid=68a8#%F0%9F%87%AE%F0%9F%87%B3%20IN%20India
