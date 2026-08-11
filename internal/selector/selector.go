@@ -79,6 +79,38 @@ func Score(r Result) float64 {
 	return WSpeed*normSpeed - WLatency*normLatency
 }
 
+// FilterByMinSpeed drops results whose SpeedMbps is below min. A min <= 0
+// disables the filter (returns input unchanged). Results with an unknown or
+// zero speed measurement are dropped when min > 0.
+func FilterByMinSpeed(results []Result, min float64) []Result {
+	if min <= 0 {
+		return results
+	}
+	out := make([]Result, 0, len(results))
+	for _, r := range results {
+		if r.SpeedMbps >= min {
+			out = append(out, r)
+		}
+	}
+	return out
+}
+
+// medianSpeed returns the median of a slice of speed samples. Empty input
+// returns 0. Does not mutate the caller's slice.
+func medianSpeed(xs []float64) float64 {
+	if len(xs) == 0 {
+		return 0
+	}
+	cp := make([]float64, len(xs))
+	copy(cp, xs)
+	sort.Float64s(cp)
+	n := len(cp)
+	if n%2 == 1 {
+		return cp[n/2]
+	}
+	return (cp[n/2-1] + cp[n/2]) / 2
+}
+
 // EndpointKey returns a canonical "host:port" identity for a proxy URI.
 //
 // Two configs sharing an endpoint are the same physical server reached with
@@ -514,10 +546,17 @@ func LoadStableAndRotating(ctx context.Context, dbPath, protocol string) (stable
 			}
 		}
 
+		// SpeedMbps uses the MEDIAN across all passing tests for this link,
+		// not the latest single pass, so a lucky/unlucky sample can't skew
+		// the published number (which also appears in the key name).
+		speeds := make([]float64, 0, len(passes))
+		for _, p := range passes {
+			speeds = append(speeds, p.speed)
+		}
 		r := Result{
 			Link:      link,
 			LatencyMs: latest.latency,
-			SpeedMbps: latest.speed,
+			SpeedMbps: medianSpeed(speeds),
 			Country:   latest.country,
 		}
 

@@ -27,7 +27,36 @@ Technology stack not yet documented. Will populate after codebase mapping or fir
 <!-- GSD:conventions-start source:CONVENTIONS.md -->
 ## Conventions
 
-Conventions not yet established. Will populate as patterns emerge during development.
+### Published key naming (remark / URI fragment) — MANDATORY
+
+Every published key's name (the `#fragment` at the end of each proxy URI in
+`subs/**`) **MUST begin with the country flag emoji, 100% of the time.** The
+flag is always the first character(s) of the name — no icon, label, or speed
+indicator may come before it.
+
+Canonical order for a published (stable-country) key name:
+
+```
+<flag> <speed-icon?> <CC> <Country Name>
+```
+
+- `<flag>` — country flag emoji. **Always first. Never omitted for a
+  country-tagged key.**
+- `<speed-icon?>` — optional speed-tier icon, placed AFTER the flag (e.g.
+  `📺` 1080p-ready ≥12 Mbps, `🎬` ≥25 Mbps, `⚡` ≥60 Mbps). Icon-only; no raw
+  Mbps number in the name (the number lives in `README.md` and
+  `all-results.csv`).
+- `<CC>` — 2-letter ISO country code (stable fallback when a client font has
+  no emoji support).
+- `<Country Name>` — human-readable name.
+
+Rotating-exit keys are the one exception to the country flag: they use the
+`🌐 ROTATING` label instead (no single country can be honestly claimed).
+
+Implementation note: this rule is enforced in `rewriteRemark()` in
+`internal/output/output.go`. Any change to the name format must keep the flag
+first and must be covered by `TestRewriteRemark` in
+`internal/output/output_test.go`.
 <!-- GSD:conventions-end -->
 
 <!-- GSD:architecture-start source:ARCHITECTURE.md -->

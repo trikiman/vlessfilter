@@ -41,6 +41,8 @@ Run flags:
   --threads1 <n>        Stage 1 (handshake) concurrency (default: 1000)
   --threads2 <n>        Stage 2 (speedtest) concurrency (default: 20; cap per D-06)
   --untested-batch <n>  Cap untested keys per protocol per stage 1 (default: 0 = built-in 80000)
+  --min-speed <mbps>    Min Stage-2 speed to publish a stable key (default: 12; 0 disables)
+  --stage2-passes <n>   Number of Stage 2 speedtest passes (default: 3)
   --limit <n>           Cap number of keys tested in stage 2 (default: 0 = no cap)
   --budget-min <n>      Hard wall-clock budget for the run, minutes (default: 55; <=0 disables)
   --checkpoint-min <n>  Checkpoint cadence: write outputs every N minutes (default: 2; <=0 disables)
@@ -123,6 +125,8 @@ func runCmd(args []string) int {
 	accuracyProbe := fs.Bool("accuracy-probe", false, "After publish, sample-test keys against ipinfo.io and compare to published country labels (GEO-04)")
 	protocols := fs.String("protocols", "vless,vmess,trojan,ss", "Comma-separated proxy protocols to test+publish (default: all 4 supported)")
 	untestedBatch := fs.Int("untested-batch", 0, "Cap untested keys per protocol per stage 1 run (0 = use built-in default 80000)")
+	minSpeed := fs.Float64("min-speed", 12, "Minimum Stage-2 speed in Mbps; stable keys slower than this are not published (0 = disable). 12 ~ YouTube 1080p at 2x speed with headroom.")
+	stage2Passes := fs.Int("stage2-passes", 3, "Number of Stage 2 speedtest passes per key (higher = more stable speed measurement)")
 
 	if err := fs.Parse(args); err != nil {
 		if errors.Is(err, flag.ErrHelp) {
@@ -201,6 +205,8 @@ func runCmd(args []string) int {
 		RunAccuracyProbe: *accuracyProbe,
 		Protocols:        protoList,
 		UntestedBatch:    *untestedBatch,
+		MinSpeedMbps:     *minSpeed,
+		Stage2Passes:     *stage2Passes,
 		Runner:           runner,
 		Now:              func() time.Time { return time.Now().UTC() },
 	}
