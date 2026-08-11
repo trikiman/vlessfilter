@@ -81,6 +81,16 @@ type Opts struct {
 	// in stage 1 and more sockets concurrently. Useful values: 80000
 	// (default), 160000-240000 (powerful runners with --threads1 >= 1500).
 	UntestedBatch int
+
+	// MinSpeedMbps: stable keys measuring below this many Mbps are not
+	// published. <=0 disables the filter. Default (wired from CLI) is 12,
+	// which comfortably covers 1080p video at ~2x playback.
+	MinSpeedMbps float64
+
+	// Stage2Passes: how many times stage 2 re-runs the speedtest over the
+	// alive set. More passes give a more stable median speed. <=0 defaults
+	// to 3.
+	Stage2Passes int
 }
 
 var validStages = map[string]bool{"": true, "fetch": true, "test": true, "select": true}
@@ -380,7 +390,10 @@ func runTestProtocol(ctx context.Context, opts Opts, protocol, dbPath string, t1
 	}
 
 	// Stage 2: speedtest 3 separate times (LIVE-01).
-	const stage2Attempts = 3
+	stage2Attempts := opts.Stage2Passes
+	if stage2Attempts <= 0 {
+		stage2Attempts = 3
+	}
 	for attempt := 1; attempt <= stage2Attempts; attempt++ {
 		slog.Info("test stage 2: speedtest attempt",
 			"protocol", protocol,
@@ -439,6 +452,18 @@ func runSelect(ctx context.Context, opts Opts) error {
 		stable, rotating, err := selector.LoadStableAndRotating(ctx, dbPath, proto)
 		if err != nil {
 			return fmt.Errorf("select [%s]: %w", proto, err)
+		}
+		// Drop keys slower than the min-speed floor before selection so the
+		// published top-3 are all fast enough to actually use.
+		if opts.MinSpeedMbps > 0 {
+			before := len(stable)
+			stable = selector.FilterByMinSpeed(stable, opts.MinSpeedMbps)
+			slog.Info("min-speed filter applied",
+				"protocol", proto,
+				"min_mbps", opts.MinSpeedMbps,
+				"input", before,
+				"kept", len(stable),
+				"dropped", before-len(stable))
 		}
 		selections := selector.Top3PerCountry(stable)
 		slog.Info("select complete",

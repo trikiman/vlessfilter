@@ -261,7 +261,13 @@ jobs:
           # subs/<CC>.txt — for each country code seen in any protocol,
           # concat that country's keys across all 4 protocols. So
           # subs/DE.txt has DE keys from vless+vmess+trojan+ss.
-          rm -f subs/[A-Z][A-Z].txt 2>/dev/null || true
+          #
+          # The wipe glob MUST stay as wide as the match glob below. It used to
+          # be [A-Z][A-Z].txt while the matcher accepted ??.txt, so any code
+          # containing a digit (T1 — MaxMind's Tor/anonymous-proxy bucket) was
+          # appended to on every run and never truncated. subs/T1.txt reached
+          # 2042 lines holding 2 distinct servers before this was caught.
+          rm -f subs/??.txt 2>/dev/null || true
           for proto in vless vmess trojan ss; do
             for f in subs/$proto/*.txt; do
               [ -f "$f" ] || continue
@@ -275,14 +281,37 @@ jobs:
             done
           done
 
-          # Regenerate top-level all-results.csv if any artifact had one
+          # Belt-and-braces: drop any exact-duplicate URI that survived the
+          # per-protocol selection, preserving first-seen (best-scoring) order.
+          for f in subs/all.txt subs/rotating.txt subs/??.txt; do
+            [ -f "$f" ] || continue
+            awk '!seen[$0]++' "$f" > "$f.tmp" && mv "$f.tmp" "$f"
+          done
+
+          # Regenerate top-level all-results.csv as the UNION of every
+          # protocol's results.
+          #
+          # This used to `break` after the first artifact it found, so
+          # all-results.csv held vless rows only and the vmess/trojan/ss
+          # measurements were discarded on every run — which also starved
+          # verify-russia.yml, since it draws candidates from this file.
+          : > /tmp/results-merged.csv
+          wrote_header=0
           for proto in vless vmess trojan ss; do
             csv="artifacts/subs-$proto/all-results.csv"
-            if [ -f "$csv" ]; then
-              cp -f "$csv" all-results.csv
-              break
+            [ -f "$csv" ] || continue
+            if [ "$wrote_header" -eq 0 ]; then
+              head -1 "$csv" >> /tmp/results-merged.csv
+              wrote_header=1
             fi
+            tail -n +2 "$csv" >> /tmp/results-merged.csv
           done
+          if [ "$wrote_header" -eq 1 ]; then
+            mv /tmp/results-merged.csv all-results.csv
+            echo "all-results.csv: $(( $(wc -l < all-results.csv) - 1 )) rows across all protocols"
+          else
+            echo "::warning::no per-protocol all-results.csv artifacts — keeping previous file"
+          fi
 
       - name: Commit and push
         env:

@@ -82,7 +82,7 @@ func WriteProtocol(outDir, protocol string, selections []selector.CountrySelecti
 		path := filepath.Join(subsDir, cs.Country+".txt")
 		var b strings.Builder
 		for _, r := range cs.Top {
-			rewritten := rewriteRemark(r.Link, cs.Country)
+			rewritten := rewriteRemark(r.Link, cs.Country, r.SpeedMbps)
 			b.WriteString(rewritten)
 			b.WriteByte('\n')
 			allBuf.WriteString(rewritten)
@@ -125,8 +125,16 @@ func WriteProtocol(outDir, protocol string, selections []selector.CountrySelecti
 			Rotating:    len(rotating),
 			GeneratedAt: generatedAt,
 		}
-		if buf, err := json.MarshalIndent(sidecar, "", "  "); err == nil {
-			_ = os.WriteFile(filepath.Join(sidecarDir, protocol+".json"), buf, 0o644)
+		// A dropped sidecar is not cosmetic: regen-readme builds the README
+		// purely from these, so losing one silently deletes that protocol's
+		// entire section and its subscription URLs from the docs while the
+		// keys stay published. Surface the failure instead of swallowing it.
+		buf, err := json.MarshalIndent(sidecar, "", "  ")
+		if err != nil {
+			return fmt.Errorf("marshal readme sidecar [%s]: %w", protocol, err)
+		}
+		if err := os.WriteFile(filepath.Join(sidecarDir, protocol+".json"), buf, 0o644); err != nil {
+			return fmt.Errorf("write readme sidecar [%s]: %w", protocol, err)
 		}
 	}
 	return nil
@@ -169,7 +177,7 @@ func Write(outDir string, selections []selector.CountrySelection, rotating []sel
 		path := filepath.Join(subsDir, cs.Country+".txt")
 		var b strings.Builder
 		for _, r := range cs.Top {
-			rewritten := rewriteRemark(r.Link, cs.Country)
+			rewritten := rewriteRemark(r.Link, cs.Country, r.SpeedMbps)
 			b.WriteString(rewritten)
 			b.WriteByte('\n')
 			allBuf.WriteString(rewritten)
@@ -239,7 +247,7 @@ func writeRotating(subsDir string, rotating []selector.Result) error {
 //
 // On unparseable input, returns the original link unchanged — better to ship
 // a working key with a bad-looking name than drop it from the output.
-func rewriteRemark(link, cc string) string {
+func rewriteRemark(link, cc string, speedMbps float64) string {
 	u, err := url.Parse(link)
 	if err != nil {
 		return link
@@ -247,14 +255,46 @@ func rewriteRemark(link, cc string) string {
 	cc = strings.ToUpper(cc)
 	flag := flagEmoji(cc)
 	name := countryName(cc)
+
+	// Middle segments: speed-tier icon + bracketed Mbps. Both omitted when
+	// there is no positive speed measurement, so the flag stays adjacent to
+	// the CC. Flag is ALWAYS first (mandatory convention -- see AGENTS.md).
+	var mid string
+	if speedMbps > 0 {
+		if icon := speedIcon(speedMbps); icon != "" {
+			mid += icon + " "
+		}
+		mid += fmt.Sprintf("[%.1f mb] ", speedMbps)
+	}
+
 	// url.URL.String() URL-encodes the Fragment automatically.
 	if name == cc {
 		// Unknown country — don't duplicate the code (e.g., "🇿🇿 ZZ" not "🇿🇿 ZZ ZZ").
-		u.Fragment = fmt.Sprintf("%s %s", flag, cc)
+		u.Fragment = strings.TrimSpace(fmt.Sprintf("%s %s%s", flag, mid, cc))
 	} else {
-		u.Fragment = fmt.Sprintf("%s %s %s", flag, cc, name)
+		u.Fragment = strings.TrimSpace(fmt.Sprintf("%s %s%s %s", flag, mid, cc, name))
 	}
 	return u.String()
+}
+
+// speedIcon maps a measured speed (Mbps) to a scannable tier icon, placed
+// AFTER the flag in a key's name. Empty string when below the video-ready
+// floor (or unknown), so slow/unmeasured keys carry no icon.
+//
+//	⚡ >= 60 Mbps   (very fast)
+//	🎬 >= 25 Mbps   (4K / heavy streaming headroom)
+//	📺 >= 12 Mbps   (1080p-ready, incl. ~2x playback)
+func speedIcon(mbps float64) string {
+	switch {
+	case mbps >= 60:
+		return "⚡"
+	case mbps >= 25:
+		return "🎬"
+	case mbps >= 12:
+		return "📺"
+	default:
+		return ""
+	}
 }
 
 // countryName returns the Russian name for an ISO 3166-1 alpha-2 code.

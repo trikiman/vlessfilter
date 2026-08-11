@@ -1,9 +1,29 @@
 # Off-PC Deployment
 
-Three ways to run the VlessFilter pipeline without using your own computer.
-All options are **free** and require no recurring billing.
+Run the VlessFilter pipeline without using your own computer.
+The **primary, recommended path is GitHub Actions** (Option A) — it is free,
+fully automated, always-on, and already shipped in this repo. The other
+options are optional manual fallbacks only.
 
-## Option A: GitHub Actions on a NEW account (recommended)
+## What each run does
+
+Every run tests keys in two stages and publishes the measurements:
+
+1. **Stage 1 — alive/handshake check.** High-concurrency TLS handshake against
+   the pool. Dead keys are dropped.
+2. **Stage 2 — speed connection test.** Survivors get a real-proxy speedtest,
+   run 3 separate times, to measure actual throughput (Mbps) and latency (ms).
+3. **Pre-publish probe.** The top-3-per-country selections are re-tested right
+   before publishing so stale/dead keys never reach the results.
+
+**Where you see the results:**
+- `README.md` — per-country table with **top latency (ms)** and
+  **median speed (Mbps)** for the published top 3.
+- `all-results.csv` — full raw results (latency + speed for every tested key).
+
+---
+
+## Option A: GitHub Actions (PRIMARY — recommended)
 
 **Cost:** $0 — public repos get unlimited Actions minutes on the free tier.
 **Setup time:** ~5 minutes.
@@ -26,11 +46,12 @@ All options are **free** and require no recurring billing.
 6. **Trigger first run**: Actions tab → "refresh" workflow → Run workflow.
 
 The `.github/workflows/refresh.yml` file already exists in the repo and runs
-every 6 hours. Results are committed to the upstream
+every 4 hours. Each run does the full alive-check + speed test (see "What each
+run does" above) and commits fresh results to the upstream
 `trikiman/vlessfilter` main branch using the PAT.
 
 ### Pros
-- Fully automated
+- Fully automated — alive-check + speed test refresh on schedule
 - No card/billing
 - GitHub's infrastructure handles the runtime
 
@@ -41,61 +62,13 @@ every 6 hours. Results are committed to the upstream
 
 ---
 
-## Option B: Free-tier always-on Linux VM (Oracle Cloud / similar)
-
-**Cost:** $0 — Oracle Cloud Always-Free tier (4 ARM cores, 24GB RAM, runs
-forever, NOT a 30-day trial).
-**Setup time:** ~30 minutes.
-**Always-on:** Yes (cron on the VM).
-
-### Steps
-
-1. **Sign up at Oracle Cloud**: https://www.oracle.com/cloud/free/
-   - Card verification required, but no charge for Always-Free resources.
-   - May fail for some Russian cards — try alternative tier or fall back
-     to Google Cloud Free Tier or AWS Free Tier.
-2. **Provision an Ampere ARM VM**:
-   - Compute → Instances → Create Instance
-   - Shape: VM.Standard.A1.Flex (ARM)
-   - 4 OCPU, 24 GB RAM (max free quota)
-   - Image: Canonical Ubuntu 24.04
-   - Add SSH public key
-3. **Open SSH** to the VM (use the public IP shown in console):
-   ```
-   ssh ubuntu@<public-ip>
-   ```
-4. **Generate a PAT** as in Option A step 3.
-5. **Run the install script** on the VM:
-   ```bash
-   curl -sSL https://raw.githubusercontent.com/trikiman/vlessfilter/main/scripts/install-always-on.sh \
-     | bash -s -- github_pat_xxx
-   ```
-6. **Verify** with:
-   ```bash
-   crontab -l           # should show refresh.sh at 0,6,12,18 * * *
-   $HOME/.vlessfilter/refresh.sh &   # trigger first run manually
-   tail -f $(ls -1t $HOME/.vlessfilter/refresh-*.log | head -1)
-   ```
-
-### Pros
-- Truly always-on, no monthly minute caps
-- Faster CPUs than GitHub runners
-- Independent of GitHub billing status
-
-### Cons
-- One-time card verification (Oracle, Google, AWS all require this)
-- ~30 min setup time
-- Russian customers may face account-creation friction
-
----
-
-## Option C: h2.nexus 15-minute ephemeral VPS (manual trigger, no signup)
+## Option B: h2.nexus 15-minute ephemeral VPS (optional manual fallback, no signup)
 
 **Cost:** $0 — h2.nexus gives free 15-min VPS (4 CPU, 8GB RAM, 1Gbps) with no
 account.
 **Setup time:** Zero.
 **Always-on:** No — manual trigger when you want fresh keys (recommend
-2-4× per day).
+2-4x per day).
 
 ### Steps
 
@@ -115,7 +88,6 @@ account.
 - No new accounts, no card, no signup at all
 - 4-CPU AMD EPYC + German peering = much faster than home connections
 - Zero ongoing maintenance — just click + paste when you want fresh keys
-- Russia-friendly host
 
 ### Cons
 - Manual trigger required (no auto-schedule)
@@ -125,7 +97,7 @@ account.
 
 ---
 
-## Option D: Termux on Android phone
+## Option C: Termux on Android phone (optional manual fallback)
 **Setup time:** ~10 minutes.
 **Always-on:** Only when phone is plugged in + on home wifi.
 
@@ -169,14 +141,14 @@ account.
 
 | Your situation | Pick |
 |----------------|------|
-| Want zero-setup, just click+paste when you want fresh keys | **Option C** (h2.nexus) |
-| Have a spare email + can use GitHub | **Option A** (GitHub Actions fork) |
-| Russian-friendly Oracle / Google card works | **Option B** (Oracle Always-Free) |
-| Don't want a new account or card check | **Option D** (Termux on Android) |
+| Want fully autonomous, always-on, zero maintenance | **Option A** (GitHub Actions) — **default** |
+| Want a one-off manual refresh with no account at all | **Option B** (h2.nexus) |
+| Only have a phone available | **Option C** (Termux on Android) |
 
-**Fastest path: try Option C (h2.nexus) RIGHT NOW** — no signup, just paste
-a one-liner in their free VM. Refresh whenever you open the page. For
-full automation later, do Option A or B.
+**Recommended path: use Option A (GitHub Actions).** It is the only fully
+autonomous, always-on option — it runs the alive-check + speed test every
+4 hours on GitHub's runners and commits results with no involvement from your
+machine. Options B and C are manual fallbacks for one-off refreshes.
 
 ## After deployment
 
@@ -191,6 +163,9 @@ https://raw.githubusercontent.com/trikiman/vlessfilter/main/subs/vmess/all.txt
 https://raw.githubusercontent.com/trikiman/vlessfilter/main/subs/trojan/all.txt
 https://raw.githubusercontent.com/trikiman/vlessfilter/main/subs/ss/all.txt
 ```
+
+Speed + latency measurements for the published keys are in `README.md` (table)
+and `all-results.csv` (raw), both refreshed on every run.
 
 Local Windows scheduling is now disabled. You can remove it permanently:
 

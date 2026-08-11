@@ -15,45 +15,53 @@ var update = flag.Bool("update", false, "update golden files")
 
 func TestRewriteRemark(t *testing.T) {
 	cases := []struct {
-		name, link, cc, want string
+		name, link, cc string
+		speed          float64
+		want           string
 	}{
 		{
-			name: "flag + CC + English name",
-			link: "vless://abc@example.com:443",
-			cc:   "DE",
-			// 🇩🇪 = %F0%9F%87%A9%F0%9F%87%AA, "Germany"
-			want: "vless://abc@example.com:443#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany",
+			name:  "flag first, then icon + [mb] + CC + name (video tier)",
+			link:  "vless://abc@example.com:443",
+			cc:    "DE",
+			speed: 15,
+			// 🇩🇪 + 📺(%F0%9F%93%BA) + [15.0 mb] + DE Germany
+			want: "vless://abc@example.com:443#%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%93%BA%20%5B15.0%20mb%5D%20DE%20Germany",
 		},
 		{
-			name: "existing fragment replaced",
-			link: "vless://abc@example.com:443?security=tls#OldName",
-			cc:   "PL",
-			// 🇵🇱 = %F0%9F%87%B5%F0%9F%87%B1, "Poland"
-			want: "vless://abc@example.com:443?security=tls#%F0%9F%87%B5%F0%9F%87%B1%20PL%20Poland",
+			name:  "existing fragment replaced (25+ = clapper)",
+			link:  "vless://abc@example.com:443?security=tls#OldName",
+			cc:    "PL",
+			speed: 30,
+			// 🇵🇱 + 🎬(%F0%9F%8E%AC) + [30.0 mb] + PL Poland
+			want: "vless://abc@example.com:443?security=tls#%F0%9F%87%B5%F0%9F%87%B1%20%F0%9F%8E%AC%20%5B30.0%20mb%5D%20PL%20Poland",
 		},
 		{
-			name: "lowercase CC normalized to upper",
-			link: "vless://x@y.com:443",
-			cc:   "jp",
-			want: "vless://x@y.com:443#%F0%9F%87%AF%F0%9F%87%B5%20JP%20Japan",
+			name:  "zero speed: no icon, no bracket",
+			link:  "vless://x@y.com:443",
+			cc:    "jp",
+			speed: 0,
+			want:  "vless://x@y.com:443#%F0%9F%87%AF%F0%9F%87%B5%20JP%20Japan",
 		},
 		{
-			name: "unknown CC: no name duplication",
-			link: "vless://q@z.com:443",
-			cc:   "ZZ",
-			want: "vless://q@z.com:443#%F0%9F%87%BF%F0%9F%87%BF%20ZZ",
+			name:  "unknown CC: no name duplication (60+ = bolt)",
+			link:  "vless://q@z.com:443",
+			cc:    "ZZ",
+			speed: 70,
+			// 🇿🇿 + ⚡(%E2%9A%A1) + [70.0 mb] + ZZ
+			want: "vless://q@z.com:443#%F0%9F%87%BF%F0%9F%87%BF%20%E2%9A%A1%20%5B70.0%20mb%5D%20ZZ",
 		},
 		{
-			name: "unparseable input returned as-is",
-			link: "not a url at all !!! ::: ???",
-			cc:   "US",
-			want: "not a url at all !!! ::: ???",
+			name:  "unparseable input returned as-is",
+			link:  "not a url at all !!! ::: ???",
+			cc:    "US",
+			speed: 50,
+			want:  "not a url at all !!! ::: ???",
 		},
 	}
 	for _, c := range cases {
 		t.Run(c.name, func(t *testing.T) {
-			if got := rewriteRemark(c.link, c.cc); got != c.want {
-				t.Errorf("rewriteRemark(%q, %q)\ngot:  %q\nwant: %q", c.link, c.cc, got, c.want)
+			if got := rewriteRemark(c.link, c.cc, c.speed); got != c.want {
+				t.Errorf("rewriteRemark(%q, %q, %v)\ngot:  %q\nwant: %q", c.link, c.cc, c.speed, got, c.want)
 			}
 		})
 	}
@@ -109,9 +117,9 @@ func TestWrite_GoldenReadme(t *testing.T) {
 	}
 	// Expect "<flag> United States" (full country name from map).
 	// 🇺🇸 is U+1F1FA U+1F1F8 = %F0%9F%87%BA%F0%9F%87%B8.
-	wantUS := "vless://us-1@example.com:443#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States\n" +
-		"vless://us-2@example.com:443#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States\n" +
-		"vless://us-3@example.com:443#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States\n"
+	wantUS := "vless://us-1@example.com:443#%F0%9F%87%BA%F0%9F%87%B8%20%E2%9A%A1%20%5B78.3%20mb%5D%20US%20United%20States\n" +
+		"vless://us-2@example.com:443#%F0%9F%87%BA%F0%9F%87%B8%20%E2%9A%A1%20%5B70.0%20mb%5D%20US%20United%20States\n" +
+		"vless://us-3@example.com:443#%F0%9F%87%BA%F0%9F%87%B8%20%E2%9A%A1%20%5B65.5%20mb%5D%20US%20United%20States\n"
 	if string(usTxt) != wantUS {
 		t.Errorf("US.txt mismatch:\ngot:\n%s\nwant:\n%s", usTxt, wantUS)
 	}
@@ -122,10 +130,10 @@ func TestWrite_GoldenReadme(t *testing.T) {
 		t.Fatalf("read all.txt: %v", err)
 	}
 	allStr := string(allTxt)
-	if !strings.Contains(allStr, "vless://de-1@example.com:443#%F0%9F%87%A9%F0%9F%87%AA%20DE%20Germany") {
+	if !strings.Contains(allStr, "vless://de-1@example.com:443#%F0%9F%87%A9%F0%9F%87%AA%20%E2%9A%A1%20%5B92.1%20mb%5D%20DE%20Germany") {
 		t.Errorf("all.txt missing DE-flagged entry; got:\n%s", allStr)
 	}
-	if !strings.Contains(allStr, "vless://us-1@example.com:443#%F0%9F%87%BA%F0%9F%87%B8%20US%20United%20States") {
+	if !strings.Contains(allStr, "vless://us-1@example.com:443#%F0%9F%87%BA%F0%9F%87%B8%20%E2%9A%A1%20%5B78.3%20mb%5D%20US%20United%20States") {
 		t.Errorf("all.txt missing US-flagged entry; got:\n%s", allStr)
 	}
 	// 6 lines (3 DE + 3 US) + trailing newline.

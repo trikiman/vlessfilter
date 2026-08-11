@@ -3,6 +3,7 @@ package selector
 import (
 	"context"
 	"database/sql"
+	"encoding/base64"
 	"math"
 	"path/filepath"
 	"testing"
@@ -232,3 +233,93 @@ INSERT INTO test_results (link, delay, download_speed, location, run_id) VALUES
 		}
 	}
 }
+
+// --- endpoint-aware selection -------------------------------------------
+
+func TestEndpointKey_PerProtocol(t *testing.T) {
+	cases := []struct{ link, want string }{
+		{"vless://uuid-a@104.18.32.47:2096?type=ws&security=tls", "104.18.32.47:2096"},
+		{"trojan://pass@18.184.4.15:443?security=tls", "18.184.4.15:443"},
+		{"ss://YWVzLTI1Ni1nY206cHc=@193.135.174.135:990#T1", "193.135.174.135:990"},
+		// vmess carries add/port inside base64 JSON; port as a quoted string.
+		{"vmess://" + b64(`{"add":"134.195.196.211","port":"18000","id":"x"}`), "134.195.196.211:18000"},
+		// ...and as a bare number.
+		{"vmess://" + b64(`{"add":"1.2.3.4","port":443,"id":"x"}`), "1.2.3.4:443"},
+		// Unparseable must yield "" so callers treat it as unique, never drop it.
+		{"not-a-uri", ""},
+	}
+	for _, c := range cases {
+		if got := EndpointKey(c.link); got != c.want {
+			t.Errorf("EndpointKey(%.40q) = %q, want %q", c.link, got, c.want)
+		}
+	}
+}
+
+// Regression for the bug that shipped subs/vless/DE.txt as 104.18.32.47:2096
+// three times: "top 3" was one server wearing three UUIDs, so a single
+// outage killed every German key at once.
+func TestTop3PerCountry_CollapsesDuplicateEndpoints(t *testing.T) {
+	in := []Result{
+		{Link: "vless://a@104.18.32.47:2096", LatencyMs: 100, SpeedMbps: 90, Country: "DE"},
+		{Link: "vless://b@104.18.32.47:2096", LatencyMs: 110, SpeedMbps: 88, Country: "DE"},
+		{Link: "vless://c@104.18.32.47:2096", LatencyMs: 120, SpeedMbps: 86, Country: "DE"},
+		{Link: "vless://d@5.6.7.8:443", LatencyMs: 400, SpeedMbps: 10, Country: "DE"},
+	}
+	top := Top3PerCountry(in)[0].Top
+	if len(top) != 2 {
+		t.Fatalf("got %d keys, want 2 (one per distinct endpoint)", len(top))
+	}
+	seen := map[string]bool{}
+	for _, r := range top {
+		ep := EndpointKey(r.Link)
+		if seen[ep] {
+			t.Errorf("endpoint %s published twice", ep)
+		}
+		seen[ep] = true
+	}
+	// The slower-but-distinct server must still make the cut.
+	if EndpointKey(top[1].Link) != "5.6.7.8:443" {
+		t.Errorf("second slot = %q, want the distinct 5.6.7.8:443", top[1].Link)
+	}
+}
+
+// Three IPs in one /24 on one port (observed as 103.111.114.55/.80/.82:28061)
+// is one rack. Prefer spreading, but never publish fewer keys than we could.
+func TestTop3PerCountry_PrefersSubnetDiversity(t *testing.T) {
+	in := []Result{
+		{Link: "ss://a@103.111.114.55:28061", LatencyMs: 100, SpeedMbps: 90, Country: "IN"},
+		{Link: "ss://b@103.111.114.80:28061", LatencyMs: 105, SpeedMbps: 89, Country: "IN"},
+		{Link: "ss://c@103.111.114.82:28061", LatencyMs: 110, SpeedMbps: 88, Country: "IN"},
+		{Link: "ss://d@45.9.9.9:8388", LatencyMs: 900, SpeedMbps: 1, Country: "IN"},
+	}
+	top := Top3PerCountry(in)[0].Top
+	if len(top) != 3 {
+		t.Fatalf("got %d keys, want 3", len(top))
+	}
+	if EndpointKey(top[0].Link) != "103.111.114.55:28061" {
+		t.Errorf("first slot should stay the best-scoring key, got %q", top[0].Link)
+	}
+	// Second slot goes to the far-away box, not the rack neighbour.
+	if EndpointKey(top[1].Link) != "45.9.9.9:8388" {
+		t.Errorf("second slot = %q, want 45.9.9.9:8388 (different /24)", top[1].Link)
+	}
+	// Only then do we backfill from the crowded /24 rather than under-fill.
+	if EndpointKey(top[2].Link) != "103.111.114.80:28061" {
+		t.Errorf("third slot = %q, want backfill 103.111.114.80:28061", top[2].Link)
+	}
+}
+
+func TestTop3PerCountry_SubdomainsOfOneProviderCollapse(t *testing.T) {
+	// r3mrcg...cybervena.com and namrcg...cybervena.com are one operator.
+	in := []Result{
+		{Link: "ss://a@r3mrcg001287h3p.cybervena.com:50099", LatencyMs: 240, SpeedMbps: 10, Country: "TW"},
+		{Link: "ss://b@namrcg001640lrm.cybervena.com:50099", LatencyMs: 259, SpeedMbps: 9, Country: "TW"},
+		{Link: "ss://c@8.8.8.8:443", LatencyMs: 800, SpeedMbps: 1, Country: "TW"},
+	}
+	top := Top3PerCountry(in)[0].Top
+	if EndpointKey(top[1].Link) != "8.8.8.8:443" {
+		t.Errorf("second slot = %q, want the unrelated host 8.8.8.8:443", top[1].Link)
+	}
+}
+
+func b64(s string) string { return base64.StdEncoding.EncodeToString([]byte(s)) }
