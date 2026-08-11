@@ -1,3 +1,1 @@
-vless://9bbc4303-c291-42b8-8eb4-38923f4b6cdd@89.185.81.68:443?encryption=none&fp=&pbk=VKnmZTvFbnmlCDWFpZiLw8054w02QOmXmXVCFFG7T2U&security=reality&sid=d5d0&sni=yahoo.com&type=tcp#%F0%9F%87%B3%F0%9F%87%B4%20NO%20Norway
-vless://9bbc4303-c291-42b8-8eb4-38923f4b6cdd@89.185.81.68:443?encryption=none&type=raw&headerType=none&security=reality&pbk=VKnmZTvFbnmlCDWFpZiLw8054w02QOmXmXVCFFG7T2U&sni=yahoo.com&sid=d5d0#%F0%9F%87%B3%F0%9F%87%B4%20NO%20Norway
-vless://9bbc4303-c291-42b8-8eb4-38923f4b6cdd@89.185.81.68:443?type=tcp&security=reality&sni=yahoo.com&pbk=VKnmZTvFbnmlCDWFpZiLw8054w02QOmXmXVCFFG7T2U&sid=d5d0#%F0%9F%87%B3%F0%9F%87%B4%20NO%20Norway
+vless://73435d4e-2ac1-4dba-900e-81aac3dc5913@no-fardad.oorluma.ir:6800?security=reality&encryption=none&pbk=lQbgwNDYw6Zbjdim0JtXUarzb-3GSjDvtX6FJYZD9Qo&headerType=none&fp=qq&type=tcp&sni=play.google.com#%F0%9F%87%B3%F0%9F%87%B4%20NO%20Norway

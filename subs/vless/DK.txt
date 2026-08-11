@@ -1,3 +1,2 @@
-vless://e4fc4761-154f-490e-bbaa-b4fa193f1073@45.148.31.0:15855/?type=ws&encryption=none&flow=&host=45.148.31.0&path=%2F#%F0%9F%87%A9%F0%9F%87%B0%20DK%20Denmark
-vless://e4fc4761-154f-490e-bbaa-b4fa193f1073@45.148.31.0:15855?type=ws&path=%2f#%F0%9F%87%A9%F0%9F%87%B0%20DK%20Denmark
-vless://e4fc4761-154f-490e-bbaa-b4fa193f1073@45.148.31.0:15855?path=%2F&security=&encryption=none&host=45.148.31.0&fp=chrome&type=ws#%F0%9F%87%A9%F0%9F%87%B0%20DK%20Denmark
+vless://11065cf9-b0ba-4503-ac39-adaa92995130@194.77.220.156:1525?security=none&encryption=none&headerType=none&type=tcp#%F0%9F%87%A9%F0%9F%87%B0%20DK%20Denmark
+vless://da7685a7-15ef-41e4-a0d9-009bb4be7220@84.75.161.38:443?&security=reality&flow=xtls-rprx-vision&pbk=V6FabatADtcX7aO9KMjGCadJC4LuQ_5nRViab-z-nFQ&sid=5678&fp=chrome&sni=auto.malina24.xyz&type=tcp&headerType=none&host=auto.malina24.xyz&path=%2F#%F0%9F%87%A9%F0%9F%87%B0%20DK%20Denmark
