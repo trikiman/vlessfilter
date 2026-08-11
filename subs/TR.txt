@@ -5,4 +5,4 @@ vmess://eyJ2IjoiMiIsImFkZCI6IjUuMTg4LjE5MC4yNTIiLCJwb3J0IjoiMjIzMjQiLCJpZCI6IjA0
 trojan://0ds_NIm933rf_Nxio294_nbZi3@78.135.73.38:449?security=tls&headerType=none&type=tcp&sni=grape-ataturk-tr.yyuyy.com#%F0%9F%87%B9%F0%9F%87%B7%20TR%20Turkey
 trojan://0ds_NIm933rf_Nxio294_nbZi3@78.135.73.38:449?type=tcp&security=tls&headerType=none&sni=grape-ataturk-tr.yyuyy.com&fp=chrome&insecure=0&allowInsecure=0#%F0%9F%87%B9%F0%9F%87%B7%20TR%20Turkey
 trojan://0ds_NIm933rf_Nxio294_nbZi3@78.135.73.38:449?security=tls&sni=grape-ataturk-tr.yyuyy.com&type=tcp&headerType=none&path=%2f#%F0%9F%87%B9%F0%9F%87%B7%20TR%20Turkey
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp0dW5uZWwtZmJyb2Y=@tr-1.stunnel.cc:8444#%F0%9F%87%B9%F0%9F%87%B7%20%F0%9F%8E%AC%20%5B30.5%20mb%5D%20TR%20Turkey
+ss://YWVzLTI1Ni1nY206Y2RCSURWNDJEQ3duZklO@38.180.113.194:8119#%F0%9F%87%B9%F0%9F%87%B7%20%F0%9F%93%BA%20%5B15.1%20mb%5D%20TR%20Turkey
