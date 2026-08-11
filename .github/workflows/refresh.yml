@@ -46,15 +46,16 @@ jobs:
       changed: ${{ steps.commit.outputs.changed }}
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           fetch-depth: 0
           token: ${{ secrets.PUSH_TOKEN || github.token }}
 
       - name: Setup Go
-        uses: actions/setup-go@v5
+        uses: actions/setup-go@v6
         with:
           go-version: '1.22'
+          cache: false
 
       - name: Build singboxconv
         run: go build -o bin/singboxconv ./cmd/singboxconv
@@ -130,14 +131,15 @@ jobs:
         proto: [vless, vmess, trojan, ss]
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           fetch-depth: 0
 
       - name: Setup Go
-        uses: actions/setup-go@v5
+        uses: actions/setup-go@v6
         with:
           go-version: '1.22'
+          cache: false
 
       - name: Tune kernel
         run: |
@@ -171,7 +173,7 @@ jobs:
 
       - name: Upload protocol output as artifact
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: subs-${{ matrix.proto }}
           path: |
@@ -190,7 +192,7 @@ jobs:
     if: always()  # publish whatever protocols succeeded even if one failed
     steps:
       - name: Checkout (full)
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           fetch-depth: 0
           # Use deploy/PAT for push later. Default GITHUB_TOKEN works for
@@ -198,7 +200,7 @@ jobs:
           token: ${{ secrets.PUSH_TOKEN || github.token }}
 
       - name: Download all protocol artifacts
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v7
         with:
           path: artifacts/
 
@@ -227,9 +229,10 @@ jobs:
           done
 
       - name: Setup Go (for regen-readme)
-        uses: actions/setup-go@v5
+        uses: actions/setup-go@v6
         with:
           go-version: '1.22'
+          cache: false
 
       - name: Regenerate top-level README from per-protocol sidecars
         run: |
