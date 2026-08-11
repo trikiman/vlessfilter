@@ -131,28 +131,30 @@ sources:
   # R3ZARAHIMI/tg-v2ray-configs-every2h — bulk-collected from telegram,
   # split per country in conf-XX.txt files. High-volume DE (660+),
   # NL (240+), US (270+), FR (180+), UK (90+). Refreshed every 2h.
+  # NOTE (2026-08): upstream moved per-country files into a regions/ subfolder;
+  # the old top-level conf-XX.txt now 404, so these use regions/conf-XX.txt.
   - name: rezarahimi-de
-    url: https://raw.githubusercontent.com/R3ZARAHIMI/tg-v2ray-configs-every2h/main/conf-DE.txt
+    url: https://raw.githubusercontent.com/R3ZARAHIMI/tg-v2ray-configs-every2h/main/regions/conf-DE.txt
     kind: plain
     enabled: true
 
   - name: rezarahimi-nl
-    url: https://raw.githubusercontent.com/R3ZARAHIMI/tg-v2ray-configs-every2h/main/conf-NL.txt
+    url: https://raw.githubusercontent.com/R3ZARAHIMI/tg-v2ray-configs-every2h/main/regions/conf-NL.txt
     kind: plain
     enabled: true
 
   - name: rezarahimi-fr
-    url: https://raw.githubusercontent.com/R3ZARAHIMI/tg-v2ray-configs-every2h/main/conf-FR.txt
+    url: https://raw.githubusercontent.com/R3ZARAHIMI/tg-v2ray-configs-every2h/main/regions/conf-FR.txt
     kind: plain
     enabled: true
 
   - name: rezarahimi-uk
-    url: https://raw.githubusercontent.com/R3ZARAHIMI/tg-v2ray-configs-every2h/main/conf-UK.txt
+    url: https://raw.githubusercontent.com/R3ZARAHIMI/tg-v2ray-configs-every2h/main/regions/conf-UK.txt
     kind: plain
     enabled: true
 
   - name: rezarahimi-us
-    url: https://raw.githubusercontent.com/R3ZARAHIMI/tg-v2ray-configs-every2h/main/conf-US.txt
+    url: https://raw.githubusercontent.com/R3ZARAHIMI/tg-v2ray-configs-every2h/main/regions/conf-US.txt
     kind: plain
     enabled: true
 

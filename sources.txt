@@ -284,11 +284,11 @@ https://raw.githubusercontent.com/Danialsamadi/v2go/main/Splitted-By-Country/VN.
 https://raw.githubusercontent.com/Danialsamadi/v2go/main/Splitted-By-Country/ZA.txt
 https://raw.githubusercontent.com/Giromo0/Collector/main/All_Configs_Sub.txt
 https://raw.githubusercontent.com/trikiman/vlessfilter/main/dev/sources-fetched/paiyt.txt
-https://raw.githubusercontent.com/R3ZARAHIMI/tg-v2ray-configs-every2h/main/conf-DE.txt
-https://raw.githubusercontent.com/R3ZARAHIMI/tg-v2ray-configs-every2h/main/conf-NL.txt
-https://raw.githubusercontent.com/R3ZARAHIMI/tg-v2ray-configs-every2h/main/conf-FR.txt
-https://raw.githubusercontent.com/R3ZARAHIMI/tg-v2ray-configs-every2h/main/conf-UK.txt
-https://raw.githubusercontent.com/R3ZARAHIMI/tg-v2ray-configs-every2h/main/conf-US.txt
+https://raw.githubusercontent.com/R3ZARAHIMI/tg-v2ray-configs-every2h/main/regions/conf-DE.txt
+https://raw.githubusercontent.com/R3ZARAHIMI/tg-v2ray-configs-every2h/main/regions/conf-NL.txt
+https://raw.githubusercontent.com/R3ZARAHIMI/tg-v2ray-configs-every2h/main/regions/conf-FR.txt
+https://raw.githubusercontent.com/R3ZARAHIMI/tg-v2ray-configs-every2h/main/regions/conf-UK.txt
+https://raw.githubusercontent.com/R3ZARAHIMI/tg-v2ray-configs-every2h/main/regions/conf-US.txt
 https://raw.githubusercontent.com/R3ZARAHIMI/tg-v2ray-configs-every2h/main/conf-week.txt
 https://raw.githubusercontent.com/R3ZARAHIMI/tg-v2ray-configs-every2h/main/Original-Configs.txt
 https://raw.githubusercontent.com/R3ZARAHIMI/tg-v2ray-configs-every2h/main/Config_no_cf.txt
