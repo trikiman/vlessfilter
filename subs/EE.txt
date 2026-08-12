@@ -1,3 +1,4 @@
-vless://19f54e37-5fae-47f6-bc10-e71ccbc58389@estproxy2.lockdwn.com:443?encryption=none&security=none&type=ws#%F0%9F%87%AA%F0%9F%87%AA%20%F0%9F%93%BA%20%5B18.1%20mb%5D%20EE%20Estonia
+vless://4593aa27-a2a1-412f-935f-3829495c0970@91.235.234.186:443?encryption=none&flow=xtls-rprx-vision&fp=&pbk=g-WqfHKjac71MMtkmq5bIvTFavzXTCAnEI_17KoTNSQ&security=reality&sni=us7fs3.proxen.pdevinfra.com&type=tcp#%F0%9F%87%AA%F0%9F%87%AA%20%F0%9F%93%BA%20%5B25.0%20mb%5D%20EE%20Estonia
+vless://19f54e37-5fae-47f6-bc10-e71ccbc58389@estproxy2.lockdwn.com:443?encryption=none&security=none&type=ws#%F0%9F%87%AA%F0%9F%87%AA%20%F0%9F%93%BA%20%5B15.5%20mb%5D%20EE%20Estonia
 trojan://CFvS99VcEv82u3XFr36EPbumLPadKXT6@trojan-tcp-tls-test.hysteria.ltd:9443?security=tls&allowinsecure=0&type=tcp#%F0%9F%87%AA%F0%9F%87%AA%20EE%20Estonia
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpYRjBrbHc3ODcwdlhuM3VRSXhlMTlR@77.83.198.104:1080#%F0%9F%87%AA%F0%9F%87%AA%20EE%20Estonia

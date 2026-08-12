@@ -1,1 +1,1 @@
-vless://660174a2-d32d-4521-840d-d1853bfc80b8@83.147.216.223:4433?security=tls&type=ws&path=/@Marisa_kristi&host=3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev&packetEncoding=xudp&sni=3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev&fp=chrome#%F0%9F%8C%90%20ROTATING
+vless://a21b9103-1693-49c1-8dc9-e8e8098ee969@188.164.248.69:443?path=%2F&security=tls&encryption=none&insecure=0&host=free-7f1.pages.dev&fp=chrome&type=ws&allowInsecure=0&sni=free-7f1.pages.dev#%F0%9F%8C%90%20ROTATING
