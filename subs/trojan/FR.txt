@@ -1,2 +1,2 @@
-trojan://humanity@194.135.38.140:443?sni=www.calmlunch.com&type=ws&path=%2Fassignment&fp=chrome#%F0%9F%87%AB%F0%9F%87%B7%20%F0%9F%8E%AC%20%5B27.5%20mb%5D%20FR%20France
-trojan://humanity@185.220.100.168:443?sni=www.calmlunch.com&type=ws&path=%2Fassignment&fp=chrome#%F0%9F%87%AB%F0%9F%87%B7%20%F0%9F%93%BA%20%5B21.7%20mb%5D%20FR%20France
+trojan://humanity@168.100.9.178:2053?path=%2Fassignment&security=tls&insecure=0&host=www.calmlunch.com&type=ws&allowInsecure=0&sni=www.calmlunch.com#%F0%9F%87%AB%F0%9F%87%B7%20%F0%9F%8E%AC%20%5B26.7%20mb%5D%20FR%20France
+trojan://humanity@109.71.241.236:8443?path=%2Fassignment&security=tls&insecure=0&host=www.calmlunch.com&type=ws&allowInsecure=0&sni=www.calmlunch.com#%F0%9F%87%AB%F0%9F%87%B7%20%F0%9F%93%BA%20%5B21.1%20mb%5D%20FR%20France

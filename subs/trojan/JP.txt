@@ -1,3 +1,2 @@
-trojan://NQ26071394@52.196.115.139:443?allowInsecure=0&sni=grand-grub.rooster465.autos#%F0%9F%87%AF%F0%9F%87%B5%20JP%20Japan
-trojan://CF68213490@13.231.188.13:443?sni=summary-firefly.rooster465.autos&fp=chrome&type=tcp&path=%2f#%F0%9F%87%AF%F0%9F%87%B5%20JP%20Japan
-trojan://CF68213490@13.112.180.140:443?sni=settling-humpback.rooster465.autos&fp=chrome&type=tcp&path=%2f#%F0%9F%87%AF%F0%9F%87%B5%20JP%20Japan
+trojan://ND91608427@sensible-mongrel.rooster465.autos:443?security=tls&sni=sensible-mongrel.rooster465.autos#%F0%9F%87%AF%F0%9F%87%B5%20%F0%9F%93%BA%20%5B12.6%20mb%5D%20JP%20Japan
+trojan://ND91608427@3.112.238.99:443?security=tls&sni=stunning-mite.rooster465.autos#%F0%9F%87%AF%F0%9F%87%B5%20%F0%9F%93%BA%20%5B13.2%20mb%5D%20JP%20Japan

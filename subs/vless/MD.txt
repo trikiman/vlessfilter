@@ -1,1 +1,1 @@
-vless://e16c49e6-fca7-4c4e-b717-c4b12b1859bc@md.voxyvpn.ru:443?encryption=none&flow=xtls-rprx-vision&type=tcp&security=reality&sni=ign.com&fp=chrome&pbk=L7DF7bQGLb1hLQxHoDqnsd7WMAo8bklWteoXqKYwAl8&sid=deadbeef#%F0%9F%87%B2%F0%9F%87%A9%20%F0%9F%8E%AC%20%5B25.3%20mb%5D%20MD%20Moldova
+vless://e16c49e6-fca7-4c4e-b717-c4b12b1859bc@217.156.66.91:443?type=tcp&security=reality&encryption=none&flow=xtls-rprx-vision&fp=firefox&pbk=L7DF7bQGLb1hLQxHoDqnsd7WMAo8bklWteoXqKYwAl8&sid=deadbeef&sni=ign.com#%F0%9F%87%B2%F0%9F%87%A9%20%F0%9F%93%BA%20%5B20.2%20mb%5D%20MD%20Moldova
