@@ -1,3 +1,1 @@
 trojan://CF68213490@3.35.214.88:443?sni=pure-ram.rooster465.autos&type=tcp&fp=chrome#%F0%9F%87%B0%F0%9F%87%B7%20KR%20South%20Korea
-trojan://CF68213490@3.35.214.88:443?sni=pure-ram.rooster465.autos&path=%2f#%F0%9F%87%B0%F0%9F%87%B7%20KR%20South%20Korea
-trojan://CF68213490@3.35.214.88:443?sni=pure-ram.rooster465.autos&type=tcp&fp=chrome#%F0%9F%87%B0%F0%9F%87%B7%20KR%20South%20Korea

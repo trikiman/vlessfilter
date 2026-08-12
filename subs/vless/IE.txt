@@ -1,3 +1,1 @@
 vless://412d7fbe-7474-4f1d-86c6-7eebdc628f72@mci.pictureiran.ir:2087?mode=auto&path=%2F&security=tls&encryption=none&insecure=0&host=ireland.alfather.ir&fp=chrome&type=xhttp&allowInsecure=0&sni=ireland.alfather.ir#%F0%9F%87%AE%F0%9F%87%AA%20IE%20Ireland
-vless://412d7fbe-7474-4f1d-86c6-7eebdc628f72@mci.pictureiran.ir:2087?mode=auto&path=/&security=tls&encryption=none&insecure=0&host=ireland.alfather.ir&fp=chrome&type=xhttp&allowInsecure=0&sni=ireland.alfather.ir#%F0%9F%87%AE%F0%9F%87%AA%20IE%20Ireland
-vless://412d7fbe-7474-4f1d-86c6-7eebdc628f72@mci.pictureiran.ir:2087?security=tls&type=xhttp&path=/&host=ireland.alfather.ir&packetEncoding=xudp&sni=ireland.alfather.ir&fp=chrome&mode=auto&encryption=none#%F0%9F%87%AE%F0%9F%87%AA%20IE%20Ireland

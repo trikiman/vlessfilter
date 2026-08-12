@@ -1,2 +1,1 @@
 trojan://humanity@104.16.250.22:443?sni=www.multiplydose.com&type=ws&path=/assignment&fp=chrome#%F0%9F%87%AE%F0%9F%87%B7%20IR%20Iran
-trojan://humanity@104.16.250.22:443?sni=www.multiplydose.com&type=ws&path=/assignment#%F0%9F%87%AE%F0%9F%87%B7%20IR%20Iran

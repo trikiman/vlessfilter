@@ -1,3 +1,1 @@
 trojan://ZfhGKkAmGl.hxRfIUI0LUU.MuK3hkQdxed@38.60.202.163:443/?type=tcp&security=tls#%F0%9F%87%A6%F0%9F%87%AA%20AE%20UAE
-trojan://ZfhGKkAmGl.hxRfIUI0LUU.MuK3hkQdxed@38.60.202.163:443#%F0%9F%87%A6%F0%9F%87%AA%20AE%20UAE
-trojan://ZfhGKkAmGl.hxRfIUI0LUU.MuK3hkQdxed@38.60.202.163:443/?type=tcp&security=tls#%F0%9F%87%A6%F0%9F%87%AA%20AE%20UAE

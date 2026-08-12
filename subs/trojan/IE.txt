@@ -1,3 +1,2 @@
 trojan://NQ26071394@funky-opossum.rooster465.autos:443?allowInsecure=0&sni=funky-opossum.rooster465.autos#%F0%9F%87%AE%F0%9F%87%AA%20IE%20Ireland
 trojan://NQ26071394@tops-marlin.rooster465.autos:443?security=tls&sni=tops-marlin.rooster465.autos&fp=chrome&type=tcp&headerType=none&path=%2f&allow_insecure=0#%F0%9F%87%AE%F0%9F%87%AA%20IE%20Ireland
-trojan://NQ26071394@funky-opossum.rooster465.autos:443?allowInsecure=0&sni=funky-opossum.rooster465.autos#%F0%9F%87%AE%F0%9F%87%AA%20IE%20Ireland

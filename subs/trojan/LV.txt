@@ -1,2 +1,1 @@
 trojan://n8X-MwE52zJ1c6TpX5ePutoVNBRF5SVM@scr.unlimitedteam.space:2053?security=tls&insecure=0&headerType=none&fp=firefox&type=tcp&allowInsecure=0&sni=scr.unlimitedteam.space#%F0%9F%87%B1%F0%9F%87%BB%20LV%20Latvia
-trojan://n8X-MwE52zJ1c6TpX5ePutoVNBRF5SVM@scr.unlimitedteam.space:2053?security=tls&insecure=0&headerType=none&fp=firefox&type=tcp&allowInsecure=0&sni=scr.unlimitedteam.space#%F0%9F%87%B1%F0%9F%87%BB%20LV%20Latvia
