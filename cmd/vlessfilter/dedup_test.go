@@ -72,3 +72,66 @@ func TestDedupEndpoints_MissingAndEmptyAreSafe(t *testing.T) {
 		t.Errorf("empty file gained content: %q", raw)
 	}
 }
+
+// regen-readme builds each protocol's section purely from its
+// .readme-data/<proto>.json sidecar. A missing sidecar used to just `continue`,
+// which silently deleted that protocol's section AND its subscription URLs from
+// the README while its keys stayed published — vless (43 keys) and trojan (51)
+// were undocumented that way. It must now refuse rather than publish a README
+// that hides live output.
+func TestRegenReadme_RefusesToDropPublishedProtocol(t *testing.T) {
+	newRepo := func(t *testing.T, publishedProtos []string, sidecarProtos []string) string {
+		t.Helper()
+		dir := t.TempDir()
+		for _, p := range publishedProtos {
+			d := filepath.Join(dir, "subs", p)
+			if err := os.MkdirAll(d, 0o755); err != nil {
+				t.Fatal(err)
+			}
+			if err := os.WriteFile(filepath.Join(d, "all.txt"),
+				[]byte("vless://u@1.2.3.4:443#X\n"), 0o644); err != nil {
+				t.Fatal(err)
+			}
+		}
+		sd := filepath.Join(dir, ".readme-data")
+		if err := os.MkdirAll(sd, 0o755); err != nil {
+			t.Fatal(err)
+		}
+		for _, p := range sidecarProtos {
+			body := `{"protocol":"` + p + `","selections":[],"rotating":0,` +
+				`"generated_at":"2026-08-12T00:00:00Z"}`
+			if err := os.WriteFile(filepath.Join(sd, p+".json"), []byte(body), 0o644); err != nil {
+				t.Fatal(err)
+			}
+		}
+		return dir
+	}
+
+	t.Run("published protocol missing its sidecar aborts", func(t *testing.T) {
+		// trojan has keys but no sidecar — the exact production failure.
+		dir := newRepo(t, []string{"vless", "trojan"}, []string{"vless"})
+		if code := regenReadmeCmd([]string{"--out", dir}); code == exitOK {
+			t.Error("regen-readme succeeded while dropping trojan; want non-zero exit")
+		}
+	})
+
+	t.Run("unpublished protocol missing its sidecar is fine", func(t *testing.T) {
+		// Only vless is published, and it has its sidecar. The other three
+		// protocols have neither keys nor sidecars — nothing is being hidden.
+		dir := newRepo(t, []string{"vless"}, []string{"vless"})
+		if code := regenReadmeCmd([]string{"--out", dir}); code != exitOK {
+			t.Errorf("exit %d, want %d: nothing published was omitted", code, exitOK)
+		}
+	})
+
+	t.Run("corrupt sidecar for a published protocol aborts", func(t *testing.T) {
+		dir := newRepo(t, []string{"vless"}, nil)
+		if err := os.WriteFile(filepath.Join(dir, ".readme-data", "vless.json"),
+			[]byte("{not json"), 0o644); err != nil {
+			t.Fatal(err)
+		}
+		if code := regenReadmeCmd([]string{"--out", dir}); code == exitOK {
+			t.Error("regen-readme accepted a corrupt sidecar for a published protocol")
+		}
+	})
+}

@@ -247,8 +247,14 @@ jobs:
       - name: Regenerate top-level README from per-protocol sidecars
         run: |
           go build -o /tmp/vlessfilter ./cmd/vlessfilter
+          # regen-readme now exits non-zero rather than writing a README that
+          # omits a protocol which still has published keys. Keeping the
+          # previous README is the correct outcome there — a stale-but-honest
+          # README beats one that hides live subscription URLs. Surfaced as a
+          # ::warning:: so it appears in the Actions summary instead of only in
+          # the step log, where the previous bare echo was invisible.
           /tmp/vlessfilter regen-readme --out . || {
-            echo "WARN: regen-readme failed but continuing — README may be stale"
+            echo "::warning::regen-readme failed — keeping the previous README (see the ::error:: above for which protocol was at risk of being dropped)"
           }
 
       - name: Build top-level subs/ as union of all 4 protocols
@@ -303,7 +309,13 @@ jobs:
           # shares selector.EndpointKey with the selector itself — notably its
           # vmess base64 decoding. Doing it in awk would need gawk's 3-arg
           # match(); GitHub runners default to mawk, where that silently fails.
-          /tmp/vlessfilter dedup-endpoints subs/all.txt subs/rotating.txt subs/??.txt
+          # Includes the per-protocol files, not just the top-level union. The
+          # union was deduped while subs/trojan/all.txt still shipped 51 lines
+          # covering 36 endpoints, so anyone subscribing to a single protocol
+          # URL got the duplicates the top-level URL had already removed.
+          /tmp/vlessfilter dedup-endpoints \
+            subs/all.txt subs/rotating.txt subs/??.txt \
+            subs/*/all.txt subs/*/rotating.txt subs/*/??.txt
 
           # Regenerate top-level all-results.csv as the UNION of every
           # protocol's results.

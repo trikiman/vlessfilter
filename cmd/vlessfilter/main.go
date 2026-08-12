@@ -406,21 +406,37 @@ func regenReadmeCmd(args []string) int {
 		path := filepath.Join(*outDir, ".readme-data", proto+".json")
 		raw, err := os.ReadFile(path)
 		if err != nil {
-			// A slog warning scrolls past in CI. If this protocol still has
-			// published keys, the README is about to drop its section and its
-			// subscription URLs while those keys remain live — readers simply
-			// never learn the protocol exists. Annotate so it surfaces in the
-			// Actions summary.
+			// A missing sidecar for a protocol that still has published keys is
+			// not a warning-level event: the README is about to drop that
+			// protocol's entire section AND its subscription URLs while the keys
+			// stay live, so readers never learn the protocol exists. That is how
+			// vless (43 keys) and trojan (51 keys) went undocumented while being
+			// served. Refuse to write a README that hides published output —
+			// the workflow's `||` fallback then keeps the previous, honest one.
 			if published, n := protocolIsPublished(*outDir, proto); published {
-				fmt.Printf("::warning::README will omit %s despite %d published keys — sidecar missing at %s\n",
+				fmt.Printf("::error::refusing to regenerate README: it would omit %s despite %d published keys (sidecar missing at %s)\n",
 					proto, n, path)
+				slog.Error("regen-readme: sidecar missing for a protocol with published keys; aborting",
+					"protocol", proto, "published_keys", n, "path", path)
+				return exitRuntime
 			}
+			// No sidecar and nothing published — this protocol legitimately has
+			// nothing to show.
 			slog.Warn("regen-readme: sidecar missing, protocol omitted from README",
 				"protocol", proto, "path", path)
 			continue
 		}
 		var sc sidecar
 		if err := json.Unmarshal(raw, &sc); err != nil {
+			// Same reasoning as the missing-sidecar case above: a corrupt
+			// sidecar must not silently erase a protocol that has live keys.
+			if published, n := protocolIsPublished(*outDir, proto); published {
+				fmt.Printf("::error::refusing to regenerate README: %s sidecar is unreadable but %d keys are published (%v)\n",
+					proto, n, err)
+				slog.Error("regen-readme: sidecar parse failed for a protocol with published keys; aborting",
+					"protocol", proto, "published_keys", n, "error", err)
+				return exitRuntime
+			}
 			slog.Warn("regen-readme: sidecar parse failed, omitting protocol",
 				"protocol", proto, "error", err)
 			continue
