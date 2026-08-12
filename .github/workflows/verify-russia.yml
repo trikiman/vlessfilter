@@ -31,6 +31,10 @@ on:
         description: 'Wall-clock budget for the probe sweep'
         required: false
         default: '900'
+      ss_probe_quota:
+        description: 'Shadowsocks candidates probed up front (0 = keep SS last, i.e. never measured)'
+        required: false
+        default: '40'
       parallel:
         description: 'Concurrent probes through the bridge'
         required: false
@@ -312,8 +316,8 @@ jobs:
           done
 
           # Interleave A and B so output has BOTH trojan and reality (don't let
-          # one protocol fill all 15 slots — user wants protocol diversity as
-          # a hedge since residential behavior shifts). Then C, then D.
+          # one protocol fill every slot — protocol diversity is a hedge, since
+          # residential behavior shifts). Then C, then D.
           declare -a cands
           max_ab=$(( ${#tier_a[@]} > ${#tier_b[@]} ? ${#tier_a[@]} : ${#tier_b[@]} ))
           for ((i=0; i<max_ab; i++)); do
@@ -322,7 +326,34 @@ jobs:
           done
           for line in "${tier_c[@]}"; do cands+=("$line"); done
           for line in "${tier_d[@]}"; do cands+=("$line"); done
-          for line in "${tier_e[@]}"; do cands+=("$line"); done
+
+          # Tier E (Shadowsocks) is the open question this job is supposed to
+          # settle, but appending it last made it unmeasurable: it started at
+          # index ~502 of 565 while the sweep exits at target_keys (150) passes,
+          # so it was never reached. Its bridge pass rate is 0/0, not 0/63 — and
+          # "SS is TSPU-blocked" has never actually been measured here. The only
+          # bridge data that exists (2026-05-29..31, before SS was dropped from
+          # the pool) had SS passing in 25/25 runs taking 36-56% of slots.
+          #
+          # Reserve a slot quota at the FRONT for tier E so every run measures
+          # it, without letting it displace the tiers that currently work. The
+          # quota is small and capped by what tier E actually holds.
+          SS_PROBE_QUOTA="${{ github.event.inputs.ss_probe_quota || '40' }}"
+          declare -a ss_head=() ss_tail=()
+          # Split tier E unconditionally: with quota 0 everything lands in the
+          # tail, which reproduces the old SS-last order. Guarding this whole
+          # block on quota>0 silently DROPPED all of tier E in that case.
+          for ((i=0; i<${#tier_e[@]}; i++)); do
+            if [ "$i" -lt "$SS_PROBE_QUOTA" ]; then ss_head+=("${tier_e[$i]}")
+            else ss_tail+=("${tier_e[$i]}"); fi
+          done
+          if [ "${#ss_head[@]}" -gt 0 ]; then
+            cands=("${ss_head[@]}" "${cands[@]}")
+            echo "tier E: probing ${#ss_head[@]} of ${#tier_e[@]} SS candidates up front (quota=$SS_PROBE_QUOTA)"
+          fi
+          if [ "${#ss_tail[@]}" -gt 0 ]; then
+            for line in "${ss_tail[@]}"; do cands+=("$line"); done
+          fi
           MAX_CANDIDATES="${{ github.event.inputs.max_candidates || '1500' }}"
           POOL_TOTAL=${#cands[@]}
           if [ "$MAX_CANDIDATES" -gt 0 ] && [ "$POOL_TOTAL" -gt "$MAX_CANDIDATES" ]; then
@@ -335,13 +366,14 @@ jobs:
           echo "  Tier B (VLESS Reality):   ${#tier_b[@]}"
           echo "  Tier C (WS+TLS / xhttp):  ${#tier_c[@]}"
           echo "  Tier D (other):           ${#tier_d[@]}"
-          echo "  Tier E (Shadowsocks):     ${#tier_e[@]}  (probed last — measuring the TSPU-block assumption)"
+          echo "  Tier E (Shadowsocks):     ${#tier_e[@]}  (${#ss_head[@]} probed up front, rest last)"
           if [ "$no_endpoint" -gt 0 ]; then
             echo "::notice::${no_endpoint} configs skipped — no cleartext host:port (vmess base64 bodies)"
           fi
 
           : > /tmp/verified.txt
           : > /tmp/timings.txt
+          : > /tmp/attempted.txt
 
           TARGET_KEYS="${{ github.event.inputs.target_keys || '150' }}"
           PROBE_BUDGET="${{ github.event.inputs.probe_budget_sec || '900' }}"
@@ -364,6 +396,12 @@ jobs:
           # Cheap early-out so the fan-out stops near the target instead of
           # draining the whole pool. Racy by design: overshoot is harmless.
           if [ "$(wc -l < /tmp/timings.txt)" -ge "$TARGET_KEYS" ]; then exit 0; fi
+
+          # Record the ATTEMPT before probing. Without this the run cannot tell
+          # "probed and failed" from "never reached", which is precisely how
+          # tier E looked measured for months while being skipped entirely.
+          flock /tmp/attempted.lock -c "echo '$c' >> /tmp/attempted.txt" 2>/dev/null || \
+            echo "$c" >> /tmp/attempted.txt
 
           out=$(timeout 8 proxychains4 -f /tmp/pc.conf xray-knife http -c "$c" -u "https://www.cloudflare.com/cdn-cgi/trace" -d 4000 -b 2>&1)
           echo "$out" | grep -q "✅" || exit 0
@@ -398,7 +436,17 @@ jobs:
           cut -d' ' -f2- /tmp/timings.txt > /tmp/verified.txt
 
           echo
-          echo "Result: $PASS_COUNT verified from ${#cands[@]} probed in ${ELAPSED}s (parallel=$PARALLEL, target=$TARGET_KEYS)"
+          # ATTEMPTED, not pool size. This line used to print ${#cands[@]},
+          # which reads as "we probed 565" when the sweep actually exits at
+          # target_keys — so a run that stopped after ~360 still claimed 565.
+          # That is what made tier E's 0 passes look like a measured failure
+          # rather than never having been reached. probe.sh appends one line per
+          # attempt to /tmp/attempted.txt.
+          ATTEMPTED=$(wc -l < /tmp/attempted.txt 2>/dev/null || echo 0)
+          echo "Result: $PASS_COUNT verified from $ATTEMPTED attempted (pool ${#cands[@]}) in ${ELAPSED}s (parallel=$PARALLEL, target=$TARGET_KEYS)"
+          if [ "$ATTEMPTED" -lt "${#cands[@]}" ]; then
+            echo "::notice::sweep stopped after $ATTEMPTED of ${#cands[@]} candidates — the remainder were never probed, so their 0 passes mean 'untested', not 'failed'"
+          fi
           if [ "$ELAPSED" -ge "$PROBE_BUDGET" ]; then
             echo "::notice::probe sweep hit the ${PROBE_BUDGET}s budget — raise probe_budget_sec or parallel for deeper coverage"
           fi
@@ -427,6 +475,7 @@ jobs:
           NOW=$(date -u +%Y-%m-%dT%H:%M:%SZ)
           RUN_ID="${{ github.run_id }}"
 
+          # Passers first, so the fastest-known-good ordering is unchanged.
           if [ -f /tmp/timings.txt ]; then
             while IFS= read -r line; do
               [ -z "$line" ] && continue
@@ -436,6 +485,23 @@ jobs:
               proto=$(echo "$uri" | grep -oE '^[a-z]+')
               echo "{\"ts\":\"$NOW\",\"host_port\":\"$hp\",\"proto\":\"$proto\",\"alive\":true,\"delay_ms\":$avg,\"run_id\":\"$RUN_ID\"}" >> "$HIST"
             done < /tmp/timings.txt
+          fi
+
+          # FAILURES TOO. Every one of the 19,132 existing records is
+          # alive:true, because only passers were ever written — so the file is
+          # a survivors log and NO pass rate can be computed from it. That is
+          # why "Shadowsocks is TSPU-blocked" reads as measured when SS has a
+          # bridge record of 0/0, not 0/63. Attempted-minus-passed gives the
+          # denominator, so a protocol's real pass rate becomes derivable.
+          if [ -f /tmp/attempted.txt ]; then
+            awk '{$1=""; sub(/^ /,""); print}' /tmp/timings.txt 2>/dev/null | sort -u > /tmp/passed_uris.txt
+            while IFS= read -r uri; do
+              [ -z "$uri" ] && continue
+              grep -qxF "$uri" /tmp/passed_uris.txt && continue
+              hp=$(echo "$uri" | grep -oE '@[^:?/#]+:[0-9]+' | head -1 | tr -d '@')
+              proto=$(echo "$uri" | grep -oE '^[a-z]+')
+              echo "{\"ts\":\"$NOW\",\"host_port\":\"$hp\",\"proto\":\"$proto\",\"alive\":false,\"delay_ms\":0,\"run_id\":\"$RUN_ID\"}" >> "$HIST"
+            done < /tmp/attempted.txt
           fi
 
           # Trim history to last 50000 entries (~7 days at 30min × 25 keys)
