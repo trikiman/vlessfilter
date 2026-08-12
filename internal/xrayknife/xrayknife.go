@@ -20,12 +20,12 @@ import (
 	"strings"
 )
 
-// XrayKnifeVersion pins the engine version. Phase 2 may bump to a specific
-// stable tag once we benchmark.
-const XrayKnifeVersion = "latest"
+// XrayKnifeVersion pins the engine version. Pinned to v10.1.1 to avoid
+// xray-core v1.260327.0 nil pointer crash in splithttp transport (trojan).
+const XrayKnifeVersion = "v10.1.1"
 
 // xrayKnifeModule is the Go module path used for `go install`.
-const xrayKnifeModule = "github.com/lilendian0x00/xray-knife/v9"
+const xrayKnifeModule = "github.com/lilendian0x00/xray-knife/v10"
 
 // HTTPOpts are the flags passed to `xray-knife http`.
 type HTTPOpts struct {
