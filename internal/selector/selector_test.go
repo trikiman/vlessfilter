@@ -323,3 +323,34 @@ func TestTop3PerCountry_SubdomainsOfOneProviderCollapse(t *testing.T) {
 }
 
 func b64(s string) string { return base64.StdEncoding.EncodeToString([]byte(s)) }
+
+// The workflow merge concatenates four per-protocol files, so one host reached
+// over two protocols lands twice; `vlessfilter dedup-endpoints` collapses that
+// using EndpointKey. These cover the URI spellings that showed up in the wild.
+func TestEndpointKey_MergeDedupCases(t *testing.T) {
+	same := func(t *testing.T, a, b string) {
+		t.Helper()
+		ka, kb := EndpointKey(a), EndpointKey(b)
+		if ka == "" || kb == "" {
+			t.Fatalf("unparseable: %q -> %q, %q -> %q", a, ka, b, kb)
+		}
+		if ka != kb {
+			t.Errorf("expected same endpoint, got %q vs %q", ka, kb)
+		}
+	}
+	// Same box, one with an encoded path param (observed in subs/RO.txt).
+	same(t, "trojan://p@38.79.154.34:1818?spx=/353add2ce7a3241",
+		"trojan://p@38.79.154.34:1818?spx=%2F353add2ce7a3241")
+	// Same box, one with query params and one bare (observed in subs/ZA.txt).
+	same(t, "trojan://p@38.54.64.247:443?type=tcp&security=tls",
+		"trojan://p@38.54.64.247:443")
+	// Same box across protocols — the union merge is where this collides.
+	same(t, "vless://uuid@1.2.3.4:443?type=ws", "trojan://pw@1.2.3.4:443")
+	// Host casing must not create a phantom second endpoint.
+	same(t, "vless://u@Example.COM:443", "vless://u@example.com:443")
+
+	// Distinct ports on one host are distinct tenants — must NOT collapse.
+	if EndpointKey("ss://YWVzOnB3@1.2.3.4:8388") == EndpointKey("ss://YWVzOnB3@1.2.3.4:9999") {
+		t.Error("different ports collapsed to one endpoint")
+	}
+}

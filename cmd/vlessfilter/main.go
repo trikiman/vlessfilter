@@ -99,6 +99,8 @@ func run() int {
 		return sourcesListCmd(args[1:])
 	case "regen-readme":
 		return regenReadmeCmd(args[1:])
+	case "dedup-endpoints":
+		return dedupEndpointsCmd(args[1:])
 	case "help", "-h", "--help":
 		fmt.Fprint(os.Stderr, usage)
 		return exitOK
@@ -291,6 +293,72 @@ func sourcesListCmd(args []string) int {
 // Without this, the matrix-merge runner has no xray-knife.db to derive
 // fresh selections from, so README would be stale (showing only one
 // protocol's data, or worse, the previous run's data).
+// dedupEndpointsCmd filters subscription files in place, keeping only the
+// first config per host:port endpoint (and dropping exact-duplicate URIs).
+//
+// This exists as a subcommand rather than shell so the merge step can reuse
+// selector.EndpointKey — the same unit-tested parser the selector uses, which
+// correctly decodes vmess base64 bodies. An awk reimplementation would need
+// gawk's 3-arg match(), and GitHub runners default to mawk.
+//
+// Order is preserved, so the best-scoring config (written first by the
+// selector) is the one that survives. Configs whose endpoint can't be parsed
+// are always kept — dropping a working key is worse than a duplicate.
+func dedupEndpointsCmd(args []string) int {
+	if len(args) == 0 {
+		fmt.Fprintln(os.Stderr, "usage: vlessfilter dedup-endpoints <file>...")
+		return exitUserErr
+	}
+	for _, path := range args {
+		raw, err := os.ReadFile(path)
+		if err != nil {
+			// A missing file is not fatal: the caller globs over optional
+			// per-country files that may not exist for every protocol.
+			if os.IsNotExist(err) {
+				continue
+			}
+			fmt.Fprintf(os.Stderr, "dedup-endpoints: %v\n", err)
+			return exitRuntime
+		}
+		lines := strings.Split(string(raw), "\n")
+		kept := make([]string, 0, len(lines))
+		seenURI := make(map[string]bool, len(lines))
+		seenEndpoint := make(map[string]bool, len(lines))
+		dropped := 0
+		for _, line := range lines {
+			if strings.TrimSpace(line) == "" {
+				continue
+			}
+			if seenURI[line] {
+				dropped++
+				continue
+			}
+			if ep := selector.EndpointKey(line); ep != "" {
+				if seenEndpoint[ep] {
+					dropped++
+					continue
+				}
+				seenEndpoint[ep] = true
+			}
+			seenURI[line] = true
+			kept = append(kept, line)
+		}
+		out := ""
+		if len(kept) > 0 {
+			out = strings.Join(kept, "\n") + "\n"
+		}
+		if err := os.WriteFile(path, []byte(out), 0o644); err != nil {
+			fmt.Fprintf(os.Stderr, "dedup-endpoints: write %s: %v\n", path, err)
+			return exitRuntime
+		}
+		if dropped > 0 {
+			fmt.Printf("dedup-endpoints: %s — kept %d, dropped %d duplicate endpoint(s)\n",
+				path, len(kept), dropped)
+		}
+	}
+	return exitOK
+}
+
 // protocolIsPublished reports whether subs/<proto>/all.txt exists with keys in
 // it, and how many. Used to tell "this protocol legitimately has nothing to
 // show" apart from "we lost its data and are about to publish a README that

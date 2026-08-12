@@ -25,8 +25,15 @@ raw/
 
 # os
 Thumbs.db
+desktop.ini
 configs.txt
 valid.txt
+
+# local scratch: API-client workspaces, pasted screenshots, ad-hoc diffs
+.postman*/
+postman*/
+*.png
+diff_output.txt
 
 # local-only scratch (probe outputs, ad-hoc scripts) — but keep
 # sources-fetched/ tracked because the workflow refreshes converted
