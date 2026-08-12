@@ -326,6 +326,11 @@ func dedupEndpointsCmd(args []string) int {
 		seenEndpoint := make(map[string]bool, len(lines))
 		dropped := 0
 		for _, line := range lines {
+			// Trim the \r of a CRLF file. Without this, a URI with no
+			// #fragment ends in "<port>\r", url.Parse yields a port of
+			// "443\r", and the same endpoint spelled CRLF vs LF reads as two
+			// distinct servers — the duplicate this command exists to remove.
+			line = strings.TrimRight(line, "\r")
 			if strings.TrimSpace(line) == "" {
 				continue
 			}
