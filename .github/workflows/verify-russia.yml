@@ -68,9 +68,13 @@ jobs:
 
       - name: Install xray-knife + proxychains4
         run: |
-          go install github.com/lilendian0x00/xray-knife/v9@latest
+          # Pinned to match refresh.yml — see the rationale there. v9@latest
+          # (v9.12.1) panics on trojan configs via xray-core's splithttp, which
+          # would silently drop trojan from the RU candidate pool too.
+          go install github.com/lilendian0x00/xray-knife/v10@v10.1.1
           echo "$HOME/go/bin" >> $GITHUB_PATH
           sudo apt-get install -y proxychains4
+          xray-knife --version || true
 
       - name: Pick + start RU bridge (with fallback)
         id: pick-bridge

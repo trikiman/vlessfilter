@@ -149,8 +149,18 @@ jobs:
 
       - name: Install xray-knife
         run: |
-          go install github.com/lilendian0x00/xray-knife/v9@latest
+          # PINNED. `v9@latest` resolved to v9.12.1, whose bundled xray-core
+          # panics with a nil pointer dereference in the splithttp transport
+          # while testing trojan configs. That crashed stage 1 at ~35%, the
+          # pipeline then saw 0 alive trojan, and the "don't publish empty"
+          # guard preserved a stale artifact — so subs/trojan/ silently served
+          # 2026-07-17 keys for 26 days while the job still reported success.
+          # v10.1.1 completes the same pool cleanly (verified 2026-08-12).
+          # Do NOT move this back to @latest: an unpinned engine is how a
+          # protocol goes dark without failing a single check.
+          go install github.com/lilendian0x00/xray-knife/v10@v10.1.1
           echo "$HOME/go/bin" >> $GITHUB_PATH
+          xray-knife --version || true
 
       - name: Build vlessfilter
         run: go build -o bin/vlessfilter ./cmd/vlessfilter

@@ -89,7 +89,7 @@ go build -o bin/vlessfilter ./cmd/vlessfilter
 
 # 5. Install xray-knife
 echo "--- Installing xray-knife ---"
-go install github.com/lilendian0x00/xray-knife/v9@latest
+go install github.com/lilendian0x00/xray-knife/v10@v10.1.1
 
 # 6. Persist PAT to a file the cron job will source
 mkdir -p "$HOME/.vlessfilter"

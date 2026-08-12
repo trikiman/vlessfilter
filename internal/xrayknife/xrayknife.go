@@ -5,7 +5,12 @@
 // (FakeRunner, in xrayknife_test.go) records call args without doing I/O.
 //
 // Auto-install (per D-02): EnsureInstalled checks for the binary on $PATH and,
-// if missing, runs `go install github.com/lilendian0x00/xray-knife/v9@<pin>`.
+// if missing, runs `go install github.com/lilendian0x00/xray-knife/v10@<pin>`.
+//
+// NOTE: the CI workflows install xray-knife themselves in a shell step and do
+// NOT consult XrayKnifeVersion below. Any version change must be made in BOTH
+// places — .github/workflows/{refresh,verify-russia,benchmark}.yml and here —
+// or CI will silently keep running a different engine than this constant says.
 package xrayknife
 
 import (
