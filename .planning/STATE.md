@@ -3,8 +3,8 @@ gsd_state_version: 1.0
 milestone: v2.2.0
 milestone_name: ru-verified-10
 status: in-progress
-last_updated: "2026-05-31T07:30:00Z"
-last_activity: 2026-05-31 -- BREAKTHROUGH: protocol-tier ranking + igareck whitelist = 15/15 Reality+Vision keys
+last_updated: "2026-08-12T04:30:00Z"
+last_activity: 2026-08-12 -- measured per-protocol RU-bridge pass rates for the first time (ss 60.3% > vless 50.6%); tier order above is superseded, see "ANSWERED 2026-08-12"
 progress:
   total_phases: 5
   completed_phases: 4
@@ -62,9 +62,11 @@ See: .planning/PROJECT.md
     - Tier C: everything else (plain VLESS, vmess)
     - SS dropped entirely (TSPU blocks AEAD)
   - **igareck whitelist used as bridge source** (their in-RU probe gives fresh bridges)
-  - **Result:** verified-russia.txt = 15 VLESS keys, **100% Reality+Vision**
-  - Now matches the empirically-best protocol stack for RU residential
-  - Pending: 7-day stability validation in v2rayN
+  - **Result at the time:** verified-russia.txt = 15 VLESS keys, **100% Reality+Vision**
+  - "SS dropped entirely (TSPU blocks AEAD)" on line 63 was never measured — see
+    "ANSWERED 2026-08-12". SS was removed from the candidate grep on 2026-05-31,
+    so the claim could not be tested; when finally probed it led on pass rate.
+  - Current: 274 keys (236 vless + 38 ss) as of run 31562489245
 
 - ⏳ **22.5** — Document & ship as stable v2.2
   - Update README.md, CHANGELOG, dashboard footer, mention current methodology
@@ -97,7 +99,9 @@ Both are stable; cron is enabled. No long ad-hoc runs in flight.
 - Bridge architecture (route GH Actions through RU datacenter) approximates residential but is NOT identical
 - 2026-05-31 user test: Reality+Vision 1/15 alive residential, Trojan-TLS ~70% alive
 
-### Protocol tier order (user-empirical, overrides global research)
+### Protocol tier order — SUPERSEDED 2026-08-12 by measurement, see below
+Kept for provenance. This order came from a single 2026-05-31 anecdote and the
+first real measurement inverts it.
 - Tier A: Trojan TLS/TCP — best on user's residential
 - Tier B: VLESS Reality — passes datacenter bridge, mixed residential
 - Tier C: WS+TLS / xhttp (CDN-fronted)
@@ -118,6 +122,54 @@ the tier order from that history, not from either anecdote.**
 Caveat worth resolving first: SS has no TLS handshake, so a v2rayN delay probe can
 succeed on a bare TCP connect that passes real traffic nowhere. The 18 "alive" SS
 keys may be false positives. Confirm by browsing through one, not by reading its ms.
+
+### ANSWERED 2026-08-12 — the operator's anecdote was right, the tier order was wrong
+
+Run 31562489245 probed the **full** pool (565/565 attempted, no early exit) with
+tier E hoisted to the front. First per-protocol pass rates this project has ever
+had, because failures are now recorded too:
+
+| proto  | pass | fail | attempts | pass rate | median |
+|--------|-----:|-----:|---------:|----------:|-------:|
+| ss     |   38 |   25 |       63 | **60.3%** |  582ms |
+| vless  |  236 |  230 |      466 |     50.6% |  769ms |
+| trojan |    0 |   36 |       36 |      0.0% |      — |
+
+**Shadowsocks has the highest pass rate and the lowest latency of the three.**
+`subs/verified-russia.txt` went 157 keys (100% vless) -> 274 (236 vless + 38 ss);
+those 38 are the first SS keys ever published there.
+
+Why the old order survived so long — three compounding measurement faults, not a
+protocol fact:
+1. Tier E was appended LAST, at index ~502 of 565, while the sweep exits at
+   `target_keys` (150). It was never reached: SS's record was 0/0, not 0/63.
+2. The history file only ever recorded passers (19,132/19,132 `alive:true`), so no
+   pass rate was derivable from it — an unmeasured protocol read as settled.
+3. The run summary printed pool size as "probed", so a sweep that stopped at ~360
+   still claimed 565, making tier E's silence look like measured failure.
+
+The TCP-gate caveat above does NOT hold. SS's delay FLOOR is the highest of the
+three (143ms vs trojan 66ms, vless 73ms) — the opposite of a cheap gate — all 58
+distinct SS hosts sustain real throughput, and 46,881 vless rows report 0 Mbps.
+
+**trojan 0/36 is not a protocol verdict.** Those are the stale 2026-07-17 keys;
+`subs/trojan/all.txt` has not moved in 26 days because xray-knife v9.12.1 (bundled
+xray-core v1.260327.0) SIGSEGVs on splithttp trojan configs. 1,129 trojan configs
+passed handshake before the crash — the servers work, the harness died. Tier A was
+ranked "EMPIRICALLY BEST" on dead credentials, probed first every run, while the
+protocol that actually works sat where the sweep never reached.
+
+Corroborated single datum: `149.22.95.183:443` (ss) survived the operator's
+residential test AND passes the bridge — alive at 146ms in this run, 24 records.
+
+STILL OPEN (needs the operator, not CI): whether TSPU treats SS AEAD differently
+on residential vs datacenter paths. Every CI vantage point — GH runner, Frankfurt,
+RU-datacenter bridge — is on the wrong side of that boundary. Browse through
+`149.22.95.183:443` and load a page; do not read its ms.
+
+Re-tiering is deliberately NOT done yet: trojan must be re-measured on FRESH keys
+once the v10.1.1 pin is confirmed, or the new order would bake in a harness bug
+the same way the old one baked in an anecdote.
 
 ### Why bridge from `subs/RU.txt` instead of dedicated RU VPS
 - Free, self-bootstrapping (no external infra)
@@ -143,9 +195,20 @@ keys may be false positives. Confirm by browsing through one, not by reading its
 
 ## Pending Todos (v2.2)
 
-- [ ] Wait for next refresh.yml cycle to populate subs/RU.txt with new sources
-- [ ] Spot-check verified-russia.txt reliability via PowerShell verifier on user's PC daily for 1 week
-- [ ] Add per-key reliability tracking to dashboard (last 7 days alive %)
+- [x] ~~Wait for next refresh.yml cycle to populate subs/RU.txt~~ — resolved
+      ~440 cycles ago; this todo predates 2026-05-31
+- [ ] Confirm ONE ss key end-to-end from the residential line by browsing, not by
+      reading its ms: `149.22.95.183:443` (survived both the operator's v2rayN run
+      and the bridge, alive 146ms). This is the only remaining question CI cannot
+      answer — every runner/Frankfurt/RU-datacenter vantage point is on the wrong
+      side of the TSPU boundary. Replaces the old "PowerShell verifier daily for a
+      week" item, which contradicted the HARD CONSTRAINT on line 86 and needed the
+      dead dev/*.ps1 scripts.
+- [ ] Re-measure trojan on FRESH keys once the v10.1.1 pin is confirmed, then
+      re-tier from pass rates. Do not re-tier before that: trojan's 0/36 is a
+      harness crash, not a protocol result.
+- [ ] Add per-key reliability tracking to dashboard (last 7 days alive %) — now
+      actually computable, since failures are recorded from 2026-08-12 on
 - [ ] Decide: self-hosted runner (residential exact) vs current DC-bridge (approximation) vs Russian VPS
 
 ## Session Continuity
