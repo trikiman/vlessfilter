@@ -6,22 +6,6 @@ Auto-curated top 3 fastest proxy keys per country, refreshed automatically. Mult
 
 Pick the protocol your client supports best. Each has its own subscription URLs:
 
-### VLESS
-
-All VLESS countries (single subscription):
-
-```
-https://raw.githubusercontent.com/trikiman/vlessfilter/main/subs/vless/all.txt
-```
-
-Specific country:
-
-```
-https://raw.githubusercontent.com/trikiman/vlessfilter/main/subs/vless/<CC>.txt
-```
-
-Rotating exits: `subs/vless/rotating.txt` (35 configs)
-
 ### VMESS
 
 All VMESS countries (single subscription):
@@ -77,40 +61,115 @@ Each config's full test history is checked:
 - **Rotating** (varies across tests, OR is a `*.workers.dev` / `*.pages.dev` host) → published in `subs/<protocol>/rotating.txt` with `🌐 ROTATING` label
 - **Dead** → not published
 
-## VLESS — top 3 per country (stable only)
+## Install
 
-| Country | Top latency (ms) | Median speed (Mbps) | Keys |
-|---------|------------------|---------------------|------|
-| 🇦🇹 AT | 499 | 19.4 | 1 |
-| 🇨🇦 CA | 85 | 80.2 | 2 |
-| 🇨🇭 CH | 526 | 18.9 | 1 |
-| 🇩🇪 DE | 341 | 21.2 | 3 |
-| 🇪🇪 EE | 632 | 12.8 | 3 |
-| 🇫🇮 FI | 585 | 17.4 | 2 |
-| 🇫🇷 FR | 373 | 22.7 | 3 |
-| 🇬🇧 GB | 431 | 21.3 | 3 |
-| 🇮🇹 IT | 792 | 19.1 | 1 |
-| 🇯🇵 JP | 591 | 14.6 | 2 |
-| 🇰🇷 KR | 685 | 13.4 | 2 |
-| 🇱🇻 LV | 680 | 16.7 | 1 |
-| 🇳🇱 NL | 400 | 23.1 | 3 |
-| 🇵🇱 PL | 467 | 19.2 | 3 |
-| 🇷🇴 RO | 783 | 13.4 | 1 |
-| 🇷🇺 RU | 656 | 16.0 | 3 |
-| 🇸🇪 SE | 530 | 14.6 | 3 |
-| 🇸🇬 SG | 709 | 26.6 | 3 |
-| 🇺🇸 US | 116 | 83.3 | 3 |
+VlessFilter is a single Go binary. Three install paths, pick whichever:
 
-**Rotating-exit pool:** 35 configs in `subs/vless/rotating.txt`
+### Option 1: Pre-built binary (fastest)
+
+Each tagged release ships Linux + macOS binaries on GitHub Releases. Pick from <https://github.com/trikiman/vlessfilter/releases/latest>.
+
+Linux (amd64):
+
+```bash
+curl -sSL https://github.com/trikiman/vlessfilter/releases/latest/download/vlessfilter_Linux_amd64.tar.gz \
+  | tar -xz -C /tmp && sudo mv /tmp/vlessfilter /usr/local/bin/
+```
+
+### Option 2: `go install` (requires Go 1.22+)
+
+```bash
+go install github.com/trikiman/vlessfilter/cmd/vlessfilter@latest
+```
+Binary lands in `$GOPATH/bin` (or `$HOME/go/bin`). Make sure that's on your `$PATH`.
+
+### Option 3: From source
+
+```bash
+git clone https://github.com/trikiman/vlessfilter.git
+cd vlessfilter
+go build -o bin/vlessfilter ./cmd/vlessfilter
+```
+
+### Verify it works
+
+```bash
+vlessfilter --help
+# Quick smoke run against the default sources (writes ./subs/ + ./README.md):
+vlessfilter run --threads1 50 --threads2 5 --limit 30 --budget-min 5
+ls subs/
+```
+
+### Configuration
+
+Edit `sources.yaml` to add or remove subscription sources. See comments in the file for the schema.
+
+## Off-PC Deployment
+
+Run the pipeline without using your own computer. The **primary, recommended path is GitHub Actions** (Option A) — free, fully automated, always-on, and already shipped in this repo (`.github/workflows/refresh.yml`). The other options are optional manual fallbacks.
+
+### What each run does
+
+1. **Stage 1 — alive/handshake check.** High-concurrency TLS handshake against the pool; dead keys are dropped.
+2. **Stage 2 — speed connection test.** Survivors get a real-proxy speedtest, run 3 separate times, to measure throughput (Mbps) and latency (ms).
+3. **Pre-publish probe.** Top-3-per-country selections are re-tested right before publishing so stale/dead keys never reach the results.
+
+Results appear in `README.md` (per-country latency + median speed table) and `all-results.csv` (full raw results).
+
+### Option A: GitHub Actions (PRIMARY — recommended)
+
+**Cost:** $0 (public repos get unlimited Actions minutes). **Setup:** ~5 min. **Always-on:** yes.
+
+1. Create a GitHub account (any throwaway email; no card needed for free-tier Actions on public repos).
+2. **Fork** `https://github.com/trikiman/vlessfilter`.
+3. Generate a PAT (Settings → Developer settings → Fine-grained tokens): repository access = your results repo, Permissions → Contents = **Read and write**.
+4. In the repo: Settings → Secrets and variables → Actions → new secret `PUSH_TOKEN` = the PAT.
+5. Enable Actions: Settings → Actions → General → Allow all.
+6. Trigger the first run: Actions tab → **refresh** workflow → Run workflow.
+
+`refresh.yml` runs every 4 hours, does the full alive-check + speed test, and commits fresh results — no involvement from your machine.
+
+### Option B: h2.nexus 15-minute ephemeral VPS (manual fallback, no signup)
+
+Free 15-min VPS (4 CPU / 8 GB / 1 Gbps), no account. Generate a PAT (as in Option A), open <https://h2.nexus/cli>, pick Debian 11, then in the web console run:
+
+```bash
+curl -sSL https://raw.githubusercontent.com/trikiman/vlessfilter/main/scripts/h2-quick.sh | bash -s -- ghp_xxx
+```
+
+Results push automatically; the VM auto-deletes at 15 min. Manual trigger only (no schedule), reduced run scope to fit the window.
+
+### Option C: Termux on Android (manual fallback)
+
+Install Termux from F-Droid, then:
+
+```bash
+pkg update && pkg upgrade -y
+pkg install -y golang git curl
+curl -sSL https://raw.githubusercontent.com/trikiman/vlessfilter/main/scripts/install-always-on.sh | bash -s -- github_pat_xxx
+```
+
+cron may fail under Termux — use `termux-job-scheduler --period-ms 21600000 --script $HOME/.vlessfilter/refresh.sh` (6h). Keep the phone charging and out of deep sleep for a full run.
+
+### Which to pick
+
+| Your situation | Pick |
+|----------------|------|
+| Fully autonomous, always-on, zero maintenance | **Option A** (GitHub Actions) — default |
+| One-off manual refresh, no account | **Option B** (h2.nexus) |
+| Only a phone available | **Option C** (Termux) |
+
+> Note: the earlier 2Z2 Cloud Labs VPS runbook is retired (the service shut down). GitHub Actions is the recommended replacement.
 
 ## VMESS — top 3 per country (stable only)
 
 | Country | Top latency (ms) | Median speed (Mbps) | Keys |
 |---------|------------------|---------------------|------|
-| 🇩🇪 DE | 397 | 18.6 | 1 |
-| 🇬🇧 GB | 423 | 17.7 | 1 |
-| 🇰🇷 KR | 476 | 27.4 | 1 |
-| 🇺🇸 US | 162 | 46.5 | 2 |
+| 🇩🇪 DE | 464 | 45.7 | 3 |
+| 🇬🇧 GB | 319 | 13.0 | 1 |
+| 🇰🇷 KR | 554 | 23.3 | 1 |
+| 🇵🇱 PL | 323 | 12.2 | 1 |
+| 🇺🇸 US | 42 | 25.9 | 3 |
 
 **Rotating-exit pool:** 0 configs in `subs/vmess/rotating.txt`
 
@@ -118,23 +177,23 @@ Each config's full test history is checked:
 
 | Country | Top latency (ms) | Median speed (Mbps) | Keys |
 |---------|------------------|---------------------|------|
-| 🇦🇺 AU | 480 | 14.9 | 1 |
-| 🇨🇦 CA | 31 | 188.7 | 1 |
-| 🇩🇪 DE | 470 | 28.2 | 3 |
-| 🇪🇸 ES | 531 | 19.8 | 2 |
-| 🇫🇮 FI | 898 | 13.3 | 1 |
-| 🇫🇷 FR | 497 | 23.0 | 2 |
-| 🇬🇧 GB | 461 | 24.1 | 1 |
-| 🇮🇹 IT | 586 | 26.2 | 1 |
-| 🇯🇵 JP | 299 | 32.0 | 1 |
-| 🇳🇱 NL | 432 | 29.3 | 2 |
-| 🇵🇱 PL | 585 | 12.0 | 1 |
-| 🇸🇬 SG | 593 | 22.1 | 1 |
-| 🇺🇸 US | 145 | 55.9 | 3 |
-| 🇿🇦 ZA | 843 | 16.5 | 1 |
+| 🇦🇱 AL | 523 | 26.7 | 2 |
+| 🇨🇭 CH | 512 | 13.9 | 1 |
+| 🇩🇪 DE | 438 | 15.2 | 2 |
+| 🇪🇸 ES | 479 | 14.1 | 1 |
+| 🇫🇮 FI | 506 | 27.0 | 1 |
+| 🇫🇷 FR | 409 | 23.8 | 2 |
+| 🇬🇧 GB | 431 | 32.9 | 1 |
+| 🇮🇹 IT | 525 | 29.6 | 1 |
+| 🇯🇵 JP | 395 | 34.3 | 1 |
+| 🇳🇱 NL | 399 | 25.7 | 2 |
+| 🇵🇱 PL | 447 | 22.2 | 2 |
+| 🇸🇬 SG | 620 | 12.3 | 1 |
+| 🇹🇷 TR | 547 | 23.3 | 1 |
+| 🇺🇸 US | 51 | 76.3 | 3 |
 
 **Rotating-exit pool:** 0 configs in `subs/ss/rotating.txt`
 
 _Generated by [vlessfilter](https://github.com/trikiman/vlessfilter). Source list: `sources.yaml`._
 
-<!-- last-tested: 2026-08-11T17:36:45Z -->
+<!-- last-tested: 2026-08-12T03:22:47Z -->

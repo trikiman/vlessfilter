@@ -6,4 +6,4 @@ vmess://eyJ2IjogIjIiLCAiYWRkIjogIjE0OS44OC4yMy4yMDciLCAicG9ydCI6ICIxODAwMCIsICJp
 trojan://CF68213490@13.212.252.228:443?sni=prime-buzzard.rooster465.autos&type=tcp&fp=chrome#%F0%9F%87%B8%F0%9F%87%AC%20SG%20Singapore
 trojan://CF68213490@54.255.158.218:443?sni=powerful-troll.rooster465.autos&path=/#%F0%9F%87%B8%F0%9F%87%AC%20SG%20Singapore
 trojan://CF68213490@47.131.233.29:443?sni=internal-krill.rooster465.autos&path=/#%F0%9F%87%B8%F0%9F%87%AC%20SG%20Singapore
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpnd3ptcm5qcnNlcC9QelcvM3lZYzRqRTRSRzQxYUV3SkF0aGxiVHVwQmp3PQ==@sec2.masterdpibypass.com:12892#%F0%9F%87%B8%F0%9F%87%AC%20%F0%9F%93%BA%20%5B22.1%20mb%5D%20SG%20Singapore
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpnd3ptcm5qcnNlcC9QelcvM3lZYzRqRTRSRzQxYUV3SkF0aGxiVHVwQmp3PQ==@sec2.masterdpibypass.com:12892#%F0%9F%87%B8%F0%9F%87%AC%20%F0%9F%93%BA%20%5B12.3%20mb%5D%20SG%20Singapore
