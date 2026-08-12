@@ -286,9 +286,48 @@ jobs:
 
           # Belt-and-braces: drop any exact-duplicate URI that survived the
           # per-protocol selection, preserving first-seen (best-scoring) order.
+          # Also deduplicate on host:port endpoint — same server with different
+          # credentials buys no redundancy, and fills "top 3" slots that could
+          # go to distinct boxes.
           for f in subs/all.txt subs/rotating.txt subs/??.txt; do
             [ -f "$f" ] || continue
-            awk '!seen[$0]++' "$f" > "$f.tmp" && mv "$f.tmp" "$f"
+            awk '
+              function extract_endpoint(uri) {
+                # vless://uuid@host:port?params or trojan://pass@host:port?params
+                if (match(uri, /@([^@:?#]+):([0-9]+)/, m)) {
+                  return tolower(m[1]) ":" m[2]
+                }
+                # vmess://base64 → decode "add":"host","port":1234
+                if (match(uri, /^vmess:\/\/([^#?]+)/, m)) {
+                  b64 = m[1]
+                  # Pipe through base64 -d and extract JSON fields
+                  cmd = "echo " b64 " | base64 -d 2>/dev/null"
+                  json = ""
+                  while ((cmd | getline line) > 0) json = json line
+                  close(cmd)
+                  if (match(json, /"add"\s*:\s*"([^"]+)"/, host) &&
+                      match(json, /"port"\s*:\s*"?([0-9]+)"?/, port)) {
+                    return tolower(host[1]) ":" port[1]
+                  }
+                }
+                # ss://base64@host:port or ss://method:pass@host:port
+                if (match(uri, /^ss:\/\/[^@]*@([^@:?#]+):([0-9]+)/, m)) {
+                  return tolower(m[1]) ":" m[2]
+                }
+                # Fallback: unparseable URIs are always distinct
+                return ""
+              }
+              {
+                ep = extract_endpoint($0)
+                # Keep if: (1) never seen this exact URI, AND (2) never seen this endpoint
+                # Unparseable endpoints (empty string) are treated as unique
+                if (!seen_uri[$0] && (ep == "" || !seen_endpoint[ep])) {
+                  seen_uri[$0] = 1
+                  if (ep != "") seen_endpoint[ep] = 1
+                  print
+                }
+              }
+            ' "$f" > "$f.tmp" && mv "$f.tmp" "$f"
           done
 
           # Regenerate top-level all-results.csv as the UNION of every
