@@ -1,7 +1,6 @@
-vless://5c53b9e9-fbe8-4c50-a623-73cdafa3886b@46.250.240.80:2053?encryption=none&security=reality&sni=www.cloudflare.com&fp=chrome&pbk=cevjPz2GmTrXDFXQbGizdN6t4c6m11kclJEf5nOHOTE&sid=52dfc493bb6b6c16&type=tcp#%F0%9F%87%A6%F0%9F%87%BA%20%F0%9F%93%BA%20%5B16.9%20mb%5D%20AU%20Australia
+vless://5c53b9e9-fbe8-4c50-a623-73cdafa3886b@46.250.240.80:2053?encryption=none&security=reality&sni=www.cloudflare.com&fp=chrome&pbk=cevjPz2GmTrXDFXQbGizdN6t4c6m11kclJEf5nOHOTE&sid=52dfc493bb6b6c16&type=tcp#%F0%9F%87%A6%F0%9F%87%BA%20%F0%9F%93%BA%20%5B17.3%20mb%5D%20AU%20Australia
 vmess://eyJ2IjoiMiIsImFkZCI6Imd0bTEua3Rtd2FuLm5ldCIsInBvcnQiOiIxMjg4OSIsImlkIjoiNDk0MWFhOGQtMDdkMi00MDhjLWJlMmMtMTE3ZGViZWNiYTMwIiwiYWlkIjoiMCIsIm5ldCI6IndzIiwidHlwZSI6Im5vbmUiLCJob3N0IjoiYmFpZHUuY29tIiwicGF0aCI6Ii8iLCJ0bHMiOiIiLCJwcyI6IltPcGVuUmF5XSDwn4ev8J+HtSBKUC0zNzI2In0=#%F0%9F%87%A6%F0%9F%87%BA%20AU%20Australia
 trojan://OD90375861@82.117.225.123:443?sni=big-bonefish.rooster465.autos&path=/#%F0%9F%87%A6%F0%9F%87%BA%20AU%20Australia
 trojan://XG59623478@82.117.225.56:443?security=tls&sni=stirring-dane.rooster465.autos&path=/#%F0%9F%87%A6%F0%9F%87%BA%20AU%20Australia
 trojan://XG59623478@82.117.225.216:443?sni=concise-buck.rooster465.autos&path=/#%F0%9F%87%A6%F0%9F%87%BA%20AU%20Australia
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpUV0c3SjFLUjVLc1BhVjVxWkkrcmlldWVLeHhhZlpTcENI@45.77.232.213:15675#%F0%9F%87%A6%F0%9F%87%BA%20%F0%9F%93%BA%20%5B16.1%20mb%5D%20AU%20Australia
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpiSU9vaTVUdUltRzJLY2N4VjctamNBN0Nleit2dW4tY19F@104.156.233.234:27116#%F0%9F%87%A6%F0%9F%87%BA%20%F0%9F%93%BA%20%5B15.5%20mb%5D%20AU%20Australia
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpUV0c3SjFLUjVLc1BhVjVxWkkrcmlldWVLeHhhZlpTcENI@45.77.232.213:15675#%F0%9F%87%A6%F0%9F%87%BA%20%F0%9F%8E%AC%20%5B32.5%20mb%5D%20AU%20Australia

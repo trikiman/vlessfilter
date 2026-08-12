@@ -1,1 +1,1 @@
-vless://5c53b9e9-fbe8-4c50-a623-73cdafa3886b@46.250.240.80:2053?encryption=none&security=reality&sni=www.cloudflare.com&fp=chrome&pbk=cevjPz2GmTrXDFXQbGizdN6t4c6m11kclJEf5nOHOTE&sid=52dfc493bb6b6c16&type=tcp#%F0%9F%87%A6%F0%9F%87%BA%20%F0%9F%93%BA%20%5B16.9%20mb%5D%20AU%20Australia
+vless://5c53b9e9-fbe8-4c50-a623-73cdafa3886b@46.250.240.80:2053?encryption=none&security=reality&sni=www.cloudflare.com&fp=chrome&pbk=cevjPz2GmTrXDFXQbGizdN6t4c6m11kclJEf5nOHOTE&sid=52dfc493bb6b6c16&type=tcp#%F0%9F%87%A6%F0%9F%87%BA%20%F0%9F%93%BA%20%5B17.3%20mb%5D%20AU%20Australia
