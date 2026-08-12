@@ -1,3 +1,1 @@
-trojan://0ds_NIm933rf_Nxio294_nbZi3@78.135.73.38:449?security=tls&headerType=none&type=tcp&sni=grape-ataturk-tr.yyuyy.com#%F0%9F%87%B9%F0%9F%87%B7%20TR%20Turkey
-trojan://0ds_NIm933rf_Nxio294_nbZi3@78.135.73.38:449?type=tcp&security=tls&headerType=none&sni=grape-ataturk-tr.yyuyy.com&fp=chrome&insecure=0&allowInsecure=0#%F0%9F%87%B9%F0%9F%87%B7%20TR%20Turkey
-trojan://0ds_NIm933rf_Nxio294_nbZi3@78.135.73.38:449?security=tls&sni=grape-ataturk-tr.yyuyy.com&type=tcp&headerType=none&path=%2f#%F0%9F%87%B9%F0%9F%87%B7%20TR%20Turkey
+trojan://pYzEFqrAjuhwAcVjdu9oMA@nodejs.org:2086?security=none&type=ws&headerType=&path=%2Ft-ws&host=tr.web.doctor-alan-cloud.ir#%F0%9F%87%B9%F0%9F%87%B7%20%F0%9F%8E%AC%20%5B32.0%20mb%5D%20TR%20Turkey

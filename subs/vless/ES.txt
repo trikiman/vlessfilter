@@ -1,1 +1,1 @@
-vless://806b803b-7dad-4f13-b525-f3b1ab50e44e@185.236.25.24:2027?fp=qq&path=%2Fpatch&pbk=EApxy12MeXpqt-78odxizwcXT6hX9f8XeAcbMDVRAV0&security=reality&sid=6ba7b8109dad11d1&sni=sp.skysafe.online&type=xhttp#%F0%9F%87%AA%F0%9F%87%B8%20ES%20Spain
+vless://06d44c57-8e1a-41f4-b9c4-65d35869e078@78.17.158.155:13868?security=reality&encryption=none&pbk=W24D31y_1ZaASX1bq3d85DQaQd_3NcJQCvg1wmCn-Uo&headerType=none&fp=firefox&type=tcp&flow=xtls-rprx-vision&sni=www.ea.com&sid=e852dc#%F0%9F%87%AA%F0%9F%87%B8%20%F0%9F%8E%AC%20%5B33.1%20mb%5D%20ES%20Spain
