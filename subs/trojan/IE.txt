@@ -1,3 +1,2 @@
-trojan://AE62539071@108.130.137.102:443?sni=worthy-labrador.rooster465.autos&type=tcp&fp=chrome#%F0%9F%87%AE%F0%9F%87%AA%20%F0%9F%8E%AC%20%5B32.7%20mb%5D%20IE%20Ireland
-trojan://AE62539071@healthy-panda.rooster465.autos:443?allowInsecure=0#%F0%9F%87%AE%F0%9F%87%AA%20%F0%9F%8E%AC%20%5B32.9%20mb%5D%20IE%20Ireland
-trojan://AE62539071@18.201.28.146:443?sni=helped-haddock.rooster465.autos&type=tcp&fp=chrome#%F0%9F%87%AE%F0%9F%87%AA%20%F0%9F%8E%AC%20%5B32.8%20mb%5D%20IE%20Ireland
+trojan://AE62539071@108.130.137.102:443?sni=worthy-labrador.rooster465.autos&type=tcp&fp=chrome#%F0%9F%87%AE%F0%9F%87%AA%20%F0%9F%8E%AC%20%5B47.2%20mb%5D%20IE%20Ireland
+trojan://AE62539071@worthy-labrador.rooster465.autos:443#%F0%9F%87%AE%F0%9F%87%AA%20%F0%9F%8E%AC%20%5B43.3%20mb%5D%20IE%20Ireland

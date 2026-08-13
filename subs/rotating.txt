@@ -1,0 +1,2 @@
+vless://ee63b875-215e-4a2e-879d-d8ebb5dc2da5@141.193.213.21:2053?path=/tootfarangijangi&security=tls&encryption=none&insecure=0&host=dark-sun-2c52.tootfarangijangi.workers.dev&fp=chrome&type=ws&allowInsecure=0&sni=dark-sun-2c52.tootfarangijangi.workers.dev#%F0%9F%8C%90%20ROTATING
+trojan://123444@104.17.122.10:2083?path=/?ed=2560&security=tls&host=northrendserver.sherekontop.workers.dev&fp=random&type=ws&sni=northrendserver.sherekontop.workers.dev#%F0%9F%8C%90%20ROTATING

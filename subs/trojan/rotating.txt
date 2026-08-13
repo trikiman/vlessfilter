@@ -1,0 +1,1 @@
+trojan://123444@104.17.122.10:2083?path=/?ed=2560&security=tls&host=northrendserver.sherekontop.workers.dev&fp=random&type=ws&sni=northrendserver.sherekontop.workers.dev#%F0%9F%8C%90%20ROTATING
