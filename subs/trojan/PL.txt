@@ -1,3 +1,2 @@
-trojan://AE62539071@tolerant-mosquito.rooster465.autos:443?security=tls#%F0%9F%87%B5%F0%9F%87%B1%20%F0%9F%8E%AC%20%5B38.9%20mb%5D%20PL%20Poland
-trojan://AE62539071@relative-locust.rooster465.autos:443?sni=relative-locust.rooster465.autos&type=tcp&fp=chrome#%F0%9F%87%B5%F0%9F%87%B1%20%F0%9F%8E%AC%20%5B38.3%20mb%5D%20PL%20Poland
-trojan://AE62539071@game-firefly.rooster465.autos:443?sni=game-firefly.rooster465.autos&type=tcp&fp=chrome#%F0%9F%87%B5%F0%9F%87%B1%20%F0%9F%8E%AC%20%5B37.0%20mb%5D%20PL%20Poland
+trojan://AE62539071@relative-locust.rooster465.autos:443?sni=relative-locust.rooster465.autos&type=tcp&fp=chrome#%F0%9F%87%B5%F0%9F%87%B1%20%F0%9F%8E%AC%20%5B25.2%20mb%5D%20PL%20Poland
+trojan://AE62539071@tolerant-mosquito.rooster465.autos:443?security=tls#%F0%9F%87%B5%F0%9F%87%B1%20%F0%9F%8E%AC%20%5B26.4%20mb%5D%20PL%20Poland

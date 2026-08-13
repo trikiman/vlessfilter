@@ -1,8 +1,8 @@
-vless://a57223c7-3581-4fec-9bc4-ad5c30900efb@170.114.45.6:80?security=none&type=ws&path=%2Ffree-server.techsonic.dev&host=free-server.techsonic.dev&encryption=none#%F0%9F%87%B8%F0%9F%87%AC%20%F0%9F%8E%AC%20%5B43.8%20mb%5D%20SG%20Singapore
-vless://6aa028bc-08a9-41d1-a397-d60ce65df081@170.114.46.6:80?security=none&type=ws&path=%2Fshalana&host=shalana.xyz#%F0%9F%87%B8%F0%9F%87%AC%20%F0%9F%8E%AC%20%5B33.3%20mb%5D%20SG%20Singapore
-vless://6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2@91.193.58.57:2096?encryption=none&fp=chrome&host=free-server.techsonic.dev&path=%2Ffree-server.techsonic.dev&security=tls&sni=free-server.techsonic.dev&type=ws#%F0%9F%87%B8%F0%9F%87%AC%20%F0%9F%8E%AC%20%5B39.7%20mb%5D%20SG%20Singapore
+vless://1178e691-88c5-4c7d-b4ea-1cefcdf52553@52.76.177.127:17771?encryption=none&security=none&type=ws&path=%2F#%F0%9F%87%B8%F0%9F%87%AC%20%F0%9F%93%BA%20%5B19.9%20mb%5D%20SG%20Singapore
+vless://efd11a89-7506-44ce-95b6-6654859f155b@178.128.52.52:443/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=zoom.us&alpn=h2&allowInsecure=1&fp=chrome&security=reality&pbk=EeLAX-BAjzSdRes-zpUFzVOYsBedmP8lUOHhXXJFXyI&sid=5a42dbd7e26a0415&packetEncoding=xudp#%F0%9F%87%B8%F0%9F%87%AC%20%F0%9F%93%BA%20%5B20.3%20mb%5D%20SG%20Singapore
+vless://5ad0bed3-68ac-495e-b778-8b2d0e1dc176@52.74.176.20:443?encryption=none&security=none&type=ws&path=/#%F0%9F%87%B8%F0%9F%87%AC%20%F0%9F%93%BA%20%5B19.2%20mb%5D%20SG%20Singapore
 vmess://eyJ2IjoiMiIsInBzIjoi8J+HuPCfh6xTR18yMnwzOThLQi9zfEMwMDItMjYwNjIyIiwiYWRkIjoiMTQ5Ljg4LjIzLjIwMiIsInBvcnQiOiIxODAwMCIsImlkIjoiZjhjOGRjM2QtMGQzNy00NmIwLThiMzQtYTcyMzI4ODJmY2ZlIiwiYWlkIjoiMCIsInNjeSI6ImF1dG8iLCJuZXQiOiJ0Y3AiLCJ0eXBlIjoiIiwidGxzIjoiIn0=#%F0%9F%87%B8%F0%9F%87%AC%20%F0%9F%93%BA%20%5B12.0%20mb%5D%20SG%20Singapore
-trojan://AE62539071@47.128.150.245:443?sni=stirred-buck.rooster465.autos&type=tcp&fp=chrome#%F0%9F%87%B8%F0%9F%87%AC%20%F0%9F%93%BA%20%5B18.7%20mb%5D%20SG%20Singapore
-trojan://AE62539071@sacred-anemone.rooster465.autos:443?sni=sacred-anemone.rooster465.autos&type=tcp&fp=chrome#%F0%9F%87%B8%F0%9F%87%AC%20%F0%9F%93%BA%20%5B19.3%20mb%5D%20SG%20Singapore
-trojan://AE62539071@stirred-buck.rooster465.autos:443?sni=stirred-buck.rooster465.autos&type=tcp&fp=chrome#%F0%9F%87%B8%F0%9F%87%AC%20%F0%9F%93%BA%20%5B19.0%20mb%5D%20SG%20Singapore
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpnd3ptcm5qcnNlcC9QelcvM3lZYzRqRTRSRzQxYUV3SkF0aGxiVHVwQmp3PQ==@sec2.masterdpibypass.com:12892#%F0%9F%87%B8%F0%9F%87%AC%20%F0%9F%8E%AC%20%5B26.4%20mb%5D%20SG%20Singapore
+trojan://AE62539071@54.169.117.191:443?sni=excited-sole.rooster465.autos&type=tcp&fp=chrome#%F0%9F%87%B8%F0%9F%87%AC%20%F0%9F%8E%AC%20%5B26.9%20mb%5D%20SG%20Singapore
+trojan://AE62539071@47.128.150.245:443?sni=stirred-buck.rooster465.autos&type=tcp&fp=chrome#%F0%9F%87%B8%F0%9F%87%AC%20%F0%9F%8E%AC%20%5B27.0%20mb%5D%20SG%20Singapore
+trojan://AE62539071@simple-rodent.rooster465.autos:443?security=tls#%F0%9F%87%B8%F0%9F%87%AC%20%F0%9F%8E%AC%20%5B26.7%20mb%5D%20SG%20Singapore
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpnd3ptcm5qcnNlcC9QelcvM3lZYzRqRTRSRzQxYUV3SkF0aGxiVHVwQmp3PQ==@sec2.masterdpibypass.com:12892#%F0%9F%87%B8%F0%9F%87%AC%20%F0%9F%93%BA%20%5B19.0%20mb%5D%20SG%20Singapore
