@@ -1,1 +1,1 @@
-vless://39947382-3212-41c9-bc3a-589574ac8b23@uae.unixzone.us:22573?encryption=none&security=none&type=ws&host=uae.unixzone.us&path=%2F#%F0%9F%87%A6%F0%9F%87%AA%20%F0%9F%93%BA%20%5B21.0%20mb%5D%20AE%20UAE
+vless://39947382-3212-41c9-bc3a-589574ac8b23@uae.unixzone.us:22573?encryption=none&security=none&type=ws&host=uae.unixzone.us&path=/#%F0%9F%87%A6%F0%9F%87%AA%20%F0%9F%93%BA%20%5B18.6%20mb%5D%20AE%20UAE
