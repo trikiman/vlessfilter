@@ -1,4 +1,4 @@
-vless://7e5964d036b843ff885b86c4d3bfd466@85.159.228.250:25703?encryption=none&security=none&type=tcp&headerType=none#%F0%9F%87%B1%F0%9F%87%BB%20%F0%9F%8E%AC%20%5B26.8%20mb%5D%20LV%20Latvia
+vless://7e5964d036b843ff885b86c4d3bfd466@85.159.228.250:25703?encryption=none&security=none&type=tcp&headerType=none#%F0%9F%87%B1%F0%9F%87%BB%20%F0%9F%8E%AC%20%5B34.7%20mb%5D%20LV%20Latvia
 vmess://eyJ2IjoiMiIsInBzIjoiVFIgXHVkODNjXHVkZGY5XHVkODNjXHVkZGY3IFx1MjUwNyBWTUVTUy1UQ1AtTlRMUyAtIFBFTlRFQ0ggQklMSVNJTSBURUtOT0xPSklMRVJJIFNBTkFZSSBWRSBUSUNBUkVUIExJTUlURUQgU0lSS0VUaSBcdTI1MDcgMzEuNTYuMTc5LjE5NCIsImFkZCI6IjMxLjU2LjE3OS4xOTQiLCJwb3J0IjoyMjI0NywiaWQiOiIxZjIzMzk3ZC1mZGIzLTQ3NzMtZmMxMS04NTcyODQ1NDZmMmYiLCJhaWQiOjAsInNjeSI6ImF1dG8iLCJuZXQiOiJ0Y3AiLCJ0eXBlIjoibm9uZSJ9#%F0%9F%87%B1%F0%9F%87%BB%20LV%20Latvia
 trojan://n8X-MwE52zJ1c6TpX5ePutoVNBRF5SVM@scr.unlimitedteam.space:2053?security=tls&insecure=0&headerType=none&fp=firefox&type=tcp&allowInsecure=0&sni=scr.unlimitedteam.space#%F0%9F%87%B1%F0%9F%87%BB%20LV%20Latvia
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpYRjBrbHc3ODcwdlhuM3VRSXhlMTlR@195.123.209.159:1080#%F0%9F%87%B1%F0%9F%87%BB%20LV%20Latvia
