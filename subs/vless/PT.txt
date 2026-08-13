@@ -1,1 +1,1 @@
-vless://060a5db6-7ff9-4a64-87c1-8a27be4f11ab@93.119.168.215:60771?&type=tcp&headerType=none&path=/#%F0%9F%87%B5%F0%9F%87%B9%20%F0%9F%8E%AC%20%5B44.2%20mb%5D%20PT%20Portugal
+vless://060a5db6-7ff9-4a64-87c1-8a27be4f11ab@93.119.168.215:60771?&type=tcp&headerType=none&path=/#%F0%9F%87%B5%F0%9F%87%B9%20%F0%9F%8E%AC%20%5B37.5%20mb%5D%20PT%20Portugal

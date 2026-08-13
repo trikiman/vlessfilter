@@ -1,5 +1,6 @@
 vless://412d7fbe-7474-4f1d-86c6-7eebdc628f72@mci.pictureiran.ir:2087?mode=auto&path=%2F&security=tls&encryption=none&insecure=0&host=ireland.alfather.ir&fp=chrome&type=xhttp&allowInsecure=0&sni=ireland.alfather.ir#%F0%9F%87%AE%F0%9F%87%AA%20IE%20Ireland
 vmess://eyJ2IjoiMiIsInBzIjoiaGFtZWRwNzE6OvCfh67wn4eqIiwiYWRkIjoiOTEuMjUwLjI0OS4yMTkiLCJwb3J0IjoiMTExOTYiLCJpZCI6InJvb3RmYWNlIiwiYWlkIjoiMCIsInNjeSI6ImF1dG8iLCJuZXQiOiJ3cyIsInR5cGUiOiItLS0iLCJob3N0IjoiIiwicGF0aCI6Ii9yb290ZmFjZSIsInRscyI6IiIsInNuaSI6IiIsInRlc3RfbmFtZSI6IjE4Iiwic2tpcC1jZXJ0LXZlcmlmeSI6dHJ1ZX0#%F0%9F%87%AE%F0%9F%87%AA%20IE%20Ireland
-trojan://NQ26071394@funky-opossum.rooster465.autos:443?allowInsecure=0&sni=funky-opossum.rooster465.autos#%F0%9F%87%AE%F0%9F%87%AA%20IE%20Ireland
-trojan://NQ26071394@tops-marlin.rooster465.autos:443?security=tls&sni=tops-marlin.rooster465.autos&fp=chrome&type=tcp&headerType=none&path=%2f&allow_insecure=0#%F0%9F%87%AE%F0%9F%87%AA%20IE%20Ireland
+trojan://AE62539071@funny-hen.rooster465.autos:443?sni=funny-hen.rooster465.autos&type=tcp&fp=chrome#%F0%9F%87%AE%F0%9F%87%AA%20%F0%9F%8E%AC%20%5B45.0%20mb%5D%20IE%20Ireland
+trojan://AE62539071@healthy-panda.rooster465.autos:443?sni=healthy-panda.rooster465.autos&type=tcp&fp=chrome#%F0%9F%87%AE%F0%9F%87%AA%20%F0%9F%8E%AC%20%5B43.5%20mb%5D%20IE%20Ireland
+trojan://AE62539071@helped-haddock.rooster465.autos:443?sni=helped-haddock.rooster465.autos&type=tcp&fp=chrome#%F0%9F%87%AE%F0%9F%87%AA%20%F0%9F%8E%AC%20%5B45.1%20mb%5D%20IE%20Ireland
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo2dG0wa21iZG56UzFYb0xD@20.223.129.129:443#%F0%9F%87%AE%F0%9F%87%AA%20IE%20Ireland

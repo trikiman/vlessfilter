@@ -1,2 +1,1 @@
-vless://63ae5b68-f6f8-432e-b440-d975053cfbc2@18.238.109.113:80?type=ws&host=d16l6nb4do0zu4.cloudfront.net&path=%2Fthan#%F0%9F%87%B9%F0%9F%87%AD%20TH%20Thailand
-vless://7ce54bb3-d612-4aa7-be08-089d3c461d53@18.239.83.52:443?security=tls&encryption=none&insecure=0&fp=chrome&type=ws&allowInsecure=0&sni=d1yxsk0zprgivr.cloudfront.net#%F0%9F%87%B9%F0%9F%87%AD%20TH%20Thailand
+vless://d6c81f6d-24a8-46d9-a3bf-c38d51fc5fe5@171.97.18.114:8443?encryption=none&fp=chrome&pbk=sDH4MlZFHXJB5VR_mfuFNBrQHtptpNK-qj3sot7b1zU&sni=www.apple.com&type=tcp&sid=16887c51&headerType=none&spx=%2F&security=reality#%F0%9F%87%B9%F0%9F%87%AD%20%F0%9F%93%BA%20%5B18.4%20mb%5D%20TH%20Thailand
