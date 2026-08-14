@@ -1,1 +1,1 @@
-vless://7f1f5848-da44-47df-8581-df83e88ee2b3@194.61.31.126:2053?encryption=none&type=raw&headerType=none&security=reality&fp=firefox&pbk=GAYlNViQ9mkjs0iTjNmijAIXOaK2h0P2opHCYOrCNy0&sni=www.apple.com&sid=ae3ba555edc1ba0a#%F0%9F%87%AE%F0%9F%87%B3%20%F0%9F%93%BA%20%5B19.2%20mb%5D%20IN%20India
+vless://7f1f5848-da44-47df-8581-df83e88ee2b3@194.61.31.126:2053?encryption=none&type=raw&headerType=none&security=reality&fp=firefox&pbk=GAYlNViQ9mkjs0iTjNmijAIXOaK2h0P2opHCYOrCNy0&sni=www.apple.com&sid=ae3ba555edc1ba0a#%F0%9F%87%AE%F0%9F%87%B3%20%F0%9F%93%BA%20%5B12.7%20mb%5D%20IN%20India
