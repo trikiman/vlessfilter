@@ -1,2 +1,2 @@
-trojan://AE62539071@one-quail.rooster465.autos:443?sni=one-quail.rooster465.autos&type=tcp&fp=chrome#%F0%9F%87%AB%F0%9F%87%B7%20%F0%9F%8E%AC%20%5B25.9%20mb%5D%20FR%20France
-trojan://AE62539071@15.237.214.103:443?sni=tough-hermit.rooster465.autos&type=tcp&fp=chrome#%F0%9F%87%AB%F0%9F%87%B7%20%F0%9F%8E%AC%20%5B25.1%20mb%5D%20FR%20France
+trojan://AE62539071@chief-cricket.rooster465.autos:443#%F0%9F%87%AB%F0%9F%87%B7%20%F0%9F%93%BA%20%5B16.9%20mb%5D%20FR%20France
+trojan://AE62539071@tough-hermit.rooster465.autos:443?sni=tough-hermit.rooster465.autos&type=tcp&fp=chrome#%F0%9F%87%AB%F0%9F%87%B7%20%F0%9F%93%BA%20%5B16.6%20mb%5D%20FR%20France

@@ -1,6 +1,6 @@
 vless://412d7fbe-7474-4f1d-86c6-7eebdc628f72@mci.pictureiran.ir:2087?mode=auto&path=%2F&security=tls&encryption=none&insecure=0&host=ireland.alfather.ir&fp=chrome&type=xhttp&allowInsecure=0&sni=ireland.alfather.ir#%F0%9F%87%AE%F0%9F%87%AA%20IE%20Ireland
 vmess://eyJ2IjoiMiIsInBzIjoiaGFtZWRwNzE6OvCfh67wn4eqIiwiYWRkIjoiOTEuMjUwLjI0OS4yMTkiLCJwb3J0IjoiMTExOTYiLCJpZCI6InJvb3RmYWNlIiwiYWlkIjoiMCIsInNjeSI6ImF1dG8iLCJuZXQiOiJ3cyIsInR5cGUiOiItLS0iLCJob3N0IjoiIiwicGF0aCI6Ii9yb290ZmFjZSIsInRscyI6IiIsInNuaSI6IiIsInRlc3RfbmFtZSI6IjE4Iiwic2tpcC1jZXJ0LXZlcmlmeSI6dHJ1ZX0#%F0%9F%87%AE%F0%9F%87%AA%20IE%20Ireland
-trojan://AE62539071@54.74.210.220:443?security=tls&insecure=0&headerType=none&fp=chrome&type=tcp&allowInsecure=0&sni=funny-hen.rooster465.autos#%F0%9F%87%AE%F0%9F%87%AA%20%F0%9F%8E%AC%20%5B31.6%20mb%5D%20IE%20Ireland
-trojan://AE62539071@worthy-labrador.rooster465.autos:443#%F0%9F%87%AE%F0%9F%87%AA%20%F0%9F%8E%AC%20%5B31.3%20mb%5D%20IE%20Ireland
-trojan://AE62539071@54.74.159.195:443?security=tls&sni=kind-stork.rooster465.autos#%F0%9F%87%AE%F0%9F%87%AA%20%F0%9F%8E%AC%20%5B31.0%20mb%5D%20IE%20Ireland
+trojan://AE62539071@funny-hen.rooster465.autos:443#%F0%9F%87%AE%F0%9F%87%AA%20%F0%9F%93%BA%20%5B17.7%20mb%5D%20IE%20Ireland
+trojan://AE62539071@54.74.210.220:443?security=tls&insecure=0&headerType=none&fp=chrome&type=tcp&allowInsecure=0&sni=funny-hen.rooster465.autos#%F0%9F%87%AE%F0%9F%87%AA%20%F0%9F%93%BA%20%5B17.3%20mb%5D%20IE%20Ireland
+trojan://AE62539071@18.201.47.180:443?sni=healthy-panda.rooster465.autos&allowInsecure=1&type=tcp#%F0%9F%87%AE%F0%9F%87%AA%20%F0%9F%93%BA%20%5B17.2%20mb%5D%20IE%20Ireland
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo2dG0wa21iZG56UzFYb0xD@20.223.129.129:443#%F0%9F%87%AE%F0%9F%87%AA%20IE%20Ireland
