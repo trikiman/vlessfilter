@@ -1,1 +1,2 @@
-trojan://tunnel-ljlcf@tr-1.stunnel.cc:8441?security=tls#%F0%9F%87%B9%F0%9F%87%B7%20%F0%9F%8E%AC%20%5B30.1%20mb%5D%20TR%20Turkey
+trojan://pYzEFqrAjuhwAcVjdu9oMA@nodejs.org:2086?security=none&type=ws&headerType=&path=%2Ft-ws&host=tr.web.doctor-alan-cloud.ir#%F0%9F%87%B9%F0%9F%87%B7%20%F0%9F%93%BA%20%5B16.1%20mb%5D%20TR%20Turkey
+trojan://tunnel-ljlcf@tr-1.stunnel.cc:8441?allowInsecure=0#%F0%9F%87%B9%F0%9F%87%B7%20%F0%9F%93%BA%20%5B12.0%20mb%5D%20TR%20Turkey

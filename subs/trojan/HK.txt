@@ -1,3 +1,1 @@
-trojan://AE62539071@humorous-parakeet.rooster465.autos:443?allowInsecure=1&insecure=1&type=tcp&security=tls&sni=humorous-parakeet.rooster465.autos#%F0%9F%87%AD%F0%9F%87%B0%20%F0%9F%93%BA%20%5B20.9%20mb%5D%20HK%20Hong%20Kong
-trojan://AE62539071@smiling-ray.rooster465.autos:443?sni=smiling-ray.rooster465.autos&type=tcp&fp=chrome#%F0%9F%87%AD%F0%9F%87%B0%20%F0%9F%93%BA%20%5B21.2%20mb%5D%20HK%20Hong%20Kong
-trojan://AE62539071@wealthy-loon.rooster465.autos:443?security=tls#%F0%9F%87%AD%F0%9F%87%B0%20%F0%9F%93%BA%20%5B21.3%20mb%5D%20HK%20Hong%20Kong
+trojan://ND91608427@91.199.84.120:443?allowInsecure=0&sni=dynamic-grubworm.rooster465.autos#%F0%9F%87%AD%F0%9F%87%B0%20%F0%9F%93%BA%20%5B12.0%20mb%5D%20HK%20Hong%20Kong
