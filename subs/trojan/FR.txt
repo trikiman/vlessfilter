@@ -1,3 +1,1 @@
-trojan://AE62539071@one-quail.rooster465.autos:443#%F0%9F%87%AB%F0%9F%87%B7%20%F0%9F%8E%AC%20%5B37.6%20mb%5D%20FR%20France
-trojan://humanity@194.147.33.102:8443?path=%2Fassignment&security=tls&insecure=0&host=www.calmlunch.com&type=ws&allowInsecure=0&sni=www.calmlunch.com#%F0%9F%87%AB%F0%9F%87%B7%20%F0%9F%8E%AC%20%5B35.5%20mb%5D%20FR%20France
-trojan://humanity@185.164.163.173:8443?path=%2Fassignment&security=tls&insecure=0&host=www.calmlunch.com&type=ws&allowInsecure=0&sni=www.calmlunch.com#%F0%9F%87%AB%F0%9F%87%B7%20%F0%9F%8E%AC%20%5B32.8%20mb%5D%20FR%20France
+trojan://AE62539071@chief-cricket.rooster465.autos:443?security=tls#%F0%9F%87%AB%F0%9F%87%B7%20%F0%9F%8E%AC%20%5B43.3%20mb%5D%20FR%20France
