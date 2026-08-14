@@ -1,2 +1,1 @@
-vless://dc7940e0-6bff-45e3-853d-4007561803c3@185.155.97.58:45176?security=reality&encryption=none&pbk=A1Qf_rMG4KDfLzfCK-M5R9qW_0uThfeSosQnv6LBL1M&headerType=&type=tcp&flow=xtls-rprx-vision&sni=www.googletagmanager.com&sid=8433cb66b6c3ab6d#%F0%9F%87%AA%F0%9F%87%AA%20%F0%9F%8E%AC%20%5B39.1%20mb%5D%20EE%20Estonia
-vless://19f54e37-5fae-47f6-bc10-e71ccbc58389@estproxy2.lockdwn.com:443/?type=ws&encryption=none&flow=#%F0%9F%87%AA%F0%9F%87%AA%20%F0%9F%8E%AC%20%5B32.0%20mb%5D%20EE%20Estonia
+vless://19f54e37-5fae-47f6-bc10-e71ccbc58389@estproxy2.lockdwn.com:443?encryption=none&host=estproxy2.lockdwn.com&path=%2F&security=none&type=ws#%F0%9F%87%AA%F0%9F%87%AA%20%F0%9F%93%BA%20%5B24.6%20mb%5D%20EE%20Estonia

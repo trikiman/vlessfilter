@@ -1,2 +1,1 @@
-vless://7e5964d036b843ff885b86c4d3bfd466@85.159.228.250:25703#%F0%9F%87%B1%F0%9F%87%BB%20%F0%9F%8E%AC%20%5B39.4%20mb%5D%20LV%20Latvia
-vless://22696950-587f-42c0-af24-c1ffab17d0cd@91.197.3.43:52463?security=reality&encryption=none&pbk=zOv4BhJVbINHdcULln0vQ_6sxKiGjJPj4uyMttX9pWo&headerType=none&fp=chrome&spx=/&type=tcp&sni=yahoo.com&sid=cdaed92e1d0c#%F0%9F%87%B1%F0%9F%87%BB%20%F0%9F%8E%AC%20%5B33.5%20mb%5D%20LV%20Latvia
+vless://7e5964d036b843ff885b86c4d3bfd466@85.159.228.250:25703?encryption=none&security=none&type=tcp&headerType=none#%F0%9F%87%B1%F0%9F%87%BB%20%F0%9F%93%BA%20%5B24.7%20mb%5D%20LV%20Latvia
