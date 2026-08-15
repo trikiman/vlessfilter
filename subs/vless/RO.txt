@@ -1,1 +1,1 @@
-vless://03707fb7-0990-440f-88f6-b0e0f7242a38@ytryurdj64bbb.localip.ir:443?path=%2F&security=tls&alpn=http%2F1.1&encryption=none&insecure=0&host=ro-3.ariyuz.org&type=ws&allowInsecure=0&sni=ro-3.ariyuz.org#%F0%9F%87%B7%F0%9F%87%B4%20%F0%9F%93%BA%20%5B21.4%20mb%5D%20RO%20Romania
+vless://03707fb7-0990-440f-88f6-b0e0f7242a38@ytryurdj64bbb.localip.ir:443?path=/&security=tls&alpn=http/1.1&encryption=none&insecure=0&host=ro-3.ariyuz.org&type=ws&allowInsecure=0&sni=ro-3.ariyuz.org#%F0%9F%87%B7%F0%9F%87%B4%20%F0%9F%8E%AC%20%5B27.9%20mb%5D%20RO%20Romania

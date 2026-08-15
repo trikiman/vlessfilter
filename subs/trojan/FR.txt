@@ -1,3 +1,2 @@
-trojan://FH72359861@correct-pony.rooster465.autos:443#%F0%9F%87%AB%F0%9F%87%B7%20%F0%9F%8E%AC%20%5B51.5%20mb%5D%20FR%20France
-trojan://FH72359861@15.237.112.48:443?sni=smiling-fowl.rooster465.autos&type=tcp&fp=chrome#%F0%9F%87%AB%F0%9F%87%B7%20%F0%9F%8E%AC%20%5B48.3%20mb%5D%20FR%20France
-trojan://humanity@45.130.125.112:443?path=%2Fassignment&security=tls&insecure=0&fp=chrome&type=ws&allowInsecure=0&sni=www.calmlunch.com#%F0%9F%87%AB%F0%9F%87%B7%20%F0%9F%8E%AC%20%5B35.7%20mb%5D%20FR%20France
+trojan://FH72359861@correct-pony.rooster465.autos:443#%F0%9F%87%AB%F0%9F%87%B7%20%F0%9F%8E%AC%20%5B40.4%20mb%5D%20FR%20France
+trojan://FH72359861@15.237.112.48:443?sni=smiling-fowl.rooster465.autos&allowInsecure=1&type=tcp&fp=chrome#%F0%9F%87%AB%F0%9F%87%B7%20%F0%9F%8E%AC%20%5B38.0%20mb%5D%20FR%20France
