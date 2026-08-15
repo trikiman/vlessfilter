@@ -1,7 +1,7 @@
-vless://a14b736b-a92a-48d6-a596-5d31f7378ded@51.161.204.242:443?type=tcp&security=reality&encryption=none&flow=xtls-rprx-vision&fp=chrome&pbk=a2qGjvUPq6Nz5FTbn_MSHp-055q2h8YXqIL5VIJ5zwE&sid=d15c17cef9b2e456&sni=www.cloudflare.com#%F0%9F%87%A6%F0%9F%87%BA%20%F0%9F%93%BA%20%5B25.0%20mb%5D%20AU%20Australia
+vless://a14b736b-a92a-48d6-a596-5d31f7378ded@51.161.204.242:443?type=tcp&security=reality&encryption=none&flow=xtls-rprx-vision&fp=chrome&pbk=a2qGjvUPq6Nz5FTbn_MSHp-055q2h8YXqIL5VIJ5zwE&sid=d15c17cef9b2e456&sni=www.cloudflare.com#%F0%9F%87%A6%F0%9F%87%BA%20%F0%9F%93%BA%20%5B22.8%20mb%5D%20AU%20Australia
 vmess://eyJ2IjoiMiIsImFkZCI6Imd0bTEua3Rtd2FuLm5ldCIsInBvcnQiOiIxMjg4OSIsImlkIjoiNDk0MWFhOGQtMDdkMi00MDhjLWJlMmMtMTE3ZGViZWNiYTMwIiwiYWlkIjoiMCIsIm5ldCI6IndzIiwidHlwZSI6Im5vbmUiLCJob3N0IjoiYmFpZHUuY29tIiwicGF0aCI6Ii8iLCJ0bHMiOiIiLCJwcyI6IltPcGVuUmF5XSDwn4ev8J+HtSBKUC0zNzI2In0=#%F0%9F%87%A6%F0%9F%87%BA%20AU%20Australia
-trojan://FH72359861@square-pheasant.rooster465.autos:443?sni=square-pheasant.rooster465.autos&type=tcp&fp=chrome#%F0%9F%87%A6%F0%9F%87%BA%20%F0%9F%8E%AC%20%5B25.3%20mb%5D%20AU%20Australia
-trojan://FH72359861@fluent-gar.rooster465.autos:443?sni=fluent-gar.rooster465.autos&type=tcp&fp=chrome#%F0%9F%87%A6%F0%9F%87%BA%20%F0%9F%8E%AC%20%5B25.3%20mb%5D%20AU%20Australia
-trojan://FH72359861@true-pony.rooster465.autos:443?sni=true-pony.rooster465.autos&type=tcp&fp=chrome#%F0%9F%87%A6%F0%9F%87%BA%20%F0%9F%93%BA%20%5B24.1%20mb%5D%20AU%20Australia
+trojan://FH72359861@national-stingray.rooster465.autos:443?sni=national-stingray.rooster465.autos&type=tcp&fp=chrome#%F0%9F%87%A6%F0%9F%87%BA%20%F0%9F%93%BA%20%5B21.8%20mb%5D%20AU%20Australia
+trojan://AE62539071@darling-mutt.rooster465.autos:443?security=tls#%F0%9F%87%A6%F0%9F%87%BA%20%F0%9F%93%BA%20%5B20.8%20mb%5D%20AU%20Australia
+trojan://FH72359861@square-pheasant.rooster465.autos:443?security=tls&path=/#%F0%9F%87%A6%F0%9F%87%BA%20%F0%9F%93%BA%20%5B20.3%20mb%5D%20AU%20Australia
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpUV0c3SjFLUjVLc1BhVjVxWkkrcmlldWVLeHhhZlpTcENI@45.77.232.213:15675#%F0%9F%87%A6%F0%9F%87%BA%20%F0%9F%8E%AC%20%5B25.3%20mb%5D%20AU%20Australia
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpiSU9vaTVUdUltRzJLY2N4VjctamNBN0Nleit2dW4tY19F@104.156.233.234:27116#%F0%9F%87%A6%F0%9F%87%BA%20%F0%9F%93%BA%20%5B12.8%20mb%5D%20AU%20Australia
