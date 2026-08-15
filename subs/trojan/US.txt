@@ -1,3 +1,3 @@
-trojan://FH72359861@54.185.164.73:443?sni=outgoing-lynx.rooster465.autos&type=tcp&fp=chrome#%F0%9F%87%BA%F0%9F%87%B8%20%E2%9A%A1%20%5B64.2%20mb%5D%20US%20United%20States
-trojan://AE62539071@100.22.163.167:443?sni=bright-baboon.rooster465.autos&allowInsecure=1&type=tcp#%F0%9F%87%BA%F0%9F%87%B8%20%E2%9A%A1%20%5B64.5%20mb%5D%20US%20United%20States
-trojan://AE62539071@sharing-duck.rooster465.autos:443?security=tls&sni=sharing-duck.rooster465.autos#%F0%9F%87%BA%F0%9F%87%B8%20%E2%9A%A1%20%5B64.2%20mb%5D%20US%20United%20States
+trojan://AE62539071@sharing-duck.rooster465.autos:443?allowInsecure=1#%F0%9F%87%BA%F0%9F%87%B8%20%F0%9F%8E%AC%20%5B53.8%20mb%5D%20US%20United%20States
+trojan://FH72359861@34.222.243.142:443?sni=comic-poodle.rooster465.autos&type=tcp&fp=chrome#%F0%9F%87%BA%F0%9F%87%B8%20%F0%9F%8E%AC%20%5B53.6%20mb%5D%20US%20United%20States
+trojan://AE62539071@44.243.85.47:443?sni=liked-serval.rooster465.autos&type=tcp&fp=chrome#%F0%9F%87%BA%F0%9F%87%B8%20%F0%9F%8E%AC%20%5B51.6%20mb%5D%20US%20United%20States
