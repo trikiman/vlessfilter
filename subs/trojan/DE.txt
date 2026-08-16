@@ -1,3 +1,2 @@
-trojan://FH72359861@63.176.171.181:443?sni=engaging-toucan.rooster465.autos&fp=chrome&type=tcp&path=/#%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%93%BA%20%5B20.4%20mb%5D%20DE%20Germany
-trojan://FH72359861@epic-iguana.rooster465.autos:443#%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%93%BA%20%5B20.2%20mb%5D%20DE%20Germany
-trojan://FH72359861@3.64.117.92:443?sni=epic-iguana.rooster465.autos&fp=chrome&type=tcp&path=%2f#%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%93%BA%20%5B19.1%20mb%5D%20DE%20Germany
+trojan://FH72359861@63.176.171.181:443?sni=engaging-toucan.rooster465.autos&fp=chrome&type=tcp&path=/#%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%93%BA%20%5B16.1%20mb%5D%20DE%20Germany
+trojan://AE62539071@3.120.138.119:443?fp=chrome&sni=up-dinosaur.rooster465.autos#%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%93%BA%20%5B16.2%20mb%5D%20DE%20Germany

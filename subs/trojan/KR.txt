@@ -1,3 +1,3 @@
-trojan://ND91608427@43.203.119.20:443?sni=uncommon-feline.rooster465.autos&path=/#%F0%9F%87%B0%F0%9F%87%B7%20%F0%9F%93%BA%20%5B14.4%20mb%5D%20KR%20South%20Korea
-trojan://AE62539071@15.165.18.82:443?sni=grand-grub.rooster465.autos&fp=chrome&type=tcp&path=/#%F0%9F%87%B0%F0%9F%87%B7%20%F0%9F%93%BA%20%5B13.8%20mb%5D%20KR%20South%20Korea
-trojan://FH72359861@43.203.251.109:443?sni=elegant-horse.rooster465.autos&fp=chrome&type=tcp&path=/#%F0%9F%87%B0%F0%9F%87%B7%20%F0%9F%93%BA%20%5B13.8%20mb%5D%20KR%20South%20Korea
+trojan://ND91608427@3.38.106.2:443/?type=tcp&security=tls&sni=communal-sunbird.rooster465.autos&fp=chrome#%F0%9F%87%B0%F0%9F%87%B7%20%F0%9F%93%BA%20%5B16.3%20mb%5D%20KR%20South%20Korea
+trojan://AE62539071@52.79.160.55:443?security=tls&sni=gorgeous-hookworm.rooster465.autos&fp=chrome&type=tcp&headerType=none&path=/&allow_insecure=0#%F0%9F%87%B0%F0%9F%87%B7%20%F0%9F%93%BA%20%5B16.2%20mb%5D%20KR%20South%20Korea
+trojan://AE62539071@15.165.18.82:443?sni=grand-grub.rooster465.autos&type=tcp&path=/#%F0%9F%87%B0%F0%9F%87%B7%20%F0%9F%93%BA%20%5B16.3%20mb%5D%20KR%20South%20Korea

@@ -20,7 +20,7 @@ Specific country:
 https://raw.githubusercontent.com/trikiman/vlessfilter/main/subs/vless/<CC>.txt
 ```
 
-Rotating exits: `subs/vless/rotating.txt` (151 configs)
+Rotating exits: `subs/vless/rotating.txt` (49 configs)
 
 ### VMESS
 
@@ -52,7 +52,7 @@ Specific country:
 https://raw.githubusercontent.com/trikiman/vlessfilter/main/subs/trojan/<CC>.txt
 ```
 
-Rotating exits: `subs/trojan/rotating.txt` (23 configs)
+Rotating exits: `subs/trojan/rotating.txt` (9 configs)
 
 ### SS
 
@@ -197,55 +197,49 @@ cron may fail under Termux — use `termux-job-scheduler --period-ms 21600000 --
 
 | Country | Top latency (ms) | Median speed (Mbps) | Keys |
 |---------|------------------|---------------------|------|
-| 🇦🇪 AE | 907 | 18.6 | 1 |
-| 🇦🇱 AL | 712 | 25.7 | 2 |
-| 🇦🇹 AT | 660 | 22.3 | 2 |
-| 🇦🇺 AU | 582 | 30.3 | 1 |
-| 🇧🇬 BG | 742 | 25.6 | 1 |
-| 🇨🇦 CA | 255 | 57.2 | 3 |
-| 🇨🇭 CH | 689 | 27.4 | 1 |
-| 🇨🇿 CZ | 1372 | 21.8 | 1 |
-| 🇩🇪 DE | 412 | 31.3 | 3 |
-| 🇪🇪 EE | 669 | 25.9 | 1 |
-| 🇪🇸 ES | 640 | 31.0 | 1 |
-| 🇫🇮 FI | 464 | 29.5 | 3 |
-| 🇫🇷 FR | 462 | 30.1 | 3 |
-| 🇬🇧 GB | 564 | 32.5 | 3 |
-| 🇭🇰 HK | 613 | 30.1 | 3 |
-| 🇭🇺 HU | 684 | 24.9 | 1 |
-| 🇮🇳 IN | 879 | 19.2 | 2 |
-| 🇮🇹 IT | 579 | 27.6 | 3 |
-| 🇯🇵 JP | 346 | 37.9 | 3 |
-| 🇰🇷 KR | 535 | 22.0 | 3 |
-| 🇰🇿 KZ | 959 | 18.4 | 2 |
-| 🇱🇹 LT | 924 | 24.1 | 1 |
-| 🇱🇻 LV | 545 | 24.8 | 2 |
-| 🇳🇱 NL | 431 | 41.4 | 3 |
-| 🇵🇱 PL | 512 | 26.7 | 3 |
-| 🇵🇹 PT | 520 | 28.1 | 1 |
-| 🇷🇺 RU | 845 | 16.8 | 2 |
-| 🇸🇪 SE | 706 | 26.5 | 1 |
-| 🇸🇬 SG | 698 | 26.7 | 3 |
-| 🇹🇷 TR | 756 | 23.7 | 3 |
-| 🇹🇼 TW | 577 | 32.4 | 1 |
-| 🇺🇸 US | 58 | 253.4 | 3 |
+| 🇦🇱 AL | 485 | 32.1 | 2 |
+| 🇦🇹 AT | 430 | 43.5 | 1 |
+| 🇦🇺 AU | 871 | 21.2 | 1 |
+| 🇧🇬 BG | 495 | 36.8 | 1 |
+| 🇨🇦 CA | 109 | 147.4 | 3 |
+| 🇨🇭 CH | 451 | 45.1 | 1 |
+| 🇨🇿 CZ | 1087 | 30.9 | 1 |
+| 🇩🇪 DE | 309 | 49.3 | 3 |
+| 🇪🇪 EE | 472 | 38.8 | 1 |
+| 🇪🇸 ES | 392 | 50.8 | 1 |
+| 🇫🇮 FI | 392 | 41.5 | 3 |
+| 🇫🇷 FR | 266 | 55.1 | 3 |
+| 🇬🇧 GB | 320 | 55.8 | 3 |
+| 🇭🇰 HK | 802 | 22.5 | 3 |
+| 🇮🇳 IN | 782 | 20.8 | 2 |
+| 🇮🇹 IT | 414 | 46.7 | 1 |
+| 🇯🇵 JP | 686 | 25.5 | 2 |
+| 🇰🇷 KR | 754 | 15.9 | 3 |
+| 🇰🇿 KZ | 1167 | 27.0 | 1 |
+| 🇱🇻 LV | 364 | 29.4 | 2 |
+| 🇳🇱 NL | 356 | 54.6 | 2 |
+| 🇵🇱 PL | 312 | 43.2 | 3 |
+| 🇵🇹 PT | 356 | 42.7 | 1 |
+| 🇷🇺 RU | 581 | 32.5 | 1 |
+| 🇸🇪 SE | 486 | 40.0 | 1 |
+| 🇸🇬 SG | 734 | 20.3 | 3 |
+| 🇹🇷 TR | 517 | 28.9 | 3 |
+| 🇹🇼 TW | 774 | 23.3 | 1 |
+| 🇺🇸 US | 44 | 384.6 | 3 |
 
-**Rotating-exit pool:** 151 configs in `subs/vless/rotating.txt`
+**Rotating-exit pool:** 49 configs in `subs/vless/rotating.txt`
 
 ## VMESS — top 3 per country (stable only)
 
 | Country | Top latency (ms) | Median speed (Mbps) | Keys |
 |---------|------------------|---------------------|------|
-| 🇨🇦 CA | 49 | 172.3 | 2 |
-| 🇩🇪 DE | 344 | 42.1 | 1 |
-| 🇪🇸 ES | 380 | 36.5 | 1 |
-| 🇬🇧 GB | 609 | 12.3 | 1 |
-| 🇯🇵 JP | 623 | 13.0 | 1 |
-| 🇰🇷 KR | 508 | 24.7 | 2 |
-| 🇲🇾 MY | 951 | 18.5 | 1 |
-| 🇸🇬 SG | 637 | 23.4 | 3 |
-| 🇹🇷 TR | 774 | 37.3 | 2 |
-| 🇺🇸 US | 107 | 110.2 | 2 |
+| 🇨🇦 CA | 191 | 26.9 | 2 |
+| 🇩🇪 DE | 488 | 15.1 | 3 |
+| 🇪🇸 ES | 523 | 12.7 | 1 |
+| 🇰🇷 KR | 392 | 31.9 | 1 |
+| 🇲🇾 MY | 529 | 12.2 | 1 |
+| 🇸🇬 SG | 517 | 14.7 | 2 |
+| 🇺🇸 US | 27 | 127.6 | 3 |
 
 **Rotating-exit pool:** 0 configs in `subs/vmess/rotating.txt`
 
@@ -253,43 +247,38 @@ cron may fail under Termux — use `termux-job-scheduler --period-ms 21600000 --
 
 | Country | Top latency (ms) | Median speed (Mbps) | Keys |
 |---------|------------------|---------------------|------|
-| 🇦🇺 AU | 693 | 12.9 | 3 |
-| 🇨🇦 CA | 711 | 25.6 | 1 |
-| 🇩🇪 DE | 446 | 20.2 | 3 |
-| 🇫🇷 FR | 439 | 21.2 | 3 |
-| 🇭🇰 HK | 740 | 12.8 | 1 |
-| 🇮🇪 IE | 369 | 24.4 | 3 |
-| 🇯🇵 JP | 544 | 17.1 | 3 |
-| 🇰🇷 KR | 647 | 13.8 | 3 |
-| 🇳🇱 NL | 418 | 20.5 | 3 |
-| 🇵🇱 PL | 507 | 17.7 | 3 |
-| 🇹🇷 TR | 854 | 12.1 | 1 |
-| 🇺🇸 US | 231 | 40.9 | 3 |
+| 🇦🇺 AU | 578 | 15.4 | 3 |
+| 🇩🇪 DE | 543 | 16.1 | 2 |
+| 🇫🇷 FR | 527 | 16.8 | 3 |
+| 🇮🇪 IE | 478 | 18.7 | 3 |
+| 🇯🇵 JP | 450 | 20.8 | 3 |
+| 🇰🇷 KR | 552 | 16.3 | 3 |
+| 🇳🇱 NL | 535 | 15.3 | 3 |
+| 🇵🇱 PL | 623 | 14.0 | 3 |
+| 🇸🇬 SG | 725 | 12.8 | 3 |
+| 🇺🇸 US | 170 | 57.8 | 3 |
 
-**Rotating-exit pool:** 23 configs in `subs/trojan/rotating.txt`
+**Rotating-exit pool:** 9 configs in `subs/trojan/rotating.txt`
 
 ## SS — top 3 per country (stable only)
 
 | Country | Top latency (ms) | Median speed (Mbps) | Keys |
 |---------|------------------|---------------------|------|
-| 🇦🇺 AU | 420 | 34.3 | 1 |
-| 🇧🇷 BR | 2587 | 25.9 | 1 |
-| 🇨🇴 CO | 423 | 15.1 | 1 |
-| 🇩🇪 DE | 465 | 29.2 | 3 |
-| 🇪🇸 ES | 515 | 26.8 | 2 |
-| 🇬🇧 GB | 431 | 31.7 | 3 |
-| 🇭🇰 HK | 480 | 26.0 | 2 |
-| 🇮🇹 IT | 594 | 19.1 | 1 |
-| 🇯🇵 JP | 323 | 43.6 | 1 |
-| 🇳🇱 NL | 431 | 32.7 | 3 |
-| 🇷🇺 RU | 583 | 24.1 | 3 |
-| 🇸🇬 SG | 515 | 21.8 | 2 |
-| 🇹🇷 TR | 648 | 22.2 | 2 |
-| 🇺🇸 US | 55 | 68.0 | 3 |
-| 🇿🇦 ZA | 815 | 17.2 | 3 |
+| 🇨🇦 CA | 31 | 402.0 | 1 |
+| 🇨🇴 CO | 421 | 13.5 | 1 |
+| 🇩🇪 DE | 474 | 28.9 | 3 |
+| 🇪🇸 ES | 536 | 26.8 | 1 |
+| 🇬🇧 GB | 463 | 31.7 | 1 |
+| 🇭🇰 HK | 455 | 31.4 | 1 |
+| 🇯🇵 JP | 301 | 46.5 | 1 |
+| 🇳🇱 NL | 429 | 27.5 | 2 |
+| 🇷🇺 RU | 607 | 23.8 | 2 |
+| 🇹🇷 TR | 611 | 21.3 | 1 |
+| 🇺🇸 US | 140 | 133.0 | 2 |
+| 🇿🇦 ZA | 840 | 16.8 | 1 |
 
 **Rotating-exit pool:** 0 configs in `subs/ss/rotating.txt`
 
 _Generated by [vlessfilter](https://github.com/trikiman/vlessfilter). Source list: `sources.yaml`._
 
-<!-- last-tested: 2026-08-16T05:16:08Z -->
+<!-- last-tested: 2026-08-16T09:07:15Z -->

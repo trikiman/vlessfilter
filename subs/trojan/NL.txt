@@ -1,3 +1,3 @@
-trojan://AE62539071@present-warthog.rooster465.autos:443#%F0%9F%87%B3%F0%9F%87%B1%20%F0%9F%93%BA%20%5B20.5%20mb%5D%20NL%20Netherlands
-trojan://SEYnpOitNLndBhDtkZyeAShl@nl-vk.tkbvpcompany.site:443?sni=nl-vk.tkbvpcompany.site&type=tcp&alpn=http%2F1.1&fp=chrome#%F0%9F%87%B3%F0%9F%87%B1%20%F0%9F%93%BA%20%5B15.3%20mb%5D%20NL%20Netherlands
-trojan://FH72359861@renewed-chigger.rooster465.autos:443#%F0%9F%87%B3%F0%9F%87%B1%20%F0%9F%93%BA%20%5B21.0%20mb%5D%20NL%20Netherlands
+trojan://AE62539071@thorough-falcon.rooster465.autos:443?security=tls#%F0%9F%87%B3%F0%9F%87%B1%20%F0%9F%93%BA%20%5B15.3%20mb%5D%20NL%20Netherlands
+trojan://SEYnpOitNLndBhDtkZyeAShl@nl-vk.tkbvpcompany.site:443?allowInsecure=0&sni=nl-vk.tkbvpcompany.site&alpn=http/1.1#%F0%9F%87%B3%F0%9F%87%B1%20%F0%9F%93%BA%20%5B12.5%20mb%5D%20NL%20Netherlands
+trojan://FH72359861@renewed-chigger.rooster465.autos:443#%F0%9F%87%B3%F0%9F%87%B1%20%F0%9F%93%BA%20%5B16.1%20mb%5D%20NL%20Netherlands
