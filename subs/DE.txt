@@ -1,9 +1,8 @@
-vless://afcc2147-1350-4155-9ec0-95c4ba4be847@104.18.12.149:443?encryption=none&type=xhttp&mode=auto&host=fran.sarzamiiinahang.ir&path=%2FMeh%3Fdi%3D443&security=tls&alpn=h2&fp=chrome&sni=fran.sarzamiiinahang.ir#%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%8E%AC%20%5B36.9%20mb%5D%20DE%20Germany
-vless://5f38a9e7-240a-4dac-bee7-1facfe45c00c@91.98.154.118:14340?security=none&encryption=none&host=play.google.com&headerType=http&type=tcp#%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%8E%AC%20%5B30.5%20mb%5D%20DE%20Germany
-vless://50b9918d-8197-4278-876a-5939400998b8@94.237.91.161:3389?encryption=none&security=none&type=tcp&headerType=http&host=zula.ir#%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%8E%AC%20%5B26.5%20mb%5D%20DE%20Germany
+vless://d2a9c6b7-68b1-4a0e-a6e3-a498db15e376@94.237.29.118:3389?type=tcp&encryption=none&security=none#%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%8E%AC%20%5B48.6%20mb%5D%20DE%20Germany
+vless://afcc2147-1350-4155-9ec0-95c4ba4be847@104.18.12.149:443?encryption=none&type=xhttp&mode=auto&host=fran.sarzamiiinahang.ir&path=%2FMeh%3Fdi%3D443&security=tls&alpn=h2&fp=chrome&sni=fran.sarzamiiinahang.ir#%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%8E%AC%20%5B47.3%20mb%5D%20DE%20Germany
+vless://bf645ffe-a3cc-4480-8e4c-9bcd1af41052@170.101.109.37:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=www.cloudflare.com&fp=chrome&pbk=rTnh7Y8RsSA5HSvFf-pWT49x8va6U6XHMRgNiMuwB0A&sid=ab88d256&type=tcp&headerType=none#%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%8E%AC%20%5B48.5%20mb%5D%20DE%20Germany
 vmess://eyJhZGQiOiJhci5wYXlkYXIuc2l0ZSIsImFpZCI6IjAiLCJhbHBuIjoiIiwiZnAiOiIiLCJob3N0Ijoid3d3LmFtem4uY29tIiwiaWQiOiJhNjdjMmEzYS00ZTMxLTQzNzQtODY1OC04ZGIwZDUxNGFkYzIiLCJpbnNlY3VyZSI6IjAiLCJuZXQiOiJ0Y3AiLCJwYXRoIjoiLyIsInBjcyI6IiIsInBvcnQiOiI5NDQzIiwicHMiOiJERSDwn4ep8J+HqiB8IEBSYXlkaWthbHggfCBCQjRERjQiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoibm9uZSIsInR5cGUiOiJodHRwIiwidiI6IjIiLCJ2Y24iOiIifQ==#%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%93%BA%20%5B21.5%20mb%5D%20DE%20Germany
-trojan://FH72359861@3.64.117.92:443?sni=epic-iguana.rooster465.autos&type=tcp&fp=chrome#%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%93%BA%20%5B16.3%20mb%5D%20DE%20Germany
-trojan://FH72359861@epic-iguana.rooster465.autos:443#%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%93%BA%20%5B15.9%20mb%5D%20DE%20Germany
-trojan://PQ05174892@casual-quail.rooster465.autos:443?sni=casual-quail.rooster465.autos&type=tcp&fp=chrome#%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%93%BA%20%5B15.8%20mb%5D%20DE%20Germany
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpQV3BqUG8zdHFoUE40eVJa@8.209.74.72:20001#%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%8E%AC%20%5B46.8%20mb%5D%20DE%20Germany
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxaGhycXJva2ozYWc=@209.46.102.22:8388#%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%93%BA%20%5B18.3%20mb%5D%20DE%20Germany
+trojan://FH72359861@epic-iguana.rooster465.autos:443#%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%93%BA%20%5B16.0%20mb%5D%20DE%20Germany
+trojan://FH72359861@3.64.117.92:443?sni=epic-iguana.rooster465.autos&type=tcp&fp=chrome#%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%93%BA%20%5B15.0%20mb%5D%20DE%20Germany
+trojan://FH72359861@63.176.171.181:443?sni=engaging-toucan.rooster465.autos&type=tcp&fp=chrome#%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%93%BA%20%5B12.3%20mb%5D%20DE%20Germany
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpQV3BqUG8zdHFoUE40eVJa@8.209.74.72:20001#%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%8E%AC%20%5B29.3%20mb%5D%20DE%20Germany
