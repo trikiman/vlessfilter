@@ -1,1 +1,1 @@
-vless://19f54e37-5fae-47f6-bc10-e71ccbc58389@94.183.170.231:443?encryption=none&host=estproxy2.lockdwn.com&path=%2F&security=none&type=ws#%F0%9F%87%AA%F0%9F%87%AA%20%F0%9F%93%BA%20%5B18.1%20mb%5D%20EE%20Estonia
+vless://629f88a6-b20b-4489-a22f-4d8b418c0488@ee-t3.vinnypuxtomoon.today:2053?security=reality&encryption=none&sni=ee-t3.vinnypuxtomoon.today&fp=edge&pbk=RwtMzZtTCmy9WRq3_27xeGF8-1l_qPXRVG3yIFp-6Go&sid=c0d1d1776fed0f6d&flow=xtls-rprx-vision&spx=%2F#%F0%9F%87%AA%F0%9F%87%AA%20%F0%9F%8E%AC%20%5B25.9%20mb%5D%20EE%20Estonia

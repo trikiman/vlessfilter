@@ -1,1 +1,1 @@
-trojan://tunnel-ljlcf@tr-1.stunnel.cc:8441?security=tls#%F0%9F%87%B9%F0%9F%87%B7%20%F0%9F%93%BA%20%5B24.2%20mb%5D%20TR%20Turkey
+trojan://tunnel-ljlcf@tr-1.stunnel.cc:8441?sni=tr-1.stunnel.cc&type=tcp#%F0%9F%87%B9%F0%9F%87%B7%20%F0%9F%93%BA%20%5B12.1%20mb%5D%20TR%20Turkey
