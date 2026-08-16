@@ -1,6 +1,6 @@
 vless://412d7fbe-7474-4f1d-86c6-7eebdc628f72@mci.pictureiran.ir:2087?mode=auto&path=%2F&security=tls&encryption=none&insecure=0&host=ireland.alfather.ir&fp=chrome&type=xhttp&allowInsecure=0&sni=ireland.alfather.ir#%F0%9F%87%AE%F0%9F%87%AA%20IE%20Ireland
 vmess://eyJ2IjoiMiIsInBzIjoiaGFtZWRwNzE6OvCfh67wn4eqIiwiYWRkIjoiOTEuMjUwLjI0OS4yMTkiLCJwb3J0IjoiMTExOTYiLCJpZCI6InJvb3RmYWNlIiwiYWlkIjoiMCIsInNjeSI6ImF1dG8iLCJuZXQiOiJ3cyIsInR5cGUiOiItLS0iLCJob3N0IjoiIiwicGF0aCI6Ii9yb290ZmFjZSIsInRscyI6IiIsInNuaSI6IiIsInRlc3RfbmFtZSI6IjE4Iiwic2tpcC1jZXJ0LXZlcmlmeSI6dHJ1ZX0#%F0%9F%87%AE%F0%9F%87%AA%20IE%20Ireland
-trojan://AE62539071@18.201.47.180:443?fp=chrome&sni=healthy-panda.rooster465.autos#%F0%9F%87%AE%F0%9F%87%AA%20%F0%9F%8E%AC%20%5B31.8%20mb%5D%20IE%20Ireland
-trojan://AE62539071@18.201.28.146:443?sni=helped-haddock.rooster465.autos&peer=helped-haddock.rooster465.autos&security=tls#%F0%9F%87%AE%F0%9F%87%AA%20%F0%9F%8E%AC%20%5B30.7%20mb%5D%20IE%20Ireland
-trojan://FH72359861@108.128.201.154:443?sni=touching-turtle.rooster465.autos&type=tcp&fp=chrome#%F0%9F%87%AE%F0%9F%87%AA%20%F0%9F%8E%AC%20%5B31.5%20mb%5D%20IE%20Ireland
+trojan://FH72359861@108.130.49.217:443?allowInsecure=1&sni=concise-bass.rooster465.autos#%F0%9F%87%AE%F0%9F%87%AA%20%F0%9F%93%BA%20%5B18.6%20mb%5D%20IE%20Ireland
+trojan://FH72359861@108.128.201.154:443?sni=touching-turtle.rooster465.autos#%F0%9F%87%AE%F0%9F%87%AA%20%F0%9F%93%BA%20%5B18.6%20mb%5D%20IE%20Ireland
+trojan://FH72359861@54.216.139.140:443?sni=cunning-grub.rooster465.autos&fp=chrome&type=tcp&path=/#%F0%9F%87%AE%F0%9F%87%AA%20%F0%9F%93%BA%20%5B18.7%20mb%5D%20IE%20Ireland
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo2dG0wa21iZG56UzFYb0xD@20.223.129.129:443#%F0%9F%87%AE%F0%9F%87%AA%20IE%20Ireland

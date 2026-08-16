@@ -1,3 +1,3 @@
-trojan://FH72359861@54.150.234.233:443?sni=needed-gelding.rooster465.autos&fp=chrome&type=tcp&path=/#%F0%9F%87%AF%F0%9F%87%B5%20%F0%9F%93%BA%20%5B13.7%20mb%5D%20JP%20Japan
-trojan://AE62539071@3.112.29.46:443?sni=clear-killdeer.rooster465.autos&allowInsecure=1&type=tcp#%F0%9F%87%AF%F0%9F%87%B5%20%F0%9F%93%BA%20%5B13.7%20mb%5D%20JP%20Japan
-trojan://FH72359861@loyal-killdeer.rooster465.autos:443?security=tls#%F0%9F%87%AF%F0%9F%87%B5%20%F0%9F%93%BA%20%5B14.2%20mb%5D%20JP%20Japan
+trojan://AE62539071@13.115.158.235:443?sni=prepared-thrush.rooster465.autos&type=tcp&path=/#%F0%9F%87%AF%F0%9F%87%B5%20%F0%9F%93%BA%20%5B21.0%20mb%5D%20JP%20Japan
+trojan://AE62539071@52.195.229.14:443?sni=superb-dory.rooster465.autos&fp=chrome&type=tcp&path=/#%F0%9F%87%AF%F0%9F%87%B5%20%F0%9F%93%BA%20%5B21.1%20mb%5D%20JP%20Japan
+trojan://FH72359861@13.230.4.218:443?sni=content-rabbit.rooster465.autos&fp=chrome&type=tcp&path=%2f#%F0%9F%87%AF%F0%9F%87%B5%20%F0%9F%93%BA%20%5B21.1%20mb%5D%20JP%20Japan

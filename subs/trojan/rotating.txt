@@ -1,1 +1,2 @@
-trojan://Telegram_healer_config@www.speedtest.net:443?path=/tr/D738GCJkClC3ZuZTvEDbh?ed=2560&security=tls&alpn=http/1.1&insecure=0&host=f1d3r2i3j-9cbv9ixq6u73529fgb.lxmdyxormmmdiabx0-td.workers.dev&fp=chrome&type=ws&allowInsecure=0&sni=f1d3r2i3j-9cBv9iXQ6U73529fGb.lxmdYxORMmmDIaBX0-tD.WOrkerS.dEv#%F0%9F%8C%90%20ROTATING
+trojan://1710442808@188.114.98.0:443?type=ws&security=tls&path=%2F&host=subb.nrshop198.workers.dev&sni=subb.nrshop198.workers.dev&fp=chrome&alpn=http%2F1.1#%F0%9F%8C%90%20ROTATING
+trojan://Mehdi1234@172.64.144.251:2083?ed=2560&eh=Sec-WebSocket-Protocol&host=purple-recipe-5e30.cimavo4626.workers.dev&path=%2F&sni=purple-recipe-5e30.cimavo4626.workers.dev&type=ws#%F0%9F%8C%90%20ROTATING
