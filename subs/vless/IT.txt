@@ -1,1 +1,1 @@
-vless://d4b08cd6-0903-411a-9dac-45dbdf5c9712@57.131.38.163:2053?encryption=none&fp=&pbk=Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc&security=reality&sid=5b8a942318178e7b&sni=www.apple.com&type=tcp#%F0%9F%87%AE%F0%9F%87%B9%20%F0%9F%8E%AC%20%5B29.2%20mb%5D%20IT%20Italy
+vless://d4b08cd6-0903-411a-9dac-45dbdf5c9712@57.131.38.163:2053/?type=tcp&encryption=none&flow=&sni=www.apple.com&security=reality&pbk=Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc&sid=5b8a942318178e7b#%F0%9F%87%AE%F0%9F%87%B9%20%F0%9F%8E%AC%20%5B35.5%20mb%5D%20IT%20Italy
