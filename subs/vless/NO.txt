@@ -1,1 +1,1 @@
-vless://8384341b-cd89-4a21-a022-cc4bd4e648ca@46.29.238.139:40443?type=tcp&security=reality&encryption=none&fp=firefox&pbk=7i4Y7v80NVAIi_4_9roDkqcXmexIHli87dfZuFaQMUI&sid=68da&sni=deepl.com#%F0%9F%87%B3%F0%9F%87%B4%20%F0%9F%8E%AC%20%5B38.1%20mb%5D%20NO%20Norway
+vless://8384341b-cd89-4a21-a022-cc4bd4e648ca@46.29.238.139:40443?type=tcp&security=reality&encryption=none&fp=firefox&pbk=7i4Y7v80NVAIi_4_9roDkqcXmexIHli87dfZuFaQMUI&sid=68da&sni=deepl.com#%F0%9F%87%B3%F0%9F%87%B4%20%F0%9F%8E%AC%20%5B44.0%20mb%5D%20NO%20Norway

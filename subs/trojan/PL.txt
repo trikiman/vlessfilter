@@ -1,3 +1,3 @@
-trojan://AE62539071@game-firefly.rooster465.autos:443#%F0%9F%87%B5%F0%9F%87%B1%20%F0%9F%93%BA%20%5B14.3%20mb%5D%20PL%20Poland
-trojan://FH72359861@202.78.163.233:443?security=tls&sni=magnetic-caiman.rooster465.autos&path=/#%F0%9F%87%B5%F0%9F%87%B1%20%F0%9F%93%BA%20%5B13.6%20mb%5D%20PL%20Poland
-trojan://AE62539071@enough-basilisk.rooster465.autos:443#%F0%9F%87%B5%F0%9F%87%B1%20%F0%9F%93%BA%20%5B13.9%20mb%5D%20PL%20Poland
+trojan://FH72359861@202.78.163.156:443?security=tls&sni=primary-leech.rooster465.autos&path=/#%F0%9F%87%B5%F0%9F%87%B1%20%F0%9F%93%BA%20%5B14.5%20mb%5D%20PL%20Poland
+trojan://FH72359861@optimal-urchin.rooster465.autos:443?#%F0%9F%87%B5%F0%9F%87%B1%20%F0%9F%93%BA%20%5B14.5%20mb%5D%20PL%20Poland
+trojan://5e19b3c8-c1dc-4163-95e2-895319c15d6c@pl.techdatacloud.org:2053?type=tcp&security=reality&pbk=uiFSTSOSNKBLju8qnTOyZdM1WyTwOFVr3-RXUYk9nEM&fp=firefox&sni=cloud.mail.ru&sid=23572794d5ffc9fd&spx=%2F#%F0%9F%87%B5%F0%9F%87%B1%20%F0%9F%93%BA%20%5B13.4%20mb%5D%20PL%20Poland
