@@ -1,2 +1,2 @@
-vless://f4685d27-73e3-4588-9622-add50b84046a@179.254.126.218:9800?encryption=none#%F0%9F%87%AA%F0%9F%87%AA%20%F0%9F%8E%AC%20%5B26.8%20mb%5D%20EE%20Estonia
-vless://fb6f37da-2798-491b-8301-5cc632f8fcec@93.123.39.151:7463?type=tcp&security=reality&encryption=none&fp=firefox&pbk=cu1owhInwMiRhM8g6aztvQ7HPG82dpkdn7TYbIjfmz0&sid=b0a3&sni=github.com#%F0%9F%87%AA%F0%9F%87%AA%20%F0%9F%93%BA%20%5B24.3%20mb%5D%20EE%20Estonia
+vless://f4685d27-73e3-4588-9622-add50b84046a@179.254.126.218:9800?encryption=none#%F0%9F%87%AA%F0%9F%87%AA%20%F0%9F%8E%AC%20%5B26.2%20mb%5D%20EE%20Estonia
+vless://06c4e938-2954-478f-a870-ca1b163e30e9@estproxy4.lockdwn.com:8443?sni=estproxy4.lockdwn.com&alpn=h2%2Chttp/1.1&fp=edge&security=tls#%F0%9F%87%AA%F0%9F%87%AA%20%F0%9F%93%BA%20%5B19.4%20mb%5D%20EE%20Estonia

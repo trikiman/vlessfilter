@@ -1,8 +1,9 @@
-vless://a8178248-3cdf-4fb0-ab7b-87c1ab77201c@8.47.69.0:8880?path=%2Fcdn%2Fassets%2Fstream&security=none&encryption=none&host=cnd.france2.gg.newwaycdn.com&type=ws#%F0%9F%87%AB%F0%9F%87%B7%20%F0%9F%8E%AC%20%5B37.5%20mb%5D%20FR%20France
-vless://3666e25b-a1c2-48ec-b060-075392b1aa6e@chatgpt-async-webps-prod-centralus-0.chatgpt.com:443?alpn=h2&encryption=none&host=GERMAN.sarzamiiinahang.ir&mode=auto&path=%2FMeh%3Fdi%3D443&security=tls&sni=GERMAN.sarzamiiinahang.ir&type=xhttp#%F0%9F%87%AB%F0%9F%87%B7%20%F0%9F%93%BA%20%5B18.1%20mb%5D%20FR%20France
-vless://5c22dd50-f75d-4cf5-ba53-721f91d8bfe1@193.233.255.32:443?type=raw&security=reality&flow=xtls-rprx-vision&sni=fr.sellflow.org&fp=chrome&pbk=SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc#%F0%9F%87%AB%F0%9F%87%B7%20%F0%9F%8E%AC%20%5B30.1%20mb%5D%20FR%20France
+vless://3666e25b-a1c2-48ec-b060-075392b1aa6e@chatgpt-async-webps-prod-centralus-0.chatgpt.com:443?encryption=none&security=tls&sni=german.sarzamiiinahang.ir&fp=chrome&allowinsecure=0&type=xhttp&mode=auto&path=/Meh?di=443#%F0%9F%87%AB%F0%9F%87%B7%20%F0%9F%8E%AC%20%5B39.9%20mb%5D%20FR%20France
+vless://7e85ed3f-3829-45b1-8b1c-6a2e45ebc967@164.68.127.108:24144?encryption=none&security=none&type=tcp#%F0%9F%87%AB%F0%9F%87%B7%20%F0%9F%8E%AC%20%5B32.4%20mb%5D%20FR%20France
+vless://a8178248-3cdf-4fb0-ab7b-87c1ab77201c@8.47.69.0:8880?&type=ws&headerType=none&host=cnd.france2.gg.newwaycdn.com&path=/cdn/assets/stream#%F0%9F%87%AB%F0%9F%87%B7%20%F0%9F%8E%AC%20%5B36.8%20mb%5D%20FR%20France
 vmess://eyJhZGQiOiI0Ni4yMjYuMTY2LjIwNSIsImFpZCI6IjAiLCJhbHBuIjoiIiwiZnAiOiIiLCJob3N0IjoiIiwiaWQiOiJmM2NiMWNkNC00ZTU2LTQ0NGQtOGQ2Yi00NzU5ZmE2OWRhZTMiLCJuZXQiOiJ0Y3AiLCJwYXRoIjoiIiwicG9ydCI6IjI3MzQzIiwicHMiOiJ2MmdvIHwg8J+Hq/Cfh7cgRlIgfCBWTUVTUyB8IDkzOCIsInNjeSI6ImF1dG8iLCJza2lwLWNlcnQtdmVyaWZ5Ijp0cnVlLCJzbmkiOiIiLCJ0bHMiOiJub25lIiwidHlwZSI6Im5vbmUiLCJ2IjoiMiJ9#%F0%9F%87%AB%F0%9F%87%B7%20FR%20France
-trojan://FH72359861@15.237.112.48:443?allowInsecure=1&sni=smiling-fowl.rooster465.autos#%F0%9F%87%AB%F0%9F%87%B7%20%F0%9F%93%BA%20%5B22.0%20mb%5D%20FR%20France
-trojan://AE62539071@51.44.161.22:443?allowInsecure=1&fp=chrome&sni=distinct-quail.rooster465.autos#%F0%9F%87%AB%F0%9F%87%B7%20%F0%9F%93%BA%20%5B22.6%20mb%5D%20FR%20France
-trojan://AE62539071@chief-cricket.rooster465.autos:443#%F0%9F%87%AB%F0%9F%87%B7%20%F0%9F%93%BA%20%5B22.4%20mb%5D%20FR%20France
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpCcW5xVG9paDBQYlU=@51.255.13.232:8388#%F0%9F%87%AB%F0%9F%87%B7%20%F0%9F%93%BA%20%5B18.7%20mb%5D%20FR%20France
+trojan://AE62539071@15.237.214.103:443?allowInsecure=1&sni=tough-hermit.rooster465.autos#%F0%9F%87%AB%F0%9F%87%B7%20%F0%9F%93%BA%20%5B15.0%20mb%5D%20FR%20France
+trojan://PQ05174892@lucky-marmot.rooster465.autos:443?sni=lucky-marmot.rooster465.autos&type=tcp&fp=chrome#%F0%9F%87%AB%F0%9F%87%B7%20%F0%9F%93%BA%20%5B15.4%20mb%5D%20FR%20France
+trojan://FH72359861@15.237.112.48:443?allowInsecure=1&sni=smiling-fowl.rooster465.autos#%F0%9F%87%AB%F0%9F%87%B7%20%F0%9F%93%BA%20%5B14.1%20mb%5D%20FR%20France
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpCcW5xVG9paDBQYlU=@51.255.13.232:8388#%F0%9F%87%AB%F0%9F%87%B7%20%F0%9F%93%BA%20%5B15.6%20mb%5D%20FR%20France
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpCcW5xVG9paDBQYlU=@fr3.levikogjgfdd.ir:8388#%F0%9F%87%AB%F0%9F%87%B7%20%F0%9F%93%BA%20%5B15.7%20mb%5D%20FR%20France
