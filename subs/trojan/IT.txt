@@ -1,2 +1,1 @@
-trojan://-------BanV2ray------@bnbnbbnbnbnbnbnbnbnbnbnbnvn.poki-pakipon.ir:315?mode=gun&security=reality&pbk=bJrhMKdMfPjEZ-EUazGR6h-uUDWAFxXG1MZlUVsd3Ak&fp=chrome&spx=/&type=grpc&sni=chi.yahoo.com#%F0%9F%87%AE%F0%9F%87%B9%20IT%20Italy
-trojan://----------BanV2ray---------@bnbnbbnbnbnbnbnbnbnbnbnbnvn.poki-pakipon.ir:417?mode=gun&security=reality&pbk=bJrhMKdMfPjEZ-EUazGR6h-uUDWAFxXG1MZlUVsd3Ak&fp=chrome&spx=/&type=grpc&sni=chi.yahoo.com#%F0%9F%87%AE%F0%9F%87%B9%20IT%20Italy
+trojan://fg20mtCFHy@172.238.226.26:5444?sni=xcvge.southbyte.xyz&allowInsecure=1&type=tcp&fp=chrome#%F0%9F%87%AE%F0%9F%87%B9%20%F0%9F%93%BA%20%5B15.0%20mb%5D%20IT%20Italy
