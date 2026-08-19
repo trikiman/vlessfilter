@@ -1,3 +1,3 @@
-trojan://humanity@104.17.121.43:443?path=%2Fassignment&security=tls&insecure=0&host=www.calmlunch.com&type=ws&allowInsecure=0&sni=www.calmlunch.com#%F0%9F%87%AB%F0%9F%87%B7%20%F0%9F%93%BA%20%5B21.2%20mb%5D%20FR%20France
-trojan://humanity@104.18.32.47:443?path=%2Fassignment&security=tls&insecure=0&fp=chrome&type=ws&allowInsecure=0&sni=www.calmlunch.com#%F0%9F%87%AB%F0%9F%87%B7%20%F0%9F%93%BA%20%5B21.2%20mb%5D%20FR%20France
-trojan://humanity@104.16.71.213:443?path=%2Fassignment&security=tls&insecure=0&host=www.calmlunch.com&type=ws&allowInsecure=0&sni=www.calmlunch.com#%F0%9F%87%AB%F0%9F%87%B7%20%F0%9F%93%BA%20%5B20.5%20mb%5D%20FR%20France
+trojan://FH72359861@15.237.112.48:443?allowInsecure=1&sni=smiling-fowl.rooster465.autos#%F0%9F%87%AB%F0%9F%87%B7%20%F0%9F%93%BA%20%5B20.2%20mb%5D%20FR%20France
+trojan://PQ05174892@humane-bird.rooster465.autos:443?allowInsecure=1#%F0%9F%87%AB%F0%9F%87%B7%20%F0%9F%93%BA%20%5B20.4%20mb%5D%20FR%20France
+trojan://AE62539071@15.237.214.103:443?sni=tough-hermit.rooster465.autos&type=tcp&path=/#%F0%9F%87%AB%F0%9F%87%B7%20%F0%9F%93%BA%20%5B18.1%20mb%5D%20FR%20France

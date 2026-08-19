@@ -1,1 +1,1 @@
-trojan://5e19b3c8-c1dc-4163-95e2-895319c15d6c@ru.techdatacloud.org:8443?type=tcp&security=reality&pbk=jaZRUO7x7awSXNBlvKp3nXdm2gBEsEgmNbbYs7RRQlw&fp=firefox&sni=cloud.mail.ru&sid=8c3785d47c2017ec&spx=%2F#%F0%9F%87%B7%F0%9F%87%BA%20%F0%9F%93%BA%20%5B14.4%20mb%5D%20RU%20Russia
+trojan://5e19b3c8-c1dc-4163-95e2-895319c15d6c@ru.techdatacloud.org:8443?type=tcp&security=reality&pbk=jaZRUO7x7awSXNBlvKp3nXdm2gBEsEgmNbbYs7RRQlw&fp=firefox&sni=cloud.mail.ru&sid=8c3785d47c2017ec&spx=%2F#%F0%9F%87%B7%F0%9F%87%BA%20%F0%9F%93%BA%20%5B13.2%20mb%5D%20RU%20Russia

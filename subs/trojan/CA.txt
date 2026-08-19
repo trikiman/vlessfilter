@@ -1,1 +1,1 @@
-trojan://fg20mtCFHy@137.184.172.41:1921?allowInsecure=1&sni=sfecv.southbyte.xyz#%F0%9F%87%A8%F0%9F%87%A6%20%F0%9F%8E%AC%20%5B25.8%20mb%5D%20CA%20Canada
+trojan://fg20mtCFHy@137.184.172.41:1921?allowInsecure=1&sni=sfecv.southbyte.xyz#%F0%9F%87%A8%F0%9F%87%A6%20%E2%9A%A1%20%5B74.6%20mb%5D%20CA%20Canada

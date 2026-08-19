@@ -1,1 +1,1 @@
-trojan://5e19b3c8-c1dc-4163-95e2-895319c15d6c@gb.techdatacloud.org:2053?type=tcp&security=reality&pbk=uiFSTSOSNKBLju8qnTOyZdM1WyTwOFVr3-RXUYk9nEM&fp=firefox&sni=cloud.mail.ru&sid=23572794d5ffc9fd&spx=%2F#%F0%9F%87%AC%F0%9F%87%A7%20%F0%9F%93%BA%20%5B12.5%20mb%5D%20GB%20United%20Kingdom
+trojan://fg20mtCFHy@104.248.167.79:5624?allowInsecure=0&sni=dsgvc.southbyte.xyz#%F0%9F%87%AC%F0%9F%87%A7%20%F0%9F%93%BA%20%5B23.3%20mb%5D%20GB%20United%20Kingdom

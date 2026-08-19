@@ -1,1 +1,1 @@
-trojan://BSs5IAVMQdYuykvDsOYZoa6gNPSGBjAbLL@185.126.236.44:443?security=tls&sni=www.mesaly.click&fp=chrome&type=tcp&headerType=none&path=%2f#%F0%9F%87%A6%F0%9F%87%B9%20AT%20Austria
+trojan://sbp4kLxhRM@185.126.236.186:443?security=reality&pbk=7ssv-EPWLhGKofQVdLqm1x87BRmPYfgRlMFwQCb8D2c&headerType=none&fp=chrome&type=tcp&sni=amp-api-edge.apps.apple.com#%F0%9F%87%A6%F0%9F%87%B9%20%F0%9F%93%BA%20%5B15.2%20mb%5D%20AT%20Austria
