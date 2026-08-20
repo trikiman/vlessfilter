@@ -79,7 +79,26 @@ GitHub Actions:
 - verify-russia.yml: every 30min cron + after refresh + workflow_dispatch
 - Dashboard live at https://trikiman.github.io/vlessfilter/dashboard.html
 
-Both are stable; cron is enabled. No long ad-hoc runs in flight.
+**"Both are stable" was NOT true as of 2026-08-20.** Cron is enabled and both
+workflows are `active` (not auto-disabled), but two distinct problems were found:
+
+1. **verify-russia misses scheduled slots.** Directly observed: at 04:11Z the
+   last run was 03:28Z, so the 04:00Z `*/30` slot never fired while the workflow
+   showed `active`. Observed gaps run 30-114 min, frequently 65-85. This is
+   separate from the fast-failing runs of 2026-08-11 (Go-version mismatch, since
+   fixed) — those were runs that fired and failed; these never fire at all.
+   Leading hypothesis under investigation: a `*/30` cron lands on :00/:30, the
+   two most contended minutes of the hour, and GitHub drops scheduled runs under
+   load. Not yet confirmed.
+2. **refresh failed six consecutive runs, 2026-08-19/20.** Every protocol job
+   succeeded (44-57 min each), then merge-and-push died in under a minute:
+   all-results.csv had reached 131 MB against GitHub's 100 MB hard blob limit,
+   so the pre-receive hook rejected the whole push — subs/, README and CSV lost
+   together. Fixed by capping the CSV (MaxCSVRows) plus a pre-push size guard.
+
+Note the asymmetry that made both survivable: verify-russia publishes on its own
+30-minute path, so subs/verified-russia.txt stayed current throughout. Only the
+4-hourly per-country refresh stalled.
 
 ## Accumulated Decisions (v2.2)
 
