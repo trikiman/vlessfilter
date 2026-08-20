@@ -70,6 +70,10 @@ jobs:
         uses: actions/setup-go@v6
         with:
           go-version: '1.26'
+          # Matches refresh.yml and verify-russia.yml. This workflow was missed
+          # when cache:false was added to the others to fix a tar cache-restore
+          # failure; it is dispatch-only so the gap went unnoticed.
+          cache: false
 
       - name: Install xray-knife
         run: |
