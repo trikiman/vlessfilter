@@ -504,9 +504,15 @@ jobs:
             done < /tmp/attempted.txt
           fi
 
-          # Trim history to last 50000 entries (~7 days at 30min × 25 keys)
-          if [ $(wc -l < "$HIST") -gt 50000 ]; then
-            tail -50000 "$HIST" > "${HIST}.tmp"
+          # Trim history. The old cap was 50000 "(~7 days at 30min × 25 keys)",
+          # sized when only PASSERS were recorded. Now that failures are
+          # recorded too — which is what makes a pass rate derivable at all —
+          # a run writes ~565 rows, so 50000 held ~44 hours, not 7 days. That
+          # would silently discard the evidence v2.2 needs for its 7-day
+          # stability check. 400000 restores ~7 days and lands near 40 MB,
+          # well under GitHub's 100 MB hard blob limit.
+          if [ $(wc -l < "$HIST") -gt 400000 ]; then
+            tail -400000 "$HIST" > "${HIST}.tmp"
             mv "${HIST}.tmp" "$HIST"
           fi
 
