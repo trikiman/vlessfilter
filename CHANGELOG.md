@@ -2,6 +2,53 @@
 
 All notable changes to VlessFilter are documented here.
 
+## Unreleased — v2.2 (in progress)
+
+This entry was missing entirely: the changelog stopped at v2.1.0 while ~3 months
+of work shipped. Reconstructed from git history 2026-05-26..2026-08-20.
+
+**RU verification (the v2.2 milestone).**
+- `verify-russia.yml` — bridge-verify candidates through an RU-datacenter SOCKS
+  proxy every 30 min; publishes `subs/verified-russia.txt`.
+- Per-key reliability history in `.readme-data/verified-russia-history.jsonl`.
+- Probing parallelised (xargs fan-out) and the caps made workflow inputs. The
+  old serial loop plus a stop-at-15 early exit meant the published count was a
+  ceiling, not a survival rate; the pool also widened from `subs/all.txt` alone
+  to `all-results.csv` as well (115 → 643 unique endpoints on the same data).
+- **Protocol tiers measured for the first time** (run 31562489245, full pool,
+  565/565 attempted): ss 60.3% pass / 582ms median, vless 50.6% / 769ms,
+  trojan 0/36 (stale keys, see below). Shadowsocks — previously excluded as
+  "TSPU blocks AEAD" — leads on both. That exclusion had never been measured:
+  tier E sat at index ~502 of 565 while the sweep exited at 150 passes, so its
+  record was 0/0, not 0/63. That run took `verified-russia.txt` from 157 keys
+  (100% vless) to 274 (236 vless + 38 ss) — the first SS keys ever published
+  there. The count churns per run as keys die and new ones verify (153 at the
+  time of writing); the protocol MIX is the durable change. Failures are now
+  recorded too, so a pass rate is derivable at all — every one of the 19,132
+  prior records was `alive:true`, making it a survivors log.
+
+**Correctness fixes.**
+- Endpoint-aware selection: "top 3 per country" was one host under three UUIDs
+  (`subs/vless/DE.txt` shipped `104.18.32.47:2096` three times), so a single
+  outage killed every key for that country. Now dedups on host:port and prefers
+  distinct /24s and domains, with backfill so diversity never costs supply.
+- `xray-knife` pinned to v10.1.1. v9's bundled xray-core SIGSEGVs on trojan
+  splithttp configs, which silently froze `subs/trojan/` for 26 days while the
+  job still reported success. Pinned at all five real install sites, with a test
+  that fails on drift — the Go constant alone was never read by CI.
+- `all-results.csv` is now the union of all four protocols (it copied the first
+  artifact then `break`ed, discarding three protocols' measurements per run),
+  and capped so it cannot breach GitHub's 100 MB blob limit.
+- `subs/T1.txt` leak: the merge wiped country files with `[A-Z][A-Z].txt` but
+  appended with `??.txt`, so `T1` accumulated forever — 2042 lines, 2 servers.
+- README generation refuses to publish a README that omits a protocol with live
+  keys (VLESS and Trojan had vanished from the docs while being served).
+
+**Docs/infra.** Go 1.26 (setup-go@v6 defaults `GOTOOLCHAIN=local`); Node-24
+action versions; the 404ing binary-install path dropped for `go install`;
+`sub.pai.yt` age-gated after 82 days of HTTP 521; 326 tracked-but-gitignored
+files un-ignored; 7 PC-only PowerShell scripts removed.
+
 ## v2.1.0 — 2026-05-25
 
 **Theme: scale-out via matrix parallelism + benchmarks + local backup.**
@@ -48,8 +95,9 @@ Conclusions:
   emits one URL per line; `--format=name-url` emits TSV with the
   declaring source name. Used to materialize `sources.txt`.
 - **`sources.txt`** — committed manifest of all 283 expanded source
-  URLs. Diffable in PRs, useful for manual probing, lets a fresh
-  machine re-create the source set without parsing YAML.
+  URLs (397 as of 2026-08-20). Diffable in PRs, useful for manual probing,
+  lets a fresh machine re-create the source set without parsing YAML.
+  Note: nothing reads it — the pipeline loads `sources.yaml`.
 - **`scripts/dump-sources-txt.sh`** — regenerator for sources.txt.
 - **`scripts/backup-local.ps1`** — point-in-time snapshot of
   xray-knife.db, all-results.csv, subs/, sources.{yaml,txt}, and a
