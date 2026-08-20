@@ -34,7 +34,9 @@ Plans:
 **Requirements**: AGGR-02, AGGR-05, TEST-02, TEST-05, SEL-04, OUT-03, OUT-04, OUT-05, DEP-03, DEP-04, DEP-05
 **Success Criteria** (what must be TRUE):
   1. Running on a 4 vCPU / 32 GB ephemeral VPS, the pipeline finishes successfully under 60 minutes for a realistic input (≥10k raw keys)
-  2. If the VPS is killed at minute 30, the repo contains committed partial results from no later than minute 28 (≤2-minute checkpoint guarantee)
+  2. If the run is killed at minute 30, the repo contains committed partial results from no later than minute 28 (≤2-minute checkpoint guarantee)
+     *Shipped, but the deployed interval is 5 minutes, not 2: `refresh.yml` passes
+     `--checkpoint-min 5`. The ≤2-minute guarantee was never the running config.*
   3. `git push` from the VPS works using only `$GH_TOKEN` and leaves no residual creds in `~/.gitconfig`
   4. After Stage 1, `raw/dead.txt` lists every key that failed handshake; after Stage 2, `all-results.csv` contains every survivor with measurements
   5. Two consecutive runs with the same sources produce byte-identical output files (deterministic)
@@ -52,14 +54,28 @@ Plans:
 **Success Criteria** (what must be TRUE):
   1. A `.github/workflows/refresh.yml` runs the full pipeline on a cron schedule and commits results back to the repo
   2. Repo `README.md` documents both deployment paths (ephemeral VPS + GitHub Action) with copy-pasteable commands
-  3. Tagging a release produces downloadable Linux/macOS binaries via goreleaser (or equivalent)
-  4. Repo includes a deployment runbook for the 2z2 Cloud Labs ephemeral VPS path
+  3. ~~Tagging a release produces downloadable Linux/macOS binaries via goreleaser~~
+     **NO LONGER TRUE (2026-08-20).** `release.yml` was deleted in 30aff130
+     ("use local cron instead"); zero releases were ever published (the releases
+     API returns `[]`, and the 8 local tags were never pushed). `.goreleaser.yml`
+     is orphaned config nothing invokes, and its `docs/**/*` glob points at a
+     directory deleted in 7924b89d, so it would hard-fail on archive anyway.
+     The README's binary-download option was removed in favour of `go install`.
+  4. ~~Repo includes a deployment runbook for the 2z2 Cloud Labs ephemeral VPS path~~
+     **NO LONGER TRUE.** The service shut down — `internal/output/output.go` says
+     so explicitly ("the earlier 2Z2 Cloud Labs VPS runbook is retired").
+     Superseded by Option B (h2.nexus) in the generated README.
 **Plans**: 2 plans
 
 Plans:
 - [x] 03-01: GitHub Actions cron workflow (with PAT secret, kernel-tuning step, full pipeline)
 - [x] 03-02: README + deployment runbook + release automation (goreleaser config + tag-triggered workflow)
   *Note: implemented as a single combined plan (03-01) covering refresh.yml + release.yml + .goreleaser.yml + docs/DEPLOYMENT-VPS.md + docs/INSTALL.md*
+  *Stale as of 2026-08-20: of those five files only refresh.yml and the orphaned
+  .goreleaser.yml still exist. release.yml went in 30aff130; docs/INSTALL.md and
+  docs/DEPLOYMENT-VPS.md went in 7924b89d, their content folded into the README
+  generator (writeInstallSection / writeOffPCDeploymentSection in
+  internal/output/output.go) so it survives README regeneration.*
 
 ## Progress
 
