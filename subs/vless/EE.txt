@@ -1,1 +1,2 @@
-vless://06c4e938-2954-478f-a870-ca1b163e30e9@estproxy4.lockdwn.com:8443?sni=estproxy4.lockdwn.com&alpn=h2%2Chttp/1.1&fp=edge&security=tls#%F0%9F%87%AA%F0%9F%87%AA%20%F0%9F%93%BA%20%5B23.8%20mb%5D%20EE%20Estonia
+vless://06c4e938-2954-478f-a870-ca1b163e30e9@94.183.170.135:8443?encryption=none&type=raw&headerType=none&security=tls&fp=firefox&sni=estproxy4.lockdwn.com#%F0%9F%87%AA%F0%9F%87%AA%20%F0%9F%93%BA%20%5B25.0%20mb%5D%20EE%20Estonia
+vless://19f54e37-5fae-47f6-bc10-e71ccbc58389@94.183.170.231:8443?security=tls&sni=estproxy2.lockdwn.com&type=tcp&fp=edge&alpn=h2,http/1.1#%F0%9F%87%AA%F0%9F%87%AA%20%F0%9F%8E%AC%20%5B25.3%20mb%5D%20EE%20Estonia
