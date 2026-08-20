@@ -107,6 +107,10 @@ curl -s https://raw.githubusercontent.com/trikiman/vlessfilter/main/README.md \
   workflow defaults (`--threads1 2000`) with whatever empirically
   proves to use 70-90% of available RAM without OOMing — currently
   it's an educated guess.
+  **NOT DONE as of 2026-08-20.** No benchmark output is committed anywhere
+  (benchmark.yml uploads it to a 14-day artifact and nothing reads it), and the
+  quoted default has since drifted from 2000 to **3000** — so the guess got
+  bigger without ever being measured. Still an educated guess.
 - v2.2 should consume the country-count growth curve to decide
   whether the 100-country goal needs source expansion.
 - The sing-box JSON converter is a v2.2 candidate; if it lands, expect

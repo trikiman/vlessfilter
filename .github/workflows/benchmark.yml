@@ -8,6 +8,16 @@
 # A complete benchmark sweep runs this workflow once per value (1000, 2000, 3000)
 # and compares the resulting artifacts.
 #
+# CAVEAT (2026-08-20): nothing consumes the output. bench/summary.txt and
+# bench/monitor.csv go only to an upload-artifact with retention-days: 14, and no
+# benchmark data is committed anywhere — so the numbers expire unread and the
+# question this workflow exists to answer stays unanswered. Worse, the contract
+# in .planning/phases/v2.1-scale-and-robustness/SUMMARY.md ("v2.2 should consume
+# the benchmark results to replace the workflow defaults --threads1 2000") was
+# never fulfilled, and the default has since drifted to 3000 with no measurement
+# behind it. If you run a sweep, commit the summary into .planning/ so the
+# chosen --threads1 has a citation. Otherwise this workflow is decoration.
+#
 # Robustness guards:
 #   - timeout-minutes capped at 90 so a runaway thread count can't waste a slot
 #   - we DO NOT push results to the upstream repo from benchmark runs (the
