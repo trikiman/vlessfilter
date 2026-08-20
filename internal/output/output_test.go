@@ -2,6 +2,7 @@ package output
 
 import (
 	"flag"
+	"fmt"
 	"os"
 	"path/filepath"
 	"strings"
@@ -264,5 +265,52 @@ func goldenSelections() []selector.CountrySelection {
 			{Link: "vless://us-2@example.com:443", LatencyMs: 55, SpeedMbps: 70.0},
 			{Link: "vless://us-3@example.com:443", LatencyMs: 60, SpeedMbps: 65.5},
 		}},
+	}
+}
+
+// all-results.csv has no natural bound: it is the union of every tested config
+// across four protocols, and a single vless sweep alone can reach 240k rows.
+// Unbounded, it hit 131 MB and GitHub rejected the entire push at the
+// pre-receive hook (GH001, 100 MB hard limit) — six refresh runs tested for
+// ~55 minutes and then threw the results away. Cap it, and keep the best rows.
+func TestWriteAllResultsCSV_CapsRowsUnderBlobLimit(t *testing.T) {
+	dir := t.TempDir()
+
+	// One more row than the cap, with score ascending so the highest scores
+	// are at the END of the input — a prefix truncation would keep the worst.
+	n := MaxCSVRows + 1000
+	rows := make([]selector.Result, 0, n)
+	for i := 0; i < n; i++ {
+		rows = append(rows, selector.Result{
+			Link:      fmt.Sprintf("vless://u%d@10.0.0.1:443", i),
+			LatencyMs: 1000 - (i % 1000),
+			SpeedMbps: float64(i%100) / 10,
+			Country:   "US",
+		})
+	}
+	if err := WriteDiagnostics(dir, rows, nil); err != nil {
+		t.Fatalf("WriteDiagnostics: %v", err)
+	}
+
+	raw, err := os.ReadFile(filepath.Join(dir, "all-results.csv"))
+	if err != nil {
+		t.Fatal(err)
+	}
+	data := strings.Split(strings.TrimRight(string(raw), "\n"), "\n")
+	got := len(data) - 1 // minus header
+	if got != MaxCSVRows {
+		t.Errorf("wrote %d rows, want the %d cap", got, MaxCSVRows)
+	}
+	if len(raw) > 100*1024*1024 {
+		t.Errorf("file is %d bytes — over GitHub's 100 MB hard limit", len(raw))
+	}
+
+	// The retained set must be the best-scoring, so truncation happens after
+	// the sort. The top row's score must beat the worst possible input score.
+	if got > 0 {
+		first := data[1]
+		if strings.HasSuffix(first, ",0.0000") || strings.Contains(first, ",-0.4") {
+			t.Errorf("kept a worst-scoring row first (%q) — truncated before sorting?", first)
+		}
 	}
 }

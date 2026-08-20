@@ -10,6 +10,7 @@ import (
 	"encoding/csv"
 	"encoding/json"
 	"fmt"
+	"log/slog"
 	"net/url"
 	"os"
 	"path/filepath"
@@ -353,6 +354,19 @@ func WriteDiagnostics(outDir string, allTested, dead []selector.Result) error {
 	return writeDeadList(outDir, dead)
 }
 
+// MaxCSVRows caps all-results.csv so it cannot breach GitHub's 100 MB hard
+// blob limit, which rejects the whole push at the pre-receive hook.
+//
+// writeDeadList below has had a cap since it hit this, but the CSV never did:
+// it was safe only because all-results.csv accidentally held one protocol's
+// rows. Making it a true union of all four (and reviving trojan) took it to
+// 689,847 rows / 131 MB, and six consecutive refresh runs on 2026-08-19/20
+// tested for ~55 minutes and then failed at push with GH001.
+//
+// At ~199 bytes/row this ceiling lands near 80 MB. Rows are sorted by country
+// then score before truncation, so what survives is the best-scoring set.
+const MaxCSVRows = 400000
+
 func writeAllResultsCSV(outDir string, all []selector.Result) error {
 	if len(all) == 0 {
 		return nil
@@ -373,6 +387,14 @@ func writeAllResultsCSV(outDir string, all []selector.Result) error {
 		}
 		return rows[i].Link < rows[j].Link
 	})
+
+	// Truncate AFTER sorting so the retained rows are the best-scoring ones,
+	// not an arbitrary prefix of the test order.
+	if len(rows) > MaxCSVRows {
+		slog.Warn("all-results.csv truncated to stay under GitHub's blob limit",
+			"total_rows", len(rows), "kept", MaxCSVRows, "dropped", len(rows)-MaxCSVRows)
+		rows = rows[:MaxCSVRows]
+	}
 
 	path := filepath.Join(outDir, "all-results.csv")
 	f, err := os.Create(path)

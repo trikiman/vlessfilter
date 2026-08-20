@@ -349,6 +349,21 @@ jobs:
           set -e
           git config user.name "VlessFilter Bot"
           git config user.email "vf-bot@noreply.github.com"
+
+          # Fail fast on an oversized blob. GitHub rejects >100 MB at the
+          # pre-receive hook, which kills the ENTIRE push — six refresh runs on
+          # 2026-08-19/20 each tested for ~55 min and then lost everything to a
+          # 131 MB all-results.csv. The Go writer caps rows now; this is the
+          # backstop, and it names the file instead of leaving a bare GH001.
+          for f in all-results.csv README.md; do
+            [ -f "$f" ] || continue
+            sz=$(stat -c '%s' "$f")
+            if [ "$sz" -gt 94371840 ]; then
+              echo "::error::$f is $((sz/1048576)) MB — over the 90 MB guard (GitHub hard-rejects at 100 MB). Refusing to push; lower MaxCSVRows in internal/output/output.go."
+              exit 1
+            fi
+          done
+
           git add -f subs/ all-results.csv README.md 2>/dev/null || true
           if git diff --cached --quiet; then
             echo "no changes to publish"
