@@ -1,5 +1,19 @@
 # Requirements: VlessFilter v1.2 + v1.3
 
+> **STATUS NOTE (2026-08-20).** Every requirement below is still `- [ ]`
+> unchecked, but `.planning/STATE.md` records LIVE-01..04 and GEO-01..04 as
+> shipped in **v1.4** and **v1.5** on 2026-05-24 ("Liveness Validation (3x
+> retest, passes>=2)" and "Country Identification (consensus + post-publish
+> probe)"). The boxes were simply never ticked. Read STATE.md's "Shipped
+> Milestones" as authoritative; treat the unchecked boxes here as a
+> bookkeeping lapse, not as open work.
+>
+> Where to see each one in code: LIVE-01 (3x speedtest) in
+> `internal/pipeline/pipeline.go` stage 2; LIVE-04 (untested-batch cap) same
+> file; GEO-01/02 (consensus country + stable-vs-rotating) in
+> `selector.LoadStableAndRotating`; GEO-04 (post-publish probe) in
+> `internal/accuracy`.
+
 ## Milestone v1.2 — Liveness Validation
 
 The only question this milestone answers: is this VLESS key actually

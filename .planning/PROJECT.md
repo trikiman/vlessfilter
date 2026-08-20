@@ -1,5 +1,15 @@
 # VlessFilter
 
+> **SUPERSEDED — read `.planning/STATE.md` for current state (2026-08-20).**
+> This file still describes v1.2/v1.3 while STATE.md is on **v2.2.0**
+> (ru-verified-10), roughly four milestones later. Specifics below that are now
+> wrong: "Validated: (None yet — ship to validate)" contradicts the six shipped
+> milestones in STATE.md; "top 3 fastest **VLESS**" predates the multi-protocol
+> pivot (VLESS/VMess/Trojan/SS, v2.0); and the "ephemeral 60-minute cloud VPS"
+> target predates STATE.md's hard constraint that all compute runs on GitHub
+> Actions. `AGENTS.md` embeds this text, so it is annotated rather than rewritten
+> — the goals below are still the right goals, only the status is stale.
+
 ## Current Milestone: v1.2 + v1.3 — Honest Validation
 
 **Goal:** Make every published key honest. Two sequential milestones, each
