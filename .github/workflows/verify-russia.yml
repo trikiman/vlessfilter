@@ -455,8 +455,32 @@ jobs:
           fi
 
           # Sort by latency, write to subs/verified-russia.txt
+          #
+          # Relabel every key with a uniform "RU-verified" fragment. This file
+          # used to pass upstream names through verbatim, so 60 of 153 keys (39%)
+          # carried whatever the source called them — "@TV_v2ray", "v2go | US |
+          # SS | 55". A key labelled US inside a Russia-verified list is actively
+          # misleading: the label describes the ORIGIN subscription, not the fact
+          # that this key passed the RU bridge. The measured bridge latency is
+          # the useful number, so put that in the name.
+          #
+          # Deliberately does not reuse rewriteRemark() from internal/output:
+          # that stamps an EXIT-country flag, and every key here shares one
+          # property (passed the RU bridge) rather than a per-key exit country.
           if [ $PASS_COUNT -gt 0 ]; then
-            sort -n /tmp/timings.txt | awk '{$1=""; sub(/^ /,""); print}' > subs/verified-russia.txt
+            # Fragment is percent-encoded inline: the only non-ASCII part is the
+            # fixed 🇷🇺 flag (U+1F1F7 U+1F1FA), so its bytes are a constant.
+            # Avoids spawning a python3 per key — this loop runs ~274 times.
+            RU_FLAG='%F0%9F%87%B7%F0%9F%87%BA'
+            sort -n /tmp/timings.txt | while read -r avg uri; do
+              [ -z "$uri" ] && continue
+              case "$uri" in
+                vless://*) proto=vless ;; vmess://*) proto=vmess ;;
+                trojan://*) proto=trojan ;; ss://*) proto=ss ;;
+                *) proto=other ;;
+              esac
+              printf '%s#%s%%20RU-verified%%20%sms%%20%s\n' "${uri%%#*}" "$RU_FLAG" "$avg" "$proto"
+            done > subs/verified-russia.txt
             echo "Top 10 fastest:"
             sort -n /tmp/timings.txt | head -10 | awk '{print "  " $1 "ms  " substr($2, 1, 60) "..."}'
           else
