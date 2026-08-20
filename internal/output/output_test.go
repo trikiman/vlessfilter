@@ -314,3 +314,48 @@ func TestWriteAllResultsCSV_CapsRowsUnderBlobLimit(t *testing.T) {
 		}
 	}
 }
+
+// The README users actually read comes from buildMultiProtocolReadme, which had
+// NO test coverage: golden-readme.md pins the deprecated single-protocol Write
+// path ("top 3 fastest VLESS keys"), so it never exercised this function. That
+// gap let a real defect ship — the published README documented VMESS and SS
+// only, while 43 vless and 51 trojan keys were served with no section and no
+// subscription URL anywhere in the file.
+func TestBuildMultiProtocolReadme_SectionPerProtocol(t *testing.T) {
+	mk := func(proto, cc string) ProtoReadme {
+		return ProtoReadme{
+			Protocol: proto,
+			Selections: []selector.CountrySelection{{
+				Country: cc,
+				Top: []selector.Result{{
+					Link: proto + "://u@1.2.3.4:443", LatencyMs: 100, SpeedMbps: 20, Country: cc,
+				}},
+			}},
+		}
+	}
+	protos := []ProtoReadme{mk("vless", "DE"), mk("vmess", "US"), mk("trojan", "NL"), mk("ss", "FI")}
+	got := buildMultiProtocolReadme(protos, time.Date(2026, 8, 20, 0, 0, 0, 0, time.UTC))
+
+	for _, p := range protos {
+		up := strings.ToUpper(p.Protocol)
+		// A usable section needs both a heading and a subscription URL —
+		// a heading alone still leaves the user unable to subscribe.
+		if !strings.Contains(got, up) {
+			t.Errorf("README has no mention of %s despite published keys", up)
+		}
+		url := "subs/" + p.Protocol + "/all.txt"
+		if !strings.Contains(got, url) {
+			t.Errorf("README omits the %s subscription URL (%s)", up, url)
+		}
+	}
+
+	// The intro advertises all four protocols; it must not do that while a
+	// section is missing. Guard the inverse case too: one protocol only.
+	single := buildMultiProtocolReadme([]ProtoReadme{mk("ss", "FI")}, time.Now())
+	if !strings.Contains(single, "subs/ss/all.txt") {
+		t.Error("single-protocol README omits its own subscription URL")
+	}
+	if strings.Contains(single, "subs/trojan/all.txt") {
+		t.Error("README advertises a trojan URL when no trojan keys were passed")
+	}
+}
