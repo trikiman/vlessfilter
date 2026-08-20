@@ -10,9 +10,18 @@ VlessFilter discovers and publishes the top 3 fastest VLESS proxy keys per count
 ### Constraints
 
 - **Tech stack:** Go — matches xray-knife, single static binary, deploys in <10 s on a fresh Ubuntu VPS
-- **Wall clock:** ≤60 minutes per VPS run; checkpoint at ≤2-minute intervals
-- **Stage 1 concurrency:** up to ~1000 threads — kernel tuning is mandatory (without `ulimit -n` raise + port-range expansion + `tcp_tw_reuse`, the OS kills the process via socket exhaustion)
-- **Stage 2 concurrency:** ≤20 threads — higher saturates the VPS uplink and produces meaningless throughput numbers
+- **Wall clock:** `--budget-min 50` per protocol job, `--checkpoint-min 5` (this
+  read "≤60 minutes; checkpoint at ≤2-minute intervals" — the 2-minute figure
+  was never shipped; see `refresh.yml`)
+- **Stage 1 concurrency:** `--threads1` defaults to **3000** (`benchmark.yml`
+  sweeps up to 6000); this said "~1000". Kernel tuning is mandatory either way —
+  without `ulimit -n` raise + port-range expansion + `tcp_tw_reuse`, the OS
+  kills the process via socket exhaustion
+- **Stage 2 concurrency:** ≤20 threads — higher saturates the uplink and
+  produces meaningless throughput numbers
+- **Compute:** GitHub Actions runners, NOT a VPS. The "fresh Ubuntu VPS" framing
+  below predates the hard constraint in `.planning/STATE.md` ("ALL compute must
+  be free cloud: GitHub Actions runners"). Nothing runs on the operator's PC.
 - **Licensing:** project itself MIT or Apache-2.0; respects upstream (GPL-3 for v2go means we link as a data source, not a code dependency)
 - **No state on the VPS:** SQLite + temp files vanish at 60 min; everything that matters is in git
 - **Privacy:** results are public proxy keys harvested from already-public subs; no user accounts, no PII
@@ -43,9 +52,18 @@ Canonical order for a published (stable-country) key name:
 - `<flag>` — country flag emoji. **Always first. Never omitted for a
   country-tagged key.**
 - `<speed-icon?>` — optional speed-tier icon, placed AFTER the flag (e.g.
-  `📺` 1080p-ready ≥12 Mbps, `🎬` ≥25 Mbps, `⚡` ≥60 Mbps). Icon-only; no raw
-  Mbps number in the name (the number lives in `README.md` and
-  `all-results.csv`).
+  `📺` 1080p-ready ≥12 Mbps, `🎬` ≥25 Mbps, `⚡` ≥60 Mbps).
+- `<speed?>` — bracketed measured speed, e.g. `[19.4 mb]`, emitted right after
+  the icon when a positive speed was measured, omitted otherwise.
+  This line previously read "Icon-only; no raw Mbps number in the name (the
+  number lives in `README.md` and `all-results.csv`)" — but `rewriteRemark()`
+  in `internal/output/output.go` has always emitted the number, and
+  `TestRewriteRemark` asserts the `[15.0 mb]` form. Code and test agreed; only
+  this doc disagreed, so it was telling contributors the shipped behaviour was
+  a violation to "fix". Corrected to match reality.
+  Caveat on the unit: `mb` is not a real unit, and the value is measured from a
+  GitHub Actions runner, not from the subscriber's network — treat it as a
+  relative hint, not a throughput promise.
 - `<CC>` — 2-letter ISO country code (stable fallback when a client font has
   no emoji support).
 - `<Country Name>` — human-readable name.

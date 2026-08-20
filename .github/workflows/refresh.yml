@@ -91,8 +91,32 @@ jobs:
           done
           rm -f dev/sources-fetched/paiyt.txt.tmp
           if [ "$ok" -ne 1 ]; then
-            echo "WARN: all 3 paiyt fetch attempts failed; leaving previous file intact"
+            # Keeping the previous file is right for a transient blip, but this
+            # used to be a bare `echo WARN` — invisible in the Actions summary —
+            # so a PERMANENT upstream outage looked identical to a healthy run.
+            # sub.pai.yt returned 521 for 82 days while paiyt.txt (frozen
+            # 2026-05-30, 123 URIs) was fed into every cycle as if fresh, and
+            # sources.yaml still described it as "Pre-converted ... every cycle".
+            #
+            # Age-gate the fallback: a recent file is a fine stand-in, a
+            # months-old one is stale input masquerading as a live source.
+            echo "::warning::sub.pai.yt fetch failed all 3 attempts — upstream may be down"
             git checkout -- dev/sources-fetched/paiyt.txt 2>/dev/null || true
+
+            STALE_DAYS=14
+            if [ -f dev/sources-fetched/paiyt.txt ]; then
+              # Age from the last COMMIT that touched it, not mtime: a fresh
+              # checkout gives every file the clone's timestamp.
+              last_epoch=$(git log -1 --format=%ct -- dev/sources-fetched/paiyt.txt 2>/dev/null || echo 0)
+              if [ "$last_epoch" -gt 0 ]; then
+                age_days=$(( ( $(date +%s) - last_epoch ) / 86400 ))
+                echo "paiyt.txt last updated ${age_days} days ago"
+                if [ "$age_days" -gt "$STALE_DAYS" ]; then
+                  echo "::error::paiyt.txt is ${age_days} days stale (>${STALE_DAYS}d) and sub.pai.yt is unreachable — dropping it from this run rather than passing stale input off as a live source. Remove the sub-paiyt-converted entry from sources.yaml if the upstream is gone for good."
+                  : > dev/sources-fetched/paiyt.txt
+                fi
+              fi
+            fi
           fi
 
       - name: Commit prep changes (if any)

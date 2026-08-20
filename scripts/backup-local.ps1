@@ -1,5 +1,11 @@
 # scripts/backup-local.ps1 - point-in-time snapshot of vlessfilter state.
 #
+# OPT-IN OPERATOR TOOL. Nothing in the pipeline calls this, and nothing should:
+# .planning/STATE.md sets a hard constraint that no compute runs on the
+# operator's PC. Kept because it is a genuine manual backup utility (the sibling
+# install-task.ps1 / refresh-local.ps1 pair was deleted — those REGISTERED a
+# Windows Scheduled Task, which is exactly what that constraint forbids).
+#
 # Backs up (in order of preciousness):
 #   1. xray-knife.db       - the test-result pool. IRREPLACEABLE.
 #   2. all-results.csv     - per-run summary, regenerable from DB.

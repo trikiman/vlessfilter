@@ -546,23 +546,28 @@ func buildMultiProtocolReadme(protos []ProtoReadme, generatedAt time.Time) strin
 // info always survives README regeneration on every workflow run.
 func writeInstallSection(b *strings.Builder) {
 	b.WriteString("## Install\n\n")
-	b.WriteString("VlessFilter is a single Go binary. Three install paths, pick whichever:\n\n")
+	b.WriteString("VlessFilter is a single Go binary. Two install paths, pick whichever:\n\n")
 
-	b.WriteString("### Option 1: Pre-built binary (fastest)\n\n")
-	b.WriteString("Each tagged release ships Linux + macOS binaries on GitHub Releases. Pick from <https://github.com/trikiman/vlessfilter/releases/latest>.\n\n")
-	b.WriteString("Linux (amd64):\n\n")
-	b.WriteString("```bash\n")
-	b.WriteString("curl -sSL https://github.com/trikiman/vlessfilter/releases/latest/download/vlessfilter_Linux_amd64.tar.gz \\\n")
-	b.WriteString("  | tar -xz -C /tmp && sudo mv /tmp/vlessfilter /usr/local/bin/\n")
-	b.WriteString("```\n\n")
+	// The former "Option 1: Pre-built binary" advertised
+	// releases/latest/download/vlessfilter_Linux_amd64.tar.gz. That URL 404s:
+	// this repo has never published a release (the GitHub releases API returns
+	// []; the 8 local tags were never pushed), release.yml was deleted in
+	// 30aff130, and .goreleaser.yml is orphaned config nothing invokes. Worse,
+	// `curl -sSL | tar -xz` swallows the 404 body, so a user got a confusing
+	// tar error instead of "no such release". Removed rather than left to fail.
+	// To restore it: re-add a release workflow, fix .goreleaser.yml's docs/**
+	// glob (that directory was deleted in 7924b89d, so goreleaser hard-fails on
+	// archive), and note its name_template emits a {{ .Version }} segment the
+	// old URL omitted.
 
-	b.WriteString("### Option 2: `go install` (requires Go 1.22+)\n\n")
+	// go.mod requires 1.26.3; this said "Go 1.22+", which cannot build it.
+	b.WriteString("### Option 1: `go install` (requires Go 1.26+)\n\n")
 	b.WriteString("```bash\n")
 	b.WriteString("go install github.com/trikiman/vlessfilter/cmd/vlessfilter@latest\n")
 	b.WriteString("```\n")
 	b.WriteString("Binary lands in `$GOPATH/bin` (or `$HOME/go/bin`). Make sure that's on your `$PATH`.\n\n")
 
-	b.WriteString("### Option 3: From source\n\n")
+	b.WriteString("### Option 2: From source\n\n")
 	b.WriteString("```bash\n")
 	b.WriteString("git clone https://github.com/trikiman/vlessfilter.git\n")
 	b.WriteString("cd vlessfilter\n")

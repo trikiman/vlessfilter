@@ -36,11 +36,17 @@ postman*/
 diff_output.txt
 
 # local-only scratch (probe outputs, ad-hoc scripts) — but keep
-# sources-fetched/ tracked because the workflow refreshes converted
-# subscription files into it (e.g. paiyt.txt from sing-box JSON).
+# sources-fetched/ tracked because the workflow commits converted subscription
+# files into it (e.g. paiyt.txt from sing-box JSON). NOTE: "refreshes" was
+# aspirational — paiyt.txt has not changed since 2026-05-30 because sub.pai.yt
+# is down; see the STATUS note on sub-paiyt-converted in sources.yaml.
 dev/*
 !dev/sources-fetched/
+
+# benchmark.yml writes bench/ (no dot); .bench/ was a local-only convention.
+# Both ignored so a local sweep does not show up as untracked noise.
 .bench/
+bench/
 .kiro/
 scripts/logs/
 
