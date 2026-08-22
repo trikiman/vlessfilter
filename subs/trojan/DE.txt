@@ -1,3 +1,1 @@
-trojan://Telegram_healer_config@172.67.170.155:443?sni=JfW5fIi30I7-SC560AvFnfnH613.i6JSQ7mr66E-E14trd.WoRKErs.deV&type=ws&path=/tr/BvZonkQYnXRYanP3KUCRjO?ed=2560&alpn=http/1.1&fp=chrome#%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%93%BA%20%5B14.7%20mb%5D%20DE%20Germany
-trojan://bpb-trojan@104.21.26.36:443?sni=vless.herogoing.top&type=ws&path=/tr?ed=2560&fp=chrome#%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%93%BA%20%5B14.9%20mb%5D%20DE%20Germany
-trojan://bpb-trojan@vless.herogoing.top:443?security=tls&sni=vless.herogoing.top&type=ws&host=vless.herogoing.top&path=%2Ftr%3Fed%3D2560#%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%93%BA%20%5B14.9%20mb%5D%20DE%20Germany
+trojan://Telegram_healer_config@188.114.96.7:443?sni=BjSa2yGFITzjtHo8ucZe29xf2m2q9C.G3FIAJpF0Erm9k3x6WW-YeGzl2.workeRs.dEV&type=ws&path=/tr/J6IJuAAWkqyiEt8UkeRnVdLlkLIGukLr?ed=2560&alpn=http/1.1&fp=chrome#%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%93%BA%20%5B17.6%20mb%5D%20DE%20Germany
