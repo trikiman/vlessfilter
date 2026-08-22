@@ -1,3 +1,2 @@
-trojan://PQ05174892@34.220.224.252:443?sni=smooth-sculpin.rooster465.autos&type=tcp&fp=chrome#%F0%9F%87%BA%F0%9F%87%B8%20%F0%9F%8E%AC%20%5B34.1%20mb%5D%20US%20United%20States
-trojan://ND91608427@44.246.163.102:443?security=tls&sni=fleet-bonefish.rooster465.autos#%F0%9F%87%BA%F0%9F%87%B8%20%F0%9F%8E%AC%20%5B33.2%20mb%5D%20US%20United%20States
-trojan://AE62539071@54.245.126.186:443?sni=moral-cow.rooster465.autos&type=tcp&path=/#%F0%9F%87%BA%F0%9F%87%B8%20%F0%9F%8E%AC%20%5B33.7%20mb%5D%20US%20United%20States
+trojan://EQ30679154@35.91.138.234:443?sni=sure-bengal.rooster465.autos&type=tcp&fp=chrome#%F0%9F%87%BA%F0%9F%87%B8%20%E2%9A%A1%20%5B94.3%20mb%5D%20US%20United%20States
+trojan://PQ05174892@35.160.249.189:443?sni=absolute-teal.rooster465.autos&allowInsecure=1&type=tcp#%F0%9F%87%BA%F0%9F%87%B8%20%E2%9A%A1%20%5B93.9%20mb%5D%20US%20United%20States

@@ -1,1 +1,1 @@
-trojan://LYaEYwjN8LjWTRJdCCTzW7V6gK7atJVu@46.8.113.142:443?security=tls&insecure=0&headerType=none&fp=chrome&type=tcp&allowInsecure=0&sni=ch-2.bexum.fun#%F0%9F%87%A8%F0%9F%87%BF%20CZ%20Czechia
+trojan://CJ4fBUazRDFd62OxsdClTw==@212.192.210.192:14078?path=%2F&security=none&type=ws&fp=firefox#%F0%9F%87%A8%F0%9F%87%BF%20%F0%9F%93%BA%20%5B12.9%20mb%5D%20CZ%20Czechia

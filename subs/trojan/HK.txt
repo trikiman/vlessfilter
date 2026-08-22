@@ -1,2 +1,3 @@
-trojan://6ec301428255a78a1d826988d86cc87e@95.40.110.184:50887?security=tls&insecure=1&headerType=none&type=tcp&allowInsecure=1&sni=www.nintendogames.net#%F0%9F%87%AD%F0%9F%87%B0%20%F0%9F%93%BA%20%5B12.1%20mb%5D%20HK%20Hong%20Kong
-trojan://6ec301428255a78a1d826988d86cc87e@2c.fast9988.com:50887?security=tls&headerType=&type=tcp&sni=www.nintendogames.net#%F0%9F%87%AD%F0%9F%87%B0%20%F0%9F%93%BA%20%5B14.1%20mb%5D%20HK%20Hong%20Kong
+trojan://HC04361579@185.244.208.60:443?security=tls&sni=renewing-ewe.rooster465.autos&type=tcp&path=%2f#%F0%9F%87%AD%F0%9F%87%B0%20%F0%9F%93%BA%20%5B12.2%20mb%5D%20HK%20Hong%20Kong
+trojan://HC04361579@renewing-ewe.rooster465.autos:443?security=tls&sni=renewing-ewe.rooster465.autos&type=tcp&path=%2f#%F0%9F%87%AD%F0%9F%87%B0%20%F0%9F%93%BA%20%5B12.1%20mb%5D%20HK%20Hong%20Kong
+trojan://PQ05174892@185.14.47.101:443?sni=ideal-robin.rooster465.autos&fp=chrome&type=tcp&path=/#%F0%9F%87%AD%F0%9F%87%B0%20%F0%9F%93%BA%20%5B12.4%20mb%5D%20HK%20Hong%20Kong

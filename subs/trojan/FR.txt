@@ -1,3 +1,2 @@
-trojan://AE62539071@51.44.161.22:443?allowInsecure=1&fp=chrome&sni=distinct-quail.rooster465.autos#%F0%9F%87%AB%F0%9F%87%B7%20%F0%9F%93%BA%20%5B21.8%20mb%5D%20FR%20France
-trojan://PQ05174892@lucky-marmot.rooster465.autos:443?allowInsecure=1#%F0%9F%87%AB%F0%9F%87%B7%20%F0%9F%93%BA%20%5B21.5%20mb%5D%20FR%20France
-trojan://EQ30679154@15.237.100.62:443?sni=star-moray.rooster465.autos&type=tcp&fp=chrome#%F0%9F%87%AB%F0%9F%87%B7%20%F0%9F%93%BA%20%5B21.3%20mb%5D%20FR%20France
+trojan://humanity@104.16.71.213:443?path=/assignment&security=tls&insecure=0&host=www.calmlunch.com&type=ws&allowInsecure=0&sni=www.calmlunch.com#%F0%9F%87%AB%F0%9F%87%B7%20%F0%9F%93%BA%20%5B18.5%20mb%5D%20FR%20France
+trojan://humanity@104.16.72.2:443?path=/assignment&security=tls&insecure=0&host=www.calmlunch.com&type=ws&allowInsecure=0&sni=www.calmlunch.com#%F0%9F%87%AB%F0%9F%87%B7%20%F0%9F%93%BA%20%5B17.2%20mb%5D%20FR%20France
