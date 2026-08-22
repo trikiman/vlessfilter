@@ -1,1 +1,1 @@
-trojan://fg20mtCFHy@104.248.167.79:5624?allowInsecure=0&sni=dsgvc.southbyte.xyz#%F0%9F%87%AC%F0%9F%87%A7%20%F0%9F%93%BA%20%5B23.3%20mb%5D%20GB%20United%20Kingdom
+trojan://fg20mtCFHy@londhtc.southbyte.xyz:5448?security=tls&sni=londhtc.southbyte.xyz#%F0%9F%87%AC%F0%9F%87%A7%20%F0%9F%8E%AC%20%5B28.8%20mb%5D%20GB%20United%20Kingdom
