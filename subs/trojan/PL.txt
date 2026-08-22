@@ -1,3 +1,3 @@
-trojan://AE62539071@202.78.163.100:443?sni=enough-basilisk.rooster465.autos&fp=chrome&type=tcp&path=%2f#%F0%9F%87%B5%F0%9F%87%B1%20%F0%9F%93%BA%20%5B15.1%20mb%5D%20PL%20Poland
-trojan://PQ05174892@suitable-feline.rooster465.autos:443?sni=suitable-feline.rooster465.autos&fp=chrome&type=tcp&path=%2f#%F0%9F%87%B5%F0%9F%87%B1%20%F0%9F%93%BA%20%5B14.3%20mb%5D%20PL%20Poland
-trojan://PQ05174892@202.78.163.76:443?sni=suitable-feline.rooster465.autos&type=tcp&path=/#%F0%9F%87%B5%F0%9F%87%B1%20%F0%9F%93%BA%20%5B14.3%20mb%5D%20PL%20Poland
+trojan://EQ30679154@distinct-ibex.rooster465.autos:443?sni=distinct-ibex.rooster465.autos&type=tcp&path=%2f#%F0%9F%87%B5%F0%9F%87%B1%20%F0%9F%93%BA%20%5B18.5%20mb%5D%20PL%20Poland
+trojan://EQ30679154@202.78.163.113:443?sni=distinct-ibex.rooster465.autos&fp=chrome&type=tcp&path=/#%F0%9F%87%B5%F0%9F%87%B1%20%F0%9F%93%BA%20%5B17.6%20mb%5D%20PL%20Poland
+trojan://PQ05174892@202.78.163.76:443?sni=suitable-feline.rooster465.autos&fp=chrome&type=tcp&path=%2f#%F0%9F%87%B5%F0%9F%87%B1%20%F0%9F%93%BA%20%5B18.5%20mb%5D%20PL%20Poland

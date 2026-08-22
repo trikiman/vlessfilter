@@ -1,3 +1,1 @@
-trojan://fg20mtCFHy@165.22.240.82:6201?type=tcp&security=tls&sni=psjvs.southbyte.xyz&fp=chrome#%F0%9F%87%B8%F0%9F%87%AC%20%F0%9F%93%BA%20%5B14.4%20mb%5D%20SG%20Singapore
-trojan://AE62539071@54.169.117.161:443?fp=chrome&sni=simple-rodent.rooster465.autos#%F0%9F%87%B8%F0%9F%87%AC%20%F0%9F%93%BA%20%5B13.9%20mb%5D%20SG%20Singapore
-trojan://PQ05174892@18.143.170.114:443?type=tcp&security=tls&sni=lenient-grubworm.rooster465.autos&fp=chrome#%F0%9F%87%B8%F0%9F%87%AC%20%F0%9F%93%BA%20%5B14.1%20mb%5D%20SG%20Singapore
+trojan://MiTiVPN@188.42.145.180:443?host=383838-mitivpn--mitivpn------mitivpn.mitivpn-s.lifestyle&path=%2F---%40MiTiVPN---%40MiTiVPN%2F---%40MiTiVPN---%40MiTiVPN%2F---%40MiTiVPN---%40MiTiVPN%2Fs-g%40MiTiVPN---%40MiTiVPN%2F---%40MiTiVPN---%40MiTiVPN%2F---%40MiTiVPN---%40MiTiVPN&security=tls&sni=82929473-mitivpn--mitivpn------mitivpn.mitivpn-s.lifestyle&type=ws&fp=chrome#%F0%9F%87%B8%F0%9F%87%AC%20%F0%9F%93%BA%20%5B17.5%20mb%5D%20SG%20Singapore
