@@ -1,3 +1,2 @@
-trojan://EQ30679154@34.223.2.163:443?sni=active-hippo.rooster465.autos&type=tcp&path=/#%F0%9F%87%BA%F0%9F%87%B8%20%F0%9F%8E%AC%20%5B58.3%20mb%5D%20US%20United%20States
-trojan://PQ05174892@34.220.224.252:443?fp=chrome&sni=smooth-sculpin.rooster465.autos#%F0%9F%87%BA%F0%9F%87%B8%20%F0%9F%8E%AC%20%5B58.1%20mb%5D%20US%20United%20States
-trojan://AE62539071@35.88.120.18:443?sni=dominant-jaguar.rooster465.autos&allowInsecure=1&type=tcp&fp=chrome#%F0%9F%87%BA%F0%9F%87%B8%20%F0%9F%8E%AC%20%5B58.1%20mb%5D%20US%20United%20States
+trojan://f18d6149-e214-8554-e737-f7523c8b2eea@89.116.180.49:443?sni=0403.infinityconfig4.workers.dev&type=ws&path=%2Fsync&fp=chrome#%F0%9F%87%BA%F0%9F%87%B8%20%E2%9A%A1%20%5B67.9%20mb%5D%20US%20United%20States
+trojan://f18d6149-e214-8554-e737-f7523c8b2eea@45.131.4.118:443?sni=0403.infinityconfig4.workers.dev&type=ws&path=/sync&fp=chrome#%F0%9F%87%BA%F0%9F%87%B8%20%E2%9A%A1%20%5B87.0%20mb%5D%20US%20United%20States
