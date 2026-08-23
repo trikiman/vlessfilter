@@ -20,7 +20,7 @@ Specific country:
 https://raw.githubusercontent.com/trikiman/vlessfilter/main/subs/vless/<CC>.txt
 ```
 
-Rotating exits: `subs/vless/rotating.txt` (9 configs)
+Rotating exits: `subs/vless/rotating.txt` (204 configs)
 
 ### VMESS
 
@@ -52,7 +52,7 @@ Specific country:
 https://raw.githubusercontent.com/trikiman/vlessfilter/main/subs/trojan/<CC>.txt
 ```
 
-Rotating exits: `subs/trojan/rotating.txt` (0 configs)
+Rotating exits: `subs/trojan/rotating.txt` (35 configs)
 
 ### SS
 
@@ -95,27 +95,16 @@ Each config's full test history is checked:
 
 ## Install
 
-VlessFilter is a single Go binary. Three install paths, pick whichever:
+VlessFilter is a single Go binary. Two install paths, pick whichever:
 
-### Option 1: Pre-built binary (fastest)
-
-Each tagged release ships Linux + macOS binaries on GitHub Releases. Pick from <https://github.com/trikiman/vlessfilter/releases/latest>.
-
-Linux (amd64):
-
-```bash
-curl -sSL https://github.com/trikiman/vlessfilter/releases/latest/download/vlessfilter_Linux_amd64.tar.gz \
-  | tar -xz -C /tmp && sudo mv /tmp/vlessfilter /usr/local/bin/
-```
-
-### Option 2: `go install` (requires Go 1.22+)
+### Option 1: `go install` (requires Go 1.26+)
 
 ```bash
 go install github.com/trikiman/vlessfilter/cmd/vlessfilter@latest
 ```
 Binary lands in `$GOPATH/bin` (or `$HOME/go/bin`). Make sure that's on your `$PATH`.
 
-### Option 3: From source
+### Option 2: From source
 
 ```bash
 git clone https://github.com/trikiman/vlessfilter.git
@@ -197,48 +186,56 @@ cron may fail under Termux — use `termux-job-scheduler --period-ms 21600000 --
 
 | Country | Top latency (ms) | Median speed (Mbps) | Keys |
 |---------|------------------|---------------------|------|
-| 🇦🇹 AT | 535 | 17.6 | 1 |
-| 🇦🇺 AU | 728 | 24.2 | 1 |
-| 🇧🇬 BG | 564 | 30.8 | 1 |
-| 🇧🇾 BY | 618 | 20.4 | 1 |
-| 🇨🇦 CA | 121 | 55.1 | 3 |
-| 🇨🇭 CH | 587 | 33.4 | 1 |
-| 🇨🇿 CZ | 646 | 30.4 | 2 |
-| 🇩🇪 DE | 367 | 35.7 | 3 |
-| 🇪🇸 ES | 530 | 35.1 | 1 |
-| 🇫🇮 FI | 538 | 30.7 | 3 |
-| 🇫🇷 FR | 412 | 59.2 | 1 |
-| 🇬🇧 GB | 338 | 23.4 | 3 |
-| 🇭🇰 HK | 527 | 24.9 | 3 |
-| 🇮🇳 IN | 986 | 18.8 | 2 |
-| 🇮🇹 IT | 523 | 35.5 | 1 |
-| 🇯🇵 JP | 556 | 28.3 | 3 |
-| 🇰🇷 KR | 658 | 19.9 | 3 |
-| 🇱🇻 LV | 813 | 28.9 | 1 |
-| 🇳🇱 NL | 455 | 40.1 | 3 |
-| 🇳🇴 NO | 581 | 33.1 | 1 |
-| 🇵🇱 PL | 539 | 24.5 | 2 |
-| 🇵🇹 PT | 414 | 32.8 | 1 |
-| 🇷🇴 RO | 753 | 28.6 | 2 |
-| 🇷🇺 RU | 803 | 25.5 | 2 |
-| 🇸🇪 SE | 604 | 30.9 | 1 |
-| 🇸🇬 SG | 842 | 20.7 | 3 |
-| 🇹🇷 TR | 769 | 27.6 | 1 |
-| 🇹🇼 TW | 698 | 26.0 | 1 |
-| 🇺🇦 UA | 770 | 26.0 | 1 |
-| 🇺🇸 US | 107 | 114.3 | 3 |
+| 🇦🇪 AE | 770 | 13.7 | 1 |
+| 🇦🇹 AT | 539 | 35.1 | 2 |
+| 🇦🇺 AU | 711 | 22.1 | 2 |
+| 🇧🇬 BG | 1566 | 18.3 | 1 |
+| 🇧🇷 BR | 835 | 28.7 | 1 |
+| 🇨🇦 CA | 159 | 106.5 | 3 |
+| 🇨🇭 CH | 549 | 24.3 | 2 |
+| 🇨🇿 CZ | 559 | 31.4 | 2 |
+| 🇩🇪 DE | 364 | 40.6 | 3 |
+| 🇪🇪 EE | 543 | 31.8 | 2 |
+| 🇪🇸 ES | 503 | 36.3 | 1 |
+| 🇫🇮 FI | 485 | 34.5 | 3 |
+| 🇫🇷 FR | 361 | 38.1 | 3 |
+| 🇬🇧 GB | 422 | 41.4 | 3 |
+| 🇭🇰 HK | 720 | 24.9 | 3 |
+| 🇮🇳 IN | 851 | 20.1 | 3 |
+| 🇮🇹 IT | 574 | 30.4 | 3 |
+| 🇯🇵 JP | 539 | 33.3 | 3 |
+| 🇰🇷 KR | 652 | 23.2 | 2 |
+| 🇰🇿 KZ | 1905 | 17.2 | 1 |
+| 🇱🇹 LT | 625 | 32.7 | 1 |
+| 🇳🇱 NL | 353 | 57.2 | 3 |
+| 🇳🇴 NO | 467 | 34.9 | 2 |
+| 🇵🇪 PE | 918 | 29.2 | 1 |
+| 🇵🇭 PH | 954 | 20.3 | 1 |
+| 🇵🇱 PL | 574 | 34.0 | 3 |
+| 🇷🇴 RO | 775 | 29.3 | 1 |
+| 🇷🇺 RU | 618 | 28.9 | 1 |
+| 🇸🇪 SE | 463 | 33.9 | 3 |
+| 🇸🇬 SG | 811 | 23.1 | 3 |
+| 🇹🇷 TR | 721 | 23.7 | 2 |
+| 🇹🇼 TW | 519 | 19.9 | 2 |
+| 🇺🇸 US | 109 | 162.2 | 3 |
+| 🇻🇳 VN | 1129 | 18.4 | 1 |
 
-**Rotating-exit pool:** 9 configs in `subs/vless/rotating.txt`
+**Rotating-exit pool:** 204 configs in `subs/vless/rotating.txt`
 
 ## VMESS — top 3 per country (stable only)
 
 | Country | Top latency (ms) | Median speed (Mbps) | Keys |
 |---------|------------------|---------------------|------|
-| 🇨🇦 CA | 47 | 44.0 | 1 |
-| 🇪🇸 ES | 418 | 12.2 | 1 |
-| 🇰🇷 KR | 530 | 24.0 | 1 |
-| 🇸🇬 SG | 646 | 12.1 | 1 |
-| 🇺🇸 US | 175 | 85.5 | 3 |
+| 🇨🇦 CA | 79 | 83.7 | 2 |
+| 🇬🇧 GB | 344 | 24.2 | 2 |
+| 🇭🇰 HK | 1115 | 19.1 | 2 |
+| 🇯🇵 JP | 661 | 18.2 | 3 |
+| 🇰🇷 KR | 561 | 22.7 | 1 |
+| 🇲🇾 MY | 1357 | 14.3 | 2 |
+| 🇳🇱 NL | 385 | 49.4 | 1 |
+| 🇸🇬 SG | 675 | 20.1 | 2 |
+| 🇺🇸 US | 110 | 72.8 | 3 |
 
 **Rotating-exit pool:** 0 configs in `subs/vmess/rotating.txt`
 
@@ -246,35 +243,44 @@ cron may fail under Termux — use `termux-job-scheduler --period-ms 21600000 --
 
 | Country | Top latency (ms) | Median speed (Mbps) | Keys |
 |---------|------------------|---------------------|------|
-| 🇩🇪 DE | 369 | 23.7 | 3 |
-| 🇪🇪 EE | 436 | 19.9 | 1 |
-| 🇫🇷 FR | 359 | 26.0 | 3 |
-| 🇮🇪 IE | 313 | 29.5 | 3 |
-| 🇯🇵 JP | 625 | 14.9 | 3 |
-| 🇰🇷 KR | 728 | 12.3 | 3 |
-| 🇳🇱 NL | 362 | 24.2 | 3 |
-| 🇵🇱 PL | 463 | 18.6 | 3 |
-| 🇹🇷 TR | 549 | 14.3 | 1 |
-| 🇺🇸 US | 333 | 28.0 | 3 |
+| 🇦🇺 AU | 581 | 14.9 | 3 |
+| 🇨🇭 CH | 609 | 14.5 | 1 |
+| 🇨🇿 CZ | 862 | 12.8 | 1 |
+| 🇩🇪 DE | 734 | 17.0 | 3 |
+| 🇪🇪 EE | 624 | 14.8 | 1 |
+| 🇫🇷 FR | 611 | 19.8 | 3 |
+| 🇭🇰 HK | 788 | 12.0 | 2 |
+| 🇳🇱 NL | 533 | 16.8 | 3 |
+| 🇵🇱 PL | 621 | 14.5 | 3 |
+| 🇷🇺 RU | 779 | 12.8 | 1 |
+| 🇸🇪 SE | 735 | 15.6 | 2 |
+| 🇸🇬 SG | 821 | 15.1 | 1 |
+| 🇺🇸 US | 169 | 58.1 | 3 |
 
-**Rotating-exit pool:** 0 configs in `subs/trojan/rotating.txt`
+**Rotating-exit pool:** 35 configs in `subs/trojan/rotating.txt`
 
 ## SS — top 3 per country (stable only)
 
 | Country | Top latency (ms) | Median speed (Mbps) | Keys |
 |---------|------------------|---------------------|------|
-| 🇨🇦 CA | 219 | 31.4 | 1 |
-| 🇩🇪 DE | 287 | 47.7 | 3 |
-| 🇪🇸 ES | 367 | 19.8 | 2 |
-| 🇭🇰 HK | 885 | 19.3 | 1 |
-| 🇯🇵 JP | 465 | 28.9 | 1 |
-| 🇳🇱 NL | 297 | 42.4 | 2 |
-| 🇸🇬 SG | 687 | 17.9 | 2 |
-| 🇺🇸 US | 45 | 115.3 | 3 |
-| 🇿🇦 ZA | 646 | 21.9 | 1 |
+| 🇦🇺 AU | 517 | 27.5 | 1 |
+| 🇧🇷 BR | 431 | 31.7 | 3 |
+| 🇨🇦 CA | 87 | 96.6 | 3 |
+| 🇩🇪 DE | 345 | 39.8 | 3 |
+| 🇪🇸 ES | 430 | 30.5 | 2 |
+| 🇫🇮 FI | 460 | 30.8 | 1 |
+| 🇫🇷 FR | 329 | 41.1 | 3 |
+| 🇬🇧 GB | 332 | 42.6 | 3 |
+| 🇮🇹 IT | 473 | 24.9 | 1 |
+| 🇳🇱 NL | 317 | 43.7 | 3 |
+| 🇵🇱 PL | 414 | 17.8 | 1 |
+| 🇷🇺 RU | 454 | 29.3 | 3 |
+| 🇸🇬 SG | 594 | 20.6 | 2 |
+| 🇺🇸 US | 52 | 112.2 | 3 |
+| 🇿🇦 ZA | 723 | 19.4 | 1 |
 
 **Rotating-exit pool:** 0 configs in `subs/ss/rotating.txt`
 
 _Generated by [vlessfilter](https://github.com/trikiman/vlessfilter). Source list: `sources.yaml`._
 
-<!-- last-tested: 2026-08-17T13:09:18Z -->
+<!-- last-tested: 2026-08-23T05:17:19Z -->

@@ -1,3 +1,3 @@
-trojan://FH72359861@44.251.158.80:443?security=tls&insecure=0&headerType=none&type=tcp&allowInsecure=0&sni=obliging-louse.rooster465.autos#%F0%9F%87%BA%F0%9F%87%B8%20%F0%9F%8E%AC%20%5B54.3%20mb%5D%20US%20United%20States
-trojan://ND91608427@44.246.163.102:443?allowInsecure=1&sni=fleet-bonefish.rooster465.autos#%F0%9F%87%BA%F0%9F%87%B8%20%F0%9F%8E%AC%20%5B54.3%20mb%5D%20US%20United%20States
-trojan://EQ30679154@35.91.251.124:443?sni=sincere-gelding.rooster465.autos&type=tcp&path=/#%F0%9F%87%BA%F0%9F%87%B8%20%F0%9F%8E%AC%20%5B53.5%20mb%5D%20US%20United%20States
+trojan://EQ30679154@34.223.2.163:443?sni=active-hippo.rooster465.autos&type=tcp&path=/#%F0%9F%87%BA%F0%9F%87%B8%20%F0%9F%8E%AC%20%5B58.3%20mb%5D%20US%20United%20States
+trojan://PQ05174892@34.220.224.252:443?fp=chrome&sni=smooth-sculpin.rooster465.autos#%F0%9F%87%BA%F0%9F%87%B8%20%F0%9F%8E%AC%20%5B58.1%20mb%5D%20US%20United%20States
+trojan://AE62539071@35.88.120.18:443?sni=dominant-jaguar.rooster465.autos&allowInsecure=1&type=tcp&fp=chrome#%F0%9F%87%BA%F0%9F%87%B8%20%F0%9F%8E%AC%20%5B58.1%20mb%5D%20US%20United%20States
