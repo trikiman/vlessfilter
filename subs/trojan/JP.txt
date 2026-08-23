@@ -1,2 +1,1 @@
-trojan://PQ05174892@13.113.231.8:443?sni=unbiased-coyote.rooster465.autos&fp=chrome&type=tcp&path=/#%F0%9F%87%AF%F0%9F%87%B5%20%F0%9F%93%BA%20%5B15.6%20mb%5D%20JP%20Japan
-trojan://PQ05174892@unbiased-coyote.rooster465.autos:443?sni=unbiased-coyote.rooster465.autos&fp=chrome&type=tcp&path=/#%F0%9F%87%AF%F0%9F%87%B5%20%F0%9F%93%BA%20%5B14.8%20mb%5D%20JP%20Japan
+trojan://PQ05174892@13.113.231.8:443?sni=unbiased-coyote.rooster465.autos&fp=chrome&type=tcp&path=/#%F0%9F%87%AF%F0%9F%87%B5%20%F0%9F%93%BA%20%5B18.2%20mb%5D%20JP%20Japan

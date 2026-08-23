@@ -5,4 +5,4 @@ vmess://eyJhZGQiOiAidmFoNHVyZHpsM2pkeDVyMi52LjNkbnMudmlwIiwgImFpZCI6ICIwIiwgImhv
 trojan://8978b84c-6b95-4494-beb6-5246ec82e9ad@cdn2.bpcdn.cc:443?path=/images&security=tls&insecure=0&host=baihkhk1.xn--ghqp68hvpn1ka.com&fp=chrome&type=ws&allowInsecure=0&sni=baihkhk1.xn--ghqp68hvpn1ka.com#%F0%9F%87%AD%F0%9F%87%B0%20%F0%9F%93%BA%20%5B23.1%20mb%5D%20HK%20Hong%20Kong
 trojan://EQ30679154@185.244.208.176:443?sni=eternal-swift.rooster465.autos&type=tcp&path=/#%F0%9F%87%AD%F0%9F%87%B0%20%F0%9F%93%BA%20%5B18.1%20mb%5D%20HK%20Hong%20Kong
 trojan://FH72359861@91.199.84.195:443?sni=amused-peacock.rooster465.autos&type=tcp&path=/#%F0%9F%87%AD%F0%9F%87%B0%20%F0%9F%93%BA%20%5B17.3%20mb%5D%20HK%20Hong%20Kong
-ss://YWVzLTI1Ni1nY206NzI1NTMzMjBhZTZiY2M4Zg==@212.192.15.46:20990#%F0%9F%87%AD%F0%9F%87%B0%20%F0%9F%8E%AC%20%5B27.1%20mb%5D%20HK%20Hong%20Kong
+ss://YWVzLTI1Ni1nY206NzI1NTMzMjBhZTZiY2M4Zg==@212.192.13.121:20990#%F0%9F%87%AD%F0%9F%87%B0%20%F0%9F%8E%AC%20%5B25.8%20mb%5D%20HK%20Hong%20Kong
