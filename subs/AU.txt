@@ -4,5 +4,6 @@ vmess://eyJ2IjoiMiIsImFkZCI6Imd0bTEua3Rtd2FuLm5ldCIsInBvcnQiOiIxMjg4OSIsImlkIjoi
 trojan://FH72359861@87.121.33.109:443?allowInsecure=1&sni=national-stingray.rooster465.autos#%F0%9F%87%A6%F0%9F%87%BA%20%F0%9F%93%BA%20%5B14.8%20mb%5D%20AU%20Australia
 trojan://EQ30679154@fleet-hawk.rooster465.autos:443?sni=fleet-hawk.rooster465.autos&type=tcp&path=/#%F0%9F%87%A6%F0%9F%87%BA%20%F0%9F%93%BA%20%5B15.6%20mb%5D%20AU%20Australia
 trojan://FH72359861@87.121.33.32:443?sni=square-pheasant.rooster465.autos&fp=chrome&type=tcp&path=/#%F0%9F%87%A6%F0%9F%87%BA%20%F0%9F%93%BA%20%5B14.9%20mb%5D%20AU%20Australia
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpUV0c3SjFLUjVLc1BhVjVxWkkrcmlldWVLeHhhZlpTcENI@45.77.232.213:15675#%F0%9F%87%A6%F0%9F%87%BA%20%F0%9F%93%BA%20%5B13.5%20mb%5D%20AU%20Australia
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpUcWtrSFJwWlRramJUQnJr@45.32.246.180:8388#%F0%9F%87%A6%F0%9F%87%BA%20%F0%9F%93%BA%20%5B13.0%20mb%5D%20AU%20Australia
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpUV0c3SjFLUjVLc1BhVjVxWkkrcmlldWVLeHhhZlpTcENI@45.77.232.213:15675#%F0%9F%87%A6%F0%9F%87%BA%20%F0%9F%93%BA%20%5B24.6%20mb%5D%20AU%20Australia
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpUcWtrSFJwWlRramJUQnJr@45.32.246.180:8388#%F0%9F%87%A6%F0%9F%87%BA%20%F0%9F%93%BA%20%5B24.2%20mb%5D%20AU%20Australia
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpiSU9vaTVUdUltRzJLY2N4VjctamNBN0Nleit2dW4tY19F@104.156.233.234:27116#%F0%9F%87%A6%F0%9F%87%BA%20%F0%9F%93%BA%20%5B22.5%20mb%5D%20AU%20Australia

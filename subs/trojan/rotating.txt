@@ -1,1 +1,0 @@
-trojan://bpb-trojan@172.67.135.88:443?sni=vless.herogoing.top&type=ws&path=/tr?ed=2560&fp=chrome#%F0%9F%8C%90%20ROTATING

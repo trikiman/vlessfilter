@@ -1,2 +1,2 @@
-trojan://f18d6149-e214-8554-e737-f7523c8b2eea@89.116.180.49:443?sni=0403.infinityconfig4.workers.dev&type=ws&path=%2Fsync&fp=chrome#%F0%9F%87%BA%F0%9F%87%B8%20%E2%9A%A1%20%5B67.9%20mb%5D%20US%20United%20States
-trojan://f18d6149-e214-8554-e737-f7523c8b2eea@45.131.4.118:443?sni=0403.infinityconfig4.workers.dev&type=ws&path=/sync&fp=chrome#%F0%9F%87%BA%F0%9F%87%B8%20%E2%9A%A1%20%5B87.0%20mb%5D%20US%20United%20States
+trojan://EQ30679154@35.91.251.124:443?sni=sincere-gelding.rooster465.autos&type=tcp&fp=chrome#%F0%9F%87%BA%F0%9F%87%B8%20%E2%9A%A1%20%5B65.4%20mb%5D%20US%20United%20States
+trojan://EQ30679154@sincere-gelding.rooster465.autos:443?sni=sincere-gelding.rooster465.autos&allowInsecure=1&type=tcp#%F0%9F%87%BA%F0%9F%87%B8%20%E2%9A%A1%20%5B65.7%20mb%5D%20US%20United%20States

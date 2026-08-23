@@ -113,5 +113,3 @@ vless://f293db4d-7ab1-4faf-bb15-89540d8709cb@147.45.42.73:20443?security=tls&typ
 vless://f6e14309-5cff-4f5d-bce1-06a260159bbe@104.17.180.201:8880?security=none&type=ws&host=steep-bread-32f0.92-d12.workers.dev#%F0%9F%8C%90%20ROTATING
 vless://f8847ac2-e586-400f-841b-00081ea4592e@5.75.195.83:56879?fp=chrome&host=9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev&path=%2F%40Marisa_kristi&security=tls&sni=9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev&type=ws#%F0%9F%8C%90%20ROTATING
 vless://fd9172bb-1a14-4052-8385-40de84e47495@128.241.25.11:30021?fp=chrome&host=mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev&path=%2F%40Marisa_kristi&security=tls&sni=mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev&type=ws#%F0%9F%8C%90%20ROTATING
-trojan://bpb-trojan@172.67.135.88:443?sni=vless.herogoing.top&type=ws&path=/tr?ed=2560&fp=chrome#%F0%9F%8C%90%20ROTATING
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpKMUludVU2UVJUNUpPaDFtUWZralUy@144.31.243.2:16015#%F0%9F%8C%90%20ROTATING
