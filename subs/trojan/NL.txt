@@ -1,3 +1,1 @@
-trojan://PQ05174892@79.133.126.17:443?type=tcp&security=tls&sni=powerful-squid.rooster465.autos#%F0%9F%87%B3%F0%9F%87%B1%20%F0%9F%93%BA%20%5B16.8%20mb%5D%20NL%20Netherlands
-trojan://AE62539071@193.169.239.160:443?fp=chrome&sni=thorough-falcon.rooster465.autos#%F0%9F%87%B3%F0%9F%87%B1%20%F0%9F%93%BA%20%5B16.7%20mb%5D%20NL%20Netherlands
-trojan://EQ30679154@89.39.70.180:443?sni=eager-louse.rooster465.autos&fp=chrome&type=tcp&path=/#%F0%9F%87%B3%F0%9F%87%B1%20%F0%9F%93%BA%20%5B16.8%20mb%5D%20NL%20Netherlands
+trojan://MiTiVPN@104.18.6.178:443?path=%2F---%40MiTiVPN---%40MiTiVPN%2F---%40MiTiVPN---%40MiTiVPN%2F---%40MiTiVPN---%40MiTiVPN%2Fnl&security=tls&alpn=http%2F1.1&insecure=1&host=op-mitivpn--MiTiVPN---MiTiVPN-o.Maqror.ir&fp=chrome&type=ws&allowInsecure=1&sni=g-o-MiTiVPN---MiTiVPNj.Maqror.ir#%F0%9F%87%B3%F0%9F%87%B1%20%F0%9F%8E%AC%20%5B33.9%20mb%5D%20NL%20Netherlands
