@@ -1,3 +1,1 @@
-trojan://AE62539071@43.201.51.17:443?sni=glorious-glider.rooster465.autos&allowInsecure=1&type=tcp#%F0%9F%87%B0%F0%9F%87%B7%20%F0%9F%93%BA%20%5B14.3%20mb%5D%20KR%20South%20Korea
-trojan://AE62539071@allowing-halibut.rooster465.autos:443?sni=allowing-halibut.rooster465.autos&type=tcp&fp=chrome#%F0%9F%87%B0%F0%9F%87%B7%20%F0%9F%93%BA%20%5B14.5%20mb%5D%20KR%20South%20Korea
-trojan://FH72359861@3.35.53.46:443?sni=good-hound.rooster465.autos&type=tcp&fp=chrome#%F0%9F%87%B0%F0%9F%87%B7%20%F0%9F%93%BA%20%5B13.8%20mb%5D%20KR%20South%20Korea
+trojan://7e70223b-f331-41d5-9313-02b8d2df2885@45.67.201.210:20001/?type=tcp&security=tls&sni=hk.catxstar.com&allowInsecure=1#%F0%9F%87%B0%F0%9F%87%B7%20%F0%9F%93%BA%20%5B13.6%20mb%5D%20KR%20South%20Korea
