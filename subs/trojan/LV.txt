@@ -1,1 +1,1 @@
-trojan://kxHw-Dk-e9dffgzYszMlEqLJ92AnY3Pi@tr-latvia1.unlimited-access.ru:443/?type=tcp&security=tls&sni=tr-latvia1.unlimited-access.ru&alpn=http/1.1&allowInsecure=1&fp=chrome#%F0%9F%87%B1%F0%9F%87%BB%20%F0%9F%93%BA%20%5B16.7%20mb%5D%20LV%20Latvia
+trojan://kxHw-Dk-e9dffgzYszMlEqLJ92AnY3Pi@tr-latvia1.unlimited-access.ru:443?security=tls&sni=tr-latvia1.unlimited-access.ru#%F0%9F%87%B1%F0%9F%87%BB%20%F0%9F%8E%AC%20%5B25.6%20mb%5D%20LV%20Latvia
