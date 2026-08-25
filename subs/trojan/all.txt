@@ -1,10 +1,6 @@
-trojan://MiTiVPN@140.248.185.253:443?path=%2F---%40M%69TiVPN---%40M%69TiVPN%2F---%40M%69TiVPN---%40M%69TiVPN%2F---%40M%69TiVPN---%40M%69TiVPN%2Fs-w%40M%69TiVPN---%40M%69TiVPN%2F---%40M%69TiVPN---%40M%69TiVPN%2F---%40M%69TiVPN---%40M%69TiVPN&security=tls&insecure=0&host=4x-m%69tivpn--m%69tivpn------m%69tivpn.global.ssl.fastly.net&type=ws&allowInsecure=0&sni=ssl.fastly.com#%F0%9F%87%AB%F0%9F%87%AE%20%F0%9F%8E%AC%20%5B29.0%20mb%5D%20FI%20Finland
-trojan://humanity@166.1.36.83:443/?type=ws&host=www.calmlunch.com&path=%2Fassignment&security=tls&sni=www.calmlunch.com#%F0%9F%87%AB%F0%9F%87%B7%20%F0%9F%93%BA%20%5B14.6%20mb%5D%20FR%20France
-trojan://humanity@185.255.179.166:443?path=%2Fassignment&security=tls&insecure=0&host=www.calmlunch.com&type=ws&allowInsecure=0&sni=www.calmlunch.com#%F0%9F%87%AB%F0%9F%87%B7%20%F0%9F%93%BA%20%5B13.0%20mb%5D%20FR%20France
-trojan://humanity@185.220.100.168:443?path=%2Fassignment&security=tls&insecure=0&host=www.calmlunch.com&type=ws&allowInsecure=0&sni=www.calmlunch.com#%F0%9F%87%AB%F0%9F%87%B7%20%F0%9F%93%BA%20%5B13.6%20mb%5D%20FR%20France
-trojan://e9c4b07725ff4ad2@ikhk165.iamnew2020.top:20015?security=tls&path=%2f#%F0%9F%87%AD%F0%9F%87%B0%20%F0%9F%93%BA%20%5B24.8%20mb%5D%20HK%20Hong%20Kong
-trojan://27396feac9d74bae@kh223.zxom.eu.org:100?security=tls#%F0%9F%87%AD%F0%9F%87%B0%20%F0%9F%93%BA%20%5B24.3%20mb%5D%20HK%20Hong%20Kong
-trojan://7e70223b-f331-41d5-9313-02b8d2df2885@kkvlvvq-a.catcat321.com:20065?sni=hk.catxstar.com#%F0%9F%87%AE%F0%9F%87%B9%20%F0%9F%8E%AC%20%5B30.8%20mb%5D%20IT%20Italy
-trojan://7e70223b-f331-41d5-9313-02b8d2df2885@45.67.201.210:20065/?type=tcp&security=tls&sni=hk.catxstar.com&allowInsecure=1#%F0%9F%87%AE%F0%9F%87%B9%20%F0%9F%93%BA%20%5B20.1%20mb%5D%20IT%20Italy
-trojan://58d1a580a3fc4a87@w192m.iamnew2020.top:99?security=tls#%F0%9F%87%B9%F0%9F%87%BC%20%F0%9F%93%BA%20%5B19.5%20mb%5D%20TW%20Taiwan
-trojan://5e89314202a8405f@kuso30.pacemakere.com:101?allowInsecure=0#%F0%9F%87%BA%F0%9F%87%B8%20%E2%9A%A1%20%5B159.0%20mb%5D%20US%20United%20States
+trojan://humanity@5.181.187.58:443?sni=www.calmlunch.com&type=ws&path=/assignment&fp=chrome#%F0%9F%87%AB%F0%9F%87%B7%20%F0%9F%8E%AC%20%5B41.8%20mb%5D%20FR%20France
+trojan://humanity@84.21.172.81:443?sni=www.calmlunch.com&type=ws&path=/assignment&fp=chrome#%F0%9F%87%AB%F0%9F%87%B7%20%F0%9F%93%BA%20%5B12.9%20mb%5D%20FR%20France
+trojan://27396feac9d74bae@kh223.zxom.eu.org:100?security=tls#%F0%9F%87%AD%F0%9F%87%B0%20%F0%9F%93%BA%20%5B21.8%20mb%5D%20HK%20Hong%20Kong
+trojan://kxHw-Dk-e9dffgzYszMlEqLJ92AnY3Pi@tr-latvia1.unlimited-access.ru:443?type=raw&headerType=none&security=tls&sni=tr-latvia1.unlimited-access.ru#%F0%9F%87%B1%F0%9F%87%BB%20%F0%9F%93%BA%20%5B18.9%20mb%5D%20LV%20Latvia
+trojan://kxHw-Dk-e9dffgzYszMlEqLJ92AnY3Pi@85.159.228.28:443?sni=tr-latvia1.unlimited-access.ru&path=/#%F0%9F%87%B1%F0%9F%87%BB%20%F0%9F%93%BA%20%5B18.8%20mb%5D%20LV%20Latvia
+trojan://58d1a580a3fc4a87@w192m.iamnew2020.top:99?allowInsecure=0#%F0%9F%87%B9%F0%9F%87%BC%20%F0%9F%93%BA%20%5B17.7%20mb%5D%20TW%20Taiwan
