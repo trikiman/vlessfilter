@@ -1,1 +1,1 @@
-trojan://3632736327@tw060401.tmdsb.org:1321?allowInsecure=0&sni=tw060401.tmdsb.org#%F0%9F%87%B9%F0%9F%87%BC%20TW%20Taiwan
+trojan://b49a4e18799049c3@tt928m.pacemakere.com:101?allowInsecure=0#%F0%9F%87%B9%F0%9F%87%BC%20%F0%9F%93%BA%20%5B22.2%20mb%5D%20TW%20Taiwan
