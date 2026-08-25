@@ -1,1 +1,1 @@
-trojan://fg20mtCFHy@172.238.226.26:5444?allowInsecure=1&sni=xcvge.southbyte.xyz#%F0%9F%87%AE%F0%9F%87%B9%20%F0%9F%93%BA%20%5B19.5%20mb%5D%20IT%20Italy
+trojan://7e70223b-f331-41d5-9313-02b8d2df2885@45.67.201.210:20065/?type=tcp&security=tls&sni=hk.catxstar.com&allowInsecure=1#%F0%9F%87%AE%F0%9F%87%B9%20%F0%9F%93%BA%20%5B16.8%20mb%5D%20IT%20Italy
