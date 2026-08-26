@@ -1,3 +1,2 @@
-trojan://f18d6149-e214-8554-e737-f7523c8b2eea@45.131.4.118:443?sni=0403.infinityconfig4.workers.dev&type=ws&path=%2Fsync&fp=chrome#%F0%9F%87%BA%F0%9F%87%B8%20%E2%9A%A1%20%5B95.6%20mb%5D%20US%20United%20States
-trojan://fd5d3c04-9a43-7702-e70d-a3c53ff216f4@104.24.212.28:443?sni=ezpanslll.samankarami0686.workers.dev&type=ws&path=%2F&fp=chrome#%F0%9F%87%BA%F0%9F%87%B8%20%F0%9F%8E%AC%20%5B56.1%20mb%5D%20US%20United%20States
-trojan://fd5d3c04-9a43-7702-e70d-a3c53ff216f4@104.19.220.130:443?sni=ezpanslll.samankarami0686.workers.dev&type=ws&path=%2F&fp=chrome#%F0%9F%87%BA%F0%9F%87%B8%20%F0%9F%8E%AC%20%5B53.5%20mb%5D%20US%20United%20States
+trojan://f18d6149-e214-8554-e737-f7523c8b2eea@89.116.180.49:443?sni=0403.infinityconfig4.workers.dev&type=ws&path=%2Fsync&fp=chrome#%F0%9F%87%BA%F0%9F%87%B8%20%E2%9A%A1%20%5B65.2%20mb%5D%20US%20United%20States
+trojan://f18d6149-e214-8554-e737-f7523c8b2eea@188.114.97.6:443?sni=0403.infinityconfig4.workers.dev&type=ws&path=/sync&fp=chrome#%F0%9F%87%BA%F0%9F%87%B8%20%F0%9F%8E%AC%20%5B47.6%20mb%5D%20US%20United%20States
