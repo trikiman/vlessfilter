@@ -2310,3 +2310,1013 @@ ss://MjAyMi1ibGFrZTMtY2hhY2hhMjAtcG9seTEzMDU6L2doUHd6OWdVUzdadk03N3Rqcml2NHl6dkd
 ss://MjAyMi1ibGFrZTMtY2hhY2hhMjAtcG9seTEzMDU6RW9WYnQ2bkdYQ0VtWHJDTUJ5RUlTNEdWZmVwbHl5ckNmZUlUYWRPMlRkOD0@129.146.202.210:50356#US   SHADOWSOCKS-TCP-NTLS - ORACLE-BMC-31898  129.146.202.210,227,13.95,US,-0.0071
 ss://YWVzLTI1Ni1nY206WEtGS2wyclVMaklwNzQ@15.204.247.175:8008#EPODONIOS,915,13.03,US,-0.2878
 ss://YWVzLTI1Ni1nY206WEtGS2wyclVMaklwNzQ@15.204.247.175:8008#[v2rayNplus],953,14.79,US,-0.2925
+vmess://eyJhZGQiOiJuZXdyZWxheC5yZWxheGVkYm95Lm9ubGluZSIsImFpZCI6IjAiLCJhbHBuIjoiIiwiZnAiOiIiLCJob3N0IjoiIiwiaWQiOiI4ZTk2ODdmYy1hM2E3LTQxNGEtODY3Ni04ZTIxMzY3OTdjZmUiLCJpbnNlY3VyZSI6IjAiLCJuZXQiOiJ0Y3AiLCJwYXRoIjoiIiwicGNzIjoiIiwicG9ydCI6IjExMCIsInBzIjoiW09wZW5SYXldIPCfh6nwn4eqIERFLTIzMTQyIiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6IiIsInR5cGUiOiJub25lIiwidiI6IjIiLCJ2Y24iOiIifQ==,414,17.45,DE,-0.0609
+vmess://eyJhZGQiOiJuZXdyZWxheC5yZWxheGVkYm95Lm9ubGluZSIsImFpZCI6IjAiLCJhbHBuIjoiIiwiZnAiOiIiLCJob3N0IjoiIiwiaWQiOiI4ZTk2ODdmYy1hM2E3LTQxNGEtODY3Ni04ZTIxMzY3OTdjZmUiLCJpbnNlY3VyZSI6IjAiLCJuZXQiOiJ0Y3AiLCJwYXRoIjoiIiwicGNzIjoiIiwicG9ydCI6IjExMCIsInBzIjoiREUg8J+HqfCfh6ogfCBAUmF5ZGlrYWx4IHwgQzIxNjVBIiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6IiIsInR5cGUiOiJub25lIiwidiI6IjIiLCJ2Y24iOiIifQ==,413,17.26,DE,-0.0617
+vmess://eyJhZGQiOiJuZXdyZWxheC5yZWxheGVkYm95Lm9ubGluZSIsImFpZCI6IjAiLCJob3N0IjoiIiwiaWQiOiI4ZTk2ODdmYy1hM2E3LTQxNGEtODY3Ni04ZTIxMzY3OTdjZmUiLCJuZXQiOiJ0Y3AiLCJwYXRoIjoiIiwicG9ydCI6IjExMCIsInBzIjoiXHVkODNjXHVkZGU5XHVkODNjXHVkZGVhW29wZW5wcm94eWxpc3QuY29tXSB2bWVzcy1ERSIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0ZXN0X25hbWUiOiIyMiIsInRscyI6IiIsInR5cGUiOiJub25lIiwidiI6IjIiLCJza2lwLWNlcnQtdmVyaWZ5Ijp0cnVlfQ==,411,15.56,DE,-0.0711
+vmess://eyJhZGQiOiJuZXdyZWxheC5yZWxheGVkYm95Lm9ubGluZSIsImFpZCI6IjAiLCJhbHBuIjoiIiwiZnAiOiIiLCJob3N0IjoiIiwiaWQiOiI4ZTk2ODdmYy1hM2E3LTQxNGEtODY3Ni04ZTIxMzY3OTdjZmUiLCJpbnNlY3VyZSI6IjAiLCJuZXQiOiJ0Y3AiLCJwYXRoIjoiIiwicGNzIjoiIiwicG9ydCI6IjExMCIsInBzIjoidjJnbyB8IPCfh6nwn4eqIERFIHwgVk1FU1MgfCAxMDIiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6Im5vbmUiLCJ2IjoiMiIsInZjbiI6IiJ9,437,16.25,DE,-0.0773
+vmess://eyJhZGQiOiJuZXdyZWxheC5yZWxheGVkYm95Lm9ubGluZSIsImFpZCI6IjAiLCJhbHBuIjoiIiwiZnAiOiIiLCJob3N0IjoiIiwiaWQiOiI4ZTk2ODdmYy1hM2E3LTQxNGEtODY3Ni04ZTIxMzY3OTdjZmUiLCJpbnNlY3VyZSI6IjAiLCJuZXQiOiJ0Y3AiLCJwYXRoIjoiIiwicGNzIjoiIiwicG9ydCI6IjExMCIsInBzIjoiXHVkODNjXHVkZGU5XHVkODNjXHVkZGVhIEpvaW4rVGVsZWdyYW06QEZhcmFoX1ZQTiBcdWQ4M2NcdWRkZTlcdWQ4M2NcdWRkZWEiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6Im5vbmUiLCJ2IjoiMiIsInZjbiI6IiIsInNraXAtY2VydC12ZXJpZnkiOnRydWV9,460,16.93,DE,-0.0824
+vmess://eyJhZGQiOiJuZXdyZWxheC5yZWxheGVkYm95Lm9ubGluZSIsImFpZCI6IjAiLCJhbHBuIjoiIiwiZnAiOiIiLCJob3N0IjoiIiwiaWQiOiI4ZTk2ODdmYy1hM2E3LTQxNGEtODY3Ni04ZTIxMzY3OTdjZmUiLCJpbnNlY3VyZSI6IjAiLCJuZXQiOiJ0Y3AiLCJwYXRoIjoiIiwicGNzIjoiIiwicG9ydCI6IjExMCIsInBzIjoiQGhleF9wcm94eSDigbUiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6Im5vbmUiLCJ2IjoiMiIsInZjbiI6IiJ9,482,17.07,DE,-0.0904
+vmess://eyJhZGQiOiI2NS4xMDkuMjExLjEzNiIsImlkIjoiZDljOTE5YzItODcyZS00MjlkLWE2ODAtMWU2YzZiZmU2ODFiIiwicG9ydCI6IjMzMTIwIiwic2N5IjoiYXV0byIsInYiOiIyIiwibmV0IjoicmF3IiwidHlwZSI6Im5vbmUiLCJ0bHMiOiJub25lIiwicHMiOiJb8J+Hq/Cfh65dIFt2bS1uby1yYV0gWzI2MDgyNi0wMTI5MTEuNjg0XSJ9Cg==,456,15.26,FI,-0.0909
+vmess://eyJhZGQiOiI2NS4xMDkuMjExLjEzNiIsImFpZCI6IjAiLCJhbHBuIjoiIiwiZnAiOiIiLCJob3N0IjoiIiwiaWQiOiJkOWM5MTljMi04NzJlLTQyOWQtYTY4MC0xZTZjNmJmZTY4MWIiLCJpbnNlY3VyZSI6IjAiLCJuZXQiOiJ0Y3AiLCJwYXRoIjoiIiwicGNzIjoiIiwicG9ydCI6IjMzMTIwIiwicHMiOiJGSSDwn4er8J+HriB8IEBSYXlkaWthbHggfCA2RDQ5MTUiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoiIiwidHlwZSI6Im5vbmUiLCJ2IjoiMiIsInZjbiI6IiJ9,470,15.52,FI,-0.0949
+vmess://eyJhZGQiOiI3LmJtaS5pci52YXJ6ZXNoMy5jb20uZGUiLCJhaWQiOiIwIiwiYWxwbiI6IiIsImZwIjoiIiwiaG9zdCI6ImV4Y29pbm8uY29tIiwiaWQiOiI1MjIzMDc3OS05NzA4LTRkYTctYTdhZi1lZDliNzM0MmZmNTQiLCJpbnNlY3VyZSI6IjAiLCJuZXQiOiJ0Y3AiLCJwYXRoIjoiL2Y5YkdiRzdaTnk1TDB0ZFFwVWJMWEhISUFsR3YiLCJwY3MiOiIiLCJwb3J0IjoiODA4MCIsInBzIjoiRkkg8J+Hq/Cfh64gfCBAUmF5ZGlrYWx4IHwgOTI3MDE4Iiwic2N5IjoiYXV0byIsInNuaSI6IiIsInRscyI6IiIsInR5cGUiOiJodHRwIiwidiI6IjIiLCJ2Y24iOiIifQ==,485,14.94,FI,-0.1043
+vmess://eyJ2IjogIjIiLCAicHMiOiAiXHVkODNkXHVkZDI1Sm9pbitUZWxlZ3JhbTpARmFyYWhfVlBOXHVkODNkXHVkZmUzIiwgImFkZCI6ICI3LmJtaS5pci52YXJ6ZXNoMy5jb20uZGUiLCAicG9ydCI6ICI4MDgwIiwgImlkIjogIjUyMjMwNzc5LTk3MDgtNGRhNy1hN2FmLWVkOWI3MzQyZmY1NCIsICJhaWQiOiAiMCIsICJzY3kiOiAiYXV0byIsICJuZXQiOiAidGNwIiwgInR5cGUiOiAiaHR0cCIsICJob3N0IjogImV4Y29pbm8uY29tIiwgInBhdGgiOiAiL2Y5YkdiRzdaTnk1TDB0ZFFwVWJMWEhISUFsR3YiLCAidGxzIjogIiIsICJzbmkiOiAiIiwgInRlc3RfbmFtZSI6ICI0OCJ9,505,15.26,FI,-0.1104
+vmess://eyJ2IjoiMiIsInBzIjoi5pyq55+lNDgiLCJhZGQiOiI3LmJtaS5pci52YXJ6ZXNoMy5jb20uZGUiLCJwb3J0IjoiODA4MCIsImlkIjoiNTIyMzA3NzktOTcwOC00ZGE3LWE3YWYtZWQ5YjczNDJmZjU0IiwiYWlkIjoiMCIsInNjeSI6ImF1dG8iLCJuZXQiOiJ0Y3AiLCJ0eXBlIjoiaHR0cCIsImhvc3QiOiJleGNvaW5vLmNvbSIsInBhdGgiOiIvZjliR2JHN1pOeTVMMHRkUXBVYkxYSEhJQWxHdiIsInRscyI6IiIsInNuaSI6IiIsInRlc3RfbmFtZSI6IjQ4In0=,514,15.09,FI,-0.1151
+vmess://eyJhZGQiOiAiNy5ibWkuaXIudmFyemVzaDMuY29tLmRlIiwgImFpZCI6ICIwIiwgImFscG4iOiAiIiwgImZwIjogIiIsICJob3N0IjogImV4Y29pbm8uY29tIiwgImlkIjogIjUyMjMwNzc5LTk3MDgtNGRhNy1hN2FmLWVkOWI3MzQyZmY1NCIsICJpbnNlY3VyZSI6ICIwIiwgIm5ldCI6ICJ0Y3AiLCAicGF0aCI6ICIvZjliR2JHN1pOeTVMMHRkUXBVYkxYSEhJQWxHdiIsICJwY3MiOiAiIiwgInBvcnQiOiAiODA4MCIsICJwcyI6ICJcdWQ4M2RcdWRlODAgQExldHNHZXRWUE4gQEN5YmVyU2VjUGxheWdyb3VuZCB8IFx1ZDgzY1x1ZGYwZCBcdWQ4M2NcdWRkZTlcdWQ4M2NcdWRkZWEgREUiLCAic2N5IjogImF1dG8iLCAic25pIjogIiIsICJ0bHMiOiAiIiwgInR5cGUiOiAiaHR0cCIsICJ2IjogIjIiLCAidmNuIjogIiJ9,539,15.07,FI,-0.1252
+vmess://eyJhZGQiOiAiNy5ibWkuaXIudmFyemVzaDMuY29tLmRlIiwgImFpZCI6ICIwIiwgImFscG4iOiAiIiwgImZwIjogIiIsICJob3N0IjogImV4Y29pbm8uY29tIiwgImlkIjogIjUyMjMwNzc5LTk3MDgtNGRhNy1hN2FmLWVkOWI3MzQyZmY1NCIsICJpbnNlY3VyZSI6ICIwIiwgIm5ldCI6ICJ0Y3AiLCAicGF0aCI6ICIvZjliR2JHN1pOeTVMMHRkUXBVYkxYSEhJQWxHdiIsICJwY3MiOiAiIiwgInBvcnQiOiAiODA4MCIsICJwcyI6ICJcdWQ4M2RcdWRkMjVKb2luK1RlbGVncmFtOkBGYXJhaF9WUE5cdWQ4M2RcdWRmZTMiLCAic2N5IjogImF1dG8iLCAic25pIjogIiIsICJ0bHMiOiAiIiwgInR5cGUiOiAiaHR0cCIsICJ2IjogIjIiLCAidmNuIjogIiJ9,710,14.99,FI,-0.1941
+vmess://eyJ2IjoiMiIsInBzIjoi5pyq55+lMzUiLCJhZGQiOiI1Ny4xMjkuMTMyLjIyMyIsInBvcnQiOiI4MCIsImlkIjoiYTI1Y2JmMTEtMjkwOC00YTFiLWEzYTgtOWE1NzE3NzdkY2EzIiwiYWlkIjoiMCIsInNjeSI6ImF1dG8iLCJuZXQiOiJ3cyIsInR5cGUiOiIiLCJob3N0IjoiZ29vZ2xlLmNvbSIsInBhdGgiOiIvdm1lc3MvIiwidGxzIjoiIiwic25pIjoiIiwidGVzdF9uYW1lIjoiMzUifQ==,480,32.84,GB,0.0050
+vmess://eyJ2IjoiMiIsInBzIjoi5pyq55+lMzUiLCJhZGQiOiI1Ny4xMjkuMTMyLjIyMyIsInBvcnQiOiI4MCIsInR5cGUiOiJub25lIiwiaWQiOiJhMjVjYmYxMS0yOTA4LTRhMWItYTNhOC05YTU3MTc3N2RjYTMiLCJhaWQiOiIwIiwibmV0Ijoid3MiLCJwYXRoIjoiL3ZtZXNzLyIsImhvc3QiOiJnb29nbGUuY29tIiwidGxzIjoiIn0=,482,30.67,GB,-0.0088
+vmess://eyJ2IjoiMiIsInBzIjoiW/Cfh6zwn4enXSBbdm0tbm8td3NdIFsyNjA4MjYtMDEyOTE1Ljg5MV0iLCJhZGQiOiI1Ny4xMjkuMTMyLjIyMyIsInBvcnQiOiI4MCIsInR5cGUiOiJub25lIiwiaWQiOiJhMjVjYmYxMS0yOTA4LTRhMWItYTNhOC05YTU3MTc3N2RjYTMiLCJhaWQiOiIwIiwibmV0Ijoid3MiLCJwYXRoIjoiL3ZtZXNzLyIsImhvc3QiOiJnb29nbGUuY29tIiwidGxzIjoiIn0=,717,13.68,GB,-0.2047
+vmess://eyJ2IjoiMiIsInBzIjoiR0IgXHVkODNjXHVkZGVjXHVkODNjXHVkZGU3IFx1MjUwNyBWTUVTUy1XUy1OVExTIC0gT1ZIIFNBUyBcdTI1MDcgNTcuMTI5LjEzMi4yMjMiLCJhZGQiOiI1Ny4xMjkuMTMyLjIyMyIsInBvcnQiOjgwLCJpZCI6ImEyNWNiZjExLTI5MDgtNGExYi1hM2E4LTlhNTcxNzc3ZGNhMyIsImFpZCI6MCwic2N5IjoiYXV0byIsIm5ldCI6IndzIiwicGF0aCI6Ii92bWVzcy8ifQ,1174,14.08,GB,-0.3155
+vmess://eyJhZGQiOiAidnBzMTIzLmtieGEudG9wIiwgImFpZCI6IDAsICJob3N0IjogInZwczEyMy5rYnhhLnRvcCIsICJpZCI6ICJjZDA3ZDZlNi1mNjMxLTQ3NTctYTAzYy1iODcyN2M1NjhjODUiLCAibmV0IjogIndzIiwgInBhdGgiOiAiLzEyMyIsICJwb3J0IjogNDQzLCAicHMiOiAiWzYyMDNdW1VTXVswXVtWTUVTU11bTm9uZV1bTm9uZV1bVW5rbm93bl1bVW5rbm93bl0iLCAic2VjdXJpdHkiOiAiYXV0byIsICJza2lwLWNlcnQtdmVyaWZ5IjogdHJ1ZSwgInNuaSI6ICIiLCAidGxzIjogInRscyIsICJ0eXBlIjogImF1dG8ifQ==,1247,31.78,JP,-0.2093
+vmess://eyJhZGQiOiAidnBzMTIzLmtieGEudG9wIiwgImFpZCI6IDAsICJob3N0IjogInZwczEyMy5rYnhhLnRvcCIsICJpZCI6ICJjZDA3ZDZlNi1mNjMxLTQ3NTctYTAzYy1iODcyN2M1NjhjODUiLCAibmV0IjogIndzIiwgInBhdGgiOiAiLzEyMyIsICJwb3J0IjogNDQzLCAicHMiOiAiWzczNDhdW1VTXVswXVtWTUVTU11bTm9uZV1bTm9uZV1bVW5rbm93bl1bVW5rbm93bl0iLCAic2VjdXJpdHkiOiAiYXV0byIsICJza2lwLWNlcnQtdmVyaWZ5IjogdHJ1ZSwgInNuaSI6ICIiLCAidGxzIjogInRscyIsICJ0eXBlIjogImF1dG8ifQ==,1210,31.64,JP,-0.2101
+vmess://eyJhZGQiOiAidnBzMTIzLmtieGEudG9wIiwgImFpZCI6IDAsICJob3N0IjogInZwczEyMy5rYnhhLnRvcCIsICJpZCI6ICJjZDA3ZDZlNi1mNjMxLTQ3NTctYTAzYy1iODcyN2M1NjhjODUiLCAibmV0IjogIndzIiwgInBhdGgiOiAiLzEyMyIsICJwb3J0IjogNDQzLCAicHMiOiAiXHVkODNkXHVkZTgwIEBMZXRzR2V0VlBOIEBDeWJlclNlY1BsYXlncm91bmQgfCBcdWQ4M2NcdWRmMGQgXHVkODNjXHVkZGVmXHVkODNjXHVkZGY1IEpQIiwgInNlY3VyaXR5IjogImF1dG8iLCAic2tpcC1jZXJ0LXZlcmlmeSI6IHRydWUsICJzbmkiOiAiIiwgInRscyI6ICJ0bHMiLCAidHlwZSI6ICJhdXRvIn0=,1134,31.06,JP,-0.2136
+vmess://eyJhZGQiOiJ2cHMxMjMua2J4YS50b3AiLCJhaWQiOjAsImhvc3QiOiJ2cHMxMjMua2J4YS50b3AiLCJpZCI6ImNkMDdkNmU2LWY2MzEtNDc1Ny1hMDNjLWI4NzI3YzU2OGM4NSIsIm5ldCI6IndzIiwicGF0aCI6Ii8xMjMiLCJwb3J0Ijo0NDMsInBzIjoi5pyq55+lIFZNRVNTLTEzNTIgfCBmcmVlLW5vZGVzIiwic2VjdXJpdHkiOiJhdXRvIiwic2tpcC1jZXJ0LXZlcmlmeSI6dHJ1ZSwic25pIjoiIiwidGxzIjoidGxzIiwidHlwZSI6ImF1dG8ifQ==,1012,30.43,JP,-0.2174
+vmess://eyJ2IjoiMiIsImFkZCI6IjIxNy4xNDIuMTM4LjYxIiwicG9ydCI6IjgwIiwiaWQiOiJhYzFiOTMzZC1hZmZmLTQ0ODctOTNlZi1mNTcxMzBhNTVkZmYiLCJhaWQiOiIwIiwic2N5IjoiYXV0byIsIm5ldCI6InRjcCIsInR5cGUiOiJodHRwIiwidGxzIjoiIiwicGF0aCI6Ii8iLCJwcyI6IktSIPCfh7Dwn4e3IHwgQFJheWRpa2FseCB8IDE2ODExOCJ9,431,28.46,KR,-0.0017
+vmess://eyJhZGQiOiIyMTcuMTQyLjEzOC42MSIsImFpZCI6IjAiLCJpZCI6ImFjMWI5MzNkLWFmZmYtNDQ4Ny05M2VmLWY1NzEzMGE1NWRmZiIsIm5ldCI6InRjcCIsInBhdGgiOiIvIiwicG9ydCI6IjgwIiwicHMiOiJ2MmdvIHwg8J+HsPCfh7cgS1IgfCBWTUVTUyB8IDI5NyIsInNjeSI6ImF1dG8iLCJ0bHMiOiIiLCJ0eXBlIjoiaHR0cCIsInYiOiIyIn0=,432,27.48,KR,-0.0079
+vmess://eyJ2IjogIjIiLCAiYWRkIjogIjIxNy4xNDIuMTM4LjYxIiwgInBvcnQiOiAiODAiLCAiaWQiOiAiYWMxYjkzM2QtYWZmZi00NDg3LTkzZWYtZjU3MTMwYTU1ZGZmIiwgImFpZCI6ICIwIiwgInNjeSI6ICJhdXRvIiwgIm5ldCI6ICJ0Y3AiLCAidHlwZSI6ICJodHRwIiwgInRscyI6ICIiLCAicGF0aCI6ICIvIiwgInBzIjogIlx1ZDgzZFx1ZGQyNUpvaW4rVGVsZWdyYW06QEZhcmFoX1ZQTlx1ZDgzZFx1ZGZlMyJ9,433,27.19,KR,-0.0100
+vmess://eyJhZGQiOiAiMjE3LjE0Mi4xMzguNjEiLCAiYWlkIjogIjAiLCAiaWQiOiAiYWMxYjkzM2QtYWZmZi00NDg3LTkzZWYtZjU3MTMwYTU1ZGZmIiwgIm5ldCI6ICJ0Y3AiLCAicGF0aCI6ICIvIiwgInBvcnQiOiAiODAiLCAicHMiOiAiXHVkODNkXHVkZTgwIEBMZXRzR2V0VlBOIEBDeWJlclNlY1BsYXlncm91bmQgfCBcdWQ4M2NcdWRmMGQgXHVkODNjXHVkZGYwXHVkODNjXHVkZGY3IEtSIiwgInNjeSI6ICJhdXRvIiwgInRscyI6ICIiLCAidHlwZSI6ICJodHRwIiwgInYiOiAiMiJ9,431,18.24,KR,-0.0630
+vmess://eyJhZGQiOiAiMTQ2LjU2LjExMi4xMTAiLCAiYWlkIjogIjAiLCAiaWQiOiAiZTdjMzAyZjMtOTBkNi00MmRkLTlkN2QtOTRhMzY4M2EzNzA3IiwgIm5ldCI6ICJyYXciLCAicG9ydCI6ICI4ODg4IiwgInBzIjogIls1MDk5XVtLUl1bMF1bVk1FU1NdW05vbmVdW05vbmVdW1Vua25vd25dW1Vua25vd25dIiwgInNjeSI6ICJhdXRvIiwgInRscyI6ICIiLCAidHlwZSI6ICIiLCAidiI6ICIyIn0=,496,16.63,KR,-0.0986
+vmess://eyJhZGQiOiIxNDYuNTYuMTEyLjExMCIsImFpZCI6MCwiZnAiOiJjaHJvbWUiLCJob3N0IjoiIiwiaWQiOiJlN2MzMDJmMy05MGQ2LTQyZGQtOWQ3ZC05NGEzNjgzYTM3MDciLCJuZXQiOiJ0Y3AiLCJwYXRoIjoiIiwicG9ydCI6Ijg4ODgiLCJwcyI6Ilx1ZDgzY1x1ZGRmMFx1ZDgzY1x1ZGRmNyBLUiAxNDYuNTYuMTEyLjExMCBcdTI1YzggdGNwOjg4ODggXHUyNWM4IE9yYWNsZSBDbG91ZCAoYXAtY2h1bmNoZW9uLTEpIFx1MjVjOCAzNWNlNiIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoiIiwidiI6Mn0=,688,25.60,KR,-0.1216
+vmess://eyJ2IjoiMiIsInBzIjoi5pyq55+lNDUiLCJhZGQiOiI0Ny4yNTAuMTM1LjI0NCIsInBvcnQiOiIxMDAwMCIsImlkIjoiYWVkYzY2YjgtOTlkNy00YTIxLTgzMTAtNjE4NzBlN2Y4NzBkIiwiYWlkIjoiMCIsInNjeSI6ImF1dG8iLCJuZXQiOiJ0Y3AiLCJ0eXBlIjoibm9uZSIsImhvc3QiOiIiLCJwYXRoIjoiLyIsInRscyI6IiIsInNuaSI6IiIsInRlc3RfbmFtZSI6IjQ1In0=,570,12.42,MY,-0.1535
+vmess://eyJ2IjogIjIiLCAicHMiOiAiXHVkODNkXHVkZDI1Sm9pbitUZWxlZ3JhbTpARmFyYWhfVlBOXHVkODNkXHVkZmUzIiwgImFkZCI6ICI0Ny4yNTAuMTM1LjI0NCIsICJwb3J0IjogIjEwMDAwIiwgImlkIjogImFlZGM2NmI4LTk5ZDctNGEyMS04MzEwLTYxODcwZTdmODcwZCIsICJhaWQiOiAiMCIsICJzY3kiOiAiYXV0byIsICJuZXQiOiAidGNwIiwgInR5cGUiOiAibm9uZSIsICJob3N0IjogIiIsICJwYXRoIjogIi8iLCAidGxzIjogIiIsICJzbmkiOiAiIiwgInRlc3RfbmFtZSI6ICI0NSJ9,572,12.41,MY,-0.1543
+vmess://eyJ2IjoiMiIsInBzIjoi5pyq55+lMTciLCJhZGQiOiI0Ny4yNTAuMTM1LjI0NCIsInBvcnQiOiIxMDAwMCIsImlkIjoiYWVkYzY2YjgtOTlkNy00YTIxLTgzMTAtNjE4NzBlN2Y4NzBkIiwiYWlkIjoiMCIsInNjeSI6ImF1dG8iLCJuZXQiOiJ0Y3AiLCJ0eXBlIjoibm9uZSIsImhvc3QiOiIiLCJwYXRoIjoiLyIsInRscyI6IiIsInNuaSI6IiIsInRlc3RfbmFtZSI6IjE3In0=,574,12.47,MY,-0.1548
+vmess://eyJ2IjoiMiIsInBzIjoiW/Cfh7Lwn4e+XSBbdm0tbm8tcmFdIFsyNjA4MjYtMDEyOTE1LjU4OV0iLCJhZGQiOiI0Ny4yNTAuMTM1LjI0NCIsInBvcnQiOiIxMDAwMCIsInR5cGUiOiJub25lIiwiaWQiOiJhZWRjNjZiOC05OWQ3LTRhMjEtODMxMC02MTg3MGU3Zjg3MGQiLCJhaWQiOiIwIiwibmV0IjoidGNwIiwicGF0aCI6Ii8iLCJob3N0IjoiIiwidGxzIjoiIn0=,573,12.39,MY,-0.1549
+vmess://eyJ2IjoiMiIsInBzIjoiTVlfM3wxMDhLQi9zfEMwMDItMjYwNjIyIDAxIiwiYWRkIjoiNDcuMjUwLjEzNS4yNDQiLCJwb3J0IjoiMTAwMDAiLCJ0eXBlIjoibm9uZSIsImlkIjoiYWVkYzY2YjgtOTlkNy00YTIxLTgzMTAtNjE4NzBlN2Y4NzBkIiwiYWlkIjoiMCIsIm5ldCI6InRjcCIsInBhdGgiOiIvIiwiaG9zdCI6IiIsInRscyI6IiJ9,572,12.32,MY,-0.1549
+vmess://eyJ2IjoiMiIsInBzIjoiW09wZW5SYXldIPCfh7jwn4esIFNHLTI1ODIiLCJhZGQiOiI0My4yMjguMTI2LjE4NyIsInBvcnQiOiI0NzYzMCIsInR5cGUiOiJub25lIiwiaWQiOiI5ZTVjNmViZi0zNWY5LTQ5YTMtOWYxMi1jYmEyYjdjZGJjY2IiLCJhaWQiOiIwIiwibmV0IjoidGNwIiwicGF0aCI6Ii8iLCJob3N0IjoiIiwidGxzIjoiIn0=,608,19.95,SG,-0.1235
+vmess://eyJhZGQiOiAiNDMuMjI4LjEyNi4xODciLCAiYWlkIjogIjAiLCAiYWxwbiI6ICIiLCAiZnAiOiAiIiwgImhvc3QiOiAiIiwgImlkIjogIjllNWM2ZWJmLTM1ZjktNDlhMy05ZjEyLWNiYTJiN2NkYmNjYiIsICJpbnNlY3VyZSI6ICIwIiwgIm5ldCI6ICJ0Y3AiLCAicGF0aCI6ICIiLCAicGNzIjogIiIsICJwb3J0IjogIjQ3NjMwIiwgInBzIjogIlsxODIzXVtTR11bMF1bVk1FU1NdW05vbmVdW05vbmVdW1Vua25vd25dW1Vua25vd25dIiwgInNjeSI6ICJhdXRvIiwgInNuaSI6ICIiLCAidGxzIjogIiIsICJ0eXBlIjogIm5vbmUiLCAidiI6ICIyIiwgInZjbiI6ICIifQ==,609,19.92,SG,-0.1241
+vmess://eyJ2IjoiMiIsInBzIjoiW09wZW5SYXldIPCfh7jwn4esIFNHLTI2MzgiLCJhZGQiOiI0My4yMjguMTI2LjE4NyIsInBvcnQiOiI0NzYzMCIsImlkIjoiOWU1YzZlYmYtMzVmOS00OWEzLTlmMTItY2JhMmI3Y2RiY2NiIiwiYWlkIjoiMCIsInNjeSI6ImF1dG8iLCJuZXQiOiJ0Y3AiLCJ0eXBlIjoibm9uZSIsImhvc3QiOiI0My4yMjguMTI2LjE4NyIsInBhdGgiOiIvIiwidGxzIjoiIiwic25pIjoiIiwiYWxwbiI6IiIsImZwIjoiIn0=,611,19.80,SG,-0.1256
+vmess://eyJhZGQiOiAiNDMuMjI4LjEyNi4xODciLCAiYWlkIjogIjAiLCAiYWxwbiI6ICIiLCAiZnAiOiAiIiwgImhvc3QiOiAiIiwgImlkIjogIjllNWM2ZWJmLTM1ZjktNDlhMy05ZjEyLWNiYTJiN2NkYmNjYiIsICJpbnNlY3VyZSI6ICIwIiwgIm5ldCI6ICJ0Y3AiLCAicGF0aCI6ICIiLCAicGNzIjogIiIsICJwb3J0IjogIjQ3NjMwIiwgInBzIjogIlsxODI0XVtTR11bMF1bVk1FU1NdW05vbmVdW2ZyZWUxX3Zwbl1bMjAyNi0wOC0yMl1bMjAyNi0wOC0yNSAwMDozM10iLCAic2N5IjogImF1dG8iLCAic25pIjogIiIsICJ0bHMiOiAiIiwgInR5cGUiOiAibm9uZSIsICJ2IjogIjIiLCAidmNuIjogIiJ9,611,18.98,SG,-0.1305
+vmess://eyJ2IjoiMiIsInBzIjoi8J+HuPCfh6xTR185fDE3N0tCL3N8QzAwMi0yNjA2MjIiLCJhZGQiOiIxNDkuODguMjMuMjA3IiwicG9ydCI6IjE4MDAwIiwiaWQiOiJmOGM4ZGMzZC0wZDM3LTQ2YjAtOGIzNC1hNzIzMjg4MmZjZmUiLCJhaWQiOiIwIiwic2N5IjoiYXV0byIsIm5ldCI6InJhdyIsInR5cGUiOiIiLCJ0bHMiOiIifQ==,559,13.42,SG,-0.1431
+vmess://eyJ2IjoiMiIsInBzIjoi8J+HuPCfh6xTR18yMnwzNzZLQi9zfEEwMDQtMjYwNjE4IiwiYWRkIjoiMTQ5Ljg4LjIzLjIwNyIsInBvcnQiOiIxODAwMCIsImlkIjoiZjhjOGRjM2QtMGQzNy00NmIwLThiMzQtYTcyMzI4ODJmY2ZlIiwiYWlkIjoiMCIsInNjeSI6ImF1dG8iLCJuZXQiOiJ0Y3AiLCJ0eXBlIjoiIiwidGxzIjoiIn0=,560,13.41,SG,-0.1435
+vmess://eyJhZGQiOiAiNDMuMjI4LjEyNi4xODciLCAiYWlkIjogIjAiLCAiYWxwbiI6ICIiLCAiZnAiOiAiIiwgImhvc3QiOiAiIiwgImlkIjogIjllNWM2ZWJmLTM1ZjktNDlhMy05ZjEyLWNiYTJiN2NkYmNjYiIsICJpbnNlY3VyZSI6ICIwIiwgIm5ldCI6ICJ0Y3AiLCAicGF0aCI6ICIiLCAicGNzIjogIiIsICJwb3J0IjogIjQ3NjMwIiwgInBzIjogIlx1ZDgzZFx1ZGU4MCBATGV0c0dldFZQTiBAQ3liZXJTZWNQbGF5Z3JvdW5kIHwgXHVkODNjXHVkZjBkIFx1ZDgzY1x1ZGRmOFx1ZDgzY1x1ZGRlYyBTRyIsICJzY3kiOiAiYXV0byIsICJzbmkiOiAiIiwgInRscyI6ICIiLCAidHlwZSI6ICJub25lIiwgInYiOiAiMiIsICJ2Y24iOiAiIn0=,605,15.63,SG,-0.1482
+vmess://eyJhZGQiOiAiNDMuMjI4LjEyNi4xODciLCAiYWlkIjogIjAiLCAiYWxwbiI6ICIiLCAiZnAiOiAiIiwgImhvc3QiOiAiIiwgImlkIjogIjllNWM2ZWJmLTM1ZjktNDlhMy05ZjEyLWNiYTJiN2NkYmNjYiIsICJpbnNlY3VyZSI6ICIwIiwgIm5ldCI6ICJ0Y3AiLCAicGF0aCI6ICIiLCAicGNzIjogIiIsICJwb3J0IjogIjQ3NjMwIiwgInBzIjogIlsxODMwXVtTR11bMF1bVk1FU1NdW05vbmVdW05vbmVdW1Vua25vd25dW1Vua25vd25dIiwgInNjeSI6ICJhdXRvIiwgInNraXAtY2VydC12ZXJpZnkiOiB0cnVlLCAic25pIjogIiIsICJ0bHMiOiAiIiwgInR5cGUiOiAibm9uZSIsICJ2IjogIjIiLCAidmNuIjogIiJ9,609,15.85,SG,-0.1485
+vmess://eyJhZGQiOiAiNDMuMjI4LjEyNi4xODciLCAiYWlkIjogIjAiLCAiYWxwbiI6ICIiLCAiZnAiOiAiIiwgImhvc3QiOiAiIiwgImlkIjogIjllNWM2ZWJmLTM1ZjktNDlhMy05ZjEyLWNiYTJiN2NkYmNjYiIsICJpbnNlY3VyZSI6ICIwIiwgIm5ldCI6ICJ0Y3AiLCAicGF0aCI6ICIiLCAicGNzIjogIiIsICJwb3J0IjogIjQ3NjMwIiwgInBzIjogIlsxODI1XVtTR11bMF1bVk1FU1NdW05vbmVdW3YycmF5MV9uZ11bMjAyNi0wOC0yMl1bMjAyNi0wOC0yNSAwMDozM10iLCAic2N5IjogImF1dG8iLCAic25pIjogIiIsICJ0bHMiOiAiIiwgInR5cGUiOiAibm9uZSIsICJ2IjogIjIiLCAidmNuIjogIiJ9,610,14.63,SG,-0.1562
+vmess://eyJhZGQiOiAiNDMuMjI4LjEyNi4xODciLCAiYWlkIjogIjAiLCAiYWxwbiI6ICIiLCAiZnAiOiAiIiwgImhvc3QiOiAiIiwgImlkIjogIjllNWM2ZWJmLTM1ZjktNDlhMy05ZjEyLWNiYTJiN2NkYmNjYiIsICJpbnNlY3VyZSI6ICIwIiwgIm5ldCI6ICJ0Y3AiLCAicGF0aCI6ICIiLCAicGNzIjogIiIsICJwb3J0IjogIjQ3NjMwIiwgInBzIjogIlsxODI5XVtTR11bMF1bVk1FU1NdW05vbmVdW05vbmVdW1Vua25vd25dW1Vua25vd25dIiwgInNjeSI6ICJhdXRvIiwgInNuaSI6ICIiLCAidGxzIjogIiIsICJ0eXBlIjogIm5vbmUiLCAidiI6ICIyIiwgInZjbiI6ICIifQ==,615,14.68,SG,-0.1579
+vmess://eyJhZGQiOiAiNDMuMjI4LjEyNi4xODciLCAiYWlkIjogIjAiLCAiYWxwbiI6ICIiLCAiZnAiOiAiIiwgImhvc3QiOiAiIiwgImlkIjogIjllNWM2ZWJmLTM1ZjktNDlhMy05ZjEyLWNiYTJiN2NkYmNjYiIsICJpbnNlY3VyZSI6ICIwIiwgIm5ldCI6ICJ0Y3AiLCAicGF0aCI6ICIiLCAicGNzIjogIiIsICJwb3J0IjogIjQ3NjMwIiwgInBzIjogIlsxODI4XVtTR11bMF1bVk1FU1NdW05vbmVdW05vbmVdW1Vua25vd25dW1Vua25vd25dIiwgInNjeSI6ICJhdXRvIiwgInNuaSI6ICIiLCAidGxzIjogIiIsICJ0eXBlIjogIm5vbmUiLCAidiI6ICIyIiwgInZjbiI6ICIifQ==,614,13.47,SG,-0.1648
+vmess://eyJhZGQiOiAiMTE5LjQ2LjUxLjQ1IiwgInBvcnQiOiAiMzc1MTUiLCAiaWQiOiAiOWI3NmJjMzEtMTdhNS00NDU0LTkzNGEtOGQ1ZmI2MDJjZDcwIiwgImFpZCI6ICIwIiwgInNjeSI6ICJhdXRvIiwgIm5ldCI6ICJ0Y3AiLCAidiI6ICIyIiwgInBzIjogIlRIXHUzMDEwXHU2NzNhXHU1NzNhXHU2M2E4XHU4MzUwXHVmZjFhaHR0cHM6Ly9hOWEueHl6XHUzMDExNyIsICJob3N0IjogIiIsICJwYXRoIjogIiIsICJ0bHMiOiAiIiwgInNuaSI6ICIiLCAidHlwZSI6ICIiLCAic2VydmVyUG9ydCI6IDAsICJuYXRpb24iOiAiIn0=,632,22.47,TH,-0.1180
+vmess://eyJ2IjoiMiIsInBzIjoi5pyq55+lODAgMzU5LjRLQi9zIiwiYWRkIjoiMTE5LjQ2LjUxLjQ1IiwicG9ydCI6IjM3NTE1IiwidHlwZSI6Im5vbmUiLCJpZCI6IjliNzZiYzMxLTE3YTUtNDQ1NC05MzRhLThkNWZiNjAyY2Q3MCIsImFpZCI6IjAiLCJuZXQiOiJ0Y3AiLCJwYXRoIjoiLyIsImhvc3QiOiIiLCJ0bHMiOiIifQ==,626,21.91,TH,-0.1189
+vmess://eyJhZGQiOiIxMTkuNDYuNTEuNDUiLCJwb3J0IjoiMzc1MTUiLCJpZCI6IjliNzZiYzMxLTE3YTUtNDQ1NC05MzRhLThkNWZiNjAyY2Q3MCIsImFpZCI6IjAiLCJzY3kiOiJhdXRvIiwibmV0IjoidGNwIiwidiI6IjIiLCJwcyI6IltPcGVuUmF5XSDwn4e58J+HrSBUSC02MyIsImhvc3QiOiIiLCJwYXRoIjoiIiwidGxzIjoiIiwic25pIjoiIiwidHlwZSI6IiIsInNlcnZlclBvcnQiOjAsIm5hdGlvbiI6IiJ9,642,22.27,TH,-0.1232
+vmess://eyJ2IjoiMiIsInBzIjoiW09wZW5SYXldIPCfh7rwn4e4IFVTLTI1NTE0IiwiYWRkIjoiMTA3LjE3My4yNTQuMjciLCJwb3J0IjoiMTUzMTEiLCJ0eXBlIjoibm9uZSIsImlkIjoiYWQ3OGQwMmItODczZi00Y2ZmLThkNGEtNjczZjUzZDZjZTBmIiwiYWlkIjoiMCIsIm5ldCI6InRjcCIsInBhdGgiOiIvIiwiaG9zdCI6IiIsInRscyI6IiJ9,191,80.24,US,0.4051
+vmess://eyJhZGQiOiAiMTA3LjE3My4yNTQuMjciLCAiYWlkIjogIjAiLCAiaG9zdCI6ICIiLCAiaWQiOiAiYWQ3OGQwMmItODczZi00Y2ZmLThkNGEtNjczZjUzZDZjZTBmIiwgIm5ldCI6ICJ0Y3AiLCAicGF0aCI6ICIvIiwgInBvcnQiOiAiMTUzMTEiLCAicHMiOiAiWzM4MzJdW1VTXVswXVtWTUVTU11bTm9uZV1bTm9uZV1bVW5rbm93bl1bVW5rbm93bl0iLCAidGxzIjogIiIsICJ0eXBlIjogIm5vbmUiLCAidiI6ICIyIn0=,201,74.50,US,0.3666
+vmess://eyJ2IjoiMiIsInBzIjoiVVNfMzV8MzQ0S0Ivc3xDMDAyLTI2MDYyMiAwMSIsImFkZCI6IjM4LjExMC4xLjI0NiIsInBvcnQiOiIxODAwMCIsInR5cGUiOiJub25lIiwiaWQiOiJmOGM4ZGMzZC0wZDM3LTQ2YjAtOGIzNC1hNzIzMjg4MmZjZmUiLCJhaWQiOiIwIiwibmV0IjoidGNwIiwicGF0aCI6Ii8iLCJob3N0IjoiIiwidGxzIjoiIn0=,165,44.99,US,0.2040
+vmess://eyJ2IjoiMiIsInBzIjoi8J+HuvCfh7hVU184fDI0OUtCL3N8QzAwMi0yNjA2MjIiLCJhZGQiOiIzOC4xMTAuMS4yNDYiLCJwb3J0IjoiMTgwMDAiLCJpZCI6ImY4YzhkYzNkLTBkMzctNDZiMC04YjM0LWE3MjMyODgyZmNmZSIsImFpZCI6IjAiLCJzY3kiOiJhdXRvIiwibmV0IjoicmF3IiwidHlwZSI6IiIsInRscyI6IiJ9,178,45.77,US,0.2034
+vmess://eyJhZGQiOiI4NC4xNy40MS4yIiwiYWlkIjoiMCIsImFscG4iOm51bGwsImZwIjpudWxsLCJob3N0IjoiIiwiaWQiOiJmOGM4ZGMzZC0wZDM3LTQ2YjAtOGIzNC1hNzIzMjg4MmZjZmUiLCJuYW1lIjoiVVMg8J+HuvCfh7ggfCBAUmF5ZGlrYWx4IHwgMTAxMjY5IiwibmV0IjoidGNwIiwicGF0aCI6Ii8iLCJwb3J0IjoxODAwMCwic2N5IjpudWxsLCJza2lwLWNlcnQtdmVyaWZ5Ijp0cnVlLCJzbmkiOm51bGwsInRscyI6IiIsInR5cGUiOm51bGwsInYiOm51bGwsInBzIjoiVVMg8J+HuvCfh7ggfCBAUmF5ZGlrYWx4IHwgMTAxMjY5In0=,182,42.55,US,0.1825
+trojan://74480619-b6a8-4ab8-94e1-1132fc18b2fa@185.18.250.252:443?sni=unnes.ac.id.r3xxe.eu.cc&type=ws&path=/au-mt&host=unnes.ac.id.r3xxe.eu.cc#%F0%9F%87%AB%F0%9F%87%B7FR_149%7C241KB%2Fs%2001,1013,25.87,AU,-0.2448
+trojan://ff5aeddc-8fea-4d17-b504-1a9fdacca802@45.130.125.160:443?sni=go.appsflyer.com.r3xxe.eu.cc&type=ws&path=/br-orcl&fp=chrome#%F0%9F%87%AB%F0%9F%87%B7FR_936%7C196KB%2Fs%7CC002-260622%2001,843,22.41,BR,-0.2028
+trojan://Telegram_healer_config@172.67.156.87:443?sni=tO6R63-kkCHIgHQM2.vXZ0dDUq7to7SU0cdQF.wOrKERS.Dev&type=ws&path=/tr/yqf0HmXRcvB67eWDKZARhVo4Ts4?ed=2560&alpn=http/1.1&fp=chrome#%F0%9F%87%AB%F0%9F%87%B7FR_1028%7C128KB%2Fs%7CB007-260618%2001,602,48.44,DE,0.0499
+trojan://Telegram_healer_config@www.speedtest.net:443?sni=TO6R63-KKChIGHQM2.VxZ0DDUq7tO7su0cDqF.WoRKeRs.DeV&type=ws&path=/tr/mPZ7O1CUbIBPGNPZQ2HeV?ed=2560&alpn=http/1.1&fp=chrome#%F0%9F%87%AB%F0%9F%87%B7FR_1044%7C145KB%2Fs%7CS004-260618%2001,546,43.90,DE,0.0450
+trojan://Telegram_healer_config@172.67.182.52:443?path=%2Ftr%2FGaQvfFwT5sWgVxHig8YaXjtiuQPZNI%3Fed%3D2560&security=tls&alpn=http%2F1.1&insecure=0&host=6m1rgyieclmrx9hef1.z6-0hlnubjibwzpa85.workers.dev&fp=chrome&type=ws&allowInsecure=0&sni=6m1rGyIEclMRx9HeF1.Z6-0hlNUbJIBwZPa85.wOrKerS.DEV#[6827][US][0][TROJAN][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],543,42.29,DE,0.0366
+trojan://Telegram_healer_config@188.114.97.6:443?security=tls&type=ws&host=bjsa2ygfitzjtho8ucze29xf2m2q9c.g3fiajpf0erm9k3x6ww-yegzl2.workers.dev&path=%2Ftr%2FJ6IJuAAWkqyiEt8UkeRnVdLlkLIGukLr%3Fed%3D2560&sni=bjsa2ygfitzjtho8ucze29xf2m2q9c.g3fiajpf0erm9k3x6ww-yegzl2.workers.dev&alpn=http%2F1.1&fp=unsafe&cs=TLS_AES_256_GCM_SHA384%3ATLS_CHACHA20_POLY1305_SHA256%3ATLS_AES_128_GCM_SHA256%3ATLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384%3ATLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384%3ATLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256%3ATLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256%3ATLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256%3ATLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256%3ATLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA%3ATLS_ECDHE_RSA_WITH_AES_256_CBC_SHA%3ATLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256%3ATLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256&fm=%7B%22tcp%22%3A%20%5B%7B%22type%22%3A%20%22fragment%22%2C%20%22settings%22%3A%20%7B%22packets%22%3A%20%22tlshello%22%2C%20%22lengths%22%3A%20%5B%225%22%2C%20%2294%22%2C%20%221%22%5D%2C%20%22delays%22%3A%20%5B%220%22%5D%2C%20%22maxSplit%22%3A%20%220%22%7D%7D%2C%7B%22type%22%3A%20%22fragment%22%2C%20%22settings%22%3A%20%7B%22packets%22%3A%20%221-1%22%2C%20%22lengths%22%3A%20%5B%22109%22%2C%20%221%22%5D%2C%20%22delays%22%3A%20%5B%221%22%5D%2C%20%22maxSplit%22%3A%20%22355%22%7D%7D%5D%7D#%5BOpenRay%5D%20%F0%9F%87%A8%F0%9F%87%A6%20CA-28258,639,44.23,DE,0.0098
+trojan://Telegram_healer_config@30f67sbq8jjwmt7gytfc14.0m68-qz3hqyfnlar6n3iq.workers.dev:443?path=%2Ftr%2FMBHDTiG2ZHfgBBj9iEpRFkse0tafJ%3Fed%3D2560&security=tls&alpn=http%2F1.1&insecure=0&host=&fp=chrome&type=ws&allowInsecure=0&sni=30F67SBQ8jJWMT7gytfc14.0m68-qZ3hqYFNlaR6n3Iq.WorKerS.Dev#%5BOpenRay%5D%20Dynamic-25699,662,44.14,DE,0.0000
+trojan://Telegram_healer_config@104.21.24.95:443?path=%2Ftr%2FzJi4ccv7FeEo780U%3Fed%3D2560&security=tls&alpn=http%2F1.1&insecure=0&host=1v95v6tjywcytbahl7f7lx8b27g.l4495eycqmse9he0yvoemjfc4ibyf-4.workers.dev&fp=chrome&type=ws&allowInsecure=0&sni=1V95V6TjywCyTbAHl7f7Lx8b27G.L4495eYcqmsE9he0yVoEMJFc4IBYf-4.wORkERS.DeV#AutoAiVPN369767,600,39.70,DE,-0.0018
+"trojan://Telegram_healer_config@www.speedtest.net:443?Telegram=@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad&path=%2Ftr%2FD0RNup7f2Tt0Tna3gVu5OvfMJYJjD%3Fed%3D2560&security=tls&alpn=http%2F1.1&insecure=0&host=30f67sbq8jjwmt7gytfc14.0m68-qz3hqyfnlar6n3iq.workers.dev&fp=chrome&type=ws&allowInsecure=0&sni=30F67SBQ8jJwmT7GyTFc14.0m68-QZ3hQyFnlar6N3IQ.WoRKErS.deV#[6846][US][0][TROJAN][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34]",698,44.19,DE,-0.0141
+trojan://Telegram_healer_config@188.114.97.3:443?path=%2Ftr%2Fox5zBiRQjs2Rscy0XwxXY2ZzE%3Fed%3D2560&security=tls&alpn=http%2F1.1&insecure=0&host=6m1rgyieclmrx9hef1.z6-0hlnubjibwzpa85.workers.dev&fp=chrome&type=ws&allowInsecure=0&sni=6M1RGyIeClMRx9hef1.z6-0HlnubjIbWZpa85.wOrKerS.DEv#🔥Join+Telegram:@Farah_VPN🟣,658,35.49,DE,-0.0503
+trojan://Telegram_healer_config@104.21.4.124:443?path=%2Ftr%2FW3Ei3SdcW9sRVMLIbEd8sB1lm%3Fed%3D2560&security=tls&alpn=http%2F1.1&insecure=0&host=vre6r9qrbqi0t25tg.srtb0m3hdbwr2cjz8fjur.workers.dev&fp=chrome&type=ws&allowInsecure=0&sni=vRE6r9qrbQi0T25tg.SRtB0M3HDbWr2cjZ8fJuR.WoRKerS.DEv#%3E%3E%40configV2rayNG%3A%3AUS,602,30.21,DE,-0.0595
+trojan://Telegram_healer_config@104.21.83.220:443?path=/tr/GaQvfFwT5sWgVxHig8YaXjtiuQPZNI?ed=2560&security=tls&alpn=http/1.1&insecure=0&host=6m1rgyieclmrx9hef1.z6-0hlnubjibwzpa85.workers.dev&fp=chrome&type=ws&allowInsecure=0&sni=6m1rGyIEclMRx9HeF1.Z6-0hlNUbJIBwZPa85.wOrKerS.DEV#[4647][US][0][TROJAN][None][ext_raw.githubusercontent.com][2026-08-25][2026-08-25 00:33],609,28.97,DE,-0.0698
+trojan://Telegram_healer_config@172.67.132.19:443?path=/tr/bDodLFtTQwCZ6EX3ffMYJ06j9EjLse4d?ed=2560&security=tls&alpn=http/1.1&insecure=0&host=vre6r9qrbqi0t25tg.srtb0m3hdbwr2cjz8fjur.workers.dev&fp=chrome&type=ws&allowInsecure=0&sni=VRE6R9qRbQI0t25TG.SRTB0M3hdbwr2cJZ8fjUr.WoRKeRS.dev#4Mohsen-f8e5150b95,592,27.77,DE,-0.0702
+trojan://Telegram_healer_config@188.114.96.3:443?path=%2Ftr%2FN61UxT346epoPVmA9xFM6H00%3Fed%3D2560&security=tls&alpn=http%2F1.1&insecure=0&host=6m1rgyieclmrx9hef1.z6-0hlnubjibwzpa85.workers.dev&fp=chrome&type=ws&allowInsecure=0&sni=6M1RGYiecLMrX9HEf1.z6-0hLNuBjIBWzPa85.wOrkers.DEv#[6833][US][0][TROJAN][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],568,23.71,DE,-0.0849
+trojan://Telegram_healer_config@6m1rgyieclmrx9hef1.z6-0hlnubjibwzpa85.workers.dev:443?path=%2Ftr%2FGaQvfFwT5sWgVxHig8YaXjtiuQPZNI%3Fed%3D2560&security=tls&alpn=http%2F1.1&insecure=0&host=6m1rgyieclmrx9hef1.z6-0hlnubjibwzpa85.workers.dev&fp=chrome&type=ws&allowInsecure=0&sni=6m1rGyIEclMRx9HeF1.Z6-0hlNUbJIBwZPa85.wOrKerS.DEV#[6841][US][0][TROJAN][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],564,23.08,DE,-0.0871
+trojan://Telegram_healer_config@30f67sbq8jjwmt7gytfc14.0m68-qz3hqyfnlar6n3iq.workers.dev:443?path=%2Ftr%2FMBHDTiG2ZHfgBBj9iEpRFkse0tafJ%3Fed%3D2560&security=tls&alpn=http%2F1.1&insecure=0&host=&fp=chrome&type=ws&allowInsecure=0&sni=30F67SBQ8jJWMT7gytfc14.0m68-qZ3hqYFNlaR6n3Iq.WorKerS.Dev#[6840][US][0][TROJAN][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],634,22.92,DE,-0.1161
+trojan://Telegram_healer_config@188.114.97.3:443?path=%2Ftr%2Fox5zBiRQjs2Rscy0XwxXY2ZzE%3Fed%3D2560&security=tls&alpn=http%2F1.1&insecure=0&host=6m1rgyieclmrx9hef1.z6-0hlnubjibwzpa85.workers.dev&fp=chrome&type=ws&allowInsecure=0&sni=6M1RGyIeClMRx9hef1.z6-0HlnubjIbWZpa85.wOrKerS.DEv#4Kian-a611a62acb,576,18.89,DE,-0.1170
+trojan://Telegram_healer_config@172.67.218.38:443?path=%2Ftr%2FdxyX388XOtyAjF3A%3Fed%3D2560&security=tls&alpn=http%2F1.1&insecure=0&host=1v95v6tjywcytbahl7f7lx8b27g.l4495eycqmse9he0yvoemjfc4ibyf-4.workers.dev&fp=chrome&type=ws&allowInsecure=0&sni=1v95V6tjywCyTBAhl7f7lX8B27G.l4495eycQmSE9he0YVoemJfc4IBYf-4.wORkerS.dEV#AutoAiVPN417175,563,17.94,DE,-0.1175
+trojan://Telegram_healer_config@172.67.132.19:443?path=%2Ftr%2FbDodLFtTQwCZ6EX3ffMYJ06j9EjLse4d%3Fed%3D2560&security=tls&alpn=http%2F1.1&insecure=0&host=vre6r9qrbqi0t25tg.srtb0m3hdbwr2cjz8fjur.workers.dev&fp=chrome&type=ws&allowInsecure=0&sni=VRE6R9qRbQI0t25TG.SRTB0M3hdbwr2cJZ8fjUr.WoRKeRS.dev#%3E%3E%40configV2rayNG%3A%3AUS,548,15.55,DE,-0.1259
+trojan://Telegram_healer_config@172.67.218.38:443?path=%2Ftr%2FdxyX388XOtyAjF3A%3Fed%3D2560&security=tls&alpn=http%2F1.1&insecure=0&host=1v95v6tjywcytbahl7f7lx8b27g.l4495eycqmse9he0yvoemjfc4ibyf-4.workers.dev&fp=chrome&type=ws&allowInsecure=0&sni=1v95V6tjywCyTBAhl7f7lX8B27G.l4495eycQmSE9he0YVoemJfc4IBYf-4.wORkerS.dEV#%3E%3E%40configV2rayNG%3A%3AUS,573,16.60,DE,-0.1296
+trojan://Telegram_healer_config@soskeynets.z6-0hlnubjibwzpa85.workers.dev:443?sni=6m1rGyIEclMRx9HeF1.Z6-0hlNUbJIBwZPa85.wOrKerS.DEV&type=ws&path=/tr/GaQvfFwT5sWgVxHig8YaXjtiuQPZNI?ed=2560&alpn=http/1.1&fp=chrome#%F0%9F%87%AB%F0%9F%87%B7FR_1068%7C175KB%2Fs%7CS004-260618%2001,648,21.52,DE,-0.1301
+trojan://Telegram_healer_config@104.21.24.95:443?path=/tr/zJi4ccv7FeEo780U?ed=2560&security=tls&alpn=http/1.1&insecure=0&host=1v95v6tjywcytbahl7f7lx8b27g.l4495eycqmse9he0yvoemjfc4ibyf-4.workers.dev&fp=chrome&type=ws&allowInsecure=0&sni=1V95V6TjywCyTbAHl7f7Lx8b27G.L4495eYcqmsE9he0yVoEMJFc4IBYf-4.wORkERS.DeV#4Nika-16629fbb51,616,18.48,DE,-0.1355
+trojan://Telegram_healer_config@188.114.96.3:443?sni=6M1RGYiecLMrX9HEf1.z6-0hLNuBjIBWzPa85.wOrkers.DEv&type=ws&path=/tr/N61UxT346epoPVmA9xFM6H00?ed=2560&alpn=http/1.1&fp=chrome#%F0%9F%87%AB%F0%9F%87%B7FR_1063%7C215KB%2Fs%7CS004-260618%2001,672,20.96,DE,-0.1430
+trojan://Telegram_healer_config@188.114.96.3:443?path=%2Ftr%2FN61UxT346epoPVmA9xFM6H00%3Fed%3D2560&security=tls&alpn=http%2F1.1&insecure=0&host=6m1rgyieclmrx9hef1.z6-0hlnubjibwzpa85.workers.dev&fp=chrome&type=ws&allowInsecure=0&sni=6M1RGYiecLMrX9HEf1.z6-0hLNuBjIBWzPa85.wOrkers.DEv#4Sarina-ebaa43e277,677,19.76,DE,-0.1522
+trojan://MITIVPN@104.18.152.225:443?path=/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/D-e&security=tls&alpn=http/1.1&insecure=1&host=d-e-mitivpn---MiTiVPN---MiTiVPN.aPp-cLoud.IR&fp=chrome&type=ws&allowInsecure=1&sni=Dee---7-MiTiVPN----o.aPp-cLoud.IR#%F0%9F%87%A8%F0%9F%87%A6144977%20%7C%20%E2%9A%A1%EF%B8%8FTelegram%20%3D%20t.me%2FSOSkeyNET,993,40.42,DE,-0.1547
+trojan://Telegram_healer_config@6m1rgyieclmrx9hef1.z6-0hlnubjibwzpa85.workers.dev:443?path=%2Ftr%2FGaQvfFwT5sWgVxHig8YaXjtiuQPZNI%3Fed%3D2560&security=tls&alpn=http%2F1.1&insecure=0&host=6m1rgyieclmrx9hef1.z6-0hlnubjibwzpa85.workers.dev&fp=chrome&type=ws&allowInsecure=0&sni=6m1rGyIEclMRx9HeF1.Z6-0hlNUbJIBwZPa85.wOrKerS.DEV#🔥Join+Telegram:@Farah_VPN🟣,721,21.55,DE,-0.1591
+trojan://MITIVPN@104.18.152.225:443?path=/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/D-e&security=tls&alpn=http/1.1&insecure=1&host=d-e-mitivpn---MiTiVPN---MiTiVPN.aPp-cLoud.IR&fp=chrome&type=ws&allowInsecure=1&sni=Dee---7-MiTiVPN----o.aPp-cLoud.IR#🔥Join+Telegram:@Farah_VPN🟣,773,24.80,DE,-0.1604
+trojan://MITIVPN@45.130.125.112:443?path=%2F---%40MiTiVPN---%40MiTiVPN%2F---%40MiTiVPN---%40MiTiVPN%2F---%40MiTiVPN---%40MiTiVPN%2Fde&security=tls&alpn=http%2F1.1&insecure=1&host=11-mitivpn---MiTiVPN---MiTiVPN.Maqror.ir&fp=chrome&type=ws&allowInsecure=1&sni=ikk---7-MiTiVPN----o.Maqror.ir#[5397][SC][0][TROJAN][None][nofiltering2][2026-07-30][2026-08-16 00:34],981,37.82,DE,-0.1655
+trojan://Telegram_healer_config@172.67.218.38:443?path=%2Ftr%2FdxyX388XOtyAjF3A%3Fed%3D2560&security=tls&alpn=http%2F1.1&insecure=0&host=1v95v6tjywcytbahl7f7lx8b27g.l4495eycqmse9he0yvoemjfc4ibyf-4.workers.dev&fp=chrome&type=ws&allowInsecure=0&sni=1v95V6tjywCyTBAhl7f7lX8B27G.l4495eycQmSE9he0YVoemJfc4IBYf-4.wORkerS.dEV#Join+Telegram:@Farah_VPN,561,1.47,DE,-0.2156
+trojan://Telegram_healer_config@6m1rgyieclmrx9hef1.z6-0hlnubjibwzpa85.workers.dev:443?path=%2Ftr%2FGaQvfFwT5sWgVxHig8YaXjtiuQPZNI%3Fed%3D2560&security=tls&alpn=http%2F1.1&insecure=0&host=6m1rgyieclmrx9hef1.z6-0hlnubjibwzpa85.workers.dev&fp=chrome&type=ws&allowInsecure=0&sni=6m1rGyIEclMRx9HeF1.Z6-0hlNUbJIBwZPa85.wOrKerS.DEV#Join+Telegram:@Farah_VPN,795,16.27,DE,-0.2204
+trojan://MiTiVPN@104.18.32.47:443?path=/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/F-ls&security=tls&alpn=http/1.1&insecure=1&host=Fl--mitivpn-MiTiVPN---MiTiVPN-s-.aPp-cLoud.IR&fp=chrome&type=ws&allowInsecure=1&sni=fls-bbg--MiTiVPN---MiTiVPN-u.aPp-cLoud.IR#4FreeIran-a6cc6bbaf5,721,36.81,FI,-0.0675
+trojan://MiTiVPN@104.18.32.47:443?path=/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/F-ls&security=tls&alpn=http/1.1&insecure=1&host=Fl--mitivpn-MiTiVPN---MiTiVPN-s-.aPp-cLoud.IR&fp=chrome&type=ws&allowInsecure=1&sni=fls-bbg--MiTiVPN---MiTiVPN-u.aPp-cLoud.IR#[5441][US][0][TROJAN][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],913,24.47,FI,-0.2184
+trojan://humanity@104.16.71.213:443?path=/assignment&security=tls&insecure=0&host=www.calmlunch.com&type=ws&allowInsecure=0&sni=www.calmlunch.com#[6320][US][0][TROJAN][None][ext_raw.githubusercontent.com][2026-08-25][2026-08-25 00:33],499,27.12,FR,-0.0369
+trojan://humanity@45.87.41.18:443?sni=www.calmlunch.com&type=ws&path=%2Fassignment&fp=chrome#%F0%9F%87%AB%F0%9F%87%B7FR_151%7C196KB%2Fs%7CT001-260618,656,33.88,FR,-0.0591
+trojan://humanity@45.87.41.18:443?sni=www.calmlunch.com&type=ws&path=/assignment&fp=chrome#%F0%9F%87%AB%F0%9F%87%B7FR_1414%7C308KB%2Fs%7CT001-260618%2001,689,34.47,FR,-0.0688
+trojan://humanity@191.96.94.226:443/?type=ws&host=www.calmlunch.com&path=%2Fassignment&security=tls&sni=www.calmlunch.com#[6813][DE][0][TROJAN][None][ext_raw.githubusercontent.com][2026-08-25][2026-08-25 00:33],702,33.16,FR,-0.0819
+trojan://humanity@5.181.187.58:443?sni=www.calmlunch.com&type=ws&path=/assignment&fp=chrome#%F0%9F%87%AB%F0%9F%87%B7FR_1511%7C225KB%2Fs%7CT001-260618%2001,716,33.02,FR,-0.0883
+trojan://humanity@88.99.189.60:443?path=%2Fassignment&security=tls&insecure=0&host=www.calmlunch.com&type=ws&allowInsecure=0&sni=www.calmlunch.com#[6934][DE][0][TROJAN][None][ext_raw.githubusercontent.com][2026-08-25][2026-08-25 00:33],709,32.48,FR,-0.0887
+trojan://humanity@88.99.189.60:443?path=%2Fassignment&security=tls&insecure=0&host=www.calmlunch.com&type=ws&allowInsecure=0&sni=www.calmlunch.com#%5BOpenRay%5D%20%F0%9F%87%A9%F0%9F%87%AA%20DE-22208,686,30.95,FR,-0.0887
+trojan://humanity@191.96.94.226:443/?type=ws&host=www.calmlunch.com&path=%2Fassignment&security=tls&sni=www.calmlunch.com#[9097][DE][0][TROJAN][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],707,31.34,FR,-0.0947
+trojan://humanity@88.99.189.60:443?path=%2Fassignment&security=tls&insecure=0&host=www.calmlunch.com&type=ws&allowInsecure=0&sni=www.calmlunch.com#v2go%20%7C%20%F0%9F%87%AB%F0%9F%87%B7%20FR%20%7C%20TROJAN%20%7C%20554,721,31.49,FR,-0.0995
+trojan://humanity@191.96.94.226:443/?type=ws&host=www.calmlunch.com&path=%2Fassignment&security=tls&sni=www.calmlunch.com#%F0%9F%87%A9%F0%9F%87%AADE%28AzadNet.t.me%29%20%2816%29,768,32.19,FR,-0.1141
+trojan://humanity@88.99.189.60:443?path=%2Fassignment&security=tls&insecure=0&host=www.calmlunch.com&type=ws&allowInsecure=0&sni=www.calmlunch.com#[9216][DE][0][TROJAN][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],778,32.63,FR,-0.1154
+trojan://humanity@191.96.94.226:443/?type=ws&host=www.calmlunch.com&path=%2Fassignment&security=tls&sni=www.calmlunch.com#v2go%20%7C%20%F0%9F%87%AB%F0%9F%87%B7%20FR%20%7C%20TROJAN%20%7C%20552,792,33.47,FR,-0.1160
+trojan://humanity@185.220.100.168:443?sni=www.calmlunch.com&type=ws&path=/assignment&fp=chrome#%F0%9F%87%AB%F0%9F%87%B7FR_1387%7C333KB%2Fs%7CT001-260618%2001,779,31.30,FR,-0.1238
+trojan://humanity@185.220.100.168:443?path=%2Fassignment&security=tls&insecure=0&host=www.calmlunch.com&type=ws&allowInsecure=0&sni=www.calmlunch.com#v2go%20%7C%20%F0%9F%87%AB%F0%9F%87%B7%20FR%20%7C%20TROJAN%20%7C%20553,773,30.43,FR,-0.1266
+trojan://humanity@89.150.34.41:2053?path=%2Fassignment&security=tls&insecure=0&host=www.calmlunch.com&type=ws&allowInsecure=0&sni=www.calmlunch.com#[9219][NL][0][TROJAN][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],633,20.67,FR,-0.1292
+trojan://humanity@89.150.34.41:2053?path=%2Fassignment&security=tls&insecure=0&host=www.calmlunch.com&type=ws&allowInsecure=0&sni=www.calmlunch.com#v2go%20%7C%20%F0%9F%87%AB%F0%9F%87%B7%20FR%20%7C%20TROJAN%20%7C%20555,646,21.25,FR,-0.1309
+trojan://humanity@89.150.34.41:2053?path=%2Fassignment&security=tls&insecure=0&host=www.calmlunch.com&type=ws&allowInsecure=0&sni=www.calmlunch.com#[6937][NL][0][TROJAN][None][ext_raw.githubusercontent.com][2026-08-25][2026-08-25 00:33],640,20.37,FR,-0.1338
+trojan://humanity@89.150.34.41:2053?path=%2Fassignment&security=tls&insecure=0&host=www.calmlunch.com&type=ws&allowInsecure=0&sni=www.calmlunch.com#%5BOpenRay%5D%20%F0%9F%87%B3%F0%9F%87%B1%20NL-10335,658,21.35,FR,-0.1351
+trojan://humanity@185.220.100.168:443?path=%2Fassignment&security=tls&insecure=0&host=www.calmlunch.com&type=ws&allowInsecure=0&sni=www.calmlunch.com#ProxyMtpVPN-46,802,30.79,FR,-0.1361
+trojan://humanity@166.1.36.83:443/?type=ws&host=www.calmlunch.com&path=%2Fassignment&security=tls&sni=www.calmlunch.com#[6650][DE][0][TROJAN][None][ext_raw.githubusercontent.com][2026-08-25][2026-08-25 00:33],708,20.29,FR,-0.1614
+trojan://humanity@166.1.36.83:443/?type=ws&host=www.calmlunch.com&path=%2Fassignment&security=tls&sni=www.calmlunch.com#[8921][DE][0][TROJAN][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],708,20.00,FR,-0.1632
+trojan://humanity@185.255.179.166:443?sni=www.calmlunch.com&type=ws&path=%2Fassignment&fp=chrome#%F0%9F%87%AB%F0%9F%87%B7FR_157%7C254KB%2Fs%7CT001-260618,785,23.22,FR,-0.1747
+trojan://humanity@185.220.100.168:443?path=%2Fassignment&security=tls&insecure=0&host=www.calmlunch.com&type=ws&allowInsecure=0&sni=www.calmlunch.com#[6724][DE][0][TROJAN][None][ext_raw.githubusercontent.com][2026-08-25][2026-08-25 00:33],796,23.84,FR,-0.1754
+trojan://humanity@185.220.100.168:443?path=/assignment&security=tls&insecure=0&host=www.calmlunch.com&type=ws&allowInsecure=0&sni=www.calmlunch.com#🇩🇪 💥Config_jo-171,797,23.32,FR,-0.1789
+trojan://humanity@166.1.36.83:443/?type=ws&host=www.calmlunch.com&path=%2Fassignment&security=tls&sni=www.calmlunch.com#v2go%20%7C%20%F0%9F%87%AB%F0%9F%87%B7%20FR%20%7C%20TROJAN%20%7C%20551,756,20.24,FR,-0.1809
+trojan://humanity@185.255.179.166:443?path=%2Fassignment&security=tls&insecure=0&host=www.calmlunch.com&type=ws&allowInsecure=0&sni=www.calmlunch.com#[9016][DE][0][TROJAN][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],834,22.51,FR,-0.1985
+trojan://humanity@166.1.36.83:443/?type=ws&host=www.calmlunch.com&path=%2Fassignment&security=tls&sni=www.calmlunch.com#%F0%9F%87%BA%F0%9F%87%B8US%28AzadNet.t.me%29%20%2897%29,797,19.95,FR,-0.1991
+trojan://humanity@185.255.179.166:443?sni=www.calmlunch.com&type=ws&path=/assignment&fp=chrome#%F0%9F%87%AB%F0%9F%87%B7FR_1638%7C387KB%2Fs%7CT001-260618%2001,784,18.67,FR,-0.2016
+trojan://humanity@168.100.9.178:2053?path=%2Fassignment&security=tls&insecure=0&host=www.calmlunch.com&type=ws&allowInsecure=0&sni=www.calmlunch.com#[6651][NL][0][TROJAN][None][ext_raw.githubusercontent.com][2026-08-25][2026-08-25 00:33],847,18.59,FR,-0.2273
+trojan://humanity@168.100.9.178:2053?path=%2Fassignment&security=tls&insecure=0&host=www.calmlunch.com&type=ws&allowInsecure=0&sni=www.calmlunch.com#%5BOpenRay%5D%20%F0%9F%87%B3%F0%9F%87%B1%20NL-10333,875,17.68,FR,-0.2439
+trojan://humanity@77.221.138.199:8443?sni=www.calmlunch.com&type=ws&path=/assignment&fp=chrome#%F0%9F%87%AB%F0%9F%87%B7FR_1637%7C428KB%2Fs%7CT001-260618%2001,1067,24.01,FR,-0.2560
+trojan://27396feac9d74bae@kh223.zxom.eu.org:100?security=tls#%F0%9F%87%AD%F0%9F%87%B0_%E9%A6%99%E6%B8%AF_103,735,23.57,HK,-0.1526
+trojan://27396feac9d74bae@kh223.zxom.eu.org:100?security=tls#v2go%20%7C%20%F0%9F%87%AD%F0%9F%87%B0%20HK%20%7C%20TROJAN%20%7C%20506,765,24.23,HK,-0.1606
+trojan://27396feac9d74bae@kh223.zxom.eu.org:100?sni=kh223.zxom.eu.org&type=tcp&fp=chrome#%F0%9F%87%AD%F0%9F%87%B0HK_62%7C258KB%2Fs%7CC002-260622,859,23.79,HK,-0.2009
+trojan://27396feac9d74bae@kh223.zxom.eu.org:100?security=tls#%5BOpenRay%5D%20%F0%9F%87%AD%F0%9F%87%B0%20HK-2808,874,24.43,HK,-0.2030
+trojan://27396feac9d74bae@kh223.zxom.eu.org:100?sni=kh223.zxom.eu.org&type=tcp&fp=chrome#%F0%9F%87%AD%F0%9F%87%B0HK_67%7C473KB%2Fs%7CA004-260618,883,24.63,HK,-0.2054
+trojan://27396feac9d74bae@kh223.zxom.eu.org:100?sni=kh223.zxom.eu.org&type=tcp&fp=chrome#%F0%9F%87%AD%F0%9F%87%B0HK_59%7C277KB%2Fs%7CF003-260618,898,23.91,HK,-0.2158
+trojan://27396feac9d74bae@kh223.zxom.eu.org:100?security=tls#,918,24.89,HK,-0.2178
+trojan://27396feac9d74bae@kh223.zxom.eu.org:100?allowInsecure=0#_%E9%A6%99%E6%B8%AF_103,918,24.82,HK,-0.2183
+trojan://kxHw-Dk-e9dffgzYszMlEqLJ92AnY3Pi@tr-latvia1.unlimited-access.ru:443?security=tls&sni=tr-latvia1.unlimited-access.ru#[7074][LV][0][TROJAN][None][ext_raw.githubusercontent.com][2026-08-25][2026-08-25 00:33],1038,17.27,LV,-0.2964
+trojan://Telegram_healer_config@104.21.24.95:443?path=%2Ftr%2FzJi4ccv7FeEo780U%3Fed%3D2560&security=tls&alpn=http%2F1.1&insecure=0&host=1v95v6tjywcytbahl7f7lx8b27g.l4495eycqmse9he0yvoemjfc4ibyf-4.workers.dev&fp=chrome&type=ws&allowInsecure=0&sni=1V95V6TjywCyTbAHl7f7Lx8b27G.L4495eYcqmsE9he0yVoEMJFc4IBYf-4.wORkERS.DeV#🔥Join+Telegram:@Farah_VPN🟣,562,19.23,NL,-0.1094
+trojan://%4D%69%54%69%56%50%4E@104.18.152.229:443?path=%2F---%40%4D%69%54%69%56%50%4E---%40%4D%69%54%69%56%50%4E%2F---%40%4D%69%54%69%56%50%4E---%40%4D%69%54%69%56%50%4E%2F---%40%4D%69%54%69%56%50%4E---%40%4D%69%54%69%56%50%4E%2Fsw&security=tls&alpn=http%2F1.1&insecure=1&host=swss-%6D%69%74%69%76%70%6E--%4D%69%54%69%56%50%4E---%4D%69%54%69%56%50%4E--o.Maqror.ir&fp=chrome&type=ws&allowInsecure=1&sni=swsjh--%4D%69%54%69%56%50%4E---%4D%69%54%69%56%50%4E-ao.Maqror.ir#[14][US][0][TROJAN][None][proxy_mtm][2026-07-29][2026-08-16 00:34],796,41.70,SE,-0.0682
+trojan://58d1a580a3fc4a87@w192m.iamnew2020.top:99?security=tls#%F0%9F%87%B9%F0%9F%87%BC_%E5%8F%B0%E6%B9%BE_102,778,18.94,TW,-0.1975
+trojan://58d1a580a3fc4a87@w192m.iamnew2020.top:99?allowInsecure=0#_%E5%8F%B0%E6%B9%BE_102,774,18.41,TW,-0.1991
+trojan://58d1a580a3fc4a87@w192m.iamnew2020.top:99?security=tls#%5BOpenRay%5D%20%F0%9F%87%B9%F0%9F%87%BC%20TW-722,779,16.66,TW,-0.2117
+trojan://58d1a580a3fc4a87@w192m.iamnew2020.top:99?sni=w192m.iamnew2020.top&type=tcp&fp=chrome#%F0%9F%87%B9%F0%9F%87%BCTW_33%7C280KB%2Fs%7CA004-260618,1153,14.97,TW,-0.3102
+trojan://f18d6149-e214-8554-e737-f7523c8b2eea@188.114.97.6:443?sni=0403.infinityconfig4.workers.dev&type=ws&path=/sync&fp=chrome#%F0%9F%87%AB%F0%9F%87%B7FR_1275%7C211KB%2Fs%7CM003-260806%2001,684,64.80,US,0.1152
+trojan://Telegram_healer_config@172.67.218.38:443?path=%2Ftr%2FdxyX388XOtyAjF3A%3Fed%3D2560&security=tls&alpn=http%2F1.1&insecure=0&host=1v95v6tjywcytbahl7f7lx8b27g.l4495eycqmse9he0yvoemjfc4ibyf-4.workers.dev&fp=chrome&type=ws&allowInsecure=0&sni=1v95V6tjywCyTBAhl7f7lX8B27G.l4495eycQmSE9he0YVoemJfc4IBYf-4.wORkerS.dEV#🏳️ 💥Config_jo-167,155,21.55,US,0.0673
+trojan://0b5fa773-6f37-4134-87d4-0c349742b6f6@104.21.43.90:443?sni=app-538961.user-y0o4gm.workers.dev&allowInsecure=1&type=ws&path=/&fp=chrome#%F0%9F%87%AB%F0%9F%87%B7FR_1368%7C163KB%2Fs%7CM003-260806%2001,675,45.60,US,0.0036
+trojan://0b5fa773-6f37-4134-87d4-0c349742b6f6@172.67.177.105:443?sni=app-538961.user-y0o4gm.workers.dev&allowInsecure=1&type=ws&path=/cmh&fp=chrome#%F0%9F%87%AB%F0%9F%87%B7FR_1274%7C430KB%2Fs%7CM003-260806%2001,919,61.66,US,0.0024
+trojan://0b5fa773-6f37-4134-87d4-0c349742b6f6@app-538961.user-y0o4gm.workers.dev:443?type=ws&security=tls&path=%2F&sni=app-538961.user-y0o4gm.workers.dev&fp=chrome#[164][US][0][TROJAN][None][ext_raw.githubusercontent.com][2026-08-25][2026-08-25 00:33],845,42.82,US,-0.0811
+trojan://0b5fa773-6f37-4134-87d4-0c349742b6f6@app-538961.user-y0o4gm.workers.dev:443?sni=app-538961.user-y0o4gm.workers.dev&type=ws&path=/&fp=chrome#%F0%9F%87%AB%F0%9F%87%B7FR_928%7C105KB%2Fs%7CA004-260618%2001,1051,42.23,US,-0.1466
+trojan://0b5fa773-6f37-4134-87d4-0c349742b6f6@172.64.80.1:443?sni=app-538961.user-y0o4gm.workers.dev&allowInsecure=1&type=ws&path=/cmh&fp=chrome#%F0%9F%87%AB%F0%9F%87%B7FR_1369%7C298KB%2Fs%7CM003-260806%2001,722,18.93,US,-0.1752
+trojan://0b5fa773-6f37-4134-87d4-0c349742b6f6@app-538961.user-y0o4gm.workers.dev:443?type=ws&security=tls&path=%2F&sni=app-538961.user-y0o4gm.workers.dev&fp=chrome#%5BOpenRay%5D%20Dynamic-26724,1025,35.33,US,-0.1880
+trojan://Mehdi1234@172.64.144.251:2083?ed=2560&eh=Sec-WebSocket-Protocol&host=purple-recipe-5e30.cimavo4626.workers.dev&path=/&sni=purple-recipe-5e30.cimavo4626.workers.dev&type=ws#[3629][US][0][TROJAN][None][ext_raw.githubusercontent.com][2026-08-25][2026-08-25 00:33],662,0.00,US,-0.2648
+trojan://50414e45-4c5f-5a45-5553-0ee14af31996@172.67.155.41:2096?path=%2Fstream%2FPANEL_ZEUS%2F0ee14af31996&security=tls&insecure=0&host=1yzgvfefu6qs.mosinp777.workers.dev&fp=unsafe&type=ws&allowInsecure=0&sni=1yzgvfefu6qs.mosinp777.workers.dev#🏳️ 💥Config_jo-161,1428,14.81,US,-0.3111
+trojan://0b5fa773-6f37-4134-87d4-0c349742b6f6@app-538961.user-y0o4gm.workers.dev:443?type=ws&security=tls&path=%2F&sni=app-538961.user-y0o4gm.workers.dev&fp=chrome#,838,0.84,US,-0.3302
+trojan://Mehdi1234@172.64.144.251:2083?path=%2F-i10VPN-i10VPN-i10VPN-i10VPN-i10VPN-i10VPN-i10VPN-i10VPN-i10VPN-i10VPN-i10VPN-i10VPN-i10VPN-i10VPN-i10VPN&security=tls&insecure=0&host=purple-recipe-5e30.cimavo4626.workers.dev&type=ws&allowInsecure=0&sni=purple-recipe-5e30.cimavo4626.workers.dev,850,0.00,US,-0.3400
+trojan://1710442808@188.114.98.0:443?type=ws&security=tls&path=%2F&host=subb.nrshop198.workers.dev&sni=subb.nrshop198.workers.dev&fp=chrome&alpn=http%2F1.1#,1182,0.00,US,-0.4000
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpUSEZGV3Y3bnA5M0RCTEtaVXZWbTd1@157.22.240.141:57925#🇷🇺 💥Config_jo-73,529,13.28,AL,-0.1319
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpUSEZGV3Y3bnA5M0RCTEtaVXZWbTd1@157.22.240.141:57925#[9346][RU][0][SS][None][ext_raw.githubusercontent.com][2026-08-25][2026-08-25 00:33],530,13.06,AL,-0.1336
+ss://2022-blake3-chacha20-poly1305:ZxIQSuhi48PC6452e1GKuTGd2%2BzgR7so5ucyS%2BKveAc%3D@159.112.176.198:59319#%F0%9F%87%A7%F0%9F%87%B7BR_12%7C368KB%2Fs%7CA004-260618,528,13.28,BR,-0.1315
+ss://2022-blake3-chacha20-poly1305:cj9WLCOZewj3P48o4esJrYqjmwu%2FaRUFkOMTcBi%2BLfE%3D@136.248.91.217:59319#%F0%9F%87%A7%F0%9F%87%B7BR_11%7C278KB%2Fs%7CR002-260618,536,13.25,BR,-0.1349
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@149.22.95.183:443# Join+Telegram:@SolVPN,83,94.34,CA,0.5328
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@149.22.95.183:443#%F0%9F%87%A8%F0%9F%87%A6CA-149.22.95.183-0112,76,89.29,CA,0.5053
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@149.22.95.183:443#%F0%9F%87%A8%F0%9F%87%A6CA_7%7C231KB%2Fs%7CA004-260618,87,89.89,CA,0.5045
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@149.22.95.183:443# SS-TCP-NA  CA-149.22.95.183:443,76,85.29,CA,0.4813
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@149.22.95.183:443#%F0%9F%87%A8%F0%9F%87%A6CA-149.22.95.183-0130,87,84.75,CA,0.4737
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@149.22.95.183:443#Join+Telegram:@Farah_VPN,78,82.47,CA,0.4636
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@149.22.95.183:443#******@AR14N24b,72,79.37,CA,0.4474
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@149.22.95.183:443#@v2rayCrow,77,79.52,CA,0.4463
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@149.22.95.183:443#EPODONIOS,75,78.28,CA,0.4397
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@149.22.95.183:443#%F0%9F%87%A8%F0%9F%87%A6%20Canada%20-%20Vancouver%20%F0%9F%8C%8E%20SS-TCP-NA%204%E2%83%A3,84,78.43,CA,0.4370
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@149.22.95.183:443#%F0%9F%87%A8%F0%9F%87%A6CA_2%7C313KB%2Fs%7CA004-260618%2001,76,77.67,CA,0.4356
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@149.22.95.183:443#@v2Source,72,76.19,CA,0.4283
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@149.22.95.183:443#%F0%9F%87%A8%F0%9F%87%A6144632%20%7C%20%E2%9A%A1%EF%B8%8FTelegram%20%3D%20t.me%2FSOSkeyNET,75,73.94,CA,0.4136
+ss://YWVzLTI1Ni1nY206ZmJjZWM3Njk1M2EyZDE3Mw==@166.88.130.218:10889#%F0%9F%87%A8%F0%9F%87%A6CA_44%7C330KB%2Fs%7CK001-260618,195,31.35,CA,0.1101
+ss://2022-blake3-aes-256-gcm:NTQwZmFlZTcwZWY1NDNiYzg3ZDJlMzlkN2RiNmYyMTc%3D%3AZDA0ZjRiMzIxNDc5NDQ5ZmFlODQxNGJhZGE4NWIzY2Q%3D@209.200.246.182:11994#%F0%9F%87%A8%F0%9F%87%A6CA_43%7C231KB%2Fs%7CA004-260618,244,31.13,CA,0.0892
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp5dHcyYXdu@142.4.216.225:443#%3E%3E%40oneclickvpnkeys%3A%3ACA,231,28.23,CA,0.0770
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp5dHcyYXdu@142.4.216.225:443#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20356516,227,22.35,CA,0.0433
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp5dHcyYXdu@142.4.216.225:443#%F0%9F%87%A8%F0%9F%87%A6CA-142.4.216.225-0170,224,15.46,CA,0.0032
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpGRDNyQ3VPc3hPYXk@15.235.75.71:8388#[7625][CA][0][SS][None][v2rayNG_Matsuri][2026-08-14][2026-08-16 00:34],399,14.48,CA,-0.0727
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpGRDNyQ3VPc3hPYXk@15.235.75.71:8388#[7629][CA][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],4324,17.71,CA,-0.2937
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpGRDNyQ3VPc3hPYXk@15.235.75.71:8388#[7636][CA][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],3700,17.05,CA,-0.2977
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpGRDNyQ3VPc3hPYXk@15.235.75.71:8388#[7630][CA][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],4338,16.39,CA,-0.3016
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpGRDNyQ3VPc3hPYXk@15.235.75.71:8388#[7634][CA][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],3879,15.92,CA,-0.3045
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpGRDNyQ3VPc3hPYXk@15.235.75.71:8388#[7638][CA][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],3458,15.27,CA,-0.3084
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpGRDNyQ3VPc3hPYXk@15.235.75.71:8388#[7633][CA][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],3848,15.06,CA,-0.3096
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpGRDNyQ3VPc3hPYXk@15.235.75.71:8388#[7632][CA][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],3915,15.03,CA,-0.3098
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpGRDNyQ3VPc3hPYXk@15.235.75.71:8388#[7642][CA][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],3138,14.42,CA,-0.3135
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpGRDNyQ3VPc3hPYXk@15.235.75.71:8388#[7640][CA][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],3445,14.09,CA,-0.3154
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpGRDNyQ3VPc3hPYXk@15.235.75.71:8388#[7644][CA][0][SS][None][V2rayCollector][2026-08-13][2026-08-16 00:34],2824,13.90,CA,-0.3166
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpGRDNyQ3VPc3hPYXk@15.235.75.71:8388#[7628][CA][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],4448,13.34,CA,-0.3200
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpGRDNyQ3VPc3hPYXk@15.235.75.71:8388#[7627][CA][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],4549,12.95,CA,-0.3223
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpGRDNyQ3VPc3hPYXk@15.235.75.71:8388#[7637][CA][0][SS][None][ShadowProxy66][2026-08-12][2026-08-16 00:34],3584,12.59,CA,-0.3245
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpGRDNyQ3VPc3hPYXk@15.235.75.71:8388#[7626][CA][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],4622,12.38,CA,-0.3257
+ss://MjAyMi1ibGFrZTMtY2hhY2hhMjAtcG9seTEzMDU6d3FDdHp3MmdiMWd0ZGRJT0xaTGlsQkJJYjFvamhoaHN5MGlabGZYZ1h4RT0@130.61.33.34:59924#%5BOpenRay%5D%20%F0%9F%87%A9%F0%9F%87%AA%20DE-23171,446,15.89,DE,-0.0830
+ss://2022-blake3-chacha20-poly1305:vd3JxzAJjh5%2FVoQ%2BVAZNhrdY7FdJ9zZdOvA7LAtQars%3D@130.61.42.202:59924#%F0%9F%87%A9%F0%9F%87%AADE_111%7C180KB%2Fs%7CA004-260618,444,15.61,DE,-0.0840
+ss://MjAyMi1ibGFrZTMtY2hhY2hhMjAtcG9seTEzMDU6dmQzSnh6QUpqaDUvVm9RK1ZBWk5ocmRZN0ZkSjl6WmRPdkE3TEF0UWFycz0@130.61.42.202:59924#🔥Join+Telegram:@Farah_VPN🟣,446,15.71,DE,-0.0841
+ss://MjAyMi1ibGFrZTMtY2hhY2hhMjAtcG9seTEzMDU6cFFTRS9KTkNiVFR3ZzlDQThtOXVBVzMwYXZrUzZJTFdQVXNYWkI4TDNDMD0=@89.168.121.246:59924#🇩🇪[openproxylist.com] ss-DE,448,15.70,DE,-0.0850
+ss://MjAyMi1ibGFrZTMtY2hhY2hhMjAtcG9seTEzMDU6cFFTRS9KTkNiVFR3ZzlDQThtOXVBVzMwYXZrUzZJTFdQVXNYWkI4TDNDMD0=@89.168.121.246:59924#v2go%20%7C%20%F0%9F%87%A9%F0%9F%87%AA%20DE%20%7C%20SS%20%7C%20272,447,15.58,DE,-0.0853
+ss://MjAyMi1ibGFrZTMtY2hhY2hhMjAtcG9seTEzMDU6cFFTRS9KTkNiVFR3ZzlDQThtOXVBVzMwYXZrUzZJTFdQVXNYWkI4TDNDMD0=@89.168.121.246:59924#EPODONIOS,443,15.21,DE,-0.0859
+ss://2022-blake3-chacha20-poly1305:pQSE%2FJNCbTTwg9CA8m9uAW30avkS6ILWPUsXZB8L3C0%3D@89.168.121.246:59924#%F0%9F%87%A9%F0%9F%87%AADE_109%7C476KB%2Fs%7CA004-260618,451,15.57,DE,-0.0870
+ss://MjAyMi1ibGFrZTMtY2hhY2hhMjAtcG9seTEzMDU6dmQzSnh6QUpqaDUvVm9RK1ZBWk5ocmRZN0ZkSjl6WmRPdkE3TEF0UWFycz0@130.61.42.202:59924#🇩🇪[openproxylist.com] ss-DE,447,15.30,DE,-0.0870
+ss://MjAyMi1ibGFrZTMtY2hhY2hhMjAtcG9seTEzMDU6clFCa3hsK3ZXRVhJTTl6RXErSlRVTEN4Q1F1Tm14aGtGR2p3RkVYcytXYz0@130.61.87.93:59924#%5BOpenRay%5D%20%F0%9F%87%A9%F0%9F%87%AA%20DE-23258,449,15.31,DE,-0.0877
+ss://MjAyMi1ibGFrZTMtY2hhY2hhMjAtcG9seTEzMDU6cFFTRS9KTkNiVFR3ZzlDQThtOXVBVzMwYXZrUzZJTFdQVXNYWkI4TDNDMD0=@89.168.121.246:59924#🔥Join+Telegram:@Farah_VPN🟣,450,15.33,DE,-0.0880
+ss://MjAyMi1ibGFrZTMtY2hhY2hhMjAtcG9seTEzMDU6d3FDdHp3MmdiMWd0ZGRJT0xaTGlsQkJJYjFvamhoaHN5MGlabGZYZ1h4RT0@130.61.33.34:59924#v2go%20%7C%20%F0%9F%87%A9%F0%9F%87%AA%20DE%20%7C%20SS%20%7C%20457,455,15.64,DE,-0.0881
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTplUXZLa3lrQkViQ2t5NXA0QlZnaE8w@144.31.168.176:45640#%3E%3E%40oneclickvpnkeys%3A%3ADE,455,15.58,DE,-0.0885
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTplUXZLa3lrQkViQ2t5NXA0QlZnaE8w@144.31.168.176:45640#%F0%9F%8C%804@oneclickvpnkeys,456,15.33,DE,-0.0904
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTplUXZLa3lrQkViQ2t5NXA0QlZnaE8w@144.31.168.176:45640#@meliproxyy,456,15.07,DE,-0.0920
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTplUXZLa3lrQkViQ2t5NXA0QlZnaE8w@144.31.168.176:45640#[20935][DE][0][SS][None][vpn_tehran][2026-08-22][2026-08-25 00:33],454,14.75,DE,-0.0931
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTplUXZLa3lrQkViQ2t5NXA0QlZnaE8w@144.31.168.176:45640#,459,15.04,DE,-0.0933
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTplUXZLa3lrQkViQ2t5NXA0QlZnaE8w@144.31.168.176:45640#@OutlineReleasedKey,457,14.89,DE,-0.0934
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTplUXZLa3lrQkViQ2t5NXA0QlZnaE8w@144.31.168.176:45640# Join+Telegram:@SolVPN,466,15.30,DE,-0.0946
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTplUXZLa3lrQkViQ2t5NXA0QlZnaE8w@144.31.168.176:45640,462,14.99,DE,-0.0948
+ss://MjAyMi1ibGFrZTMtY2hhY2hhMjAtcG9seTEzMDU6clFCa3hsK3ZXRVhJTTl6RXErSlRVTEN4Q1F1Tm14aGtGR2p3RkVYcytXYz0@130.61.87.93:59924#🚀 @LetsGetVPN @CyberSecPlayground | 🌍 🇩🇪 DE,468,15.36,DE,-0.0951
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTplUXZLa3lrQkViQ2t5NXA0QlZnaE8w@144.31.168.176:45640#******@AR14N24b,465,15.09,DE,-0.0954
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTplUXZLa3lrQkViQ2t5NXA0QlZnaE8w@144.31.168.176:45640#[20959][DE][0][SS][None][vpn_tehran][2026-08-21][2026-08-25 00:33],465,15.07,DE,-0.0956
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTplUXZLa3lrQkViQ2t5NXA0QlZnaE8w@144.31.168.176:45640#[9983][DE][0][SS][None][Outline_ir][2026-08-20][2026-08-25 00:33],463,14.82,DE,-0.0963
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToyWWRFNGxGT2lkNWE=@51.195.126.38:8388#EPODONIOS,467,15.03,DE,-0.0966
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToyWWRFNGxGT2lkNWE@51.195.126.38:8388# PROXY_MTM-30,468,15.05,DE,-0.0969
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpQV3BqUG8zdHFoUE40eVJa@8.209.74.72:20001# Join+Telegram:@Farah_VPN,472,15.28,DE,-0.0971
+ss://MjAyMi1ibGFrZTMtY2hhY2hhMjAtcG9seTEzMDU6cFFTRS9KTkNiVFR3ZzlDQThtOXVBVzMwYXZrUzZJTFdQVXNYWkI4TDNDMD0=@89.168.121.246:59924#🚀 @LetsGetVPN @CyberSecPlayground | 🌍 🇩🇪 DE,470,15.13,DE,-0.0972
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTplUXZLa3lrQkViQ2t5NXA0QlZnaE8w@144.31.168.176:45640#%F0%9F%87%A9%F0%9F%87%AADE_43%7C162KB%2Fs%7CA004-260618,472,15.22,DE,-0.0975
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxaGhycXJva2ozYWc@209.46.102.22:8388# Join+Telegram:@Farah_VPN,473,15.26,DE,-0.0976
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTplUXZLa3lrQkViQ2t5NXA0QlZnaE8w@144.31.168.176:45640#[9986][DE][0][SS][None][oneclickvpnkeys][2026-08-19][2026-08-25 00:33],469,14.90,DE,-0.0982
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTplUXZLa3lrQkViQ2t5NXA0QlZnaE8w@144.31.168.176:45640#@Vpn_Tehran 🇩🇪 کانال تلگرام,470,14.86,DE,-0.0988
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTplUXZLa3lrQkViQ2t5NXA0QlZnaE8w@144.31.168.176:45640#4FreeIran-eabca1c87b,474,14.95,DE,-0.0999
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxaGhycXJva2ozYWc@209.46.102.22:8388#Join+Telegram:@Farah_VPN,484,15.53,DE,-0.1004
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTplUXZLa3lrQkViQ2t5NXA0QlZnaE8w@144.31.168.176:45640#Join+Telegram:@Farah_VPN,470,14.52,DE,-0.1009
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTplUXZLa3lrQkViQ2t5NXA0QlZnaE8w@144.31.168.176:45640#[9982][DE][0][SS][None][ext_raw.githubusercontent.com][2026-08-25][2026-08-25 00:33],479,15.11,DE,-0.1009
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTplUXZLa3lrQkViQ2t5NXA0QlZnaE8w@144.31.168.176:45640#[9985][DE][0][SS][None][v2rayNG_Matsuri][2026-08-18][2026-08-25 00:33],472,14.51,DE,-0.1017
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTplUXZLa3lrQkViQ2t5NXA0QlZnaE8w@144.31.168.176:45640#[9459][DE][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],486,15.37,DE,-0.1022
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTplUXZLa3lrQkViQ2t5NXA0QlZnaE8w@144.31.168.176:45640#%D8%A7%DA%AF%D9%87%20%D9%85%DB%8C%D8%AE%D9%88%D8%A7%DB%8C%20%D9%82%D8%B7%D8%B9%20%D9%86%D8%B4%DB%8C%20%D8%AC%D9%88%DB%8C%D9%86%20%D8%B4%D9%88%20%3A%20%40farsiproxy,489,15.33,DE,-0.1036
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTplUXZLa3lrQkViQ2t5NXA0QlZnaE8w@144.31.168.176:45640#[9988][DE][0][SS][None][oneclickvpnkeys][2026-08-18][2026-08-25 00:33],484,14.84,DE,-0.1045
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxaGhycXJva2ozYWc=@209.46.102.22:8388#%F0%9F%87%A9%F0%9F%87%AADE-209.46.102.22-0128,472,14.04,DE,-0.1046
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTplUXZLa3lrQkViQ2t5NXA0QlZnaE8w@144.31.168.176:45640#Channel id:  🇩🇪,471,13.80,DE,-0.1056
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTplUXZLa3lrQkViQ2t5NXA0QlZnaE8w@144.31.168.176:45640#EPODONIOS,475,14.06,DE,-0.1056
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTplUXZLa3lrQkViQ2t5NXA0QlZnaE8w@144.31.168.176:45640#@vpnserverrr⭐,479,14.23,DE,-0.1062
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxaGhycXJva2ozYWc=@209.46.102.22:8388#[7471][DE][0][SS][None][ext_raw.githubusercontent.com][2026-08-25][2026-08-25 00:33],476,14.02,DE,-0.1063
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTplUXZLa3lrQkViQ2t5NXA0QlZnaE8w@144.31.168.176:45640#DE   SHADOWSOCKS-TCP-NTLS  144.31.168.176,496,14.99,DE,-0.1084
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpQV3BqUG8zdHFoUE40eVJa@8.209.74.72:20001#4FreeIran-68907d0833,503,14.85,DE,-0.1121
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTplUXZLa3lrQkViQ2t5NXA0QlZnaE8w@144.31.168.176:45640#[9460][DE][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],500,14.47,DE,-0.1132
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxaGhycXJva2ozYWc=@209.46.102.22:8388#[7470][DE][0][SS][None][ext_raw.githubusercontent.com][2026-08-25][2026-08-25 00:33],505,14.44,DE,-0.1154
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxaGhycXJva2ozYWc=@209.46.102.22:8388#Join+Telegram:@Farah_VPN,518,15.23,DE,-0.1158
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxaGhycXJva2ozYWc@209.46.102.22:8388#EPODONIOS,518,15.15,DE,-0.1163
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTplUXZLa3lrQkViQ2t5NXA0QlZnaE8w@144.31.168.176:45640#[9984][DE][0][SS][None][vpnx44][2026-08-20][2026-08-25 00:33],508,14.48,DE,-0.1163
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToyWWRFNGxGT2lkNWE@51.195.126.38:8388# DE | 51.195.126.38,523,15.05,DE,-0.1189
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpQV3BqUG8zdHFoUE40eVJa@8.209.74.72:20001# Join+Telegram:@SolVPN,503,13.69,DE,-0.1191
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToyWWRFNGxGT2lkNWE@51.195.126.38:8388# Join+Telegram:@SolVPN,517,14.57,DE,-0.1194
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxaGhycXJva2ozYWc=@209.46.102.22:8388#🔥Join+Telegram:@Farah_VPN🟣,519,14.63,DE,-0.1198
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpQV3BqUG8zdHFoUE40eVJa@8.209.74.72:20001#@OutlineReleasedKey,527,15.13,DE,-0.1200
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxaGhycXJva2ozYWc=@209.46.102.22:8388#EPODONIOS,521,14.63,DE,-0.1206
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxaGhycXJva2ozYWc=@209.46.102.22:8388#%F0%9F%87%A9%F0%9F%87%AADE-209.46.102.22-0280,521,14.36,DE,-0.1223
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxaGhycXJva2ozYWc=@209.46.102.22:8388# Join+Telegram:@SolVPN,528,14.45,DE,-0.1245
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpQV3BqUG8zdHFoUE40eVJa@8.209.74.72:20001#%5BOpenRay%5D%20%F0%9F%87%A9%F0%9F%87%AA%20DE-11823,520,12.94,DE,-0.1304
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxaGhycXJva2ozYWc@209.46.102.22:8388#4Nika-dbcea17572,537,13.83,DE,-0.1318
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTplUXZLa3lrQkViQ2t5NXA0QlZnaE8w@144.31.168.176:45640#[9992][DE][0][SS][None][ext_raw.githubusercontent.com][2026-08-25][2026-08-25 00:33],570,14.97,DE,-0.1382
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxaGhycXJva2ozYWc=@209.46.102.22:8388#v2go%20%7C%20%F0%9F%87%A9%F0%9F%87%AA%20DE%20%7C%20SS%20%7C%2081,547,12.73,DE,-0.1424
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTplUXZLa3lrQkViQ2t5NXA0QlZnaE8w@144.31.168.176:45640#[9990][DE][0][SS][None][oneclickvpnkeys][2026-08-24][2026-08-25 00:33],593,15.33,DE,-0.1452
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTplUXZLa3lrQkViQ2t5NXA0QlZnaE8w@144.31.168.176:45640#[9991][DE][0][SS][None][oneclickvpnkeys][2026-08-23][2026-08-25 00:33],587,14.90,DE,-0.1454
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTplUXZLa3lrQkViQ2t5NXA0QlZnaE8w@144.31.168.176:45640#[9989][DE][0][SS][None][oneclickvpnkeys][2026-08-19][2026-08-25 00:33],600,14.93,DE,-0.1504
+ss://YWVzLTI1Ni1nY206WEtGS2wyclVMaklwNzQ=@185.226.172.8:8008#%F0%9F%87%A9%F0%9F%87%AADE_110%7C225KB%2Fs%2001,564,12.42,DE,-0.1511
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToyWWRFNGxGT2lkNWE=@51.195.126.38:8388#[6973][DE][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],616,14.48,DE,-0.1595
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxaGhycXJva2ozYWc@209.46.102.22:8388#%5BOpenRay%5D%20%F0%9F%87%A9%F0%9F%87%AA%20DE-10070,624,14.84,DE,-0.1606
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToyWWRFNGxGT2lkNWE=@51.195.126.38:8388#%F0%9F%87%A9%F0%9F%87%AADE_142%7C254KB%2Fs%7CA004-260618%2001,617,13.60,DE,-0.1652
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxaGhycXJva2ozYWc=@209.46.102.22:8388#%F0%9F%87%A9%F0%9F%87%AADE_2%7C251KB%2Fs%7CA004-260618,636,14.72,DE,-0.1661
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToyWWRFNGxGT2lkNWE=@51.195.126.38:8388#[6974][DE][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],622,13.41,DE,-0.1683
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToyWWRFNGxGT2lkNWE=@51.195.126.38:8388#🔥Join+Telegram:@Farah_VPN🟣,636,13.72,DE,-0.1721
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxaGhycXJva2ozYWc=@209.46.102.22:8388#%F0%9F%87%A9%F0%9F%87%AADE_84%7C321KB%2Fs%7CA004-260618%2001,642,13.95,DE,-0.1731
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxaGhycXJva2ozYWc=@209.46.102.22:8388#[6886][DE][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],664,15.17,DE,-0.1746
+ss://YWVzLTI1Ni1nY206WEtGS2wyclVMaklwNzQ=@185.226.172.8:8008#[13500][DE][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],637,12.37,DE,-0.1806
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToyWWRFNGxGT2lkNWE=@51.195.126.38:8388#[7540][DE][0][SS][None][ext_raw.githubusercontent.com][2026-08-25][2026-08-25 00:33],664,14.16,DE,-0.1806
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToyWWRFNGxGT2lkNWE=@51.195.126.38:8388#[6971][DE][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],679,15.00,DE,-0.1816
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxaGhycXJva2ozYWc=@209.46.102.22:8388#[6885][DE][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],670,14.34,DE,-0.1820
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToyWWRFNGxGT2lkNWE=@51.195.126.38:8388#🚀 @LetsGetVPN @CyberSecPlayground | 🌍 🇩🇪 DE,671,14.26,DE,-0.1828
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTplUXZLa3lrQkViQ2t5NXA0QlZnaE8w@144.31.168.176:45640#[9458][DE][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],686,15.15,DE,-0.1835
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToyWWRFNGxGT2lkNWE=@51.195.126.38:8388#[6972][DE][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],666,13.52,DE,-0.1853
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToyWWRFNGxGT2lkNWE@51.195.126.38:8388# Join+Telegram:@Farah_VPN,662,12.98,DE,-0.1869
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToyWWRFNGxGT2lkNWE=@51.195.126.38:8388#[7541][DE][0][SS][None][ext_raw.githubusercontent.com][2026-08-25][2026-08-25 00:33],683,14.01,DE,-0.1892
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToyWWRFNGxGT2lkNWE=@51.195.126.38:8388#Join+Telegram:@Farah_VPN,681,13.27,DE,-0.1928
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpjVEFPYndnNE9XV1hrWkpRczBaZGdD@31.76.82.131:34260#4,1192,13.40,DE,-0.3196
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpxSXRHOFN1ZVlRY1A@140.174.184.5:8388#%40vpng3%20%283%29,528,14.08,ES,-0.1267
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpXU3lMNFhUd05zZHY@108.181.121.226:8388#4Mohsen-d448c381a9,518,12.48,ES,-0.1323
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpXU3lMNFhUd05zZHY@108.181.121.226:8388#@OutlineReleasedKey,530,13.11,ES,-0.1334
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpXU3lMNFhUd05zZHY@108.181.121.226:8388#ES   SHADOWSOCKS-TCP-NTLS - AS40676  108.181.121.226,538,13.57,ES,-0.1338
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpxSXRHOFN1ZVlRY1A=@140.174.184.5:8388#hamedp71%3A%3A%F0%9F%87%AA%F0%9F%87%B8,540,13.48,ES,-0.1351
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpXU3lMNFhUd05zZHY@108.181.121.226:8388#%40iguanaVPN%20%283%29,544,13.48,ES,-0.1367
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpxSXRHOFN1ZVlRY1A@140.174.184.5:8388#EPODONIOS,542,13.32,ES,-0.1369
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpXU3lMNFhUd05zZHY@108.181.121.226:8388#EPODONIOS,559,13.71,ES,-0.1414
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpxSXRHOFN1ZVlRY1A@140.174.184.5:8388#%F0%9F%8D%9173@oneclickvpnkeys,567,14.00,ES,-0.1428
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpXU3lMNFhUd05zZHY@108.181.121.226:8388#Join+Telegram:@Farah_VPN,556,13.10,ES,-0.1438
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpXU3lMNFhUd05zZHY=@108.181.121.226:8388#[9491][ES][0][SS][None][ext_raw.githubusercontent.com][2026-08-25][2026-08-25 00:33],568,13.88,ES,-0.1439
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpxSXRHOFN1ZVlRY1A@140.174.184.5:8388#,573,14.06,ES,-0.1448
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpXU3lMNFhUd05zZHY@108.181.121.226:8388#[9493][ES][0][SS][None][ext_raw.githubusercontent.com][2026-08-25][2026-08-25 00:33],554,12.58,ES,-0.1461
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpxSXRHOFN1ZVlRY1A@140.174.184.5:8388#@v2rayNplus,571,13.42,ES,-0.1479
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpXU3lMNFhUd05zZHY@108.181.121.226:8388#@v2rayNplus,584,14.04,ES,-0.1494
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpxSXRHOFN1ZVlRY1A@140.174.184.5:8388#4FreeIran-8e1d6fc6e0,580,13.53,ES,-0.1508
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpXU3lMNFhUd05zZHY@108.181.121.226:8388# Join+Telegram:@SolVPN,596,14.24,ES,-0.1530
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpxSXRHOFN1ZVlRY1A=@140.174.184.5:8388#%F0%9F%87%AA%F0%9F%87%B8ES_2%7C330KB%2Fs%7CA004-260618%2001,588,13.60,ES,-0.1536
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpxSXRHOFN1ZVlRY1A@140.174.184.5:8388# Join+Telegram:@SolVPN,597,13.78,ES,-0.1561
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpxSXRHOFN1ZVlRY1A@140.174.184.5:8388#%F0%9F%87%AA%F0%9F%87%B8%20AetrisVPN,591,12.88,ES,-0.1591
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpxSXRHOFN1ZVlRY1A=@140.174.184.5:8388#%F0%9F%87%AA%F0%9F%87%B8ES_1%7C299KB%2Fs%7CA004-260618,595,13.08,ES,-0.1595
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpXU3lMNFhUd05zZHY=@108.181.121.226:8388#%F0%9F%87%AA%F0%9F%87%B8ES_2%7C256KB%2Fs%7CA004-260618,615,13.83,ES,-0.1630
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpXU3lMNFhUd05zZHY@108.181.121.226:8388#[9011][ES][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],615,13.74,ES,-0.1636
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpXU3lMNFhUd05zZHY@108.181.121.226:8388#🔥Join+Telegram:@Farah_VPN🟣,617,13.86,ES,-0.1636
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpXU3lMNFhUd05zZHY@108.181.121.226:8388#[9492][ES][0][SS][None][ext_raw.githubusercontent.com][2026-08-25][2026-08-25 00:33],604,12.68,ES,-0.1655
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpXU3lMNFhUd05zZHY@108.181.121.226:8388#🚀 @LetsGetVPN @CyberSecPlayground | 🌍 🇪🇸 ES,604,12.54,ES,-0.1664
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpxSXRHOFN1ZVlRY1A@140.174.184.5:8388#@meliproxyy,614,12.98,ES,-0.1677
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpxSXRHOFN1ZVlRY1A@140.174.184.5:8388,622,13.12,ES,-0.1701
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpxSXRHOFN1ZVlRY1A=@140.174.184.5:8388#[10772][ES][0][SS][None][ext_raw.githubusercontent.com][2026-08-25][2026-08-25 00:33],633,13.35,ES,-0.1731
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpXU3lMNFhUd05zZHY@108.181.121.226:8388#%F0%9F%87%AA%F0%9F%87%B8%20AetrisVPN,679,13.36,ES,-0.1914
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpXU3lMNFhUd05zZHY=@108.181.121.226:8388#%F0%9F%87%AA%F0%9F%87%B8ES_3%7C209KB%2Fs%7CA004-260618%2001,699,13.26,ES,-0.2001
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpXU3lMNFhUd05zZHY@108.181.121.226:8388#v2go%20%7C%20%F0%9F%87%AA%F0%9F%87%B8%20ES%20%7C%20SS%20%7C%20333,718,13.25,ES,-0.2077
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpCcW5xVG9paDBQYlU=@51.255.13.232:8388#%F0%9F%87%AB%F0%9F%87%B7FR_116%7C419KB%2Fs%7CB007-260618,476,13.80,FR,-0.1076
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpCcW5xVG9paDBQYlU=@51.255.13.232:8388#%F0%9F%87%AB%F0%9F%87%B7FR_1541%7C236KB%2Fs%7CB007-260618%2001,510,14.36,FR,-0.1179
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpCcW5xVG9paDBQYlU=@51.255.13.232:8388#Join+Telegram:@Farah_VPN,639,14.13,FR,-0.1708
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpCcW5xVG9paDBQYlU=@51.255.13.232:8388#0526-Link-06,660,14.24,FR,-0.1786
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpCcW5xVG9paDBQYlU=@51.255.13.232:8388#[7458][FR][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],664,14.27,FR,-0.1800
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpCcW5xVG9paDBQYlU=@51.255.13.232:8388#@OutlineReleasedKey,674,14.83,FR,-0.1806
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpCcW5xVG9paDBQYlU=@51.255.13.232:8388#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20959594,672,14.70,FR,-0.1806
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpCcW5xVG9paDBQYlU=@51.255.13.232:8388#[7459][FR][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],681,15.24,FR,-0.1810
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpCcW5xVG9paDBQYlU=@51.255.13.232:8388#EPODONIOS,665,13.66,FR,-0.1840
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpCcW5xVG9paDBQYlU=@51.255.13.232:8388#[7460][FR][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],691,13.97,FR,-0.1926
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpwRk5OOWpLZThqd0Q@38.180.92.242:32245#EPODONIOS,4529,15.92,FR,-0.3045
+ss://YWVzLTI1Ni1nY206WHJwQThoTmpRNjdPRGRhdQ==@149.102.152.25:443#%F0%9F%87%AC%F0%9F%87%A7GB_75%7C153KB%2Fs%7CA004-260618,442,16.25,GB,-0.0793
+ss://YWVzLTI1Ni1nY206WHJwQThoTmpRNjdPRGRhdQ==@149.102.152.25:80#%F0%9F%87%AC%F0%9F%87%A7GB_83%7C169KB%2Fs%7CA004-260618,443,15.89,GB,-0.0818
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M@141.98.101.181:443#EPODONIOS,449,16.10,GB,-0.0830
+ss://YWVzLTI1Ni1nY206ZzVoNWpsZVRSU3lPM1JrNA==@149.102.132.184:443#%F0%9F%87%AC%F0%9F%87%A7GB_94%7C204KB%2Fs%7CA004-260618,442,15.35,GB,-0.0847
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@141.98.101.181:443#%F0%9F%87%AC%F0%9F%87%A7GB_11%7C448KB%2Fs%7CA004-260618,456,15.82,GB,-0.0875
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@141.98.101.181:443#[10569][GB][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],450,15.40,GB,-0.0876
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp6UlpOQnN6WXlXbzU=@51.77.225.200:8388#[7329][FR][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],464,16.25,GB,-0.0881
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M@141.98.101.181:443#Join+Telegram:@Farah_VPN,457,15.74,GB,-0.0883
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp6UlpOQnN6WXlXbzU@51.77.225.200:8388#%5BOpenRay%5D%20%F0%9F%87%AB%F0%9F%87%B7%20FR-4216,467,16.41,GB,-0.0884
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp6UlpOQnN6WXlXbzU=@51.77.225.200:8388#[7863][FR][0][SS][None][ext_raw.githubusercontent.com][2026-08-25][2026-08-25 00:33],468,16.46,GB,-0.0884
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp6UlpOQnN6WXlXbzU@51.77.225.200:8388# PROXY_MTM-20,468,16.44,GB,-0.0886
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp6UlpOQnN6WXlXbzU=@51.77.225.200:8388# FR | 51.77.225.200,466,16.28,GB,-0.0887
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M@141.98.101.181:443#[11256][GB][0][SS][None][ext_raw.githubusercontent.com][2026-08-25][2026-08-25 00:33],460,15.86,GB,-0.0888
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp6UlpOQnN6WXlXbzU=@51.77.225.200:8388#[7861][FR][0][SS][None][ext_raw.githubusercontent.com][2026-08-25][2026-08-25 00:33],463,16.04,GB,-0.0890
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp6UlpOQnN6WXlXbzU=@51.77.225.200:8388#🔥Join+Telegram:@Farah_VPN🟣,470,16.49,GB,-0.0891
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp6UlpOQnN6WXlXbzU=@51.77.225.200:8388#[7330][FR][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],470,16.46,GB,-0.0892
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M@141.98.101.181:443#GB Da476,456,15.50,GB,-0.0894
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M@141.98.101.181:443#GB   SHADOWSOCKS-TCP-NTLS - M247 Europe SRL  141.98.101.181,460,15.74,GB,-0.0895
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp6UlpOQnN6WXlXbzU=@51.77.225.200:8388#Join+Telegram:@Farah_VPN,469,16.34,GB,-0.0896
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp6UlpOQnN6WXlXbzU=@51.77.225.200:8388#v2go%20%7C%20%F0%9F%87%AC%F0%9F%87%A7%20GB%20%7C%20SS%20%7C%20330,468,16.25,GB,-0.0897
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp6UlpOQnN6WXlXbzU@51.77.225.200:8388#  MTMVPN 4,463,15.89,GB,-0.0898
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@141.98.101.181:443#Join+Telegram:@Farah_VPN,456,15.42,GB,-0.0899
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M@141.98.101.181:443#4Kian-d7354f1a14,463,15.89,GB,-0.0899
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@141.98.101.181:443#[11177][GB][0][SS][None][ext_raw.githubusercontent.com][2026-08-25][2026-08-25 00:33],459,15.59,GB,-0.0901
+ss://2022-blake3-chacha20-poly1305:wONdqDoL2FfvTGj%2FSB%2FJC0l2FDNyhqNuugE%2Bp%2By0RFI%3D@129.151.93.47:61312#%F0%9F%87%AC%F0%9F%87%A7GB_147%7C291KB%2Fs%7CA004-260618,461,15.66,GB,-0.0904
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp6UlpOQnN6WXlXbzU@51.77.225.200:8388# : MTMVPN,469,16.18,GB,-0.0905
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M@141.98.101.181:443#[10651][GB][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],465,15.79,GB,-0.0913
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp6UlpOQnN6WXlXbzU=@51.77.225.200:8388#EPODONIOS,474,16.31,GB,-0.0917
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp6UlpOQnN6WXlXbzU=@51.77.225.200:8388#Moftinet,471,16.11,GB,-0.0917
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@141.98.101.181:443#EPODONIOS,463,15.52,GB,-0.0921
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M@141.98.101.181:443#%F0%9F%A6%8129@oneclickvpnkeys,463,15.47,GB,-0.0924
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@141.98.101.181:443#%F0%9F%87%AC%F0%9F%87%A7GB-141.98.101.181-0288,464,15.52,GB,-0.0925
+ss://2022-blake3-chacha20-poly1305:c6aAgnDru%2FLi6nP06tFCSyJrwChBpKy9ZEmPD%2BW8bmQ%3D@129.151.72.48:61312#%F0%9F%87%AC%F0%9F%87%A7GB_149%7C130KB%2Fs%7CA004-260618,465,15.56,GB,-0.0927
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@141.98.101.181:443#%F0%9F%87%AC%F0%9F%87%A7GB-141.98.101.181-0140,462,15.33,GB,-0.0928
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp6UlpOQnN6WXlXbzU@51.77.225.200:8388# Join+Telegram:@SolVPN,465,15.52,GB,-0.0929
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp6UlpOQnN6WXlXbzU=@51.77.225.200:8388#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20981707,470,15.78,GB,-0.0933
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@141.98.101.181:443#%F0%9F%87%AC%F0%9F%87%A7%20United%20Kingdom%20-%20Manchester%20%F0%9F%8C%8D%20SS-TCP-NA%204%E2%83%A3,452,14.57,GB,-0.0934
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp6UlpOQnN6WXlXbzU=@51.77.225.200:8388#@v2rayng3,467,15.55,GB,-0.0935
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp6UlpOQnN6WXlXbzU=@51.77.225.200:8388#[7862][FR][0][SS][None][ext_raw.githubusercontent.com][2026-08-25][2026-08-25 00:33],466,15.45,GB,-0.0937
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@141.98.101.181:443#%F0%9F%87%AC%F0%9F%87%A7GB_106%7C331KB%2Fs%7CA004-260618%2001,461,15.03,GB,-0.0942
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp6UlpOQnN6WXlXbzU@51.77.225.200:8388# Join+Telegram:@Farah_VPN,472,15.64,GB,-0.0949
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@141.98.101.181:443#[11178][GB][0][SS][None][ext_raw.githubusercontent.com][2026-08-25][2026-08-25 00:33],478,15.97,GB,-0.0954
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@141.98.101.181:443#[10570][GB][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],467,15.22,GB,-0.0955
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp6UlpOQnN6WXlXbzU=@51.77.225.200:8388#[7328][FR][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],472,15.45,GB,-0.0961
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp6UlpOQnN6WXlXbzU=@51.77.225.200:8388#🚀 @LetsGetVPN @CyberSecPlayground | 🌍 🇫🇷 FR,484,16.16,GB,-0.0966
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTp6UlpOQnN6WXlXbzU=@51.77.225.200:8388#[7327][FR][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],475,15.52,GB,-0.0969
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@141.98.101.181:443#[11176][GB][0][SS][None][ext_raw.githubusercontent.com][2026-08-25][2026-08-25 00:33],473,15.30,GB,-0.0974
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@141.98.101.181:443# Join+Telegram:@SolVPN,460,14.09,GB,-0.0995
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@141.98.101.181:443#v2go%20%7C%20%F0%9F%87%AC%F0%9F%87%A7%20GB%20%7C%20SS%20%7C%20274,487,15.67,GB,-0.1008
+ss://YWVzLTI1Ni1nY206UmV4bkJnVTdFVjVBRHhH@94.156.250.148:7001#%F0%9F%87%AC%F0%9F%87%A7GB_8%7C257KB%2Fs%7CA004-260618%2001,457,12.51,GB,-0.1078
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@141.98.101.181:443#🚀 @LetsGetVPN @CyberSecPlayground | 🌍 🇬🇧 GB,493,14.49,GB,-0.1103
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@141.98.101.181:443#🔥Join+Telegram:@Farah_VPN🟣,524,13.94,GB,-0.1259
+ss://YWVzLTI1Ni1nY206UmV4bkJnVTdFVjVBRHhH@94.156.250.148:7001#%F0%9F%87%AC%F0%9F%87%A7GB-94.156.250.148-0287,563,15.11,GB,-0.1345
+ss://YWVzLTI1Ni1nY206UmV4bkJnVTdFVjVBRHhH@94.156.250.148:7001#4Mohsen-2100a5f531,539,12.30,GB,-0.1418
+ss://YWVzLTI1Ni1nY206aXR6dnBuQDMyMQ@57.131.48.45:8388#EPODONIOS,481,14.73,IT,-0.1040
+ss://YWVzLTI1Ni1nY206aXR6dnBuQDMyMQ@57.131.48.45:8388?#filembad-33,485,14.79,IT,-0.1053
+ss://YWVzLTI1Ni1nY206aXR6dnBuQDMyMQ==@57.131.48.45:8388?type=tcp#🔥Join+Telegram:@Farah_VPN🟣,484,14.60,IT,-0.1060
+ss://YWVzLTI1Ni1nY206aXR6dnBuQDMyMQ@57.131.48.45:8388#🚀 @LetsGetVPN @CyberSecPlayground | 🌍 🇮🇹 IT,489,14.65,IT,-0.1077
+ss://YWVzLTI1Ni1nY206aXR6dnBuQDMyMQ@57.131.48.45:8388#[16282][IT][0][SS][None][ext_raw.githubusercontent.com][2026-08-25][2026-08-25 00:33],488,14.43,IT,-0.1086
+ss://YWVzLTI1Ni1nY206aXR6dnBuQDMyMQ@57.131.48.45:8388#[16281][IT][0][SS][None][ext_raw.githubusercontent.com][2026-08-25][2026-08-25 00:33],485,14.06,IT,-0.1096
+ss://YWVzLTI1Ni1nY206aXR6dnBuQDMyMQ@57.131.48.45:8388#کانال ما,498,14.36,IT,-0.1131
+ss://YWVzLTI1Ni1nY206aXR6dnBuQDMyMQ@57.131.48.45:8388#,504,14.48,IT,-0.1147
+ss://YWVzLTI1Ni1nY206aXR6dnBuQDMyMQ@57.131.48.45:8388#🇮🇹[openproxylist.com] ss-IT,539,14.51,IT,-0.1285
+ss://YWVzLTI1Ni1nY206aXR6dnBuQDMyMQ==@57.131.48.45:8388?type=tcp#🇮🇹IT-🚀@VPNine1,792,14.65,IT,-0.2289
+ss://YWVzLTI1Ni1nY206aXR6dnBuQDMyMQ==@57.131.48.45:8388?type=tcp#filembad-31,1159,15.28,IT,-0.3083
+ss://YWVzLTI1Ni1nY206aXR6dnBuQDMyMQ==@57.131.48.45:8388?type=tcp#EPODONIOS,1263,14.63,IT,-0.3122
+ss://YWVzLTI1Ni1nY206aXR6dnBuQDMyMQ@57.131.48.45:8388#filembad-32,3741,14.53,IT,-0.3128
+ss://YWVzLTI1Ni1nY206aXR6dnBuQDMyMQ@57.131.48.45:8388#🔥Join+Telegram:@Farah_VPN🟣,1668,14.42,IT,-0.3135
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@149.22.87.204:443#[10575][JP][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],321,22.08,JP,0.0041
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@149.22.87.241:443#@v2Source,322,22.11,JP,0.0039
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@149.22.87.240:443#,321,22.03,JP,0.0038
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@149.22.87.204:443#[10573][JP][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],322,22.04,JP,0.0034
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@149.22.87.240:443#%F0%9F%87%AF%F0%9F%87%B5JP_6%7C175KB%2Fs%7CA004-260618%2001,322,22.03,JP,0.0034
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@149.22.87.240:443#[11186][JP][0][SS][None][ext_raw.githubusercontent.com][2026-08-25][2026-08-25 00:33],321,21.91,JP,0.0030
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@149.22.87.204:443#[10574][JP][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],322,21.95,JP,0.0029
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@149.22.87.204:443#[11181][JP][0][SS][None][ext_raw.githubusercontent.com][2026-08-25][2026-08-25 00:33],323,21.97,JP,0.0026
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@149.22.87.240:443#%F0%9F%87%AF%F0%9F%87%B5144640%20%7C%20%E2%9A%A1%EF%B8%8FTelegram%20%3D%20t.me%2FSOSkeyNET,322,21.80,JP,0.0020
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@149.22.87.241:443#[10579][JP][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],322,21.72,JP,0.0015
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@149.22.87.204:443#[11182][JP][0][SS][None][ext_raw.githubusercontent.com][2026-08-25][2026-08-25 00:33],322,21.65,JP,0.0011
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@149.22.87.241:443#@v2rayCrow,322,21.61,JP,0.0009
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@149.22.87.241:443# Join+Telegram:@SolVPN,322,21.59,JP,0.0007
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@149.22.87.241:443#%F0%9F%87%AF%F0%9F%87%B5JP_3%7C137KB%2Fs%7CA004-260618,322,21.59,JP,0.0007
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@149.22.87.240:443#[11185][JP][0][SS][None][ext_raw.githubusercontent.com][2026-08-25][2026-08-25 00:33],322,21.54,JP,0.0004
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@149.22.87.241:443#EPODONIOS,324,21.62,JP,0.0001
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@149.22.87.204:443#%F0%9F%87%AF%F0%9F%87%B5JP_9%7C108KB%2Fs%7CA004-260618%2001,323,21.55,JP,0.0001
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@149.22.87.240:443#******@AR14N24b,321,21.33,JP,-0.0004
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@149.22.87.240:443#%F0%9F%87%AF%F0%9F%87%B5%20Japan%20-%20Tokyo%20%F0%9F%8C%8F%20SS-TCP-NA%204%E2%83%A3,322,21.37,JP,-0.0006
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTptYTZ6YzRKb0xSSkE=@176.97.73.215:8388#%F0%9F%87%AF%F0%9F%87%B5JP-176.97.73.215-0235,326,21.31,JP,-0.0025
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@149.22.87.240:443#%F0%9F%87%AF%F0%9F%87%B5JP_23%7C209KB%2Fs%7CA004-260618,322,20.95,JP,-0.0031
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@149.22.87.241:443#[11188][JP][0][SS][None][ext_raw.githubusercontent.com][2026-08-25][2026-08-25 00:33],321,20.86,JP,-0.0033
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@149.22.87.240:443#[11184][JP][0][SS][None][ext_raw.githubusercontent.com][2026-08-25][2026-08-25 00:33],321,20.80,JP,-0.0036
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@149.22.87.240:443#Join+Telegram:@Farah_VPN,322,20.84,JP,-0.0037
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@149.22.87.204:443#%F0%9F%87%AF%F0%9F%87%B5JP-149.22.87.204-0169,322,20.83,JP,-0.0038
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@149.22.87.204:443#Join+Telegram:@Farah_VPN,322,20.83,JP,-0.0038
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@149.22.87.240:443#%F0%9F%87%AF%F0%9F%87%B5JP-149.22.87.240-0160,321,20.76,JP,-0.0039
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@149.22.87.241:443#%F0%9F%87%AF%F0%9F%87%B5JP-149.22.87.241-0170,323,20.89,JP,-0.0039
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@149.22.87.240:443#%F0%9F%87%AF%F0%9F%87%B5JP-149.22.87.240-0226,323,20.87,JP,-0.0040
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@149.22.87.240:443# Join+Telegram:@SolVPN,322,20.78,JP,-0.0041
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@149.22.87.204:443# Join+Telegram:@SolVPN,322,20.77,JP,-0.0042
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@149.22.87.240:443#[10577][JP][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],323,20.83,JP,-0.0042
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@149.22.87.241:443# SS-TCP-NA  JP-149.22.87.241:443,322,20.74,JP,-0.0044
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@149.22.87.240:443#%F0%9F%87%AF%F0%9F%87%B534013%20%7C%20%E2%9A%A1%EF%B8%8FTelegram%20%3D%20t.me%2FSOSkeyNET,324,20.87,JP,-0.0044
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@149.22.87.240:443# SS-TCP-NA  JP-149.22.87.240:443,323,20.79,JP,-0.0045
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@149.22.87.241:443#%E6%9C%AA%E7%9F%A592%208.9MB%2Fs,323,20.79,JP,-0.0045
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@149.22.87.241:443#[10580][JP][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],324,20.82,JP,-0.0047
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@149.22.87.204:443#%F0%9F%87%AF%F0%9F%87%B5JP-149.22.87.204-0161,324,20.79,JP,-0.0049
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@149.22.87.241:443#Join+Telegram:@Farah_VPN,322,20.65,JP,-0.0049
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@149.22.87.241:443#%F0%9F%87%AF%F0%9F%87%B5JP-149.22.87.241-0162,324,20.75,JP,-0.0051
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@149.22.87.204:443#@v2rayCrow,326,20.74,JP,-0.0060
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@149.22.87.241:443#%F0%9F%87%AF%F0%9F%87%B5%20Japan%20-%20Tokyo%20%F0%9F%8C%8F%20SS-TCP-NA%204%E2%83%A3,326,20.64,JP,-0.0066
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTptYTZ6YzRKb0xSSkE=@176.97.73.215:8388#%F0%9F%87%AF%F0%9F%87%B5JP_13%7C156KB%2Fs%7CA004-260618,335,21.21,JP,-0.0067
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@149.22.87.241:443#[10581][JP][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],327,20.55,JP,-0.0075
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@149.22.87.240:443#[10576][JP][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],325,20.40,JP,-0.0076
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTptYTZ6YzRKb0xSSkE=@176.97.73.215:8388#Join+Telegram:@Farah_VPN,329,20.23,JP,-0.0102
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@149.22.87.204:443#%F0%9F%87%AF%F0%9F%87%B5JP_2%7C96KB%2Fs%7CA004-260618,321,19.50,JP,-0.0114
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTptYTZ6YzRKb0xSSkE=@176.97.73.215:8388#[9864][JP][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],340,20.60,JP,-0.0124
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTptYTZ6YzRKb0xSSkE=@176.97.73.215:8388#%F0%9F%87%AF%F0%9F%87%B5JP_120%7C264KB%2Fs%7CA004-260618%2001,355,21.38,JP,-0.0137
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTptYTZ6YzRKb0xSSkE=@176.97.73.215:8388#EPODONIOS,341,20.42,JP,-0.0139
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTptYTZ6YzRKb0xSSkE@176.97.73.215:8388#[10441][JP][0][SS][None][ext_raw.githubusercontent.com][2026-08-25][2026-08-25 00:33],350,20.87,JP,-0.0148
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@149.22.87.240:443#EPODONIOS,322,18.77,JP,-0.0162
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTptYTZ6YzRKb0xSSkE@176.97.73.215:8388#[9871][JP][0][SS][None][vpnx44][2026-08-12][2026-08-16 00:34],352,20.54,JP,-0.0175
+ss://YWVzLTI1Ni1nY206M2VPRmVOc3NkZTdQWVlNdg==@84.247.155.196:80#%F0%9F%87%AF%F0%9F%87%B5JP_18%7C260KB%2Fs%7CA004-260618,329,18.08,JP,-0.0231
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTptYTZ6YzRKb0xSSkE@176.97.73.215:8388# Join+Telegram:@SolVPN,331,17.42,JP,-0.0279
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTptYTZ6YzRKb0xSSkE@176.97.73.215:8388#EPODONIOS,387,20.61,JP,-0.0312
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTptYTZ6YzRKb0xSSkE@176.97.73.215:8388#[10436][JP][0][SS][None][free1_vpn][2026-08-14][2026-08-25 00:33],331,15.67,JP,-0.0384
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTptYTZ6YzRKb0xSSkE@176.97.73.215:8388#[9869][JP][0][SS][None][v2ray1_ng][2026-08-14][2026-08-16 00:34],345,13.87,JP,-0.0548
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTptYTZ6YzRKb0xSSkE@176.97.73.215:8388#[10440][JP][0][SS][None][proxy_mtm][2026-08-13][2026-08-25 00:33],355,14.06,JP,-0.0576
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTptYTZ6YzRKb0xSSkE@176.97.73.215:8388#JP   SHADOWSOCKS-TCP-NTLS - M247 Europe SRL  176.97.73.215,341,12.42,JP,-0.0619
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTptYTZ6YzRKb0xSSkE@176.97.73.215:8388#[10439][JP][0][SS][None][vpnx44][2026-08-12][2026-08-25 00:33],371,14.04,JP,-0.0642
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTptYTZ6YzRKb0xSSkE@176.97.73.215:8388#[9872][JP][0][SS][None][proxy_mtm][2026-08-13][2026-08-16 00:34],390,14.95,JP,-0.0663
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTptYTZ6YzRKb0xSSkE@176.97.73.215:8388#[9873][JP][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],349,12.08,JP,-0.0671
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTptYTZ6YzRKb0xSSkE@176.97.73.215:8388#[10438][JP][0][SS][None][V2rayng_Fast][2026-08-14][2026-08-25 00:33],391,14.06,JP,-0.0720
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpDSm1UQ0N4N0x0dWQ=@108.181.58.239:8388#%F0%9F%87%B3%F0%9F%87%B1NL-108.181.58.239-0141,438,16.39,NL,-0.0769
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpDSm1UQ0N4N0x0dWQ=@108.181.126.122:8388#EPODONIOS,440,16.52,NL,-0.0769
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@158.173.20.208:443#[11213][NL][0][SS][None][ext_raw.githubusercontent.com][2026-08-25][2026-08-25 00:33],438,16.24,NL,-0.0778
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M@158.173.20.208:443#4Nika-d68191c558,440,16.07,NL,-0.0796
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpDSm1UQ0N4N0x0dWQ=@108.181.126.122:8388#[7517][NL][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],440,15.68,NL,-0.0819
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@158.173.20.208:443#[10605][NL][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],442,15.72,NL,-0.0825
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M@158.173.20.208:443#[10683][NL][0][SS][None][oneclickvpnkeys][2026-08-12][2026-08-16 00:34],447,15.77,NL,-0.0842
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M@158.173.20.208:443#[10685][NL][0][SS][None][oneclickvpnkeys][2026-08-14][2026-08-16 00:34],439,15.23,NL,-0.0842
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpDSm1UQ0N4N0x0dWQ=@108.181.58.239:8388#%F0%9F%87%B3%F0%9F%87%B1NL_146%7C267KB%2Fs%7CA004-260618,450,15.90,NL,-0.0846
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@158.173.20.208:443#%F0%9F%87%B3%F0%9F%87%B1NL_97%7C121KB%2Fs%7CA003-260618,448,15.71,NL,-0.0849
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M@158.173.20.208:443#[10680][NL][0][SS][None][vpnx44][2026-08-10][2026-08-16 00:34],444,15.44,NL,-0.0849
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpDSm1UQ0N4N0x0dWQ=@108.181.126.122:8388#[7999][NL][0][SS][None][ext_raw.githubusercontent.com][2026-08-25][2026-08-25 00:33],441,15.11,NL,-0.0857
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M@158.173.20.208:443#[10678][NL][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],445,15.30,NL,-0.0862
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M@158.173.20.208:443#EPODONIOS,448,15.46,NL,-0.0865
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@158.173.20.208:443#%F0%9F%87%B3%F0%9F%87%B1NL_136%7C603KB%2Fs%7CA003-260618%2001,444,15.09,NL,-0.0871
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M@158.173.20.208:443#[10689][NL][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],448,15.29,NL,-0.0875
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@158.173.20.208:443#v2go%20%7C%20%F0%9F%87%B3%F0%9F%87%B1%20NL%20%7C%20SS%20%7C%20305,445,15.07,NL,-0.0876
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M@158.173.20.208:443#[10688][NL][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],448,15.24,NL,-0.0877
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M@158.173.20.208:443# Join+Telegram:@SolVPN,448,15.23,NL,-0.0878
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@158.173.20.208:443#Join+Telegram:@Farah_VPN,451,15.42,NL,-0.0879
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M@158.173.20.208:443#Join+Telegram:@Farah_VPN,447,15.15,NL,-0.0879
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M@158.173.20.208:443#[10687][NL][0][SS][None][oneclickvpnkeys][2026-08-11][2026-08-16 00:34],448,15.00,NL,-0.0892
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@158.173.20.208:443#🔥Join+Telegram:@Farah_VPN🟣,444,14.62,NL,-0.0899
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M@158.173.20.208:443#[11277][NL][0][SS][None][ext_raw.githubusercontent.com][2026-08-25][2026-08-25 00:33],468,15.94,NL,-0.0916
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M@158.173.20.208:443#[10679][NL][0][SS][None][Outline_ir][2026-08-11][2026-08-16 00:34],472,16.13,NL,-0.0920
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@158.173.20.208:443#[11212][NL][0][SS][None][ext_raw.githubusercontent.com][2026-08-25][2026-08-25 00:33],470,15.94,NL,-0.0924
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@158.173.20.208:443#EPODONIOS,463,15.39,NL,-0.0929
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M@158.173.20.208:443#[10684][NL][0][SS][None][oneclickvpnkeys][2026-08-13][2026-08-16 00:34],471,15.92,NL,-0.0929
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpDSm1UQ0N4N0x0dWQ=@108.181.58.239:8388#%F0%9F%87%B3%F0%9F%87%B1NL_65%7C241KB%2Fs%7CA004-260618%2001,458,14.76,NL,-0.0946
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M@158.173.20.208:443#NL   SHADOWSOCKS-TCP-NTLS - Datacamp Limited  158.173.20.208,468,15.21,NL,-0.0959
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M@158.173.20.208:443#[10682][NL][0][SS][None][oneclickvpnkeys][2026-08-11][2026-08-16 00:34],467,15.15,NL,-0.0959
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@158.173.20.208:443#@v2rayng3,469,15.23,NL,-0.0962
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M@158.173.20.208:443#[10690][NL][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],467,14.96,NL,-0.0970
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpDSm1UQ0N4N0x0dWQ=@108.181.126.122:8388#%F0%9F%87%B3%F0%9F%87%B1NL-108.181.126.122-0290,488,16.16,NL,-0.0983
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M@158.173.20.208:443#[10686][NL][0][SS][None][oneclickvpnkeys][2026-08-10][2026-08-16 00:34],464,14.36,NL,-0.0995
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpDSm1UQ0N4N0x0dWQ=@108.181.126.122:8388#[8000][NL][0][SS][None][ext_raw.githubusercontent.com][2026-08-25][2026-08-25 00:33],490,15.70,NL,-0.1018
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@158.173.20.208:443#[10606][NL][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],470,14.36,NL,-0.1018
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.11:443#[10589][GB][0][SS][None][ext_raw.githubusercontent.com][2026-08-25][2026-08-25 00:33],481,15.07,NL,-0.1020
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.162:443#[10026][GB][0][SS][None][vpn_tehran][2026-08-01][2026-08-16 00:34],477,14.75,NL,-0.1023
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.200:8080#Join+Telegram:@Farah_VPN,483,15.07,NL,-0.1028
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpDSm1UQ0N4N0x0dWQ=@108.181.126.122:8388#%F0%9F%87%B3%F0%9F%87%B1NL_56%7C210KB%2Fs%7CA004-260618,507,16.66,NL,-0.1028
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.35:443#EPODONIOS,479,14.71,NL,-0.1034
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.47:8080#@v2rayland02🍋,479,14.70,NL,-0.1034
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpDSm1UQ0N4N0x0dWQ=@108.181.126.122:8388#%F0%9F%87%B3%F0%9F%87%B1NL-108.181.126.122-0142,493,15.58,NL,-0.1037
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@193.29.139.238:8080#[10554][NL][0][SS][None][ext_raw.githubusercontent.com][2026-08-25][2026-08-25 00:33],479,14.63,NL,-0.1038
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@193.29.139.165:8080#EPODONIOS,480,14.69,NL,-0.1039
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.46:8080#%F0%9F%87%AC%F0%9F%87%A7GB-82.38.31.46-0156,477,14.48,NL,-0.1039
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.47:8080#[10116][GB][0][SS][None][vpn_tehran][2026-07-21][2026-08-16 00:34],477,14.48,NL,-0.1039
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.46:8080#Join+Telegram:@Farah_VPN,479,14.60,NL,-0.1040
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.200:8080# Join+Telegram:@Farah_VPN,481,14.72,NL,-0.1041
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@193.29.139.238:8080#🚀 @LetsGetVPN @CyberSecPlayground | 🌍 🇳🇱 NL,481,14.72,NL,-0.1041
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.198:8080# Join+Telegram:@Farah_VPN,482,14.78,NL,-0.1041
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.183:8080#v2go%20%7C%20%F0%9F%87%B3%F0%9F%87%B1%20NL%20%7C%20SS%20%7C%20469,482,14.77,NL,-0.1042
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@193.29.139.151:8080#%40Easy_Free_VPN,479,14.57,NL,-0.1042
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.47:8080#[10690][GB][0][SS][None][SafeNet_Server][2026-07-21][2026-08-25 00:33],478,14.49,NL,-0.1043
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@193.29.139.151:8080#[ @ConfigPositive] 2💫,482,14.75,NL,-0.1043
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.46:8080#4Jadi-9ae67c1dcd,479,14.51,NL,-0.1045
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpDSm1UQ0N4N0x0dWQ=@108.181.58.239:8388#%F0%9F%87%B3%F0%9F%87%B1145373%20%7C%20%E2%9A%A1%EF%B8%8FTelegram%20%3D%20t.me%2FSOSkeyNET,504,16.17,NL,-0.1046
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.185:8080#Join+Telegram:@Farah_VPN,488,15.10,NL,-0.1046
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.182:8080#🇳🇱 204 - NL - SS/AEAD - 8080,481,14.61,NL,-0.1047
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.47:8080# Join+Telegram:@SolVPN,479,14.47,NL,-0.1048
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpRQ1hEeHVEbFRUTUQ3anRnSFVqSW9q@193.29.139.212:8080#%40ghand_sheken,484,14.80,NL,-0.1048
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@193.29.139.204:8080#EPODONIOS,479,14.46,NL,-0.1048
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.182:8080#🇳🇱 203 - NL - SS/AEAD - 8080,481,14.59,NL,-0.1048
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpDSm1UQ0N4N0x0dWQ=@108.181.58.239:8388#******@AR14N24b,500,15.85,NL,-0.1049
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpDSm1UQ0N4N0x0dWQ=@108.181.126.122:8388#🔥Join+Telegram:@Farah_VPN🟣,487,14.99,NL,-0.1049
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpRQ1hEeHVEbFRUTUQ3anRnSFVqSW9q@193.29.139.212:8080#,480,14.52,NL,-0.1049
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.155:8080#%F0%9F%87%AC%F0%9F%87%A7GB-82.38.31.155-0136,479,14.45,NL,-0.1049
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.183:8080#%5BOpenRay%5D%20%F0%9F%87%B3%F0%9F%87%B1%20NL-8079,481,14.58,NL,-0.1049
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.162:443#[10029][GB][0][SS][None][proxy_mtm][2026-07-29][2026-08-16 00:34],480,14.51,NL,-0.1049
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.35:443#%F0%9F%87%B3%F0%9F%87%B1NL_60%7C354KB%2Fs%7CA004-260618,479,14.44,NL,-0.1050
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@193.29.139.204:8080#%F0%9F%87%B3%F0%9F%87%B1NL_26%7C223KB%2Fs%2001,480,14.49,NL,-0.1050
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.155:8080#%3E%3E%40oneclickvpnkeys%3A%3AXX,479,14.41,NL,-0.1051
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.39:8080#🔥Join+Telegram:@Farah_VPN🟣,480,14.48,NL,-0.1051
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.201:8080#%F0%9F%87%B3%F0%9F%87%B1NL_164%7C333KB%2Fs%7CB007-260618%2001,480,14.47,NL,-0.1052
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@193.29.139.151:8080#%3E%3E%40Easy_Free_VPN%3A%3AXX,480,14.47,NL,-0.1052
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@193.29.139.238:8080#%F0%9F%87%B3%F0%9F%87%B1NL_210%7C447KB%2Fs%7CB007-260618,480,14.46,NL,-0.1053
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.206:8080#EPODONIOS,482,14.54,NL,-0.1056
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.201:8080# NL | 82.38.31.201,482,14.52,NL,-0.1057
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.162:443#%E6%9C%AA%E7%9F%A5%20SS-252%20%7C%20free-nodes,485,14.71,NL,-0.1057
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@193.29.139.238:8080#🇳🇱 💥Config_jo-95,479,14.31,NL,-0.1058
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.47:8080#[10115][GB][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],486,14.77,NL,-0.1058
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.39:8080#Join+Telegram:@Farah_VPN,479,14.29,NL,-0.1059
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.47:8080#%F0%9F%87%B3%F0%9F%87%B1NL_12%7C525KB%2Fs%7CA003-260618,485,14.68,NL,-0.1059
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@193.29.139.238:8080#[10552][NL][0][SS][None][ext_raw.githubusercontent.com][2026-08-25][2026-08-25 00:33],487,14.81,NL,-0.1059
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.47:8080#[10118][GB][0][SS][None][SafeNet_Server][2026-07-24][2026-08-16 00:34],485,14.67,NL,-0.1060
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M@158.173.20.208:443#[10681][NL][0][SS][None][v2rayNG_Matsuri][2026-08-10][2026-08-16 00:34],469,13.59,NL,-0.1061
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.47:8080#[10117][GB][0][SS][None][SafeNet_Server][2026-07-21][2026-08-16 00:34],481,14.39,NL,-0.1061
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@193.29.139.238:8080#NL   SHADOWSOCKS-TCP-NTLS - Greenhost BV  193.29.139.238,481,14.38,NL,-0.1061
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpDSm1UQ0N4N0x0dWQ=@108.181.126.122:8388#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20617433,512,16.45,NL,-0.1061
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.200:8080#[10246][GB][0][SS][None][ext_raw.githubusercontent.com][2026-08-25][2026-08-25 00:33],479,14.25,NL,-0.1061
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@193.29.139.151:8080#[10521][NL][0][SS][None][ext_raw.githubusercontent.com][2026-08-25][2026-08-25 00:33],481,14.38,NL,-0.1061
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpDSm1UQ0N4N0x0dWQ=@108.181.58.239:8388#%F0%9F%87%B3%F0%9F%87%B1NL-108.181.58.239-0285,500,15.64,NL,-0.1061
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.39:8080#%F0%9F%87%B3%F0%9F%87%B1NL_4%7C395KB%2Fs%2001,478,14.16,NL,-0.1062
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.162:443#[10025][GB][0][SS][None][vpn_tehran][2026-08-01][2026-08-16 00:34],486,14.68,NL,-0.1063
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.47:8080#🇳🇱 341 - NL - SS/AEAD - 8080,479,14.20,NL,-0.1064
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@193.29.139.151:8080#%F0%9F%87%B3%F0%9F%87%B1NL-193.29.139.151-0131,486,14.66,NL,-0.1064
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.206:8080#[9740][GB][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],484,14.52,NL,-0.1065
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.183:8080#[9655][GB][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],486,14.65,NL,-0.1065
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.203:8080#%F0%9F%87%B3%F0%9F%87%B1NL_47%7C143KB%2Fs%7CA003-260618%2001,486,14.65,NL,-0.1065
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.206:8080#[10283][GB][0][SS][None][ext_raw.githubusercontent.com][2026-08-25][2026-08-25 00:33],483,14.45,NL,-0.1065
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.149:443#%F0%9F%87%B3%F0%9F%87%B1NL_154%7C430KB%2Fs%7CA004-260618,480,14.23,NL,-0.1066
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.47:8080#[10692][GB][0][SS][None][ext_raw.githubusercontent.com][2026-08-25][2026-08-25 00:33],480,14.23,NL,-0.1066
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.39:8080#AutoAiVPN591,487,14.70,NL,-0.1066
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.47:8080#4Mohsen-c09a7d4d41,488,14.75,NL,-0.1067
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.200:8080#🚀 @LetsGetVPN @CyberSecPlayground | 🌍 🇬🇧 GB,485,14.51,NL,-0.1069
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@193.29.139.151:8080#NL Da203,481,14.22,NL,-0.1071
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@193.29.139.132:8080#%F0%9F%87%B3%F0%9F%87%B1NL_24%7C157KB%2Fs%7CB007-260618%2001,483,14.36,NL,-0.1071
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.162:443# Join+Telegram:@SolVPN,488,14.69,NL,-0.1071
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.183:8080#🇳🇱 207 - NL - SS/AEAD - 8080,481,14.22,NL,-0.1071
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.46:8080#%F0%9F%87%B3%F0%9F%87%B1NL_56%7C221KB%2Fs%7CA003-260618%2001,488,14.68,NL,-0.1071
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.162:443#@v2rayng3,486,14.55,NL,-0.1071
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@193.29.139.204:8080#Join+Telegram:@Farah_VPN,481,14.21,NL,-0.1071
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.200:8080#4Mohsen-12d091abcb,482,14.28,NL,-0.1071
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.155:8080#%5BOpenRay%5D%20%F0%9F%87%B3%F0%9F%87%B1%20NL-7213,481,14.20,NL,-0.1072
+ss://Y2hhY2hhMjAtcG9seTEzMDU6b1pJb0E2OVE4eWhjUVY4a2EzUGEzQQ==@82.38.31.46:8080?type=tcp&amp;security=none&amp;headerType=none#@VPN_VIP_NOR,489,14.72,NL,-0.1073
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.35:443#Channel id: @Argo_VPN1 🇳🇱,488,14.65,NL,-0.1073
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@193.29.139.238:8080#v2go%20%7C%20%F0%9F%87%B3%F0%9F%87%B1%20NL%20%7C%20SS%20%7C%20401,489,14.71,NL,-0.1073
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.162:443#NL Da173,486,14.51,NL,-0.1073
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@193.29.139.165:8080#🔥Join+Telegram:@Farah_VPN🟣,489,14.70,NL,-0.1074
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.201:8080#%F0%9F%87%B3%F0%9F%87%B1%40FreakConfig,482,14.23,NL,-0.1074
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.35:443#NL Da157,489,14.70,NL,-0.1074
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.47:8080#NL Da462,490,14.75,NL,-0.1075
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@193.29.139.204:8080#%F0%9F%87%B3%F0%9F%87%B1NL-193.29.139.204-0132,482,14.21,NL,-0.1075
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.149:443#%F0%9F%87%B3%F0%9F%87%B1145535%20%7C%20%E2%9A%A1%EF%B8%8FTelegram%20%3D%20t.me%2FSOSkeyNET,490,14.74,NL,-0.1075
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@193.29.139.165:8080#v2go%20%7C%20%F0%9F%87%B3%F0%9F%87%B1%20NL%20%7C%20SS%20%7C%20476,487,14.53,NL,-0.1076
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.149:443#%D8%A7%DA%AF%D9%87%20%D9%85%DB%8C%D8%AE%D9%88%D8%A7%DB%8C%20%D9%82%D8%B7%D8%B9%20%D9%86%D8%B4%DB%8C%20%D8%AC%D9%88%DB%8C%D9%86%20%D8%B4%D9%88%20%3A%20%40farsiproxy,489,14.66,NL,-0.1077
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.11:443#🇳🇱 303 - NL - SS/AEAD - 443,485,14.39,NL,-0.1077
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.206:8080#Join+Telegram:@Farah_VPN,487,14.51,NL,-0.1077
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@193.29.139.151:8080#Join+Telegram:@Farah_VPN,487,14.51,NL,-0.1077
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.46:8080#%F0%9F%87%AC%F0%9F%87%A7GB-82.38.31.46-0101,483,14.22,NL,-0.1079
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.200:8080#🇳🇱 235 - NL - SS/AEAD - 8080,488,14.56,NL,-0.1079
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.46:8080#AutoAiVPN584,491,14.75,NL,-0.1079
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.155:8080#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20926131,486,14.41,NL,-0.1079
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.39:8080# Join+Telegram:@SolVPN,486,14.38,NL,-0.1081
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.11:443#[10588][GB][0][SS][None][oneclickvpnkeys][2026-08-24][2026-08-25 00:33],477,13.78,NL,-0.1081
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.162:443#[10028][GB][0][SS][None][Outline_Vpn][2026-07-30][2026-08-16 00:34],487,14.44,NL,-0.1082
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.46:8080#%F0%9F%87%B3%F0%9F%87%B1NL_11%7C287KB%2Fs%7CA003-260618,487,14.43,NL,-0.1082
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.185:8080#%F0%9F%87%AC%F0%9F%87%A7%20GB%20%7C%20SS%20%7C%20%40v2rayopen%20%231,486,14.36,NL,-0.1082
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@193.29.139.165:8080#%F0%9F%87%B3%F0%9F%87%B1NL_214%7C214KB%2Fs%7CA004-260618,487,14.42,NL,-0.1083
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.182:8080#%F0%9F%87%B3%F0%9F%87%B1NL_14%7C189KB%2Fs%7CA004-260618%2001,491,14.68,NL,-0.1083
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.185:8080#[10201][GB][0][SS][None][ext_raw.githubusercontent.com][2026-08-25][2026-08-25 00:33],488,14.48,NL,-0.1083
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.206:8080#[10281][GB][0][SS][None][ext_raw.githubusercontent.com][2026-08-25][2026-08-25 00:33],485,14.28,NL,-0.1083
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo0YTJyZml4b3BoZGpmZmE4S1ZBNEFh@193.29.139.234:8080#%F0%9F%87%B3%F0%9F%87%B1NL_133%7C263KB%2Fs%7CA004-260618%2001,482,14.07,NL,-0.1084
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@193.29.139.151:8080#AutoAiVPN488,488,14.47,NL,-0.1084
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.200:8080#NL Da116,492,14.73,NL,-0.1084
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.162:443#%F0%9F%87%B3%F0%9F%87%B1NL_31%7C293KB%2Fs%7CB007-260618,488,14.44,NL,-0.1086
+ss://Y2hhY2hhMjAtcG9seTEzMDU6b1pJb0E2OVE4eWhjUVY4a2EzUGEzQQ==@82.38.31.39:8080?type=tcp&amp;security=none&amp;headerType=none#@VPN_VIP_NOR,488,14.42,NL,-0.1087
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@193.29.139.151:8080# Join+Telegram:@SolVPN,487,14.35,NL,-0.1087
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.201:8080#%40filembad`,493,14.74,NL,-0.1088
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.47:8080#[10689][GB][0][SS][None][ext_raw.githubusercontent.com][2026-08-25][2026-08-25 00:33],488,14.40,NL,-0.1088
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.200:8080#🇳🇱 237 - NL - SS/AEAD - 8080,490,14.52,NL,-0.1089
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.39:8080#[10098][GB][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],489,14.46,NL,-0.1089
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.46:8080#[10114][GB][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],484,14.12,NL,-0.1089
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.155:8080# Join+Telegram:@SolVPN,492,14.65,NL,-0.1089
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.155:8080#4Jadi-a1526c9fa0,489,14.44,NL,-0.1090
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.35:443#%F0%9F%87%B3%F0%9F%87%B1NL_16%7C114KB%2Fs%7CA004-260618%2001,494,14.77,NL,-0.1090
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.46:8080#🔥Join+Telegram:@Farah_VPN🟣,490,14.50,NL,-0.1090
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.35:443#Join+Telegram:@Farah_VPN,486,14.22,NL,-0.1091
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@193.29.139.204:8080#NL Da461,480,13.82,NL,-0.1091
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@193.29.139.151:8080#,490,14.49,NL,-0.1091
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.46:8080#%E6%9C%AA%E7%9F%A5%20SS-262%20%7C%20free-nodes,494,14.75,NL,-0.1091
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@193.29.139.238:8080#EPODONIOS,490,14.48,NL,-0.1091
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.35:443#4Jadi-eac83949b8,487,14.28,NL,-0.1091
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@193.29.139.167:8080#%F0%9F%87%B3%F0%9F%87%B1NL_231%7C136KB%2Fs%7CA004-260618,488,14.34,NL,-0.1091
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.155:8080#%F0%9F%87%B3%F0%9F%87%B1NL_139%7C345KB%2Fs%7CA004-260618%2001,488,14.34,NL,-0.1092
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.182:8080#[9654][GB][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],489,14.39,NL,-0.1093
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.39:8080#EPODONIOS,488,14.32,NL,-0.1093
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@193.29.139.151:8080#[10520][NL][0][SS][None][ext_raw.githubusercontent.com][2026-08-25][2026-08-25 00:33],490,14.45,NL,-0.1093
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.200:8080#🇳🇱 236 - NL - SS/AEAD - 8080,495,14.78,NL,-0.1093
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.185:8080#[10202][GB][0][SS][None][SafeNet_Server][2026-07-27][2026-08-25 00:33],493,14.64,NL,-0.1094
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.200:8080#GB   SHADOWSOCKS-TCP-NTLS  82.38.31.200,490,14.44,NL,-0.1094
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@193.29.139.151:8080#@Easy_Free_VPN,492,14.57,NL,-0.1094
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.46:8080#[10688][GB][0][SS][None][ext_raw.githubusercontent.com][2026-08-25][2026-08-25 00:33],479,13.70,NL,-0.1094
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@193.29.139.204:8080#%F0%9F%87%B3%F0%9F%87%B1NL-193.29.139.204-0140,486,14.17,NL,-0.1094
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.47:8080#AutoAiVPN167469,486,14.17,NL,-0.1094
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@193.29.139.180:8080#%F0%9F%87%B3%F0%9F%87%B1NL_211%7C104KB%2Fs%7CA004-260618,488,14.30,NL,-0.1094
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@193.29.139.165:8080#🇳🇱[openproxylist.com] ss-NL,488,14.29,NL,-0.1095
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.206:8080#[10284][GB][0][SS][None][SafeNet_Server][2026-06-26][2026-08-25 00:33],491,14.47,NL,-0.1096
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.198:8080#%3E%3E%40V2rayNG3%3A%3ANL,490,14.40,NL,-0.1096
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.35:443#%F0%9F%87%AC%F0%9F%87%A7GB-82.38.31.35-0097,492,14.53,NL,-0.1096
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.47:8080#[10119][GB][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],487,14.19,NL,-0.1096
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpRQ1hEeHVEbFRUTUQ3anRnSFVqSW9q@193.29.139.212:8080#@ghand_sheken,493,14.58,NL,-0.1097
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.206:8080#%E6%9C%AA%E7%9F%A5%20SS-236%20%7C%20free-nodes,490,14.37,NL,-0.1098
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo0YTJyZml4b3BoZGpmZmE4S1ZBNEFh@193.29.139.234:8080#@v2rayNplus,498,14.88,NL,-0.1099
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@193.29.139.151:8080#The%20Netherlands%20%F0%9F%87%B3%F0%9F%87%B1,489,14.28,NL,-0.1099
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.183:8080#[10196][GB][0][SS][None][ext_raw.githubusercontent.com][2026-08-25][2026-08-25 00:33],485,14.01,NL,-0.1099
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.35:443#%F0%9F%87%AC%F0%9F%87%A7GB-82.38.31.35-0122,496,14.74,NL,-0.1100
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.47:8080#[10691][GB][0][SS][None][SafeNet_Server][2026-07-24][2026-08-25 00:33],488,14.19,NL,-0.1100
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.46:8080#[10112][GB][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],492,14.46,NL,-0.1101
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.155:8080#%F0%9F%87%B3%F0%9F%87%B1NL_102%7C246KB%2Fs%7CA004-260618,489,14.25,NL,-0.1101
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.47:8080#EPODONIOS,489,14.25,NL,-0.1101
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.200:8080#v2go%20%7C%20%F0%9F%87%B3%F0%9F%87%B1%20NL%20%7C%20SS%20%7C%20472,489,14.24,NL,-0.1102
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo0YTJyZml4b3BoZGpmZmE4S1ZBNEFh@193.29.139.234:8080#🇳🇱 💥Config_jo-67,488,14.17,NL,-0.1102
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.182:8080#🚀 @LetsGetVPN @CyberSecPlayground | 🌍 🇬🇧 GB,491,14.36,NL,-0.1102
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@193.29.139.151:8080#%F0%9F%87%B3%F0%9F%87%B1NL-193.29.139.151-0133,497,14.76,NL,-0.1102
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.162:443#[10023][GB][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],488,14.16,NL,-0.1102
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.155:8080#%F0%9F%87%AC%F0%9F%87%A7GB-82.38.31.155-0124,491,14.35,NL,-0.1103
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.162:443#EPODONIOS,496,14.68,NL,-0.1103
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@193.29.139.151:8080#@OutlineReleasedKey,489,14.21,NL,-0.1103
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.206:8080#[9739][GB][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],492,14.41,NL,-0.1103
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.47:8080#%E6%9C%AA%E7%9F%A5%20SS-263%20%7C%20free-nodes,495,14.61,NL,-0.1103
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@193.29.139.204:8080#[10537][NL][0][SS][None][ext_raw.githubusercontent.com][2026-08-25][2026-08-25 00:33],490,14.28,NL,-0.1103
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.39:8080#🚀 @LetsGetVPN @CyberSecPlayground | 🌍 🇬🇧 GB,489,14.20,NL,-0.1104
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.182:8080#[10195][GB][0][SS][None][ext_raw.githubusercontent.com][2026-08-25][2026-08-25 00:33],484,13.86,NL,-0.1105
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo0YTJyZml4b3BoZGpmZmE4S1ZBNEFh@193.29.139.234:8080#🚀 @LetsGetVPN @CyberSecPlayground | 🌍 🇳🇱 NL,490,14.24,NL,-0.1106
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.200:8080#[10248][GB][0][SS][None][ext_raw.githubusercontent.com][2026-08-25][2026-08-25 00:33],489,14.17,NL,-0.1106
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.183:8080#%F0%9F%87%B3%F0%9F%87%B1NL_49%7C400KB%2Fs,492,14.36,NL,-0.1106
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@193.29.139.151:8080#%F0%9F%87%B3%F0%9F%87%B1NL_17%7C259KB%2Fs%7CA004-260618%2001,490,14.22,NL,-0.1107
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@193.29.139.238:8080#MTMVPN🧷,497,14.68,NL,-0.1107
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.183:8080#%F0%9F%87%B3%F0%9F%87%B1NL_41%7C184KB%2Fs%2001,490,14.21,NL,-0.1107
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.182:8080#%F0%9F%87%B3%F0%9F%87%B168426,491,14.28,NL,-0.1107
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.182:8080#v2go%20%7C%20%F0%9F%87%B3%F0%9F%87%B1%20NL%20%7C%20SS%20%7C%20466,486,13.94,NL,-0.1107
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.200:8080#EPODONIOS,491,14.27,NL,-0.1108
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.200:8080#[9716][GB][0][SS][None][SafeNet_Server][2026-07-04][2026-08-16 00:34],489,14.13,NL,-0.1108
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@193.29.139.204:8080#[10539][NL][0][SS][None][ext_raw.githubusercontent.com][2026-08-25][2026-08-25 00:33],489,14.13,NL,-0.1108
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.182:8080#%f0%9f%87%b3%f0%9f%87%b1%20NL%2015,490,14.19,NL,-0.1108
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.185:8080#EPODONIOS,490,14.19,NL,-0.1109
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.185:8080#%F0%9F%87%B3%F0%9F%87%B1NL_138%7C457KB%2Fs%7CA004-260618%2001,491,14.26,NL,-0.1109
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@193.29.139.238:8080#[10553][NL][0][SS][None][proxy_mtm][2026-08-23][2026-08-25 00:33],493,14.37,NL,-0.1110
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.162:443#GB   SHADOWSOCKS-TCP-NTLS  82.38.31.162,490,14.17,NL,-0.1110
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.47:8080#🇳🇱 340 - NL - SS/AEAD - 8080,491,14.20,NL,-0.1112
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo0YTJyZml4b3BoZGpmZmE4S1ZBNEFh@193.29.139.234:8080#[6500][NL][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],499,14.72,NL,-0.1113
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@193.29.139.238:8080#🔥Join+Telegram:@Farah_VPN🟣,496,14.51,NL,-0.1113
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.201:8080#%5BOpenRay%5D%20%F0%9F%87%B3%F0%9F%87%B1%20NL-10104,496,14.50,NL,-0.1114
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.162:443#[10024][GB][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],494,14.37,NL,-0.1114
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.185:8080#NL Da109,490,14.10,NL,-0.1114
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.185:8080#%F0%9F%87%B3%F0%9F%87%B1NL_36%7C532KB%2Fs%7CA004-260618,491,14.16,NL,-0.1114
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.39:8080#[10681][GB][0][SS][None][ext_raw.githubusercontent.com][2026-08-25][2026-08-25 00:33],489,14.03,NL,-0.1114
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.162:443#Join+Telegram:@Farah_VPN,497,14.56,NL,-0.1114
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.183:8080#%f0%9f%87%b3%f0%9f%87%b1%20NL%2016,496,14.49,NL,-0.1115
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.47:8080#🇳🇱 343 - NL - SS/AEAD - 8080,494,14.35,NL,-0.1115
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@193.29.139.165:8080#🚀 @LetsGetVPN @CyberSecPlayground | 🌍 🇳🇱 NL,488,13.95,NL,-0.1115
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.47:8080#🇳🇱 339 - NL - SS/AEAD - 8080,499,14.67,NL,-0.1116
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.46:8080#🚀 @LetsGetVPN @CyberSecPlayground | 🌍 🇬🇧 GB,496,14.46,NL,-0.1117
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.11:443#🇬🇬 💥Config_jo-98,495,14.38,NL,-0.1117
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.46:8080#v2go%20%7C%20%F0%9F%87%B3%F0%9F%87%B1%20NL%20%7C%20SS%20%7C%20403,487,13.84,NL,-0.1118
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.11:443#EPODONIOS,491,14.09,NL,-0.1119
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.39:8080#4Mohsen-85fa1a4913,496,14.41,NL,-0.1119
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpRQ1hEeHVEbFRUTUQ3anRnSFVqSW9q@193.29.139.212:8080#%F0%9F%87%B3%F0%9F%87%B1NL_196%7C359KB%2Fs%7CA004-260618%2001,499,14.61,NL,-0.1119
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.206:8080#NL Da183,495,14.33,NL,-0.1120
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.182:8080#%5BOpenRay%5D%20%F0%9F%87%B3%F0%9F%87%B1%20NL-8078,493,14.16,NL,-0.1122
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.206:8080#%F0%9F%87%B3%F0%9F%87%B1NL_109%7C289KB%2Fs%7CA004-260618%2001,498,14.48,NL,-0.1123
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.47:8080#v2go%20%7C%20%F0%9F%87%B3%F0%9F%87%B1%20NL%20%7C%20SS%20%7C%20492,494,14.21,NL,-0.1123
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@193.29.139.204:8080# Join+Telegram:@SolVPN,489,13.86,NL,-0.1125
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.206:8080#[10282][GB][0][SS][None][ext_raw.githubusercontent.com][2026-08-25][2026-08-25 00:33],499,14.52,NL,-0.1125
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.200:8080#%5BOpenRay%5D%20%F0%9F%87%B3%F0%9F%87%B1%20NL-8634,498,14.45,NL,-0.1125
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.162:443#[10618][GB][0][SS][None][ext_raw.githubusercontent.com][2026-08-25][2026-08-25 00:33],495,14.25,NL,-0.1125
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.162:443#[10030][GB][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],503,14.78,NL,-0.1125
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.182:8080#🇳🇱 205 - NL - SS/AEAD - 8080,494,14.17,NL,-0.1126
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.206:8080#@v2rayngvpn_1,497,14.35,NL,-0.1127
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.203:8080#%E6%9C%AA%E7%9F%A5%20SS-233%20%7C%20free-nodes,498,14.40,NL,-0.1128
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.11:443#v2go%20%7C%20%F0%9F%87%B3%F0%9F%87%B1%20NL%20%7C%20SS%20%7C%20150,499,14.46,NL,-0.1128
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.47:8080#Join+Telegram:@Farah_VPN,495,14.17,NL,-0.1130
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.185:8080#4Nika-9053e71782,500,14.49,NL,-0.1131
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.206:8080#4Kian-24fdbc1c1c,492,13.89,NL,-0.1135
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@193.29.139.204:8080#4FreeIran-ddef586a68,490,13.76,NL,-0.1135
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@193.29.139.132:8080#%F0%9F%87%B3%F0%9F%87%B1NL_63%7C448KB%2Fs%7CB007-260618,499,14.32,NL,-0.1137
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo0YTJyZml4b3BoZGpmZmE4S1ZBNEFh@193.29.139.234:8080#%F0%9F%87%B3%F0%9F%87%B1NL_65%7C413KB%2Fs%7CA004-260618,487,13.52,NL,-0.1137
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.185:8080#@icv2ray,499,14.29,NL,-0.1139
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.162:443#[10027][GB][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],506,14.74,NL,-0.1140
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.183:8080#🇳🇱 206 - NL - SS/AEAD - 8080,490,13.65,NL,-0.1141
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.39:8080#v2go%20%7C%20%F0%9F%87%B3%F0%9F%87%B1%20NL%20%7C%20SS%20%7C%20228,493,13.84,NL,-0.1142
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.39:8080#[10097][GB][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],497,14.10,NL,-0.1142
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.162:443#%3E%3E%40V2rayNG3%3A%3AXX,499,14.23,NL,-0.1142
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.39:8080#NL Da465,493,13.83,NL,-0.1142
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.185:8080#%5BOpenRay%5D%20%F0%9F%87%B3%F0%9F%87%B1%20NL-8048,499,14.16,NL,-0.1146
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.206:8080#%F0%9F%87%B3%F0%9F%87%B1NL_34%7C302KB%2Fs%7CA004-260618,493,13.68,NL,-0.1151
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.200:8080#[9715][GB][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],501,14.18,NL,-0.1153
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@193.29.139.238:8080#🇳🇱[openproxylist.com] ss-NL,495,13.78,NL,-0.1153
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@193.29.139.151:8080#4FreeIran-5054ebcc23,501,14.16,NL,-0.1154
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTprMWRCT21PQjRvcWk3VW1wMzdhMWJR@82.38.31.182:8080#%F0%9F%87%B3%F0%9F%87%B1NL_59%7C114KB%2Fs%7CA004-260618,501,14.12,NL,-0.1157
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo0YTJyZml4b3BoZGpmZmE4S1ZBNEFh@193.29.139.234:8080#v2go%20%7C%20%F0%9F%87%B3%F0%9F%87%B1%20NL%20%7C%20SS%20%7C%20458,491,13.44,NL,-0.1158
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.46:8080#[10687][GB][0][SS][None][ext_raw.githubusercontent.com][2026-08-25][2026-08-25 00:33],494,13.57,NL,-0.1162
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.46:8080#[10113][GB][0][SS][None][mehrosaboran][2026-07-19][2026-08-16 00:34],490,13.07,NL,-0.1176
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.11:443#%3E%3E%40oneclickvpnkeys%3A%3AXX,496,13.11,NL,-0.1197
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpDSm1UQ0N4N0x0dWQ=@108.181.58.239:8388#%F0%9F%8F%B3%EF%B8%8F%20ShatakVPN%20598864,653,15.67,NL,-0.1672
+ss://YWVzLTI1Ni1nY206aXR6dnBuQDMyMQ@51.83.192.80:8388#FR   SHADOWSOCKS-TCP-NTLS - OVH SAS  51.83.192.80,510,13.83,PL,-0.1210
+ss://YWVzLTI1Ni1nY206aXR6dnBuQDMyMQ@51.83.192.80:8388#@meliproxyy,513,13.97,PL,-0.1214
+ss://YWVzLTI1Ni1nY206aXR6dnBuQDMyMQ@51.83.192.80:8388#EPODONIOS,512,13.62,PL,-0.1231
+ss://YWVzLTI1Ni1nY206aXR6dnBuQDMyMQ@51.83.192.80:8388#%3E%3E%40configV2rayNG%3A%3APL,529,13.74,PL,-0.1292
+ss://YWVzLTI1Ni1nY206aXR6dnBuQDMyMQ@51.83.192.80:8388#[16279][FR][0][SS][None][ext_raw.githubusercontent.com][2026-08-25][2026-08-25 00:33],1572,13.42,PL,-0.3195
+ss://YWVzLTI1Ni1nY206ODFhMjA0MjkxNjVkZjg3ZQ==@195.133.23.200:10889#%F0%9F%87%B7%F0%9F%87%BARU_12%7C385KB%2Fs%7CK001-260618,585,13.01,RU,-0.1560
+ss://YWVzLTI1Ni1nY206QXlsams1VWp2a0tFMW94TA==@192.124.176.247:8388#%F0%9F%87%B8%F0%9F%87%ACSG_123%7C477KB%2Fs%7CK001-260618,523,12.24,SG,-0.1358
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpiMWFlMGZjZS05MzQwLTRmMmUtODgyZC1mZGIyMjE4ZTJlMmI=@R3MRCG001287H3P.cybervena.com:50099#%5BOpenRay%5D%20%F0%9F%87%B9%F0%9F%87%BC%20TW-642,613,13.22,TW,-0.1659
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo3ZTczMWVjMy1mOGUxLTQzZjYtOTJjZi0zOTc4ZDE0NzA1YzQ@r3mrcg00129437x.cybervena.com:50099#%E6%9C%AA%E7%9F%A5%20SS-30%20%7C%20free-nodes,605,12.61,TW,-0.1663
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpHNXA2d3c0bzY3SEI=@108.181.118.10:8388#AutoAiVPN512,35,163.27,US,0.5860
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpHNXA2d3c0bzY3SEI=@108.181.118.10:8388#%F0%9F%87%A8%F0%9F%87%A6CA-108.181.118.10-0118,38,138.89,US,0.5848
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpHNXA2d3c0bzY3SEI=@108.181.118.10:8388#%F0%9F%87%A8%F0%9F%87%A6CA-108.181.118.10-0088,44,148.70,US,0.5824
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpHNXA2d3c0bzY3SEI=@108.181.118.10:8388#%5BOpenRay%5D%20%F0%9F%87%BA%F0%9F%87%B8%20US-15189,46,132.45,US,0.5816
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpHNXA2d3c0bzY3SEI=@108.181.118.10:8388#%F0%9F%87%BA%F0%9F%87%B8US_433%7C304KB%2Fs%7CA004-260618%2001,47,152.09,US,0.5812
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpHNXA2d3c0bzY3SEI=@108.181.118.10:8388#%F0%9F%87%BA%F0%9F%87%B8US_101%7C333KB%2Fs%7CA004-260618,48,124.22,US,0.5808
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpHNXA2d3c0bzY3SEI=@108.181.0.177:8388#[8487][US][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],52,153.85,US,0.5792
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpHNXA2d3c0bzY3SEI=@108.181.0.177:8388#[8486][US][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],57,145.99,US,0.5772
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpHNXA2d3c0bzY3SEI=@108.181.0.177:8388#[8992][US][0][SS][None][ext_raw.githubusercontent.com][2026-08-25][2026-08-25 00:33],81,164.61,US,0.5676
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpHNXA2d3c0bzY3SEI=@108.181.0.177:8388#%F0%9F%87%BA%F0%9F%87%B8US-108.181.0.177-0103,83,138.41,US,0.5668
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpHNXA2d3c0bzY3SEI=@108.181.0.177:8388#%F0%9F%87%BA%F0%9F%87%B8US_17%7C304KB%2Fs%7CA004-260618,84,168.07,US,0.5664
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpHNXA2d3c0bzY3SEI=@108.181.0.177:8388#%F0%9F%87%BA%F0%9F%87%B8US_47%7C224KB%2Fs%7CA004-260618%2001,85,133.33,US,0.5660
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpHNXA2d3c0bzY3SEI=@108.181.0.177:8388#EPODONIOS,87,110.80,US,0.5652
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpHNXA2d3c0bzY3SEI=@108.181.0.177:8388#🔥Join+Telegram:@Farah_VPN🟣,88,130.72,US,0.5648
+ss://MjAyMi1ibGFrZTMtY2hhY2hhMjAtcG9seTEzMDU6RW9WYnQ2bkdYQ0VtWHJDTUJ5RUlTNEdWZmVwbHl5ckNmZUlUYWRPMlRkOD0@129.146.202.210:50356#UN%E3%80%90%E6%9C%BA%E5%9C%BA%E6%8E%A8%E8%8D%90%EF%BC%9Ahttps%3A//a9a.xyz%E3%80%91146,92,105.26,US,0.5632
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@173.244.56.6:443#EPODONIOS,93,107.53,US,0.5628
+ss://2022-blake3-chacha20-poly1305:wTMVvzUy0p3hrZvmp7BFTxuctsht2XRmkPfDvcU5ZS0%3D@129.146.37.236:50356#%F0%9F%87%BA%F0%9F%87%B8US_504%7C417KB%2Fs%7CR002-260618,102,100.50,US,0.5592
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@173.244.56.6:443#[10608][US][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],102,100.76,US,0.5592
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@173.244.56.6:443#[11214][US][0][SS][None][ext_raw.githubusercontent.com][2026-08-25][2026-08-25 00:33],103,101.52,US,0.5588
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@173.244.56.9:443#@v2rayCrow,104,110.80,US,0.5584
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@173.244.56.9:443# Join+Telegram:@SolVPN,107,101.52,US,0.5572
+ss://MjAyMi1ibGFrZTMtY2hhY2hhMjAtcG9seTEzMDU6RW9WYnQ2bkdYQ0VtWHJDTUJ5RUlTNEdWZmVwbHl5ckNmZUlUYWRPMlRkOD0@129.146.202.210:50356#US   SHADOWSOCKS-TCP-NTLS - ORACLE-BMC-31898  129.146.202.210,85,98.52,US,0.5571
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@173.244.56.9:443#%F0%9F%87%BA%F0%9F%87%B8US-173.244.56.9-0126,108,111.11,US,0.5568
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@173.244.56.6:443#%F0%9F%87%BA%F0%9F%87%B8%20United%20States%20-%20Phoenix%20%F0%9F%8C%8E%20SS-TCP-NA%204%E2%83%A3,109,101.52,US,0.5564
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@173.244.56.6:443#%F0%9F%87%BA%F0%9F%87%B8US-173.244.56.6-0091,110,108.11,US,0.5560
+ss://MjAyMi1ibGFrZTMtY2hhY2hhMjAtcG9seTEzMDU6d1RNVnZ6VXkwcDNoclp2bXA3QkZUeHVjdHNodDJYUm1rUGZEdmNVNVpTMD0@129.146.37.236:50356#🇺🇸 💥Config_jo-96,111,106.67,US,0.5556
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@173.244.56.6:443#[10607][US][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],113,104.17,US,0.5548
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@173.244.56.9:443#🚀 @LetsGetVPN @CyberSecPlayground | 🌍 🇺🇸 US,113,103.90,US,0.5548
+ss://2022-blake3-chacha20-poly1305:EoVbt6nGXCEmXrCMByEIS4GVfeplyyrCfeITadO2Td8%3D@129.146.202.210:50356#%F0%9F%87%BA%F0%9F%87%B8US_555%7C176KB%2Fs%7CB007-260618,102,99.01,US,0.5533
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@173.244.56.6:443#[11216][US][0][SS][None][ext_raw.githubusercontent.com][2026-08-25][2026-08-25 00:33],106,99.26,US,0.5531
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpHNXA2d3c0bzY3SEI=@108.181.0.177:8388#%F0%9F%87%BA%F0%9F%87%B8US-108.181.0.177-0119,126,148.70,US,0.5496
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@173.244.56.6:443#%F0%9F%87%BA%F0%9F%87%B8US-173.244.56.6-0120,129,112.68,US,0.5484
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpHNXA2d3c0bzY3SEI=@108.181.0.177:8388#AutoAiVPN511,80,96.39,US,0.5463
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@173.244.56.9:443#%F0%9F%87%BA%F0%9F%87%B8US_4%7C124KB%2Fs%7CA004-260618,135,105.26,US,0.5460
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@173.244.56.9:443#🔥Join+Telegram:@Farah_VPN🟣,136,100.76,US,0.5456
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@173.244.56.6:443#Join+Telegram:@Farah_VPN,138,100.25,US,0.5448
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@173.244.56.9:443#[11219][US][0][SS][None][ext_raw.githubusercontent.com][2026-08-25][2026-08-25 00:33],140,112.99,US,0.5440
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@173.244.56.6:443#v2go%20%7C%20%F0%9F%87%BA%F0%9F%87%B8%20US%20%7C%20SS%20%7C%20285,90,96.62,US,0.5437
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@173.244.56.6:443#🚀 @LetsGetVPN @CyberSecPlayground | 🌍 🇺🇸 US,144,105.26,US,0.5424
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@173.244.56.6:443?note=--Telegram--@NetifyVPN--#[10609][US][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],144,102.04,US,0.5424
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@173.244.56.9:443#%F0%9F%87%BA%F0%9F%87%B8%20United%20States%20-%20Phoenix%20%F0%9F%8C%8E%20SS-TCP-NA%204%E2%83%A3,95,96.62,US,0.5417
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@173.244.56.6:443#%F0%9F%87%BA%F0%9F%87%B8US_193%7C308KB%2Fs%2001,148,115.27,US,0.5408
+ss://MjAyMi1ibGFrZTMtY2hhY2hhMjAtcG9seTEzMDU6RW9WYnQ2bkdYQ0VtWHJDTUJ5RUlTNEdWZmVwbHl5ckNmZUlUYWRPMlRkOD0@129.146.202.210:50356#🇺🇸[openproxylist.com] ss-US,92,96.15,US,0.5401
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@173.244.56.9:443#Join+Telegram:@Farah_VPN,151,103.36,US,0.5396
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@173.244.56.9:443#[10610][US][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],95,96.15,US,0.5389
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@173.244.56.6:443#🔥Join+Telegram:@Farah_VPN🟣,156,101.52,US,0.5376
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@173.244.56.6:443?note=--Telegram--@NetifyVPN--#[11217][US][0][SS][None][ext_raw.githubusercontent.com][2026-08-25][2026-08-25 00:33],158,101.52,US,0.5368
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@173.244.56.9:443#EPODONIOS,149,99.01,US,0.5345
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@173.244.56.9:443#v2go%20%7C%20%F0%9F%87%BA%F0%9F%87%B8%20US%20%7C%20SS%20%7C%20431,111,96.39,US,0.5339
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@173.244.56.9:443#%F0%9F%87%BA%F0%9F%87%B8US-173.244.56.9-0121,107,95.24,US,0.5286
+ss://MjAyMi1ibGFrZTMtY2hhY2hhMjAtcG9seTEzMDU6RW9WYnQ2bkdYQ0VtWHJDTUJ5RUlTNEdWZmVwbHl5ckNmZUlUYWRPMlRkOD0@129.146.202.210:50356#v2go%20%7C%20%F0%9F%87%BA%F0%9F%87%B8%20US%20%7C%20SS%20%7C%2091,99,94.56,US,0.5278
+ss://MjAyMi1ibGFrZTMtY2hhY2hhMjAtcG9seTEzMDU6RW9WYnQ2bkdYQ0VtWHJDTUJ5RUlTNEdWZmVwbHl5ckNmZUlUYWRPMlRkOD0@129.146.202.210:50356#🚀 @LetsGetVPN @CyberSecPlayground | 🌍 🇺🇸 US,97,89.89,US,0.5005
+ss://MjAyMi1ibGFrZTMtY2hhY2hhMjAtcG9seTEzMDU6L2doUHd6OWdVUzdadk03N3Rqcml2NHl6dkdUOVVvZjBVMGNzQWxKL1pFaz0@129.146.166.216:50356#🇺🇸 💥Config_jo-95,142,91.32,US,0.4911
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@173.244.56.6:443#[11215][US][0][SS][None][ext_raw.githubusercontent.com][2026-08-25][2026-08-25 00:33],150,91.74,US,0.4905
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@173.244.56.9:443#[11218][US][0][SS][None][ext_raw.githubusercontent.com][2026-08-25][2026-08-25 00:33],138,90.70,US,0.4890
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@173.244.56.9:443#[11220][US][0][SS][None][ext_raw.githubusercontent.com][2026-08-25][2026-08-25 00:33],133,89.49,US,0.4837
+ss://MjAyMi1ibGFrZTMtY2hhY2hhMjAtcG9seTEzMDU6d1RNVnZ6VXkwcDNoclp2bXA3QkZUeHVjdHNodDJYUm1rUGZEdmNVNVpTMD0=@129.146.37.236:50356#🇺🇸[openproxylist.com] ss-US,88,83.86,US,0.4679
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@173.244.56.9:443#%F0%9F%87%BA%F0%9F%87%B8US_182%7C282KB%2Fs%7CA004-260618%2001,104,84.57,US,0.4658
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpiUVpsN0hEeFNhYnIxRnVyVFlRSEZV@216.105.168.18:443#Channel id:  🇺🇸,42,76.63,US,0.4430
+ss://MjAyMi1ibGFrZTMtY2hhY2hhMjAtcG9seTEzMDU6d1RNVnZ6VXkwcDNoclp2bXA3QkZUeHVjdHNodDJYUm1rUGZEdmNVNVpTMD0=@129.146.37.236:50356#🔥Join+Telegram:@Farah_VPN🟣,95,79.68,US,0.4401
+ss://MjAyMi1ibGFrZTMtY2hhY2hhMjAtcG9seTEzMDU6d1RNVnZ6VXkwcDNoclp2bXA3QkZUeHVjdHNodDJYUm1rUGZEdmNVNVpTMD0=@129.146.37.236:50356#v2go%20%7C%20%F0%9F%87%BA%F0%9F%87%B8%20US%20%7C%20SS%20%7C%20456,93,74.77,US,0.4114
+ss://MjAyMi1ibGFrZTMtY2hhY2hhMjAtcG9seTEzMDU6L2doUHd6OWdVUzdadk03N3Rqcml2NHl6dkdUOVVvZjBVMGNzQWxKL1pFaz0=@129.146.166.216:50356#🚀 @LetsGetVPN @CyberSecPlayground | 🌍 🇺🇸 US,101,71.68,US,0.3897
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpiUVpsN0hEeFNhYnIxRnVyVFlRSEZV@216.105.168.18:443#[9356][US][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],40,64.72,US,0.3723
+ss://YWVzLTI1Ni1nY206MEExWE1xQ2htVVJ1UkNoZQ==@154.12.240.141:443#%F0%9F%87%BA%F0%9F%87%B8US_359%7C122KB%2Fs%7CA004-260618,67,62.60,US,0.3488
+ss://2022-blake3-chacha20-poly1305:%2FghPwz9gUS7ZvM77tjriv4yzvGT9Uof0U0csAlJ%2FZEk%3D@129.146.166.216:50356#%F0%9F%87%BA%F0%9F%87%B8US_530%7C357KB%2Fs%7CS001-260618,104,64.62,US,0.3461
+ss://MjAyMi1ibGFrZTMtY2hhY2hhMjAtcG9seTEzMDU6L2doUHd6OWdVUzdadk03N3Rqcml2NHl6dkdUOVVvZjBVMGNzQWxKL1pFaz0=@129.146.166.216:50356#🇺🇸[openproxylist.com] ss-US,105,62.31,US,0.3318
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpiUVpsN0hEeFNhYnIxRnVyVFlRSEZV@216.105.168.18:443#US Da306,57,57.14,US,0.3201
+ss://MjAyMi1ibGFrZTMtY2hhY2hhMjAtcG9seTEzMDU6L2doUHd6OWdVUzdadk03N3Rqcml2NHl6dkdUOVVvZjBVMGNzQWxKL1pFaz0@129.146.166.216:50356#US   SHADOWSOCKS-TCP-NTLS - ORACLE-BMC-31898  129.146.166.216,105,59.35,US,0.3141
+ss://MjAyMi1ibGFrZTMtY2hhY2hhMjAtcG9seTEzMDU6d1RNVnZ6VXkwcDNoclp2bXA3QkZUeHVjdHNodDJYUm1rUGZEdmNVNVpTMD0@129.146.37.236:50356#US   SHADOWSOCKS-TCP-NTLS - ORACLE-BMC-31898  129.146.37.236,99,57.06,US,0.3028
+ss://MjAyMi1ibGFrZTMtY2hhY2hhMjAtcG9seTEzMDU6L2doUHd6OWdVUzdadk03N3Rqcml2NHl6dkdUOVVvZjBVMGNzQWxKL1pFaz0=@129.146.166.216:50356#🔥Join+Telegram:@Farah_VPN🟣,102,55.48,US,0.2921
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@156.146.38.170:443#[11204][US][0][SS][None][ext_raw.githubusercontent.com][2026-08-25][2026-08-25 00:33],127,56.82,US,0.2901
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@156.146.38.170:443#AutoAiVPN267906,133,56.50,US,0.2858
+ss://YWVzLTI1Ni1nY206MEExWE1xQ2htVVJ1UkNoZQ==@154.12.240.141:443#EPODONIOS,132,55.87,US,0.2824
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@156.146.38.168:443#🚀 @LetsGetVPN @CyberSecPlayground | 🌍 🇺🇸 US,135,55.71,US,0.2803
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@156.146.38.167:443#@v2Source,127,54.42,US,0.2757
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@156.146.38.170:443#[11203][US][0][SS][None][ext_raw.githubusercontent.com][2026-08-25][2026-08-25 00:33],144,55.40,US,0.2748
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@156.146.38.169:443#[10597][US][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],126,54.13,US,0.2744
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@156.146.38.168:443#[10593][US][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],142,55.02,US,0.2733
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@156.146.38.170:443#%F0%9F%87%BA%F0%9F%87%B8US-156.146.38.170-0155,138,54.72,US,0.2731
+ss://MjAyMi1ibGFrZTMtY2hhY2hhMjAtcG9seTEzMDU6L2doUHd6OWdVUzdadk03N3Rqcml2NHl6dkdUOVVvZjBVMGNzQWxKL1pFaz0=@129.146.166.216:50356#v2go%20%7C%20%F0%9F%87%BA%F0%9F%87%B8%20US%20%7C%20SS%20%7C%20455,102,52.29,US,0.2729
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@156.146.38.168:443#[10591][US][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],125,53.26,US,0.2696
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M@156.146.38.167:443#EPODONIOS,132,53.62,US,0.2689
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@156.146.38.168:443#[11200][US][0][SS][None][ext_raw.githubusercontent.com][2026-08-25][2026-08-25 00:33],132,53.55,US,0.2685
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@156.146.38.170:443#%F0%9F%87%BA%F0%9F%87%B8US_100%7C225KB%2Fs,127,53.19,US,0.2683
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M@156.146.38.167:443#[10666][US][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],130,53.26,US,0.2676
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@156.146.38.169:443#EPODONIOS,143,53.98,US,0.2667
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@156.146.38.169:443#[10596][US][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],135,53.40,US,0.2664
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M@156.146.38.167:443#[10665][US][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],126,52.49,US,0.2646
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@156.146.38.169:443#Join+Telegram:@Farah_VPN,133,52.91,US,0.2643
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M@156.146.38.167:443#Join+Telegram:@Farah_VPN,136,52.98,US,0.2635
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@156.146.38.170:443#🔥Join+Telegram:@Farah_VPN🟣,142,53.05,US,0.2615
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@156.146.38.168:443# SS-TCP-NA  US-156.146.38.168:443,144,53.12,US,0.2611
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@156.146.38.167:443#[10589][US][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],141,52.91,US,0.2611
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@156.146.38.167:443#%F0%9F%87%BA%F0%9F%87%B8US-156.146.38.167-5182,135,52.49,US,0.2610
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@156.146.38.168:443#[10592][US][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],132,52.29,US,0.2609
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M@156.146.38.167:443#%F0%9F%87%BA%F0%9F%87%B8US-156.146.38.167-0090,140,52.70,US,0.2602
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M@156.146.38.167:443#[10667][US][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],127,51.75,US,0.2597
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@156.146.38.170:443#EPODONIOS,132,52.02,US,0.2593
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@156.146.38.169:443#%F0%9F%87%BA%F0%9F%87%B8US_40%7C95KB%2Fs%2001,127,51.68,US,0.2593
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpxQjJDdjlWSWx1amo@23.150.248.20:8388#EPODONIOS,174,54.79,US,0.2592
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@156.146.38.168:443#EPODONIOS,139,52.42,US,0.2589
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@156.146.38.170:443#%F0%9F%87%BA%F0%9F%87%B8US_41%7C105KB%2Fs%2001,141,52.42,US,0.2581
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@156.146.38.169:443#%F0%9F%87%BA%F0%9F%87%B8%20United%20States%20-%20Dallas%20%F0%9F%8C%8E%20SS-TCP-NA%204%E2%83%A3,134,51.95,US,0.2581
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@156.146.38.167:443#🔥Join+Telegram:@Farah_VPN🟣,129,51.41,US,0.2569
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@156.146.38.168:443#%F0%9F%87%BA%F0%9F%87%B8US-156.146.38.168-5184,129,51.41,US,0.2569
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@156.146.38.168:443#%F0%9F%87%BA%F0%9F%87%B8%20United%20States%20-%20Dallas%20%F0%9F%8C%8E%20SS-TCP-NA%204%E2%83%A3,131,51.55,US,0.2569
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@156.146.38.167:443#[11197][US][0][SS][None][ext_raw.githubusercontent.com][2026-08-25][2026-08-25 00:33],128,51.22,US,0.2561
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@156.146.38.167:443#[11196][US][0][SS][None][ext_raw.githubusercontent.com][2026-08-25][2026-08-25 00:33],140,52.02,US,0.2561
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M@156.146.38.167:443#4Mohsen-ed88f70fa4,131,51.35,US,0.2557
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@156.146.38.167:443#[10588][US][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],130,51.22,US,0.2553
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@156.146.38.167:443#%F0%9F%87%BA%F0%9F%87%B8US-156.146.38.167-0131,134,51.48,US,0.2553
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@156.146.38.167:443#Join+Telegram:@Farah_VPN,136,51.48,US,0.2545
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpxQjJDdjlWSWx1amo@23.150.248.20:8388#🚀 @LetsGetVPN @CyberSecPlayground | 🌍 🇺🇸 US,135,51.28,US,0.2537
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@156.146.38.170:443# Join+Telegram:@SolVPN,134,51.15,US,0.2533
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@156.146.38.168:443#%F0%9F%87%BA%F0%9F%87%B8US_309%7C118KB%2Fs,138,51.41,US,0.2533
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M@156.146.38.167:443#[11266][US][0][SS][None][ext_raw.githubusercontent.com][2026-08-25][2026-08-25 00:33],140,51.55,US,0.2533
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@156.146.38.170:443#v2go%20%7C%20%F0%9F%87%BA%F0%9F%87%B8%20US%20%7C%20SS%20%7C%20387,127,50.63,US,0.2530
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@156.146.38.167:443#%F0%9F%87%BA%F0%9F%87%B8US_3%7C261KB%2Fs%7CA004-260618,134,50.96,US,0.2521
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@156.146.38.169:443# Join+Telegram:@SolVPN,129,50.44,US,0.2510
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@156.146.38.169:443#🔥Join+Telegram:@Farah_VPN🟣,131,50.51,US,0.2506
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@156.146.38.167:443#[10590][US][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],146,51.48,US,0.2505
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@156.146.38.168:443# Join+Telegram:@SolVPN,136,50.63,US,0.2494
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@156.146.38.170:443#[10599][US][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],136,50.57,US,0.2490
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@156.146.38.170:443#%F0%9F%87%BA%F0%9F%87%B8US-156.146.38.170-5183,138,50.70,US,0.2490
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@156.146.38.167:443#%F0%9F%87%BA%F0%9F%87%B8US_46%7C478KB%2Fs%7CA004-260618%2001,131,50.19,US,0.2487
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@156.146.38.167:443#EPODONIOS,133,50.19,US,0.2479
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@156.146.38.168:443#%F0%9F%87%BA%F0%9F%87%B8US-156.146.38.168-0651,134,50.13,US,0.2472
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@156.146.38.168:443#%F0%9F%87%BA%F0%9F%87%B8US_269%7C339KB%2Fs%2001,181,53.19,US,0.2467
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@156.146.38.168:443#🔥Join+Telegram:@Farah_VPN🟣,126,49.44,US,0.2463
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@156.146.38.168:443#Join+Telegram:@Farah_VPN,128,49.50,US,0.2458
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@156.146.38.169:443#%F0%9F%87%BA%F0%9F%87%B8US-156.146.38.169-0148,142,50.31,US,0.2451
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@156.146.38.169:443#v2go%20%7C%20%F0%9F%87%BA%F0%9F%87%B8%20US%20%7C%20SS%20%7C%20388,129,49.44,US,0.2451
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@156.146.38.169:443#@V2rayi_net,132,49.57,US,0.2446
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@156.146.38.170:443#%F0%9F%87%BA%F0%9F%87%B8%20United%20States%20-%20Dallas%20%F0%9F%8C%8E%20SS-TCP-NA%204%E2%83%A3,136,49.69,US,0.2437
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpxQjJDdjlWSWx1amo=@23.150.248.20:8388#%F0%9F%87%BA%F0%9F%87%B8US_575%7C238KB%2Fs%7CA004-260618%2001,171,52.02,US,0.2437
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@156.146.38.169:443#%F0%9F%87%BA%F0%9F%87%B8US_99%7C418KB%2Fs,144,50.13,US,0.2432
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M@156.146.38.167:443#US   SHADOWSOCKS-TCP-NTLS - Datacamp Limited  156.146.38.167,139,49.57,US,0.2418
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@156.146.38.167:443# SS-TCP-NA  US-156.146.38.167:443,130,48.96,US,0.2418
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@156.146.38.169:443#[10594][US][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],136,49.26,US,0.2412
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@156.146.38.167:443#AutoAiVPN237247,128,48.72,US,0.2411
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M@156.146.38.167:443#US Da359,127,48.60,US,0.2408
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@156.146.38.168:443#v2go%20%7C%20%F0%9F%87%BA%F0%9F%87%B8%20US%20%7C%20SS%20%7C%20300,129,48.37,US,0.2386
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@156.146.38.169:443#[11201][US][0][SS][None][ext_raw.githubusercontent.com][2026-08-25][2026-08-25 00:33],131,48.31,US,0.2375
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@156.146.38.167:443#v2go%20%7C%20%F0%9F%87%BA%F0%9F%87%B8%20US%20%7C%20SS%20%7C%20357,135,48.37,US,0.2362
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpxQjJDdjlWSWx1amo=@23.150.248.20:8388#[10198][US][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],178,51.22,US,0.2361
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@156.146.38.169:443#[11202][US][0][SS][None][ext_raw.githubusercontent.com][2026-08-25][2026-08-25 00:33],137,48.02,US,0.2333
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpxQjJDdjlWSWx1amo@23.150.248.20:8388#4Kian-5b97ef609a,134,47.56,US,0.2318
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpxQjJDdjlWSWx1amo@23.150.248.20:8388#[10199][US][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],179,49.81,US,0.2273
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpxQjJDdjlWSWx1amo@23.150.248.20:8388#[10203][US][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],135,46.46,US,0.2247
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpxQjJDdjlWSWx1amo@23.150.248.20:8388#US   SHADOWSOCKS-TCP-NTLS - AS-GLOBALTELEHOST  23.150.248.20,173,48.72,US,0.2231
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@156.146.38.167:443#[11198][US][0][SS][None][ext_raw.githubusercontent.com][2026-08-25][2026-08-25 00:33],129,45.66,US,0.2224
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpxQjJDdjlWSWx1amo@23.150.248.20:8388#[10202][US][0][SS][None][ShadowProxy66][2026-08-12][2026-08-16 00:34],173,48.48,US,0.2217
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@156.146.38.168:443#%F0%9F%87%BA%F0%9F%87%B8US-156.146.38.168-0147,173,48.48,US,0.2217
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@156.146.38.169:443#AutoAiVPN98319,143,46.08,US,0.2193
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpxQjJDdjlWSWx1amo@23.150.248.20:8388#v2go%20%7C%20%F0%9F%87%BA%F0%9F%87%B8%20US%20%7C%20SS%20%7C%20478,177,47.96,US,0.2170
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpxQjJDdjlWSWx1amo@23.150.248.20:8388#Join+Telegram:@Farah_VPN,174,46.67,US,0.2104
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpxQjJDdjlWSWx1amo@23.150.248.20:8388#[10204][US][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],180,46.57,US,0.2074
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpxQjJDdjlWSWx1amo=@23.150.248.20:8388#%F0%9F%87%BA%F0%9F%87%B8US_191%7C122KB%2Fs%7CA004-260618,217,49.02,US,0.2073
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpxQjJDdjlWSWx1amo@23.150.248.20:8388#🔥Join+Telegram:@Farah_VPN🟣,180,44.44,US,0.1947
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpxQjJDdjlWSWx1amo@23.150.248.20:8388#[10201][US][0][SS][None][oneclickvpnkeys][2026-08-15][2026-08-16 00:34],221,46.40,US,0.1900
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpYRjBrbHc3ODcwdlhuM3VRSXhlMTlR@193.42.38.209:1080#v2go%20%7C%20%F0%9F%87%BA%F0%9F%87%B8%20US%20%7C%20SS%20%7C%20464,433,59.79,US,0.1855
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpxQjJDdjlWSWx1amo@23.150.248.20:8388#[10200][US][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],173,41.24,US,0.1782
+ss://YWVzLTI1Ni1nY206SGk5d2sxNFZudHpHcTdrcQ@154.12.242.150:443#@Vpn_Tehran ❤️ ایرانسل,75,33.14,US,0.1688
+ss://MjAyMi1ibGFrZTMtY2hhY2hhMjAtcG9seTEzMDU6d1RNVnZ6VXkwcDNoclp2bXA3QkZUeHVjdHNodDJYUm1rUGZEdmNVNVpTMD0=@129.146.37.236:50356#🚀 @LetsGetVPN @CyberSecPlayground | 🌍 🇺🇸 US,98,32.84,US,0.1578
+ss://YWVzLTI1Ni1nY206a1JLWkUzWmhFQ3dhd3kxTg@94.72.127.55:80,147,29.76,US,0.1198
+ss://YWVzLTI1Ni1nY206SGk5d2sxNFZudHpHcTdrcQ@154.12.242.150:443#@meliproxyy,135,28.29,US,0.1157
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@37.19.198.236:443#%F0%9F%87%BA%F0%9F%87%B8US-37.19.198.236-0165,217,33.25,US,0.1127
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpZSHRlc1owcXZndGc=@38.180.135.156:8388#%F0%9F%87%BA%F0%9F%87%B8US_200%7C388KB%2Fs%7CB007-260618,223,33.61,US,0.1125
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpZSHRlc1owcXZndGc=@38.180.135.156:8388#[9595][US][0][SS][None][ext_raw.githubusercontent.com][2026-08-25][2026-08-25 00:33],224,33.61,US,0.1121
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@37.19.198.160:443# SS-TCP-NA  US-37.19.198.160:443,222,33.17,US,0.1102
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M@37.19.198.243:443#[11301][US][0][SS][None][ext_raw.githubusercontent.com][2026-08-25][2026-08-25 00:33],223,33.17,US,0.1098
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@37.19.198.244:443#%F0%9F%87%BA%F0%9F%87%B8US-37.19.198.244-0667,220,32.92,US,0.1095
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpZSHRlc1owcXZndGc@38.180.135.156:8388#[9117][US][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],224,33.17,US,0.1094
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@37.19.198.160:443#%F0%9F%87%BA%F0%9F%87%B8US_127%7C328KB%2Fs%2001,216,32.52,US,0.1087
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@37.19.198.160:443#%F0%9F%87%BA%F0%9F%87%B8US_1%7C279KB%2Fs,225,33.03,US,0.1082
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@37.19.198.244:443#%F0%9F%87%BA%F0%9F%87%B8US_334%7C265KB%2Fs%7CA004-260618,224,32.95,US,0.1081
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@37.19.198.244:443#EPODONIOS,224,32.95,US,0.1081
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpZSHRlc1owcXZndGc@38.180.135.156:8388# Join+Telegram:@SolVPN,224,32.92,US,0.1079
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@37.19.198.243:443#%F0%9F%87%BA%F0%9F%87%B8%20United%20States%20-%20New%20York%20%F0%9F%8C%8E%20SS-TCP-NA%204%E2%83%A3,215,32.28,US,0.1077
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M@37.19.198.244:443#%F0%9F%8C%9F%20%40MTproxy22_v2ray,219,32.55,US,0.1077
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M@37.19.198.243:443#4Kian-6248ef66c6,221,32.55,US,0.1069
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpZSHRlc1owcXZndGc@38.180.135.156:8388#v2go%20%7C%20%F0%9F%87%BA%F0%9F%87%B8%20US%20%7C%20SS%20%7C%20295,223,32.68,US,0.1069
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@37.19.198.236:443#[10639][US][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],220,32.41,US,0.1065
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M@37.19.198.244:443#[10713][US][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],220,32.41,US,0.1065
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@37.19.198.160:443#%F0%9F%87%BA%F0%9F%87%B8%20United%20States%20-%20New%20York%20%F0%9F%8C%8E%20SS-TCP-NA%204%E2%83%A3,216,32.05,US,0.1059
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M@37.19.198.244:443#Join+Telegram:@Farah_VPN,220,32.28,US,0.1057
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@37.19.198.236:443#EPODONIOS,222,32.41,US,0.1057
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@37.19.198.160:443#US26%2021.1MB%2Fs,223,32.47,US,0.1056
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpZSHRlc1owcXZndGc@38.180.135.156:8388#4Sarina-b922938c93,218,32.13,US,0.1056
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M@37.19.198.243:443#[10709][US][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],221,32.28,US,0.1053
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@37.19.198.244:443#v2go%20%7C%20%F0%9F%87%BA%F0%9F%87%B8%20US%20%7C%20SS%20%7C%20157,225,32.52,US,0.1051
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@37.19.198.236:443#@TV_v2ray,220,32.18,US,0.1051
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@37.19.198.236:443#@Mester_V2ray,217,31.97,US,0.1050
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@37.19.198.160:443#[10634][US][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],221,32.23,US,0.1050
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpZSHRlc1owcXZndGc@38.180.135.156:8388#[9114][US][0][SS][None][vpnx44][2026-08-15][2026-08-16 00:34],226,32.55,US,0.1049
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@37.19.198.160:443#🚀 @LetsGetVPN @CyberSecPlayground | 🌍 🇺🇸 US,226,32.55,US,0.1049
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M@37.19.198.243:443#US Da432,221,32.21,US,0.1048
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@37.19.198.236:443#v2go%20%7C%20%F0%9F%87%BA%F0%9F%87%B8%20US%20%7C%20SS%20%7C%20181,217,31.92,US,0.1047
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@37.19.198.236:443#%F0%9F%87%BA%F0%9F%87%B8US_48%7C310KB%2Fs%7CA004-260618%2001,224,32.34,US,0.1044
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@37.19.198.160:443#v2go%20%7C%20%F0%9F%87%BA%F0%9F%87%B8%20US%20%7C%20SS%20%7C%20283,222,32.18,US,0.1043
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@37.19.198.243:443# SS-TCP-NA  US-37.19.198.243:443,221,32.10,US,0.1042
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M@37.19.198.244:443#[10714][US][0][SS][None][oneclickvpnkeys][2026-08-14][2026-08-16 00:34],221,32.10,US,0.1042
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@37.19.198.160:443#[11243][US][0][SS][None][ext_raw.githubusercontent.com][2026-08-25][2026-08-25 00:33],223,32.23,US,0.1042
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@37.19.198.236:443#[10638][US][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],223,32.23,US,0.1042
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@37.19.198.243:443#%F0%9F%87%BA%F0%9F%87%B8US_60%7C302KB%2Fs,223,32.21,US,0.1040
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@37.19.198.244:443#[10643][US][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],223,32.18,US,0.1039
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@37.19.198.236:443#[10637][US][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],221,32.03,US,0.1038
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@37.19.198.160:443#[11245][US][0][SS][None][ext_raw.githubusercontent.com][2026-08-25][2026-08-25 00:33],223,32.15,US,0.1037
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@37.19.198.243:443#%F0%9F%87%BA%F0%9F%87%B8US_171%7C241KB%2Fs%2001,220,31.95,US,0.1037
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@37.19.198.243:443#%F0%9F%87%BA%F0%9F%87%B8US-37.19.198.243-0663,222,32.08,US,0.1037
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M@37.19.198.244:443#4Nika-1bf960131d,226,32.34,US,0.1036
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@37.19.198.244:443#[10645][US][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],222,32.05,US,0.1035
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@37.19.198.160:443# Join+Telegram:@SolVPN,224,32.15,US,0.1033
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@37.19.198.243:443#%F0%9F%87%BA%F0%9F%87%B8US-37.19.198.243-0114,224,32.15,US,0.1033
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@37.19.198.244:443#[11251][US][0][SS][None][ext_raw.githubusercontent.com][2026-08-25][2026-08-25 00:33],224,32.15,US,0.1033
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@37.19.198.243:443#🔥Join+Telegram:@Farah_VPN🟣,225,32.18,US,0.1031
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpab1p0ZlBPeVZ2bUtBUlVO@140.82.63.79:8388#🇺🇸24 @shadowsockskeys,222,31.95,US,0.1029
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@37.19.198.243:443#Join+Telegram:@Farah_VPN,222,31.95,US,0.1029
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M@37.19.198.243:443#[11302][US][0][SS][None][oneclickvpnkeys][2026-08-19][2026-08-25 00:33],219,31.75,US,0.1029
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@37.19.198.236:443#[11246][US][0][SS][None][ext_raw.githubusercontent.com][2026-08-25][2026-08-25 00:33],223,32.00,US,0.1028
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@37.19.198.160:443#[10636][US][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],219,31.72,US,0.1027
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@37.19.198.236:443#🔥Join+Telegram:@Farah_VPN🟣,219,31.72,US,0.1027
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@37.19.198.236:443#%F0%9F%87%BA%F0%9F%87%B8%20United%20States%20-%20New%20York%20%F0%9F%8C%8E%20SS-TCP-NA%204%E2%83%A3,222,31.90,US,0.1026
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@37.19.198.244:443#Join+Telegram:@Farah_VPN,224,32.00,US,0.1024
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@37.19.198.160:443#[10635][US][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],218,31.60,US,0.1024
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M@37.19.198.243:443#[10711][US][0][SS][None][oneclickvpnkeys][2026-08-14][2026-08-16 00:34],225,32.00,US,0.1020
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@37.19.198.243:443#%F0%9F%87%BA%F0%9F%87%B8US-37.19.198.243-0161,223,31.85,US,0.1019
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@37.19.198.236:443#🚀 @LetsGetVPN @CyberSecPlayground | 🌍 🇺🇸 US,224,31.90,US,0.1018
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@37.19.198.160:443#🔥Join+Telegram:@Farah_VPN🟣,221,31.70,US,0.1018
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@37.19.198.243:443#v2go%20%7C%20%F0%9F%87%BA%F0%9F%87%B8%20US%20%7C%20SS%20%7C%20317,221,31.67,US,0.1016
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M@37.19.198.244:443#%F0%9F%87%BA%F0%9F%87%B8144621%20%7C%20%E2%9A%A1%EF%B8%8FTelegram%20%3D%20t.me%2FSOSkeyNET,223,31.80,US,0.1016
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpZSHRlc1owcXZndGc=@38.180.135.156:8388#%F0%9F%87%BA%F0%9F%87%B8US_586%7C152KB%2Fs%7CB007-260618%2001,226,31.95,US,0.1013
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@37.19.198.236:443#[10640][US][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],227,32.00,US,0.1012
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M@37.19.198.244:443#US Da291,220,31.52,US,0.1011
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M@37.19.198.244:443#******@AR14N24b,220,31.50,US,0.1010
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@37.19.198.243:443#[10642][US][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],223,31.70,US,0.1010
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@37.19.198.244:443#%F0%9F%87%BA%F0%9F%87%B8US-37.19.198.244-0162,228,31.97,US,0.1006
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpZSHRlc1owcXZndGc@38.180.135.156:8388#[9118][US][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],232,32.18,US,0.1003
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@37.19.198.160:443#%F0%9F%87%BA%F0%9F%87%B8US-37.19.198.160-0665,225,31.70,US,0.1002
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@37.19.198.160:443#%F0%9F%87%BA%F0%9F%87%B8US-37.19.198.160-0164,223,31.52,US,0.0999
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@37.19.198.244:443# Join+Telegram:@SolVPN,221,31.37,US,0.0998
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpZSHRlc1owcXZndGc@38.180.135.156:8388#@vpnbaz 🍋‍🟩,222,31.40,US,0.0996
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@37.19.198.244:443#%F0%9F%87%BA%F0%9F%87%B8%20United%20States%20-%20New%20York%20%F0%9F%8C%8E%20SS-TCP-NA%204%E2%83%A3,220,31.25,US,0.0995
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@37.19.198.160:443#[11244][US][0][SS][None][ext_raw.githubusercontent.com][2026-08-25][2026-08-25 00:33],220,31.13,US,0.0988
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@37.19.198.244:443# SS-TCP-NA  US-37.19.198.244:443,230,31.77,US,0.0986
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpSU281MlNieFc0MHI@108.181.57.93:8388#%5BOpenRay%5D%20%F0%9F%87%BA%F0%9F%87%B8%20US-15145,214,30.60,US,0.0980
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@37.19.198.244:443#%F0%9F%87%BA%F0%9F%87%B8US_256%7C173KB%2Fs%7CA004-260618%2001,223,31.06,US,0.0971
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpZSHRlc1owcXZndGc@38.180.135.156:8388#[9113][US][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],233,31.67,US,0.0968
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@37.19.198.236:443#[11248][US][0][SS][None][ext_raw.githubusercontent.com][2026-08-25][2026-08-25 00:33],222,30.86,US,0.0964
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@37.19.198.244:443#🔥Join+Telegram:@Farah_VPN🟣,221,30.67,US,0.0956
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpZSHRlc1owcXZndGc@38.180.135.156:8388#Join+Telegram:@Farah_VPN,236,31.67,US,0.0956
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@37.19.198.243:443#[10641][US][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],223,30.75,US,0.0953
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpZSHRlc1owcXZndGc@38.180.135.156:8388#[9119][US][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],229,31.08,US,0.0949
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@37.19.198.244:443#[10644][US][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],224,30.72,US,0.0947
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@37.19.198.236:443#@V2rayi_net,222,30.53,US,0.0944
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@37.19.198.160:443#EPODONIOS,222,30.49,US,0.0941
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@37.19.198.236:443#[11247][US][0][SS][None][ext_raw.githubusercontent.com][2026-08-25][2026-08-25 00:33],216,30.05,US,0.0939
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@37.19.198.236:443#Join+Telegram:@Farah_VPN,221,30.37,US,0.0938
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpSU281MlNieFc0MHI@108.181.57.93:8388#EPODONIOS,207,29.33,US,0.0932
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@37.19.198.244:443#%F0%9F%87%BA%F0%9F%87%B8US-37.19.198.244-0095,225,30.46,US,0.0928
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@37.19.198.244:443#🚀 @LetsGetVPN @CyberSecPlayground | 🌍 🇺🇸 US,224,30.40,US,0.0928
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpSU281MlNieFc0MHI@108.181.57.93:8388#4Nika-91c823a765,254,31.77,US,0.0890
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@37.19.198.243:443#🚀 @LetsGetVPN @CyberSecPlayground | 🌍 🇺🇸 US,225,29.81,US,0.0888
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@37.19.198.243:443#[11250][US][0][SS][None][ext_raw.githubusercontent.com][2026-08-25][2026-08-25 00:33],224,29.46,US,0.0871
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpSU281MlNieFc0MHI@108.181.57.93:8388# Join+Telegram:@SolVPN,255,30.79,US,0.0828
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpSU281MlNieFc0MHI@108.181.57.93:8388#Join+Telegram:@Farah_VPN,251,30.08,US,0.0801
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpZSHRlc1owcXZndGc@38.180.135.156:8388#🚀 @LetsGetVPN @CyberSecPlayground | 🌍 🇺🇸 US,241,29.01,US,0.0776
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpSU281MlNieFc0MHI=@108.181.57.93:8388#AutoAiVPN513,260,29.72,US,0.0743
+ss://YWVzLTI1Ni1nY206a1JLWkUzWmhFQ3dhd3kxTg==@94.72.127.55:443#🚀 @LetsGetVPN @CyberSecPlayground | 🌍 🇺🇸 US,333,34.39,US,0.0732
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpSU281MlNieFc0MHI@108.181.57.93:8388#🚀 @LetsGetVPN @CyberSecPlayground | 🌍 🇺🇸 US,256,28.59,US,0.0692
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpZSHRlc1owcXZndGc@38.180.135.156:8388#[9596][US][0][SS][None][vpnx44][2026-08-15][2026-08-25 00:33],307,31.55,US,0.0665
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpSU281MlNieFc0MHI@108.181.57.93:8388#US Da128,316,31.90,US,0.0650
+ss://YWVzLTI1Ni1nY206UFN3YXZUSFdEMG5rZmN5Vw==@62.146.171.57:80#%E2%9D%93Other_19%7C313KB%2Fs%7CA004-260618,131,18.67,US,0.0596
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpSU281MlNieFc0MHI@108.181.57.93:8388#[8799][US][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],328,30.51,US,0.0519
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpSU281MlNieFc0MHI@108.181.57.93:8388#v2go%20%7C%20%F0%9F%87%BA%F0%9F%87%B8%20US%20%7C%20SS%20%7C%20168,243,24.71,US,0.0510
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpoQ0NXT2NJc0s1d3JGejRPWDcwcldm@216.105.168.18:443#[9585][US][0][SS][None][ext_raw.githubusercontent.com][2026-08-16][2026-08-16 00:34],101,12.37,US,0.0338
+ss://YWVzLTI1Ni1nY206WEtGS2wyclVMaklwNzQ=@15.204.247.175:8008#%5BOpenRay%5D%20%F0%9F%87%BA%F0%9F%87%B8%20US-25455,262,21.42,US,0.0237
+ss://YWVzLTI1Ni1nY206Tnh2OHlwRXJSZkNTY3pENw==@154.53.60.212:80#%F0%9F%87%BA%F0%9F%87%B8US_388%7C189KB%2Fs%7CA004-260618,177,14.07,US,0.0136
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpZSHRlc1owcXZndGc@38.180.135.156:8388#[9120][US][0][SS][None][ShadowProxy66][2026-08-12][2026-08-16 00:34],246,17.57,US,0.0070
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpZSHRlc1owcXZndGc@38.180.135.156:8388#[9115][US][0][SS][None][vpnx44][2026-08-13][2026-08-16 00:34],234,14.35,US,-0.0075
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpZSHRlc1owcXZndGc@38.180.135.156:8388#[9597][US][0][SS][None][vpnx44][2026-08-13][2026-08-25 00:33],231,12.25,US,-0.0189
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpSU281MlNieFc0MHI@108.181.57.93:8388#🇺🇸 130 - US - SS/AEAD - 8388,1347,31.03,US,-0.2138
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpoQ0NXT2NJc0s1d3JGejRPWDcwcldm@216.105.168.18:443#Join+Telegram:@Farah_VPN,1104,12.37,US,-0.3258
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpoQ0NXT2NJc0s1d3JGejRPWDcwcldm@216.105.168.18:443#%F0%9F%87%BA%F0%9F%87%B8US-216.105.168.18-0155,3254,12.32,US,-0.3261
