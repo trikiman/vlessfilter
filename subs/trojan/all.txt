@@ -1,7 +1,5 @@
-trojan://5YauIFGqU5@65.109.179.105:444?security=none#%F0%9F%87%AB%F0%9F%87%AE%20%F0%9F%8E%AC%20%5B36.6%20mb%5D%20FI%20Finland
-trojan://humanity@188.114.98.0:443?host=www.calmlunch.com&path=%2Fassignment&sni=www.calmlunch.com&type=ws#%F0%9F%87%AB%F0%9F%87%B7%20%E2%9A%A1%20%5B68.5%20mb%5D%20FR%20France
-trojan://humanity@165.215.250.14:443?path=/assignment&security=tls&insecure=0&host=www.calmlunch.com&fp=chrome&type=ws&allowInsecure=0&sni=www.calmlunch.com#%F0%9F%87%AB%F0%9F%87%B7%20%E2%9A%A1%20%5B69.2%20mb%5D%20FR%20France
-trojan://humanity@www.calmlunch.com:443?path=/assignment&security=tls&insecure=0&host=www.calmlunch.com&type=ws&allowInsecure=0&sni=www.calmlunch.com#%F0%9F%87%AB%F0%9F%87%B7%20%E2%9A%A1%20%5B69.9%20mb%5D%20FR%20France
-trojan://5e19b3c8-c1dc-4163-95e2-895319c15d6c@45.90.216.147:8443?security=reality&sni=cloud.mail.ru&fp=firefox&pbk=jaZRUO7x7awSXNBlvKp3nXdm2gBEsEgmNbbYs7RRQlw&sid=8c3785d47c2017ec&spx=/&type=tcp&path=/#%F0%9F%87%B7%F0%9F%87%BA%20%F0%9F%93%BA%20%5B16.8%20mb%5D%20RU%20Russia
-trojan://EQ30679154@35.91.251.124:443?sni=sincere-gelding.rooster465.autos&fp=chrome&type=tcp&path=/#%F0%9F%87%BA%F0%9F%87%B8%20%F0%9F%8E%AC%20%5B26.0%20mb%5D%20US%20United%20States
-trojan://EQ30679154@sincere-gelding.rooster465.autos:443?sni=sincere-gelding.rooster465.autos&type=tcp&path=%2f#%F0%9F%87%BA%F0%9F%87%B8%20%F0%9F%8E%AC%20%5B25.6%20mb%5D%20US%20United%20States
+trojan://humanity@88.99.189.60:443?path=%2Fassignment&security=tls&insecure=0&host=www.calmlunch.com&type=ws&allowInsecure=0&sni=www.calmlunch.com#%F0%9F%87%AB%F0%9F%87%B7%20%F0%9F%8E%AC%20%5B40.2%20mb%5D%20FR%20France
+trojan://humanity@5.181.187.58:443?sni=www.calmlunch.com&type=ws&path=/assignment&fp=chrome#%F0%9F%87%AB%F0%9F%87%B7%20%F0%9F%8E%AC%20%5B44.5%20mb%5D%20FR%20France
+trojan://humanity@166.1.36.83:443/?type=ws&host=www.calmlunch.com&path=%2Fassignment&security=tls&sni=www.calmlunch.com#%F0%9F%87%AB%F0%9F%87%B7%20%F0%9F%8E%AC%20%5B26.0%20mb%5D%20FR%20France
+trojan://ba19c9d6-3fc0-4085-9f47-465c5d7cceef@108.162.198.99:443?type=ws&path=%2Fx7f9k2m4p8&host=ajp.hyas.space&security=tls&sni=ajp.hyas.space#%F0%9F%87%AF%F0%9F%87%B5%20%F0%9F%8E%AC%20%5B34.3%20mb%5D%20JP%20Japan
+trojan://5e19b3c8-c1dc-4163-95e2-895319c15d6c@ru.techdatacloud.org:8443?type=tcp&security=reality&pbk=jaZRUO7x7awSXNBlvKp3nXdm2gBEsEgmNbbYs7RRQlw&fp=firefox&sni=cloud.mail.ru&sid=8c3785d47c2017ec&spx=%2F#%F0%9F%87%B7%F0%9F%87%BA%20%F0%9F%93%BA%20%5B17.3%20mb%5D%20RU%20Russia
