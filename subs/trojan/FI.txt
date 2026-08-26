@@ -1,1 +1,1 @@
-trojan://MiTiVPN@104.18.32.47:443?path=/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/F-ls&security=tls&alpn=http/1.1&insecure=1&host=Fl--mitivpn-MiTiVPN---MiTiVPN-s-.aPp-cLoud.IR&fp=chrome&type=ws&allowInsecure=1&sni=fls-bbg--MiTiVPN---MiTiVPN-u.aPp-cLoud.IR#%F0%9F%87%AB%F0%9F%87%AE%20%F0%9F%8E%AC%20%5B36.8%20mb%5D%20FI%20Finland
+trojan://5YauIFGqU5@65.109.179.105:444?security=none#%F0%9F%87%AB%F0%9F%87%AE%20%F0%9F%8E%AC%20%5B36.6%20mb%5D%20FI%20Finland
