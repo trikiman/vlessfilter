@@ -1,1 +1,1 @@
-trojan://5YauIFGqU5@65.109.179.105:444?security=none#%F0%9F%87%AB%F0%9F%87%AE%20%F0%9F%8E%AC%20%5B36.6%20mb%5D%20FI%20Finland
+trojan://T4xc3GqCdx@188.114.97.6:8080?type=httpupgrade&security=none&path=%2F&host=max.azazilvpn.sbs.#%F0%9F%87%AB%F0%9F%87%AE%20%F0%9F%8E%AC%20%5B25.7%20mb%5D%20FI%20Finland
