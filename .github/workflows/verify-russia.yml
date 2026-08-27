@@ -15,8 +15,22 @@ name: verify-russia
 
 on:
   schedule:
-    # Every 30 min
-    - cron: '*/30 * * * *'
+    # Every 30 min, deliberately OFF the :00/:30 boundary.
+    #
+    # `*/30` is the single most contended cron expression on GitHub: every repo
+    # using it asks for the same two minutes of every hour, and scheduled runs
+    # are best-effort — GitHub drops them under load rather than queueing.
+    # Measured over 985 slots (2026-07-22..08-12): 708 of them (72%) produced NO
+    # RUN AT ALL. Not skipped, not cancelled, not timed out — never created
+    # (`skipped: 0, cancelled: 0, timed_out: 0` across 1273 runs). Median delay
+    # from the nominal slot was 11.8 min and only 13.4% landed within 2 min,
+    # which is the signature of shared-cron backoff rather than anything local.
+    #
+    # Minutes 7 and 37 are unpopular by comparison. Cron dispatch still cannot be
+    # made reliable — the `workflow_run` trigger below is what actually guarantees
+    # a run after every refresh — but this recovers a large share of lost slots
+    # for a one-line change.
+    - cron: '7,37 * * * *'
   workflow_dispatch:
     inputs:
       max_candidates:
