@@ -129,9 +129,23 @@ jobs:
           # Fetch igareck's pre-validated Reality+Vision RU whitelist as additional
           # bridge candidates. These are auto-curated by igareck's in-RU probe so
           # they're way fresher than our subs/RU.txt cycle.
+          # THREE bugs fixed 2026-08-20 (ALIVE-04). The pool landed at 6-11
+          # candidates and the working bridge was nearly always the SAME host —
+          # effectively a 1-2 endpoint dependency. When those decayed every
+          # candidate failed, the job set skip=true, and it STILL reported green:
+          # 33 runs (8.5% of successes) published nothing that way.
+          #   1. `>` truncated the file on EVERY loop iteration, so only the last
+          #      URL's candidates survived. Now `>>`, truncating once up front.
+          #   2. `grep '^vless://.*security=reality'` needs that literal on the
+          #      line; a file spelling Reality differently yielded ZERO. Widened
+          #      to all vless:// — a bridge only has to work, and every candidate
+          #      is liveness-probed below anyway.
+          #   3. `head -10` capped each file at 10 BEFORE dedup, which then
+          #      removed most of them. Raised to 40.
+          : > /tmp/igareck-bridges.txt
           for f in Vless-Reality-White-Lists-Rus-Mobile.txt Vless-Reality-White-Lists-Rus-Mobile-2.txt; do
             curl -sSL --max-time 15 "https://raw.githubusercontent.com/igareck/vpn-configs-for-russia/main/$f" 2>/dev/null \
-              | grep -E '^vless://.*security=reality' | head -10 > /tmp/igareck-bridges.txt 2>/dev/null || true
+              | grep -E '^vless://' | head -40 >> /tmp/igareck-bridges.txt 2>/dev/null || true
             while IFS= read -r line; do
               [ -z "$line" ] && continue
               hp=$(echo "$line" | grep -oE '@[^:?/#]+:[0-9]+' | head -1)
