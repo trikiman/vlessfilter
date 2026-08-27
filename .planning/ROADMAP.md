@@ -170,3 +170,87 @@ Bugs caught during execution (not predicted by research):
 - xray-knife `subs add` UNIQUE-constraint message format (broadened idempotency check)
 - xray-knife exits 1 on partial sub-fetch failure (added partial-tolerance)
 - `git.sanitize` infinite loop when replacement string contained search pattern (switched to regexp)
+
+---
+
+# Milestone v2.3 — subscription-95-in-client
+
+**Goal:** a subscription URL where ≥95% of keys connect in the operator's own
+v2rayN test, from their residential Russian line.
+
+**Ordering rationale:** phases 23-24 fix the instruments first. Re-tiering or
+publishing on top of a measurement that is 54% timeout artifacts would bake the
+error in, exactly as v2.2's tier order baked in a single anecdote.
+
+## Phase 23 — Repair the measurements that silently discard keys
+
+**Requirements:** ALIVE-03, ALIVE-05
+**Why first:** every downstream ranking, filter and tier decision reads these
+numbers. Fixing anything else first means tuning against a broken gauge.
+
+Success criteria:
+1. Speedtest body read is no longer bounded by the 5 s delay gate; the 14.0 Mbps
+   spike (20.24% of rows) disappears from the distribution.
+2. The 6 countries that have live keys but publish nothing (AM, CN, HU, KZ, LT,
+   TH) publish again.
+3. Keys with no usable speed rank in a latency-ordered second tier instead of
+   being dropped by `--min-speed 12`.
+4. `prepublish` distinguishes "prober broke" from "key is dead"; an unusable
+   prober logs loudly and publishes unfiltered rather than aborting into stale
+   data. The test asserting `DropRate == 1.0` for a missing binary is inverted.
+
+## Phase 24 — Make the RU verification path trustworthy
+
+**Requirements:** ALIVE-04
+**Why here:** the bridge is the only RU-side instrument. While it is 1-2
+endpoints deep, a "verified" list reflects one host's reachability.
+
+Success criteria:
+1. Bridge pool holds ≥10 distinct endpoints per run (`verify-russia.yml:134`
+   truncates with `>` inside a loop; append instead, widen the grep, raise the
+   `head` cap).
+2. A run that publishes nothing is visibly non-green — 33 such runs (8.5% of
+   successes) currently report success while skipping publish.
+3. `workflow_run` no longer fires verify-russia after a FAILED refresh.
+
+## Phase 25 — Re-measure, then re-tier
+
+**Requirements:** ALIVE-06
+**Why after 23-24:** trojan's 0/36 was measured on 26-day-stale keys through a
+crashed harness. It now has 229,968 fresh rows.
+
+Success criteria:
+1. All four protocols measured through the repaired bridge, full pool, with
+   attempts recorded so pass rates have real denominators.
+2. Tier order in `verify-russia.yml` derived from those measured rates, with the
+   numbers written into STATE.md next to the decision.
+3. No protocol is excluded without a measurement behind the exclusion.
+
+## Phase 26 — Ship the freshness-bounded subscription
+
+**Requirements:** ALIVE-01, ALIVE-07
+**Why after 25:** ordering the ≤30 keys requires knowing which protocols
+actually survive.
+
+Success criteria:
+1. A single URL publishes ≤30 keys, each verified within 30 minutes.
+2. Each remark carries verification age + measured bridge latency, so staleness
+   is visible in the client rather than silent.
+3. Every surface showing a speed states it is a datacenter-side upper bound, not
+   a prediction for the subscriber.
+4. README documents this URL as the primary one for residential RU users, with
+   `subs/all.txt` explicitly labelled as the datacenter-tested superset.
+
+## Phase 27 — Close the measurement loop
+
+**Requirements:** ALIVE-02
+**Why last:** needs a list worth measuring, and it is the only phase that can
+prove or disprove the 95% claim.
+
+Success criteria:
+1. The operator's own v2rayN result is captured without running pipeline compute
+   on their PC (NO-PC constraint holds).
+2. Bridge-pass vs client-pass divergence is reported per protocol, so the gap
+   the whole project turns on becomes a tracked number instead of an anecdote.
+3. Three separate days of operator results recorded; ≥95% on the ALIVE-01 list
+   is either demonstrated or the shortfall is quantified per protocol.

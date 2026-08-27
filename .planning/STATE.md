@@ -1,152 +1,56 @@
 ---
 gsd_state_version: 1.0
-milestone: v2.2.0
-milestone_name: ru-verified-10
+milestone: v2.3.0
+milestone_name: subscription-95-in-client
 status: in-progress
-last_updated: "2026-08-12T04:30:00Z"
-last_activity: 2026-08-12 -- measured per-protocol RU-bridge pass rates for the first time (ss 60.3% > vless 50.6%); tier order above is superseded, see "ANSWERED 2026-08-12"
+last_updated: "2026-08-20T12:10:00Z"
+last_activity: 2026-08-20 -- v2.2 archived; v2.3 opened. Goal moves the measurement instrument to the operator's own client.
 progress:
   total_phases: 5
-  completed_phases: 4
-  total_plans: 5
-  completed_plans: 4
-  percent: 90
+  completed_phases: 0
+  total_plans: 0
+  completed_plans: 0
+  percent: 0
 ---
 
 # Project State
 
 ## Project Reference
 
-See: .planning/PROJECT.md
-**Core value:** Always-fresh, auto-curated, geo-tagged top 3 proxy keys per country (VLESS / VMess / Trojan / SS), accessible as static URLs, with **honest validation** including pre-publish probe.
+See: .planning/PROJECT.md · Requirements: .planning/REQUIREMENTS.md · Phases 23-27: .planning/ROADMAP.md
 
-**v2.2 milestone goal (per user 2026-05-27):** *"10 keys is just small test, when it will work perfect we will do all keys but its not worked perfect"* — ship a small `subs/verified-russia.txt` with **10 keys at 99% alive from a Russian residential IP**. Prove the architecture works at small scale before scaling to all countries.
+**v2.3 goal:** a subscription URL where **≥95% of keys connect in the operator's
+own v2rayN test, from their residential Russian line.**
 
 ## Shipped Milestones
 
-- **v1.0** — MVP End-to-End (Phases 1-3) — 2026-05-15
-- **v1.4** — Liveness Validation (3x retest, passes>=2) — 2026-05-24
-- **v1.5** — Country Identification (consensus + post-publish probe) — 2026-05-24
-- **v2.0** — Multi-Protocol Pivot (VLESS+VMess+Trojan+SS) — 2026-05-24
-- **v2.0.1** — Pre-publish probe + always-on-checkpoint — 2026-05-25
-- **v2.1.0** — Scale-out: matrix parallelism, benchmark, sources.txt, local backup — 2026-05-25
+See `.planning/MILESTONES.md`. Most recent: v2.2.0 ru-verified-10 (2026-08-20),
+archived to `.planning/milestones/`.
 
-## Currently Active: v2.2 — RU-Verified-10
+## Why v2.3 exists
 
-**Scope (deliberately small):** ~10 keys in `subs/verified-russia.txt` that work for the operator's residential RU IP (Iskratelecom). When the architecture proves stable at 10 × 99% over a week, scale up.
+v2.2 asked for "99% alive" and measured it from GitHub Actions runners and an
+RU-datacenter bridge — both on the wrong side of TSPU. Phase 22.1 *proved* that
+gap (95% pass from Frankfurt vs 0% from Iskratelecom residential) and the
+acceptance criteria then measured the wrong side of it anyway.
 
-### Phases
+Observed when the operator finally tested `subs/all.txt`: **18 of 257 keys
+responded (7%)**, and all 18 were Shadowsocks — the protocol v2.2 had excluded
+as TSPU-blocked without ever measuring it.
 
-- ✅ **22.1** — RU verification investigation
-  - Proved 95% pass from Frankfurt vs 0% from residential RU IP
-  - Root cause: same key tested differently from datacenter vs residential
+## Carried-forward decisions (still binding)
 
-- ✅ **22.2** — saleapp source integration
-  - 9 RU-curated aggregator sources added to sources.yaml
-  - igareck × 7 + kort0881 sni_filtered + v2nodes paid
-  - +1129 URI input for richer RU bridge pool
+### HARD CONSTRAINT: NO user PC, ever
+- No self-hosted runner, no local PowerShell verifier, no "run this on your PC".
+- ALL compute is free cloud: GitHub Actions + Oracle VPS (Frankfurt).
+- Consequence: we CANNOT test from a true RU residential IP. The RU-datacenter
+  bridge is the closest available approximation and is NOT identical.
+- ALIVE-02 works within this: the operator *reports* a result, they do not host
+  compute. The 7 dead `dev/*.ps1` scripts and the two Scheduled-Task scripts
+  were deleted 2026-08-20 for violating this.
 
-- ✅ **22.3** — verify-russia.yml bridge architecture
-  - Picks alive RU bridge from subs/RU.txt or RU_BRIDGE_FALLBACK secret
-  - xray-knife proxy inbound → SOCKS5 → proxychains4
-  - 2-stage filter: cf-trace gate, then ipinfo+google confirm
-  - Outputs subs/verified-russia.txt (auto-merged, never empty-overwritten)
-  - Schedule: every 30 min + after refresh.yml + workflow_dispatch
-
-- ✅ **22.4** — Validate 10 × 99% over 7 days [BREAKTHROUGH 2026-05-31]
-  - Per-key reliability tracking (`.readme-data/verified-russia-history.jsonl`)
-  - Dashboard surfaces "Seen N/M" + "Alive %" per key over last 24h
-  - **Protocol-tier ranking** based on 2026 community evidence:
-    - Tier A: VLESS Reality + Vision (~95% RU residential pass)
-    - Tier B: VLESS Reality, VLESS+WS+TLS, Trojan+WS+TLS
-    - Tier C: everything else (plain VLESS, vmess)
-    - SS dropped entirely (TSPU blocks AEAD)
-  - **igareck whitelist used as bridge source** (their in-RU probe gives fresh bridges)
-  - **Result at the time:** verified-russia.txt = 15 VLESS keys, **100% Reality+Vision**
-  - "SS dropped entirely (TSPU blocks AEAD)" on line 63 was never measured — see
-    "ANSWERED 2026-08-12". SS was removed from the candidate grep on 2026-05-31,
-    so the claim could not be tested; when finally probed it led on pass rate.
-  - Current: 274 keys (236 vless + 38 ss) as of run 31562489245
-
-- ⏳ **22.5** — Document & ship as stable v2.2
-  - Update README.md, CHANGELOG, dashboard footer, mention current methodology
-  - Then explicit go/no-go from user before scaling to "all keys"
-
-## Currently Running
-
-GitHub Actions:
-- refresh.yml: every 4h cron
-- verify-russia.yml: every 30min cron + after refresh + workflow_dispatch
-- Dashboard live at https://trikiman.github.io/vlessfilter/dashboard.html
-
-**"Both are stable" was NOT true as of 2026-08-20.** Cron is enabled and both
-workflows are `active` (not auto-disabled), but two distinct problems were found:
-
-1. **verify-russia misses scheduled slots.** Directly observed: at 04:11Z the
-   last run was 03:28Z, so the 04:00Z `*/30` slot never fired while the workflow
-   showed `active`. Observed gaps run 30-114 min, frequently 65-85. This is
-   separate from the fast-failing runs of 2026-08-11 (Go-version mismatch, since
-   fixed) — those were runs that fired and failed; these never fire at all.
-   Leading hypothesis under investigation: a `*/30` cron lands on :00/:30, the
-   two most contended minutes of the hour, and GitHub drops scheduled runs under
-   load. Not yet confirmed.
-2. **refresh failed six consecutive runs, 2026-08-19/20.** Every protocol job
-   succeeded (44-57 min each), then merge-and-push died in under a minute:
-   all-results.csv had reached 131 MB against GitHub's 100 MB hard blob limit,
-   so the pre-receive hook rejected the whole push — subs/, README and CSV lost
-   together. Fixed by capping the CSV (MaxCSVRows) plus a pre-push size guard.
-
-Note the asymmetry that made both survivable: verify-russia publishes on its own
-30-minute path, so subs/verified-russia.txt stayed current throughout. Only the
-4-hourly per-country refresh stalled.
-
-## Accumulated Decisions (v2.2)
-
-### HARD CONSTRAINT (user 2026-05-31): NO user PC, ever
-- No self-hosted GitHub Actions runner on user's PC
-- No local PowerShell verifier (dev/*.ps1 are dead — do not run them)
-- No "run this on your PC" requests
-- ALL compute must be free cloud: GitHub Actions runners + Oracle VPS (Frankfurt)
-- Consequence: we CANNOT test from a true RU residential IP. Best available
-  approximation is the RU-datacenter bridge. We accept the residential gap and
-  compensate by biasing toward protocols that empirically survive the user's
-  residential TSPU (Trojan-TLS > VLESS Reality for their Iskratelecom network).
-
-### Why "RU residential ≠ RU datacenter"
-- Frankfurt + GH Actions runners pass 95% of probe tests on the same keys that Russian Iskratelecom-residential sees as 0%
-- TSPU/RKN treats residential and datacenter traffic differently
-- Bridge architecture (route GH Actions through RU datacenter) approximates residential but is NOT identical
-- 2026-05-31 user test: Reality+Vision 1/15 alive residential, Trojan-TLS ~70% alive
-
-### Protocol tier order — SUPERSEDED 2026-08-12 by measurement, see below
-Kept for provenance. This order came from a single 2026-05-31 anecdote and the
-first real measurement inverts it.
-- Tier A: Trojan TLS/TCP — best on user's residential
-- Tier B: VLESS Reality — passes datacenter bridge, mixed residential
-- Tier C: WS+TLS / xhttp (CDN-fronted)
-- Tier D: plain VLESS TCP, vmess
-- Tier E: Shadowsocks AEAD — **under measurement, no longer excluded** (see below)
-- verify-russia.yml interleaves A+B so output carries both protocols as a hedge
-
-### OPEN QUESTION (2026-07-26): the Shadowsocks exclusion is contradicted
-A v2rayN run from the operator's actual residential connection returned 18 alive
-keys that were **100% Shadowsocks**, with zero trojan/vless surviving — the exact
-inverse of the tier order above, which was set from a 2026-05-31 test.
-
-Both results cannot be right. Rather than pick one, verify-russia.yml now probes
-SS at lowest priority (Tier E), so it cannot displace a better-tiered key but its
-true pass rate lands in `.readme-data/verified-russia-history.jsonl`. **Re-settle
-the tier order from that history, not from either anecdote.**
-
-Caveat worth resolving first: SS has no TLS handshake, so a v2rayN delay probe can
-succeed on a bare TCP connect that passes real traffic nowhere. The 18 "alive" SS
-keys may be false positives. Confirm by browsing through one, not by reading its ms.
-
-### ANSWERED 2026-08-12 — the operator's anecdote was right, the tier order was wrong
-
-Run 31562489245 probed the **full** pool (565/565 attempted, no early exit) with
-tier E hoisted to the front. First per-protocol pass rates this project has ever
-had, because failures are now recorded too:
+### Protocol pass rates — MEASURED, not asserted (run 31562489245)
+Full pool, 565/565 attempted, tier E hoisted to the front:
 
 | proto  | pass | fail | attempts | pass rate | median |
 |--------|-----:|-----:|---------:|----------:|-------:|
@@ -154,84 +58,62 @@ had, because failures are now recorded too:
 | vless  |  236 |  230 |      466 |     50.6% |  769ms |
 | trojan |    0 |   36 |       36 |      0.0% |      — |
 
-**Shadowsocks has the highest pass rate and the lowest latency of the three.**
-`subs/verified-russia.txt` went 157 keys (100% vless) -> 274 (236 vless + 38 ss);
-those 38 are the first SS keys ever published there.
+Shadowsocks leads on both rate and latency. The old "SS dropped entirely (TSPU
+blocks AEAD)" tier order is **superseded** — it was never measured: tier E sat
+at index ~502 of 565 while the sweep exited at 150 passes, so SS's record was
+0/0, not 0/63.
 
-Why the old order survived so long — three compounding measurement faults, not a
-protocol fact:
-1. Tier E was appended LAST, at index ~502 of 565, while the sweep exits at
-   `target_keys` (150). It was never reached: SS's record was 0/0, not 0/63.
-2. The history file only ever recorded passers (19,132/19,132 `alive:true`), so no
-   pass rate was derivable from it — an unmeasured protocol read as settled.
-3. The run summary printed pool size as "probed", so a sweep that stopped at ~360
-   still claimed 565, making tier E's silence look like measured failure.
+**trojan 0/36 is a harness artifact, not a protocol verdict.** Those were the
+stale 2026-07-17 keys; xray-knife v9.12.1 SIGSEGVs on trojan splithttp configs.
+Trojan now has 229,968 fresh rows. ALIVE-06 re-measures before re-tiering — the
+old order baked in an anecdote and the new one must not bake in a crash.
 
-The TCP-gate caveat above does NOT hold. SS's delay FLOOR is the highest of the
-three (143ms vs trojan 66ms, vless 73ms) — the opposite of a cheap gate — all 58
-distinct SS hosts sustain real throughput, and 46,881 vless rows report 0 Mbps.
+The TCP-gate hypothesis for SS does NOT hold: SS's delay floor is the *highest*
+of the three (143ms vs trojan 66ms, vless 73ms), all 58 distinct SS hosts sustain
+real throughput, and 46,881 vless rows report 0 Mbps.
 
-**trojan 0/36 is not a protocol verdict.** Those are the stale 2026-07-17 keys;
-`subs/trojan/all.txt` has not moved in 26 days because xray-knife v9.12.1 (bundled
-xray-core v1.260327.0) SIGSEGVs on splithttp trojan configs. 1,129 trojan configs
-passed handshake before the crash — the servers work, the harness died. Tier A was
-ranked "EMPIRICALLY BEST" on dead credentials, probed first every run, while the
-protocol that actually works sat where the sweep never reached.
+### Key lifetime — the physics
+131,232 history records, 1,259 distinct keys: p25 3.7h, **median 21h**, p75 93.8h.
+**53% die within 24h.** So 95%-alive is only reachable for a small, recently
+verified list. This is why ALIVE-01 caps at ≤30 keys / ≤30 min old.
 
-Corroborated single datum: `149.22.95.183:443` (ss) survived the operator's
-residential test AND passes the bridge — alive at 146ms in this run, 24 records.
+### Why bridge from `subs/RU.txt`
+Free and self-bootstrapping. `RU_BRIDGE_FALLBACK` covers the chicken-and-egg.
+Tradeoff: when all bridges decay the job skips and preserves previous output —
+which is also how 33 runs published nothing while reporting green (ALIVE-04).
 
-STILL OPEN (needs the operator, not CI): whether TSPU treats SS AEAD differently
-on residential vs datacenter paths. Every CI vantage point — GH runner, Frankfurt,
-RU-datacenter bridge — is on the wrong side of that boundary. Browse through
-`149.22.95.183:443` and load a page; do not read its ms.
+## Currently Running
 
-Re-tiering is deliberately NOT done yet: trojan must be re-measured on FRESH keys
-once the v10.1.1 pin is confirmed, or the new order would bake in a harness bug
-the same way the old one baked in an anecdote.
+- refresh.yml: every 4h cron. **Verified green 2026-08-20** (run 32361058687,
+  all 6 jobs, all-results.csv 347,470 rows / 66 MB under the 100 MB limit).
+- verify-russia.yml: cron moved `*/30` → `7,37` on 2026-08-20. 708 of 985 slots
+  (72%) previously never fired — GitHub never created them, `*/30` being the most
+  contended cron expression. Effect measurable within a day by counting fired
+  slots.
+- benchmark.yml: dispatch-only, dormant since 2026-05-25, output consumed by
+  nothing.
+- Dashboard: https://trikiman.github.io/vlessfilter/dashboard.html
 
-### Why bridge from `subs/RU.txt` instead of dedicated RU VPS
-- Free, self-bootstrapping (no external infra)
-- Fallback secret `RU_BRIDGE_FALLBACK` covers chicken-and-egg when RU.txt is stale
-- Tradeoff: when ALL bridges decay, verify-russia.yml skips and preserves previous output (graceful degrade)
+## Known-open, carried into v2.3 phases
 
-### Why 30 min cycle vs continuous
-- Public free keys have ~70% mortality per 12h
-- 30 min cycle puts decay window << v2rayN auto-update interval (15-60 min)
-- Net effect: user always sees keys verified in last 30 min
+1. **Speedtest truncation** (ALIVE-03) — 10 MB body / 5 s timeout ⇒ exactly
+   16 Mbps ceiling; 54.2% of published values are timeout artifacts, the 14.0 Mbps
+   bin alone is 20.24%. `--min-speed 12` filters on that, so 6 countries with live
+   keys publish nothing. Fix needs `HTTPOpts` to expose a timeout field.
+2. **Bridge pool depth** (ALIVE-04) — `verify-russia.yml:134` truncates with `>`
+   inside a loop; pool lands at 6-11 and is effectively 1-2 endpoints.
+3. **prepublish false aborts** (ALIVE-05) — infra failures counted as dead keys;
+   an unusable prober yields `DropRate == 1.0` and trips the 75% abort into
+   republishing stale data. Its own test asserts this as correct.
+4. **accuracy probe** — fully serial, up to 400 spawns × 15 s, runs on *every*
+   checkpoint; also probes only vless from top-level `subs/`, so 3 of 4 matrix
+   jobs measure the previous run's other-protocol data. Not yet in a phase.
+5. **`sources.yaml` working-tree diff** may contain a credentialed URL. NOT
+   reviewed, NOT staged. Rotate the token if real.
 
-### What "99% alive" means in v2.2 scope
-- Snapshot reliability: keys-alive-now / keys-published-now ≥ 90% (acceptable)
-- Subscription reliability: when v2rayN auto-pulls, ≥ 99% of pulled keys connect ≥ once
-- Achieved via: small list (10), high refresh rate (30 min), client auto-rotation
+## Pending Todos (v2.3)
 
-## Open Issues
-
-- **22.4 OPEN**: 7-day stability test not started — need to run with current architecture and measure
-- **saleapp manual seeds**: 6 hand-curated trojan seeds tested via v2rayN: 2/6 worked (saleapp-3, saleapp-5 at ~55ms). Other 4 were stale at fetch time.
-- **xray-knife password decoding bug**: trojan URIs with `#` in password don't round-trip cleanly. Workaround: use xray-core directly. Filed as known limitation.
-- **verify-russia.yml has not yet seen a "fresh refresh" cycle** with the new saleapp sources. First cycle picking up the new 1129-URI pool will land at next refresh.yml (4h cron).
-
-## Pending Todos (v2.2)
-
-- [x] ~~Wait for next refresh.yml cycle to populate subs/RU.txt~~ — resolved
-      ~440 cycles ago; this todo predates 2026-05-31
 - [ ] Confirm ONE ss key end-to-end from the residential line by browsing, not by
       reading its ms: `149.22.95.183:443` (survived both the operator's v2rayN run
-      and the bridge, alive 146ms). This is the only remaining question CI cannot
-      answer — every runner/Frankfurt/RU-datacenter vantage point is on the wrong
-      side of the TSPU boundary. Replaces the old "PowerShell verifier daily for a
-      week" item, which contradicted the HARD CONSTRAINT on line 86 and needed the
-      dead dev/*.ps1 scripts.
-- [ ] Re-measure trojan on FRESH keys once the v10.1.1 pin is confirmed, then
-      re-tier from pass rates. Do not re-tier before that: trojan's 0/36 is a
-      harness crash, not a protocol result.
-- [ ] Add per-key reliability tracking to dashboard (last 7 days alive %) — now
-      actually computable, since failures are recorded from 2026-08-12 on
-- [ ] Decide: self-hosted runner (residential exact) vs current DC-bridge (approximation) vs Russian VPS
-
-## Session Continuity
-
-Last session: 2026-05-28T13:25:00Z
-Active mode: User-driven iteration on v2.2 small-scope goal
-Resume: `.planning/STATE.md` then `git log --oneline -20`
+      and the bridge, alive 146ms). Only CI cannot answer this.
+- [ ] Verify the cron change recovered fired slots (count over 24h).

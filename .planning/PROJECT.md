@@ -119,6 +119,32 @@ Always-fresh, auto-curated, geo-tagged top 3 VLESS keys per country, accessible 
 | Skip Telegram scraping in v1 | Upstream aggregators already cover that surface; avoids Telegram bot/auth complexity | — Pending |
 | Score = f(latency, speed) | Single ranking column simpler than multi-key sort; exact formula determined empirically in Phase 2 | — Pending |
 
+## Current State (2026-08-20)
+
+**Shipped:** v2.2.0 ru-verified-10 — see `.planning/MILESTONES.md`.
+
+**Active milestone: v2.3 — subscription-95-in-client**
+
+Goal: a subscription URL where **≥95% of keys connect in the operator's own
+v2rayN test, from their residential Russian line.**
+
+Why this differs from every prior milestone: aliveness has always been measured
+from a GitHub Actions runner or an RU-datacenter bridge. Both sit on the wrong
+side of TSPU. v2.2 phase 22.1 *proved* that gap (95% pass from Frankfurt vs 0%
+from Iskratelecom residential) and then set acceptance criteria on the wrong side
+of it anyway. When the operator finally tested `subs/all.txt`: **18 of 257 keys
+responded, and all 18 were Shadowsocks** — the protocol v2.2 had excluded as
+TSPU-blocked without ever measuring it.
+
+The binding physics, measured from 131,232 history records / 1,259 keys: median
+key lifetime **21 h**, p25 3.7 h, **53% dead within 24 h**. So 95% is reachable
+only for a small, recently-verified list. The central trade of this milestone is
+**breadth for freshness** — a large list is precisely what produced the 7%
+experience.
+
+Requirements: `.planning/REQUIREMENTS.md` (ALIVE-01..07).
+Phases 23-27: `.planning/ROADMAP.md`.
+
 ## Evolution
 
 This document evolves at phase transitions and milestone boundaries.
