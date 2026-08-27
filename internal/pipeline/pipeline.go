@@ -405,6 +405,13 @@ func runTestProtocol(ctx context.Context, opts Opts, protocol, dbPath string, t1
 			Protocol:  protocol,
 			File:      tmp.Name(),
 			DelayMs:   5000,
+			// The body is a 10 MB download. Without a separate --timeout,
+			// xray-knife defaults its HTTP client timeout to DelayMs, and
+			// Go's Client.Timeout covers the body read — so 10 MB / 5 s
+			// capped every measurement at EXACTLY 16 Mbps, and the truncated
+			// read was reported as success. 20 s lets a ~4 Mbps link finish
+			// while DelayMs stays the handshake pass/fail gate.
+			TimeoutMs: 20000,
 			Retries:   1,
 		}); err != nil {
 			slog.Warn("stage 2 attempt failed (continuing)",

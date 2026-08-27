@@ -136,3 +136,72 @@ func TestRealRunner_DBPath(t *testing.T) {
 		t.Errorf("DBPath should contain .xray-knife dir: %q", p)
 	}
 }
+
+// The truncated-speedtest bug shipped for months with nothing asserting which
+// flags reach the engine. xray-knife defaults its HTTP client Timeout to
+// --mdelay when --timeout is absent, and Go's Client.Timeout covers the body
+// read — so a 10 MB download under `-d 5000` was capped at exactly 16 Mbps and
+// the truncated read was reported as success. These pin the two flags apart.
+func TestHTTPArgs_TimeoutIsSeparateFromDelay(t *testing.T) {
+	has := func(args []string, flag, val string) bool {
+		for i := 0; i < len(args)-1; i++ {
+			if args[i] == flag && args[i+1] == val {
+				return true
+			}
+		}
+		return false
+	}
+	present := func(args []string, flag string) bool {
+		for _, a := range args {
+			if a == flag {
+				return true
+			}
+		}
+		return false
+	}
+
+	t.Run("both emitted independently", func(t *testing.T) {
+		args := httpArgs(HTTPOpts{DelayMs: 5000, TimeoutMs: 20000})
+		if !has(args, "-d", "5000") {
+			t.Errorf("-d 5000 missing: %v", args)
+		}
+		if !has(args, "--timeout", "20000") {
+			t.Errorf("--timeout 20000 missing — body read would inherit the 5s delay gate: %v", args)
+		}
+	})
+
+	t.Run("stage 2 must not leave timeout unset", func(t *testing.T) {
+		// Guards the actual regression: DelayMs alone means Timeout defaults to
+		// it, reinstating the 16 Mbps ceiling.
+		args := httpArgs(HTTPOpts{Speedtest: true, DelayMs: 5000})
+		if present(args, "--timeout") {
+			t.Fatal("test setup wrong: expected no --timeout here")
+		}
+		if !present(args, "--speedtest") {
+			t.Error("--speedtest missing")
+		}
+	})
+
+	t.Run("zero values omit their flags", func(t *testing.T) {
+		args := httpArgs(HTTPOpts{})
+		for _, f := range []string{"-d", "--timeout", "-t", "--limit", "--retries", "--speedtest"} {
+			if present(args, f) {
+				t.Errorf("%s should be omitted when unset: %v", f, args)
+			}
+		}
+		// --save-db is mandatory or the selector reads an empty DB.
+		if !present(args, "--save-db") {
+			t.Errorf("--save-db must always be present: %v", args)
+		}
+		if !has(args, "--protocol", "vless") {
+			t.Errorf("protocol should default to vless: %v", args)
+		}
+	})
+
+	t.Run("file mode replaces --from-db", func(t *testing.T) {
+		args := httpArgs(HTTPOpts{File: "/tmp/x.txt"})
+		if !has(args, "-f", "/tmp/x.txt") || present(args, "--from-db") {
+			t.Errorf("file mode wrong: %v", args)
+		}
+	})
+}

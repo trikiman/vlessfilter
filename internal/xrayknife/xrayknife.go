@@ -48,6 +48,19 @@ type HTTPOpts struct {
 	// Retries gives flaky proxies a 2nd/3rd chance (--retries flag).
 	// 0 = single attempt. >0 = N retries on failure.
 	Retries int
+	// TimeoutMs caps the HTTP client timeout (--timeout flag, ms), SEPARATELY
+	// from DelayMs. When 0, xray-knife defaults Timeout to mdelay (-d), which
+	// silently truncated every speedtest: the body is a 10 MB download and -d
+	// was 5000, so Go's Client.Timeout (which covers the body read) cut off
+	// anything slower than 10 MB / 5 s = EXACTLY 16 Mbps. The read error is
+	// discarded upstream (`b, _ := io.ReadAll`), so a partial read reported
+	// success and 54.2% of published values were timeout artifacts clustered at
+	// the seam (the 14.0 Mbps bin alone held 20.24% of all rows).
+	//
+	// Set this ABOVE the expected download time to measure real throughput
+	// while keeping DelayMs as the pass/fail gate on handshake latency.
+	// xray-knife parses it as uint16, so the usable ceiling is 65535 ms.
+	TimeoutMs int
 }
 
 // Runner abstracts xray-knife so tests can substitute a fake.
@@ -164,6 +177,16 @@ func (r *RealRunner) SubsFetch(ctx context.Context) error {
 // When opts.File is set, switches from --from-db to -f <file> mode. Used
 // for stage 2 to validate only stage-1 survivors instead of re-testing dead.
 func (r *RealRunner) HTTPTest(ctx context.Context, opts HTTPOpts) error {
+	args := httpArgs(opts)
+	slog.Info("xray-knife http", "args", args, "speedtest", opts.Speedtest, "from_file", opts.File != "")
+	return r.runHTTP(ctx, args)
+}
+
+// httpArgs builds the xray-knife argv from opts. Split out so the flag
+// construction is unit-testable: the truncated-speedtest bug (TimeoutMs
+// defaulting to DelayMs, capping every measurement at 16 Mbps) shipped for
+// months partly because nothing asserted which flags actually reach the engine.
+func httpArgs(opts HTTPOpts) []string {
 	args := []string{"http", "--save-db"}
 	if opts.File != "" {
 		args = append(args, "-f", opts.File)
@@ -187,10 +210,16 @@ func (r *RealRunner) HTTPTest(ctx context.Context, opts HTTPOpts) error {
 	if opts.DelayMs > 0 {
 		args = append(args, "-d", fmt.Sprintf("%d", opts.DelayMs))
 	}
+	if opts.TimeoutMs > 0 {
+		args = append(args, "--timeout", fmt.Sprintf("%d", opts.TimeoutMs))
+	}
 	if opts.Retries > 0 {
 		args = append(args, "--retries", fmt.Sprintf("%d", opts.Retries))
 	}
-	slog.Info("xray-knife http", "args", args, "speedtest", opts.Speedtest, "from_file", opts.File != "")
+	return args
+}
+
+func (r *RealRunner) runHTTP(ctx context.Context, args []string) error {
 	cmd := exec.CommandContext(ctx, "xray-knife", args...)
 	w := chooseOutputWriter(os.Stderr)
 	cmd.Stdout = w
