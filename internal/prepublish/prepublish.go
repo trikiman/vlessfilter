@@ -48,8 +48,25 @@ type Result struct {
 	Filtered  []selector.CountrySelection // selections with failed keys removed
 	InputKeys int                         // count before probe
 	AlivKeys  int                         // count that passed probe
-	DropRate  float64                     // (input - alive) / input
+	// Errored counts keys whose probe never produced a verdict — the binary was
+	// missing, the engine crashed, the context was cancelled. These are NOT
+	// evidence the key is dead, and they are excluded from DropRate.
+	//
+	// Without this split, an unusable prober yielded DropRate == 1.0 and tripped
+	// the caller's 75% abort, which republishes stale output. That is the same
+	// silent-staleness failure that kept 26-day-old trojan keys in production.
+	Errored  int
+	DropRate float64 // (verdicts - alive) / verdicts, where verdicts = input - errored
 }
+
+// probeOutcome is the tri-state result of probing one key.
+type probeOutcome int
+
+const (
+	probeAlive   probeOutcome = iota // ran, real traffic flowed
+	probeDead                        // ran, engine reported failure
+	probeErrored                     // never ran, or died before reporting
+)
 
 // Filter probes each key in `selections`. Returns filtered results plus
 // summary stats. `selections` is not mutated.
@@ -89,9 +106,14 @@ func (p *Probe) Filter(ctx context.Context, selections []selector.CountrySelecti
 		return Result{}
 	}
 
-	// Per-job pass/fail. Default = false (failed) so a panicked goroutine
-	// is treated as a probe failure (drop the key, safe default).
-	pass := make([]bool, len(jobs))
+	// Per-job outcome. Zero value is probeAlive, which would be the WRONG
+	// default for a panicked goroutine, so seed everything to probeErrored:
+	// "we never learned" is the honest default, and it neither drops the key
+	// nor inflates DropRate.
+	outcomes := make([]probeOutcome, len(jobs))
+	for i := range outcomes {
+		outcomes[i] = probeErrored
+	}
 
 	sem := make(chan struct{}, conc)
 	var wg sync.WaitGroup
@@ -102,7 +124,7 @@ func (p *Probe) Filter(ctx context.Context, selections []selector.CountrySelecti
 			defer wg.Done()
 			defer func() { <-sem }()
 			link := selections[j.csIdx].Top[j.linkIdx].Link
-			pass[ji] = probeOne(ctx, bin, link, url, timeout)
+			outcomes[ji] = probeOne(ctx, bin, link, url, timeout)
 		}(ji, j)
 	}
 	wg.Wait()
@@ -110,15 +132,24 @@ func (p *Probe) Filter(ctx context.Context, selections []selector.CountrySelecti
 	// Build filtered selections.
 	out := make([]selector.CountrySelection, 0, len(selections))
 	alive := 0
+	errored := 0
 	for ci, cs := range selections {
 		var kept []selector.Result
 		for li, r := range cs.Top {
 			// Find pass index for (ci, li) — same flatten order.
 			for ji, j := range jobs {
 				if j.csIdx == ci && j.linkIdx == li {
-					if pass[ji] {
+					switch outcomes[ji] {
+					case probeAlive:
 						kept = append(kept, r)
 						alive++
+					case probeErrored:
+						// KEEP. A probe that never ran is not evidence the key
+						// is dead. Dropping on error is how three transient
+						// failures on a country's three keys deleted
+						// subs/<CC>.txt outright and 404'd a subscriber's URL.
+						kept = append(kept, r)
+						errored++
 					}
 					break
 				}
@@ -136,9 +167,19 @@ func (p *Probe) Filter(ctx context.Context, selections []selector.CountrySelecti
 		Filtered:  out,
 		InputKeys: len(jobs),
 		AlivKeys:  alive,
+		Errored:   errored,
 	}
-	if len(jobs) > 0 {
-		res.DropRate = float64(len(jobs)-alive) / float64(len(jobs))
+	// Denominator is VERDICTS, not inputs. Dividing by len(jobs) meant a
+	// prober that could not run at all scored DropRate 1.0 and tripped the
+	// caller's 75% abort, republishing stale output — the same silent-staleness
+	// mode that served 26-day-old trojan keys.
+	if verdicts := len(jobs) - errored; verdicts > 0 {
+		res.DropRate = float64(verdicts-alive) / float64(verdicts)
+	}
+	if errored > 0 {
+		slog.Warn("pre-publish probe: some keys never produced a verdict",
+			"errored", errored, "of_input", len(jobs),
+			"note", "counted as inconclusive, not dead; excluded from drop_rate")
 	}
 	return res
 }
@@ -161,7 +202,7 @@ func (p *Probe) Filter(ctx context.Context, selections []selector.CountrySelecti
 // view), so exit code alone is unreliable. The "Real Delay: NNNms" with a
 // positive number, plus the green checkmark emoji, is the only reliable
 // indicator that real traffic flowed.
-func probeOne(ctx context.Context, bin, link, url string, timeout time.Duration) bool {
+func probeOne(ctx context.Context, bin, link, url string, timeout time.Duration) probeOutcome {
 	timeoutMs := int(timeout / time.Millisecond)
 	if timeoutMs < 1000 {
 		timeoutMs = 1000
@@ -179,19 +220,25 @@ func probeOne(ctx context.Context, bin, link, url string, timeout time.Duration)
 	cmd.Stderr = &out
 	err := cmd.Run()
 	if err != nil {
-		// Process killed (ctx cancel, signal, etc.) — definitively dead.
-		return false
+		// NOT "definitively dead". The doc comment above already establishes
+		// that xray-knife exits 0 for BOTH pass and fail (handleSingleConfig
+		// prints the failure and returns), so a non-zero exit almost never
+		// means the key is dead — it means the binary is missing, the engine
+		// crashed, or the context was cancelled. Counting these as deaths is
+		// what let an unusable prober reach DropRate 1.0 and abort the publish
+		// into republishing stale output.
+		return probeErrored
 	}
 	body := out.String()
 	// Hard fail markers — xray-knife explicitly reported failure.
 	if strings.Contains(body, "❌") ||
 		strings.Contains(body, "Real Delay: -1ms") ||
 		strings.Contains(body, "Failed:") {
-		return false
+		return probeDead
 	}
 	// Hard success markers — xray-knife confirmed real traffic flowed.
 	if strings.Contains(body, "✅") {
-		return true
+		return probeAlive
 	}
 	// Soft success: "Real Delay: NNNms" with a positive ms reading.
 	if i := strings.Index(body, "Real Delay: "); i >= 0 {
@@ -201,18 +248,21 @@ func probeOne(ctx context.Context, bin, link, url string, timeout time.Duration)
 			if rest[k] < '0' || rest[k] > '9' {
 				if rest[k] == 'm' || rest[k] == 's' {
 					// "Real Delay: 1234ms" — k pointing at 'm', positive
-					return true
+					return probeAlive
 				}
 				if rest[k] == '-' {
 					// "Real Delay: -1ms" — negative
-					return false
+					return probeDead
 				}
 				break
 			}
 		}
 	}
-	// No clear marker either way — treat as fail (better safe than sorry).
-	return false
+	// No clear marker either way. The engine ran and printed something we do
+	// not recognise, so this is inconclusive rather than a confirmed death —
+	// an output-format change upstream must not read as a mass key die-off and
+	// trip the publish abort.
+	return probeErrored
 }
 
 // LogResult emits a structured summary at INFO level.

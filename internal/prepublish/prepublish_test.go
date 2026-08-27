@@ -53,11 +53,22 @@ func TestFilter_AllFailDropsCountries(t *testing.T) {
 	if res.AlivKeys != 0 {
 		t.Errorf("AlivKeys=%d, want 0", res.AlivKeys)
 	}
-	if res.DropRate != 1.0 {
-		t.Errorf("DropRate=%.2f, want 1.0", res.DropRate)
+	// INVERTED 2026-08-20 (ALIVE-05). This previously asserted DropRate == 1.0
+	// and Filtered == 0 for a NONEXISTENT BINARY — pinning the bug as correct
+	// behaviour. A prober that cannot execute tells us nothing about the keys,
+	// but DropRate 1.0 trips the caller's 75% abort, which republishes stale
+	// output. That is the same silent-staleness mode that served 26-day-old
+	// trojan keys while the job reported success.
+	if res.Errored != 3 {
+		t.Errorf("Errored=%d, want 3 (unusable binary is an infra failure, not 3 dead keys)", res.Errored)
 	}
-	if len(res.Filtered) != 0 {
-		t.Errorf("Filtered len=%d, want 0 (all keys dead)", len(res.Filtered))
+	if res.DropRate != 0 {
+		t.Errorf("DropRate=%.2f, want 0: with no verdicts there is no evidence of death", res.DropRate)
+	}
+	// Keys must survive an inconclusive probe, so the publish is not gutted by
+	// a broken prober.
+	if len(res.Filtered) != 2 {
+		t.Errorf("Filtered len=%d, want 2 countries kept", len(res.Filtered))
 	}
 }
 

@@ -533,7 +533,17 @@ func runSelect(ctx context.Context, opts Opts) error {
 			// stale enough that publishing would mislead users. Skip
 			// publish — keep previous run live.
 			const maxAllowedDropRate = 0.75
-			if res.InputKeys >= 5 && res.DropRate > maxAllowedDropRate {
+			// If the prober itself was unusable, DropRate is not evidence about
+			// the keys. probeOne now reports probeErrored separately for a
+			// missing binary, an engine crash, or an unrecognised output format,
+			// and those keys are KEPT rather than dropped. Refuse to abort when
+			// errors dominate: aborting republishes stale output, which is the
+			// same silent-staleness mode that served 26-day-old trojan keys.
+			if res.Errored*2 > res.InputKeys {
+				slog.Error("pre-publish probe: majority of probes never produced a verdict; publishing UNFILTERED rather than aborting",
+					"protocol", proto, "errored", res.Errored, "input", res.InputKeys,
+					"hint", "check the xray-knife binary and its output format")
+			} else if res.InputKeys >= 5 && res.DropRate > maxAllowedDropRate {
 				slog.Error("pre-publish probe: drop rate exceeds threshold; ABORTING publish for this protocol",
 					"protocol", proto,
 					"drop_rate", fmt.Sprintf("%.1f%%", res.DropRate*100),
