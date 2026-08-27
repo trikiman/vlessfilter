@@ -25,16 +25,16 @@ func TestRewriteRemark(t *testing.T) {
 			link:  "vless://abc@example.com:443",
 			cc:    "DE",
 			speed: 15,
-			// 🇩🇪 + 📺(%F0%9F%93%BA) + [15.0 mb] + DE Germany
-			want: "vless://abc@example.com:443#%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%93%BA%20%5B15.0%20mb%5D%20DE%20Germany",
+			// 🇩🇪 + 📺(%F0%9F%93%BA) + [15.0 Mbps] + DE Germany
+			want: "vless://abc@example.com:443#%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%93%BA%20%5B15.0%20Mbps%5D%20DE%20Germany",
 		},
 		{
 			name:  "existing fragment replaced (25+ = clapper)",
 			link:  "vless://abc@example.com:443?security=tls#OldName",
 			cc:    "PL",
 			speed: 30,
-			// 🇵🇱 + 🎬(%F0%9F%8E%AC) + [30.0 mb] + PL Poland
-			want: "vless://abc@example.com:443?security=tls#%F0%9F%87%B5%F0%9F%87%B1%20%F0%9F%8E%AC%20%5B30.0%20mb%5D%20PL%20Poland",
+			// 🇵🇱 + 🎬(%F0%9F%8E%AC) + [30.0 Mbps] + PL Poland
+			want: "vless://abc@example.com:443?security=tls#%F0%9F%87%B5%F0%9F%87%B1%20%F0%9F%8E%AC%20%5B30.0%20Mbps%5D%20PL%20Poland",
 		},
 		{
 			name:  "zero speed: no icon, no bracket",
@@ -48,8 +48,8 @@ func TestRewriteRemark(t *testing.T) {
 			link:  "vless://q@z.com:443",
 			cc:    "ZZ",
 			speed: 70,
-			// 🇿🇿 + ⚡(%E2%9A%A1) + [70.0 mb] + ZZ
-			want: "vless://q@z.com:443#%F0%9F%87%BF%F0%9F%87%BF%20%E2%9A%A1%20%5B70.0%20mb%5D%20ZZ",
+			// 🇿🇿 + ⚡(%E2%9A%A1) + [70.0 Mbps] + ZZ
+			want: "vless://q@z.com:443#%F0%9F%87%BF%F0%9F%87%BF%20%E2%9A%A1%20%5B70.0%20Mbps%5D%20ZZ",
 		},
 		{
 			name:  "unparseable input returned as-is",
@@ -118,9 +118,9 @@ func TestWrite_GoldenReadme(t *testing.T) {
 	}
 	// Expect "<flag> United States" (full country name from map).
 	// 🇺🇸 is U+1F1FA U+1F1F8 = %F0%9F%87%BA%F0%9F%87%B8.
-	wantUS := "vless://us-1@example.com:443#%F0%9F%87%BA%F0%9F%87%B8%20%E2%9A%A1%20%5B78.3%20mb%5D%20US%20United%20States\n" +
-		"vless://us-2@example.com:443#%F0%9F%87%BA%F0%9F%87%B8%20%E2%9A%A1%20%5B70.0%20mb%5D%20US%20United%20States\n" +
-		"vless://us-3@example.com:443#%F0%9F%87%BA%F0%9F%87%B8%20%E2%9A%A1%20%5B65.5%20mb%5D%20US%20United%20States\n"
+	wantUS := "vless://us-1@example.com:443#%F0%9F%87%BA%F0%9F%87%B8%20%E2%9A%A1%20%5B78.3%20Mbps%5D%20US%20United%20States\n" +
+		"vless://us-2@example.com:443#%F0%9F%87%BA%F0%9F%87%B8%20%E2%9A%A1%20%5B70.0%20Mbps%5D%20US%20United%20States\n" +
+		"vless://us-3@example.com:443#%F0%9F%87%BA%F0%9F%87%B8%20%E2%9A%A1%20%5B65.5%20Mbps%5D%20US%20United%20States\n"
 	if string(usTxt) != wantUS {
 		t.Errorf("US.txt mismatch:\ngot:\n%s\nwant:\n%s", usTxt, wantUS)
 	}
@@ -131,10 +131,10 @@ func TestWrite_GoldenReadme(t *testing.T) {
 		t.Fatalf("read all.txt: %v", err)
 	}
 	allStr := string(allTxt)
-	if !strings.Contains(allStr, "vless://de-1@example.com:443#%F0%9F%87%A9%F0%9F%87%AA%20%E2%9A%A1%20%5B92.1%20mb%5D%20DE%20Germany") {
+	if !strings.Contains(allStr, "vless://de-1@example.com:443#%F0%9F%87%A9%F0%9F%87%AA%20%E2%9A%A1%20%5B92.1%20Mbps%5D%20DE%20Germany") {
 		t.Errorf("all.txt missing DE-flagged entry; got:\n%s", allStr)
 	}
-	if !strings.Contains(allStr, "vless://us-1@example.com:443#%F0%9F%87%BA%F0%9F%87%B8%20%E2%9A%A1%20%5B78.3%20mb%5D%20US%20United%20States") {
+	if !strings.Contains(allStr, "vless://us-1@example.com:443#%F0%9F%87%BA%F0%9F%87%B8%20%E2%9A%A1%20%5B78.3%20Mbps%5D%20US%20United%20States") {
 		t.Errorf("all.txt missing US-flagged entry; got:\n%s", allStr)
 	}
 	// 6 lines (3 DE + 3 US) + trailing newline.

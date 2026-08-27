@@ -265,7 +265,7 @@ func rewriteRemark(link, cc string, speedMbps float64) string {
 		if icon := speedIcon(speedMbps); icon != "" {
 			mid += icon + " "
 		}
-		mid += fmt.Sprintf("[%.1f mb] ", speedMbps)
+		mid += fmt.Sprintf("[%.1f Mbps] ", speedMbps)
 	}
 
 	// url.URL.String() URL-encodes the Fragment automatically.
