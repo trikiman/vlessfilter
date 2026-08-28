@@ -1,5 +1,4 @@
 vless://2a77a470-315c-493d-b690-59b814a804cb@178.83.226.55:443?encryption=none&flow=xtls-rprx-vision&fp=&pbk=SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc&security=reality&sni=sellflow.org&type=tcp#%F0%9F%87%A8%F0%9F%87%AD%20%F0%9F%8E%AC%20%5B42.7%20mb%5D%20CH%20Switzerland
 vless://219762a7-b918-4e2b-8a3d-d309ef98bb61@45.196.193.100:443?encryption=none&type=tcp&flow=xtls-rprx-vision&security=reality&sni=storage.yandex.net&fp=chrome&pbk=IdqrygjwHBEMCOamBl7a504TVk6uMAtTRj0xLWcFcxY&sid=40ce08cf20c67003&allowInsecure=1#%F0%9F%87%A8%F0%9F%87%AD%20%F0%9F%93%BA%20%5B22.1%20mb%5D%20CH%20Switzerland
-trojan://kxHw-Dk-e9dffgzYszMlEqLJ92AnY3Pi@45.95.232.189:443?sni=tr-switzerlandgopota.unlimited-access.ru&allowInsecure=1&type=tcp#%F0%9F%87%A8%F0%9F%87%AD%20%F0%9F%93%BA%20%5B20.0%20Mbps%5D%20CH%20Switzerland
-trojan://kxHw-Dk-e9dffgzYszMlEqLJ92AnY3Pi@tr-switzerlandgopota.unlimited-access.ru:443?fp=chrome#%F0%9F%87%A8%F0%9F%87%AD%20%F0%9F%93%BA%20%5B18.5%20Mbps%5D%20CH%20Switzerland
+trojan://kxHw-Dk-e9dffgzYszMlEqLJ92AnY3Pi@45.95.232.189:443?sni=tr-switzerlandgopota.unlimited-access.ru&allowInsecure=1&type=tcp#%F0%9F%87%A8%F0%9F%87%AD%20%F0%9F%93%BA%20%5B18.4%20Mbps%5D%20CH%20Switzerland
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo1ZDc5OTA2ZC04OWFiLTQzMGItYWNiYy0zMzI3NTY4YTViZTM=@140.238.175.124:33345#%F0%9F%87%A8%F0%9F%87%AD%20%F0%9F%8E%AC%20%5B46.0%20mb%5D%20CH%20Switzerland
