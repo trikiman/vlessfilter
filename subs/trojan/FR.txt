@@ -1,2 +1,2 @@
-trojan://humanity@104.18.32.47:443?path=/assignment&security=tls&insecure=0&fp=chrome&type=ws&allowInsecure=0&sni=www.calmlunch.com&note=@FreeOnlineVPN#%F0%9F%87%AB%F0%9F%87%B7%20%F0%9F%93%BA%20%5B13.7%20Mbps%5D%20FR%20France
-trojan://humanity@104.18.9.83:443?path=/assignment&security=tls&insecure=0&host=www.calmlunch.com&type=ws&allowInsecure=0#%F0%9F%87%AB%F0%9F%87%B7%20%F0%9F%93%BA%20%5B21.0%20Mbps%5D%20FR%20France
+trojan://humanity@104.19.229.21:443?path=/assignment&security=tls&insecure=0&host=www.calmlunch.com&type=ws&allowInsecure=0&sni=www.calmlunch.com#%F0%9F%87%AB%F0%9F%87%B7%20%F0%9F%8E%AC%20%5B31.4%20Mbps%5D%20FR%20France
+trojan://humanity@193.239.160.134:443?sni=www.calmlunch.com&type=ws&path=%2Fassignment&fp=chrome#%F0%9F%87%AB%F0%9F%87%B7%20%F0%9F%93%BA%20%5B15.9%20Mbps%5D%20FR%20France
