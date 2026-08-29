@@ -1,1 +1,2 @@
-trojan://kxHw-Dk-e9dffgzYszMlEqLJ92AnY3Pi@45.95.232.189:443?sni=tr-switzerlandgopota.unlimited-access.ru&allowInsecure=1&type=tcp#%F0%9F%87%A8%F0%9F%87%AD%20%F0%9F%93%BA%20%5B18.4%20Mbps%5D%20CH%20Switzerland
+trojan://kxHw-Dk-e9dffgzYszMlEqLJ92AnY3Pi@45.95.232.189:443?sni=tr-switzerlandgopota.unlimited-access.ru&fp=chrome&type=tcp&path=/#%F0%9F%87%A8%F0%9F%87%AD%20%F0%9F%93%BA%20%5B21.9%20Mbps%5D%20CH%20Switzerland
+trojan://kxHw-Dk-e9dffgzYszMlEqLJ92AnY3Pi@tr-switzerlandgopota.unlimited-access.ru:443?fp=chrome#%F0%9F%87%A8%F0%9F%87%AD%20%F0%9F%93%BA%20%5B20.8%20Mbps%5D%20CH%20Switzerland
