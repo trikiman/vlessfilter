@@ -1,1 +1,2 @@
-trojan://252c2daf-9b6f-469c-87ad-2db956c86607@38.55.199.26:50000?allowInsecure=0&peer=hk200m.jiasu.asia&sni=hk200m.jiasu.asia#%F0%9F%87%AD%F0%9F%87%B0%20%F0%9F%93%BA%20%5B12.1%20Mbps%5D%20HK%20Hong%20Kong
+trojan://252c2daf-9b6f-469c-87ad-2db956c86607@hk200m.jiasu.asia:50000?sni=hk200m.jiasu.asia&type=tcp&fp=chrome#%F0%9F%87%AD%F0%9F%87%B0%20%F0%9F%93%BA%20%5B22.1%20Mbps%5D%20HK%20Hong%20Kong
+trojan://252c2daf-9b6f-469c-87ad-2db956c86607@38.55.199.26:50000?allowInsecure=0&peer=hk200m.jiasu.asia&sni=hk200m.jiasu.asia#%F0%9F%87%AD%F0%9F%87%B0%20%F0%9F%93%BA%20%5B21.2%20Mbps%5D%20HK%20Hong%20Kong
