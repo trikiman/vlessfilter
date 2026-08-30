@@ -1,1 +1,1 @@
-trojan://Htb6AwARYBt+193LFyDnfe1fS+QDu9JHsiSw1waN0uc=@65.109.215.50:51773?security=none&headerType=&type=tcp#%F0%9F%87%AB%F0%9F%87%AE%20%F0%9F%93%BA%20%5B19.0%20Mbps%5D%20FI%20Finland
+trojan://Htb6AwARYBt+193LFyDnfe1fS+QDu9JHsiSw1waN0uc=@65.109.215.50:51773?security=none&headerType=&type=tcp#%F0%9F%87%AB%F0%9F%87%AE%20%F0%9F%93%BA%20%5B19.3%20Mbps%5D%20FI%20Finland

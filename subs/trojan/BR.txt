@@ -1,1 +1,1 @@
-trojan://ff5aeddc-8fea-4d17-b504-1a9fdacca802@45.130.125.160:443?sni=go.appsflyer.com.r3xxe.eu.cc&type=ws&path=/br-orcl&fp=chrome#%F0%9F%87%A7%F0%9F%87%B7%20%F0%9F%93%BA%20%5B22.4%20mb%5D%20BR%20Brazil
+trojan://ff5aeddc-8fea-4d17-b504-1a9fdacca802@45.130.125.160:443?sni=go.appsflyer.com.r3xxe.eu.cc&type=ws&path=/br-orcl&fp=chrome#%F0%9F%87%A7%F0%9F%87%B7%20%F0%9F%93%BA%20%5B18.2%20Mbps%5D%20BR%20Brazil
