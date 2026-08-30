@@ -1,1 +1,1 @@
-trojan://kxHw-Dk-e9dffgzYszMlEqLJ92AnY3Pi@tr-netherlands.unlimited-access.ru:443?security=tls&type=tcp&headerType=none&sni=tr-netherlands.unlimited-access.ru&fp=firefox&alpn=http/1.1#%F0%9F%87%B3%F0%9F%87%B1%20%F0%9F%93%BA%20%5B19.6%20Mbps%5D%20NL%20Netherlands
+trojan://kxHw-Dk-e9dffgzYszMlEqLJ92AnY3Pi@94.228.170.176:443?security=tls&type=tcp&headerType=none&sni=tr-netherlands.unlimited-access.ru&fp=firefox&alpn=http/1.1#%F0%9F%87%B3%F0%9F%87%B1%20%F0%9F%93%BA%20%5B12.6%20Mbps%5D%20NL%20Netherlands
