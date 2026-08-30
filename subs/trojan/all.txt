@@ -1,4 +1,1 @@
-trojan://B+gmrP1txQliTTw0NNVoHZ+wjNAL3nKHZopLtqlEAnI=@65.109.215.50:51773?security=none&headerType=&type=tcp#%F0%9F%87%AB%F0%9F%87%AE%20%F0%9F%93%BA%20%5B19.7%20Mbps%5D%20FI%20Finland
-trojan://humanity@104.16.72.41:443?path=%2Fassignment&security=tls&insecure=0&host=www.calmlunch.com&type=ws&allowInsecure=0&sni=www.calmlunch.com#%F0%9F%87%AB%F0%9F%87%B7%20%F0%9F%8E%AC%20%5B32.3%20Mbps%5D%20FR%20France
-trojan://humanity@104.16.71.213:443?path=/assignment&security=tls&insecure=0&host=www.calmlunch.com&type=ws&allowInsecure=0&sni=www.calmlunch.com#%F0%9F%87%AB%F0%9F%87%B7%20%F0%9F%8E%AC%20%5B32.8%20Mbps%5D%20FR%20France
-trojan://humanity@104.16.7.70:443?type=ws&security=tls&path=%2Fassignment&host=www.calmlunch.com&sni=www.calmlunch.com&allowInsecure=1#%F0%9F%87%AB%F0%9F%87%B7%20%F0%9F%8E%AC%20%5B31.1%20Mbps%5D%20FR%20France
+trojan://252c2daf-9b6f-469c-87ad-2db956c86607@38.55.199.26:50000?allowInsecure=0&peer=hk200m.jiasu.asia&sni=hk200m.jiasu.asia#%F0%9F%87%AD%F0%9F%87%B0%20%F0%9F%93%BA%20%5B12.1%20Mbps%5D%20HK%20Hong%20Kong
