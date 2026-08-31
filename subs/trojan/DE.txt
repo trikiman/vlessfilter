@@ -1,1 +1,2 @@
-trojan://Telegram_healer_config@172.67.170.155:443?sni=JfW5fIi30I7-SC560AvFnfnH613.i6JSQ7mr66E-E14trd.WoRKErs.deV&type=ws&path=/tr/BvZonkQYnXRYanP3KUCRjO?ed=2560&alpn=http/1.1&fp=chrome#%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%93%BA%20%5B14.5%20Mbps%5D%20DE%20Germany
+trojan://bpb-trojan@172.67.135.88:443?sni=vless.herogoing.top&type=ws&path=/tr?ed=2560&fp=chrome#%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%93%BA%20%5B22.6%20Mbps%5D%20DE%20Germany
+trojan://Telegram_healer_config@172.67.170.155:443?sni=JfW5fIi30I7-SC560AvFnfnH613.i6JSQ7mr66E-E14trd.WoRKErs.deV&type=ws&path=/tr/BvZonkQYnXRYanP3KUCRjO?ed=2560&alpn=http/1.1&fp=chrome#%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%8E%AC%20%5B28.8%20Mbps%5D%20DE%20Germany
