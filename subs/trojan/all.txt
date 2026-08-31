@@ -1,10 +1,5 @@
-trojan://ff5aeddc-8fea-4d17-b504-1a9fdacca802@45.130.125.160:443?sni=go.appsflyer.com.r3xxe.eu.cc&type=ws&path=/br-orcl&fp=chrome#%F0%9F%87%A7%F0%9F%87%B7%20%F0%9F%93%BA%20%5B15.6%20Mbps%5D%20BR%20Brazil
-trojan://bpb-trojan@172.67.135.88:443?sni=vless.herogoing.top&type=ws&path=/tr?ed=2560&fp=chrome#%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%93%BA%20%5B22.6%20Mbps%5D%20DE%20Germany
-trojan://Telegram_healer_config@172.67.170.155:443?sni=JfW5fIi30I7-SC560AvFnfnH613.i6JSQ7mr66E-E14trd.WoRKErs.deV&type=ws&path=/tr/BvZonkQYnXRYanP3KUCRjO?ed=2560&alpn=http/1.1&fp=chrome#%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%8E%AC%20%5B28.8%20Mbps%5D%20DE%20Germany
-trojan://8MAmkCERLW@65.109.216.227:10521?mode=auto&path=%2F&security=reality&pbk=gWmipUukIBjYhsK28eEtRXAcUZUG2B_ADhY9ILPa4EY&fp=chrome&spx=%2F&type=xhttp&sni=play.google.com&sid=0e0588#%F0%9F%87%AB%F0%9F%87%AE%20%F0%9F%8E%AC%20%5B38.6%20Mbps%5D%20FI%20Finland
-trojan://humanity@45.87.41.18:443?sni=www.calmlunch.com&type=ws&path=/assignment&fp=chrome#%F0%9F%87%AB%F0%9F%87%B7%20%F0%9F%8E%AC%20%5B46.1%20Mbps%5D%20FR%20France
-trojan://humanity@5.181.187.58:443?sni=www.calmlunch.com&type=ws&path=/assignment&fp=chrome#%F0%9F%87%AB%F0%9F%87%B7%20%F0%9F%8E%AC%20%5B42.4%20Mbps%5D%20FR%20France
-trojan://humanity@46.102.156.144:2053?path=%2Fassignment&security=tls&insecure=0&host=www.calmlunch.com&type=ws&allowInsecure=0&sni=www.calmlunch.com#%F0%9F%87%AB%F0%9F%87%B7%20%F0%9F%8E%AC%20%5B38.8%20Mbps%5D%20FR%20France
-trojan://0b5fa773-6f37-4134-87d4-0c349742b6f6@172.67.177.105:443?sni=app-538961.user-y0o4gm.workers.dev&allowInsecure=1&type=ws&path=/cmh&fp=chrome#%F0%9F%87%BA%F0%9F%87%B8%20%F0%9F%8E%AC%20%5B53.7%20Mbps%5D%20US%20United%20States
-trojan://0b5fa773-6f37-4134-87d4-0c349742b6f6@104.21.43.90:443?sni=app-538961.user-y0o4gm.workers.dev&allowInsecure=1&type=ws&path=/&fp=chrome#%F0%9F%87%BA%F0%9F%87%B8%20%F0%9F%8E%AC%20%5B46.6%20Mbps%5D%20US%20United%20States
-trojan://0b5fa773-6f37-4134-87d4-0c349742b6f6@172.64.80.1:443?sni=app-538961.user-y0o4gm.workers.dev&allowInsecure=1&type=ws&path=/cmh&fp=chrome#%F0%9F%87%BA%F0%9F%87%B8%20%F0%9F%93%BA%20%5B20.8%20Mbps%5D%20US%20United%20States
+trojan://bpb-trojan@172.64.80.1:443?sni=vless.herogoing.top&type=ws&path=%2Ftr%3Fed%3D2560&fp=chrome#%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%8E%AC%20%5B25.8%20Mbps%5D%20DE%20Germany
+trojan://bpb-trojan@104.21.26.36:443?sni=vless.herogoing.top&type=ws&path=/tr?ed=2560&fp=chrome#%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%93%BA%20%5B18.9%20Mbps%5D%20DE%20Germany
+trojan://f18d6149-e214-8554-e737-f7523c8b2eea@45.131.4.118:443?sni=0403.infinityconfig4.workers.dev&type=ws&path=/sync&fp=chrome#%F0%9F%87%BA%F0%9F%87%B8%20%E2%9A%A1%20%5B80.6%20Mbps%5D%20US%20United%20States
+trojan://f18d6149-e214-8554-e737-f7523c8b2eea@188.114.97.6:443?sni=0403.infinityconfig4.workers.dev&type=ws&path=/sync&fp=chrome#%F0%9F%87%BA%F0%9F%87%B8%20%E2%9A%A1%20%5B75.5%20Mbps%5D%20US%20United%20States
+trojan://f18d6149-e214-8554-e737-f7523c8b2eea@89.116.180.49:443?sni=0403.infinityconfig4.workers.dev&type=ws&path=/sync&fp=chrome#%F0%9F%87%BA%F0%9F%87%B8%20%E2%9A%A1%20%5B69.9%20Mbps%5D%20US%20United%20States
