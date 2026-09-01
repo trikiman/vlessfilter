@@ -1,1 +1,1 @@
-trojan://d050aca3-9df2-4461-90ec-92373c1d7636@v2jp.k1.ssnss.live:44184?security=tls#%F0%9F%87%AF%F0%9F%87%B5%20%F0%9F%93%BA%20%5B16.5%20Mbps%5D%20JP%20Japan
+trojan://tsuchiya@aa.ccmusic.jp:443/?type=tcp&security=tls#%F0%9F%87%AF%F0%9F%87%B5%20%F0%9F%93%BA%20%5B18.3%20Mbps%5D%20JP%20Japan

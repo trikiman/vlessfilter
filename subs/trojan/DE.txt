@@ -1,2 +1,1 @@
-trojan://TNTo3rwa1WFSlr50tkUUiucgF8JUWsksw6xrlw+h4xc=@91.107.242.197:33522?security=none&headerType=&type=tcp#%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%93%BA%20%5B18.9%20Mbps%5D%20DE%20Germany
-trojan://Telegram_healer_config@www.speedtest.net:443?alpn=http%2F1.1&fp=chrome&path=%2Ftr%2FmPZ7O1CUbIBPGNPZQ2HeV%3Fed%3D2560&security=tls&sni=TO6R63-KKChIGHQM2.VxZ0DDUq7tO7su0cDqF.WoRKeRs.DeV&type=ws#%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%93%BA%20%5B23.5%20Mbps%5D%20DE%20Germany
+trojan://bpb-trojan@vless.herogoing.top:443?sni=vless.herogoing.top&type=ws&path=/tr?ed=2560&fp=chrome#%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%93%BA%20%5B16.8%20Mbps%5D%20DE%20Germany
