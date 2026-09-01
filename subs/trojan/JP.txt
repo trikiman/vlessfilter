@@ -1,1 +1,1 @@
-trojan://fd3f82cc-bf25-4d3a-a379-09834800ade9@jp200m.jiasu.asia:50000?sni=jp200m.jiasu.asia&type=tcp&fp=chrome#%F0%9F%87%AF%F0%9F%87%B5%20%F0%9F%93%BA%20%5B12.6%20Mbps%5D%20JP%20Japan
+trojan://d050aca3-9df2-4461-90ec-92373c1d7636@v2jp.k1.ssnss.live:44184?security=tls#%F0%9F%87%AF%F0%9F%87%B5%20%F0%9F%93%BA%20%5B13.6%20Mbps%5D%20JP%20Japan
