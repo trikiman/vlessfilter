@@ -1,1 +1,2 @@
-trojan://humanity@188.42.145.180:443?path=/assignment&security=tls&alpn=http/1.1&insecure=0&host=www.volumeroot.com&fp=chrome&type=ws&allowInsecure=0&sni=www.volumeroot.com#%F0%9F%87%B3%F0%9F%87%B1%20%F0%9F%93%BA%20%5B12.7%20Mbps%5D%20NL%20Netherlands
+trojan://humanity@188.42.145.180:443?path=%2Fassignment&security=tls&alpn=http%2F1.1&insecure=0&host=www.volumeroot.com&fp=chrome&type=ws&allowInsecure=0&sni=www.volumeroot.com#%F0%9F%87%B3%F0%9F%87%B1%20%F0%9F%93%BA%20%5B18.7%20Mbps%5D%20NL%20Netherlands
+trojan://humanity@213.182.199.137:443?type=ws&host=www.pleadcourt.org&path=/assignment&security=tls&fp=chrome&sni=www.pleadcourt.org&alpn=http/1.1#%F0%9F%87%B3%F0%9F%87%B1%20%F0%9F%93%BA%20%5B21.4%20Mbps%5D%20NL%20Netherlands
