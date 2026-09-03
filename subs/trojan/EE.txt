@@ -1,1 +1,1 @@
-trojan://oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1@109.206.241.10:449?security=tls&sni=russiapower.accesscam.org#%F0%9F%87%AA%F0%9F%87%AA%20%F0%9F%93%BA%20%5B20.6%20Mbps%5D%20EE%20Estonia
+trojan://8qCNZU2XdtefT7uB4uPxgRR839btqMG8@ee01.botovod.space:510?type=xhttp&path=%2F&mode=auto&security=reality&sni=www.icloud.com&fp=chrome&pbk=KA8M8E0vMaIPkIEghc6Vcr0_mD84cGp4rcYWGhk2PhI&sid=4c7c#%F0%9F%87%AA%F0%9F%87%AA%20%F0%9F%93%BA%20%5B13.1%20Mbps%5D%20EE%20Estonia
