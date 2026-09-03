@@ -1,1 +1,1 @@
-trojan://humanity@104.16.174.101:443?host=www.ignitelimit.com&path=%2Fassignment&security=tls&sni=www.ignitelimit.com&type=ws#%F0%9F%87%AB%F0%9F%87%B7%20%F0%9F%93%BA%20%5B17.9%20Mbps%5D%20FR%20France
+trojan://humanity@5.181.187.58:443?path=/assignment&security=tls&insecure=0&host=www.calmlunch.com&type=ws&allowInsecure=0&sni=www.calmlunch.com#%F0%9F%87%AB%F0%9F%87%B7%20%F0%9F%8E%AC%20%5B29.1%20Mbps%5D%20FR%20France

@@ -1,2 +1,1 @@
-trojan://50414e45-4c5f-5a45-5553-565221666bd1@172.67.238.241:443?security=tls&sni=mczrh5e3u5ps.shoameny.workers.dev&fp=unsafe&type=ws&host=mczrh5e3u5ps.shoameny.workers.dev&path=%2Fstream%2FPANEL_ZEUS%2F565221666bd1%2Floc-5#%F0%9F%8C%90%20ROTATING
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpKMUludVU2UVJUNUpPaDFtUWZralUy@144.31.243.2:16015#%F0%9F%8C%90%20ROTATING
