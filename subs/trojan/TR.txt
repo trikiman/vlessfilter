@@ -1,1 +1,1 @@
-trojan://7e70223b-f331-41d5-9313-02b8d2df2885@45.67.201.210:20018/?type=tcp&security=tls&sni=hk.catxstar.com&allowInsecure=1#%F0%9F%87%B9%F0%9F%87%B7%20%F0%9F%93%BA%20%5B18.8%20mb%5D%20TR%20Turkey
+trojan://v2whz6ahmyy2f84j@subtu.charsoulink3.ir:2087?security=tls&alpn=h2,http/1.1,h3&insecure=0&headerType=none&fp=chrome&type=tcp&allowInsecure=0&sni=pus.mmdaqaorg2.ir#%F0%9F%87%B9%F0%9F%87%B7%20%F0%9F%93%BA%20%5B18.4%20Mbps%5D%20TR%20Turkey

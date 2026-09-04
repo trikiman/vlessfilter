@@ -1,1 +1,1 @@
-vless://716426fa-bcb7-4eb9-b460-36399ebf740d@184.107.106.68:443?encryption=none&security=tls&sni=lizca2.footballfantasyforum.com&insecure=0&allowInsecure=0&type=tcp&headerType=none#%F0%9F%87%A8%F0%9F%87%A6%20%E2%9A%A1%20%5B136.2%20mb%5D%20CA%20Canada
+vless://a71c8954-66a8-4321-bedb-2336230d81ce@130.107.73.148:41373?security=reality&encryption=none&pbk=m0GsZOAwvAJEaqh9aH6qfOmBKo0KW0jY_tJEC6KaDEU&headerType=none&type=tcp&flow=xtls-rprx-vision&sni=google.com&sid=0e#%F0%9F%87%A8%F0%9F%87%A6%20%E2%9A%A1%20%5B81.9%20Mbps%5D%20CA%20Canada
