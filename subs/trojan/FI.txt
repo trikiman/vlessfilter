@@ -1,2 +1,1 @@
-trojan://5YauIFGqU5@65.109.179.105:444?security=none#%F0%9F%87%AB%F0%9F%87%AE%20%F0%9F%93%BA%20%5B17.4%20Mbps%5D%20FI%20Finland
-trojan://bi60cwa2vze7zp2p@199.232.79.166:443?mode=auto&path=/@UonVPN---@UonVPN---@UonVPN---@UonVPN---@UonVPN---@UonVPN---@UonVPN---@UonVPN---@UonVPN---@UonVPN---@UonVPN---@UonVPN---@UonVPN---@UonVPN---@UonVPN---@UonVPN&security=tls&extra={"xPaddingBytes":"0"}&insecure=0&host=uonshop.global.ssl.fastly.neT&fp=chrome&type=xhttp&allowInsecure=0&sni=ssl.fastly.com#%F0%9F%87%AB%F0%9F%87%AE%20%F0%9F%93%BA%20%5B21.5%20Mbps%5D%20FI%20Finland
+trojan://5YauIFGqU5@65.109.179.105:444?security=none#%F0%9F%87%AB%F0%9F%87%AE%20%F0%9F%8E%AC%20%5B26.9%20Mbps%5D%20FI%20Finland
