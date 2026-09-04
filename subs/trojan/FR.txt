@@ -1,3 +1,2 @@
-trojan://humanity@104.16.72.2:443?path=/assignment&security=tls&insecure=0&host=www.calmlunch.com&type=ws&allowInsecure=0&sni=www.calmlunch.com#%F0%9F%87%AB%F0%9F%87%B7%20%F0%9F%8E%AC%20%5B35.3%20Mbps%5D%20FR%20France
-trojan://humanity@104.16.71.213:443?path=/assignment&security=tls&insecure=0&host=www.calmlunch.com&type=ws&allowInsecure=0&sni=www.calmlunch.com#%F0%9F%87%AB%F0%9F%87%B7%20%F0%9F%8E%AC%20%5B34.8%20Mbps%5D%20FR%20France
-trojan://humanity@104.17.121.43:443?path=%2Fassignment&security=tls&insecure=0&host=www.calmlunch.com&type=ws&allowInsecure=0&sni=www.calmlunch.com#%F0%9F%87%AB%F0%9F%87%B7%20%F0%9F%93%BA%20%5B18.1%20Mbps%5D%20FR%20France
+trojan://humanity@165.215.250.14:443?security=tls&sni=www.calmlunch.com&fp=chrome&type=ws&host=www.calmlunch.com&path=/assignment#%F0%9F%87%AB%F0%9F%87%B7%20%F0%9F%93%BA%20%5B17.8%20Mbps%5D%20FR%20France
+trojan://humanity@45.130.125.112:443?path=%2Fassignment&security=tls&insecure=0&fp=chrome&type=ws&allowInsecure=0&sni=www.calmlunch.com#%F0%9F%87%AB%F0%9F%87%B7%20%F0%9F%93%BA%20%5B17.6%20Mbps%5D%20FR%20France
