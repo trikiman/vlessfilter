@@ -3,4 +3,4 @@ vmess://eyJ2IjoiMiIsInBzIjoiaGFtZWRwNzE6OvCfh67wn4eqIiwiYWRkIjoiOTEuMjUwLjI0OS4y
 trojan://FH72359861@34.245.159.68:443?allowInsecure=0&sni=summary-firefly.rooster465.autos#%F0%9F%87%AE%F0%9F%87%AA%20%F0%9F%8E%AC%20%5B26.2%20mb%5D%20IE%20Ireland
 trojan://PQ05174892@34.244.253.42:443?sni=nice-elephant.rooster465.autos&allowInsecure=1&type=tcp&fp=chrome#%F0%9F%87%AE%F0%9F%87%AA%20%F0%9F%8E%AC%20%5B25.0%20mb%5D%20IE%20Ireland
 trojan://FH72359861@108.128.201.154:443?allowInsecure=0&sni=touching-turtle.rooster465.autos#%F0%9F%87%AE%F0%9F%87%AA%20%F0%9F%93%BA%20%5B24.6%20mb%5D%20IE%20Ireland
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo2dG0wa21iZG56UzFYb0xD@20.223.129.129:443#%F0%9F%87%AE%F0%9F%87%AA%20IE%20Ireland
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpnTXZ1T0oyQmh0aldtampY@52.236.93.60:443?outline=1&prefix=POST p355f2et#%F0%9F%87%AE%F0%9F%87%AA%20%F0%9F%8E%AC%20%5B48.5%20Mbps%5D%20IE%20Ireland
