@@ -1,3 +1,3 @@
 vless://43488128-319e-f480-64ea-0acdc712e2a8@64.176.166.143:443?encryption=none&flow=xtls-rprx-vision&fp=&pbk=tboI265nKvT77HoZPyA6bgZNuLap_Jy-XvAx2-4Rcwk&security=reality&sid=0c1553316a645758&sni=store.steampowered.com&type=tcp#%F0%9F%87%AE%F0%9F%87%B1%20IL%20Israel
 trojan://------------BanV2ray------------@179.237.75.217:3179?security=reality&pbk=S6Urxz22KIfwiMpEip65mTaA8JKe_d-Ocav2KXlG0lo&headerType=none&fp=firefox&spx=%2FDQo8CvmcDbScA4W&type=tcp&sni=promotion.yahoo.com&sid=7fe58b16f2d6c3#%F0%9F%87%AE%F0%9F%87%B1%20IL%20Israel
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTozaFNyQnJtS21yZ05Hc0Q5N1JTR09TNXArWElGcUVWazZabzRBSGJzUmhnPQ==@85.209.157.209:29367#%F0%9F%87%AE%F0%9F%87%B1%20%F0%9F%93%BA%20%5B17.7%20Mbps%5D%20IL%20Israel
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTozaFNyQnJtS21yZ05Hc0Q5N1JTR09TNXArWElGcUVWazZabzRBSGJzUmhnPQ==@85.209.157.209:29367#%F0%9F%87%AE%F0%9F%87%B1%20%F0%9F%8E%AC%20%5B26.4%20Mbps%5D%20IL%20Israel
