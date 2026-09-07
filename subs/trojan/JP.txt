@@ -1,1 +1,2 @@
-trojan://UQfj7bdfjibTjpUHfg72aew51S7fB32g@185.200.65.251:443?sni=portal.buildtunnel.com&type=tcp&path=/#%F0%9F%87%AF%F0%9F%87%B5%20%F0%9F%8E%AC%20%5B26.9%20Mbps%5D%20JP%20Japan
+trojan://UQfj7bdfjibTjpUHfg72aew51S7fB32g@portal.buildtunnel.com:443?type=tcp&sni=portal.buildtunnel.com#%F0%9F%87%AF%F0%9F%87%B5%20%F0%9F%93%BA%20%5B24.4%20Mbps%5D%20JP%20Japan
+trojan://UQfj7bdfjibTjpUHfg72aew51S7fB32g@185.200.65.251:443?sni=portal.buildtunnel.com&type=tcp&path=/#%F0%9F%87%AF%F0%9F%87%B5%20%F0%9F%93%BA%20%5B13.4%20Mbps%5D%20JP%20Japan
