@@ -1,1 +1,1 @@
-trojan://5YauIFGqU5@65.109.179.105:444?security=none#%F0%9F%87%AB%F0%9F%87%AE%20%F0%9F%93%BA%20%5B14.3%20Mbps%5D%20FI%20Finland
+trojan://5YauIFGqU5@65.109.179.105:444?security=none#%F0%9F%87%AB%F0%9F%87%AE%20%F0%9F%8E%AC%20%5B25.3%20Mbps%5D%20FI%20Finland
