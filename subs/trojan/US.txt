@@ -1,3 +1,1 @@
-trojan://e_f58PfEaEC5nQCPQvjoLw@66.23.207.69:443?security=none&type=ws&headerType=&path=%2F&host=telegram.org#%F0%9F%87%BA%F0%9F%87%B8%20%E2%9A%A1%20%5B117.0%20Mbps%5D%20US%20United%20States
-trojan://UQfj7bdfjibTjpUHfg72aew51S7fB32g@bright.bitgas.org:443?security=tls&fp=chrome#%F0%9F%87%BA%F0%9F%87%B8%20%E2%9A%A1%20%5B121.4%20Mbps%5D%20US%20United%20States
-trojan://407ecce0-dc85-465f-89f5-e520e9378baf@104.17.238.76:443?sni=ld.223350.xyz&type=ws&path=/&fp=chrome#%F0%9F%87%BA%F0%9F%87%B8%20%E2%9A%A1%20%5B82.4%20Mbps%5D%20US%20United%20States
+trojan://UQfj7bdfjibTjpUHfg72aew51S7fB32g@bright.bitgas.org:443?security=tls&fp=chrome#%F0%9F%87%BA%F0%9F%87%B8%20%F0%9F%8E%AC%20%5B32.4%20Mbps%5D%20US%20United%20States
