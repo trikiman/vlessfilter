@@ -1,1 +1,1 @@
-trojan://tsuchiya@aa.ccmusic.jp:443/?type=tcp&security=tls#%F0%9F%87%AF%F0%9F%87%B5%20%F0%9F%93%BA%20%5B17.7%20Mbps%5D%20JP%20Japan
+trojan://62dbcf02-0989-4441-a01a-93f9c3b93525@172.64.229.84:443?type=ws&path=/x7f9k2m4p8&host=ot.hyas.space&security=tls&sni=ot.hyas.space#%F0%9F%87%AF%F0%9F%87%B5%20%F0%9F%93%BA%20%5B15.3%20Mbps%5D%20JP%20Japan
