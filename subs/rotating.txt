@@ -100,4 +100,3 @@ vless://f32b0ea8-5b9f-4ee2-b20c-0bdfd2057e1d@172.67.174.37:8880?path=/pyip=Proxy
 vless://f32b0ea8-5b9f-4ee2-b20c-0bdfd2057e1d@172.67.190.141:8880?encryption=none&type=ws&host=throbbing-shape-b190.478-57a.workers.dev&path=/pyip%3DProxyIP.KR.CMLiussss.net&packetEncoding=xudp#%F0%9F%8C%90%20ROTATING
 vless://f6e14309-5cff-4f5d-bce1-06a260159bbe@104.17.180.201:8880?security=none&type=ws&host=steep-bread-32f0.92-d12.workers.dev#%F0%9F%8C%90%20ROTATING
 vless://f8847ac2-e586-400f-841b-00081ea4592e@5.75.195.83:56879?encryption=none&security=tls&sni=9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev&fp=chrome&type=ws&host=9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev&path=%2F%40Marisa_kristi#%F0%9F%8C%90%20ROTATING
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpKMUludVU2UVJUNUpPaDFtUWZralUy@144.31.243.2:16015#%F0%9F%8C%90%20ROTATING
