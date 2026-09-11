@@ -1,1 +1,1 @@
-trojan://UQfj7bdfjibTjpUHfg72aew51S7fB32g@bright.bitgas.org:443?security=tls&fp=chrome#%F0%9F%87%BA%F0%9F%87%B8%20%F0%9F%8E%AC%20%5B26.4%20Mbps%5D%20US%20United%20States
+trojan://UQfj7bdfjibTjpUHfg72aew51S7fB32g@bright.bitgas.org:443?security=tls&fp=chrome#%F0%9F%87%BA%F0%9F%87%B8%20%F0%9F%8E%AC%20%5B38.7%20Mbps%5D%20US%20United%20States
