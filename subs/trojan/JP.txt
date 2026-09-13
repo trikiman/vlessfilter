@@ -1,1 +1,2 @@
-trojan://5504eaa8-1395-402f-8e0e-75ecd762e627@104.18.41.190:443?host=nat11.outsidemyheart.space&path=/w4e5yh0p945y3?ed=2560&sni=nat11.outsidemyheart.space&type=ws#%F0%9F%87%AF%F0%9F%87%B5%20%F0%9F%93%BA%20%5B22.5%20Mbps%5D%20JP%20Japan
+trojan://d83a390c-33c3-4577-9258-e062f8ebdc16@172.64.41.251:443?type=ws&path=/x7f9k2m4p8&host=oa1.hyas.space&security=tls&sni=oa1.hyas.space#%F0%9F%87%AF%F0%9F%87%B5%20%F0%9F%8E%AC%20%5B26.5%20Mbps%5D%20JP%20Japan
+trojan://624209bb-8216-45fe-bbe0-50132ec63162@172.67.211.136:443?path=/x7f9k2m4p8&security=tls&insecure=0&fp=chrome&type=ws&allowInsecure=0&sni=ot2.hyas.space#%F0%9F%87%AF%F0%9F%87%B5%20%F0%9F%93%BA%20%5B18.5%20Mbps%5D%20JP%20Japan
