@@ -1,2 +1,2 @@
-trojan://Telegram_healer_config@172.67.170.155:443?sni=JfW5fIi30I7-SC560AvFnfnH613.i6JSQ7mr66E-E14trd.WoRKErs.deV&type=ws&path=/tr/BvZonkQYnXRYanP3KUCRjO?ed=2560&alpn=http/1.1&fp=chrome#%F0%9F%87%A9%F0%9F%87%AA%20%E2%9A%A1%20%5B111.4%20Mbps%5D%20DE%20Germany
-trojan://MiTiVPN@199.232.78.160:443?path=@mehrosaboran&security=tls&alpn=http/1.1&insecure=0&host=mitivpn---ss--s---mitivpn-44.global.ssl.fastly.net&fp=chrome&type=ws&allowInsecure=0&sni=ssl.fastly.com#%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%8E%AC%20%5B26.8%20Mbps%5D%20DE%20Germany
+trojan://eowr5vwm32wu3473@130.185.123.21:1819?security=none&headerType=&type=tcp#%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%8E%AC%20%5B25.4%20Mbps%5D%20DE%20Germany
+trojan://MITIVPN@199.232.78.101:443?path=@mehrosaboran&security=tls&alpn=http/1.1&insecure=0&host=mitivpn---ss--s---mitivpn-11s.global.ssl.fastly.net&fp=chrome&type=ws&allowInsecure=0&sni=ssl.fastly.com#%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%8E%AC%20%5B25.9%20Mbps%5D%20DE%20Germany
