@@ -1,1 +1,1 @@
-trojan://wphetm3l4awlpn7y@202.133.90.105:1819?security=none&headerType=&type=tcp#%F0%9F%87%A7%F0%9F%87%AC%20%F0%9F%93%BA%20%5B12.4%20Mbps%5D%20BG%20Bulgaria
+trojan://wphetm3l4awlpn7y@202.133.90.105:1819?security=none&headerType=none&type=tcp#%F0%9F%87%A7%F0%9F%87%AC%20%F0%9F%93%BA%20%5B16.9%20Mbps%5D%20BG%20Bulgaria
