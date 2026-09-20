@@ -1,1 +1,1 @@
-trojan://d5bee0afdbc500b8cda02d80@nl2.pleiades.codes:2053?security=tls&sni=nl2.pleiades.codes&alpn=h2%2Chttp%2F1.1&fp=random&type=tcp#%F0%9F%87%B3%F0%9F%87%B1%20%F0%9F%8E%AC%20%5B36.5%20Mbps%5D%20NL%20Netherlands
+trojan://d5bee0afdbc500b8cda02d80@nl2.pleiades.codes:2053?alpn=h2,http/1.1#%F0%9F%87%B3%F0%9F%87%B1%20%F0%9F%93%BA%20%5B13.3%20Mbps%5D%20NL%20Netherlands
