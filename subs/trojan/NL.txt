@@ -1,1 +1,1 @@
-trojan://d5bee0afdbc500b8cda02d80@nl2.pleiades.codes:2053?alpn=h2,http/1.1#%F0%9F%87%B3%F0%9F%87%B1%20%F0%9F%93%BA%20%5B13.3%20Mbps%5D%20NL%20Netherlands
+trojan://humanity@78.47.146.151:443?path=%2Fassignment&security=tls&insecure=0&host=www.pleadcourt.org&type=ws&allowInsecure=0&sni=www.pleadcourt.org#%F0%9F%87%B3%F0%9F%87%B1%20%F0%9F%93%BA%20%5B14.3%20Mbps%5D%20NL%20Netherlands
