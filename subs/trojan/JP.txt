@@ -1,1 +1,1 @@
-trojan://tsuchiya@aa.ccmusic.jp:443?sni=aa.ccmusic.jp&type=tcp&fp=chrome#%F0%9F%87%AF%F0%9F%87%B5%20%F0%9F%93%BA%20%5B12.6%20Mbps%5D%20JP%20Japan
+trojan://3c6d1933-b22a-484b-ac8a-63e24f5fba75@jp3.998998.best:443?sni=nat11.outsidemyheart.space&allowInsecure=1&type=ws&path=%2Fw4e5yh0p945y3&host=nat11.outsidemyheart.space&fp=chrome#%F0%9F%87%AF%F0%9F%87%B5%20%F0%9F%93%BA%20%5B15.9%20Mbps%5D%20JP%20Japan
