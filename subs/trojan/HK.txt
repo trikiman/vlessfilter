@@ -1,1 +1,1 @@
-trojan://136a3686-892c-4d09-8937-eacdf688810d@hk200m.jiasu.asia:50000?sni=hk200m.jiasu.asia&type=tcp&fp=chrome#%F0%9F%87%AD%F0%9F%87%B0%20%F0%9F%93%BA%20%5B15.3%20Mbps%5D%20HK%20Hong%20Kong
+trojan://XuMweB2PWs@2.27.109.179:45464?allowInsecure=0&sni=2.27.109.179.sslip.io#%F0%9F%87%AD%F0%9F%87%B0%20%F0%9F%93%BA%20%5B21.2%20Mbps%5D%20HK%20Hong%20Kong
