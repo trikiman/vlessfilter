@@ -1,3 +1,1 @@
-trojan://humanity@8.47.69.0:443?path=/assignment&security=tls&alpn=http/1.1&insecure=0&host=www.pleadcourt.org&fp=chrome&type=ws&allowInsecure=0&sni=www.pleadcourt.org#%F0%9F%87%B3%F0%9F%87%B1%20%F0%9F%8E%AC%20%5B28.5%20Mbps%5D%20NL%20Netherlands
-trojan://humanity@188.114.97.6:443?security=tls&sni=www.pleadcourt.org&alpn=http/1.1&type=ws&host=www.pleadcourt.org&path=/assignment#%F0%9F%87%B3%F0%9F%87%B1%20%F0%9F%93%BA%20%5B24.4%20Mbps%5D%20NL%20Netherlands
-trojan://19a98e32a1149952a988e1e915306e07@87.58.220.77:8443?fp=&pbk=Xg9GWp35B9WMmB1FRancEXyJ6TD-HiCvw0s2gC-YtTU&security=reality&sid=dc05de&sni=yandex.ru#%F0%9F%87%B3%F0%9F%87%B1%20%F0%9F%93%BA%20%5B18.3%20Mbps%5D%20NL%20Netherlands
+trojan://19a98e32a1149952a988e1e915306e07@87.58.220.77:8443?fp=&pbk=Xg9GWp35B9WMmB1FRancEXyJ6TD-HiCvw0s2gC-YtTU&security=reality&sid=dc05de&sni=yandex.ru#%F0%9F%87%B3%F0%9F%87%B1%20%F0%9F%8E%AC%20%5B45.9%20Mbps%5D%20NL%20Netherlands
