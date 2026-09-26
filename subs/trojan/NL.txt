@@ -1,1 +1,1 @@
-trojan://MiTiVPN@151.101.56.255:443?security=tls&alpn=http/1.1&insecure=0&host=mitivpn---nl--s---mitivpn-2.global.ssl.fastly.net&fp=chrome&type=ws&allowInsecure=0&sni=ssl.fastly.com#%F0%9F%87%B3%F0%9F%87%B1%20%F0%9F%8E%AC%20%5B29.0%20Mbps%5D%20NL%20Netherlands
+trojan://MiTiVPN@151.101.56.255:443?security=tls&alpn=http/1.1&host=mitivpn---nl--s---mitivpn-2.global.ssl.fastly.net&fp=chrome&type=ws&sni=ssl.fastly.com#%F0%9F%87%B3%F0%9F%87%B1%20%F0%9F%8E%AC%20%5B47.5%20Mbps%5D%20NL%20Netherlands
