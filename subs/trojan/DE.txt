@@ -1,3 +1,1 @@
-trojan://MiTiVPN@151.101.56.7:443?security=tls&alpn=http%2F1.1&insecure=0&host=mitivpn---de--s---mitivpn-2.global.ssl.fastly.net&fp=chrome&type=ws&allowInsecure=0&sni=ssl.fastly.com#%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%8E%AC%20%5B51.9%20Mbps%5D%20DE%20Germany
-trojan://Telegram_healer_config@104.21.24.95:443?sni=1V95V6TjywCyTbAHl7f7Lx8b27G.L4495eYcqmsE9he0yVoEMJFc4IBYf-4.wORkERS.DeV&type=ws&path=/tr/zJi4ccv7FeEo780U?ed=2560&alpn=http/1.1&fp=chrome#%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%8E%AC%20%5B49.9%20Mbps%5D%20DE%20Germany
-trojan://bpb-trojan@vless.herogoing.top:443?sni=vless.herogoing.top&type=ws&path=/tr?ed=2560&fp=chrome#%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%8E%AC%20%5B48.4%20Mbps%5D%20DE%20Germany
+trojan://MiTiVPN@151.101.56.7:443?fp=chrome&allowInsecure=0&insecure=0&sni=ssl.fastly.com&host=mitivpn---de--s---mitivpn-2.global.ssl.fastly.net&security=tls&type=ws&alpn=http/1.1#%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%93%BA%20%5B20.7%20Mbps%5D%20DE%20Germany
