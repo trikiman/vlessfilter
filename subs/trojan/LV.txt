@@ -1,1 +1,1 @@
-trojan://N+Mhwqr08vTRlHiQ81NEZAE2knqmhHp4wBa+Y6UNeOw=@31.56.196.18:49885?security=none&host=www.cloudflare.com&headerType=http&type=tcp#%F0%9F%87%B1%F0%9F%87%BB%20%F0%9F%8E%AC%20%5B31.8%20Mbps%5D%20LV%20Latvia
+trojan://N+Mhwqr08vTRlHiQ81NEZAE2knqmhHp4wBa+Y6UNeOw=@31.56.196.18:49885?headerType=http&host=www.cloudflare.com&path=%2F&security=none&type=tcp#%F0%9F%87%B1%F0%9F%87%BB%20%F0%9F%8E%AC%20%5B34.2%20Mbps%5D%20LV%20Latvia
