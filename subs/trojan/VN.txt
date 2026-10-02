@@ -1,1 +1,1 @@
-trojan://fac593ac-d6aa-4523-bea9-b3eb2a2b3da3@109.110.162.40:23005?sni=82.yuanul.com&type=tcp#%F0%9F%87%BB%F0%9F%87%B3%20%F0%9F%93%BA%20%5B24.5%20Mbps%5D%20VN%20Vietnam
+trojan://fac593ac-d6aa-4523-bea9-b3eb2a2b3da3@109.110.162.40:23005?security=tls&sni=82.yuanul.com&type=tcp#%F0%9F%87%BB%F0%9F%87%B3%20%F0%9F%93%BA%20%5B20.8%20Mbps%5D%20VN%20Vietnam
