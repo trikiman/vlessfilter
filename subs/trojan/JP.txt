@@ -1,3 +1,2 @@
-trojan://UX82473651@organic-caribou.rooster465.autos:443?allowInsecure=1&sni=organic-caribou.rooster465.autos#%F0%9F%87%AF%F0%9F%87%B5%20%F0%9F%8E%AC%20%5B28.5%20Mbps%5D%20JP%20Japan
-trojan://UX82473651@concrete-aardvark.rooster465.autos:443?allowInsecure=1&sni=concrete-aardvark.rooster465.autos#%F0%9F%87%AF%F0%9F%87%B5%20%F0%9F%8E%AC%20%5B25.5%20Mbps%5D%20JP%20Japan
-trojan://UX82473651@obliging-louse.rooster465.autos:443?allowInsecure=1&sni=obliging-louse.rooster465.autos#%F0%9F%87%AF%F0%9F%87%B5%20%F0%9F%93%BA%20%5B19.5%20Mbps%5D%20JP%20Japan
+trojan://UX82473651@obliging-louse.rooster465.autos:443?allowInsecure=1&sni=obliging-louse.rooster465.autos#%F0%9F%87%AF%F0%9F%87%B5%20%F0%9F%93%BA%20%5B18.1%20Mbps%5D%20JP%20Japan
+trojan://UX82473651@concrete-aardvark.rooster465.autos:443?allowInsecure=1&sni=concrete-aardvark.rooster465.autos#%F0%9F%87%AF%F0%9F%87%B5%20%F0%9F%93%BA%20%5B18.0%20Mbps%5D%20JP%20Japan
