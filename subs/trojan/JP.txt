@@ -1,1 +1,3 @@
-trojan://d62ffc57-b1f1-4eab-a0f1-8e36b765ef13@45.76.218.34:32676?type=tcp&security=tls&sni=lazeno.vip&fp=chrome#%F0%9F%87%AF%F0%9F%87%B5%20%F0%9F%8E%AC%20%5B41.2%20Mbps%5D%20JP%20Japan
+trojan://UX82473651@comic-poodle.rooster465.autos:443?type=tcp&security=tls&sni=comic-poodle.rooster465.autos&fp=chrome#%F0%9F%87%AF%F0%9F%87%B5%20%F0%9F%8E%AC%20%5B43.4%20Mbps%5D%20JP%20Japan
+trojan://UX82473651@brief-glider.rooster465.autos:443?allowInsecure=1&sni=brief-glider.rooster465.autos#%F0%9F%87%AF%F0%9F%87%B5%20%F0%9F%8E%AC%20%5B43.0%20Mbps%5D%20JP%20Japan
+trojan://UX82473651@integral-rodent.rooster465.autos:443?type=tcp&security=tls&sni=integral-rodent.rooster465.autos&fp=chrome#%F0%9F%87%AF%F0%9F%87%B5%20%F0%9F%8E%AC%20%5B43.4%20Mbps%5D%20JP%20Japan
