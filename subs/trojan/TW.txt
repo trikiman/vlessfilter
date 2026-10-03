@@ -1,1 +1,1 @@
-trojan://58d1a580a3fc4a87@w192m.iamnew2020.top:99?security=tls#%F0%9F%87%B9%F0%9F%87%BC%20%F0%9F%93%BA%20%5B18.9%20mb%5D%20TW%20Taiwan
+trojan://9efd3f19-c7cb-4fa9-8d66-0598043597dc@ttww11.bpca2026.top:443?allowInsecure=1&sni=ttww11.bpca2026.top&type=ws&host=ttww11.bpca2026.top&path=/images#%F0%9F%87%B9%F0%9F%87%BC%20%F0%9F%93%BA%20%5B14.1%20Mbps%5D%20TW%20Taiwan
