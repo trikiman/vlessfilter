@@ -1,1 +1,1 @@
-trojan://UX82473651@desired-boxer.rooster465.autos:443?allowInsecure=1&sni=desired-boxer.rooster465.autos#%F0%9F%87%B8%F0%9F%87%AC%20%F0%9F%93%BA%20%5B20.0%20Mbps%5D%20SG%20Singapore
+trojan://UX82473651@holy-lamb.rooster465.autos:443?type=tcp&security=tls&sni=holy-lamb.rooster465.autos&fp=chrome#%F0%9F%87%B8%F0%9F%87%AC%20%F0%9F%93%BA%20%5B18.9%20Mbps%5D%20SG%20Singapore

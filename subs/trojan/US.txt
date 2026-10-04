@@ -1,3 +1,1 @@
-trojan://0b5fa773-6f37-4134-87d4-0c349742b6f6@172.64.80.1:443?sni=app-538961.user-y0o4gm.workers.dev&allowInsecure=1&type=ws&path=/cmh&fp=chrome#%F0%9F%87%BA%F0%9F%87%B8%20%F0%9F%8E%AC%20%5B33.1%20Mbps%5D%20US%20United%20States
-trojan://UX82473651@guided-ferret.rooster465.autos:443?allowInsecure=1&sni=guided-ferret.rooster465.autos#%F0%9F%87%BA%F0%9F%87%B8%20%F0%9F%8E%AC%20%5B27.4%20Mbps%5D%20US%20United%20States
-trojan://UX82473651@44.255.123.205:443?sni=happy-gibbon.rooster465.autos&path=/#%F0%9F%87%BA%F0%9F%87%B8%20%F0%9F%93%BA%20%5B24.7%20Mbps%5D%20US%20United%20States
+trojan://UX82473651@guided-ferret.rooster465.autos:443?allowInsecure=1&sni=guided-ferret.rooster465.autos#%F0%9F%87%BA%F0%9F%87%B8%20%F0%9F%8E%AC%20%5B34.8%20Mbps%5D%20US%20United%20States
