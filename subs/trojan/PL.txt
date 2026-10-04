@@ -1,2 +1,2 @@
-trojan://UX82473651@202.78.163.237:443?security=tls&sni=cheerful-swan.rooster465.autos&path=/#%F0%9F%87%B5%F0%9F%87%B1%20%F0%9F%93%BA%20%5B15.4%20Mbps%5D%20PL%20Poland
-trojan://UX82473651@cheerful-swan.rooster465.autos:443?security=tls&sni=cheerful-swan.rooster465.autos&type=tcp&path=/&allow_insecure=1#%F0%9F%87%B5%F0%9F%87%B1%20%F0%9F%93%BA%20%5B13.7%20Mbps%5D%20PL%20Poland
+trojan://UX82473651@202.78.163.237:443?security=tls&sni=cheerful-swan.rooster465.autos&path=/#%F0%9F%87%B5%F0%9F%87%B1%20%F0%9F%93%BA%20%5B19.4%20Mbps%5D%20PL%20Poland
+trojan://UX82473651@cheerful-swan.rooster465.autos:443?security=tls&sni=cheerful-swan.rooster465.autos&path=/#%F0%9F%87%B5%F0%9F%87%B1%20%F0%9F%93%BA%20%5B19.1%20Mbps%5D%20PL%20Poland
