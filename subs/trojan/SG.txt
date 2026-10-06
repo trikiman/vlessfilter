@@ -1,1 +1,1 @@
-trojan://UX82473651@holy-lamb.rooster465.autos:443?sni=holy-lamb.rooster465.autos&allowInsecure=1&type=tcp&fp=chrome#%F0%9F%87%B8%F0%9F%87%AC%20%F0%9F%93%BA%20%5B21.4%20Mbps%5D%20SG%20Singapore
+trojan://UX82473651@holy-lamb.rooster465.autos:443?allowInsecure=0&sni=holy-lamb.rooster465.autos#%F0%9F%87%B8%F0%9F%87%AC%20%F0%9F%93%BA%20%5B18.6%20Mbps%5D%20SG%20Singapore

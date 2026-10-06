@@ -1,1 +1,1 @@
-trojan://v2whz6ahmyy2f84j@subtu.charsoulink3.ir:2087?security=tls&alpn=h2,http/1.1,h3&insecure=0&headerType=none&fp=chrome&type=tcp&allowInsecure=0&sni=pus.mmdaqaorg2.ir#%F0%9F%87%B9%F0%9F%87%B7%20%F0%9F%93%BA%20%5B18.4%20Mbps%5D%20TR%20Turkey
+trojan://e309e031-991e-4656-9934-44d10deb8fd8@www.speedtest.org:2053?type=ws&security=tls&path=%2F0962&host=nimm.mpd.cc.cd.&sni=nimm.mpd.cc.cd.&alpn=h3%2Ch2%2Chttp%2F1.1&fp=ios&insecure=0&allowInsecure=0#%F0%9F%87%B9%F0%9F%87%B7%20%F0%9F%93%BA%20%5B19.6%20Mbps%5D%20TR%20Turkey
