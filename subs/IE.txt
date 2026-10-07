@@ -1,5 +1,6 @@
 vless://412d7fbe-7474-4f1d-86c6-7eebdc628f72@mci.pictureiran.ir:2087?mode=auto&path=%2F&security=tls&encryption=none&insecure=0&host=ireland.alfather.ir&fp=chrome&type=xhttp&allowInsecure=0&sni=ireland.alfather.ir#%F0%9F%87%AE%F0%9F%87%AA%20IE%20Ireland
 vmess://eyJ2IjoiMiIsInBzIjoiaGFtZWRwNzE6OvCfh67wn4eqIiwiYWRkIjoiOTEuMjUwLjI0OS4yMTkiLCJwb3J0IjoiMTExOTYiLCJpZCI6InJvb3RmYWNlIiwiYWlkIjoiMCIsInNjeSI6ImF1dG8iLCJuZXQiOiJ3cyIsInR5cGUiOiItLS0iLCJob3N0IjoiIiwicGF0aCI6Ii9yb290ZmFjZSIsInRscyI6IiIsInNuaSI6IiIsInRlc3RfbmFtZSI6IjE4Iiwic2tpcC1jZXJ0LXZlcmlmeSI6dHJ1ZX0#%F0%9F%87%AE%F0%9F%87%AA%20IE%20Ireland
-trojan://UX82473651@sacred-anemone.rooster465.autos:443?sni=sacred-anemone.rooster465.autos#%F0%9F%87%AE%F0%9F%87%AA%20%F0%9F%93%BA%20%5B20.8%20Mbps%5D%20IE%20Ireland
-trojan://UX82473651@3.253.106.233:443?sni=loved-shark.rooster465.autos&path=/#%F0%9F%87%AE%F0%9F%87%AA%20%F0%9F%93%BA%20%5B16.9%20Mbps%5D%20IE%20Ireland
+trojan://UX82473651@34.242.77.118:443?sni=sacred-anemone.rooster465.autos&fp=chrome&type=tcp&path=/#%F0%9F%87%AE%F0%9F%87%AA%20%F0%9F%8E%AC%20%5B45.1%20Mbps%5D%20IE%20Ireland
+trojan://UX82473651@sacred-anemone.rooster465.autos:443?security=tls&sni=sacred-anemone.rooster465.autos#%F0%9F%87%AE%F0%9F%87%AA%20%F0%9F%8E%AC%20%5B44.0%20Mbps%5D%20IE%20Ireland
+trojan://UX82473651@3.253.106.233:443?sni=loved-shark.rooster465.autos&fp=chrome&type=tcp&path=/#%F0%9F%87%AE%F0%9F%87%AA%20%F0%9F%93%BA%20%5B21.2%20Mbps%5D%20IE%20Ireland
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpRTWVtV2lkNlhHdG5SZXVv@20.238.35.153:443?outline=1&prefix=POST W35af9ct#%F0%9F%87%AE%F0%9F%87%AA%20%F0%9F%93%BA%20%5B17.6%20Mbps%5D%20IE%20Ireland
