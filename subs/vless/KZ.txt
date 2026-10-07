@@ -1,1 +1,1 @@
-vless://b573cefb-7bc7-4a42-b407-b8b534e66773@109.248.170.119:13447?security=reality&fp=chrome&pbk=_0wM2ep44eAcrgf5PflKaBivknCWT6kMvQBQUoScCkE&sid=83&sni=yahoo.com#%F0%9F%87%B0%F0%9F%87%BF%20%F0%9F%93%BA%20%5B14.2%20Mbps%5D%20KZ%20Kazakhstan
+vless://b573cefb-7bc7-4a42-b407-b8b534e66773@109.248.170.119:13447?security=reality&fp=chrome&pbk=_0wM2ep44eAcrgf5PflKaBivknCWT6kMvQBQUoScCkE&sid=83&sni=yahoo.com#%F0%9F%87%B0%F0%9F%87%BF%20%F0%9F%93%BA%20%5B19.0%20Mbps%5D%20KZ%20Kazakhstan

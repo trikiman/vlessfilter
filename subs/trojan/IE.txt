@@ -1,3 +1,1 @@
-trojan://UX82473651@34.242.77.118:443?sni=sacred-anemone.rooster465.autos&fp=chrome&type=tcp&path=/#%F0%9F%87%AE%F0%9F%87%AA%20%F0%9F%8E%AC%20%5B45.1%20Mbps%5D%20IE%20Ireland
-trojan://UX82473651@sacred-anemone.rooster465.autos:443?security=tls&sni=sacred-anemone.rooster465.autos#%F0%9F%87%AE%F0%9F%87%AA%20%F0%9F%8E%AC%20%5B44.0%20Mbps%5D%20IE%20Ireland
-trojan://UX82473651@3.253.106.233:443?sni=loved-shark.rooster465.autos&fp=chrome&type=tcp&path=/#%F0%9F%87%AE%F0%9F%87%AA%20%F0%9F%93%BA%20%5B21.2%20Mbps%5D%20IE%20Ireland
+trojan://UX82473651@34.242.77.118:443?sni=sacred-anemone.rooster465.autos&fp=chrome&type=tcp&path=/#%F0%9F%87%AE%F0%9F%87%AA%20%F0%9F%93%BA%20%5B21.0%20Mbps%5D%20IE%20Ireland
