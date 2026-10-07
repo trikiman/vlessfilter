@@ -2,8 +2,7 @@ vless://b969ef8f-7bdb-474f-9481-d8f3c5686fb8@13.231.7.104:24620?encryption=none&
 vless://99ee7869-84e6-4e07-a7d2-1f56acd3a295@116.206.93.227:443?encryption=none&flow=xtls-rprx-vision&type=raw&headerType=none&security=reality&fp=safari&pbk=gj-WwJGn9OMgKeREW-gOPyl1YP88IXD5k4zunEl2-iE&sni=www.apple.com&sid=190378398fd796c3#%F0%9F%87%AF%F0%9F%87%B5%20%F0%9F%8E%AC%20%5B33.3%20Mbps%5D%20JP%20Japan
 vless://871bfce7-8440-4394-8d82-56b51f20fdad@18.183.215.124:28573?security=reality&encryption=none&pbk=1DJr9toke7FRuSXjibBVuNvRnLnJnN5kXwUBG6Romzg&headerType=&fp=firefox&type=tcp&flow=xtls-rprx-vision&sni=www.sony.com&sid=03653bc03be10c97#%F0%9F%87%AF%F0%9F%87%B5%20%F0%9F%8E%AC%20%5B32.9%20Mbps%5D%20JP%20Japan
 vmess://eyJ2IjogIjIiLCAicHMiOiAiXHVkODNkXHVkZDI1Sm9pbitUZWxlZ3JhbTpARmFyYWhfVlBOXHVkODNkXHVkZmUzIiwgImFkZCI6ICIxNjguMTM4LjQzLjc1IiwgInBvcnQiOiAiODAiLCAiaWQiOiAiMTFjMzYyN2YtMzFlOC00Njk1LWRmYmQtMzQwNzZlMmYxZjVkIiwgImFpZCI6ICIwIiwgInNjeSI6ICJhdXRvIiwgIm5ldCI6ICJ3cyIsICJ0eXBlIjogIiIsICJob3N0IjogIiIsICJwYXRoIjogIi9jY3R2MTMubTN1OCIsICJ0bHMiOiAiIiwgInNuaSI6ICIiLCAidGVzdF9uYW1lIjogIjMzIn0=#%F0%9F%87%AF%F0%9F%87%B5%20%F0%9F%93%BA%20%5B14.8%20Mbps%5D%20JP%20Japan
-trojan://UX82473651@54.249.36.167:443?sni=comic-poodle.rooster465.autos&type=tcp&fp=chrome#%F0%9F%87%AF%F0%9F%87%B5%20%F0%9F%8E%AC%20%5B39.5%20Mbps%5D%20JP%20Japan
-trojan://UX82473651@3.112.245.255:443?sni=dynamic-imp.rooster465.autos&allowInsecure=1&type=tcp&fp=chrome#%F0%9F%87%AF%F0%9F%87%B5%20%F0%9F%8E%AC%20%5B39.5%20Mbps%5D%20JP%20Japan
-trojan://UX82473651@52.192.217.187:443?sni=evolving-platypus.rooster465.autos&path=/#%F0%9F%87%AF%F0%9F%87%B5%20%F0%9F%8E%AC%20%5B39.3%20Mbps%5D%20JP%20Japan
-ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@149.22.87.204:443#%F0%9F%87%AF%F0%9F%87%B5%20%F0%9F%8E%AC%20%5B43.8%20Mbps%5D%20JP%20Japan
-ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@149.22.87.241:443#%F0%9F%87%AF%F0%9F%87%B5%20%F0%9F%8E%AC%20%5B43.3%20Mbps%5D%20JP%20Japan
+trojan://UX82473651@54.65.177.190:443?sni=winning-marten.rooster465.autos&fp=chrome&type=tcp&path=/#%F0%9F%87%AF%F0%9F%87%B5%20%F0%9F%93%BA%20%5B16.2%20Mbps%5D%20JP%20Japan
+trojan://UX82473651@13.231.247.130:443?sni=concrete-aardvark.rooster465.autos&allowInsecure=1#%F0%9F%87%AF%F0%9F%87%B5%20%F0%9F%93%BA%20%5B16.2%20Mbps%5D%20JP%20Japan
+trojan://UX82473651@winning-marten.rooster465.autos:443?security=tls&sni=winning-marten.rooster465.autos#%F0%9F%87%AF%F0%9F%87%B5%20%F0%9F%93%BA%20%5B16.0%20Mbps%5D%20JP%20Japan
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@149.22.87.241:443#%F0%9F%87%AF%F0%9F%87%B5%20%F0%9F%93%BA%20%5B14.5%20Mbps%5D%20JP%20Japan

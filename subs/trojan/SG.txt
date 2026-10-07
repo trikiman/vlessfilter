@@ -1,2 +1,1 @@
-trojan://2c366360-0333-4738-9423-6d5b378e3594@sgsgoo.cloudflare.182682.xyz:443?allowInsecure=1&sni=light.bpsg2026.top&type=ws&path=/images#%F0%9F%87%B8%F0%9F%87%AC%20%F0%9F%93%BA%20%5B23.9%20Mbps%5D%20SG%20Singapore
-trojan://UX82473651@inviting-ferret.rooster465.autos:443?security=tls&sni=inviting-ferret.rooster465.autos#%F0%9F%87%B8%F0%9F%87%AC%20%F0%9F%93%BA%20%5B12.7%20Mbps%5D%20SG%20Singapore
+trojan://2c366360-0333-4738-9423-6d5b378e3594@sgsgoo.cloudflare.182682.xyz:443?allowInsecure=1&sni=light.bpsg2026.top&type=ws&path=/images#%F0%9F%87%B8%F0%9F%87%AC%20%F0%9F%93%BA%20%5B19.5%20Mbps%5D%20SG%20Singapore
