@@ -1,2 +1,1 @@
-trojan://bpb-trojan@russia.com:443?alpn=h3&fp=chrome&path=%2Ftr&security=tls&sni=6982410.xyz&type=ws#%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%8E%AC%20%5B32.5%20Mbps%5D%20DE%20Germany
-trojan://2e631f0c-226a-484b-9e7c-d6c9c444ef13@fmwf6gbnad0a.dop16.com:443?alpn=http/1.1#%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%93%BA%20%5B13.5%20Mbps%5D%20DE%20Germany
+trojan://mitivpn@146.75.57.238:443?path=/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/NLSs---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1&security=tls&alpn=http/1.1&insecure=0&host=mitivpn-4--vip.global.ssl.fastly.net&fp=chrome&type=ws&allowInsecure=0&sni=ssl-mitivpn.fastly.com#%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%8E%AC%20%5B33.2%20Mbps%5D%20DE%20Germany
