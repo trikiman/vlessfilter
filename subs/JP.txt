@@ -2,7 +2,8 @@ vless://e4cd263b-c5c7-4410-bf61-8893179ec429@jumpernode.online:443?encryption=no
 vless://05453546-201f-4e8d-97ae-fd70da0e951f@jpga01.jumpernode.site:443?encryption=none&flow=xtls-rprx-vision&type=raw&headerType=none&security=reality&fp=chrome&pbk=AgTktefiMM58y7f-KFgEtmVti_YJbd0GPSkxNeJ0RH4&sni=amzn.com&sid=c8e49965#%F0%9F%87%AF%F0%9F%87%B5%20%F0%9F%8E%AC%20%5B32.5%20Mbps%5D%20JP%20Japan
 vless://f8681dba-d368-4bab-a3c2-a8dc712ba368@142.91.106.31:43000?security=reality&encryption=none&pbk=onJvbzSx_vZUyycafvPuhsiSQsr9tw4zotyVMSWCvm4&headerType=none&fp=chrome&spx=%2F&type=tcp&flow=xtls-rprx-vision&sid=8d66106f#%F0%9F%87%AF%F0%9F%87%B5%20%F0%9F%8E%AC%20%5B30.9%20Mbps%5D%20JP%20Japan
 vmess://eyJhZGQiOiIxNzIuMTExLjE0Ni42NCIsImFpZCI6MCwiaG9zdCI6IjE3Mi4xMTEuMTQ2LjY0IiwiaWQiOiIwNWI4Yzc4My03ZjU5LTQ3ZjktOTkyMy0wNmE0NjU2NzlmNmEiLCJuZXQiOiJ3cyIsInBhdGgiOiIvdm1lc3MvIiwicG9ydCI6IjgwIiwicHMiOiJ2MmdvIHwg8J+Hr/Cfh7UgSlAgfCBWTUVTUyB8IDE0Iiwic25pIjoiMTcyLjExMS4xNDYuNjQiLCJ0bHMiOiIiLCJ0eXBlIjoibm9uZSIsInYiOiIyIn0=#%F0%9F%87%AF%F0%9F%87%B5%20%F0%9F%93%BA%20%5B14.9%20Mbps%5D%20JP%20Japan
-trojan://UX82473651@54.65.177.190:443?sni=winning-marten.rooster465.autos&fp=chrome&type=tcp&path=/#%F0%9F%87%AF%F0%9F%87%B5%20%F0%9F%93%BA%20%5B16.0%20Mbps%5D%20JP%20Japan
-trojan://UX82473651@winning-marten.rooster465.autos:443?allowInsecure=1&sni=winning-marten.rooster465.autos#%F0%9F%87%AF%F0%9F%87%B5%20%F0%9F%93%BA%20%5B16.1%20Mbps%5D%20JP%20Japan
-ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@149.22.87.241:443#%F0%9F%87%AF%F0%9F%87%B5%20%F0%9F%8E%AC%20%5B43.8%20Mbps%5D%20JP%20Japan
-ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@149.22.87.204:443#%F0%9F%87%AF%F0%9F%87%B5%20%F0%9F%8E%AC%20%5B43.6%20Mbps%5D%20JP%20Japan
+trojan://UX82473651@concrete-aardvark.rooster465.autos:443?security=tls&sni=concrete-aardvark.rooster465.autos#%F0%9F%87%AF%F0%9F%87%B5%20%F0%9F%8E%AC%20%5B28.4%20Mbps%5D%20JP%20Japan
+trojan://UX82473651@54.250.237.143:443?security=tls&sni=accurate-frog.rooster465.autos#%F0%9F%87%AF%F0%9F%87%B5%20%F0%9F%93%BA%20%5B23.7%20Mbps%5D%20JP%20Japan
+trojan://UX82473651@54.238.153.132:443?sni=obliging-louse.rooster465.autos&allowInsecure=1&type=tcp&fp=chrome#%F0%9F%87%AF%F0%9F%87%B5%20%F0%9F%93%BA%20%5B21.7%20Mbps%5D%20JP%20Japan
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@149.22.87.204:443#%F0%9F%87%AF%F0%9F%87%B5%20%F0%9F%8E%AC%20%5B36.8%20Mbps%5D%20JP%20Japan
+ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@149.22.87.241:443#%F0%9F%87%AF%F0%9F%87%B5%20%F0%9F%8E%AC%20%5B36.7%20Mbps%5D%20JP%20Japan
