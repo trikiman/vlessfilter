@@ -1,3 +1,2 @@
-trojan://2c366360-0333-4738-9423-6d5b378e3594@uubest.cloudflare.182682.xyz:443?allowInsecure=0&sni=px8r9i1b4k.bpusfaster2.top&type=ws&path=/images#%F0%9F%87%BA%F0%9F%87%B8%20%E2%9A%A1%20%5B88.8%20Mbps%5D%20US%20United%20States
-trojan://0b5fa773-6f37-4134-87d4-0c349742b6f6@172.64.80.1:443?sni=app-538961.user-y0o4gm.workers.dev&allowInsecure=1&type=ws&path=/cmh&fp=chrome#%F0%9F%87%BA%F0%9F%87%B8%20%F0%9F%8E%AC%20%5B42.7%20Mbps%5D%20US%20United%20States
-trojan://0b5fa773-6f37-4134-87d4-0c349742b6f6@172.67.177.105:443?sni=app-538961.user-y0o4gm.workers.dev&allowInsecure=1&type=ws&path=/cmh&fp=chrome#%F0%9F%87%BA%F0%9F%87%B8%20%F0%9F%8E%AC%20%5B33.8%20Mbps%5D%20US%20United%20States
+trojan://2c366360-0333-4738-9423-6d5b378e3594@uubest.cloudflare.182682.xyz:443?allowInsecure=0&sni=px8r9i1b4k.bpusfaster2.top&type=ws&path=/images#%F0%9F%87%BA%F0%9F%87%B8%20%E2%9A%A1%20%5B80.1%20Mbps%5D%20US%20United%20States
+trojan://0b5fa773-6f37-4134-87d4-0c349742b6f6@172.64.80.1:443?sni=app-538961.user-y0o4gm.workers.dev&allowInsecure=1&type=ws&path=/cmh&fp=chrome#%F0%9F%87%BA%F0%9F%87%B8%20%F0%9F%93%BA%20%5B12.6%20Mbps%5D%20US%20United%20States
