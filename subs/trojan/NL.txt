@@ -1,1 +1,1 @@
-trojan://humanity@31.15.19.199:443?security=tls&type=ws&host=www.pleadcourt.org&path=%2Fassignment&sni=www.pleadcourt.org#%F0%9F%87%B3%F0%9F%87%B1%20%F0%9F%93%BA%20%5B17.0%20Mbps%5D%20NL%20Netherlands
+trojan://humanity@104.16.6.70:443?fp=chrome&path=%2Fassignment&security=tls&sni=www.pleadcourt.org&type=ws#%F0%9F%87%B3%F0%9F%87%B1%20%F0%9F%8E%AC%20%5B31.1%20Mbps%5D%20NL%20Netherlands

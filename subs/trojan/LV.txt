@@ -1,1 +1,1 @@
-trojan://gHncxmRjWEJ7apX5XuXsHw4kGexMH_gU@lit.fytpn.com:2097?type=tcp&security=tls&sni=lit.fytpn.com&fp=chrome#%F0%9F%87%B1%F0%9F%87%BB%20%F0%9F%8E%AC%20%5B37.8%20Mbps%5D%20LV%20Latvia
+trojan://gHncxmRjWEJ7apX5XuXsHw4kGexMH_gU@lit.fytpn.com:2097?type=tcp&security=tls&sni=lit.fytpn.com&fp=chrome#%F0%9F%87%B1%F0%9F%87%BB%20%F0%9F%8E%AC%20%5B37.2%20Mbps%5D%20LV%20Latvia

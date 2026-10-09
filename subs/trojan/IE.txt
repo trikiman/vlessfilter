@@ -1,1 +1,2 @@
-trojan://UX82473651@34.242.77.118:443?fp=chrome&sni=sacred-anemone.rooster465.autos#%F0%9F%87%AE%F0%9F%87%AA%20%F0%9F%93%BA%20%5B14.9%20Mbps%5D%20IE%20Ireland
+trojan://UX82473651@adapting-basilisk.rooster465.autos:443?allowInsecure=1&sni=adapting-basilisk.rooster465.autos#%F0%9F%87%AE%F0%9F%87%AA%20%F0%9F%8E%AC%20%5B59.5%20Mbps%5D%20IE%20Ireland
+trojan://UX82473651@master-possum.rooster465.autos:443?allowInsecure=1&sni=master-possum.rooster465.autos#%F0%9F%87%AE%F0%9F%87%AA%20%F0%9F%8E%AC%20%5B58.8%20Mbps%5D%20IE%20Ireland
