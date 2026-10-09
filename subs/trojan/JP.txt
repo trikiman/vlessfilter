@@ -1,3 +1,3 @@
-trojan://UX82473651@amazed-mako.rooster465.autos:443?allowInsecure=1&sni=amazed-mako.rooster465.autos#%F0%9F%87%AF%F0%9F%87%B5%20%F0%9F%8E%AC%20%5B27.3%20Mbps%5D%20JP%20Japan
-trojan://UX82473651@stable-python.rooster465.autos:443?allowInsecure=1&sni=stable-python.rooster465.autos#%F0%9F%87%AF%F0%9F%87%B5%20%F0%9F%8E%AC%20%5B27.4%20Mbps%5D%20JP%20Japan
-trojan://UX82473651@internal-krill.rooster465.autos:443?allowInsecure=1&sni=internal-krill.rooster465.autos#%F0%9F%87%AF%F0%9F%87%B5%20%F0%9F%8E%AC%20%5B27.2%20Mbps%5D%20JP%20Japan
+trojan://UX82473651@18.183.212.83:443?sni=normal-macaque.rooster465.autos&allowInsecure=1&type=tcp&fp=chrome#%F0%9F%87%AF%F0%9F%87%B5%20%F0%9F%93%BA%20%5B19.9%20Mbps%5D%20JP%20Japan
+trojan://UX82473651@amazed-mako.rooster465.autos:443?allowInsecure=1&sni=amazed-mako.rooster465.autos#%F0%9F%87%AF%F0%9F%87%B5%20%F0%9F%93%BA%20%5B20.1%20Mbps%5D%20JP%20Japan
+trojan://UX82473651@43.206.225.188:443?sni=warm-krill.rooster465.autos&allowInsecure=1&type=tcp&fp=chrome#%F0%9F%87%AF%F0%9F%87%B5%20%F0%9F%93%BA%20%5B19.9%20Mbps%5D%20JP%20Japan
