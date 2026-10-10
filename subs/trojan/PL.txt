@@ -1,3 +1,1 @@
-trojan://UX82473651@cheerful-swan.rooster465.autos:443?mux=1&allowInsecure=1&sni=cheerful-swan.rooster465.autos#%F0%9F%87%B5%F0%9F%87%B1%20%F0%9F%93%BA%20%5B24.3%20Mbps%5D%20PL%20Poland
-trojan://UX82473651@202.78.163.237:443?sni=cheerful-swan.rooster465.autos&path=/#%F0%9F%87%B5%F0%9F%87%B1%20%F0%9F%93%BA%20%5B23.5%20Mbps%5D%20PL%20Poland
-trojan://UX82473651@enabling-snipe.rooster465.autos:443?allowInsecure=1&sni=enabling-snipe.rooster465.autos#%F0%9F%87%B5%F0%9F%87%B1%20%F0%9F%93%BA%20%5B22.1%20Mbps%5D%20PL%20Poland
+trojan://UX82473651@enabling-snipe.rooster465.autos:443?allowInsecure=1&sni=enabling-snipe.rooster465.autos#%F0%9F%87%B5%F0%9F%87%B1%20%F0%9F%93%BA%20%5B24.4%20Mbps%5D%20PL%20Poland

@@ -1,3 +1,2 @@
-trojan://UX82473651@joint-ewe.rooster465.autos:443?allowInsecure=1&sni=joint-ewe.rooster465.autos#%F0%9F%87%B8%F0%9F%87%AC%20%F0%9F%8E%AC%20%5B25.7%20Mbps%5D%20SG%20Singapore
-trojan://UX82473651@inspired-hound.rooster465.autos:443?allowInsecure=1&sni=inspired-hound.rooster465.autos#%F0%9F%87%B8%F0%9F%87%AC%20%F0%9F%8E%AC%20%5B25.5%20Mbps%5D%20SG%20Singapore
-trojan://UX82473651@simple-molly.rooster465.autos:443?allowInsecure=1&sni=simple-molly.rooster465.autos#%F0%9F%87%B8%F0%9F%87%AC%20%F0%9F%8E%AC%20%5B25.5%20Mbps%5D%20SG%20Singapore
+trojan://UX82473651@glorious-glider.rooster465.autos:443?allowInsecure=1&sni=glorious-glider.rooster465.autos#%F0%9F%87%B8%F0%9F%87%AC%20%F0%9F%8E%AC%20%5B26.7%20Mbps%5D%20SG%20Singapore
+trojan://UX82473651@simple-molly.rooster465.autos:443?security=tls&sni=simple-molly.rooster465.autos#%F0%9F%87%B8%F0%9F%87%AC%20%F0%9F%8E%AC%20%5B26.8%20Mbps%5D%20SG%20Singapore
