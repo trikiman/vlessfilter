@@ -1,3 +1,3 @@
-trojan://UX82473651@cunning-grub.rooster465.autos:443?allowInsecure=1&sni=cunning-grub.rooster465.autos#%F0%9F%87%B0%F0%9F%87%B7%20%F0%9F%93%BA%20%5B24.5%20Mbps%5D%20KR%20South%20Korea
-trojan://UX82473651@inviting-rabbit.rooster465.autos:443?allowInsecure=1&sni=inviting-rabbit.rooster465.autos#%F0%9F%87%B0%F0%9F%87%B7%20%F0%9F%93%BA%20%5B24.5%20Mbps%5D%20KR%20South%20Korea
-trojan://UX82473651@glorious-lark.rooster465.autos:443?allowInsecure=1&sni=glorious-lark.rooster465.autos#%F0%9F%87%B0%F0%9F%87%B7%20%F0%9F%93%BA%20%5B24.6%20Mbps%5D%20KR%20South%20Korea
+trojan://UX82473651@cunning-grub.rooster465.autos:443?security=tls&sni=cunning-grub.rooster465.autos#%F0%9F%87%B0%F0%9F%87%B7%20%F0%9F%8E%AC%20%5B32.7%20Mbps%5D%20KR%20South%20Korea
+trojan://UX82473651@52.78.203.191:443?security=tls&sni=delicate-buck.rooster465.autos#%F0%9F%87%B0%F0%9F%87%B7%20%F0%9F%8E%AC%20%5B25.5%20Mbps%5D%20KR%20South%20Korea
+trojan://UX82473651@inviting-rabbit.rooster465.autos:443?allowInsecure=1&sni=inviting-rabbit.rooster465.autos#%F0%9F%87%B0%F0%9F%87%B7%20%F0%9F%8E%AC%20%5B32.7%20Mbps%5D%20KR%20South%20Korea

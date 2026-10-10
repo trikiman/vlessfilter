@@ -1,1 +1,1 @@
-trojan://ea4y8s7qdshp547j@195.15.202.111:4455?security=reality&pbk=f4lHcjcn_RbaaNCQonkTpOyRhfPKWYxpYvL03kCXemo&headerType=none&fp=firefox&spx=%2F3b2238cdad49967&type=tcp&sni=play-apps-features.googleusercontent.com&sid=9b6b4ff59dce3d#%F0%9F%87%A8%F0%9F%87%AD%20%F0%9F%8E%AC%20%5B44.0%20Mbps%5D%20CH%20Switzerland
+trojan://ea4y8s7qdshp547j@195.15.202.111:4455?fp=&pbk=f4lHcjcn_RbaaNCQonkTpOyRhfPKWYxpYvL03kCXemo&security=reality&sid=9b6b4ff59dce3d&sni=play-apps-features.googleusercontent.com#%F0%9F%87%A8%F0%9F%87%AD%20%F0%9F%8E%AC%20%5B28.6%20Mbps%5D%20CH%20Switzerland

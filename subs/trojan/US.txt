@@ -1,3 +1,2 @@
-trojan://KiUXpE53Xd@www.7770031.xyz:39493?security=tls&type=tcp&sni=www.7770031.xyz&fp=chrome#%F0%9F%87%BA%F0%9F%87%B8%20%E2%9A%A1%20%5B71.7%20Mbps%5D%20US%20United%20States
-trojan://aec8e5e3-bb81-4b22-8802-0b88c54997b3@r627r8.vatilon.cc:10003?allowInsecure=1&sni=r627r8.vatilon.cc#%F0%9F%87%BA%F0%9F%87%B8%20%E2%9A%A1%20%5B63.4%20Mbps%5D%20US%20United%20States
-trojan://UX82473651@pro-mako.rooster465.autos:443?allowInsecure=0&sni=pro-mako.rooster465.autos#%F0%9F%87%BA%F0%9F%87%B8%20%F0%9F%8E%AC%20%5B55.5%20Mbps%5D%20US%20United%20States
+trojan://UX82473651@alert-titmouse.rooster465.autos:443?security=tls&sni=alert-titmouse.rooster465.autos#%F0%9F%87%BA%F0%9F%87%B8%20%E2%9A%A1%20%5B173.9%20Mbps%5D%20US%20United%20States
+trojan://UX82473651@pro-mako.rooster465.autos:443?allowInsecure=0&sni=pro-mako.rooster465.autos#%F0%9F%87%BA%F0%9F%87%B8%20%E2%9A%A1%20%5B169.9%20Mbps%5D%20US%20United%20States
