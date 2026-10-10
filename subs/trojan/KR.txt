@@ -1,3 +1,3 @@
-trojan://UX82473651@pure-kodiak.rooster465.autos:443?allowInsecure=1&sni=pure-kodiak.rooster465.autos#%F0%9F%87%B0%F0%9F%87%B7%20%F0%9F%93%BA%20%5B16.1%20Mbps%5D%20KR%20South%20Korea
-trojan://UX82473651@3.34.131.153:443?Telegram=@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad,@GozargahAzad&security=tls&insecure=0&headerType=none&type=tcp&allowInsecure=0&sni=pretty-rat.rooster465.autos#%F0%9F%87%B0%F0%9F%87%B7%20%F0%9F%93%BA%20%5B14.5%20Mbps%5D%20KR%20South%20Korea
-trojan://UX82473651@3.39.225.215:443?allowInsecure=1&sni=kind-stork.rooster465.autos#%F0%9F%87%B0%F0%9F%87%B7%20%F0%9F%93%BA%20%5B14.4%20Mbps%5D%20KR%20South%20Korea
+trojan://UX82473651@glorious-lark.rooster465.autos:443?allowInsecure=1&sni=glorious-lark.rooster465.autos#%F0%9F%87%B0%F0%9F%87%B7%20%F0%9F%93%BA%20%5B23.5%20Mbps%5D%20KR%20South%20Korea
+trojan://UX82473651@inviting-rabbit.rooster465.autos:443?allowInsecure=1&sni=inviting-rabbit.rooster465.autos#%F0%9F%87%B0%F0%9F%87%B7%20%F0%9F%93%BA%20%5B23.4%20Mbps%5D%20KR%20South%20Korea
+trojan://UX82473651@working-tomcat.rooster465.autos:443?allowInsecure=1&sni=working-tomcat.rooster465.autos#%F0%9F%87%B0%F0%9F%87%B7%20%F0%9F%93%BA%20%5B23.3%20Mbps%5D%20KR%20South%20Korea

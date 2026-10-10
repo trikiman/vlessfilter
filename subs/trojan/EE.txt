@@ -1,1 +1,1 @@
-trojan://gHncxmRjWEJ7apX5XuXsHw4kGexMH_gU@stoniy.fytpn.com:2097?type=tcp&security=tls&sni=stoniy.fytpn.com&fp=chrome#%F0%9F%87%AA%F0%9F%87%AA%20%F0%9F%8E%AC%20%5B30.3%20Mbps%5D%20EE%20Estonia
+trojan://gHncxmRjWEJ7apX5XuXsHw4kGexMH_gU@stoniy.fytpn.com:2097?sni=stoniy.fytpn.com&peer=stoniy.fytpn.com&security=tls#%F0%9F%87%AA%F0%9F%87%AA%20%F0%9F%8E%AC%20%5B37.3%20Mbps%5D%20EE%20Estonia

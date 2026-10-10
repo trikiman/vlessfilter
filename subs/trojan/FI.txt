@@ -1,2 +1,2 @@
-trojan://gHncxmRjWEJ7apX5XuXsHw4kGexMH_gU@194.87.6.192:2097?security=tls&sni=ger6.fytpn.com&fp=firefox&type=tcp&headerType=none#%F0%9F%87%AB%F0%9F%87%AE%20%F0%9F%93%BA%20%5B13.1%20Mbps%5D%20FI%20Finland
-trojan://gHncxmRjWEJ7apX5XuXsHw4kGexMH_gU@ger6.fytpn.com:2097?security=tls#%F0%9F%87%AB%F0%9F%87%AE%20%F0%9F%93%BA%20%5B12.9%20Mbps%5D%20FI%20Finland
+trojan://gHncxmRjWEJ7apX5XuXsHw4kGexMH_gU@194.87.6.192:2097?security=tls&sni=ger6.fytpn.com&fp=firefox&type=tcp&headerType=none#%F0%9F%87%AB%F0%9F%87%AE%20%F0%9F%8E%AC%20%5B41.0%20Mbps%5D%20FI%20Finland
+trojan://gHncxmRjWEJ7apX5XuXsHw4kGexMH_gU@ger6.fytpn.com:2097?security=tls#%F0%9F%87%AB%F0%9F%87%AE%20%F0%9F%8E%AC%20%5B37.8%20Mbps%5D%20FI%20Finland
