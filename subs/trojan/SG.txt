@@ -1,3 +1,3 @@
-trojan://UX82473651@rested-seahorse.rooster465.autos:443?allowInsecure=1&sni=rested-seahorse.rooster465.autos#%F0%9F%87%B8%F0%9F%87%AC%20%F0%9F%93%BA%20%5B19.6%20Mbps%5D%20SG%20Singapore
-trojan://UX82473651@ace-liger.rooster465.autos:443?allowInsecure=1&sni=ace-liger.rooster465.autos#%F0%9F%87%B8%F0%9F%87%AC%20%F0%9F%93%BA%20%5B19.5%20Mbps%5D%20SG%20Singapore
-trojan://UX82473651@moral-basilisk.rooster465.autos:443?allowInsecure=1&sni=moral-basilisk.rooster465.autos#%F0%9F%87%B8%F0%9F%87%AC%20%F0%9F%93%BA%20%5B19.6%20Mbps%5D%20SG%20Singapore
+trojan://UX82473651@simple-molly.rooster465.autos:443?security=tls&sni=simple-molly.rooster465.autos#%F0%9F%87%B8%F0%9F%87%AC%20%F0%9F%93%BA%20%5B19.7%20Mbps%5D%20SG%20Singapore
+trojan://UX82473651@52.221.218.179:443?allowInsecure=1&sni=real-cardinal.rooster465.autos#%F0%9F%87%B8%F0%9F%87%AC%20%F0%9F%93%BA%20%5B13.9%20Mbps%5D%20SG%20Singapore
+trojan://UX82473651@joint-ewe.rooster465.autos:443?security=tls&sni=joint-ewe.rooster465.autos#%F0%9F%87%B8%F0%9F%87%AC%20%F0%9F%93%BA%20%5B19.6%20Mbps%5D%20SG%20Singapore
