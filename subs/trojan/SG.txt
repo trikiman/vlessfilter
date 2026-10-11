@@ -1,3 +1,2 @@
-trojan://UX82473651@simple-molly.rooster465.autos:443?security=tls&sni=simple-molly.rooster465.autos#%F0%9F%87%B8%F0%9F%87%AC%20%F0%9F%93%BA%20%5B21.9%20Mbps%5D%20SG%20Singapore
-trojan://sshs8_6481354771@86.38.247.109:2087?sni=ul-singapore1.09vpn.com&type=tcp&fp=chrome#%F0%9F%87%B8%F0%9F%87%AC%20%F0%9F%93%BA%20%5B16.4%20Mbps%5D%20SG%20Singapore
-trojan://UX82473651@glorious-glider.rooster465.autos:443?allowInsecure=1&sni=glorious-glider.rooster465.autos#%F0%9F%87%B8%F0%9F%87%AC%20%F0%9F%93%BA%20%5B22.4%20Mbps%5D%20SG%20Singapore
+trojan://UX82473651@simple-molly.rooster465.autos:443?security=tls&sni=simple-molly.rooster465.autos#%F0%9F%87%B8%F0%9F%87%AC%20%F0%9F%93%BA%20%5B24.9%20Mbps%5D%20SG%20Singapore
+trojan://UX82473651@glorious-glider.rooster465.autos:443?sni=glorious-glider.rooster465.autos&allowInsecure=1&type=tcp&fp=chrome#%F0%9F%87%B8%F0%9F%87%AC%20%F0%9F%93%BA%20%5B24.4%20Mbps%5D%20SG%20Singapore
