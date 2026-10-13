@@ -1,3 +1,1 @@
-trojan://Puj01Rc8UcA9IzcFcYOs8KMOhCz6aX2Q@104.21.23.136:443?security=tls&sni=mfyousheng.nl.eu.org&type=ws&host=mfyousheng.nl.eu.org&path=%2FtjwsLhx0SFASG4l9FERJ1g#%F0%9F%87%A8%F0%9F%87%AD%20%F0%9F%8E%AC%20%5B29.6%20Mbps%5D%20CH%20Switzerland
-trojan://Puj01Rc8UcA9IzcFcYOs8KMOhCz6aX2Q@172.67.211.79:443?security=tls&sni=mfyousheng.nl.eu.org&type=ws&host=mfyousheng.nl.eu.org&path=%2FtjwsLhx0SFASG4l9FERJ1g#%F0%9F%87%A8%F0%9F%87%AD%20%F0%9F%8E%AC%20%5B28.3%20Mbps%5D%20CH%20Switzerland
-trojan://Puj01Rc8UcA9IzcFcYOs8KMOhCz6aX2Q@188.114.97.3:443?host=mfyousheng.nl.eu.org&path=%2FtjwsLhx0SFASG4l9FERJ1g&security=tls&sni=mfyousheng.nl.eu.org&type=ws#%F0%9F%87%A8%F0%9F%87%AD%20%F0%9F%8E%AC%20%5B25.3%20Mbps%5D%20CH%20Switzerland
+trojan://Puj01Rc8UcA9IzcFcYOs8KMOhCz6aX2Q@188.114.97.3:443?path=/tjwsLhx0SFASG4l9FERJ1g&security=tls&insecure=0&fp=chrome&type=ws&allowInsecure=0&sni=mfyousheng.nl.eu.org#%F0%9F%87%A8%F0%9F%87%AD%20%F0%9F%8E%AC%20%5B25.6%20Mbps%5D%20CH%20Switzerland
