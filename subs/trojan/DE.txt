@@ -1,2 +1,1 @@
-trojan://0y7hid61k3k2vuy1@uwu.blueknightnet.qzz.io:2087?path=%2F%40BlueKnight_net--%40BlueKnight_net--%40BlueKnight_net&security=tls&alpn=h2&insecure=0&host=uwu.dianaw.cc.cd&fp=chrome&type=ws&allowInsecure=0&sni=uwu.dianaw.cc.cd#%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%8E%AC%20%5B26.4%20Mbps%5D%20DE%20Germany
-trojan://UX82473651@3.120.109.26:443?allowInsecure=1&sni=actual-squid.rooster465.autos#%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%93%BA%20%5B16.4%20Mbps%5D%20DE%20Germany
+trojan://UX82473651@meet-goshawk.rooster465.autos:443?security=tls&sni=meet-goshawk.rooster465.autos#%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%93%BA%20%5B12.2%20Mbps%5D%20DE%20Germany
