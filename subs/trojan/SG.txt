@@ -1,1 +1,2 @@
-trojan://UX82473651@glorious-glider.rooster465.autos:443?allowInsecure=0&sni=glorious-glider.rooster465.autos#%F0%9F%87%B8%F0%9F%87%AC%20%F0%9F%93%BA%20%5B12.0%20Mbps%5D%20SG%20Singapore
+trojan://UX82473651@glorious-glider.rooster465.autos:443?allowInsecure=0&sni=glorious-glider.rooster465.autos#%F0%9F%87%B8%F0%9F%87%AC%20%F0%9F%93%BA%20%5B22.1%20Mbps%5D%20SG%20Singapore
+trojan://UX82473651@18.141.136.8:443?sni=musical-mouse.rooster465.autos&allowInsecure=0#%F0%9F%87%B8%F0%9F%87%AC%20%F0%9F%93%BA%20%5B15.1%20Mbps%5D%20SG%20Singapore
