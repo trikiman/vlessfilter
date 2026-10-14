@@ -6,4 +6,4 @@ vmess://eyJ2IjoiMiIsInBzIjoiUEwg8J+HtfCfh7EgfCBAUmF5ZGlrYWx4IHwgRkFDMkZBIiwiYWRk
 trojan://UX82473651@cheerful-swan.rooster465.autos:443?allowInsecure=1&sni=cheerful-swan.rooster465.autos#%F0%9F%87%B5%F0%9F%87%B1%20%F0%9F%93%BA%20%5B23.8%20Mbps%5D%20PL%20Poland
 trojan://UX82473651@202.78.163.237:443?sni=cheerful-swan.rooster465.autos&path=/#%F0%9F%87%B5%F0%9F%87%B1%20%F0%9F%93%BA%20%5B24.0%20Mbps%5D%20PL%20Poland
 trojan://UX82473651@enabling-snipe.rooster465.autos:443?allowInsecure=0&sni=enabling-snipe.rooster465.autos#%F0%9F%87%B5%F0%9F%87%B1%20%F0%9F%93%BA%20%5B24.7%20Mbps%5D%20PL%20Poland
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTplNWM2NXBo@54.36.174.140:443#%F0%9F%87%B5%F0%9F%87%B1%20%F0%9F%8E%AC%20%5B31.8%20Mbps%5D%20PL%20Poland
+ss://YWVzLTEyOC1nY206ODU1OTBiZDItODA3Yi00OWI5LWFmMjAtMTEwMWMxOGI5ZWRh@ruot.ayucloudservices.nl:35031#%F0%9F%87%B5%F0%9F%87%B1%20%F0%9F%93%BA%20%5B20.1%20Mbps%5D%20PL%20Poland
