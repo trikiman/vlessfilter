@@ -1,3 +1,0 @@
-trojan://5ffee9b2-4514-4719-97b3-67810ece038d@ali-panel-1.terhav.workers.dev:443?path=%2Fvertex&security=tls&insecure=0&host=ali-panel-1.terhav.workers.dev&fp=chrome&type=ws&allowInsecure=0&sni=ali-panel-1.terhav.workers.dev#%F0%9F%8C%90%20ROTATING
-trojan://70756c73-0000-4000-8000-650000000000@104.234.239.139:443?security=tls&sni=parsa-panel-u48we.wotic15356.workers.dev&fp=chrome&type=ws&host=parsa-panel-u48we.wotic15356.workers.dev&path=/pulse#%F0%9F%8C%90%20ROTATING
-trojan://70756c73-0000-4000-8000-650000000000@199.181.197.99:443?security=tls&sni=parsa-panel-u48we.wotic15356.workers.dev&fp=chrome&type=ws&host=parsa-panel-u48we.wotic15356.workers.dev&path=/pulse#%F0%9F%8C%90%20ROTATING
