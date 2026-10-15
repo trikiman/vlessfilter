@@ -1,1 +1,1 @@
-vless://f230254f-d4cd-4d83-8a2d-e83927ef98ac@rus.noooo.win:8443?mode=stream-one&path=%2F&security=tls&alpn=h2&encryption=none&flow=xtls-rprx-vision&insecure=0&fp=edge&type=tcp&allowInsecure=0&sni=user-6a8c51f9.noooo.win#%F0%9F%87%B7%F0%9F%87%BA%20%F0%9F%93%BA%20%5B17.2%20mb%5D%20RU%20Russia
+vless://5d7e07ba-f460-4638-af79-bbcde67fcb6b@rus1.justnable.xyz:8443?encryption=none&security=reality&sni=www.asus.com&fp=chrome&pbk=xlXuN8KDdbqGEsaj1m2D8NUnR5d2oeo5TT71RSMmfxY&type=xhttp&path=/xh&mode=auto#%F0%9F%87%B7%F0%9F%87%BA%20%F0%9F%8E%AC%20%5B31.8%20Mbps%5D%20RU%20Russia
