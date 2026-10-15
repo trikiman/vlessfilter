@@ -1,1 +1,1 @@
-trojan://UX82473651@63.178.198.94:443?security=tls&insecure=0&headerType=none&type=tcp&allowInsecure=0&sni=pleased-albacore.rooster465.autos#%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%93%BA%20%5B16.6%20Mbps%5D%20DE%20Germany
+trojan://bpb-trojan@172.67.135.88:443?sni=vless.herogoing.top&type=ws&path=/tr?ed=2560&fp=chrome#%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%8E%AC%20%5B30.3%20Mbps%5D%20DE%20Germany
