@@ -1,3 +1,4 @@
-trojan://humanity@193.239.160.134:443?host=www.calmlunch.com&path=%252Fassignment&sni=www.calmlunch.com&type=ws#%F0%9F%87%AB%F0%9F%87%B7%20%F0%9F%93%BA%20%5B23.2%20Mbps%5D%20FR%20France
-trojan://humanity@95.85.32.57:443?path=/assignment&security=tls&fm=tlshello-0-len&insecure=0&host=www.pleadcourt.org&fp=unsafe&type=ws&allowInsecure=0&sni=www.pleadcourt.org#%F0%9F%87%B3%F0%9F%87%B1%20%F0%9F%93%BA%20%5B23.2%20Mbps%5D%20NL%20Netherlands
-trojan://u93yPGuY2zgIsisJZKS2QzJzg@201.10.90.81:443?security=tls&sni=HL-FREEDOM-2.UNDEF.NETWORK&type=ws&path=%2Ff2fc2a1f&host=hl-freedom-2.undef.network#%F0%9F%87%B5%F0%9F%87%B1%20%F0%9F%8E%AC%20%5B26.6%20Mbps%5D%20PL%20Poland
+trojan://cMCQxnflDO@31.76.10.180:36508?type=tcp&security=none#%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%8E%AC%20%5B29.8%20Mbps%5D%20DE%20Germany
+trojan://humanity@85.31.102.163:443?sni=www.calmlunch.com&type=ws&path=%2Fassignment&host=www.calmlunch.com#%F0%9F%87%AB%F0%9F%87%B7%20%F0%9F%93%BA%20%5B20.0%20Mbps%5D%20FR%20France
+trojan://humanity@188.226.181.61:443?path=/assignment&security=tls&alpn=http/1.1&insecure=0&host=www.pleadcourt.org&fp=chrome&type=ws&allowInsecure=0&sni=www.pleadcourt.org#%F0%9F%87%B3%F0%9F%87%B1%20%F0%9F%93%BA%20%5B14.2%20Mbps%5D%20NL%20Netherlands
+trojan://UX82473651@glorious-glider.rooster465.autos:443?allowInsecure=0&sni=glorious-glider.rooster465.autos#%F0%9F%87%B8%F0%9F%87%AC%20%F0%9F%93%BA%20%5B13.4%20Mbps%5D%20SG%20Singapore
