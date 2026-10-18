@@ -1,1 +1,2 @@
-trojan://cMCQxnflDO@31.76.10.180:36508?security=none#%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%8E%AC%20%5B34.2%20Mbps%5D%20DE%20Germany
+trojan://cMCQxnflDO@31.76.10.180:36508?type=tcp&security=none#%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%8E%AC%20%5B34.7%20Mbps%5D%20DE%20Germany
+trojan://bpb-trojan@russia.com:443?path=/tr&security=tls&alpn=h3&insecure=0&fp=chrome&type=ws&allowInsecure=0&sni=6982410.xyz#%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%8E%AC%20%5B31.2%20Mbps%5D%20DE%20Germany
