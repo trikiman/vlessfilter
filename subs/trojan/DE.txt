@@ -1,3 +1,2 @@
-trojan://cMCQxnflDO@31.76.10.180:36508?type=tcp&security=none#%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%8E%AC%20%5B35.1%20Mbps%5D%20DE%20Germany
-trojan://zgRfB1MMJDJ65rwKSnGCZuzLpTiUSfgzHmTb26ye7mM=@lm10.ehsanazizi-speed-server.com:2127?sni=lm10.ehsanazizi-speed-server.com&allowInsecure=1&type=tcp#%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%8E%AC%20%5B31.2%20Mbps%5D%20DE%20Germany
-trojan://4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA@de8.dedushka.top:443?security=tls&alpn=http/1.1&insecure=0&headerType=none&fp=chrome&type=tcp&allowInsecure=0&sni=de8.dedushka.top#%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%93%BA%20%5B14.3%20Mbps%5D%20DE%20Germany
+trojan://cMCQxnflDO@31.76.10.180:36508?type=tcp&security=none#%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%8E%AC%20%5B48.9%20Mbps%5D%20DE%20Germany
+trojan://4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA@de9.dedushka.top:443?security=tls&sni=de9.dedushka.top&alpn=http/1.1&type=tcp&headerType=none#%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%8E%AC%20%5B29.6%20Mbps%5D%20DE%20Germany

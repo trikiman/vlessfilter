@@ -5,5 +5,6 @@ vmess://eyJ2IjogIjIiLCAicHMiOiAiXHVkODNkXHVkZDI1Sm9pbitUZWxlZ3JhbTpARmFyYWhfVlBO
 trojan://humanity@164.92.223.252:443?cs=semi-python&path=%2Fassignment&security=tls&alpn=http%2F1.1&fm=tlshello-0-len&insecure=0&host=www.pleadcourt.org&fp=unsafe&type=ws&allowInsecure=0&sni=www.pleadcourt.org#%F0%9F%87%B3%F0%9F%87%B1%20%F0%9F%8E%AC%20%5B31.2%20Mbps%5D%20NL%20Netherlands
 trojan://humanity@95.85.54.197:443?cs=semi-python&path=/assignment&security=tls&fm=tlshello-0-len&insecure=0&host=www.pleadcourt.org&fp=unsafe&type=ws&allowInsecure=0&sni=www.pleadcourt.org#%F0%9F%87%B3%F0%9F%87%B1%20%F0%9F%8E%AC%20%5B30.3%20Mbps%5D%20NL%20Netherlands
 trojan://humanity@146.185.141.92:443?cs=semi-python&path=/assignment&security=tls&alpn=http/1.1&fm=tlshello-0-len&insecure=0&host=www.volumerOot.coM.&fp=unsafe&type=ws&allowInsecure=0&sni=wWw.Volumeroot.cOm.#%F0%9F%87%B3%F0%9F%87%B1%20%F0%9F%8E%AC%20%5B31.3%20Mbps%5D%20NL%20Netherlands
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@193.29.139.179:8080#%F0%9F%87%B3%F0%9F%87%B1%20%F0%9F%8E%AC%20%5B29.9%20Mbps%5D%20NL%20Netherlands
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.61:8080#%F0%9F%87%B3%F0%9F%87%B1%20%F0%9F%8E%AC%20%5B30.1%20Mbps%5D%20NL%20Netherlands
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.61:8080#%F0%9F%87%B3%F0%9F%87%B1%20%F0%9F%8E%AC%20%5B32.3%20Mbps%5D%20NL%20Netherlands
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@193.29.139.179:8080#%F0%9F%87%B3%F0%9F%87%B1%20%F0%9F%8E%AC%20%5B29.6%20Mbps%5D%20NL%20Netherlands
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.39:8080#%F0%9F%87%B3%F0%9F%87%B1%20%F0%9F%8E%AC%20%5B32.1%20Mbps%5D%20NL%20Netherlands
