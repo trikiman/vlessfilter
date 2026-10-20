@@ -1,9 +1,5 @@
-trojan://cMCQxnflDO@31.76.10.180:36508?type=tcp&security=none#%F0%9F%87%A9%F0%9F%87%AA%20%E2%9A%A1%20%5B62.1%20Mbps%5D%20DE%20Germany
-trojan://4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA@188.241.241.235:443?security=tls&sni=de9.dedushka.top&alpn=http/1.1&type=tcp&headerType=none#%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%93%BA%20%5B12.6%20Mbps%5D%20DE%20Germany
-trojan://4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA@de1.dedushka.top:443?allowInsecure=1&sni=de1.dedushka.top&type=tcp#%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%8E%AC%20%5B45.0%20Mbps%5D%20DE%20Germany
-trojan://humanity@191.96.94.226:443/?type=ws&host=www.calmlunch.com&path=%2Fassignment&security=tls&sni=www.calmlunch.com#%F0%9F%87%AB%F0%9F%87%B7%20%F0%9F%8E%AC%20%5B42.6%20Mbps%5D%20FR%20France
-trojan://humanity@45.87.41.18:443?security=tls&sni=www.calmlunch.com&type=ws&path=/assignment&Host=www.calmlunch.com#%F0%9F%87%AB%F0%9F%87%B7%20%F0%9F%8E%AC%20%5B29.8%20Mbps%5D%20FR%20France
-trojan://humanity@104.18.32.47:443?path=%2Fassignment&security=tls&insecure=0&fp=chrome&type=ws&allowInsecure=0&sni=www.calmlunch.com#%F0%9F%87%AB%F0%9F%87%B7%20%F0%9F%93%BA%20%5B18.0%20Mbps%5D%20FR%20France
-trojan://mitivpn@188.114.97.6:443?alpn=http/1.1&fp=chrome&host=de.mitivpn.in.net&path=/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1/--@VPNine1---@VPNine1/---@VPNine1---@VPNine1/---@VPNine1---@VPNine1&security=tls&sni=de.mitivpn.in.net&type=ws#%F0%9F%87%B3%F0%9F%87%B1%20%F0%9F%8E%AC%20%5B39.9%20Mbps%5D%20NL%20Netherlands
-trojan://4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA@pl1.dedushka.top:443?sni=pl1.dedushka.top&type=tcp&fp=chrome#%F0%9F%87%B5%F0%9F%87%B1%20%F0%9F%8E%AC%20%5B53.5%20Mbps%5D%20PL%20Poland
-trojan://4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA@pl2.dedushka.top:443?security=tls&insecure=0&headerType=none&fp=chrome&type=tcp&allowInsecure=0&sni=pl2.dedushka.top#%F0%9F%87%B5%F0%9F%87%B1%20%F0%9F%8E%AC%20%5B27.8%20Mbps%5D%20PL%20Poland
+trojan://cMCQxnflDO@31.76.10.180:36508?type=tcp&security=none#%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%8E%AC%20%5B36.4%20Mbps%5D%20DE%20Germany
+trojan://humanity@45.87.41.18:443?host=www.calmlunch.com&path=/assignment&sni=www.calmlunch.com&type=ws#%F0%9F%87%AB%F0%9F%87%B7%20%F0%9F%8E%AC%20%5B38.0%20Mbps%5D%20FR%20France
+trojan://humanity@190.93.245.148:443?path=/assignment&security=tls&insecure=0&host=www.pleadcourt.org&type=ws&allowInsecure=0&sni=www.pleadcourt.org#%F0%9F%87%B3%F0%9F%87%B1%20%F0%9F%93%BA%20%5B16.9%20Mbps%5D%20NL%20Netherlands
+trojan://humanity@188.114.97.6:443?path=%2Fassignment&security=tls&alpn=http%2F1.1&insecure=0&host=www.pleadcourt.org&fp=chrome&ech=cloudflare-ech.com%2Budp%3A%2F%2F1.1.1.1&type=ws&allowInsecure=0&sni=www.pleadcourt.org#%F0%9F%87%B3%F0%9F%87%B1%20%F0%9F%93%BA%20%5B17.8%20Mbps%5D%20NL%20Netherlands
+trojan://4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA@pl1.dedushka.top:443?security=tls&sni=pl1.dedushka.top&alpn=http%2F1.1&fp=firefox&type=tcp#%F0%9F%87%B5%F0%9F%87%B1%20%F0%9F%8E%AC%20%5B36.8%20Mbps%5D%20PL%20Poland
