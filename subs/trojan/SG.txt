@@ -1,2 +1,1 @@
-trojan://UX82473651@glorious-glider.rooster465.autos:443?sni=glorious-glider.rooster465.autos&type=tcp&fp=chrome#%F0%9F%87%B8%F0%9F%87%AC%20%F0%9F%93%BA%20%5B23.7%20Mbps%5D%20SG%20Singapore
-trojan://sshs8_6481354771@86.38.247.109:2087?sni=ul-singapore1.09vpn.com&type=tcp#%F0%9F%87%B8%F0%9F%87%AC%20%F0%9F%93%BA%20%5B18.5%20Mbps%5D%20SG%20Singapore
+trojan://G0LxzwInSH2_zUVnki1Spw@marzbanupdate-production-b655.up.railway.app:443?security=tls&sni=marzbanupdate-production-b655.up.railway.app&fp=edge&alpn=http%2F1.1&type=ws&host=marzbanupdate-production-b655.up.railway.app&path=%2Fcdn%2Fa3e1ac40-9f87-457c-99d4-7853b5edfe6f%2Ft%3Fed%3D2560#%F0%9F%87%B8%F0%9F%87%AC%20%F0%9F%93%BA%20%5B25.0%20Mbps%5D%20SG%20Singapore
