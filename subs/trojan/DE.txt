@@ -1,3 +1,2 @@
-trojan://cMCQxnflDO@31.76.10.180:36508?type=tcp&security=none#%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%8E%AC%20%5B38.9%20Mbps%5D%20DE%20Germany
-trojan://mitivpn@188.114.97.6:443?security=tls&alpn=http%2F1.1&insecure=0&host=d-e.mitivpn.in.net&fp=chrome&ech=Nazar.ac.ir%2Budp%3A%2F%2F78.157.42.100&type=ws&allowInsecure=0&sni=d-e.mitivpn.in.net#%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%8E%AC%20%5B30.6%20Mbps%5D%20DE%20Germany
-trojan://4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA@188.241.241.200:443?security=tls&insecure=0&headerType=none&type=tcp&allowInsecure=0&sni=de7.dedushka.top#%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%93%BA%20%5B24.5%20Mbps%5D%20DE%20Germany
+trojan://cMCQxnflDO@31.76.10.180:36508?type=tcp&security=none#%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%8E%AC%20%5B49.1%20Mbps%5D%20DE%20Germany
+trojan://mitivpn@188.114.97.6:443?path=/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/--@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN&security=tls&alpn=http/1.1&insecure=0&host=d-e.mitivpn.in.net&fp=chrome&ech=Nazar.ac.ir+udp://78.157.42.100&type=ws&allowInsecure=0&sni=d-e.mitivpn.in.net#%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%8E%AC%20%5B33.2%20Mbps%5D%20DE%20Germany
