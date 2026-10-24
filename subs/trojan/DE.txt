@@ -1,1 +1,1 @@
-trojan://cMCQxnflDO@31.76.10.180:36508?type=tcp&security=none#%F0%9F%87%A9%F0%9F%87%AA%20%E2%9A%A1%20%5B68.7%20Mbps%5D%20DE%20Germany
+trojan://cMCQxnflDO@31.76.10.180:36508?type=tcp&security=none#%F0%9F%87%A9%F0%9F%87%AA%20%E2%9A%A1%20%5B60.1%20Mbps%5D%20DE%20Germany
