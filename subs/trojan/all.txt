@@ -1,6 +1,6 @@
-trojan://cMCQxnflDO@31.76.10.180:36508?type=tcp&security=none#%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%8E%AC%20%5B45.0%20Mbps%5D%20DE%20Germany
-trojan://humanity@166.1.36.83:443/?type=ws&host=www.calmlunch.com&path=%2Fassignment&security=tls&sni=www.calmlunch.com#%F0%9F%87%AB%F0%9F%87%B7%20%F0%9F%8E%AC%20%5B33.7%20Mbps%5D%20FR%20France
-trojan://humanity@89.150.34.41:2053?allowInsecure=1&host=www.calmlunch.com&path=%2Fassignment&sni=www.calmlunch.com&type=ws#%F0%9F%87%AB%F0%9F%87%B7%20%F0%9F%8E%AC%20%5B31.0%20Mbps%5D%20FR%20France
-trojan://humanity@191.96.94.226:443/?type=ws&host=www.calmlunch.com&path=%2Fassignment&security=tls&sni=www.calmlunch.com#%F0%9F%87%AB%F0%9F%87%B7%20%F0%9F%8E%AC%20%5B26.3%20Mbps%5D%20FR%20France
-trojan://humanity@104.27.201.80:443?cs=semi-python&path=/assignment&security=tls&fm=tlshello-0-len&insecure=0&host=www.pleadcourt.org&fp=unsafe&type=ws&allowInsecure=0&sni=www.pleadcourt.org#%F0%9F%87%B3%F0%9F%87%B1%20%F0%9F%93%BA%20%5B14.1%20Mbps%5D%20NL%20Netherlands
-trojan://dba20dcb635e430fa4d3bfc303a149d2@216.106.186.32:443?security=tls&insecure=0&headerType=none&type=tcp&allowInsecure=0&sni=blog.findlocaljobnetworkandbuildcommunityconnections.com#%F0%9F%87%BA%F0%9F%87%B8%20%F0%9F%93%BA%20%5B14.5%20Mbps%5D%20US%20United%20States
+trojan://cMCQxnflDO@31.76.10.180:36508?type=tcp&security=none#%F0%9F%87%A9%F0%9F%87%AA%20%E2%9A%A1%20%5B63.7%20Mbps%5D%20DE%20Germany
+trojan://humanity@45.87.41.18:443?security=tls&sni=www.calmlunch.com&type=ws&path=/assignment&Host=www.calmlunch.com#%F0%9F%87%AB%F0%9F%87%B7%20%F0%9F%8E%AC%20%5B33.0%20Mbps%5D%20FR%20France
+trojan://humanity@91.245.225.79:2053?sni=www.calmlunch.com&type=ws&path=/assignment&fp=chrome#%F0%9F%87%AB%F0%9F%87%B7%20%F0%9F%8E%AC%20%5B36.0%20Mbps%5D%20FR%20France
+trojan://humanity@166.1.36.83:443/?type=ws&host=www.calmlunch.com&path=%2Fassignment&security=tls&sni=www.calmlunch.com#%F0%9F%87%AB%F0%9F%87%B7%20%F0%9F%8E%AC%20%5B31.6%20Mbps%5D%20FR%20France
+trojan://5504eaa8-1395-402f-8e0e-75ecd762e627@8.47.69.60:443?cs=semi-python&path=/w4e5yh0p945y3&security=tls&alpn=http/1.1&fm=tlshello-0-len&insecure=0&host=nat11.outsidemyheart.space&fp=unsafe&type=ws&allowInsecure=0&sni=nat11.outsidemyheart.space#%F0%9F%87%AF%F0%9F%87%B5%20%F0%9F%93%BA%20%5B12.9%20Mbps%5D%20JP%20Japan
+trojan://humanity@172.66.40.99:443?allowInsecure=0&sni=www.trusteeforward.com&alpn=http/1.1&type=ws&host=www.trusteeforward.com&path=/assignment#%F0%9F%87%B3%F0%9F%87%B1%20%F0%9F%8E%AC%20%5B25.8%20Mbps%5D%20NL%20Netherlands
