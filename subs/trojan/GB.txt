@@ -1,1 +1,1 @@
-trojan://8yup05o4lz0csoxb@216.24.57.225:2083?allowInsecure=1&alpn=h2,http/1.1,h3&fp=chrome&host=fin.netvia.ir&path=/YaujaGsyr&security=tls&sni=fin.netvia.ir&type=ws#%F0%9F%87%AC%F0%9F%87%A7%20%F0%9F%93%BA%20%5B18.5%20Mbps%5D%20GB%20United%20Kingdom
+trojan://8yup05o4lz0csoxb@216.24.57.225:2083?allowInsecure=1&alpn=h2%2Chttp%2F1.1%2Ch3&host=fin.netvia.ir&path=%2FYaujaGsyr&security=tls&sni=fin.netvia.ir&type=ws&fp=chrome#%F0%9F%87%AC%F0%9F%87%A7%20%F0%9F%8E%AC%20%5B26.1%20Mbps%5D%20GB%20United%20Kingdom
