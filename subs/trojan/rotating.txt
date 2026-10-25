@@ -1,1 +1,0 @@
-trojan://8yup05o4lz0csoxb@216.24.57.225:2083?security=tls&sni=fin.netvia.ir&type=ws&path=%2FYaujaGsyr&Host=fin.netvia.ir&fp=chrome#%F0%9F%8C%90%20ROTATING
