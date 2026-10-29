@@ -1,3 +1,0 @@
-trojan://70756c73-0000-4000-8000-650000000000@199.181.197.99:443?security=tls&sni=parsa-panel-u48we.wotic15356.workers.dev&type=ws&host=parsa-panel-u48we.wotic15356.workers.dev&path=%2Fpulse&fp=chrome#%F0%9F%8C%90%20ROTATING
-trojan://a63adead-1c8d-448c-bf5d-08e7002f126b@render.com:2087?path=%2F&security=tls&insecure=0&host=wild-hat-ad48.gfzzxoofxxvjfd.workers.dev&type=ws&allowInsecure=0&sni=wild-hat-ad48.gfzzxoofxxvjfd.workers.dev#%F0%9F%8C%90%20ROTATING
-trojan://bpb-trojan@vless.herogoing.top:443?sni=vless.herogoing.top&type=ws&path=/tr?ed=2560&fp=chrome#%F0%9F%8C%90%20ROTATING

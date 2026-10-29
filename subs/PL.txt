@@ -3,6 +3,4 @@ vless://1c794e75-bcd4-4a65-9f69-ed0a10f33d60@144.31.101.196:33891/?type=tcp&encr
 vless://05488656-d4bf-4634-8b2e-e4ff5a56c7e2@82.118.22.161:443?encryption=none&flow=xtls-rprx-vision&fp=&pbk=xY1KpNxaIGmi6jfeudYQ_aaLGQqWK_uHStnwUFd2_2E&security=reality&sid=fa3ea655619a3e78&sni=www.cloudflare.com&type=tcp#%F0%9F%87%B5%F0%9F%87%B1%20%F0%9F%8E%AC%20%5B31.4%20Mbps%5D%20PL%20Poland
 vmess://eyJhZGQiOiJtaXgyLjk5ODk5OC5iZXN0IiwiYWlkIjowLCJob3N0Ijoic2VydmVyMTAuOTk2NjMzOC54eXoiLCJpZCI6IjU1MDRlYWE4LTEzOTUtNDAyZi04ZTBlLTc1ZWNkNzYyZTYyNyIsIm5ldCI6IndzIiwicGF0aCI6Ii9ydGhpdWdveXJldGRzdWlnZyIsInBvcnQiOjQ0MywicHMiOiJDQSDwn4eo8J+HpiB8IEBSYXlkaWthbHggfCAxMjdGMDIiLCJzY3kiOiJhdXRvIiwic25pIjoiIiwidGxzIjoidGxzIiwidHlwZSI6Im5vbmUiLCJ2IjoiMiJ9#%F0%9F%87%B5%F0%9F%87%B1%20%F0%9F%8E%AC%20%5B33.0%20Mbps%5D%20PL%20Poland
 trojan://4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA@pl1.dedushka.top:443?security=tls&sni=pl1.dedushka.top#%F0%9F%87%B5%F0%9F%87%B1%20%F0%9F%93%BA%20%5B17.7%20Mbps%5D%20PL%20Poland
-ss://YWVzLTI1Ni1nY206aXR6dnBuQDMyMQ@51.83.192.80:8388#%F0%9F%87%B5%F0%9F%87%B1%20%F0%9F%8E%AC%20%5B43.4%20Mbps%5D%20PL%20Poland
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo2aGVleHl6@54.36.174.134:443#%F0%9F%87%B5%F0%9F%87%B1%20%F0%9F%8E%AC%20%5B40.7%20Mbps%5D%20PL%20Poland
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo2aGVleHl6@pl134.vpnbook.com:443#%F0%9F%87%B5%F0%9F%87%B1%20%F0%9F%8E%AC%20%5B40.3%20Mbps%5D%20PL%20Poland
+ss://YWVzLTI1Ni1nY206aXR6dnBuQDMyMQ@51.83.192.80:8388#%F0%9F%87%B5%F0%9F%87%B1%20%F0%9F%8E%AC%20%5B37.1%20Mbps%5D%20PL%20Poland
