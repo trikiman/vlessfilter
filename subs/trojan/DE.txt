@@ -1,3 +1,3 @@
-trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@193.108.119.15:443?security=tls&insecure=0&headerType=none&type=tcp&allowInsecure=0&sni=courses.iloverussia2026.com#%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%8E%AC%20%5B44.3%20Mbps%5D%20DE%20Germany
-trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@193.108.119.96:443?security=tls&insecure=0&headerType=none&type=tcp&allowInsecure=0&sni=learn.iloverussia2026.com#%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%8E%AC%20%5B44.4%20Mbps%5D%20DE%20Germany
-trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@193.108.119.78:443?security=tls&insecure=0&headerType=none&type=tcp&allowInsecure=0&sni=www.iloverussia2026.com#%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%8E%AC%20%5B44.1%20Mbps%5D%20DE%20Germany
+trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@193.108.119.78:443?security=tls&insecure=0&headerType=none&type=tcp&allowInsecure=0&sni=www.iloverussia2026.com#%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%8E%AC%20%5B57.5%20Mbps%5D%20DE%20Germany
+trojan://ltgp0n3l2z4f7t57@angelvpn.angelmh.cv:1633?security=reality&pbk=u3QgazUHzHjIpDdERKjAimr_01RRQdXuK9kMt5MsWzU&headerType=none&fp=chrome&spx=/587a65acecd29f8&type=tcp&sni=fornex.com&sid=45b9#%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%93%BA%20%5B12.3%20Mbps%5D%20DE%20Germany
+trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@193.108.119.15:443?allowInsecure=1&sni=courses.iloverussia2026.com#%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%8E%AC%20%5B57.1%20Mbps%5D%20DE%20Germany
