@@ -1,1 +1,2 @@
-trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@216.152.147.93:443?sni=connectingpeoplewithgreatjobs.com&type=tcp#%F0%9F%87%A8%F0%9F%87%A6%20%E2%9A%A1%20%5B213.9%20Mbps%5D%20CA%20Canada
+trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@216.152.147.89:443?security=tls&insecure=0&headerType=none&type=tcp&allowInsecure=0&sni=www.connectingpeoplewithgreatjobs.com#%F0%9F%87%A8%F0%9F%87%A6%20%E2%9A%A1%20%5B195.6%20Mbps%5D%20CA%20Canada
+trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@216.152.147.85:443?security=tls&sni=cdn.connectingpeoplewithgreatjobs.com#%F0%9F%87%A8%F0%9F%87%A6%20%E2%9A%A1%20%5B80.2%20Mbps%5D%20CA%20Canada

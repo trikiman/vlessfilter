@@ -1,5 +1,5 @@
 vless://1d4e18bd-1f26-4915-b35a-7ace4826e76a@194.61.31.126:2053?security=reality&encryption=none&pbk=PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU&headerType=&fp=chrome&type=tcp&sni=www.apple.com&sid=9980e0609b0d3891#%F0%9F%87%AE%F0%9F%87%B3%20%F0%9F%93%BA%20%5B20.2%20Mbps%5D%20IN%20India
 vless://68512eac-cd53-4de3-8d1e-08f6e04af1a9@13.140.56.100:14430?&sni=13.140.56.100&type=ws&headerType=none&host=13.140.56.100&path=/vless#%F0%9F%87%AE%F0%9F%87%B3%20%F0%9F%93%BA%20%5B19.2%20Mbps%5D%20IN%20India
 vmess://eyJhZGQiOiJha3NhaS5vcmciLCJhaWQiOiIwIiwiYWxwbiI6IiIsImZwIjoiIiwiaG9zdCI6ImFrc2FpLm9yZyIsImlkIjoiMDNmY2M2MTgtYjkzZC02Nzk2LTZhZWQtOGEzOGM5NzVkNTgxIiwibmV0Ijoid3MiLCJwYXRoIjoiL2xpbmt2d3MiLCJwb3J0IjoiNDQzIiwicHMiOiJAdjJyYXlfcGhvZW5peCIsInNjeSI6ImF1dG8iLCJzbmkiOiJha3NhaS5vcmciLCJ0bHMiOiJ0bHMiLCJ0eXBlIjoiLS0tIiwidiI6IjIifQ==#%F0%9F%87%AE%F0%9F%87%B3%20%F0%9F%93%BA%20%5B24.4%20Mbps%5D%20IN%20India
-trojan://5t6i121em5lkmsmk@in002.zestapp778.com:42733?sni=in002.zestapp778.com&type=tcp&fp=chrome#%F0%9F%87%AE%F0%9F%87%B3%20%F0%9F%93%BA%20%5B22.6%20Mbps%5D%20IN%20India
+trojan://5t6i121em5lkmsmk@in002.zestapp778.com:42733?allowInsecure=1&sni=in002.zestapp778.com#%F0%9F%87%AE%F0%9F%87%B3%20%F0%9F%93%BA%20%5B18.1%20Mbps%5D%20IN%20India
 ss://YWVzLTI1Ni1nY206R0Vkb2VlcUxadGtKUmdTYQ==@139.84.166.47:8388#%F0%9F%87%AE%F0%9F%87%B3%20%F0%9F%93%BA%20%5B16.5%20Mbps%5D%20IN%20India
