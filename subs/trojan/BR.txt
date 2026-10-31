@@ -1,1 +1,2 @@
-trojan://5t6i121em5lkmsmk@br001.zestapp778.com:39533?sni=br001.zestapp778.com&type=tcp&fp=chrome#%F0%9F%87%A7%F0%9F%87%B7%20%F0%9F%93%BA%20%5B16.4%20Mbps%5D%20BR%20Brazil
+trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@216.238.104.154:443?allowInsecure=1&type=tcp&security=tls&fp=chrome&sni=findtemporaryworkandfreelancerprojectsonlineplatform.com#%F0%9F%87%A7%F0%9F%87%B7%20%F0%9F%93%BA%20%5B19.6%20Mbps%5D%20BR%20Brazil
+trojan://5t6i121em5lkmsmk@br001.zestapp778.com:39533?sni=br001.zestapp778.com&type=tcp&fp=chrome#%F0%9F%87%A7%F0%9F%87%B7%20%F0%9F%93%BA%20%5B14.4%20Mbps%5D%20BR%20Brazil
