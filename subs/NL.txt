@@ -5,6 +5,6 @@ vmess://eyJhZGQiOiIxODUuMTkuMzMuMTM1IiwiYWlkIjoiMCIsImFscG4iOiIiLCJmcCI6IiIsImhv
 trojan://humanity@95.85.54.197:443?path=/assignment&security=tls&fm=tlshello-0-len&insecure=0&host=www.pleadcourt.org&fp=unsafe&type=ws&allowInsecure=0&sni=www.pleadcourt.org#%F0%9F%87%B3%F0%9F%87%B1%20%F0%9F%8E%AC%20%5B39.4%20Mbps%5D%20NL%20Netherlands
 trojan://humanity@172.67.203.46:443?path=/assignment&security=tls&insecure=0&type=ws&allowInsecure=0&sni=www.cordweave.com#%F0%9F%87%B3%F0%9F%87%B1%20%F0%9F%93%BA%20%5B18.2%20Mbps%5D%20NL%20Netherlands
 trojan://humanity@172.66.0.172:443?allowInsecure=1&sni=www.cordweave.com&type=ws&path=/assignment#%F0%9F%87%B3%F0%9F%87%B1%20%F0%9F%93%BA%20%5B18.3%20Mbps%5D%20NL%20Netherlands
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpoTmZlTENOM1h6WWdMRlNBV29fZnhPbDRIQzFnTncwVg@dns27.m3hrzd.ir:8044#%F0%9F%87%B3%F0%9F%87%B1%20%E2%9A%A1%20%5B67.3%20Mbps%5D%20NL%20Netherlands
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@193.29.139.179:8080#%F0%9F%87%B3%F0%9F%87%B1%20%F0%9F%8E%AC%20%5B57.9%20Mbps%5D%20NL%20Netherlands
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.61:8080#%F0%9F%87%B3%F0%9F%87%B1%20%F0%9F%8E%AC%20%5B56.6%20Mbps%5D%20NL%20Netherlands
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.159:443#%F0%9F%87%B3%F0%9F%87%B1%20%F0%9F%8E%AC%20%5B49.3%20Mbps%5D%20NL%20Netherlands
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@82.38.31.66:8080#%F0%9F%87%B3%F0%9F%87%B1%20%F0%9F%8E%AC%20%5B50.5%20Mbps%5D%20NL%20Netherlands
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpvWklvQTY5UTh5aGNRVjhrYTNQYTNB@193.29.139.179:8080#%F0%9F%87%B3%F0%9F%87%B1%20%F0%9F%8E%AC%20%5B48.9%20Mbps%5D%20NL%20Netherlands

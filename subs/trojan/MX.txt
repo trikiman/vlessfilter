@@ -1,1 +1,1 @@
-trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@216.238.80.100:443?security=tls&headerType=none&fp=chrome&type=tcp&sni=connectwithtopemployersandfindidealjobs.com#%F0%9F%87%B2%F0%9F%87%BD%20%E2%9A%A1%20%5B66.4%20Mbps%5D%20MX%20Mexico
+trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@216.238.80.100:443?security=tls&headerType=none&fp=chrome&type=tcp&sni=connectwithtopemployersandfindidealjobs.com#%F0%9F%87%B2%F0%9F%87%BD%20%F0%9F%8E%AC%20%5B58.2%20Mbps%5D%20MX%20Mexico
