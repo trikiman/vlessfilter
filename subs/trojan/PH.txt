@@ -1,1 +1,1 @@
-trojan://3632736327@47.80.107.173:2398?security=tls&sni=flb06181447.tmdsb.org&type=tcp&headerType=none#%F0%9F%87%B5%F0%9F%87%AD%20PH%20Philippines
+trojan://5t6i121em5lkmsmk@ph001.zestapp778.com:46298?security=tls&sni=ph001.zestapp778.com&type=tcp&headerType=none#%F0%9F%87%B5%F0%9F%87%AD%20%F0%9F%93%BA%20%5B17.6%20Mbps%5D%20PH%20Philippines

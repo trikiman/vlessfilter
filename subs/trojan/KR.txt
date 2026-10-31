@@ -1,1 +1,1 @@
-trojan://5t6i121em5lkmsmk@kr002.zestapp778.com:48851?allowInsecure=1&sni=kr002.zestapp778.com#%F0%9F%87%B0%F0%9F%87%B7%20%F0%9F%8E%AC%20%5B48.9%20Mbps%5D%20KR%20South%20Korea
+trojan://5t6i121em5lkmsmk@158.247.255.150:48851?sni=kr002.zestapp778.com&type=tcp&fp=firefox#%F0%9F%87%B0%F0%9F%87%B7%20%F0%9F%8E%AC%20%5B35.0%20Mbps%5D%20KR%20South%20Korea
