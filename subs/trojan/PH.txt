@@ -1,2 +1,1 @@
-trojan://5t6i121em5lkmsmk@ph001.zestapp778.com:46298?allowInsecure=1&sni=ph001.zestapp778.com#%F0%9F%87%B5%F0%9F%87%AD%20%F0%9F%93%BA%20%5B21.4%20Mbps%5D%20PH%20Philippines
-trojan://5t6i121em5lkmsmk@130.94.52.157:46298?allowInsecure=1&sni=ph001.zestapp778.com#%F0%9F%87%B5%F0%9F%87%AD%20%F0%9F%93%BA%20%5B19.1%20Mbps%5D%20PH%20Philippines
+trojan://5t6i121em5lkmsmk@130.94.52.157:46298?security=tls&sni=ph001.zestapp778.com&type=tcp&headerType=none#%F0%9F%87%B5%F0%9F%87%AD%20%F0%9F%93%BA%20%5B15.6%20Mbps%5D%20PH%20Philippines
