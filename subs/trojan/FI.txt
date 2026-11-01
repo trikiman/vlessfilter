@@ -1,2 +1,1 @@
-trojan://gHQP0D7D15@104.25.239.113:2053?path=/&security=tls&type=ws&sni=marvdasht.phonecomparisonblog.org#%F0%9F%87%AB%F0%9F%87%AE%20%F0%9F%93%BA%20%5B13.9%20Mbps%5D%20FI%20Finland
-trojan://gHQP0D7D15@172.67.118.45:2053?type=ws&sni=marvdasht.phonecomparisonblog.org&allowInsecure=1&path=/&host=marvdasht.phonecomparisonblog.org#%F0%9F%87%AB%F0%9F%87%AE%20%F0%9F%93%BA%20%5B13.5%20Mbps%5D%20FI%20Finland
+trojan://gHQP0D7D15@104.25.239.113:2053?path=/&security=tls&type=ws&sni=marvdasht.phonecomparisonblog.org#%F0%9F%87%AB%F0%9F%87%AE%20%F0%9F%8E%AC%20%5B30.9%20Mbps%5D%20FI%20Finland
