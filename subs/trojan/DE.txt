@@ -1,2 +1,3 @@
-trojan://5t6i121em5lkmsmk@de001.zestapp778.com:51520?security=tls&type=tcp&headerType=none#%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%8E%AC%20%5B31.1%20Mbps%5D%20DE%20Germany
-trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@193.108.119.15:443?security=tls&insecure=1&headerType=&type=tcp&allowInsecure=1&sni=courses.iloverussia2026.com#%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%8E%AC%20%5B39.9%20Mbps%5D%20DE%20Germany
+trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@193.108.119.15:443?allowInsecure=1&sni=courses.iloverussia2026.com#%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%8E%AC%20%5B39.7%20Mbps%5D%20DE%20Germany
+trojan://5t6i121em5lkmsmk@de001.zestapp778.com:51520?allowInsecure=1#%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%93%BA%20%5B16.4%20Mbps%5D%20DE%20Germany
+trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@193.108.119.78:443?security=tls&host=/?Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET&headerType=none&type=tcp&sni=www.iloverussia2026.com#%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%8E%AC%20%5B36.5%20Mbps%5D%20DE%20Germany

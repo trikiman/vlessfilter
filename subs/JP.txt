@@ -1,6 +1,6 @@
 vless://e13cf851-b4fd-413b-8d49-146e6eb8e5d4@platform117.golnamakcert.top:80?path=/platform117&security=none&encryption=none&host=platform117.halalkhor.info&type=ws#%F0%9F%87%AF%F0%9F%87%B5%20%F0%9F%93%BA%20%5B23.5%20Mbps%5D%20JP%20Japan
 vmess://eyJhZGQiOiAiMTY4LjEzOC40My43NSIsICJhaWQiOiAiMCIsICJob3N0IjogIjE2OC4xMzguNDMuNzUiLCAiaWQiOiAiMTFjMzYyN2YtMzFlOC00Njk1LWRmYmQtMzQwNzZlMmYxZjVkIiwgIm5ldCI6ICJ3cyIsICJwYXRoIjogIi9jY3R2MTMubTN1OCIsICJwb3J0IjogODAsICJwcyI6ICLwn4ev8J+HtSAxMDIgLSBKUCAtIFZNZXNzL1dTIC0gODAiLCAic2N5IjogImF1dG8iLCAidGxzIjogIiIsICJ0eXBlIjogIiIsICJ2IjogIjIiLCAibmFtZSI6ICI0S2lhbi1mZTUzZGExNjBkIn0=#%F0%9F%87%AF%F0%9F%87%B5%20%F0%9F%93%BA%20%5B13.7%20Mbps%5D%20JP%20Japan
-trojan://d050aca3-9df2-4461-90ec-92373c1d7636@v2jp.k1.ssnss.live:44184?security=tls#%F0%9F%87%AF%F0%9F%87%B5%20%F0%9F%93%BA%20%5B21.9%20Mbps%5D%20JP%20Japan
+trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@167.179.108.225:443?security=tls&insecure=0&headerType=&fp=chrome&type=tcp&allowInsecure=0&sni=discoverparttimepositionsandsupplementyourincomeguide.com#%F0%9F%87%AF%F0%9F%87%B5%20%F0%9F%8E%AC%20%5B54.2%20Mbps%5D%20JP%20Japan
 ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@149.22.87.241:443#%F0%9F%87%AF%F0%9F%87%B5%20%F0%9F%8E%AC%20%5B29.9%20Mbps%5D%20JP%20Japan
 ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@149.22.87.240:443#%F0%9F%87%AF%F0%9F%87%B5%20%F0%9F%8E%AC%20%5B29.9%20Mbps%5D%20JP%20Japan
 ss://YWVzLTEyOC1nY206c2hhZG93c29ja3M=@149.22.87.204:443#%F0%9F%87%AF%F0%9F%87%B5%20%F0%9F%8E%AC%20%5B29.8%20Mbps%5D%20JP%20Japan
