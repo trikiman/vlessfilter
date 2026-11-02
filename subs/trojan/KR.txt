@@ -1,1 +1,1 @@
-trojan://3637190e-4ce3-41cd-9425-f5676345b38c@3.34.91.121:12308?type=tcp&security=tls&sni=kr02.ulifeai.com&fp=chrome#%F0%9F%87%B0%F0%9F%87%B7%20%F0%9F%8E%AC%20%5B43.1%20Mbps%5D%20KR%20South%20Korea
+trojan://3637190e-4ce3-41cd-9425-f5676345b38c@3.34.91.121:12308?type=tcp&security=tls&sni=kr02.ulifeai.com&fp=chrome#%F0%9F%87%B0%F0%9F%87%B7%20%F0%9F%8E%AC%20%5B34.3%20Mbps%5D%20KR%20South%20Korea
