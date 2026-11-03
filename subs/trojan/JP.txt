@@ -1,1 +1,1 @@
-trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@167.179.108.225:443?security=tls&insecure=0&headerType=&fp=chrome&type=tcp&allowInsecure=0&sni=discoverparttimepositionsandsupplementyourincomeguide.com#%F0%9F%87%AF%F0%9F%87%B5%20%F0%9F%8E%AC%20%5B54.3%20Mbps%5D%20JP%20Japan
+trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@167.179.108.225:443?security=tls&sni=discoverparttimepositionsandsupplementyourincomeguide.com&type=tcp&headerType=none#%F0%9F%87%AF%F0%9F%87%B5%20%F0%9F%8E%AC%20%5B55.2%20Mbps%5D%20JP%20Japan
