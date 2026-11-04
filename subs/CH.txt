@@ -2,4 +2,4 @@ vless://3950b45e-740d-4dca-ac95-505ec8534592@45.90.59.15:443?&security=reality&f
 trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@208.69.78.208:443?security=tls&insecure=0&headerType=none&type=tcp&allowInsecure=0&sni=resources.yourultimateprofessionalcareerhub.com#%F0%9F%87%A8%F0%9F%87%AD%20%F0%9F%8E%AC%20%5B54.0%20Mbps%5D%20CH%20Switzerland
 trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@208.69.78.19:443?security=tls&insecure=0&headerType=none&type=tcp&allowInsecure=0&sni=www.yourultimateprofessionalcareerhub.com#%F0%9F%87%A8%F0%9F%87%AD%20%F0%9F%8E%AC%20%5B53.9%20Mbps%5D%20CH%20Switzerland
 trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@208.69.78.158:443?security=tls&fp=chrome&sni=api.yourultimateprofessionalcareerhub.com#%F0%9F%87%A8%F0%9F%87%AD%20%F0%9F%8E%AC%20%5B43.9%20Mbps%5D%20CH%20Switzerland
-ss://YWVzLTEyOC1nY206MmJmNTM2YTRiZDYwMDg1MTE3MzRhNTA1ZDI0OGRlMmM@86.106.84.194:13261#%F0%9F%87%A8%F0%9F%87%AD%20%F0%9F%93%BA%20%5B14.1%20Mbps%5D%20CH%20Switzerland
+ss://YWVzLTEyOC1nY206NjM1ZjRmZWE1Mzc1MDNhYjU2YjFjYmIzZDA4NWJjOGI=@86.106.84.196:13263#%F0%9F%87%A8%F0%9F%87%AD%20%F0%9F%8E%AC%20%5B39.0%20Mbps%5D%20CH%20Switzerland
