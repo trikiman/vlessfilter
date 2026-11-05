@@ -1,1 +1,1 @@
-trojan://5t6i121em5lkmsmk@en001.zestapp778.com:29813?allowInsecure=1&sni=en001.zestapp778.com#%F0%9F%87%AC%F0%9F%87%A7%20%F0%9F%93%BA%20%5B16.0%20Mbps%5D%20GB%20United%20Kingdom
+trojan://5t6i121em5lkmsmk@en001.zestapp778.com:29813?security=tls&insecure=0&headerType=none&type=tcp&allowInsecure=0&sni=en001.zestapp778.com#%F0%9F%87%AC%F0%9F%87%A7%20%F0%9F%8E%AC%20%5B25.5%20Mbps%5D%20GB%20United%20Kingdom
