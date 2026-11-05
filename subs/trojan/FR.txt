@@ -1,1 +1,1 @@
-trojan://5t6i121em5lkmsmk@fr001.zestapp778.com:16778?allowInsecure=1&insecure=1&security=tls&fp=chrome&type=tcp&headerType=none#%F0%9F%87%AB%F0%9F%87%B7%20%F0%9F%8E%AC%20%5B26.7%20Mbps%5D%20FR%20France
+trojan://19f77982-8b59-4405-b153-9f6b42ca9016@51.75.118.79:20366?path=/bp-trojan&security=none&type=ws#%F0%9F%87%AB%F0%9F%87%B7%20%F0%9F%8E%AC%20%5B32.3%20Mbps%5D%20FR%20France
