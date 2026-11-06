@@ -1,3 +1,2 @@
-trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@193.108.119.15:443?allowInsecure=0&sni=courses.iloverussia2026.com#%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%8E%AC%20%5B41.1%20Mbps%5D%20DE%20Germany
-trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@193.108.119.193:443?security=tls&fp=chrome&sni=resources.iloverussia2026.com#%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%8E%AC%20%5B39.1%20Mbps%5D%20DE%20Germany
-trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@193.108.119.78:443?security=tls&insecure=0&headerType=none&type=tcp&allowInsecure=0&sni=www.iloverussia2026.com#%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%93%BA%20%5B20.1%20Mbps%5D%20DE%20Germany
+trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@193.108.119.15:443?security=tls&type=tcp&sni=courses.iloverussia2026.com#%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%8E%AC%20%5B44.0%20Mbps%5D%20DE%20Germany
+trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@193.108.119.78:443?security=tls&insecure=0&host=/%3FTelegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET&headerType=none&type=tcp&allowInsecure=0&sni=www.iloverussia2026.com#%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%93%BA%20%5B21.9%20Mbps%5D%20DE%20Germany
