@@ -1,0 +1,1 @@
+trojan://uFepQ5r4JSusbY@floral-grass-aa1e.dianawpewpek1.workers.dev:443?path=%2F%3Fed%3D2048&security=tls&alpn=http%2F1.1&insecure=0&host=floral-grass-aa1e.dianawpewpek1.workers.dev&fp=chrome&type=ws&allowInsecure=0&sni=floral-grass-aa1e.dianawpewpek1.workers.dev#%F0%9F%8C%90%20ROTATING
