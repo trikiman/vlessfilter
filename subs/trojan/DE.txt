@@ -1,3 +1,3 @@
-trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@193.108.119.134:443?fp=chrome&sni=api.iloverussia2026.com#%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%8E%AC%20%5B33.1%20Mbps%5D%20DE%20Germany
-trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@193.108.119.15:443?allowInsecure=0&sni=courses.iloverussia2026.com#%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%8E%AC%20%5B32.5%20Mbps%5D%20DE%20Germany
-trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@193.108.119.29:443?security=tls&insecure=0&headerType=none&type=tcp&allowInsecure=0&sni=blog.iloverussia2026.com#%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%8E%AC%20%5B32.1%20Mbps%5D%20DE%20Germany
+trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@193.108.119.134:443?security=tls&insecure=0&host=/?Telegram---@bored_vpn&headerType=none&type=tcp&allowInsecure=0&sni=api.iloverussia2026.com#%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%8E%AC%20%5B29.5%20Mbps%5D%20DE%20Germany
+trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@193.108.119.193:443?security=tls&insecure=0&headerType=none&type=tcp&allowInsecure=0&sni=resources.iloverussia2026.com#%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%8E%AC%20%5B28.1%20Mbps%5D%20DE%20Germany
+trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@193.108.119.15:443?security=tls&insecure=0&headerType=none&type=tcp&allowInsecure=0&sni=courses.iloverussia2026.com#%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%8E%AC%20%5B28.4%20Mbps%5D%20DE%20Germany
