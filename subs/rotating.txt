@@ -1,3 +1,0 @@
-trojan://50414e45-4c5f-5a45-5553-ccc0e8cd3a83@104.24.210.142:443?fp=unsafe&host=fgzb39ezu86s.ycz7syeeu3is.workers.dev&path=%2Fstream%2FPANEL_ZEUS%2Fccc0e8cd3a83&security=tls&sni=fgzb39ezu86s.ycz7syeeu3is.workers.dev&type=ws#%F0%9F%8C%90%20ROTATING
-trojan://bpb-trojan@singapore.com:443?security=tls&sni=kargar001.pages.dev&alpn=h3&fp=randomized&allowlnsecure=1&type=ws&host=kargar001.pages.dev&path=%2Ftr%3Fed%3D2560#%F0%9F%8C%90%20ROTATING
-trojan://ec1fa47d-4eac-4b3f-8cae-4a2982d43e2f@www.wto.org:8443?security=tls&sni=jiangjc.pages.dev&type=ws&host=jiangjc.pages.dev&path=%2F#%F0%9F%8C%90%20ROTATING
