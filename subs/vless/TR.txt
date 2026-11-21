@@ -1,1 +1,1 @@
-vless://0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8@151.241.226.201:2053?fp=random&host=www.apple.com&pbk=bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104&security=reality&sid=9e419c0759b54d6f&sni=www.apple.com&type=tcp#%F0%9F%87%B9%F0%9F%87%B7%20%F0%9F%8E%AC%20%5B33.7%20Mbps%5D%20TR%20Turkey
+vless://c34a41b6-598f-46ac-bea3-8b39a906f922@87.76.154.28:57231?encryption=none&security=none&type=tcp#%F0%9F%87%B9%F0%9F%87%B7%20%F0%9F%8E%AC%20%5B26.9%20Mbps%5D%20TR%20Turkey
