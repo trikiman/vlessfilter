@@ -1,3 +1,1 @@
 vless://03fcc618-b93d-6796-6aed-8a38c975d581@kuruish.org:443?security=tls&encryption=none&insecure=0&host=kuruish.org&headerType=none&type=tcp&allowInsecure=0&sni=kuruish.org#%F0%9F%8C%90%20ROTATING
-trojan://50414e45-4c5f-5a45-5553-d1d89df6aa4d@vhz1g2exuurs.n5z4sme6ujfs.workers.dev:443?path=%2Fstream%2FPANEL_ZEUS%2Fd1d89df6aa4d&security=tls&host=vhz1g2exuurs.n5z4sme6ujfs.workers.dev&fp=unsafe&type=ws&sni=vhz1g2exuurs.n5z4sme6ujfs.workers.dev#%F0%9F%8C%90%20ROTATING
-trojan://ec1fa47d-4eac-4b3f-8cae-4a2982d43e2f@www.wto.org:8443?security=tls&sni=jiangjc.pages.dev&type=ws&host=jiangjc.pages.dev&path=%2F#%F0%9F%8C%90%20ROTATING
