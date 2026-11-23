@@ -1,3 +1,1 @@
-trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@193.108.119.15:443?security=tls&sni=courses.iloverussia2026.com#%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%93%BA%20%5B19.0%20Mbps%5D%20DE%20Germany
-trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@leviko-de5955.shopingggg.ir:443?security=tls&insecure=0&headerType=none&type=tcp&allowInsecure=0&sni=courses.iloverussia2026.com#%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%93%BA%20%5B15.2%20Mbps%5D%20DE%20Germany
-trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@193.108.119.134:443?allowInsecure=0&sni=api.iloverussia2026.com#%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%93%BA%20%5B18.9%20Mbps%5D%20DE%20Germany
+trojan://bpb-trojan@russia.com:443?sni=kargar001.pages.dev&type=ws&fp=chrome&alpn=h3&path=/tr%3Fed%3D2560#%F0%9F%87%A9%F0%9F%87%AA%20%F0%9F%8E%AC%20%5B52.7%20Mbps%5D%20DE%20Germany
