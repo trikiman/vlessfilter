@@ -1,3 +1,1 @@
-vless://03dc60cb-a8d4-4226-93fe-0e6cbf77fe5a@uspanel.unixzone.us:30016?security=none&type=ws&path=/usserver&host=uspanel.unixzone.us&sni=uspanel.unixzone.us#%F0%9F%87%BA%F0%9F%87%B8%20%E2%9A%A1%20%5B167.5%20Mbps%5D%20US%20United%20States
-vless://1bd6c8a2-01db-4a3d-8b2c-0b2f2c3e8b5a@38.244.5.231:443/?type=tcp&encryption=none&flow=xtls-rprx-vision&sni=www.cloudflare.com&fp=chrome&security=reality&pbk=DUpNPvLjiL1GzeF7DfKWba-LYLz1KPuQXewhgNGPiDM&sid=ab0a5b56#%F0%9F%87%BA%F0%9F%87%B8%20%E2%9A%A1%20%5B96.8%20Mbps%5D%20US%20United%20States
-vless://e13cf851-b4fd-413b-8d49-146e6eb8e5d4@154.12.49.239:80?security=none&type=ws&path=/platform103#%F0%9F%87%BA%F0%9F%87%B8%20%E2%9A%A1%20%5B94.8%20Mbps%5D%20US%20United%20States
+vless://40992c2a-513e-4837-9594-23411fd42afd@134.122.18.79:443?encryption=none&headerType=http&host=fast.com&path=/&security=none&type=tcp#%F0%9F%87%BA%F0%9F%87%B8%20%F0%9F%8E%AC%20%5B34.1%20Mbps%5D%20US%20United%20States
