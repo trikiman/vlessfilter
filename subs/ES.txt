@@ -3,4 +3,6 @@ vmess://eyJ2IjogIjIiLCAicHMiOiAiXHVkODNkXHVkZDI1Sm9pbitUZWxlZ3JhbTpARmFyYWhfVlBO
 trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@66.163.118.203:443?security=tls&sni=blog.discovergreatjobsandadvanceyourcareer.com#%F0%9F%87%AA%F0%9F%87%B8%20%F0%9F%93%BA%20%5B19.8%20Mbps%5D%20ES%20Spain
 trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@66.163.118.115:443?security=tls&insecure=0&headerType=none&fp=chrome&type=tcp&allowInsecure=0&sni=discovergreatjobsandadvanceyourcareer.com#%F0%9F%87%AA%F0%9F%87%B8%20%F0%9F%93%BA%20%5B19.6%20Mbps%5D%20ES%20Spain
 trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@66.163.118.166:443?security=tls&insecure=0&headerType=none&type=tcp&allowInsecure=0&sni=learn.discovergreatjobsandadvanceyourcareer.com#%F0%9F%87%AA%F0%9F%87%B8%20%F0%9F%93%BA%20%5B19.5%20Mbps%5D%20ES%20Spain
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpXU3lMNFhUd05zZHY@108.181.121.178:443#%F0%9F%87%AA%F0%9F%87%B8%20%F0%9F%8E%AC%20%5B55.5%20Mbps%5D%20ES%20Spain
+ss://YWVzLTI1Ni1nY206WlJwZ2FCZUd4dEVOSVhndmhwa1pCS3o5R25XUlMyZFljeDlPK2EyaXdOND0=@79.127.139.242:19999#%F0%9F%87%AA%F0%9F%87%B8%20%F0%9F%8E%AC%20%5B40.2%20Mbps%5D%20ES%20Spain
+ss://YWVzLTI1Ni1nY206WlJwZ2FCZUd4dEVOSVhndmhwa1pCS3o5R25XUlMyZFljeDlPK2EyaXdOND0@62.93.179.117:19999#%F0%9F%87%AA%F0%9F%87%B8%20%F0%9F%8E%AC%20%5B40.3%20Mbps%5D%20ES%20Spain
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpxSXRHOFN1ZVlRY1A=@108.181.121.170:443#%F0%9F%87%AA%F0%9F%87%B8%20%F0%9F%8E%AC%20%5B39.6%20Mbps%5D%20ES%20Spain
