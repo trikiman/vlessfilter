@@ -1,3 +1,1 @@
-trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@167.88.61.175:443/?type=tcp&security=tls&sni=blog.browseseniorrolesandenhanceyourcareertoday.com&fp=chrome#%F0%9F%87%BA%F0%9F%87%B8%20%E2%9A%A1%20%5B119.0%20Mbps%5D%20US%20United%20States
-trojan://242a3d8eee5e4ed1a6bfa4141d549a25@216.106.186.66:443?security=tls&insecure=0&headerType=none&type=tcp&allowInsecure=0&sni=www.findlocaljobnetworkandbuildcommunityconnections.com#%F0%9F%87%BA%F0%9F%87%B8%20%E2%9A%A1%20%5B135.6%20Mbps%5D%20US%20United%20States
-trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@66.163.112.121:443?security=tls&sni=www.unlockyourfuturefindyourperfectcareer.com#%F0%9F%87%BA%F0%9F%87%B8%20%E2%9A%A1%20%5B125.0%20Mbps%5D%20US%20United%20States
+trojan://c48qMRRfLJ3kwD4P_XpgfIq6@3x-sub.linzhonghong.com:443?sni=3x-sub.linzhonghong.com&allowInsecure=1&type=ws&path=%2Ftjbbb7eab89c9a#%F0%9F%87%BA%F0%9F%87%B8%20%F0%9F%8E%AC%20%5B48.1%20Mbps%5D%20US%20United%20States
