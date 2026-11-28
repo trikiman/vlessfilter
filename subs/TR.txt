@@ -3,4 +3,4 @@ vmess://eyJhZGQiOiJmcmVlLmVydGViYXRnb29zdGFyLmlyIiwiYWlkIjoiMCIsImFscG4iOiIiLCJm
 trojan://d7563108-615c-4338-a7bd-77f359869a4a@sclass-b1.catcat321.com:20027?security=tls&sni=hk.catxstar.com&fp=chrome&type=tcp&headerType=none#%F0%9F%87%B9%F0%9F%87%B7%20%F0%9F%8E%AC%20%5B27.2%20Mbps%5D%20TR%20Turkey
 trojan://d7563108-615c-4338-a7bd-77f359869a4a@157.254.38.210:20028?sni=hk.catxstar.com&allowInsecure=1#%F0%9F%87%B9%F0%9F%87%B7%20%F0%9F%93%BA%20%5B14.1%20Mbps%5D%20TR%20Turkey
 trojan://d7563108-615c-4338-a7bd-77f359869a4a@sclass-b1.catcat321.com:20028?security=tls&sni=hk.catxstar.com&fp=chrome&type=tcp&headerType=none#%F0%9F%87%B9%F0%9F%87%B7%20%F0%9F%93%BA%20%5B14.0%20Mbps%5D%20TR%20Turkey
-ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpUMTk5TUNub2daQktpMFFKZGNTZ1Vub0wzVTl3bDd0MQ==@tr.subscriptionservice.ir:2089#%F0%9F%87%B9%F0%9F%87%B7%20%F0%9F%8E%AC%20%5B42.4%20Mbps%5D%20TR%20Turkey
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpsWlp6Zm8xbXFIN1BxbmxvQW9nZGkyWEJobGdpb2ZNeQ@tr.subscriptionservice.ir:2089#%F0%9F%87%B9%F0%9F%87%B7%20%F0%9F%93%BA%20%5B24.0%20Mbps%5D%20TR%20Turkey
